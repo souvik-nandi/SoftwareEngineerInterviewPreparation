@@ -1,0 +1,300 @@
+{
+    "id": "1444",
+    "question": {
+        "questionId": "1444",
+        "questionFrontendId": "1342",
+        "boundTopicId": null,
+        "title": "Number of Steps to Reduce a Number to Zero",
+        "titleSlug": "number-of-steps-to-reduce-a-number-to-zero",
+        "content": "<p>Given an integer <code>num</code>, return <em>the number of steps to reduce it to zero</em>.</p>\n\n<p>In one step, if the current number is even, you have to divide it by <code>2</code>, otherwise, you have to subtract <code>1</code> from it.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = 14\n<strong>Output:</strong> 6\n<strong>Explanation:</strong>&nbsp;\nStep 1) 14 is even; divide by 2 and obtain 7.&nbsp;\nStep 2) 7 is odd; subtract 1 and obtain 6.\nStep 3) 6 is even; divide by 2 and obtain 3.&nbsp;\nStep 4) 3 is odd; subtract 1 and obtain 2.&nbsp;\nStep 5) 2 is even; divide by 2 and obtain 1.&nbsp;\nStep 6) 1 is odd; subtract 1 and obtain 0.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = 8\n<strong>Output:</strong> 4\n<strong>Explanation:</strong>&nbsp;\nStep 1) 8 is even; divide by 2 and obtain 4.&nbsp;\nStep 2) 4 is even; divide by 2 and obtain 2.&nbsp;\nStep 3) 2 is even; divide by 2 and obtain 1.&nbsp;\nStep 4) 1 is odd; subtract 1 and obtain 0.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = 123\n<strong>Output:</strong> 12\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= num &lt;= 10<sup>6</sup></code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 2438,
+        "dislikes": 129,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Minimum Moves to Reach Target Score\", \"titleSlug\": \"minimum-moves-to-reach-target-score\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Count Operations to Obtain Zero\", \"titleSlug\": \"count-operations-to-obtain-zero\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+        "exampleTestcases": "14\n8\n123",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Grab\", \"slug\": \"grab\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"HRT\", \"slug\": \"hrt\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 6}], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int numberOfSteps(int num) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int numberOfSteps(int num) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def numberOfSteps(self, num):\n        \"\"\"\n        :type num: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def numberOfSteps(self, num: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint numberOfSteps(int num){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int NumberOfSteps(int num) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} num\n * @return {number}\n */\nvar numberOfSteps = function(num) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer} num\n# @return {Integer}\ndef number_of_steps(num)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func numberOfSteps(_ num: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func numberOfSteps(num int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def numberOfSteps(num: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun numberOfSteps(num: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn number_of_steps(num: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer $num\n     * @return Integer\n     */\n    function numberOfSteps($num) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function numberOfSteps(num: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (number-of-steps num)\n  (-> exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec number_of_steps(Num :: integer()) -> integer().\nnumber_of_steps(Num) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec number_of_steps(num :: integer) :: integer\n  def number_of_steps(num) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"339.5K\", \"totalSubmission\": \"395.2K\", \"totalAcceptedRaw\": 339524, \"totalSubmissionRaw\": 395156, \"acRate\": \"85.9%\"}",
+        "hints": [
+            "Simulate the process to get the final answer."
+        ],
+        "solution": {
+            "id": "892",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "14",
+        "metaData": "{\n  \"name\": \"numberOfSteps\",\n  \"params\": [\n    {\n      \"name\": \"num\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "926",
+            "date": "2022-05-27",
+            "incompleteChallengeCount": 31,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "892",
+        "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: Simulation\n\n**Intuition**\n\nThe most intuitive, and easiest, solution is to simply simulate the rules and count how many steps are carried out in order to reach zero.\n\nAs an example, assume our starting value is `43`. The steps we need to take will be:\n\n```python\n43 # Odd, subtract 1\n42 # Even, divide by 2\n21 # Odd, subtract 1\n20 # Even, divide by 2\n10 # Even, divide by 2\n 5 # Odd, subtract 1\n 4 # Even divide by 2\n 2 # Even, divide by 2\n 1 # Odd, subtract 1\n 0\n```\n\nThis is a total of `9` steps.\n\nHere's an animation of this same algorithm being used with a starting value of `211`.\n\n!?!../Documents/1342_simulation_animation.json:960,250!?!\n\n**Algorithm**\n\nThe algorithm works by simulating each step of the rules; if the current number is even then divide it by `2`. Else if it's odd, subtract `1` from it. Each time we perform one of these actions, we increment the steps we've taken by `1` so that we can return it at the end.\n\nTo check if a number is even or odd, we can use the *modulus* (`%`) operator. Recall that the *modulus* operator gives us the *remainder* when we divide two numbers. If `number % 2` is `1`, then we know `number` must be **odd**. Otherwise, the only other value it could be is `0`, which means `number` must be **even**.\n\n<iframe src=\"https://leetcode.com/playground/Bk3NkxYu/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"Bk3NkxYu\"></iframe>\n\n**Complexity Analysis**\n\nLet $$n = num$$.\n\n- Time Complexity : $$O(\\log \\, n)$$.\n\n    At each step, what we did depended on whether the remaining $$num$$ was odd or even. If $$num$$ was even, we *halved* what was left. If it was odd, we only subtracted $$1$$. *However*, by subtracting $$1$$, we were making it *even*, and so on the next step we were *guaranteed* to halve it. \n    \n    What this means is that in the worst case, we're halving it on every *second* step. We treat the $$\\frac{1}{2}$$ of the time as a constant though, so in essence, we say that at each step, $$num$$ is being halved.\n\n    When something is halved at every step, it has a $$O(\\log \\, n)$$ time complexity.\n\n- Space Complexity : $$O(1)$$.\n\n    We only use a constant number of integer variables, and so the space complexity is $$O(1)$$.\n\nIt's impossible for us to do better than a time complexity of $$O(\\log \\, n)$$\u2014unless we were willing to hardcode all 1 million possible cases we could be given (the problem statement says `0 <= num <= 10^6`). But we really don't want to do that! By the end of this article, you'll be able to see why it's *impossible* for an algorithm to do better.\n\n</br>\n\n---\n\n#### Approach 2: Counting Bits\n\n*Note: Approach 2 and 3 don't change the time complexity, but they offer a different way of thinking about the problem that studying will hopefully help you expand your problem solving skills! A prerequisite for these last 2 approaches is knowing how numbers are represented in binary.*\n\nAt each step, we either subtract `1` from `num`, or we divide `num` by `2`. In binary, these two operations do something very simple, but very interesting, to a number!\n\nRecall that odd numbers always have a last bit of `1`. Subtracting `1`, *from an odd number*, **changes the last bit** from `1` to `0`.\n\n![Showing 53 - 1 changes the last bit to zero](../Figures/1342/subtract_1_from_odd.png)\n\nDividing by `2` **removes the last bit** from the number.\n\n![Showing 52 / 2 removes the last bit](../Figures/1342/divide_by_2.png)\n\nFor example, have a look at the binary representation of `210` as it's reduced to zero.\n\n!?!../Documents/1342_simulation_binary_animation.json:960,250!?!\n\nThe bits slid along, and each became the \"last\" bit. Notice how the `0`s took **one** step to remove, and the `1`s took **two** steps to remove.\n\nThis means that we could simply analyze the binary representation of the starting `num` to determine the number of steps needed to reduce it.\n\nSo, to get our answer, we can just add two steps for every `1`, and add one step for every `0`, for each bit in the binary representation.\n\n![Showing the bits of a number map to either one or two steps](../Figures/1342/bits_to_steps.png)\n\nThere's one thing to be careful of, and that is not inadvertently counting the last bit as two steps. The last bit to remove will *always* be a `1`\u2014it was the most significant bit in the original `num`. The algorithm above would add *2* for removing this final `1`. But actually, when we subtract `1` from it, it goes to zero. So we don't need add two steps for this bit. The simplest way of handling this case is to subtract `1` from our *final* `steps` count, as we know this \"off-by-one-error\" will always happen (except when the initial `num` is `0`, we need to be careful of that edge case too!).\n\nLet's look at another example. The number we'll use is `78`; this can be written in binary as `1001110`. The binary contains four `1`s and three `0`s, so our total number of steps must be `(4 * 2) + (3 * 1) - 1 = 10`. This the correct result!\n\n**Algorithm**\n\nTo count the bits we'll convert our number into a binary string, for each character if it's a `\"1\"` we'll add two steps, else if it's `\"0\"` we'll add one step.\n\nIn **Java**, we can use `Integer.toBinaryString(...)` to convert an int to binary. The binary number is represented as `String`.\n\nIn **Python**, we can use `bin(...)` to convert an int to binary. Like in Java, the binary number is represented as a `str`. However, it also contains `0b` on the start\u2014this is simply a code to say the `str` is a binary number. The \"pythonic\" thing to do is chop these two characters off with a list splice. i.e., to get the binary for `num`, you would do `bin(num)[2:]`.\n\n<iframe src=\"https://leetcode.com/playground/x7j2EwiD/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"x7j2EwiD\"></iframe>\n\nIn Python, we can do this really elegantly using the `string.count(...)` and `len(...)` functions.\n\n<iframe src=\"https://leetcode.com/playground/xVBPXgVb/shared\" frameBorder=\"0\" width=\"100%\" height=\"140\" name=\"xVBPXgVb\"></iframe>\n\n\n**Complexity Analysis**\n\nLet $$n = num$$.\n\n- Time Complexity : $$O(\\log \\, n)$$.\n\n    Converting a number into string can be done in $$\\log \\, n$$ time.\n\n    We then loop over each bit, doing a single operation each time. The number of bits in a number is $$\\log_2 \\, number$$, so the time complexity is $$O(\\log \\, n)$$.\n\n- Space Complexity : $$O(\\log \\, n)$$.\n\n    Because we convert the number into a string, we'll have $$\\log_2 \\, number$$ characters in our string. This gives us a space complexity of $$O(\\log \\, n)$$.\n\n</br>\n\n---\n\n#### Approach 3: Counting Bits with Bitwise Operators\n\nIn Approach 2, we needed to convert the number into a string representation. Strings are considerably larger than the integer they represent though. Another way of inspecting bits, to check if they're `1` or `0`, is to use the bitwise-and (`&`) operator.\n\nThe result of `a & b` (`a` bitwise-and `b`) looks at each bit in both `a` and `b` at the same time. If both bits are `1` then bitwise-and sets the same bit of the result to `1`, but if either are `0` it sets the bit to `0`.\n\nFor example, `109` and `57` can be written as `1101101` and `111001` respectively. This image shows what happens when we bitwise-and them.\n\n![Bitwise and of 109 and 57 showing result](../Figures/1342/bitwise_and.png)\n\nSo, to actually inspect a specific bit, we can use a number that has a `1` followed by enough `0`s to put the `1` at the position we want it (we commonly call this a \"bitmask\"). With this number, we bitwise-and (`&`) it with the input number. If the input number has a `1` at the same position, it'll output `1` at that position, and because all other numbers are `0` they will be `0` in the output as well.\n\nThese numbers of the form `1`, followed by some number of `0`s, are actually just the powers of two, where the power is the number of `0`s after the one. As such, we can check if a bit is a `1` in a number by doing `num & (1 << bit)` where `bit` is the bit we want to check (0-indexed from the right).\n\nFor example, let's check if the *sixth* bit of `109` is a `1`.\n\n![Bitwise and of 109 and 32 showing result of 32](../Figures/1342/check_sixth_digit.png)\n\nThe output is `100000`, which *is not* zero. Therefore, we know that the sixth bit has to be a `1`.\n\nLet's also check if the the fifth bit of `109` is a `1`.\n\n![Bitwise and of 109 and 16 showing result of 0](../Figures/1342/check_fifth_digit.png)\n\nThe output is `0000000`, which *is* zero. Therefore, we know that the fifth bit must be a `0`.\n\nJust like Approach 2, we look at each bit, and if it's a `1` we add `2` to `steps`, otherwise if it's a `0`, we add `1` to `steps`.\n\n**Algorithm**\n\nUnlike the previous approach, this approach won't work correctly when `num = 0` is the input. The previous approach did an iteration for the lone `0` bit as it was in the string, but for this approach the loop won't run at all. `-1` will then be returned because of the `steps - 1`. The solution is to check for `num == 0` at the start and `return 0` if it is detected.\n\n<iframe src=\"https://leetcode.com/playground/Mx39FfpK/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"Mx39FfpK\"></iframe>\n\n**Complexity Analysis**\n\nLet $$n = num$$.\n\n- Time Complexity : $$O(\\log \\, n)$$.\n\n    We're pulling out each of the $$\\log \\, n$$ bits from `num` and performing an $$O(1)$$ operation on each one. Therefore, the total time complexity is, again, $$O(\\log \\, n)$$.\n\n- Space Complexity : $$O(1)$$.\n\n    We only use a constant number of integer variables, and so the space complexity is $$O(1)$$.\n\n</br>",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "850",
+            "count": 42,
+            "average": "4.976",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "number-of-steps-to-reduce-a-number-to-zero",
+    "playgroundData": {
+        "Bk3NkxYu": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "number-of-steps-to-reduce-a-number-to-zero-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "x7j2EwiD": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "number-of-steps-to-reduce-a-number-to-zero-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "xVBPXgVb": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "number-of-steps-to-reduce-a-number-to-zero-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Mx39FfpK": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "number-of-steps-to-reduce-a-number-to-zero-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

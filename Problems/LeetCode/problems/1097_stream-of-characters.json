@@ -1,0 +1,286 @@
+{
+    "id": "1097",
+    "question": {
+        "questionId": "1097",
+        "questionFrontendId": "1032",
+        "boundTopicId": null,
+        "title": "Stream of Characters",
+        "titleSlug": "stream-of-characters",
+        "content": "<p>Design an algorithm that accepts a stream of characters and checks if a suffix of these characters is a string of a given array of strings <code>words</code>.</p>\n\n<p>For example, if <code>words = [&quot;abc&quot;, &quot;xyz&quot;]</code>&nbsp;and the stream added the four characters (one by one) <code>&#39;a&#39;</code>, <code>&#39;x&#39;</code>, <code>&#39;y&#39;</code>, and <code>&#39;z&#39;</code>, your algorithm should detect that the suffix <code>&quot;xyz&quot;</code> of the characters <code>&quot;axyz&quot;</code> matches <code>&quot;xyz&quot;</code> from <code>words</code>.</p>\n\n<p>Implement the <code>StreamChecker</code> class:</p>\n\n<ul>\n\t<li><code>StreamChecker(String[] words)</code> Initializes the object with the strings array <code>words</code>.</li>\n\t<li><code>boolean query(char letter)</code> Accepts a new character from the stream and returns <code>true</code> if any non-empty suffix from the stream forms a word that is in <code>words</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;StreamChecker&quot;, &quot;query&quot;, &quot;query&quot;, &quot;query&quot;, &quot;query&quot;, &quot;query&quot;, &quot;query&quot;, &quot;query&quot;, &quot;query&quot;, &quot;query&quot;, &quot;query&quot;, &quot;query&quot;, &quot;query&quot;]\n[[[&quot;cd&quot;, &quot;f&quot;, &quot;kl&quot;]], [&quot;a&quot;], [&quot;b&quot;], [&quot;c&quot;], [&quot;d&quot;], [&quot;e&quot;], [&quot;f&quot;], [&quot;g&quot;], [&quot;h&quot;], [&quot;i&quot;], [&quot;j&quot;], [&quot;k&quot;], [&quot;l&quot;]]\n<strong>Output</strong>\n[null, false, false, false, true, false, true, false, false, false, false, false, true]\n\n<strong>Explanation</strong>\nStreamChecker streamChecker = new StreamChecker([&quot;cd&quot;, &quot;f&quot;, &quot;kl&quot;]);\nstreamChecker.query(&quot;a&quot;); // return False\nstreamChecker.query(&quot;b&quot;); // return False\nstreamChecker.query(&quot;c&quot;); // return False\nstreamChecker.query(&quot;d&quot;); // return True, because &#39;cd&#39; is in the wordlist\nstreamChecker.query(&quot;e&quot;); // return False\nstreamChecker.query(&quot;f&quot;); // return True, because &#39;f&#39; is in the wordlist\nstreamChecker.query(&quot;g&quot;); // return False\nstreamChecker.query(&quot;h&quot;); // return False\nstreamChecker.query(&quot;i&quot;); // return False\nstreamChecker.query(&quot;j&quot;); // return False\nstreamChecker.query(&quot;k&quot;); // return False\nstreamChecker.query(&quot;l&quot;); // return True, because &#39;kl&#39; is in the wordlist\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= words.length &lt;= 2000</code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 200</code></li>\n\t<li><code>words[i]</code> consists of lowercase English letters.</li>\n\t<li><code>letter</code> is a lowercase English letter.</li>\n\t<li>At most <code>4 * 10<sup>4</sup></code> calls will be made to query.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 1560,
+        "dislikes": 172,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "[\"StreamChecker\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\"]\n[[[\"cd\",\"f\",\"kl\"]],[\"a\"],[\"b\"],[\"c\"],[\"d\"],[\"e\"],[\"f\"],[\"g\"],[\"h\"],[\"i\"],[\"j\"],[\"k\"],[\"l\"]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Design",
+                "slug": "design",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Trie",
+                "slug": "trie",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Data Stream",
+                "slug": "data-stream",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Jane Street\", \"slug\": \"jane-street\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class StreamChecker {\npublic:\n    StreamChecker(vector<string>& words) {\n        \n    }\n    \n    bool query(char letter) {\n        \n    }\n};\n\n/**\n * Your StreamChecker object will be instantiated and called as such:\n * StreamChecker* obj = new StreamChecker(words);\n * bool param_1 = obj->query(letter);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class StreamChecker {\n\n    public StreamChecker(String[] words) {\n        \n    }\n    \n    public boolean query(char letter) {\n        \n    }\n}\n\n/**\n * Your StreamChecker object will be instantiated and called as such:\n * StreamChecker obj = new StreamChecker(words);\n * boolean param_1 = obj.query(letter);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class StreamChecker(object):\n\n    def __init__(self, words):\n        \"\"\"\n        :type words: List[str]\n        \"\"\"\n        \n\n    def query(self, letter):\n        \"\"\"\n        :type letter: str\n        :rtype: bool\n        \"\"\"\n        \n\n\n# Your StreamChecker object will be instantiated and called as such:\n# obj = StreamChecker(words)\n# param_1 = obj.query(letter)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class StreamChecker:\n\n    def __init__(self, words: List[str]):\n        \n\n    def query(self, letter: str) -> bool:\n        \n\n\n# Your StreamChecker object will be instantiated and called as such:\n# obj = StreamChecker(words)\n# param_1 = obj.query(letter)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n\ntypedef struct {\n    \n} StreamChecker;\n\n\nStreamChecker* streamCheckerCreate(char ** words, int wordsSize) {\n    \n}\n\nbool streamCheckerQuery(StreamChecker* obj, char letter) {\n  \n}\n\nvoid streamCheckerFree(StreamChecker* obj) {\n    \n}\n\n/**\n * Your StreamChecker struct will be instantiated and called as such:\n * StreamChecker* obj = streamCheckerCreate(words, wordsSize);\n * bool param_1 = streamCheckerQuery(obj, letter);\n \n * streamCheckerFree(obj);\n*/",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class StreamChecker {\n\n    public StreamChecker(string[] words) {\n        \n    }\n    \n    public bool Query(char letter) {\n        \n    }\n}\n\n/**\n * Your StreamChecker object will be instantiated and called as such:\n * StreamChecker obj = new StreamChecker(words);\n * bool param_1 = obj.Query(letter);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string[]} words\n */\nvar StreamChecker = function(words) {\n    \n};\n\n/** \n * @param {character} letter\n * @return {boolean}\n */\nStreamChecker.prototype.query = function(letter) {\n    \n};\n\n/** \n * Your StreamChecker object will be instantiated and called as such:\n * var obj = new StreamChecker(words)\n * var param_1 = obj.query(letter)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "class StreamChecker\n\n=begin\n    :type words: String[]\n=end\n    def initialize(words)\n        \n    end\n\n\n=begin\n    :type letter: Character\n    :rtype: Boolean\n=end\n    def query(letter)\n        \n    end\n\n\nend\n\n# Your StreamChecker object will be instantiated and called as such:\n# obj = StreamChecker.new(words)\n# param_1 = obj.query(letter)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "\nclass StreamChecker {\n\n    init(_ words: [String]) {\n        \n    }\n    \n    func query(_ letter: Character) -> Bool {\n        \n    }\n}\n\n/**\n * Your StreamChecker object will be instantiated and called as such:\n * let obj = StreamChecker(words)\n * let ret_1: Bool = obj.query(letter)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "type StreamChecker struct {\n    \n}\n\n\nfunc Constructor(words []string) StreamChecker {\n    \n}\n\n\nfunc (this *StreamChecker) Query(letter byte) bool {\n    \n}\n\n\n/**\n * Your StreamChecker object will be instantiated and called as such:\n * obj := Constructor(words);\n * param_1 := obj.Query(letter);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "class StreamChecker(_words: Array[String]) {\n\n    def query(letter: Char): Boolean = {\n        \n    }\n\n}\n\n/**\n * Your StreamChecker object will be instantiated and called as such:\n * var obj = new StreamChecker(words)\n * var param_1 = obj.query(letter)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class StreamChecker(words: Array<String>) {\n\n    fun query(letter: Char): Boolean {\n        \n    }\n\n}\n\n/**\n * Your StreamChecker object will be instantiated and called as such:\n * var obj = StreamChecker(words)\n * var param_1 = obj.query(letter)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "struct StreamChecker {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl StreamChecker {\n\n    fn new(words: Vec<String>) -> Self {\n        \n    }\n    \n    fn query(&self, letter: char) -> bool {\n        \n    }\n}\n\n/**\n * Your StreamChecker object will be instantiated and called as such:\n * let obj = StreamChecker::new(words);\n * let ret_1: bool = obj.query(letter);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class StreamChecker {\n    /**\n     * @param String[] $words\n     */\n    function __construct($words) {\n        \n    }\n  \n    /**\n     * @param String $letter\n     * @return Boolean\n     */\n    function query($letter) {\n        \n    }\n}\n\n/**\n * Your StreamChecker object will be instantiated and called as such:\n * $obj = StreamChecker($words);\n * $ret_1 = $obj->query($letter);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "class StreamChecker {\n    constructor(words: string[]) {\n\n    }\n\n    query(letter: string): boolean {\n\n    }\n}\n\n/**\n * Your StreamChecker object will be instantiated and called as such:\n * var obj = new StreamChecker(words)\n * var param_1 = obj.query(letter)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define stream-checker%\n  (class object%\n    (super-new)\n\n    ; words : (listof string?)\n    (init-field\n      words)\n    \n    ; query : char? -> boolean?\n    (define/public (query letter)\n\n      )))\n\n;; Your stream-checker% object will be instantiated and called as such:\n;; (define obj (new stream-checker% [words words]))\n;; (define param_1 (send obj query letter))",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec stream_checker_init_(Words :: [unicode:unicode_binary()]) -> any().\nstream_checker_init_(Words) ->\n  .\n\n-spec stream_checker_query(Letter :: char()) -> boolean().\nstream_checker_query(Letter) ->\n  .\n\n\n%% Your functions will be called as such:\n%% stream_checker_init_(Words),\n%% Param_1 = stream_checker_query(Letter),\n\n%% stream_checker_init_ will be called before every test case, in which you can do some necessary initializations.",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule StreamChecker do\n  @spec init_(words :: [String.t]) :: any\n  def init_(words) do\n\n  end\n\n  @spec query(letter :: char) :: boolean\n  def query(letter) do\n\n  end\nend\n\n# Your functions will be called as such:\n# StreamChecker.init_(words)\n# param_1 = StreamChecker.query(letter)\n\n# StreamChecker.init_ will be called before every test case, in which you can do some necessary initializations.",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"76.3K\", \"totalSubmission\": \"148.6K\", \"totalAcceptedRaw\": 76331, \"totalSubmissionRaw\": 148600, \"acRate\": \"51.4%\"}",
+        "hints": [
+            "Put the words into a trie, and manage a set of pointers within that trie."
+        ],
+        "solution": {
+            "id": "978",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[\"StreamChecker\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\"]\n[[[\"cd\",\"f\",\"kl\"]],[\"a\"],[\"b\"],[\"c\"],[\"d\"],[\"e\"],[\"f\"],[\"g\"],[\"h\"],[\"i\"],[\"j\"],[\"k\"],[\"l\"]]",
+        "metaData": "{\n    \"classname\": \"StreamChecker\",\n    \"maxbytesperline\": 500000,\n    \"constructor\": {\n        \"params\": [\n            {\n                \"type\": \"string[]\",\n                \"name\": \"words\"\n            }]\n    },\n    \"methods\": [\n        {\n            \"name\" : \"query\",\n            \"params\": [\n                {\n                    \"type\": \"character\",\n                    \"name\": \"letter\"\n                }\n            ],\n            \"return\": {\n                \"type\": \"boolean\"\n            }\n        }\n    ],\n    \"systemdesign\": true,\n    \"params\": [\n        {\n            \"name\": \"starts\",\n            \"type\": \"integer[]\"\n        },\n        {\n            \"name\": \"ends\",\n            \"type\": \"integer[]\"\n        }\n    ],\n    \"return\": {\n        \"type\": \"list<boolean>\",\n        \"dealloc\": true\n    }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "978",
+        "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n\r\n#### Prerequisites\r\n\r\nThis design article uses [data structure Trie](https://leetcode.com/articles/add-and-search-word/). If you never worked\r\nwith trie before, you might want to check [this introduction article](https://leetcode.com/articles/add-and-search-word/)\r\nfirst to simplify the further reading.\r\n\r\n#### Approach 1: Trie\r\n\r\n**Trie**\r\n\r\nTrie is widely used in real life:\r\nautocomplete search, spell checker, T9 predictive text, \r\n[IP routing (longest prefix matching)](https://www.researchgate.net/figure/An-example-routing-table-and-the-corresponding-binary-trie-built-from-it_fig3_4236637), \r\n[some GCC containers](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/trie_based_containers.html).\r\n\r\nTrie is something to think about if you're asked to design \r\na structure to dynamically add and search strings.\r\n\r\n**Intuition**\r\n\r\nThe first idea is to add all input words in the trie and then implement \r\na standard search.\r\n\r\n![fig](../Figures/1032/naive4.png)\r\n{:align=\"center\"}\r\n\r\n*Figure 1. Naive implementation.*\r\n{:align=\"center\"}\r\n\r\nThe problem is we don't know how many characters to match.\r\nOn the example above, should we try to match the last three stream characters\r\n\"jkl\", the last two \"kl\", or the last one \"l\"?  \r\n\r\nThe way to solve the problem is to notice that we always know \r\nthe last character to match. That gives us an idea to build a trie\r\nof _reversed_ words, and try to match the _reversed_ stream of characters.\r\n\r\n![fig](../Figures/1032/reverse.png)\r\n{:align=\"center\"}\r\n\r\n*Figure 2. Trie of the reversed words and the reversed stream of characters.*\r\n{:align=\"center\"}\r\n\r\nThis way, instead of multiple choices to match, we always have one path: \r\nto match character by character starting from the end of the stream.\r\nWe could stop once we meet the \"end of word\" label, which means success.\r\nIf we couldn't match a character before we meet that label, that means fail.\r\n\r\n**Constructor StreamChecker**\r\n\r\nTrie is usually implemented as nested hashmaps.\r\nAt each step, one has to verify if the child node to add is already present. If yes, \r\nwe go one level down. If not, we add the node into a trie and then go one step down.\r\nThe particularity of the current problem is that we add \r\nin the trie the _reversed_ words. \r\n\r\nThe last thing to discuss is how to store the reversed stream of characters.\r\nFor that, we need a structure for which `appendleft` / `addFirst` \r\noperation takes a constant time. The good choice here is \r\n_double ended queue_, it's implemented as [deque](https://docs.python.org/3/library/collections.html#collections.deque)\r\nin Python, and as [ArrayDeque](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html) in Java.\r\n\r\n<iframe src=\"https://leetcode.com/playground/4ef8bHhB/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"4ef8bHhB\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity: $$\\mathcal{O}(N \\cdot M)$$, where \r\n$$N$$ is a number of input words, and $$M$$ is the word length.\r\nWe have $$N$$ words to process. \r\nAt each step, we either examine or create a node in the trie. \r\nThat takes only $$M$$ operations.\r\n\r\n* Space complexity: $$\\mathcal{O}(N \\cdot M)$$. \r\nIn the worst-case newly inserted \r\nkey doesn't share a prefix with the keys already added in the trie. \r\nWe have to add $$N \\cdot M$$ new nodes, which takes \r\n$$\\mathcal{O}(N \\cdot M)$$ space. \r\n\r\n**Query Implementation**\r\n\r\nThe search is very straightforward: we start from the end of the stream\r\nand check character by character, going down in trie. \r\n\r\n![fig](../Figures/1032/query.png)\r\n{:align=\"center\"}\r\n\r\n*Figure 3. Search in trie.*\r\n{:align=\"center\"}\r\n\r\n<iframe src=\"https://leetcode.com/playground/hHQcMjV8/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"hHQcMjV8\"></iframe>\r\n\r\n* Time complexity: $$\\mathcal{O}(M)$$, where $$M$$ is a max word length,\r\n_i.e._ the depth of trie.\r\n\r\n* Space complexity: $$\\mathcal{O}(M)$$ to keep a stream of characters.\r\nOne could limit the size of deque to be equal to the length of the longest\r\ninput word. \r\n\r\n**Implementation**\r\n\r\nLet's bring everything together. \r\n\r\n<iframe src=\"https://leetcode.com/playground/jUJVNMHN/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"jUJVNMHN\"></iframe>",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "923",
+            "count": 51,
+            "average": "4.529",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "stream-of-characters",
+    "playgroundData": {
+        "4ef8bHhB": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "stream-of-characters-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "hHQcMjV8": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "stream-of-characters-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "jUJVNMHN": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "stream-of-characters-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,278 @@
+{
+    "id": "678",
+    "question": {
+        "questionId": "678",
+        "questionFrontendId": "678",
+        "boundTopicId": null,
+        "title": "Valid Parenthesis String",
+        "titleSlug": "valid-parenthesis-string",
+        "content": "<p>Given a string <code>s</code> containing only three types of characters: <code>&#39;(&#39;</code>, <code>&#39;)&#39;</code> and <code>&#39;*&#39;</code>, return <code>true</code> <em>if</em> <code>s</code> <em>is <strong>valid</strong></em>.</p>\n\n<p>The following rules define a <strong>valid</strong> string:</p>\n\n<ul>\n\t<li>Any left parenthesis <code>&#39;(&#39;</code> must have a corresponding right parenthesis <code>&#39;)&#39;</code>.</li>\n\t<li>Any right parenthesis <code>&#39;)&#39;</code> must have a corresponding left parenthesis <code>&#39;(&#39;</code>.</li>\n\t<li>Left parenthesis <code>&#39;(&#39;</code> must go before the corresponding right parenthesis <code>&#39;)&#39;</code>.</li>\n\t<li><code>&#39;*&#39;</code> could be treated as a single right parenthesis <code>&#39;)&#39;</code> or a single left parenthesis <code>&#39;(&#39;</code> or an empty string <code>&quot;&quot;</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"()\"\n<strong>Output:</strong> true\n</pre><p><strong>Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"(*)\"\n<strong>Output:</strong> true\n</pre><p><strong>Example 3:</strong></p>\n<pre><strong>Input:</strong> s = \"(*))\"\n<strong>Output:</strong> true\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 100</code></li>\n\t<li><code>s[i]</code> is <code>&#39;(&#39;</code>, <code>&#39;)&#39;</code> or <code>&#39;*&#39;</code>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 3589,
+        "dislikes": 89,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Special Binary String\", \"titleSlug\": \"special-binary-string\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Check if a Parentheses String Can Be Valid\", \"titleSlug\": \"check-if-a-parentheses-string-can-be-valid\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "\"()\"\n\"(*)\"\n\"(*))\"",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Stack",
+                "slug": "stack",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Greedy",
+                "slug": "greedy",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Rubrik\", \"slug\": \"rubrik\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 0}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    bool checkValidString(string s) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public boolean checkValidString(String s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def checkValidString(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: bool\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def checkValidString(self, s: str) -> bool:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nbool checkValidString(char * s){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public bool CheckValidString(string s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar checkValidString = function(s) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} s\n# @return {Boolean}\ndef check_valid_string(s)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func checkValidString(_ s: String) -> Bool {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func checkValidString(s string) bool {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def checkValidString(s: String): Boolean = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun checkValidString(s: String): Boolean {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn check_valid_string(s: String) -> bool {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Boolean\n     */\n    function checkValidString($s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function checkValidString(s: string): boolean {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (check-valid-string s)\n  (-> string? boolean?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec check_valid_string(S :: unicode:unicode_binary()) -> boolean().\ncheck_valid_string(S) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec check_valid_string(s :: String.t) :: boolean\n  def check_valid_string(s) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"177.7K\", \"totalSubmission\": \"529.1K\", \"totalAcceptedRaw\": 177703, \"totalSubmissionRaw\": 529132, \"acRate\": \"33.6%\"}",
+        "hints": [],
+        "solution": {
+            "id": "246",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "\"()\"",
+        "metaData": "{\r\n  \"name\": \"checkValidString\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "246",
+        "content": "[TOC]\n\n#### Approach #1: Brute Force [Time Limit Exceeded]\n\n**Intuition and Algorithm**\n\nFor each asterisk, let's try both possibilities.\n\n<iframe src=\"https://leetcode.com/playground/HHVFGh2C/shared\" frameBorder=\"0\" name=\"HHVFGh2C\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N * 3^{N})$$, where $$N$$ is the length of the string.  For each asterisk we try 3 different values.  Thus, we could be checking the validity of up to $$3^N$$ strings.  Then, each check of validity is $$O(N)$$.\n\n* Space Complexity:  $$O(N)$$, the space used by our character array.\n\n---\n#### Approach #2: Dynamic Programming [Accepted]\n\n**Intuition and Algorithm**\n\nLet `dp[i][j]` be `true` if and only if the interval `s[i], s[i+1], ..., s[j]` can be made valid.  Then `dp[i][j]` is true only if:\n\n* `s[i]` is `'*'`, and the interval `s[i+1], s[i+2], ..., s[j]` can be made valid;\n\n* or, `s[i]` can be made to be `'('`, and there is some `k` in `[i+1, j]` such that `s[k]` can be made to be `')'`, plus the two intervals cut by `s[k]` (`s[i+1: k]` and `s[k+1: j+1]`) can be made valid;\n\n<iframe src=\"https://leetcode.com/playground/c2qhBzko/shared\" frameBorder=\"0\" name=\"c2qhBzko\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^3)$$, where $$N$$ is the length of the string.  There are $$O(N^2)$$ states corresponding to entries of `dp`, and we do an average of $$O(N)$$ work on each state.\n\n* Space Complexity:  $$O(N^2)$$, the space used to store intermediate results in `dp`.\n\n---\n#### Approach #3: Greedy [Accepted]\n\n**Intuition**\n\nWhen checking whether the string is valid, we only cared about the \"`balance`\": the number of extra, open left brackets as we parsed through the string.  For example, when checking whether '(()())' is valid, we had a balance of `1, 2, 1, 2, 1, 0` as we parse through the string: `'('` has 1 left bracket, `'(('` has 2, `'(()'` has 1, and so on.  This means that after parsing the first `i` symbols, (which may include asterisks,) we only need to keep track of what the `balance` could be.\n\nFor example, if we have string `'(***)'`, then as we parse each symbol, the set of possible values for the `balance` is `[1]` for `'('`; `[0, 1, 2]` for `'(*'`; `[0, 1, 2, 3]` for `'(**'`; `[0, 1, 2, 3, 4]` for `'(***'`, and `[0, 1, 2, 3]` for `'(***)'`.\n\nFurthermore, we can prove these states always form a contiguous interval.  Thus, we only need to know the left and right bounds of this interval.  That is, we would keep those intermediate states described above as `[lo, hi] = [1, 1], [0, 2], [0, 3], [0, 4], [0, 3]`.\n\n**Algorithm**\n\nLet `lo, hi` respectively be the smallest and largest possible number of open left brackets after processing the current character in the string.\n\nIf we encounter a left bracket (`c == '('`), then `lo++`, otherwise we could write a right bracket, so `lo--`.  If we encounter what can be a left bracket (`c != ')'`), then `hi++`, otherwise we must write a right bracket, so `hi--`.  If `hi < 0`, then the current prefix can't be made valid no matter what our choices are.  Also, we can never have less than `0` open left brackets.  At the end, we should check that we can have exactly 0 open left brackets.\n\n\n\n<iframe src=\"https://leetcode.com/playground/AP7MmhXJ/shared\" frameBorder=\"0\" name=\"AP7MmhXJ\" width=\"100%\" height=\"258\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of the string.  We iterate through the string once.\n\n* Space Complexity:  $$O(1)$$, the space used by our `lo` and `hi` pointers.  However, creating a new character array will take $$O(N)$$ space.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "243",
+            "count": 186,
+            "average": "3.425",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "valid-parenthesis-string",
+    "playgroundData": {
+        "HHVFGh2C": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "678_valid_stringmd5",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "java",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "c2qhBzko": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "678_valid_stringmd3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "java",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "AP7MmhXJ": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "678_valid_stringmd1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "java",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,193 @@
+{
+    "id": "865",
+    "question": {
+        "questionId": "865",
+        "questionFrontendId": "489",
+        "boundTopicId": null,
+        "title": "Robot Room Cleaner",
+        "titleSlug": "robot-room-cleaner",
+        "content": "<p>You are controlling a robot that is located somewhere in a room. The room is modeled as an <code>m x n</code> binary grid where <code>0</code> represents a wall and <code>1</code> represents an empty slot.</p>\n\n<p>The robot starts at an unknown location in the room that is guaranteed to be empty, and you do not have access to the grid, but you can move the robot using the given API <code>Robot</code>.</p>\n\n<p>You are tasked to use the robot to clean the entire room (i.e., clean every empty cell in the room). The robot with the four given APIs can move forward, turn left, or turn right. Each turn is <code>90</code> degrees.</p>\n\n<p>When the robot tries to move into a wall cell, its bumper sensor detects the obstacle, and it stays on the current cell.</p>\n\n<p>Design an algorithm to clean the entire room using the following APIs:</p>\n\n<pre>\ninterface Robot {\n  // returns true if next cell is open and robot moves into the cell.\n  // returns false if next cell is obstacle and robot stays on the current cell.\n  boolean move();\n\n  // Robot will stay on the same cell after calling turnLeft/turnRight.\n  // Each turn will be 90 degrees.\n  void turnLeft();\n  void turnRight();\n\n  // Clean the current cell.\n  void clean();\n}\n</pre>\n\n<p><strong>Note</strong> that the initial direction of the robot will be facing up. You can assume all four edges of the grid are all surrounded by a wall.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Custom testing:</strong></p>\n\n<p>The input is only given to initialize the room and the robot&#39;s position internally. You must solve this problem &quot;blindfolded&quot;. In other words, you must control the robot using only the four mentioned APIs without knowing the room layout and the initial robot&#39;s position.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/07/17/lc-grid.jpg\" style=\"width: 500px; height: 314px;\" />\n<pre>\n<strong>Input:</strong> room = [[1,1,1,1,1,0,1,1],[1,1,1,1,1,0,1,1],[1,0,1,1,1,1,1,1],[0,0,0,1,0,0,0,0],[1,1,1,1,1,1,1,1]], row = 1, col = 3\n<strong>Output:</strong> Robot cleaned all rooms.\n<strong>Explanation:</strong> All grids in the room are marked by either 0 or 1.\n0 means the cell is blocked, while 1 means the cell is accessible.\nThe robot initially starts at the position of row=1, col=3.\nFrom the top left corner, its position is one row below and three columns right.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> room = [[1]], row = 0, col = 0\n<strong>Output:</strong> Robot cleaned all rooms.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == room.length</code></li>\n\t<li><code>n == room[i].length</code></li>\n\t<li><code>1 &lt;= m &lt;= 100</code></li>\n\t<li><code>1 &lt;= n &lt;= 200</code></li>\n\t<li><code>room[i][j]</code> is either <code>0</code> or <code>1</code>.</li>\n\t<li><code>0 &lt;= row &lt;&nbsp;m</code></li>\n\t<li><code>0 &lt;= col &lt; n</code></li>\n\t<li><code>room[row][col] == 1</code></li>\n\t<li>All the empty cells can be visited from the starting position.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Hard",
+        "likes": 2359,
+        "dislikes": 146,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Walls and Gates\", \"titleSlug\": \"walls-and-gates\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Shortest Path in a Hidden Grid\", \"titleSlug\": \"shortest-path-in-a-hidden-grid\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Path Cost in a Hidden Grid\", \"titleSlug\": \"minimum-path-cost-in-a-hidden-grid\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Spaces Cleaning Robot Cleaned\", \"titleSlug\": \"number-of-spaces-cleaning-robot-cleaned\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[[1,1,1,1,1,0,1,1],[1,1,1,1,1,0,1,1],[1,0,1,1,1,1,1,1],[0,0,0,1,0,0,0,0],[1,1,1,1,1,1,1,1]]\n1\n3\n[[1]]\n0\n0",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Backtracking",
+                "slug": "backtracking",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Interactive",
+                "slug": "interactive",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 14}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "/**\n * // This is the robot's control interface.\n * // You should not implement it, or speculate about its implementation\n * class Robot {\n *   public:\n *     // Returns true if the cell in front is open and robot moves into the cell.\n *     // Returns false if the cell in front is blocked and robot stays in the current cell.\n *     bool move();\n *\n *     // Robot will stay in the same cell after calling turnLeft/turnRight.\n *     // Each turn will be 90 degrees.\n *     void turnLeft();\n *     void turnRight();\n *\n *     // Clean the current cell.\n *     void clean();\n * };\n */\n\nclass Solution {\npublic:\n    void cleanRoom(Robot& robot) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "/**\n * // This is the robot's control interface.\n * // You should not implement it, or speculate about its implementation\n * interface Robot {\n *     // Returns true if the cell in front is open and robot moves into the cell.\n *     // Returns false if the cell in front is blocked and robot stays in the current cell.\n *     public boolean move();\n *\n *     // Robot will stay in the same cell after calling turnLeft/turnRight.\n *     // Each turn will be 90 degrees.\n *     public void turnLeft();\n *     public void turnRight();\n *\n *     // Clean the current cell.\n *     public void clean();\n * }\n */\n\nclass Solution {\n    public void cleanRoom(Robot robot) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "# \"\"\"\n# This is the robot's control interface.\n# You should not implement it, or speculate about its implementation\n# \"\"\"\n#class Robot(object):\n#    def move(self):\n#        \"\"\"\n#        Returns true if the cell in front is open and robot moves into the cell.\n#        Returns false if the cell in front is blocked and robot stays in the current cell.\n#        :rtype bool\n#        \"\"\"\n#\n#    def turnLeft(self):\n#        \"\"\"\n#        Robot will stay in the same cell after calling turnLeft/turnRight.\n#        Each turn will be 90 degrees.\n#        :rtype void\n#        \"\"\"\n#\n#    def turnRight(self):\n#        \"\"\"\n#        Robot will stay in the same cell after calling turnLeft/turnRight.\n#        Each turn will be 90 degrees.\n#        :rtype void\n#        \"\"\"\n#\n#    def clean(self):\n#        \"\"\"\n#        Clean the current cell.\n#        :rtype void\n#        \"\"\"\n\nclass Solution(object):\n    def cleanRoom(self, robot):\n        \"\"\"\n        :type robot: Robot\n        :rtype: None\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "# \"\"\"\n# This is the robot's control interface.\n# You should not implement it, or speculate about its implementation\n# \"\"\"\n#class Robot:\n#    def move(self):\n#        \"\"\"\n#        Returns true if the cell in front is open and robot moves into the cell.\n#        Returns false if the cell in front is blocked and robot stays in the current cell.\n#        :rtype bool\n#        \"\"\"\n#\n#    def turnLeft(self):\n#        \"\"\"\n#        Robot will stay in the same cell after calling turnLeft/turnRight.\n#        Each turn will be 90 degrees.\n#        :rtype void\n#        \"\"\"\n#\n#    def turnRight(self):\n#        \"\"\"\n#        Robot will stay in the same cell after calling turnLeft/turnRight.\n#        Each turn will be 90 degrees.\n#        :rtype void\n#        \"\"\"\n#\n#    def clean(self):\n#        \"\"\"\n#        Clean the current cell.\n#        :rtype void\n#        \"\"\"\n\nclass Solution:\n    def cleanRoom(self, robot):\n        \"\"\"\n        :type robot: Robot\n        :rtype: None\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "/**\n * // This is the robot's control interface.\n * // You should not implement it, or speculate about its implementation\n * interface Robot {\n *     // Returns true if the cell in front is open and robot moves into the cell.\n *     // Returns false if the cell in front is blocked and robot stays in the current cell.\n *     public bool Move();\n *\n *     // Robot will stay in the same cell after calling turnLeft/turnRight.\n *     // Each turn will be 90 degrees.\n *     public void TurnLeft();\n *     public void TurnRight();\n *\n *     // Clean the current cell.\n *     public void Clean();\n * }\n */\n\nclass Solution {\n    public void CleanRoom(Robot robot) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * // This is the robot's control interface.\n * // You should not implement it, or speculate about its implementation\n * function Robot() {\n *     // Returns true if the cell in front is open and robot moves into the cell.\n *     // Returns false if the cell in front is blocked and robot stays in the current cell.\n *     @return {boolean}\n *     this.move = function() {\n *         ...\n *     };\n *\n *     // Robot will stay in the same cell after calling turnLeft/turnRight.\n *     // Each turn will be 90 degrees.\n *     @return {void}\n *     this.turnLeft = function() {\n *         ...\n *     };\n * \n *     // Robot will stay in the same cell after calling turnLeft/turnRight.\n *     // Each turn will be 90 degrees.\n *     @return {void} \n *     this.turnRight = function() {\n *         ...\n *     };\n *\n *     // Clean the current cell.\n *     @return {void}\n *     this.clean = function() {\n *         ...\n *     };\n * };\n */\n\n/**\n * @param {Robot} robot\n * @return {void}\n */\nvar cleanRoom = function(robot) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# This is the robot's control interface.\n# You should not implement it, or speculate about its implementation\n# class Robot\n#    def move():\n#        Returns true if the cell in front is open and robot moves into the cell.\n#        Returns false if the cell in front is blocked and robot stays in the current cell.\n#    end\n#\n#    def turnLeft():\n#        Robot will stay in the same cell after calling turnLeft/turnRight.\n#        Each turn will be 90 degrees.\n#    end\n#\n#    def turnRight():\n#        Robot will stay in the same cell after calling turnLeft/turnRight.\n#        Each turn will be 90 degrees.\n#    end\n#\n#    def clean():\n#        Clean the current cell.\n#    end\n# end\n\n# @param {Robot} robot\n# @return {}\ndef cleanRoom(robot)\n\t\nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "/**\n * // This is the robot's control interface.\n * // You should not implement it, or speculate about its implementation\n * public class Robot {\n *     // Returns true if the cell in front is open and robot moves into the cell.\n *     // Returns false if the cell in front is blocked and robot stays in the current cell.\n *     public func move() -> Bool {}\n *\n *     // Robot will stay in the same cell after calling turnLeft/turnRight.\n *     // Each turn will be 90 degrees.\n *     public func turnLeft() {}\n *     public func turnRight() {}\n *\n *     // Clean the current cell.\n *     public func clean() {}\n * }\n */\n\nclass Solution {\n    func cleanRoom(_ robot: Robot) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "/**\n * // This is the robot's control interface.\n * // You should not implement it, or speculate about its implementation\n * type Robot struct {\n * }\n * \n * // Returns true if the cell in front is open and robot moves into the cell.\n * // Returns false if the cell in front is blocked and robot stays in the current cell.\n * func (robot *Robot) Move() bool {}\n *\n * // Robot will stay in the same cell after calling TurnLeft/TurnRight.\n * // Each turn will be 90 degrees.\n * func (robot *Robot) TurnLeft() {}\n * func (robot *Robot) TurnRight() {}\n *\n * // Clean the current cell.\n * func (robot *Robot) Clean() {}\n */\n\nfunc cleanRoom(robot *Robot) {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "/**\n * // This is the robot's control interface.\n * // You should not implement it, or speculate about its implementation\n * class Robot {\n *     // Returns true if the cell in front is open and robot moves into the cell.\n *     // Returns false if the cell in front is blocked and robot stays in the current cell.\n *     def move(): Boolean = {}\n *\n *     // Robot will stay in the same cell after calling turnLeft/turnRight.\n *     // Each turn will be 90 degrees.\n *     def turnLeft(): Unit = {}\n *     def turnRight(): Unit = {}\n *\n *     // Clean the current cell.\n *     def clean(): Unit = {}\n * }\n */\n\nobject Solution {\n    def cleanRoom(robot: Robot): Unit = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "/**\n * // This is the Robot's API interface.\n * // You should not implement it, or speculate about its implementation\n * class Robot {\n *     // Returns true if the cell in front is open and robot moves into the cell.\n *     // Returns false if the cell in front is blocked and robot stays in the current cell.\n *     fun move(): Boolean {}\n *\n *     // Robot will stay in the same cell after calling turnLeft/turnRight.\n *     // Each turn will be 90 degrees.\n *     fun turnLeft() {}\n *     fun turnRight() {}\n *\n *     // Clean the current cell.\n *     fun clean() {}\n * }\n */\n\nclass Solution {\n    fun cleanRoom(robot: Robot) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "/**\n * // This is the Robot's control interface.\n * // You should not implement it, or speculate about its implementation\n * class Robot {\n *     // Returns true if the cell in front is open and robot moves into the cell.\n *     // Returns false if the cell in front is blocked and robot stays in the current cell.\n *     function move() {}\n *\n *     // Robot will stay in the same cell after calling turnLeft/turnRight.\n *     // Each turn will be 90 degrees.\n *     function turnLeft() {}\n *     function turnRight() {}\n *\n *     // Clean the current cell.\n *     function clean() {}\n * }\n */\n\nclass Solution {\n    /**\n     * @param Robot $robot\n     * @return \n     */\n    function cleanRoom($robot) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "/**\n * class Robot {\n *      // Returns true if the cell in front is open and robot moves into the cell.\n *      // Returns false if the cell in front is blocked and robot stays in the current cell.\n * \t\tmove(): boolean {}\n * \t\t\n *      // Robot will stay in the same cell after calling turnLeft/turnRight.\n *      // Each turn will be 90 degrees.\n * \t\tturnRight() {}\n * \t\t\n *      // Robot will stay in the same cell after calling turnLeft/turnRight.\n *      // Each turn will be 90 degrees.\n * \t\tturnLeft() {}\n * \t\t\n * \t\t// Clean the current cell.\n * \t\tclean(): {}\n * }\n */\n\nfunction cleanRoom(robot: Robot) {\n\n};",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"128.5K\", \"totalSubmission\": \"168.5K\", \"totalAcceptedRaw\": 128519, \"totalSubmissionRaw\": 168520, \"acRate\": \"76.3%\"}",
+        "hints": [],
+        "solution": {
+            "id": "713",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "ac",
+        "sampleTestCase": "[[1,1,1,1,1,0,1,1],[1,1,1,1,1,0,1,1],[1,0,1,1,1,1,1,1],[0,0,0,1,0,0,0,0],[1,1,1,1,1,1,1,1]]\n1\n3",
+        "metaData": "{\n  \"name\": \"cleanRoom\",\n  \"params\": [\n    {\n      \"name\": \"room\",\n      \"type\": \"integer[][]\"\n    },\n    {\n      \"name\": \"row\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"col\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"void\"\n  },\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"csharp\",\n    \"javascript\",\n    \"golang\",\n    \"python3\",\n    \"kotlin\",\n    \"ruby\",\n    \"scala\",\n    \"php\",\n    \"swift\",\n    \"typescript\"\n  ],\n  \"manual\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "932",
+            "date": "2022-05-08",
+            "incompleteChallengeCount": 31,
+            "streakCount": 0,
+            "type": "WEEKLY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "713",
+        "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: Spiral Backtracking\n\n**Concepts to use**\n\nLet's use here two programming concepts.\n\n> The first one is called _constrained programming_. \n\nThat basically means\nto put restrictions after each robot move. Robot moves, and the cell is marked as `visited`. \nThat propagates \n_constraints_ and helps to reduce the number of combinations to consider.\n\n![bla](../Figures/489/489_constraints.png)\n\n> The second one called _backtracking_. \n\nLet's imagine that after several moves the robot is surrounded by the visited cells. \nBut several steps before there was a cell which proposed an alternative path to go. \nThat path wasn't used and hence the room is not yet cleaned up. \nWhat to do? _To backtrack_. \nThat means to come back to that cell,\nand to explore the alternative path. \n\n![bla](../Figures/489/489_backtrack.png)\n\n**Intuition**\n\nThis solution is based on the same idea as maze solving algorithm called [right-hand rule](https://en.wikipedia.org/wiki/Maze_solving_algorithm#Wall_follower).\nGo forward, cleaning and marking all the cells on the way\nas visited. At the obstacle _turn right_, again go forward, _etc_. \nAlways _turn right_ at the obstacles and then go forward. \nConsider already visited cells as \nvirtual obstacles.\n\n> What to do if after the right turn there is an obstacle just in front ?\n\n_Turn right_ again.\n\n> How to explore the alternative paths from the cell ? \n\nGo back to that cell\nand then _turn right_ from your last explored direction.\n\n> When to stop ?\n\nStop when you explored all possible paths, _i.e._ \nall `4` directions (up, right, down, and left) for each visited cell.\n\n**Algorithm**\n\nTime to write down the algorithm for the backtrack function \n`backtrack(cell = (0, 0), direction = 0)`.\n\n- Mark the cell as visited and clean it up.\n\n- Explore `4` directions : `up`, `right`, `down`, and `left` (the order\nis important since the idea is always to turn right) : \n\n    - Check the next cell in the chosen direction :\n    \n        - If it's not visited yet and there is no obtacles :\n            \n            - Move forward.\n            \n            - Explore next cells `backtrack(new_cell, new_direction)`.\n            \n            - Backtrack, _i.e._ go back to the previous cell.\n            \n        - Turn right because now there is an obstacle \n        (or a virtual obstacle) just in front.\n\n\n**Implementation**\n\n![bla](../Figures/489/489_implementation.png)\n\n<iframe src=\"https://leetcode.com/playground/gDY267JX/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"gDY267JX\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(N - M)$$, where $$N$$ is a number of cells\nin the room and $$M$$ is a number of obstacles.\n\n  - We visit each non-obstacle cell once and only once.\n  - At each visit, we will check 4 directions around the cell. Therefore, the total number of operations would be $$4 \\cdot (N-M)$$.\n\n* Space complexity : $$O(N - M)$$, where $$N$$ is a number of cells\nin the room and $$M$$ is a number of obstacles.\n\n  - We employed a hashtable to keep track of whether a non-obstacle cell is visited or not.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "698",
+            "count": 162,
+            "average": "4.241",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "robot-room-cleaner",
+    "playgroundData": {
+        "gDY267JX": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "robot-room-cleaner-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "id": "1135",
+    "question": {
+        "questionId": "1135",
+        "questionFrontendId": "1045",
+        "boundTopicId": null,
+        "title": "Customers Who Bought All Products",
+        "titleSlug": "customers-who-bought-all-products",
+        "content": "<p>Table: <code>Customer</code></p>\n\n<pre>\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| customer_id | int     |\n| product_key | int     |\n+-------------+---------+\nThere is no primary key for this table. It may contain duplicates.\nproduct_key is a foreign key to <code>Product</code> table.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Table: <code>Product</code></p>\n\n<pre>\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| product_key | int     |\n+-------------+---------+\nproduct_key is the primary key column for this table.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to report the customer ids from the <code>Customer</code> table that bought all the products in the <code>Product</code> table.</p>\n\n<p>Return the result table in <strong>any order</strong>.</p>\n\n<p>The query result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nCustomer table:\n+-------------+-------------+\n| customer_id | product_key |\n+-------------+-------------+\n| 1           | 5           |\n| 2           | 6           |\n| 3           | 5           |\n| 3           | 6           |\n| 1           | 6           |\n+-------------+-------------+\nProduct table:\n+-------------+\n| product_key |\n+-------------+\n| 5           |\n| 6           |\n+-------------+\n<strong>Output:</strong> \n+-------------+\n| customer_id |\n+-------------+\n| 1           |\n| 3           |\n+-------------+\n<strong>Explanation:</strong> \nThe customers who bought all the products (5 and 6) are customers with IDs 1 and 3.\n</pre>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Medium",
+        "likes": 195,
+        "dislikes": 37,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "{\"headers\":{\"Customer\":[\"customer_id\",\"product_key\"],\"Product\":[\"product_key\"]},\"rows\":{\"Customer\":[[1,5],[2,6],[3,5],[3,6],[1,6]],\"Product\":[[5],[6]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "# Write your MySQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "/* Write your T-SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "/* Write your PL/SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"40.1K\", \"totalSubmission\": \"59.4K\", \"totalAcceptedRaw\": 40126, \"totalSubmissionRaw\": 59429, \"acRate\": \"67.5%\"}",
+        "hints": [],
+        "solution": null,
+        "status": null,
+        "sampleTestCase": "{\"headers\":{\"Customer\":[\"customer_id\",\"product_key\"],\"Product\":[\"product_key\"]},\"rows\":{\"Customer\":[[1,5],[2,6],[3,5],[3,6],[1,6]],\"Product\":[[5],[6]]}}",
+        "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Customer (customer_id int, product_key int)\",\n    \"Create table Product (product_key int)\"\n  ],\n  \"mssql\": [\n    \"Create table Customer (customer_id int, product_key int)\",\n    \"Create table Product (product_key int)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Customer (customer_id int, product_key int)\",\n    \"Create table Product (product_key int)\"\n  ],\n  \"database\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists Customer (customer_id int, product_key int)",
+            "Create table Product (product_key int)",
+            "Truncate table Customer",
+            "insert into Customer (customer_id, product_key) values ('1', '5')",
+            "insert into Customer (customer_id, product_key) values ('2', '6')",
+            "insert into Customer (customer_id, product_key) values ('3', '5')",
+            "insert into Customer (customer_id, product_key) values ('3', '6')",
+            "insert into Customer (customer_id, product_key) values ('1', '6')",
+            "Truncate table Product",
+            "insert into Product (product_key) values ('5')",
+            "insert into Product (product_key) values ('6')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": null,
+    "questionCode": "customers-who-bought-all-products",
+    "playgroundData": null
+}

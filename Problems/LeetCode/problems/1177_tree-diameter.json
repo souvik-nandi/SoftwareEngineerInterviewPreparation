@@ -1,0 +1,288 @@
+{
+    "id": "1177",
+    "question": {
+        "questionId": "1177",
+        "questionFrontendId": "1245",
+        "boundTopicId": null,
+        "title": "Tree Diameter",
+        "titleSlug": "tree-diameter",
+        "content": "<p>The <strong>diameter</strong> of a tree is <strong>the number of edges</strong> in the longest path in that tree.</p>\n\n<p>There is an undirected tree of <code>n</code> nodes labeled from <code>0</code> to <code>n - 1</code>. You are given a 2D array <code>edges</code> where <code>edges.length == n - 1</code> and <code>edges[i] = [a<sub>i</sub>, b<sub>i</sub>]</code> indicates that there is an undirected edge between nodes <code>a<sub>i</sub></code> and <code>b<sub>i</sub></code> in the tree.</p>\n\n<p>Return <em>the <strong>diameter</strong> of the tree</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/01/19/tree1.jpg\" style=\"width: 224px; height: 145px;\" />\n<pre>\n<strong>Input:</strong> edges = [[0,1],[0,2]]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The longest path of the tree is the path 1 - 0 - 2.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/01/19/tree2.jpg\" style=\"width: 224px; height: 225px;\" />\n<pre>\n<strong>Input:</strong> edges = [[0,1],[1,2],[2,3],[1,4],[4,5]]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> The longest path of the tree is the path 3 - 2 - 1 - 4 - 5.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == edges.length + 1</code></li>\n\t<li><code>1 &lt;= n &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= a<sub>i</sub>, b<sub>i</sub> &lt; n</code></li>\n\t<li><code>a<sub>i</sub> != b<sub>i</sub></code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Medium",
+        "likes": 641,
+        "dislikes": 16,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Count Subtrees With Max Distance Between Cities\", \"titleSlug\": \"count-subtrees-with-max-distance-between-cities\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[[0,1],[0,2]]\n[[0,1],[1,2],[2,3],[1,4],[4,5]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Tree",
+                "slug": "tree",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Graph",
+                "slug": "graph",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Topological Sort",
+                "slug": "topological-sort",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}], \"1\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int treeDiameter(vector<vector<int>>& edges) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int treeDiameter(int[][] edges) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def treeDiameter(self, edges):\n        \"\"\"\n        :type edges: List[List[int]]\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def treeDiameter(self, edges: List[List[int]]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint treeDiameter(int** edges, int edgesSize, int* edgesColSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int TreeDiameter(int[][] edges) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[][]} edges\n * @return {number}\n */\nvar treeDiameter = function(edges) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[][]} edges\n# @return {Integer}\ndef tree_diameter(edges)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func treeDiameter(_ edges: [[Int]]) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func treeDiameter(edges [][]int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def treeDiameter(edges: Array[Array[Int]]): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun treeDiameter(edges: Array<IntArray>): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn tree_diameter(edges: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[][] $edges\n     * @return Integer\n     */\n    function treeDiameter($edges) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function treeDiameter(edges: number[][]): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (tree-diameter edges)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec tree_diameter(Edges :: [[integer()]]) -> integer().\ntree_diameter(Edges) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec tree_diameter(edges :: [[integer]]) :: integer\n  def tree_diameter(edges) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"27K\", \"totalSubmission\": \"43.6K\", \"totalAcceptedRaw\": 26980, \"totalSubmissionRaw\": 43591, \"acRate\": \"61.9%\"}",
+        "hints": [
+            "Start at any node A and traverse the tree to find the furthest node from it, let's call it B.",
+            "Having found the furthest node B, traverse the tree from B to find the furthest node from it, lets call it C.",
+            "The distance between B and C is the tree diameter."
+        ],
+        "solution": {
+            "id": "1073",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[[0,1],[0,2]]",
+        "metaData": "{\n  \"name\": \"treeDiameter\",\n  \"params\": [\n    {\n      \"name\": \"edges\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}\n",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1073",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Overview\n\nIn this article, we will present three approaches: two are in BFS and one in DFS.\n\nAs a spoiler alert, if one has solved any of the following problems, one would have a head start to solve this problem.\nOn the other hand, solving this problem would also help one to solve the following problems.\n\n- [Minium Height Tree](https://leetcode.com/problems/minimum-height-trees/)\n\n- [Diameter of N-ary Tree](https://leetcode.com/problems/diameter-of-n-ary-tree/)\n\n\n---\n#### Approach 1: Farthest Nodes via BFS\n\n**Intuition**\n\nIn this first approach, let us follow the hints of the problem, which suggest us to run BFS _(Breadth-First Search)_ for two rounds.\nFor those of you who are not familiar with the concept of BFS, we would recommend one to check out our [Explore card](https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/) about BFS.\n\nIn the problem, we are asked to find the **_diameter_** of the graph, which by definition is the **distance** between two nodes that are the farthest apart.\n\n>According to the definition, the problem could be solved if we could **identify** the two nodes that have the longest distance among all.\nLet us refer to these two nodes as the **extreme peripheral** nodes.\n\nFirst of all, we assert that starting from any node in the graph, if we run a BFS traversal, the **last** node that we visit would be one of the extreme nodes.\nAn intuition that supports the above assertion is that as an extreme peripheral node, it should be the one that is far away from any of the other nodes in the graph.\nGiven any node, the longest distance that starts from this node must end with one of the extreme peripheral nodes.\n\n![example of peripheral nodes](../Figures/1245/1245_peripheral_nodes.png)\n\nOnce we identify one of the extreme peripheral nodes, we then could apply again the BFS traversal.\nBut this time, we would start from the identified extreme peripheral node.\nAt the end of the second BFS traversal, we would land on another extreme peripheral node.\nThe distance that we traverse would be the **diameter** of the graph, according to the definition.\n\n\n**Algorithm**\n\nFollowing the above intuition, the main algorithm is to find two _extreme peripheral_ nodes via **BFS** traversal.\n\nLet us define a function called `bfs(start)` which returns two results: **1).** the farthest node starting from the `start` node; **2).** the distance between the start and the farthest nodes.\n\nAs the name suggests, we could apply the BFS (Breadth-First Search) traversal to implement the above function.\n\nOnce the `bfs(start)` is implemented, we simply invoke it **twice** to solve the problem.\nIn the first invocation, we would obtain one of the extreme peripheral nodes.\nWith the obtained peripheral node, we then invoke the function again to obtain the other extreme peripheral node and more importantly the distance between the two extreme peripheral nodes.\n\n<iframe src=\"https://leetcode.com/playground/UohuNckg/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"UohuNckg\"></iframe>\n\n\n\n**Complexity Analysis**\n\nLet $$N$$ be the number of nodes in the graph, then the number of edges in the graph would be $$N-1$$ as specified in the problem.\n\n- Time Complexity: $$\\mathcal{O}(N)$$\n\n    - First we iterate through all edges to build an adjacency list representation of the graph.\n    The time complexity of this step would be $$\\mathcal{O}(N)$$.\n\n    - In the main algorithm, we perform the BFS traversal twice on the graph.\n    Each traversal will take $$\\mathcal{O}(N)$$ time, where we visit each node once and only once.\n\n    - To sum up, the overall time complexity of the algorithm is $$\\mathcal{O}(N) + 2 \\cdot \\mathcal{O}(N) = \\mathcal{O}(N)$$.\n\n\n- Space Complexity: $$\\mathcal{O}(N)$$\n\n    - We used an adjacency list representation for the graph, whose space would be proportional to the total number of nodes and edges in the graph.\n    Since the graph is undirected (_i.e._ the edge is bi-directional), the number of neighbors in the adjacency list would be twice the number of edges.\n    Therefore, the space needed for the graph would be $$\\mathcal{O}(N + 2 \\cdot N) = \\mathcal{O}(N)$$.\n\n    - During the BFS traversal, we used an array to indicate the state of each node (whether it is visited or not).\n    This array would consume $$\\mathcal{O}(N)$$ space.\n\n    - During the BFS traversal, in addition, we used some queues to keep track of the nodes to be visited at each level (_i.e._ hop).\n    At any given moment, we will keep no more than two levels of nodes in the queues.\n    In the worst case, the queue could cover almost all nodes in the graph.\n    As a result, the space complexity of the queues would be $$\\mathcal{O}(N)$$.\n\n    - To sum up, the overall space complexity of the algorithm is $$\\mathcal{O}(N) + \\mathcal{O}(N) + \\mathcal{O}(N) = \\mathcal{O}(N)$$.\n\n\n---\n#### Approach 2: Centroids of Graph via BFS\n\n**Intuition**\n\nAnother concept that is closely related to the concept of diameter is called **centroid**.\nIntuitively, the centroid nodes are the ones that are situated in the center of a graph.\nMore precisely, the distance from the centroid to other nodes in the graph should be _overall_ minimal, which is the opposite of the _extreme peripheral_ nodes that we defined before.\n\n>Indeed, if we could identify the centroid of a graph, then the distance from this centroid to any of its extreme peripheral nodes would be **_half_** of the diameter of the graph.\n\nBy identifying the centroids nodes in a tree-alike graph, we could solve another similar problem called [Minimum Height Tree](https://leetcode.com/problems/minimum-height-trees/).\n\nThere would be either **one** or **two** centroids in a tree-alike graph, and one can find a detailed proof in the solution of the [Minimum Height Tree](https://leetcode.com/problems/minimum-height-trees/solution/).\n\n![one centroid](../Figures/1245/1245_one_centroid.png)\n\n- In the above example where there is only one centroid, the diameter would be exactly twice of the distance between the centroid and any of extreme peripheral nodes (_i.e._ node `3` and node `5`).\n\n![two centroids](../Figures/1245/1245_two_centroids.png)\n\n- In the above example where there are two centroids, the diameter would be one plus the distance between a pair of centroid and extreme peripheral node, by taking into account the distance between the two centroids.\n\n\n**Algorithm**\n\nIn order to identify the centroids, we could apply the [topological sorting](https://en.wikipedia.org/wiki/Topological_sorting) algorithm here.\nThe main idea is that we start from the peripheral nodes (which are also known as leaf nodes), then we trim the nodes off layer by layer, as if we are peel an _\"onion\"_ till we reach its core (_i.e._ centroids).\n\nAgain, one can find more details in the [solution of Minium Height Tree](https://leetcode.com/problems/minimum-height-trees/solution/).\nHere we present a sample implementation.\n\nNote that, one particularity of our _topological sorting_ algorithm here is that while we trim off the nodes layer by layer, we count the number of steps for us to reach the centroids.\nThe number of steps is also the distance between the centroids and the peripheral nodes, which is essential for the calculation of diameter.\n\n<iframe src=\"https://leetcode.com/playground/SWCw3SZb/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"SWCw3SZb\"></iframe>\n\nIn certain sense, we could also consider the above _topological sorting_ as a sort of **_BFS Traversal_**, where we traverse the graph from the outer most layer of the graph (_i.e._ leaf nodes), _level by level_, into its inner most layer (_i.e._ centroids).\n\n**Complexity Analysis**\n\nLet $$N$$ be the number of nodes in the graph, then the number of edges in the graph would be $$N-1$$ as specified in the problem.\n\n- Time Complexity: $$\\mathcal{O}(N)$$\n\n    - First we iterate through all edges to build an adjacency list representation of the graph.\n    The time complexity of this step would be $$\\mathcal{O}(N)$$.\n\n    - In the main algorithm, we peel the graph until there are only centroids left.\n    During the traversal, we visit each node once and only once.\n    As a result, it will take $$\\mathcal{O}(N)$$ time.\n\n    - To sum up, the overall time complexity of the algorithm is $$\\mathcal{O}(N) + \\mathcal{O}(N) = \\mathcal{O}(N)$$.\n\n\n- Space Complexity: $$\\mathcal{O}(N)$$\n\n    - Similar to the previous approach, we used an adjacency list to keep the graph, whose space complexity is $$\\mathcal{O}(N)$$ as we discussed before.\n\n    - During the topological sorting, we used some queues to keep track of the leaf nodes to be visited at each layer.\n    At any given moment, we will keep no more than two levels of nodes in the queues.\n    In the worst case, the queue could cover almost all nodes in the graph.\n    As a result, the space complexity of the queues would be $$\\mathcal{O}(N)$$.\n\n    - To sum up, the overall space complexity of the algorithm is $$\\mathcal{O}(N) + \\mathcal{O}(N) = \\mathcal{O}(N)$$.\n\n\n---\n#### Approach 3: DFS (Depth-First Search)\n\n**Intuition**\n\nWe applied the BFS strategy in the first approach to solve the problem.\nAs is often the case, we could also apply another common strategy called **DFS** ([Depth-First Search](https://leetcode.com/explore/learn/card/queue-stack/232/practical-application-stack/)).\nThis happens to be the case for this problem as well.\n\nOne can take the inspiration from another similar problem called [Diameter of N-ary Tree](https://leetcode.com/problems/diameter-of-n-ary-tree/).\nAt the first glance, one might even consider them as the same problem.\n\n>Actually, the only difference between them lies in the **input**.\nIn this problem, our input is a list of bi-directional edges, which we could convert into a representation of **Graph**;\nWhile for the problem of [Diameter of N-ary Tree](https://leetcode.com/problems/diameter-of-n-ary-tree/), the input is a **Tree** data structure, where the edges are uni-directional.\n\nFirst of all, we will use the concepts of **_leaf nodes_** and **parent nodes** as in a Tree data structure.\nFor a parent node, if we could obtain **two longest distances** (denoted as `t1` and `t2`) starting from this parent node to any of its descendant leaf nodes, then the **_longest path_** that traverse this parent node would be `t1 + t2`.\n\nSince any node in the graph has the potential to be part of the **path** that forms the diameter of the graph,\nwe can iterate through each node to obtain all the **_longest paths_** as we defined shortly before.\nThe **_diameter_** of the graph would be the maximum among all the longest paths that traverse each node.\n\nHere we show an example where we assume the node `0` in the graph as the root node.\n\n![longest distance](../Figures/1245/1245_longest_distances.png)\n\nAs shown in the above example, we also indicate two longest distances for each node.\nNote that, if a parent node has only one child node, then it can only have one longest distance to the leaf nodes.\nThe second longest distance for this parent node would be zero.\nBy adding the two longest distances together for each node, we would know that the node `1` has the longest path (_i.e._ with distance of `4`) among all.\n\n**Algorithm**\n\nGiven the above intuition, we could apply the DFS (Depth-First Search) strategy to obtain the **longest** path that traverse each node.\n\nDuring the DFS traversal, we would also update the diameter with the longest path that we obtain at each node.\n\n- First of all, we could convert the input edges into the adjacency list, which this time we would treat as Tree, rather than Graph.\nWe assume the node with the index of `0` as the root node.\n\n- We then define a function named `dfs(curr, visited)` which returns the maximal distance starting from the `curr` node to any of its descendant leaf nodes.\nThe `visited` parameter is used to keep track of the nodes that we've visited so far.\n\n- Within the function of `dfs(curr, visited)`, we will obtain the top two maximal distances starting from the `curr` node.\nWith these top two distances, we can then update the global `diameter` that we've seen so far.\n\n- Once we traverse the entire tree once and only once, we will obtain the `diameter` of the tree/graph.\n\n<iframe src=\"https://leetcode.com/playground/De6Xky2b/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"De6Xky2b\"></iframe>\n\n\n\n**Complexity Analysis**\n\nLet $$N$$ be the number of nodes in the graph, then the number of edges in the graph would be $$N-1$$ as specified in the problem.\n\n- Time Complexity: $$\\mathcal{O}(N)$$\n\n    - First we iterate through all edges to build an adjacency list representation of the graph, which we will treat as a tree with node `0` as the root node.\n    The time complexity of this step would be $$\\mathcal{O}(N)$$.\n\n    - In the main algorithm, we traverse the tree/graph via DFS.\n    During the traversal, we visit each node once and only once.\n    As a result, it will take $$\\mathcal{O}(N)$$ time.\n\n    - To sum up, the overall time complexity of the algorithm is $$\\mathcal{O}(N) + \\mathcal{O}(N) = \\mathcal{O}(N)$$.\n\n\n- Space Complexity: $$\\mathcal{O}(N)$$\n\n    - Similar to the previous approach, we used an adjacency list to keep the graph, whose space complexity is $$\\mathcal{O}(N)$$ as we discussed before.\n\n    - During the DFS traversal, we used an array (`visited`) to keep track of the nodes we visited so far.\n    The space complexity of the array is $$\\mathcal{O}(N)$$.\n\n    - Since we apply recursion in the DFS traversal, which will incur additional memory consumption in the function call stack.\n    In the worst case where all the nodes are chained up as a line, starting from the root node, the memory consumption for the call stack would be $$\\mathcal{O}(N)$$.\n\n    - To sum up, the overall space complexity of the algorithm is $$\\mathcal{O}(N) + \\mathcal{O}(N) + \\mathcal{O}(N) = \\mathcal{O}(N)$$.\n\n\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1028",
+            "count": 15,
+            "average": "4.267",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "tree-diameter",
+    "playgroundData": {
+        "UohuNckg": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "tree-diameter-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "SWCw3SZb": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "tree-diameter-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "De6Xky2b": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "tree-diameter-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

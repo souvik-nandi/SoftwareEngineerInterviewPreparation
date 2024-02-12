@@ -1,0 +1,342 @@
+{
+    "id": "629",
+    "question": {
+        "questionId": "629",
+        "questionFrontendId": "629",
+        "boundTopicId": null,
+        "title": "K Inverse Pairs Array",
+        "titleSlug": "k-inverse-pairs-array",
+        "content": "<p>For an integer array <code>nums</code>, an <strong>inverse pair</strong> is a pair of integers <code>[i, j]</code> where <code>0 &lt;= i &lt; j &lt; nums.length</code> and <code>nums[i] &gt; nums[j]</code>.</p>\n\n<p>Given two integers n and k, return the number of different arrays consist of numbers from <code>1</code> to <code>n</code> such that there are exactly <code>k</code> <strong>inverse pairs</strong>. Since the answer can be huge, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3, k = 0\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> Only the array [1,2,3] which consists of numbers from 1 to 3 has exactly 0 inverse pairs.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3, k = 1\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The array [1,3,2] and [2,1,3] have exactly 1 inverse pair.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 1000</code></li>\n\t<li><code>0 &lt;= k &lt;= 1000</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 789,
+        "dislikes": 113,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "3\n0\n3\n1",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Works Applications\", \"slug\": \"works-applications\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int kInversePairs(int n, int k) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int kInversePairs(int n, int k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def kInversePairs(self, n, k):\n        \"\"\"\n        :type n: int\n        :type k: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def kInversePairs(self, n: int, k: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint kInversePairs(int n, int k){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int KInversePairs(int n, int k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} n\n * @param {number} k\n * @return {number}\n */\nvar kInversePairs = function(n, k) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer} n\n# @param {Integer} k\n# @return {Integer}\ndef k_inverse_pairs(n, k)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func kInversePairs(_ n: Int, _ k: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func kInversePairs(n int, k int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def kInversePairs(n: Int, k: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun kInversePairs(n: Int, k: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn k_inverse_pairs(n: i32, k: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer $k\n     * @return Integer\n     */\n    function kInversePairs($n, $k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function kInversePairs(n: number, k: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (k-inverse-pairs n k)\n  (-> exact-integer? exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec k_inverse_pairs(N :: integer(), K :: integer()) -> integer().\nk_inverse_pairs(N, K) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec k_inverse_pairs(n :: integer, k :: integer) :: integer\n  def k_inverse_pairs(n, k) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"25.3K\", \"totalSubmission\": \"67.9K\", \"totalAcceptedRaw\": 25311, \"totalSubmissionRaw\": 67890, \"acRate\": \"37.3%\"}",
+        "hints": [],
+        "solution": {
+            "id": "185",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "3\n0",
+        "metaData": "{\r\n  \"name\": \"kInversePairs\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "987",
+            "date": "2022-07-17",
+            "incompleteChallengeCount": 14,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "185",
+        "content": "[TOC]\n\n## Solution\n\n \n#### Approach 1: Brute Force\n\nThe most naive solution is to generate every permutation of the array consisting of numbers from $$1$$ to $$n$$. Then, we can find out the number of inverse pairs in every array to determine if it is equal to $$k$$. We can find out the count of permutations with the required number of inverse pairs. But, this solution is very terrible in terms of time complexity. Thus, we move on to the better approaches directly.\n\n\n**Complexity Analysis**\n\n* Time complexity : $$O\\big(n! \\cdot n \\log n\\big)$$. A total of $$n!$$ permutations will be generated. We need $$O\\big(n \\log n\\big)$$ time to find the number of inverse pairs in every such permutation, by making use of merge sort. Here, $$n$$ refers to the given integer $$n$$.\n\n* Space complexity : $$O(n)$$. Each array generated during the permutations will require $$n$$ space.\n<br />\n<br />\n---\n\n#### Approach 2: Using Recursion with Memoization\n\nBefore we discuss the solution, let's look at the idea behind it. Let's say, $$n$$ represents the given number defining the upper limit of the elements in the arrays being considered and $$k$$ represents the number of inverse pairs in the current array.\n\nLet's start with a simple example with $$n=4$$, no $$k$$ is defined right now. Now, for $$k=0$$, the only possible arrangement for the given array $$a_0$$ will be `[1,2,3,4]`, since all the greater elements lie after the smaller elements. Now, in order to generate an arrangement with any arbitrary $$k$$ value, we need to shift, an arbitrary number of elements(let's say $$x$$ elements) in the array $$a_0$$ towards the left, with each displacement(shift) being $$s_1, s_2, ...., s_x$$, such that the sum of these shifts equals $$k$$.\n\nTo see what we mean by the above statement, let's look at the case for `[1,2,4,3]`. The number of inverse pairs in this array is 1. This array is obtained by shifting the number 4 by one position towards the left. \n\nSimilarly, consider the case for `[2,4,1,3]`. This array can be obtained from $$a_0$$ by shifting 2 by one position towards the left first and then shifting 4 by 2 positions towards the left. Thus, the total number of displacements is 3, which is equal to the number of inverse pairs in the new array. \n\nThis rule of displacements holds true because, whenever a number is shifted $$y$$ times towards the left starting from the array $$a_0$$, after the shift, $$y$$ numbers smaller than it lie towards its right, giving a total of $$y$$ inverse pairs. \n\nNow, let's say, we start with the one of the arrangements $$a_3$$ `[2,4,1,3]`, with $$k=3$$. Now, if we want to add a new number 5 to this array to consider an array with $$n=5$$, let's say, initially, we append it to the end of $$a_3$$. Now, the new array will be `[2,4,1,3,5]`. Since, the largest number is added at the end, the new number 5 doesn't add any new inverse pair to the total set of inverse pairs relative to the ones in $$a_3$$(3). \n\nNow, all the numbers in $$a_3$$ are smaller than 5. Thus, if we add 5 at a position $$y$$ steps from the right, $$y$$ smaller numbers will lie towards its right. Thus, a total of $$y$$ inverse pairs will exist with 5 being one of the elements in these pairs. \n\nThus, adding 5 at $$y$$ steps from the right adds a total of $$y$$ inverse pairs to the total set of inverse pairs in $$a_3$$ giving a total of $$3+y$$ inverse pairs now.\n\nLooking at the same statement from another point of view, we can say that, if we know the number of inverse pairs(say $$x$$) in any arbitrary array $$b$$ with some $$n$$, we can add a new element $$n+1$$ to this array $$b$$ at a position $$p$$ steps from the right, such that $$x+p=k$$ to generate an array with a total of $$k$$ inverse pairs. \n\nExtending this idea further, suppose we know the number of arrangements of an array with $$n-1$$ elements, with the number of inverse pairs being $$0, 1, 2,..., k$$, let's say being equal to $$count_0, count_1, count_2,.., count_k$$. Now, we can determine the number of arrangements of an array with $$n$$ elements with exactly $$k$$ inverse pairs easily. \n\nTo generate the arrangements with exactly $$k$$ inverse pairs and $$n$$ elements, we can add the new number $$n$$ to all the arrangements with $$k$$ inverse pairs at the last position. For the arrangements with $$k-1$$ inverse pairs , we can add $$n$$ at a position 1 step from the right. \n\nSimilarly, for an element with $$k-i$$ number of inverse pairs, we can add this new number $$n$$ at a position $$i$$ steps from the right. Each of these updations to the arrays leads to a new arrangement, each with the number of inverse pairs being equal to $$k$$. \n\nThe following image shows an example of how this is done for n=5 and k=4:\n\n![Inversions](../Figures/629/629_kinverse.PNG)\n{:align=\"center\"}\n\nThus, to obtain the number of arrangements with exactly $$k$$ inverse pairs and $$n$$ numbers will be given by $$count_0 + count_1 + ... + count_k$$.\n\nFrom the above discussion, we can obtain the recursive formula for finding the number of arrangements with exactly $$k$$ inverse pairs as follows. Let's say $$count(i,j)$$ represents the number of arrangements with $$i$$ elements and exactly $$j$$ inverse pairs.\n\n1. If $$n=0$$, no inverse pairs exist. Thus, $$count(0,k)=0$$.\n\n2. If $$k=0$$, only one arrangement is possible, which is all numbers sorted in ascending order. Thus, $$count(n,0)=1$$.\n\n3. Otherwise, $$count(n,k) = \\sum_{i=0}^{min(k,n-1)} count(n-1, k-i)$$. \n\nNote that the upper limit on the summation is $$\\text{min}(k,n-1)$$. This is because for $$i>k$$, $$k-i<0$$. No arrangement exists with negative number of inverse pairs. The reason for the other factor can be seen as follows. \n\nTo generate a new arrangement adding $$k-i$$ new inverse pairs after adding the $$n^{th}$$ number, we need to add this number at the $$i^{th}$$ position from the right. For an array with size $$n$$, only $$n-1$$ maximum shifts are possible.\n\nWe need to take the modulus at every step to keep the answer within integral limits.\n\nWe can see that a lot of duplicate function calls are made in the normal recursive solution. We can remove this redundancy by making use of a memoization array which stores the result for any function call `kInversePairs(i,j)` in $$memo[i][j]$$. Thus, whenver a duplicate function call is made again, we can return the result directly from this memoization array. This prunes the search space to a great extent.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/Q56AyaS9/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"Q56AyaS9\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(nk\\min(n, k))$$. The function `kInversePairs` is called $$nk$$ times to fill the $$memo$$ array. Each function call itself takes $$O(\\min(n, k))$$ time at worse.\n\n* Space complexity : $$O(nk)$$. $$memo$$ array of constant size $$n \\cdot k$$ is used. The depth of recursion tree can go upto $$n$$. \n<br />\n<br />\n---\n#### Approach 3: Dynamic Programming\n\n**Algorithm**\n\nAs we've seen in the discussion above, the solution for if we know the solutions for $$count(n-1,0)$$, $$count(n-1, 1)$$..., $$count(n-1,k)$$, we can directly obtain the solution for $$count(n,k)$$ as $$count(n,k)=\\sum_{0}^{min(k,n-1)} count(n-1, k-i)$$.\n\nFrom this, we deduce that we can make use of Dynamic Programming to solve the given problem. To solve the given problem, we make use of a 2-D $$dp$$, where $$dp[i][j]$$ is used to store the number of arrangements with $$i$$ elements and exactly $$j$$ inverse pairs. Based on the discussions above, the $$dp$$ updation equations become:\n\n1. If $$n=0$$, no inverse pairs exist. Thus, $$dp[0][k]=0$$.\n\n2. If $$k=0$$, only one arrangement is possible, which is all numbers sorted in ascending order. Thus, $$dp[n][0]=1$$.\n\n3. Otherwise, $$dp[i,j] = \\sum_{p=0}^{min(j,i-1)} count(i-1, j-p)$$.\n\nAgain, the limit $$\\text{min}(j, i-1)$$ is used to account for the cases where the number of inverse pairs needed becomes negative($$p>j$$) or the case where the new inverse pairs needed by adding the $$n^{th}$$ number is more than $$n-1$$ which isn't possible, since the new number can be added at $$(n-1)^{th}$$ position at most from the right.\n\nWe start filling the $$dp$$ in a row-wise order starting from the first row. At the end, the value of $$dp[n][k]$$ gives the required result.\n\nThe following animation shows how the $$dp$$ is filled for n=4 and k=5:\n\n!?!../Documents/629_dp4.json:1000,563!?!\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/Qk8nRarG/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"Qk8nRarG\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(nk\\min(n, k))$$. The `dp` table of size $$n \\cdot k$$ is filled once. Filling each entry takes $$O(\\min(n, k))$$ time.\n\n* Space complexity : $$O(n*k)$$. $$dp$$ array of size $$n \\cdot k$$ is used.\n<br />\n<br />\n---\n#### Approach 4: Dynamic Programming with Cumulative Sum\n\n**Algorithm**\n\nFrom the last approach, we've observed that we need to traverse back to some limit in the previous row of the $$dp$$ array to fill in the current $$dp$$ entry. Instead of doing this traversal to find the sum of the required elements, we can ease the process if we fill the cumulative sum upto the current element in a row in any $$dp$$ entry, instead of the actual value. \n\nThus, now, $$dp[i][j]=count(i,j)+\\sum_{k=0}^{j-1} dp[i][k]$$. Here, $$count(i,j)$$ refers to the number of arrangements with $$i$$ elements and exactly $$j$$ inverse pairs. Thus, each entry contains the sum of all the previous elements in the same row along with its own result.\n\nNow, we need to determine the value of $$count(i,j)$$ to be added to the sum of previous elements in a row, in order to update the $$dp[i][j]$$ entry. But, we need not traverse back in the previous row , since it contains entries representing the cumulative sums now.\nThus, to obtain the sum of elements from $$dp[i-1][j-i+1]$$  to $$dp[i-1][j]$$(including both), we can directly use $$dp[i-1][j] - dp[i-1][j-i]$$. \n\nNow, to reflect the condition $$\\text{min}(j, i-1)$$ used in the previous approaches, we can note that, we need to take the sum of only $$i$$ elements in the previous row, if $$i$$ elements exist till we reach the end of the array while traversing backwards. Otherwise, we simply take the sum of all the elements. \n\nOnly $$i$$ elements are considered because for generating $$j$$ new inverse pairs, by adding $$i$$ as the new number at the $$j^{th}$$ position, $$j$$ could reach only upto $$i-1$$, as discussed in the last approaches as well. Thus, we need to consider the sum of elements from $$dp[i-1][j-(i-1)]$$ to  $$dp[i-1][j]$$(including both) using $$dp[i-1][j] - dp[i-1][j-i]$$ if $$j-i &geq; 0$$.\n\nOtherwise, we add all the elements of the previous row upto the current column $$j$$ being considered. In other words, we can use $$dp[i-1][j]$$ directly as the required sum.\n\nAt the end, while returning the result, we need to return $$dp[n][k]-dp[n][k-1]$$ to obtain the required result from the cumulative sums. \n\nThe following animation illustrates the process of filling the $$dp$$ array.\n\n!?!../Documents/629_dp5.json:1000,563!?!\n\n**Implementation**\n \n<iframe src=\"https://leetcode.com/playground/arSETBbw/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"arSETBbw\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(nk)$$. $$dp$$ array of size $$n \\cdot k$$ is filled once.\n\n* Space complexity : $$O(nk)$$. $$dp$$ array of size $$n \\cdot k$$ is used.\n<br />\n<br />\n---\n\n#### Approach 5: Another Optimized Dynamic Programming Approach\n\n**Algorithm**\n\nAnother way to use the Dynamic Programming Approach could be if we can somehow directly store the required $$count(i,j)$$ in $$dp[i][j]$$ entry, but still we should not need to traverse back in the previous row to find the sum of the required elements. \n\nTo do so, we can note that for the $$i^{th}$$ row, we need to add the elements from $$dp[i-1][j-i+1]$$ to $$dp[i-1][j]$$(including both) if $$(j-1) > 0$$. Otherwise, we need to add all the elements from $$dp[i-1][0]$$ to $$dp[i-1][j]$$. This has already been discussed previously. \n\nNow, when we go for filling in $$dp[i][j+1]$$ after filling $$dp[i][j]$$, we know $$dp[i][j]$$ already corresponds to the sum of the elements from $$dp[i-1][j-i+1]$$ to $$dp[i-1][j]$$. But, for filling $$dp[i][j+1]$$, we require the sum of the elements from $$dp[i-1][(j-i+1)+1]$$ to $$dp[i-1][j+1]$$. \n\nWe can observe that this sum only excludes $$dp[i-1][j-i+1]$$ from the previous sum($$dp[i][j]$$) and requires addition of only one new element($$dp[i-1][j+1]$$) to the to this sum. If the value $$j-i+1<0$$, we need not remove any value.\n\nThus, we can directly obtain $$dp[i][j]$$ value as $$dp[i][j] = dp[i-1][j] - dp[i-1][j-i] + dp[i-1][j]$$, if $$j-i &geq; 0$$. Otherwise, we can use:  $$dp[i][j] = dp[i-1][j] + dp[i-1][j]$$. \n\nWe can also note that, since, here $$j$$ represents the number of inverse pairs that need to be currently considered, we can place another upper limit on $$j$$ as well. The maximum number of inverse pairs for any arbitrary $$n$$ occur only when the array is sorted in descending order leading to `[n,n-1,....,3,2,1]` as the arrangement. \n\nThis arrangement has a total of $$n*(n-1)/2$$ inverse pairs. Thus, for an array with $$i$$ as the number of elements, the maximum number of inverse pairs possible is $$i*(i-1)/2$$ only. Thus, for fillling in the $$i^{th}$$ row of $$dp$$, we can place this limit on $$j$$'s value.\n\nThe following animation shows the $$dp$$ filling process.\n\n!?!../Documents/629_dp6.json:1000,563!?!\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/hkiQtvcD/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"hkiQtvcD\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(nk)$$. $$dp$$ array of size $$(n+1) \\cdot (k+1)$$ is filled once.\n\n* Space complexity : $$O(nk)$$. $$dp$$ array of size $$(n+1)  \\cdot (k+1)$$ is used.\n<br />\n<br />\n---\n#### Approach 6: Once Again Memoization\n\n**Algorithm**\n\nThe Dynamic Programming solution discussed in Approach 5 can also be written down in the form of a recursive solution. But, again, that will include a lot of duplicate function calls. Thus, a better solution would be to use memoization to store the results of the previous function calls.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/cENmCvAh/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"cENmCvAh\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(nk)$$. $$n$$x$$k$$ entries in the $$memo$$ array are filled once.\n\n* Space complexity : $$O(nk)$$. $$memo$$ array of  size $$n \\cdot k$$ is used.\n<br />\n<br />\n---\n\n#### Approach 7: 1-D Dynamic Programmming\n\n**Algorithm**\n\nFrom the Dynamic Programming solution, we can also note that we only need the values of the previous row in the $$dp$$ array, and not any other row. Thus, instead of storing the whole 2-D $$dp$$ in memory, we can make use of a 1-D $$dp$$ to store the previous row's entries only. The updations can be done in a 1-D $$temp$$ array of the same size as $$dp$$ and $$dp$$ can be updated using this $$temp$$ everytime a row is finished.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/Ruzfe8Ng/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"Ruzfe8Ng\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n*k)$$. $$dp$$ array of size $$k+1$$ is filled $$n+1$$ times.\n\n* Space complexity : $$O(k)$$. $$dp$$ array of size $$(k+1)$$ is used.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "181",
+            "count": 67,
+            "average": "4.672",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "k-inverse-pairs-array",
+    "playgroundData": {
+        "Q56AyaS9": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "k-inverse-pairs-array-5",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Qk8nRarG": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "k-inverse-pairs-array-4",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "arSETBbw": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "k-inverse-pairs-array-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "hkiQtvcD": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "k-inverse-pairs-array-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "cENmCvAh": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "k-inverse-pairs-array-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Ruzfe8Ng": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "k-inverse-pairs-array-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

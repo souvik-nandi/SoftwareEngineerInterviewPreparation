@@ -1,0 +1,278 @@
+{
+    "id": "337",
+    "question": {
+        "questionId": "337",
+        "questionFrontendId": "337",
+        "boundTopicId": null,
+        "title": "House Robber III",
+        "titleSlug": "house-robber-iii",
+        "content": "<p>The thief has found himself a new place for his thievery again. There is only one entrance to this area, called <code>root</code>.</p>\n\n<p>Besides the <code>root</code>, each house has one and only one parent house. After a tour, the smart thief realized that all houses in this place form a binary tree. It will automatically contact the police if <strong>two directly-linked houses were broken into on the same night</strong>.</p>\n\n<p>Given the <code>root</code> of the binary tree, return <em>the maximum amount of money the thief can rob <strong>without alerting the police</strong></em>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/10/rob1-tree.jpg\" style=\"width: 277px; height: 293px;\" />\n<pre>\n<strong>Input:</strong> root = [3,2,3,null,3,null,1]\n<strong>Output:</strong> 7\n<strong>Explanation:</strong> Maximum amount of money the thief can rob = 3 + 3 + 1 = 7.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/10/rob2-tree.jpg\" style=\"width: 357px; height: 293px;\" />\n<pre>\n<strong>Input:</strong> root = [3,4,5,1,3,null,1]\n<strong>Output:</strong> 9\n<strong>Explanation:</strong> Maximum amount of money the thief can rob = 4 + 5 = 9.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>\n\t<li><code>0 &lt;= Node.val &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 6509,
+        "dislikes": 98,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"House Robber\", \"titleSlug\": \"house-robber\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"House Robber II\", \"titleSlug\": \"house-robber-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[3,2,3,null,3,null,1]\n[3,4,5,1,3,null,1]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Tree",
+                "slug": "tree",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Binary Tree",
+                "slug": "binary-tree",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ServiceNow\", \"slug\": \"servicenow\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Flipkart\", \"slug\": \"flipkart\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 0}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode() : val(0), left(nullptr), right(nullptr) {}\n *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}\n *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}\n * };\n */\nclass Solution {\npublic:\n    int rob(TreeNode* root) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode() {}\n *     TreeNode(int val) { this.val = val; }\n *     TreeNode(int val, TreeNode left, TreeNode right) {\n *         this.val = val;\n *         this.left = left;\n *         this.right = right;\n *     }\n * }\n */\nclass Solution {\n    public int rob(TreeNode root) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution(object):\n    def rob(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def rob(self, root: Optional[TreeNode]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nint rob(struct TreeNode* root){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {\n *         this.val = val;\n *         this.left = left;\n *         this.right = right;\n *     }\n * }\n */\npublic class Solution {\n    public int Rob(TreeNode root) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val, left, right) {\n *     this.val = (val===undefined ? 0 : val)\n *     this.left = (left===undefined ? null : left)\n *     this.right = (right===undefined ? null : right)\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {number}\n */\nvar rob = function(root) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val = 0, left = nil, right = nil)\n#         @val = val\n#         @left = left\n#         @right = right\n#     end\n# end\n# @param {TreeNode} root\n# @return {Integer}\ndef rob(root)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init() { self.val = 0; self.left = nil; self.right = nil; }\n *     public init(_ val: Int) { self.val = val; self.left = nil; self.right = nil; }\n *     public init(_ val: Int, _ left: TreeNode?, _ right: TreeNode?) {\n *         self.val = val\n *         self.left = left\n *         self.right = right\n *     }\n * }\n */\nclass Solution {\n    func rob(_ root: TreeNode?) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc rob(root *TreeNode) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(_value: Int = 0, _left: TreeNode = null, _right: TreeNode = null) {\n *   var value: Int = _value\n *   var left: TreeNode = _left\n *   var right: TreeNode = _right\n * }\n */\nobject Solution {\n    def rob(root: TreeNode): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun rob(root: TreeNode?): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn rob(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($val = 0, $left = null, $right = null) {\n *         $this->val = $val;\n *         $this->left = $left;\n *         $this->right = $right;\n *     }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return Integer\n     */\n    function rob($root) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     val: number\n *     left: TreeNode | null\n *     right: TreeNode | null\n *     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {\n *         this.val = (val===undefined ? 0 : val)\n *         this.left = (left===undefined ? null : left)\n *         this.right = (right===undefined ? null : right)\n *     }\n * }\n */\n\nfunction rob(root: TreeNode | null): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "; Definition for a binary tree node.\n#|\n\n; val : integer?\n; left : (or/c tree-node? #f)\n; right : (or/c tree-node? #f)\n(struct tree-node\n  (val left right) #:mutable #:transparent)\n\n; constructor\n(define (make-tree-node [val 0])\n  (tree-node val #f #f))\n\n|#\n\n(define/contract (rob root)\n  (-> (or/c tree-node? #f) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "%% Definition for a binary tree node.\n%%\n%% -record(tree_node, {val = 0 :: integer(),\n%%                     left = null  :: 'null' | #tree_node{},\n%%                     right = null :: 'null' | #tree_node{}}).\n\n-spec rob(Root :: #tree_node{} | null) -> integer().\nrob(Root) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "# Definition for a binary tree node.\n#\n# defmodule TreeNode do\n#   @type t :: %__MODULE__{\n#           val: integer,\n#           left: TreeNode.t() | nil,\n#           right: TreeNode.t() | nil\n#         }\n#   defstruct val: 0, left: nil, right: nil\n# end\n\ndefmodule Solution do\n  @spec rob(root :: TreeNode.t | nil) :: integer\n  def rob(root) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"297.3K\", \"totalSubmission\": \"554.2K\", \"totalAcceptedRaw\": 297344, \"totalSubmissionRaw\": 554168, \"acRate\": \"53.7%\"}",
+        "hints": [],
+        "solution": {
+            "id": "1017",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[3,2,3,null,3,null,1]",
+        "metaData": "{\r\n  \"name\": \"rob\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1017",
+        "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n\r\n### Overview\r\n\r\nThis problem is an extension of the original [House Robber Problem](https://leetcode.com/problems/house-robber/). In this problem, our poor thief does not have a straight street, but have a binary-tree-like area instead. \r\n\r\nTo help better understand the problem, below is an example robbing plan on a binary tree:\r\n\r\n![one example robbing](../Figures/337/337_overview.png)\r\n\r\nWell, it looks a bit more complicated. For problems related to the tree data structure, often we could apply the recursion. Also, due to the characteristic of this problem, the [memoization](https://en.wikipedia.org/wiki/Memoization) approach and the DP approach are available.\r\n\r\nBelow, we will discuss three approaches: *Recursion* , *Recursion with Memoization*, and *Dynamic Programming*. They are similar but have some differences. Generally, we recommend the first and the second approaches, and provide the third approach as an extension reading for interested readers.\r\n\r\n---\r\n\r\n#### Approach 1: Recursion\r\n\r\n**Intuition**\r\n\r\nIn this part, we explain how to think of this approach step by step. If you are only interested in the pure algorithm, you can jump to the algorithm part.\r\n\r\nSince the tree itself is a recursive data structure, usually recursion is used to tackle these tree-relative problems.\r\n\r\nNow we need a recursive function, let's call it `helper` (or whatever you want to call it).\r\n\r\nUsually, we use a node as the input to the `helper` and add other arguments if we need more information.\r\n\r\n>The pseudo code of the common structure to solve recursive problems is as below:\r\n\r\n<pre>\r\nfunction helper(node, other_information) {\r\n    // basic case, such as node is null\r\n    if node is null:\r\n        return things like 0 or null\r\n    else:\r\n        do something relates to helper(node.left) and helper(node.right)\r\n}\r\nfunction answerToProblem(root) {\r\n    return helper(root, other_information)\r\n}\r\n</pre>\r\n\r\n>In some cases, we can use `answerToProblem` itself as the `helper` function.\r\n\r\nOK, back to our problem. The next question is what should our `helper` function return.\r\n\r\nSince the problem asks us to find out the maximum amount of money the thief can get, we could try using this maximum value as the return value of the `helper` function.\r\n\r\nSo `helper` receives a `node` as input, and returns the maximum amount the thief can get starting from this `node`.\r\n\r\nLet's try writing the actual code. Well, it's a bit of trouble...\r\n\r\n<pre>\r\nfunction helper(node) { // return the maximum by starting from this node\r\n    if node is null: // basic case\r\n        return 0\r\n    else:\r\n        two choices: rob this node or not?\r\n        if not rob... we have: helper(node.left) + helper(node.right)\r\n\r\n        what if rob? we get node.val!\r\n        what about node.left and node.right? we can not rob them.\r\n        Hmm... maybe we need to touch node.left.left and its other siblings... troublesome!\r\n}\r\n</pre>\r\n\r\nIf we need to touch the grandchildren of this node, the case becomes complicated. Well, it is not infeasible but requires extra effort and code. Often, the best practice is to only touch its children, not its grandchildren.\r\n\r\nThe ideal situation is to make `node.left` and `node.right` automatically handle the grandchildren for us.\r\n\r\nHow to do it? Well, we can let them know whether we robbed this node or not by passing this information as input, like this:\r\n\r\n<pre>\r\n    two choices: rob this node or not?\r\n\r\n    rob = node.val + helper(node.left, parent_robbed=True)\r\n                + helper(node.right,  parent_robbed=True)\r\n\r\n    not_rob = helper(node.left, parent_robbed=False)\r\n            + helper(node.right, parent_robbed=False)\r\n\r\n    return max(rob, not_rob)\r\n</pre>\r\n\r\nCool, we also need to change the input correspondingly:\r\n\r\n<pre>\r\nfunction helper(node, the parent is robbed or not?) {\r\n    // return the maximum by starting from this node\r\n    tackle basic case...\r\n\r\n    if the parent is robbed:\r\n        we can not rob this node.\r\n        return helper(node.left, False) + helper(node.right, False)\r\n\r\n    if the parent is not robbed:\r\n        two choices: rob this node or not?\r\n        calculate `rob` and `not_rob`...\r\n        return max(rob, not_rob)\r\n}\r\n</pre>\r\n\r\nGood, now we have a functioning code. But the code is still not perfect.\r\n\r\nAn obvious problem is that the `helper` is called too many times. Ideally, it should only be called as least as possible to reduce redundant calculations.\r\n\r\nFor example, when calculating `rob` and `not_rob`:\r\n\r\n<pre>\r\n    rob = node.val + helper(node.left, True) + helper(node.right, True)\r\n    not_rob = helper(node.left, False) + helper(node.right, False)\r\n</pre>\r\n\r\nThe `helper` is called four times. Moreover, when we call `helper(node.left, True)` and `helper(node.left, False)`, those two involve same calculations internally, such as `helper(node.left.left, False)`. \r\n\r\n>In other words, `helper(node.left.left, False)` is called inside `helper(node.left, True)`, and also is called inside `helper(node.left, False)`. It is calculated twice! We do not want that.\r\n\r\nWhat if... we can combine them together?\r\n\r\nWe return the results of `helper(node.left, True)` and `helper(node.left, False)` in a single function: `helper(node.left)`. Those two results can be stored in a two-element array.\r\n\r\n<pre>\r\nfunction helper(node) {\r\n    // return original [`helper(node.left, True)`, `helper(node.left, False)`]\r\n    tackle basic case...\r\n    left = helper(node.left)\r\n    right = helper(node.right)\r\n    some calculation...\r\n    return [max_if_rob, max_if_not_rob]\r\n}\r\n</pre>\r\n\r\nIn this case, we fully use the calculation results without redundant calculation.\r\n\r\n>Also, you can reduce extra calculations by [memoization](https://en.wikipedia.org/wiki/Memoization) or by DP, which we will discuss in the following approaches.\r\n\r\n**Algorithm**\r\n\r\nUse a helper function which receives a node as input and returns a two-element array, where the first element represents the maximum amount of money the thief can rob if starting from this node without robbing this node, and the second element represents the maximum amount of money the thief can rob if starting from this node and robbing this node.\r\n\r\nThe basic case of the helper function should be `null` node, and in this case, it returns two zeros.\r\n\r\nFinally, call the `helper(root)` in the main function, and return its maximum value.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/jwkTrHzB/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"jwkTrHzB\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$N$$ be the number of nodes in the binary tree.\r\n\r\n* Time complexity: $$\\mathcal{O}(N)$$ since we visit all nodes once.\r\n\r\n* Space complexity: $$\\mathcal{O}(N)$$ since we need stacks to do recursion, and the maximum depth of the recursion is the height of the tree, which is $$\\mathcal{O}(N)$$ in the worst case and $$\\mathcal{O}(\\log(N))$$ in the best case.\r\n\r\n---\r\n\r\n#### Approach 2: Recursion with Memoization\r\n\r\n**Intuition**\r\n\r\nRecall in the later part of approach 1, we have the following `helper` function:\r\n\r\n<pre>\r\nfunction helper(node, the parent is robbed or not?) {\r\n    // return the maximum by starting from this node\r\n    tackle basic case...\r\n    if the parent is robbed:\r\n        return helper(node.left, True) + helper(node.right, True)\r\n\r\n    if the parent is not robbed:\r\n        two choices: rob this node or not?\r\n        calculate `rob` and `not_rob`...\r\n        return max(rob, not_rob)\r\n}\r\n</pre>\r\n\r\nHowever, this code is not good since it involves some redundant calculations. Improvements are needed.\r\n\r\nTo avoid those redundant calculations, using memoization is an option. i.e., save the results of the functions in hash maps, and return the stored results when are called next time.\r\n\r\n>You can also add memoization to the \"grandchildren\" method we mentioned in approach 1. That would be another functioning approach. There is a lot of possibilities.\r\n\r\n**Algorithm**\r\n \r\nUse a helper function which receives a node and a bool variable as input, and if that variable is true, it returns the maximum amount of money the thief can rob if starting from this node and robbing this node, else returns the maximum amount of money the thief can rob if starting from this node without robbing this node.\r\n\r\nThe result of this helper function would be saved in the maps, and return from the maps when are called next time.\r\n\r\nThe basic case of the helper function should be `null` node, and in this case, it returns zero.\r\n\r\nFinally, call the `helper(root)` in the main function, and return its value.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/T4X2zGja/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"T4X2zGja\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$N$$ be the number of nodes in the binary tree.\r\n\r\n* Time complexity: $$\\mathcal{O}(N)$$ since we run the `helper` function for all nodes once, and saved the results to prevent the second calculation.\r\n\r\n* Space complexity: $$\\mathcal{O}(N)$$ since we need two maps with the size of $$\\mathcal{O}(N)$$ to store the results, and $$\\mathcal{O}(N)$$ space for stacks to start recursion.\r\n\r\n---\r\n\r\n#### Approach 3: Dynamic Programming\r\n\r\n**Intuition**\r\n\r\nAs we mentioned before, we could also apply the Dynamic Programming (DP) algorithm to this problem. Tree DP is a good method to tackle some tree problems.\r\n\r\n>Technically, the memoization approach we mentioned above can also be viewed as a DP approach. However, in this approach, we use DP arrays to generalize it.\r\n\r\n>This approach is a little hard, and you can treat it as extra reading for interested readers.\r\n\r\nTo perform a tree DP, we still need DP arrays, and by filling these arrays to get the final result.\r\n\r\nHere we create two arrays: `dp_rob` and `dp_not_rob`.\r\n\r\n`dp_rob[i]` represents the max money we can rob if we start from node `i` and rob this node.\r\n\r\n`dp_not_rob[i]` represents the max money we can rob if we start from node `i` and do not rob this node.\r\n\r\nHere comes a question: what is node `i`? We do not have an index `i` for each node.\r\n\r\nIt seems like we need to index or map the nodes in the tree to some integers.\r\n\r\nWell, there are many available mapping methods. Of course, you can choose whatever kind of mapping you want.\r\n\r\nBelow is the mapping we use in this approach: From left to right, from up to down:\r\n\r\n![the example mapping](../Figures/337/337_approach_2_1.png)\r\n\r\nThis mapping is used in many situations, such as heap and segment tree, where you store a tree in an array.\r\n\r\nThe Breadth-First Search (BFS) suffices to construct this mapping.\r\n\r\n>In some cases, we are provided with an array of node's values and a hashmap storing the relationship between nodes. If so, we can directly perform the dp since we already have the mapping.\r\n>\r\n>However, in this problem, we have to use a lot of code to construct the mapping.\r\n\r\nAlso, we need to build a graph to store the relationships between those integers -- the parents and children's relationships:\r\n\r\n![the example mapping with graph](../Figures/337/337_approach_2_2.png)\r\n\r\nOK. Now we have two questions remained: the basic cases of our DP, and the transition equations.\r\n\r\nFor the first question, the basic cases should be leaf nodes. For those leaf nodes, `dp_rob[i]` is just `node.val`, and `dp_not_rob[i]` is 0.\r\n\r\nFor the the transition equations, let's say we need to calculate `dp_rob[i]` and `dp_not_rob[i]`.\r\n\r\nIf we want to rob node `i`, then we can not rob its children. Each child provides `dp_not_rob[child]`. Therefore:\r\n\r\n$$\r\n\\text{dp\\_rob}_i = \\text{tree}_i + \\sum_{\\text{child} \\in \\text{graph}_i}\\text{dp\\_not\\_rob}_{\\text{child}}\r\n$$\r\n\r\nIf we do not want to rob node `i`, then we can choose to rob its children or not. In this case, each child provides the maximum of `dp_rob[child]` and `dp_not_rob[child]`.\r\n\r\nTherefore:\r\n\r\n$$\r\n\\text{dp\\_not\\_rob}_i = \\sum_{\\text{child} \\in \\text{graph}_i}\\max(\\text{dp\\_rob}_{\\text{child}}, \\text{dp\\_not\\_rob}_{\\text{child}})\r\n$$\r\n\r\nNote that the child's index is always larger than the parent's index in our mapping, so we should iterate the dp arrays backward.\r\n\r\n**Algorithm**\r\n\r\nTransform the tree from node-based into an array-based `tree` and a map `graph`.\r\n\r\nThen create two DP arrays, where `dp_rob[i]` represents the maximum amount of money the thief can rob if starting from node `i` with robbing this node, and `dp_not_rob[i]` represents the maximum amount of money the thief can rob if starting from node `i` without robbing this node.\r\n\r\nThe transition equations is:\r\n\r\n$$\r\n\\text{dp\\_rob}_i = \\text{tree}_i + \\sum_{\\text{child} \\in \\text{graph}_i}\\text{dp\\_not\\_rob}_{\\text{child}}\r\n$$\r\n\r\n$$\r\n\\text{dp\\_not\\_rob}_i = \\sum_{\\text{child} \\in \\text{graph}_i}\\max(\\text{dp\\_rob}_{\\text{child}}, \\text{dp\\_not\\_rob}_{\\text{child}})\r\n$$\r\n\r\nFinally, return the maximum of `dp_rob[0]` and `dp_not_rob[0]`.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/f6UxoW65/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"f6UxoW65\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$N$$ be the number of nodes in the binary tree.\r\n\r\n* Time complexity: $$\\mathcal{O}(N)$$ since we visit all nodes once to form the tree-array, and then iterate two DP array, which both have length $$\\mathcal{O}(N)$$.\r\n\r\n* Space complexity: $$\\mathcal{O}(N)$$ since we need an array of length $$\\mathcal{O}(N)$$ to store the tree, and two DP arrays of length $$\\mathcal{O}(N)$$. Also, the sizes of other data structures in code do not exceed $$\\mathcal{O}(N)$$.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "962",
+            "count": 153,
+            "average": "4.850",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "house-robber-iii",
+    "playgroundData": {
+        "jwkTrHzB": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "house-robber-iii-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "T4X2zGja": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "house-robber-iii-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "f6UxoW65": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "house-robber-iii-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,310 @@
+{
+    "id": "199",
+    "question": {
+        "questionId": "199",
+        "questionFrontendId": "199",
+        "boundTopicId": null,
+        "title": "Binary Tree Right Side View",
+        "titleSlug": "binary-tree-right-side-view",
+        "content": "<p>Given the <code>root</code> of a binary tree, imagine yourself standing on the <strong>right side</strong> of it, return <em>the values of the nodes you can see ordered from top to bottom</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/14/tree.jpg\" style=\"width: 401px; height: 301px;\" />\n<pre>\n<strong>Input:</strong> root = [1,2,3,null,5,null,4]\n<strong>Output:</strong> [1,3,4]\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [1,null,3]\n<strong>Output:</strong> [1,3]\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = []\n<strong>Output:</strong> []\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[0, 100]</code>.</li>\n\t<li><code>-100 &lt;= Node.val &lt;= 100</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 7814,
+        "dislikes": 454,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Populating Next Right Pointers in Each Node\", \"titleSlug\": \"populating-next-right-pointers-in-each-node\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Boundary of Binary Tree\", \"titleSlug\": \"boundary-of-binary-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[1,2,3,null,5,null,4]\n[1,null,3]\n[]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Tree",
+                "slug": "tree",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Binary Tree",
+                "slug": "binary-tree",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 86}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 12}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Qualtrics\", \"slug\": \"qualtrics\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"DoorDash\", \"slug\": \"doordash\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Walmart Global Tech\", \"slug\": \"walmart-labs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Accolite\", \"slug\": \"accolite\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Wix\", \"slug\": \"wix\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 11}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"FactSet\", \"slug\": \"factset\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode() : val(0), left(nullptr), right(nullptr) {}\n *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}\n *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}\n * };\n */\nclass Solution {\npublic:\n    vector<int> rightSideView(TreeNode* root) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode() {}\n *     TreeNode(int val) { this.val = val; }\n *     TreeNode(int val, TreeNode left, TreeNode right) {\n *         this.val = val;\n *         this.left = left;\n *         this.right = right;\n *     }\n * }\n */\nclass Solution {\n    public List<Integer> rightSideView(TreeNode root) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution(object):\n    def rightSideView(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: List[int]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def rightSideView(self, root: Optional[TreeNode]) -> List[int]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* rightSideView(struct TreeNode* root, int* returnSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {\n *         this.val = val;\n *         this.left = left;\n *         this.right = right;\n *     }\n * }\n */\npublic class Solution {\n    public IList<int> RightSideView(TreeNode root) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val, left, right) {\n *     this.val = (val===undefined ? 0 : val)\n *     this.left = (left===undefined ? null : left)\n *     this.right = (right===undefined ? null : right)\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {number[]}\n */\nvar rightSideView = function(root) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val = 0, left = nil, right = nil)\n#         @val = val\n#         @left = left\n#         @right = right\n#     end\n# end\n# @param {TreeNode} root\n# @return {Integer[]}\ndef right_side_view(root)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init() { self.val = 0; self.left = nil; self.right = nil; }\n *     public init(_ val: Int) { self.val = val; self.left = nil; self.right = nil; }\n *     public init(_ val: Int, _ left: TreeNode?, _ right: TreeNode?) {\n *         self.val = val\n *         self.left = left\n *         self.right = right\n *     }\n * }\n */\nclass Solution {\n    func rightSideView(_ root: TreeNode?) -> [Int] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc rightSideView(root *TreeNode) []int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(_value: Int = 0, _left: TreeNode = null, _right: TreeNode = null) {\n *   var value: Int = _value\n *   var left: TreeNode = _left\n *   var right: TreeNode = _right\n * }\n */\nobject Solution {\n    def rightSideView(root: TreeNode): List[Int] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun rightSideView(root: TreeNode?): List<Int> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn right_side_view(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($val = 0, $left = null, $right = null) {\n *         $this->val = $val;\n *         $this->left = $left;\n *         $this->right = $right;\n *     }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return Integer[]\n     */\n    function rightSideView($root) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     val: number\n *     left: TreeNode | null\n *     right: TreeNode | null\n *     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {\n *         this.val = (val===undefined ? 0 : val)\n *         this.left = (left===undefined ? null : left)\n *         this.right = (right===undefined ? null : right)\n *     }\n * }\n */\n\nfunction rightSideView(root: TreeNode | null): number[] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "; Definition for a binary tree node.\n#|\n\n; val : integer?\n; left : (or/c tree-node? #f)\n; right : (or/c tree-node? #f)\n(struct tree-node\n  (val left right) #:mutable #:transparent)\n\n; constructor\n(define (make-tree-node [val 0])\n  (tree-node val #f #f))\n\n|#\n\n(define/contract (right-side-view root)\n  (-> (or/c tree-node? #f) (listof exact-integer?))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "%% Definition for a binary tree node.\n%%\n%% -record(tree_node, {val = 0 :: integer(),\n%%                     left = null  :: 'null' | #tree_node{},\n%%                     right = null :: 'null' | #tree_node{}}).\n\n-spec right_side_view(Root :: #tree_node{} | null) -> [integer()].\nright_side_view(Root) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "# Definition for a binary tree node.\n#\n# defmodule TreeNode do\n#   @type t :: %__MODULE__{\n#           val: integer,\n#           left: TreeNode.t() | nil,\n#           right: TreeNode.t() | nil\n#         }\n#   defstruct val: 0, left: nil, right: nil\n# end\n\ndefmodule Solution do\n  @spec right_side_view(root :: TreeNode.t | nil) :: [integer]\n  def right_side_view(root) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"769.9K\", \"totalSubmission\": \"1.3M\", \"totalAcceptedRaw\": 769884, \"totalSubmissionRaw\": 1269009, \"acRate\": \"60.7%\"}",
+        "hints": [],
+        "solution": {
+            "id": "954",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": true,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[1,2,3,null,5,null,4]",
+        "metaData": "{\r\n  \"name\": \"rightSideView\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "981",
+            "date": "2022-07-11",
+            "incompleteChallengeCount": 14,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "954",
+        "content": "[TOC]\n\n## Video Solution\n\n---\n\n<div>\n  <div class=\"video-container\">\n    <iframe src=\"https://player.vimeo.com/video/725364159?texttrack=en-x-autogenerated\" frameborder=\"0\"\n      allow=\"autoplay; fullscreen\"></iframe>\n  </div>\n</div>\n\n\n## Solution\n\n---\n\n#### Overview\n\n**DFS vs. BFS**\n\nThere are two ways to traverse the tree: DFS _depth first search_ and \nBFS _breadth first search_. Here is a small summary \n\n![diff](../Figures/199_rewrite/traversals.png)\n\nBFS traverses level by level, and DFS first goes to the leaves.\n\n![diff](../Figures/199_rewrite/dfs_bfs2.png) \n\n> Which approach to choose, BFS or DFS? \n\n- The problem is to return a list of last elements from all levels, \nso it's the way more natural to implement BFS here. \n\n- Time complexity is the same $$\\mathcal{O}(N)$$ \nboth for DFS and BFS since one has to visit all nodes.\n\n- Space complexity is $$\\mathcal{O}(H)$$ for DFS and  \n$$\\mathcal{O}(D)$$ for BFS, where $$H$$ is a tree height,\nand $$D$$ is a tree diameter. They both result in \n$$\\mathcal{O}(N)$$ space in the worst-case scenarios:\nskewed tree for DFS and complete tree for BFS. \n\nBFS wins for this problem, so let's use the opportunity \nto check out three different BFS implementations with the queue.\n\n**BFS implementation**  \n\nAll three implementations use the queue in a standard BFS way:\n\n- Push the root into the queue. \n\n- Pop-out a node from the _left_.\n \n- Push the _left_ child into the queue, and then push the _right_ child. \n\n![diff](../Figures/199_rewrite/implem2.png)\n\n**Three BFS approaches**\n\nThe difference is how to find the end of the level, i.e. the rightmost\nelement:\n\n- Two queues, one for the previous level and one for the current.\n\n- One queue with sentinel to mark the end of the level.\n\n- One queue + level size measurement. \n\n<br />\n<br />\n\n\n---\n#### Approach 1: BFS: Two Queues\n\nLet's use two queues: one for the current level,\nand one for the next. The idea is to pop the nodes one by one from\nthe current level and push their children into the next level queue.\nEach time the current queue is empty, we have the right side element in hands. \n\n![diff](../Figures/199_rewrite/levels.png)\n\n**Algorithm**\n\n- Initiate the list of the right side view `rightside`.\n\n- Initiate two queues: one for the current level, \nand one for the next. Add root into `nextLevel` queue.\n\n- While `nextLevel` queue is not empty:\n\n    - Initiate the current level: `currLevel = nextLevel`,\n    and empty the next level `nextLevel`. \n    \n    - While current level queue is not empty:\n\n        - Pop out a node from the current level queue.\n        \n        - Add first _left_ and then _right_ child node into `nextLevel`\n        queue.\n    \n    - Now `currLevel` is empty, and the node we have in hands \n    is the last one, and makes a part of the right side view.\n    Add it into `rightside`.\n    \n- Return `rightside`.  \n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/2J7FPtyj/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"2J7FPtyj\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N)$$ since one has to visit each node. \n    \n* Space complexity: $$\\mathcal{O}(D)$$ to keep the queues,\nwhere $$D$$ is a tree diameter. \nLet's use the last level to estimate the queue size. \nThis level could contain up to $$N/2$$ tree nodes in the case of \n[complete binary tree](https://leetcode.com/problems/count-complete-tree-nodes/).    \n<br />\n<br />\n\n\n---\n#### Approach 2: BFS: One Queue + Sentinel\n\nAnother approach is to push all the nodes in one queue and\nto use a [sentinel node](https://en.wikipedia.org/wiki/Sentinel_node)\nto separate the levels. Typically, one could use `null` as\na sentinel.\n\n![diff](../Figures/199_rewrite/sentinel.png)\n\nThe first step is to initiate the first level: `root` + `null` as\na sentinel. Once it's done, continue to pop the nodes one by one from the left and push their children to the right.\nStop each time the current node is `null` because it means we hit the end of the current level. Each stop is a time to\nupdate a right side view list and to push `null` in the queue to mark the end of the next level.\n\n**Algorithm**\n\n- Initiate the list of the right side view `rightside`.\n\n- Initiate the queue by adding a root. Add `null` sentinel\nto mark the end of the first level. \n\n- Initiate the current node as `root`. \n\n- While queue is not empty:\n\n    - Save the previous node `prev = curr` and pop the \n    current node from the queue `curr = queue.poll()`. \n    \n    - While the current node is not `null`:\n\n        - Add first _left_ and then _right_ child node into the\n        queue.\n        \n        - Update both previous and current nodes:\n        `prev = curr`, `curr = queue.poll()`.\n    \n    - Now the current node is null, _i.e._ we reached the end of the current level. Hence the previous node is the rightmost one and makes a part of the right side view.\n    Add it into `rightside`.\n    \n    - If the queue is not empty, push the null node as a sentinel,\n    to mark the end of the next level.\n    \n- Return `rightside`.  \n\n**Implementation**\n\nNote, that `ArrayDeque` in Java doesn't support null\nelements, and hence the data structure to use here \nis `LinkedList`.  \n\n<iframe src=\"https://leetcode.com/playground/Th2fSMvf/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Th2fSMvf\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N)$$ since one has to visit each node. \n    \n* Space complexity: $$\\mathcal{O}(D)$$ to keep the queues,\nwhere $$D$$ is a tree diameter. \nLet's use the last level to estimate the queue size. \nThis level could contain up to $$N/2$$ tree nodes in the case of \n[complete binary tree](https://leetcode.com/problems/count-complete-tree-nodes/).   \n<br />\n<br />\n\n\n---\n#### Approach 3: BFS: One Queue + Level Size Measurements\n\nInstead of using the sentinel, we could write down the length \nof the current level.\n\n![diff](../Figures/199_rewrite/length.png)\n\n**Algorithm**\n\n- Initiate the list of the right side view `rightside`.\n\n- Initiate the queue by adding a root. \n\n- While the queue is not empty:\n\n    - Write down the length of the current level:\n    `levelLength = queue.size()`.\n\n    - Iterate over `i` from `0` to `level_length - 1`:\n    \n        - Pop the current node from the queue: \n        `node = queue.poll()`.\n        \n        - If `i == levelLength - 1`, then it's the last node\n        in the current level, push it to `rightsize` list.\n\n        - Add first _left_ and then _right_ child node \n        into the queue.\n    \n- Return `rightside`. \n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/Di2Dj4br/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Di2Dj4br\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N)$$ since one has to visit each node. \n    \n* Space complexity: $$\\mathcal{O}(D)$$ to keep the queues,\nwhere $$D$$ is a tree diameter. \nLet's use the last level to estimate the queue size. \nThis level could contain up to $$N/2$$ tree nodes in the case of \n[complete binary tree](https://leetcode.com/problems/count-complete-tree-nodes/).   \n<br />\n<br />\n\n\n___\n#### Approach 4: Recursive DFS\n\nEveryone likes recursive DFS, so let's add it here as well.\nThe idea is simple: to traverse the tree level by level, \nstarting each time from the rightmost child.  \n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/VpCvjXd3/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"VpCvjXd3\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N)$$ since one has to visit each node. \n    \n* Space complexity: $$\\mathcal{O}(H)$$ to keep the recursion stack,\nwhere $$H$$ is a tree height. \nThe worst-case situation is a skewed tree, when $$H = N$$.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": true,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "899",
+            "count": 150,
+            "average": "4.727",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "binary-tree-right-side-view",
+    "playgroundData": {
+        "2J7FPtyj": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "binary-tree-right-side-view-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Th2fSMvf": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "binary-tree-right-side-view-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Di2Dj4br": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "binary-tree-right-side-view-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "VpCvjXd3": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "binary-tree-right-side-view-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

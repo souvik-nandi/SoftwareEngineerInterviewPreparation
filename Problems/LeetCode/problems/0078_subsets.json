@@ -1,0 +1,329 @@
+{
+    "id": "78",
+    "question": {
+        "questionId": "78",
+        "questionFrontendId": "78",
+        "boundTopicId": null,
+        "title": "Subsets",
+        "titleSlug": "subsets",
+        "content": "<p>Given an integer array <code>nums</code> of <strong>unique</strong> elements, return <em>all possible subsets (the power set)</em>.</p>\n\n<p>The solution set <strong>must not</strong> contain duplicate subsets. Return the solution in <strong>any order</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3]\n<strong>Output:</strong> [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [0]\n<strong>Output:</strong> [[],[0]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10</code></li>\n\t<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>\n\t<li>All the numbers of&nbsp;<code>nums</code> are <strong>unique</strong>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 10880,
+        "dislikes": 164,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Subsets II\", \"titleSlug\": \"subsets-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Generalized Abbreviation\", \"titleSlug\": \"generalized-abbreviation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Letter Case Permutation\", \"titleSlug\": \"letter-case-permutation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find Array Given Subset Sums\", \"titleSlug\": \"find-array-given-subset-sums\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Count Number of Maximum Bitwise-OR Subsets\", \"titleSlug\": \"count-number-of-maximum-bitwise-or-subsets\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[1,2,3]\n[0]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Backtracking",
+                "slug": "backtracking",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 31}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 14}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Reddit\", \"slug\": \"reddit\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Global Tech\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Houzz\", \"slug\": \"houzz\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Twitch\", \"slug\": \"twitch\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Accolite\", \"slug\": \"accolite\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wix\", \"slug\": \"wix\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Coupang\", \"slug\": \"coupang\", \"timesEncountered\": 0}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<vector<int>> subsets(vector<int>& nums) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public List<List<Integer>> subsets(int[] nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def subsets(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[List[int]]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def subsets(self, nums: List[int]) -> List[List[int]]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** subsets(int* nums, int numsSize, int* returnSize, int** returnColumnSizes){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public IList<IList<int>> Subsets(int[] nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} nums\n * @return {number[][]}\n */\nvar subsets = function(nums) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} nums\n# @return {Integer[][]}\ndef subsets(nums)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func subsets(_ nums: [Int]) -> [[Int]] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func subsets(nums []int) [][]int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def subsets(nums: Array[Int]): List[List[Int]] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun subsets(nums: IntArray): List<List<Int>> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn subsets(nums: Vec<i32>) -> Vec<Vec<i32>> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer[][]\n     */\n    function subsets($nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function subsets(nums: number[]): number[][] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (subsets nums)\n  (-> (listof exact-integer?) (listof (listof exact-integer?)))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec subsets(Nums :: [integer()]) -> [[integer()]].\nsubsets(Nums) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec subsets(nums :: [integer]) :: [[integer]]\n  def subsets(nums) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"1.2M\", \"totalSubmission\": \"1.6M\", \"totalAcceptedRaw\": 1159197, \"totalSubmissionRaw\": 1600035, \"acRate\": \"72.4%\"}",
+        "hints": [],
+        "solution": {
+            "id": "847",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "ac",
+        "sampleTestCase": "[1,2,3]",
+        "metaData": "{\r\n  \"name\": \"subsets\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<list<integer>>\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "809",
+            "date": "2022-02-13",
+            "incompleteChallengeCount": 28,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "847",
+        "content": "[TOC]\n\n## Solution\n\n---\n\n#### Solution Pattern\n\nLet us first review the problems of Permutations / Combinations / Subsets,\nsince they are quite similar to each other and\nthere are some common strategies to solve them.\n\nFirst, their solution space is often quite large:\n\n- [Permutations](https://en.wikipedia.org/wiki/Permutation#k-permutations_of_n): \n$$N!$$. \n\n- [Combinations](https://en.wikipedia.org/wiki/Combination#Number_of_k-combinations): $$C_N^k = \\frac{N!}{(N - k)! k!}$$\n\n- Subsets: $$2^N$$, since each element could be absent or present. \n\nGiven their exponential solution space, it is tricky to ensure that the generated solutions\nare _**complete**_ and _**non-redundant**_.\nIt is essential to have a clear and easy-to-reason strategy.\n\nThere are generally three strategies to do it:\n\n- Recursion\n\n- Backtracking\n\n- Lexicographic generation based on the mapping between binary bitmasks and the corresponding  \npermutations / combinations / subsets.\n\nAs one would see later, the third method could be a good candidate for the interview\nbecause it simplifies the problem to the generation of binary numbers,\ntherefore it is easy to implement and verify that no solution is missing.\n\nBesides, as a bonus, it generates lexicographically sorted output for the sorted inputs.\n<br />\n<br />\n\n\n---\n#### Approach 1: Cascading\n\n**Intuition**\n\nLet's start from empty subset in output list.\nAt each step one takes new integer into consideration and generates\nnew subsets from the existing ones. \n\n![diff](../Figures/78/recursion.png)\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/G4JPetnr/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"G4JPetnr\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N \\times 2^N)$$ to generate all subsets \nand then copy them into output list. \n    \n* Space complexity: $$\\mathcal{O}(N \\times 2^N)$$. This is exactly the number of solutions for subsets\nmultiplied by the number $$N$$ of elements to keep for each subset.  \n    - For a given number, it could be present or absent (_i.e._ binary choice) in a subset solution.\n    As as result, for $$N$$ numbers, we would have in total $$2^N$$ choices (solutions). \n<br />\n<br />\n\n\n---\n#### Approach 2: Backtracking\n\n**Algorithm**\n\n>Power set is all possible combinations of all possible _lengths_, from 0 to n.\n\nGiven the definition, the problem can also be interpreted as finding the _power set_ from a sequence.\n\nSo, this time let us loop over _the length of combination_,\nrather than the candidate numbers, and generate \nall combinations for a given length with the help of _backtracking_ technique.\n\n![diff](../Figures/78/combinations.png)\n\n>[Backtracking](https://leetcode.com/explore/learn/card/recursion-ii/472/backtracking/2654/) \nis an algorithm for finding all\nsolutions by exploring all potential candidates.\nIf the solution candidate turns to be _not_ a solution \n(or at least not the _last_ one), \nbacktracking algorithm discards it by making some changes \non the previous step, *i.e.* _backtracks_ and then try again.\n\n![diff](../Figures/78/backtracking.png)\n\n**Algorithm**\n\nWe define a backtrack function named `backtrack(first, curr)`\nwhich takes the index of first element to add and \na current combination as arguments.\n\n- If the current combination is done, we add the combination to the final output.\n\n- Otherwise, we iterate over the indexes `i` from `first` to the length of the entire sequence `n`.\n\n    - Add integer `nums[i]` into the current combination `curr`.\n\n    - Proceed to add more integers into the combination : \n    `backtrack(i + 1, curr)`.\n\n    - Backtrack by removing `nums[i]` from `curr`.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/KABvWtsg/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"KABvWtsg\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N \\times 2^N)$$ to generate all subsets \nand then copy them into output list.\n \n* Space complexity: $$\\mathcal{O}(N)$$. We are using $$O(N)$$ space to maintain `curr`, and are modifying `curr` in-place with backtracking. Note that for space complexity analysis, we do not count space that is *only* used for the purpose of returning output, so the `output` array is ignored.\n\n\n<br />\n<br />\n\n\n---\n#### Approach 3: Lexicographic (Binary Sorted) Subsets\n\n**Intuition**\n\nThe idea of this solution is originated from [Donald E. Knuth](https://www-cs-faculty.stanford.edu/~knuth/taocp.html).\n\n>The idea is that we map each subset to a bitmask of length n,\nwhere `1` on the i*th* position in bitmask means the presence of `nums[i]`\nin the subset, and `0` means its absence. \n\n![diff](../Figures/78/bitmask4.png)\n\nFor instance, the bitmask `0..00` (all zeros) corresponds to an empty subset, \nand the bitmask `1..11` (all ones) corresponds to the entire input array `nums`. \n\nHence to solve the initial problem, we just need to generate n bitmasks\nfrom `0..00` to `1..11`. \n\nIt might seem simple at first glance to generate binary numbers, but \nthe real problem here is how to deal with \n[zero left padding](https://en.wikipedia.org/wiki/Padding_(cryptography)#Zero_padding),\nbecause one has to generate bitmasks of fixed length, _i.e._ `001` and not just `1`.\nFor that one could use standard bit manipulation trick:\n\n<iframe src=\"https://leetcode.com/playground/fBfZeWwE/shared\" frameBorder=\"0\" width=\"100%\" height=\"123\" name=\"fBfZeWwE\"></iframe>\n\nor keep it simple stupid and shift iteration limits:\n\n<iframe src=\"https://leetcode.com/playground/7urkhbUh/shared\" frameBorder=\"0\" width=\"100%\" height=\"106\" name=\"7urkhbUh\"></iframe>\n\n**Algorithm**\n\n- Generate all possible binary bitmasks of length n.\n\n- Map a subset to each bitmask: \n`1` on the i*th* position in bitmask means the presence of `nums[i]`\nin the subset, and `0` means its absence. \n\n- Return output list.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/T3ekPDA7/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"T3ekPDA7\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N \\times 2^N)$$ to generate all subsets \nand then copy them into output list.\n    \n* Space complexity: $$\\mathcal{O}(N \\times 2^N)$$ to keep all the subsets\nof length $$N$$, \nsince each of $$N$$ elements could be present or absent. \n<br />\n<br />",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "805",
+            "count": 318,
+            "average": "4.424",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "subsets",
+    "playgroundData": {
+        "G4JPetnr": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "subsets-4",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "KABvWtsg": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "subsets-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "fBfZeWwE": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "subsets-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "7urkhbUh": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "subsets-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "T3ekPDA7": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "subsets-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

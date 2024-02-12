@@ -1,0 +1,309 @@
+{
+    "id": "139",
+    "question": {
+        "questionId": "139",
+        "questionFrontendId": "139",
+        "boundTopicId": null,
+        "title": "Word Break",
+        "titleSlug": "word-break",
+        "content": "<p>Given a string <code>s</code> and a dictionary of strings <code>wordDict</code>, return <code>true</code> if <code>s</code> can be segmented into a space-separated sequence of one or more dictionary words.</p>\n\n<p><strong>Note</strong> that the same word in the dictionary may be reused multiple times in the segmentation.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;leetcode&quot;, wordDict = [&quot;leet&quot;,&quot;code&quot;]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Return true because &quot;leetcode&quot; can be segmented as &quot;leet code&quot;.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;applepenapple&quot;, wordDict = [&quot;apple&quot;,&quot;pen&quot;]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Return true because &quot;applepenapple&quot; can be segmented as &quot;apple pen apple&quot;.\nNote that you are allowed to reuse a dictionary word.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;catsandog&quot;, wordDict = [&quot;cats&quot;,&quot;dog&quot;,&quot;sand&quot;,&quot;and&quot;,&quot;cat&quot;]\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 300</code></li>\n\t<li><code>1 &lt;= wordDict.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= wordDict[i].length &lt;= 20</code></li>\n\t<li><code>s</code> and <code>wordDict[i]</code> consist of only lowercase English letters.</li>\n\t<li>All the strings of <code>wordDict</code> are <strong>unique</strong>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 11289,
+        "dislikes": 491,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Word Break II\", \"titleSlug\": \"word-break-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "exampleTestcases": "\"leetcode\"\n[\"leet\",\"code\"]\n\"applepenapple\"\n[\"apple\",\"pen\"]\n\"catsandog\"\n[\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Trie",
+                "slug": "trie",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Memoization",
+                "slug": "memoization",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 11}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Nvidia\", \"slug\": \"nvidia\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Swiggy\", \"slug\": \"swiggy\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Pocket Gems\", \"slug\": \"pocket-gems\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Square\", \"slug\": \"square\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Coupang\", \"slug\": \"coupang\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 35}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 20}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Qualtrics\", \"slug\": \"qualtrics\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Global Tech\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    bool wordBreak(string s, vector<string>& wordDict) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public boolean wordBreak(String s, List<String> wordDict) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def wordBreak(self, s, wordDict):\n        \"\"\"\n        :type s: str\n        :type wordDict: List[str]\n        :rtype: bool\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def wordBreak(self, s: str, wordDict: List[str]) -> bool:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nbool wordBreak(char * s, char ** wordDict, int wordDictSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public bool WordBreak(string s, IList<string> wordDict) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @param {string[]} wordDict\n * @return {boolean}\n */\nvar wordBreak = function(s, wordDict) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} s\n# @param {String[]} word_dict\n# @return {Boolean}\ndef word_break(s, word_dict)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func wordBreak(_ s: String, _ wordDict: [String]) -> Bool {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func wordBreak(s string, wordDict []string) bool {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def wordBreak(s: String, wordDict: List[String]): Boolean = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun wordBreak(s: String, wordDict: List<String>): Boolean {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn word_break(s: String, word_dict: Vec<String>) -> bool {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String[] $wordDict\n     * @return Boolean\n     */\n    function wordBreak($s, $wordDict) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function wordBreak(s: string, wordDict: string[]): boolean {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (word-break s wordDict)\n  (-> string? (listof string?) boolean?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec word_break(S :: unicode:unicode_binary(), WordDict :: [unicode:unicode_binary()]) -> boolean().\nword_break(S, WordDict) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec word_break(s :: String.t, word_dict :: [String.t]) :: boolean\n  def word_break(s, word_dict) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"1.1M\", \"totalSubmission\": \"2.5M\", \"totalAcceptedRaw\": 1131531, \"totalSubmissionRaw\": 2518546, \"acRate\": \"44.9%\"}",
+        "hints": [],
+        "solution": {
+            "id": "75",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": true,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "\"leetcode\"\n[\"leet\",\"code\"]",
+        "metaData": "{\r\n  \"name\": \"wordBreak\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"wordDict\",\r\n      \"type\": \"list<string>\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "75",
+        "content": "[TOC]\n\n## Video Solution\n---\n\n<div>\n    <div class=\"video-container\">\n        <iframe src=\"https://player.vimeo.com/video/487458046\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>\n    </div>\n</div>\n\n<div>&nbsp;\n</div>\n\n## Solution Article\n\n---\n\n#### Approach 1: Brute Force\n\n**Algorithm**\n\nThe naive approach to solve this problem is to use recursion and backtracking.\nFor finding the solution, we check every possible prefix of that string in the dictionary of words, if it is found in the dictionary, then the recursive function is called for the remaining portion of that string. And, if in some function call it is found that the complete string is in dictionary, then it will return true.\n\n> **Caution:** This brute-force approach is included because it is generally a good place to start when trying to develop an efficient solution. However, this approach is not expected to pass all test cases. As such, we will discuss how to improve this solution in the following approaches.\n\n<iframe src=\"https://leetcode.com/playground/LByCaAjY/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"LByCaAjY\"></iframe>\n\n**Complexity Analysis**\n\n$$n$$ is the length of the input string.\n\n* Time complexity : $$O(2^n)$$.\nGiven a string of length $$n$$, there are $$n + 1$$ ways to split it into two parts.\nAt each step, we have a choice: to split or not to split.\nIn the worse case, when all choices are to be checked, that results in $$O(2^n)$$.\n\n* Space complexity : $$O(n)$$. The depth of the recursion tree can go upto $$n$$.\n\n<br />\n\n---\n\n#### Approach 2: Recursion with memoization\n\n**Algorithm**\n\nIn the previous approach we can see that many subproblems were redundant, i.e we were calling the recursive function multiple times for a particular string. To avoid this we can use memoization method, where an array $$memo$$ is used to store the result of the subproblems. Now, when the function is called again for a particular string, value will be fetched and returned using the $$memo$$ array, if its value has been already evaluated.\n\nWith memoization many redundant subproblems are avoided and recursion tree is pruned and thus it reduces the time complexity by a large factor.\n\n<iframe src=\"https://leetcode.com/playground/acPWpwjZ/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"acPWpwjZ\"></iframe>\n\n**Complexity Analysis**\n\n$$n$$ is the length of the input string.\n\n* Time complexity : $$O(n^3)$$. Size of recursion tree can go up to $$n^2$$.\n\n* Space complexity : $$O(n)$$. The depth of recursion tree can go up to $$n$$.\n\n\n<br />\n---\n\n#### Approach 3: Using Breadth-First-Search\n\n**Algorithm**\n\nAnother approach is to use Breadth-First-Search. Visualize the string as a tree where each node represents the prefix upto index $$end$$.\nTwo nodes are connected only if the substring between the indices linked with those nodes is also a valid string which is present in the dictionary.\nIn order to form such a tree, we start with the first character of the given string (say $$s$$) which acts as the root of the tree being formed and find every possible substring starting with that character which is a part of the dictionary. Further, the ending index (say $$i$$) of every such substring is pushed at the back of a queue which will be used for Breadth First Search. Now, we pop an element out from the front of the queue and perform the same process considering the string $$s(i+1,end)$$ to be the original string and the popped node as the root of the tree this time. This process is continued, for all the nodes appended in the queue during the course of the process. If we are able to obtain the last element of the given string as a node (leaf) of the tree, this implies that the given string can be partitioned into substrings which are all a part of the given dictionary.\n\nThe formation of the tree can be better understood with this example:\n<!--![Word Break](../Figures/139_wordbreak.gif)-->\n!?!../Documents/139_Word_Break.json:1000,563!?!\n\n<iframe src=\"https://leetcode.com/playground/nRKPtX2M/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"nRKPtX2M\"></iframe>\n\n**Complexity Analysis**\n\n$$n$$ is the length of the input string.\n\n* Time complexity : $$O(n^3)$$. For every starting index, the search can continue till the end of the given string.\n\n* Space complexity : $$O(n)$$. Queue of at most $$n$$ size is needed.\n\n<br />\n\n---\n\n#### Approach 4: Using Dynamic Programming\n\n**Algorithm**\n\nThe intuition behind this approach is that the given problem ($$s$$) can be divided into subproblems $$s1$$ and $$s2$$. If these subproblems individually satisfy the required conditions, the complete problem, $$s$$ also satisfies the same. e.g. \"$$\\text{catsanddog}$$\" can be split into two substrings \"$$\\text{catsand}$$\", \"$$\\text{dog}$$\". The subproblem \"$$\\text{catsand}$$\" can be further divided into \"$$\\text{cats}$$\",\"$$\\text{and}$$\", which individually are a part of the dictionary making \"$$\\text{catsand}$$\" satisfy the condition. Going further backwards, \"$$\\text{catsand}$$\", \"$$\\text{dog}$$\" also satisfy the required criteria individually leading to the complete string \"$$\\text{catsanddog}$$\" also to satisfy the criteria.\n\nNow, we'll move onto the process of $$\\text{dp}$$ array formation. We make use of $$\\text{dp}$$ array of size $$n+1$$, where $$n$$ is the length of the given string. We also use two index pointers $$i$$ and $$j$$, where $$i$$ refers to the length of the substring ($$s'$$) considered currently starting from the beginning, and $$j$$ refers to the index partitioning the current substring ($$s'$$) into smaller substrings $$s'(0,j)$$ and $$s'(j+1,i)$$. To fill in the $$\\text{dp}$$ array, we initialize the element $$\\text{dp}[0]$$ as $$\\text{true}$$, since the null string is always present in the dictionary, and the rest of the elements of $$\\text{dp}$$ as $$\\text{false}$$. We consider substrings of all possible lengths starting from the beginning by making use of index $$i$$. For every such substring, we partition the string into two further substrings $$s1'$$ and $$s2'$$ in all possible ways using the index $$j$$ (Note that the $$i$$ now refers to the ending index of $$s2'$$). Now, to fill in the entry $$\\text{dp}[i]$$, we check if the $$\\text{dp}[j]$$ contains $$\\text{true}$$, i.e. if the substring $$s1'$$ fulfills the required criteria. If so, we further check if $$s2'$$ is present in the dictionary. If both the strings fulfill the criteria, we make $$\\text{dp}[i]$$ as $$\\text{true}$$, otherwise as $$\\text{false}$$.\n\n<iframe src=\"https://leetcode.com/playground/9jqLoAro/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"9jqLoAro\"></iframe>\n\n**Complexity Analysis**\n\n$$n$$ is the length of the input string.\n\n* Time complexity : $$O(n^3)$$. There are two nested loops,\nand substring computation at each iteration. Overall that results in $$O(n^3)$$\ntime complexity.\n\n* Space complexity : $$O(n)$$. Length of $$p$$ array is $$n+1$$.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": true,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "73",
+            "count": 342,
+            "average": "3.892",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "word-break",
+    "playgroundData": {
+        "LByCaAjY": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "word-break-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "acPWpwjZ": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "word-break-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "nRKPtX2M": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "word-break-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "9jqLoAro": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "word-break-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

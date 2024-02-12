@@ -1,0 +1,349 @@
+{
+    "id": "70",
+    "question": {
+        "questionId": "70",
+        "questionFrontendId": "70",
+        "boundTopicId": null,
+        "title": "Climbing Stairs",
+        "titleSlug": "climbing-stairs",
+        "content": "<p>You are climbing a staircase. It takes <code>n</code> steps to reach the top.</p>\n\n<p>Each time you can either climb <code>1</code> or <code>2</code> steps. In how many distinct ways can you climb to the top?</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 2\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> There are two ways to climb to the top.\n1. 1 step + 1 step\n2. 2 steps\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> There are three ways to climb to the top.\n1. 1 step + 1 step + 1 step\n2. 1 step + 2 steps\n3. 2 steps + 1 step\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 45</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 12956,
+        "dislikes": 387,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Min Cost Climbing Stairs\", \"titleSlug\": \"min-cost-climbing-stairs\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Fibonacci Number\", \"titleSlug\": \"fibonacci-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"N-th Tribonacci Number\", \"titleSlug\": \"n-th-tribonacci-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Minimum Rounds to Complete All Tasks\", \"titleSlug\": \"minimum-rounds-to-complete-all-tasks\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Count Number of Ways to Place Houses\", \"titleSlug\": \"count-number-of-ways-to-place-houses\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "2\n3",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Memoization",
+                "slug": "memoization",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 16}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Intel\", \"slug\": \"intel\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Morgan Stanley\", \"slug\": \"morgan-stanley\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Walmart Global Tech\", \"slug\": \"walmart-labs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Nvidia\", \"slug\": \"nvidia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Intuit\", \"slug\": \"intuit\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Samsung\", \"slug\": \"samsung\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Twilio\", \"slug\": \"twilio\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int climbStairs(int n) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int climbStairs(int n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def climbStairs(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def climbStairs(self, n: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint climbStairs(int n){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int ClimbStairs(int n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar climbStairs = function(n) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer} n\n# @return {Integer}\ndef climb_stairs(n)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func climbStairs(_ n: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func climbStairs(n int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def climbStairs(n: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun climbStairs(n: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn climb_stairs(n: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer\n     */\n    function climbStairs($n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function climbStairs(n: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (climb-stairs n)\n  (-> exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec climb_stairs(N :: integer()) -> integer().\nclimb_stairs(N) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec climb_stairs(n :: integer) :: integer\n  def climb_stairs(n) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"1.7M\", \"totalSubmission\": \"3.3M\", \"totalAcceptedRaw\": 1696208, \"totalSubmissionRaw\": 3299446, \"acRate\": \"51.4%\"}",
+        "hints": [
+            "To reach nth step, what could have been your previous steps? (Think about the step sizes)"
+        ],
+        "solution": {
+            "id": "84",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "ac",
+        "sampleTestCase": "2",
+        "metaData": "{\r\n  \"name\": \"climbStairs\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "84",
+        "content": "[TOC]\n## Summary\n\nYou are climbing a stair case. It takes n steps to reach to the top.\n\nEach time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?\n\n## Solution\n\n---\n#### Approach 1: Brute Force\n\n**Algorithm**\n\nIn this brute force approach we take all possible step combinations i.e. 1 and 2, at every step. At every step we are calling the function $$climbStairs$$ for step $$1$$ and $$2$$, and return the sum of returned values of both functions.\n\n$$\nclimbStairs(i,n)=(i + 1, n) + climbStairs(i + 2, n)\n$$\n\nwhere $$i$$ defines the current step and $$n$$ defines the destination step.\n\n<iframe src=\"https://leetcode.com/playground/JrboWVHR/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"JrboWVHR\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(2^n)$$. Size of recursion tree will be $$2^n$$.\n\n    Recursion tree for n=5 would be like this:\n\n    ![Climbing_Stairs](../Figures/70_Climbing_Stairs_rt.jpg)\n\n* Space complexity : $$O(n)$$. The depth of the recursion tree can go upto $$n$$.\n<br />\n<br />\n---\n#### Approach 2: Recursion with Memoization\n\n**Algorithm**\n\nIn the previous approach we are redundantly calculating the result for every step. Instead, we can store the result at each step in $$memo$$ array and directly returning the result from the memo array whenever that function is called again.\n\nIn this way we are pruning recursion tree with the help of $$memo$$ array and reducing the size of recursion tree upto $$n$$.\n\n<iframe src=\"https://leetcode.com/playground/mrPWDwUR/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"mrPWDwUR\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. Size of recursion tree can go upto $$n$$.\n\n* Space complexity : $$O(n)$$. The depth of recursion tree can go upto $$n$$.\n<br />\n<br />\n---\n#### Approach 3: Dynamic Programming\n\n**Algorithm**\n\nAs we can see this problem can be broken into subproblems, and it contains the optimal substructure property i.e. its optimal solution can be constructed efficiently from optimal solutions of its subproblems, we can use dynamic programming to solve this problem.\n\n\nOne can reach $$i^{th}$$ step in one of the two ways:\n\n1. Taking a single step from $$(i-1)^{th}$$ step.\n\n2. Taking a step of $$2$$ from $$(i-2)^{th}$$ step.\n\nSo, the total number of ways to reach $$i^{th}$$ is equal to sum of ways of reaching $$(i-1)^{th}$$ step and ways of reaching $$(i-2)^{th}$$ step.\n\nLet $$dp[i]$$ denotes the number of ways to reach on $$i^{th}$$ step:\n\n$$\ndp[i]=dp[i-1]+dp[i-2]\n$$\n\nExample:\n\n<!--![Climbing_Stairs](../Figures/70_Climbing_Stairs.gif)-->\n!?!../Documents/70_Climbing_Stairs.json:1000,563!?!\n\n\n<iframe src=\"https://leetcode.com/playground/2DftMevC/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"2DftMevC\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. Single loop upto $$n$$.\n\n* Space complexity : $$O(n)$$. $$dp$$ array of size $$n$$ is used.\n<br />\n<br />\n---\n#### Approach 4: Fibonacci Number\n\n**Algorithm**\n\nIn the above approach we have used $$dp$$ array where $$dp[i]=dp[i-1]+dp[i-2]$$. It can be easily analysed that $$dp[i]$$ is nothing but $$i^{th}$$ fibonacci number.\n\n$$\nFib(n)=Fib(n-1)+Fib(n-2)\n$$\n\nNow we just have to find $$n^{th}$$ number of the fibonacci series having $$1$$ and $$2$$ their first and second term respectively, i.e. $$Fib(1)=1$$ and $$Fib(2)=2$$.\n\n<iframe src=\"https://leetcode.com/playground/avxLcqRZ/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"avxLcqRZ\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. Single loop upto $$n$$ is required to calculate $$n^{th}$$ fibonacci number.\n\n* Space complexity : $$O(1)$$. Constant space is used.\n<br />\n<br />\n---\n#### Approach 5: Binets Method\n\n**Algorithm**\n\nThis is an interesting solution which uses matrix multiplication to obtain the $$n^{th}$$ Fibonacci Number. The matrix takes the following form:\n\n$$\n\\left[ {\\begin{array}{cc} F_{n+1} & F_n \\\\  F_n & F_{n-1}     \\end{array} } \\right] = \\left[ {\\begin{array}{cc} 1 & 1 \\\\  1 & 0     \\end{array} } \\right]\n$$\n\nLet's say $$Q=\\left[ {\\begin{array}{cc} F_{n+1} & F_n \\\\  F_n & F_{n-1}     \\end{array} } \\right]$$. As per the method, the $$n^{th}$$ Fibonacci Number is given by $$Q^{n-1}[0,0]$$.\n\nLet's look at the proof of this method.\n\nWe can prove this method using Mathematical Induction. We know, this matrix gives the correct result for the $$3^{rd}$$ term(base case). Since $$Q^2 = \\left[ {\\begin{array}{cc} 2 & 1 \\\\  1 & 1     \\end{array} } \\right]$$. This proves that the base case holds.\n\nAssume that this method holds for finding the $$n^{th}$$ Fibonacci Number, i.e. $$F_n=Q^{n-1}[0,0]$$, where\n$$\nQ^{n-1}=\\left[ {\\begin{array}{cc} F_{n} & F_{n-1} \\\\  F_{n-1} & F_{n-2}     \\end{array} } \\right]\n$$\n\nNow, we need to prove that with the above two conditions holding true, the method is valid for finding the $$(n+1)^{th}$$ Fibonacci Number, i.e. $$F_{n+1}=Q^{n}[0,0]$$.\n\nProof: $$Q^{n} = \\left[ {\\begin{array}{cc} F_{n} & F_{n-1} \\\\  F_{n-1} & F_{n-2}     \\end{array} } \\right]\\left[ {\\begin{array}{cc} 1 & 1 \\\\  1 & 0     \\end{array} } \\right]$$.\n $$Q^{n} = \\left[ {\\begin{array}{cc} F_{n}+F_{n-1} & F_n \\\\  F_{n-1}+F_{n-2} & F_{n-1}    \\end{array} } \\right]$$\n $$Q^{n} = \\left[ {\\begin{array}{cc} F_{n+1} & F_n \\\\  F_n & F_{n-1}     \\end{array} } \\right]$$\n\n Thus, $$F_{n+1}=Q^{n}[0,0]$$. This completes the proof of this method.\n\n The only variation we need to do for our problem is that we need to modify the initial terms to 2 and 1 instead of 1 and 0 in the Fibonacci series. Or, another way is to use the same initial $$Q$$ matrix and use $$result = Q^{n}[0,0]$$ to get the final result. This happens because the initial terms we have to use are the 2nd and 3rd terms of the otherwise normal Fibonacci Series.\n\n\n <iframe src=\"https://leetcode.com/playground/cdmj2eux/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"cdmj2eux\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(\\log n)$$. Traversing on $$\\log n$$ bits.\n\n* Space complexity : $$O(1)$$. Constant space is used.\n\nProof of Time Complexity:\n\nLet's say there is a  matrix $$M$$ to be raised to  power $$n$$. Suppose, $$n$$ is the power of 2. Thus, $$n = 2^i$$, $$i\\in\\mathbb{N}$$, where $$\\mathbb{N}$$ represents the set of natural numbers(including 0). We can represent  in the form of a tree:\n\n![Climbing Stairs](../Figures/70_Climbing_Stairs.PNG)\n{:align=\"center\"}\n\nMeaning that: $$M^n = M^{n/2}.M^{n/2} = .... = \\prod_{1}^{n} M^{1}$$\n\nSo, to calculate  $$M^{n}$$ matrix, we should calculate $$M^{n/2}$$  matrix and multiply it by itself. To calculate $$M^{n/2}$$ we would have to do the same with $$M^{n/4}$$ and so on.\n\nObviously, the tree height is $$\\log_{2} n$$.\n\nLet\u2019s estimate $$M^{n}$$ calculation time. $$M$$ matrix is of the same size in any power . Therefore, we can perform the multiplication of two matrices in any power in $$O(1)$$. We should perform $$\\log_2 n$$ of such multiplications. So, $$M^{n}$$ calculation complexity is $$O(\\log_{2} n)$$.\n\nIn case, the number $$n$$ is not a power of two, we can break it in terms of powers of 2 using its binary representation:\n\n$$\nn= \\sum_{p\\in P} 2^{p}, \\text{where }P\\subset\\mathbb{N}\n$$\n\nThus, we can obtain the final result using:\n\n$$\nM^{n} = \\prod_{p\\in P} M^{2^{p}}\n$$\n\nThis is the method we've used in our implementation. Again, the complexity remains $$O(\\log_{2} n)$$ as we have limited the number of multiplications to $$O(\\log_{2} n)$$.<br /><br />\n\n---\n#### Approach 6: Fibonacci Formula\n\n**Algorithm**\n\nWe can find a [closed-form expression](https://en.wikipedia.org/wiki/Fibonacci_number#Closed-form_expression) to calculate the $$n^{th}$$ Fibonacci number:\n\n$$\nF_n = (\\psi ^ {n} - \\phi ^ {n}) / {\\sqrt5} \\space \\text{where} \\space \\phi = \\left(\\frac{1+\\sqrt{5}}{2}\\right) \\text{and} \\space \\psi = \\left(\\frac{1-\\sqrt{5}}{2}\\right)\n$$\n\n> **Note:** We will consider $$F_0$$ and $$F_1$$ to be 1 (instead of $$F_0$$ to be  0 and $$F_1$$ to be 1). This is why the formula derived below includes a plus 1 in the exponent.\n\nFor the given problem, the Fibonacci sequence is defined by $$F_0 = 1$$, $$F_1= 1$$,  $$F_1= 2$$, $$F_{n+2}= F_{n+1} + F_n$$. A standard method of trying to solve such recursion formulas is assume $$F_n$$ of the form $$F_n= a^n$$. Then, of course, $$F_{n+1} = a^{n+1}$$ and $$F_{n+2}= a^{n+2}$$ so the equation becomes $$a^{n+2}= a^{n+1}+ a^n$$. If we divide the entire equation by $$a^{n}$$ we arrive at $$a^2= a + 1$$ or the quadratic equation $$a^2 - a- 1= 0$$.\n\nSolving this by the quadratic formula, we get:\n\n$$\na=\\frac{1\\pm \\sqrt{5}}{2}\n$$\n\nNotice that the two possible values for $$a$$ are $$\\phi$$ and $$\\psi$$. Thus, the general solution takes the form:\n\n$$\nF_n = A\\cdot{\\phi}^{n} + B\\cdot{\\psi}^{n} \\space \\text{where A and B are constants.}\n$$\n\nTo solve for $$A$$ and $$B$$, let's use two known values $$F_0 = 1$$ and $$F_1 = 1$$.\n\nFor $$n=0$$, we get $$A + B = 1$$\n\nFor $$n=1$$, we get $$A \\cdot \\phi + B \\cdot \\psi = 1$$\n\nSolving the above equations, we get:\n\n$$\nA = \\left(\\frac{1 - \\psi}{\\phi - \\psi}\\right), B = \\left(\\frac{\\phi - 1}{\\phi - \\psi}\\right)\n$$\n\nPutting these values of $$A$$ and $$B$$ in the above general solution equation, we get:\n\n$$\nF_n = \\left(\\frac{1 - \\psi}{\\phi - \\psi}\\right) \\cdot \\phi ^ {n} + \\left(\\frac{\\phi - 1}{\\phi - \\psi}\\right) \\cdot \\psi ^ {n}\n$$\n\n<details>\n\n<summary>We can perform a few algebra steps (click to show) to simplify the above equation:</summary>\n\nTo simplify, we will use these two equations:\n\n$$\\bold{(1)} \\space \\phi + \\psi = \\frac{1}{2} + \\frac{\\sqrt5}{2} + \\frac{1}{2} - \\frac{\\sqrt5}{2} = 1$$\n\n$$\\bold{(2)} \\space \\phi - \\psi = \\frac{1}{2} + \\frac{\\sqrt5}{2} - \\frac{1}{2} + \\frac{\\sqrt5}{2} = \\sqrt5$$\n\nEquation $$1$$ tells us that $$1 - \\psi = -\\phi$$ and $$\\phi - 1= \\psi$$, substituting these values in for the numerators, we get:\n\n$$\nF_n = \\left(\\frac{-\\phi}{\\phi - \\psi}\\right) \\cdot \\phi ^ {n} + \\left(\\frac{\\psi}{\\phi - \\psi}\\right) \\cdot \\psi ^ {n}\n$$\n\nAnd equation $$2$$ tells us that the denominator equals $$\\sqrt5$$:\n\n$$\nF_n = (-\\phi \\cdot \\phi ^ {n} + \\psi \\cdot \\psi ^ {n}) / \\sqrt5\n$$\n\nWhich simplifies to:\n\n</details>\n\n<br>\n\n$$\nF_n = (\\psi ^ {n + 1} - \\phi ^ {n + 1}) / {\\sqrt5}\n$$\n\n<br>\n\n<iframe src=\"https://leetcode.com/playground/9mnvTdoD/shared\" frameBorder=\"0\" width=\"100%\" height=\"191\" name=\"9mnvTdoD\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(\\log n)$$. $$\\text{pow}$$ method takes $$\\log n$$ time.\n\n* Space complexity: $$O(1)$$. Constant space is used.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "82",
+            "count": 453,
+            "average": "4.717",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "climbing-stairs",
+    "playgroundData": {
+        "JrboWVHR": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "climbing-stairs-5",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "mrPWDwUR": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "climbing-stairs-4",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "2DftMevC": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "climbing-stairs-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "avxLcqRZ": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "climbing-stairs-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "cdmj2eux": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "climbing-stairs-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "9mnvTdoD": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "climbing-stairs-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

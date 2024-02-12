@@ -1,0 +1,291 @@
+{
+    "id": "694",
+    "question": {
+        "questionId": "694",
+        "questionFrontendId": "694",
+        "boundTopicId": null,
+        "title": "Number of Distinct Islands",
+        "titleSlug": "number-of-distinct-islands",
+        "content": "<p>You are given an <code>m x n</code> binary matrix <code>grid</code>. An island is a group of <code>1</code>&#39;s (representing land) connected <strong>4-directionally</strong> (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water.</p>\n\n<p>An island is considered to be the same as another if and only if one island can be translated (and not rotated or reflected) to equal the other.</p>\n\n<p>Return <em>the number of <b>distinct</b> islands</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/05/01/distinctisland1-1-grid.jpg\" style=\"width: 413px; height: 334px;\" />\n<pre>\n<strong>Input:</strong> grid = [[1,1,0,0,0],[1,1,0,0,0],[0,0,0,1,1],[0,0,0,1,1]]\n<strong>Output:</strong> 1\n</pre>\n\n<p><strong>Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/05/01/distinctisland1-2-grid.jpg\" style=\"width: 413px; height: 334px;\" />\n<pre>\n<strong>Input:</strong> grid = [[1,1,0,1,1],[1,0,0,0,0],[0,0,0,0,1],[1,1,0,1,1]]\n<strong>Output:</strong> 3\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 50</code></li>\n\t<li><code>grid[i][j]</code> is either <code>0</code> or <code>1</code>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Medium",
+        "likes": 1853,
+        "dislikes": 109,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Number of Islands\", \"titleSlug\": \"number-of-islands\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Distinct Islands II\", \"titleSlug\": \"number-of-distinct-islands-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Count Sub Islands\", \"titleSlug\": \"count-sub-islands\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[[1,1,0,0,0],[1,1,0,0,0],[0,0,0,1,1],[0,0,0,1,1]]\n[[1,1,0,1,1],[1,0,0,0,0],[0,0,0,0,1],[1,1,0,1,1]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Union Find",
+                "slug": "union-find",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Hash Function",
+                "slug": "hash-function",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"DoorDash\", \"slug\": \"doordash\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Palantir Technologies\", \"slug\": \"palantir-technologies\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Qualtrics\", \"slug\": \"qualtrics\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int numDistinctIslands(vector<vector<int>>& grid) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int numDistinctIslands(int[][] grid) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def numDistinctIslands(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def numDistinctIslands(self, grid: List[List[int]]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint numDistinctIslands(int** grid, int gridSize, int* gridColSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int NumDistinctIslands(int[][] grid) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar numDistinctIslands = function(grid) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef num_distinct_islands(grid)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func numDistinctIslands(_ grid: [[Int]]) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func numDistinctIslands(grid [][]int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def numDistinctIslands(grid: Array[Array[Int]]): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun numDistinctIslands(grid: Array<IntArray>): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn num_distinct_islands(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function numDistinctIslands($grid) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function numDistinctIslands(grid: number[][]): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (num-distinct-islands grid)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec num_distinct_islands(Grid :: [[integer()]]) -> integer().\nnum_distinct_islands(Grid) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec num_distinct_islands(grid :: [[integer]]) :: integer\n  def num_distinct_islands(grid) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"130.3K\", \"totalSubmission\": \"216.4K\", \"totalAcceptedRaw\": 130304, \"totalSubmissionRaw\": 216364, \"acRate\": \"60.2%\"}",
+        "hints": [],
+        "solution": {
+            "id": "258",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": true,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[[1,1,0,0,0],[1,1,0,0,0],[0,0,0,1,1],[0,0,0,1,1]]",
+        "metaData": "{\r\n  \"name\": \"numDistinctIslands\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "933",
+            "date": "2022-05-15",
+            "incompleteChallengeCount": 31,
+            "streakCount": 0,
+            "type": "WEEKLY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "258",
+        "content": "[TOC]\n\n## Video Solution\n\n<div>\n  <div class=\"video-container\">\n    <iframe src=\"https://player.vimeo.com/video/509042230\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>\n  </div>\n</div>\n\n</br>\n\n## Solution Article\n\n---\n\n#### Overview\n\nThere are two parts to this problem.\n\n1. Finding every island. We can do this with a straightforward depth-first search (DFS). Check out our relevant [Explore Card](https://leetcode.com/explore/learn/card/queue-stack/232/practical-application-stack/1377/) if you are not already familiar with DFS.\n2. Determining whether or not two islands are the same. This part is more difficult, and is the focus of this article. \n\n</br>\n\n---\n\n#### Approach 1: Brute Force\n\n**Intuition**\n\nAssume we've already used a DFS to make a list of islands, where each island is represented as a list of coordinates. We now need to determine how many of these islands actually have a unique shape. \n\nSince two islands are the same if one can be translated to the other, we can translate each island so that it is as pushed as far into the top left as possible. By doing this, two islands that are the same shape, but in different locations, will now have identical coordinates. For example, if an island is made from cells `[(2, 1), (3, 1), (1, 2), (2, 2)]`, it would become `[(1, 0), (2, 0), (0, 1), (1,1)]` when anchored at the top-left corner.\n\n![The 4-cell island described above is moved as far up and left as possible.](../Figures/694/image_1.png)\n\nSimilarly, the island made from cells `[(2, 0), (3, 0), (1, 1), (2, 1)]` will also become `[(1, 0), (2, 0), (0, 1), (1,1)]`. \n\n![The 4-cell island described above is moved as far up and left as possible.](../Figures/694/image_2.png)\n\n**Algorithm**\n\n1. Use DFS to make a list of islands, where each island is a list of coordinates. \n3. Initialize a `count` of the number of unique islands to `0`.\n3. For each island, compare it cell-by-cell to every other island. If it is found to be unique, increment `count` by 1.\n4. Return the value of `count`.\n\nOrder doesn't matter, so the two islands `[(0, 1), (0, 2)]` and `[(0, 2), (0, 1)]` should be considered as identical. However, we can avoid the need to worry about order by ensuring that two islands of the same shape are initially discovered from the same relative cell. Then from there, the DFS will always visit the cells in the same relative order. This is easy to do: we can simply search for islands by iterating left to right, top to bottom. This way, each island will always be discovered from the leftmost cell in its top row. The diagram below shows the first cell discovered for each island, using this traversal order. Notice that islands of the same shape are first discovered from the same relative cell.\n\n![Various islands, and their first cell that will be discovered is marked.](../Figures/694/image_3.png)\n\nWe can also make one other clever observation: we can simply translate each island so that *the first cell of the island that is discovered is on `(0, 0)`*. If, for example, an island contains the cells `[(2, 3), (2, 4), (2, 5), (3, 5)]`, we subtract `(2, 3)` off each cell to get `[(0, 0), (0, 1), (0, 2), (1, 2)]`.\n\n<iframe src=\"https://leetcode.com/playground/RXp4aaXk/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"RXp4aaXk\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(M^2 \\cdot N^2)$$.\n\n    In the worst case, we would have a large grid, with many unique islands all of the same size, and the islands packed as closely together as possible. This would mean that for each island we discover, we'd be looping over the cells of all the other islands we've discovered so far. For example, here's a grid with $$M = 10$$, $$N = 10$$, and islands all of size 5.\n\n    ![A 10-by-10 grid with 12 pentominoes (islands with 5 cells) fitted into it.](../Figures/694/image_4.png)\n\n    A detailed analysis of this approach is well beyond the scope of LeetCode and job interviews. So the remainder of this discussion is an informal introduction to the key ideas that you would need to investigate in order to prove the time complexity, and is provded only for interest purposes.\n\n    Shapes that are made by connecting square shaped cells together are called [polyominos](https://en.wikipedia.org/wiki/Polyomino). Polynominos are grouped into sets of particular sizes. For example, the set of all polyominos made of 5 square cells (like the ones in the example just above) are called [pentominoes](https://en.wikipedia.org/wiki/Pentomino). \n\n    Worst cases use the smallest possible polyomino size that allows tiling at least half of the grid with all unique islands. This maximizes the number of times that we have to iterate over all cells of all islands. \n\n    So, how many polyominos are there of each size? The answer to this is given by [OEIS:A001168](https://oeis.org/A001168). As you can see, this is a very fast growing sequence - there are $$36446$$ polyominos of size $$10$$! Just by looking at this, you can hopefully see that as the size of the grid we want to put islands in grows, the size of the islands we'll need to use grows *very* slowly! This relative small size maximizes the amount of repeated iteration we'll need to do over the islad list.\n\n* Space complexity: $$O(N \\cdot M)$$. \n\n    The `seen` set requires $$O(N \\cdot M)$$ memory. Additionally, each cell with land requires $$O(1)$$ space in the `islands` array. \n\n</br>\n\n---\n\n#### Approach 2: Hash By Local Coordinates \n\n**Intuition**\n\nThe previous approach is *inefficient* because the operation for determining whether or not an island is unique required looping through every coordinate of every island discovered so far. \n\nInstead of comparing islands by looping over coordinates, we could simply calculate a **hash** for each island in such a way that ensured two identical islands have the same hash value. These hashes could then be put into a hash set. As sets don't store duplicates, the number of islands in the hash set once we're done would be equal to the number of unique islands.\n\n> **Words of Advice:** Confused by this approach? If you don't have much experience with hashing algorithms, it's unlikely that you would have been able to come up with this approach on your own. As practice makes perfect, we recommend checking out our [Explore Card on Hash Tables](https://leetcode.com/explore/learn/card/hash-table/) once you're done with this problem. Hashing is a very powerful technique for reducing time complexities, and is an important part of designing complicated real world algorithms in many areas, such as artificial intelligence. \n\n**Implementation**\n\nThe best way of implementing this is language-dependent. \n\nIn Java, we can actually represent each island as a `HashSet` of `Pair`s, with one `Pair` for each cell. We can then put all of the islands into another `HashSet`, and this will hash the `HashSet`s that represent the islands. \n\nIn Python, there is a data structure called a [`frozenset`](https://docs.python.org/3/library/stdtypes.html#frozenset) that we have to use instead, as unlike Java, Python doesn't allow inserting a `set` into another `set`. A `frozenset` is an immutable `set`.\n\n<iframe src=\"https://leetcode.com/playground/dyzTUqZe/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"dyzTUqZe\"></iframe>\n\n**Complexity Analysis**\n\nLet $$M$$ be the number of rows, and $$N$$ be the number of columns.\n\n* Time Complexity : $$O(M \\cdot N)$$. \n\n    We're inserting each cell into a hash table (corresponding to the island it is a part of), and then inserting each of those hash tables into another hash table. \n    \n    The cost of inserting each of the $$M \\cdot N$$ cells into its initial hash table is $$O(1)$$, so those insertions have a total complexity of $$O(M \\cdot N)$$. \n\n    To insert the \"island\" hash tables into the final hash table, each of them has to (within the library code) be hashed by a hash function. While often we assume that the process of hashing is $$O(1)$$, in this we can't as the inputs to be hashed could be arbitrarily large. So instead, the cost of hashing them is linearly proportional to the number of cells in the hash table being hashed. Each cell is essentially getting hashed once in this process too though (as each can only be a part of one island), and so this part is also $$O(M \\cdot N)$$.\n\n    As both phases have a time complexity of $$O(M \\cdot N)$$, this is the total time complexity.\n\n    Be aware that the time complexity of this approach is *dependent on a good hash function*. The built-in hash functions for Java and Python seem okay, but I recommend being very careful. A poor hash function would lead to performance comparable to Approach 1. \n\n* Space complexity : $$O(M \\cdot N)$$. The `seen` set is the biggest use of additional memory.\n\n\n</br>\n\n---\n\n#### Approach 3: Hash By Path Signature\n\n**Intuition**\n\nRemember how we didn't need to sort islands in Approach 1? When we start a depth-first search on the top-left square of some island, the path taken by our depth-first search will be the same if, and only if, the shape is the same. We can exploit this by using the path as a hash. \n\n**Algorithm**\n\nEach time we discover the first cell in a new island, we initialize an empty string. Then each time `dfs` is called for that island, we firstly determine whether or not the cell being entered is un-visited land, in the same way as before. If it is, then we append the direction we entered it from to the string. For example, this is the path that our algorithm would follow to explore the following island.\n\n![The path taken to explore a large island.](../Figures/694/image_5.png)\n\nThis path will be encoded as `\"RDDRUURRUL\"`. \n\nThere's one thing we need to be cautious of. The three islands below would have the same encoding of `RDDDR`.\n\n![3 islands that hash to the same path, using the scheme described above.](../Figures/694/image_6.png)\n\nThe solution to this is that we also need to record where we *backtracked*. This occurs each time we *exit* a call to the `dfs(...)` function. We'll do this by appending a `0` to the string.\n\n![The same 3 islands as above, also showing the back movements.](../Figures/694/image_7.png)\n\nIn this way, the islands will now have the encodings of `RDDDR`, `RDDD0R`, and `RDDD00R`.\n\n<iframe src=\"https://leetcode.com/playground/RLx66Aph/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"RLx66Aph\"></iframe>\n\n**Complexity Analysis**\n\nLet $$M$$ be the number of rows, and $$N$$ be the number of columns.\n\n* Time Complexity : $$O(M \\cdot N)$$. Same as Approach 2.\n\n* Space complexity : $$O(M \\cdot N)$$. Same as Approach 2.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": true,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "254",
+            "count": 127,
+            "average": "4.323",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "number-of-distinct-islands",
+    "playgroundData": {
+        "RXp4aaXk": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "number-of-distinct-islands-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "dyzTUqZe": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "number-of-distinct-islands-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "RLx66Aph": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "number-of-distinct-islands-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,272 @@
+{
+    "id": "956",
+    "question": {
+        "questionId": "956",
+        "questionFrontendId": "920",
+        "boundTopicId": null,
+        "title": "Number of Music Playlists",
+        "titleSlug": "number-of-music-playlists",
+        "content": "<p>Your music player contains <code>n</code> different songs. You want to listen to <code>goal</code> songs (not necessarily different) during your trip. To avoid boredom, you will create a playlist so that:</p>\n\n<ul>\n\t<li>Every song is played <strong>at least once</strong>.</li>\n\t<li>A song can only be played again only if <code>k</code> other songs have been played.</li>\n</ul>\n\n<p>Given <code>n</code>, <code>goal</code>, and <code>k</code>, return <em>the number of possible playlists that you can create</em>. Since the answer can be very large, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3, goal = 3, k = 1\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> There are 6 possible playlists: [1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], and [3, 2, 1].\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 2, goal = 3, k = 0\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> There are 6 possible playlists: [1, 1, 2], [1, 2, 1], [2, 1, 1], [2, 2, 1], [2, 1, 2], and [1, 2, 2].\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 2, goal = 3, k = 1\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> There are 2 possible playlists: [1, 2, 1] and [2, 1, 2].\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= k &lt; n &lt;= goal &lt;= 100</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 777,
+        "dislikes": 74,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "3\n3\n1\n2\n3\n0\n2\n3\n1",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Combinatorics",
+                "slug": "combinatorics",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Coursera\", \"slug\": \"coursera\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int numMusicPlaylists(int n, int goal, int k) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int numMusicPlaylists(int n, int goal, int k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def numMusicPlaylists(self, n, goal, k):\n        \"\"\"\n        :type n: int\n        :type goal: int\n        :type k: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def numMusicPlaylists(self, n: int, goal: int, k: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint numMusicPlaylists(int n, int goal, int k){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int NumMusicPlaylists(int n, int goal, int k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} n\n * @param {number} goal\n * @param {number} k\n * @return {number}\n */\nvar numMusicPlaylists = function(n, goal, k) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer} n\n# @param {Integer} goal\n# @param {Integer} k\n# @return {Integer}\ndef num_music_playlists(n, goal, k)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func numMusicPlaylists(_ n: Int, _ goal: Int, _ k: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func numMusicPlaylists(n int, goal int, k int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def numMusicPlaylists(n: Int, goal: Int, k: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun numMusicPlaylists(n: Int, goal: Int, k: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn num_music_playlists(n: i32, goal: i32, k: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer $goal\n     * @param Integer $k\n     * @return Integer\n     */\n    function numMusicPlaylists($n, $goal, $k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function numMusicPlaylists(n: number, goal: number, k: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (num-music-playlists n goal k)\n  (-> exact-integer? exact-integer? exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec num_music_playlists(N :: integer(), Goal :: integer(), K :: integer()) -> integer().\nnum_music_playlists(N, Goal, K) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec num_music_playlists(n :: integer, goal :: integer, k :: integer) :: integer\n  def num_music_playlists(n, goal, k) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"20.4K\", \"totalSubmission\": \"40.5K\", \"totalAcceptedRaw\": 20402, \"totalSubmissionRaw\": 40522, \"acRate\": \"50.3%\"}",
+        "hints": [],
+        "solution": {
+            "id": "580",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "3\n3\n1",
+        "metaData": "{\n  \"name\": \"numMusicPlaylists\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"goal\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"k\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "580",
+        "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Dynamic Programming\n\n**Intuition**\n\nLet `dp[i][j]` be the number of playlists of length `i` that have exactly `j` unique songs.  We want `dp[L][N]`, and it seems likely we can develop a recurrence for `dp`.\n\n**Algorithm**\n\nConsider `dp[i][j]`.  Last song, we either played a song for the first \ntime or we didn't.  If we did, then we had `dp[i - 1][j - 1] * (N - j + 1)` ways to choose it.  If we didn't, then we repeated a previous song in `dp[i-1][j] * max(j-K, 0)` ways (`j` of them, except the last `K` ones played are banned.)\n\n<iframe src=\"https://leetcode.com/playground/cd6nTCDp/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"cd6nTCDp\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(NL)$$.\n\n* Space Complexity:  $$O(NL)$$.  (However, we can adapt this algorithm to only store the last row of `dp` to easily get $$O(L)$$ space complexity.)\n<br />\n<br />\n\n\n---\n#### Approach 2: Partitions + Dynamic Programming\n\n(*Note: This solution is extremely challenging, but is a natural consequence of trying to enumerate the playlists in this manner.*)\n\n**Intuition**\n\nSince we are interested in playing every song at least once, let's keep track of what times $$x = (x_1, x_2, \\cdots)$$ a song was played that wasn't yet played before.  For example, if we have 5 songs `abcde`, and we play `abacabdcbaeacbd`, then $$x = (1, 2, 4, 7, 11)$$ as these are the first occurrences of a unique song.  For convenience, we'll also put $$x_{N+1} = L+1$$.  Our strategy is to count the number of playlists $$\\#_x$$ that satisfy this $$x$$, so that our final answer will be $$\\sum \\#_x$$.  \n\nDoing a direct count,\n\n$$\n\\#_x = N * (N-1) * \\cdots * (N-K+1) 1^{x_{K+1} - x_K - 1} * (N-K+2)  2^{x_{K+2} - x_{K+1}} * \\cdots\n$$\n\n$$\n\\Rightarrow \\#_x = N! \\prod_{j=1}^{N-K+1} j^{x_{K+j} - x_{K+j-1} - 1}\n$$\n\nNow, let $$\\delta_i = x_{K+i} - x_{K+i-1} - 1$$, so that $$\\sum \\delta_i = L-N$$.  To recap, the final answer will be (for $$S = L-N, P = N-K+1$$):\n\n$$\nN! \\Big(\\sum\\limits_{\\delta : \\sum\\limits_{0 \\leq i \\leq P} \\delta_i = S} \\prod\\limits_{j=1}^P j^{\\delta_j} \\Big)\n$$\n\nFor convenience, let's denote the stuff in the large brackets as $$\\langle S, P\\rangle$$.\n\n**Algorithm**\n\nWe can develop a recurrence for $$\\langle S, P\\rangle$$ mathematically, by factoring out the $$P^{\\delta_P}$$ term.\n\n$$\n\\langle S, P\\rangle = \\sum_{\\delta_P = 0}^S P^{\\delta_P} \\sum_{\\sum\\limits_{0\\leq i < P} \\delta_i = S - \\delta_P} \\prod\\limits_{j=1}^{P-1} j^{\\delta_j}\n$$\n\n$$\n\\Rightarrow \\langle S, P\\rangle = \\sum_{\\delta_P = 0}^S P^{\\delta_P} \\langle S - \\delta_P, P-1\\rangle\n$$\n\nso that it can be shown through algebraic manipulation that:\n$$\n\\langle S, P \\rangle = P \\langle S-1, P-1 \\rangle + \\langle S, P-1 \\rangle\n$$\n\nWith this recurrence, we can perform dynamic programming similar to Approach 1.  The final answer is $$N! \\langle L-N, N-K+1 \\rangle$$.\n\n<iframe src=\"https://leetcode.com/playground/HgoVHfvb/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"HgoVHfvb\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(NL)$$.\n\n* Space Complexity:  $$O(L)$$.\n<br />\n<br />\n\n\n---\n#### Approach 3: Generating Functions\n\n(*Note: This solution is extremely challenging and not recommended for interviews, but is included here for completeness.*)\n\n**Analysis**\n\nFollowing the terminology of Approach 2, we would like to compute $$\\langle S, P \\rangle$$ quickly.  We can use generating functions.\n\nFor a fixed $$P$$, consider the function:\n\n$$\nf(x) = (1^0x^0 + 1^1x^1 + 1^2x^2 + 1^3x^3 + \\cdots) * (2^0x^0 + 2^1x^1 + 2^2x^2 + 2^3x^3 + \\cdots)\n$$\n$$\n\\cdots * (P^0x^0 + P^1x^1 + P^2x^2 + P^3x^3 + \\cdots)\n$$\n\n$$\n\\Leftrightarrow f(x) = \\prod_{k=1}^{P} (\\sum_{j \\geq 0} k^j x^j) = \\prod_{k=1}^P \\frac{1}{1-kx}\n$$\n\nThe coefficient of $$x^S$$ in $$f$$ (denoted $$[x^S]f$$) is the desired $$\\langle S, P \\rangle$$.\n\nBy the Chinese Remainder theorem on polynomials, this product can be written as a partial fraction decomposition:\n\n$$\n\\prod_{k=1}^P \\frac{1}{1-kx} = \\sum_{k=1}^P \\frac{A_k}{1-kx}\n$$\n\nfor some rational coefficients $$A_k$$.  We can solve for these coefficients by clearing denominators and setting $$x = 1/m$$ for $$1 \\leq m \\leq P$$.  Then for a given $$m$$, all the terms except the $$m$$-th vanish, and:\n\n$$\nA_m = \\frac{1}{\\prod\\limits_{1 \\leq j \\leq P \\atop j \\neq m} 1 - \\frac{j}{m}} = \n\\prod\\limits_{j \\neq m} \\frac{m}{m-j}\n$$\n\nSince a geometric series has sum $$\\sum_{j \\geq 0} (kx)^j = \\frac{1}{1-kx}$$, altogether it implies:\n\n$$\n[x^S]f = \\sum_{k=1}^P A_k * k^S\n$$\n\nso that the final answer is\n\n$$\n\\text{answer} = N! \\sum\\limits_{k=1}^{N-K} k^{L-N} \\prod\\limits_{1 \\leq j \\leq N-K \\atop j \\neq k} \\frac{k}{k-j}\n$$\n\n$$\n\\Rightarrow \\text{answer} = N! \\sum_k k^{L-K-1} \\prod_{j \\neq k} \\frac{1}{k-j}\n$$\n\nWe only need a quick way to compute $$C_k = \\prod\\limits_{j \\neq k} \\frac{1}{k-j}$$.  Indeed,\n\n$$\nC_{k+1} = C_k * \\frac{k - (N-K)}{k}\n$$\n\nso that we now have everything we need to compute the answer quickly.\n\n\n<iframe src=\"https://leetcode.com/playground/AsHcLzrL/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"AsHcLzrL\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log L)$$.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "568",
+            "count": 51,
+            "average": "3.843",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "number-of-music-playlists",
+    "playgroundData": {
+        "cd6nTCDp": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "number-of-music-playlists-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "HgoVHfvb": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "number-of-music-playlists-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "AsHcLzrL": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "number-of-music-playlists-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

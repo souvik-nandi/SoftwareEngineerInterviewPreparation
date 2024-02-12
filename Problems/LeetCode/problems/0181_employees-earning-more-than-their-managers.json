@@ -1,0 +1,101 @@
+{
+    "id": "181",
+    "question": {
+        "questionId": "181",
+        "questionFrontendId": "181",
+        "boundTopicId": null,
+        "title": "Employees Earning More Than Their Managers",
+        "titleSlug": "employees-earning-more-than-their-managers",
+        "content": "<p>Table: <code>Employee</code></p>\n\n<pre>\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| id          | int     |\n| name        | varchar |\n| salary      | int     |\n| managerId   | int     |\n+-------------+---------+\nid is the primary key column for this table.\nEach row of this table indicates the ID of an employee, their name, salary, and the ID of their manager.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to find the employees who earn more than their managers.</p>\n\n<p>Return the result table in <strong>any order</strong>.</p>\n\n<p>The query result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nEmployee table:\n+----+-------+--------+-----------+\n| id | name  | salary | managerId |\n+----+-------+--------+-----------+\n| 1  | Joe   | 70000  | 3         |\n| 2  | Henry | 80000  | 4         |\n| 3  | Sam   | 60000  | Null      |\n| 4  | Max   | 90000  | Null      |\n+----+-------+--------+-----------+\n<strong>Output:</strong> \n+----------+\n| Employee |\n+----------+\n| Joe      |\n+----------+\n<strong>Explanation:</strong> Joe is the only employee who earns more than his manager.\n</pre>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 1496,
+        "dislikes": 163,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "{\"headers\": {\"Employee\": [\"id\", \"name\", \"salary\", \"managerId\"]}, \"rows\": {\"Employee\": [[1, \"Joe\", 70000, 3], [2, \"Henry\", 80000, 4], [3, \"Sam\", 60000, null], [4, \"Max\", 90000, null]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"tcs\", \"slug\": \"tcs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Wix\", \"slug\": \"wix\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "# Write your MySQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "/* Write your T-SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "/* Write your PL/SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"380.5K\", \"totalSubmission\": \"566.3K\", \"totalAcceptedRaw\": 380539, \"totalSubmissionRaw\": 566293, \"acRate\": \"67.2%\"}",
+        "hints": [],
+        "solution": {
+            "id": "215",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "{\"headers\": {\"Employee\": [\"id\", \"name\", \"salary\", \"managerId\"]}, \"rows\": {\"Employee\": [[1, \"Joe\", 70000, 3], [2, \"Henry\", 80000, 4], [3, \"Sam\", 60000, null], [4, \"Max\", 90000, null]]}}",
+        "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Employee (id int, name varchar(255), salary int, managerId int)\"\n  ],\n  \"mssql\": [\n    \"Create table Employee (id int, name varchar(255), salary int, managerId int)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Employee (id int, name varchar(255), salary int, managerId int)\"\n  ],\n  \"database\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists Employee (id int, name varchar(255), salary int, managerId int)",
+            "Truncate table Employee",
+            "insert into Employee (id, name, salary, managerId) values ('1', 'Joe', '70000', '3')",
+            "insert into Employee (id, name, salary, managerId) values ('2', 'Henry', '80000', '4')",
+            "insert into Employee (id, name, salary, managerId) values ('3', 'Sam', '60000', 'None')",
+            "insert into Employee (id, name, salary, managerId) values ('4', 'Max', '90000', 'None')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "215",
+        "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Using `WHERE` clause [Accepted]\n\n**Algorithm**\n\nAs this table has the employee's manager information, we probably need to select information from it twice.\n\n```sql\nSELECT *\nFROM Employee AS a, Employee AS b\n;\n```\n>Note: The keyword 'AS' is optional.\n\n| Id | Name  | Salary | ManagerId | Id | Name  | Salary | ManagerId |\n|----|-------|--------|-----------|----|-------|--------|-----------|\n| 1  | Joe   | 70000  | 3         | 1  | Joe   | 70000  | 3         |\n| 2  | Henry | 80000  | 4         | 1  | Joe   | 70000  | 3         |\n| 3  | Sam   | 60000  |           | 1  | Joe   | 70000  | 3         |\n| 4  | Max   | 90000  |           | 1  | Joe   | 70000  | 3         |\n| 1  | Joe   | 70000  | 3         | 2  | Henry | 80000  | 4         |\n| 2  | Henry | 80000  | 4         | 2  | Henry | 80000  | 4         |\n| 3  | Sam   | 60000  |           | 2  | Henry | 80000  | 4         |\n| 4  | Max   | 90000  |           | 2  | Henry | 80000  | 4         |\n| 1  | Joe   | 70000  | 3         | 3  | Sam   | 60000  |           |\n| 2  | Henry | 80000  | 4         | 3  | Sam   | 60000  |           |\n| 3  | Sam   | 60000  |           | 3  | Sam   | 60000  |           |\n| 4  | Max   | 90000  |           | 3  | Sam   | 60000  |           |\n| 1  | Joe   | 70000  | 3         | 4  | Max   | 90000  |           |\n| 2  | Henry | 80000  | 4         | 4  | Max   | 90000  |           |\n| 3  | Sam   | 60000  |           | 4  | Max   | 90000  |           |\n| 4  | Max   | 90000  |           | 4  | Max   | 90000  |           |\n> The first 3 columns are from a and the last 3 ones are from b.\n\nSelect from two tables will get the [Cartesian product](https://en.wikipedia.org/wiki/Cartesian_product) of these two tables. In this case, the output will be 4*4 = 16 records. However, what we interest is the employee's salary higher than his/her manager. So we should add two conditions in a `WHERE` clause like below.\n\n\n```sql\nSELECT\n    *\nFROM\n    Employee AS a,\n    Employee AS b\nWHERE\n    a.ManagerId = b.Id\n        AND a.Salary > b.Salary\n;\n```\n\n| Id | Name | Salary | ManagerId | Id | Name | Salary | ManagerId |\n|----|------|--------|-----------|----|------|--------|-----------|\n| 1  | Joe  | 70000  | 3         | 3  | Sam  | 60000  |           |\n\nAs we only need to output the employee's name, so we modify the above code a little to get a solution.\n\n**MySQL**\n\n```sql\nSELECT\n    a.Name AS 'Employee'\nFROM\n    Employee AS a,\n    Employee AS b\nWHERE\n    a.ManagerId = b.Id\n        AND a.Salary > b.Salary\n;\n```\n\n#### Approach 2: Using `JOIN` clause [Accepted]\n\n**Algorithm**\n\nActually, `JOIN` is a more common and efficient way to link tables together, and we can use `ON` to specify some conditions.\n\n```sql\nSELECT\n     a.NAME AS Employee\nFROM Employee AS a JOIN Employee AS b\n     ON a.ManagerId = b.Id\n     AND a.Salary > b.Salary\n;\n```",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "210",
+            "count": 74,
+            "average": "4.824",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "employees-earning-more-than-their-managers",
+    "playgroundData": {}
+}

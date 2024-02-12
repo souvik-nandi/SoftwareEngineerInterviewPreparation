@@ -1,0 +1,315 @@
+{
+    "id": "803",
+    "question": {
+        "questionId": "803",
+        "questionFrontendId": "787",
+        "boundTopicId": null,
+        "title": "Cheapest Flights Within K Stops",
+        "titleSlug": "cheapest-flights-within-k-stops",
+        "content": "<p>There are <code>n</code> cities connected by some number of flights. You are given an array <code>flights</code> where <code>flights[i] = [from<sub>i</sub>, to<sub>i</sub>, price<sub>i</sub>]</code> indicates that there is a flight from city <code>from<sub>i</sub></code> to city <code>to<sub>i</sub></code> with cost <code>price<sub>i</sub></code>.</p>\n\n<p>You are also given three integers <code>src</code>, <code>dst</code>, and <code>k</code>, return <em><strong>the cheapest price</strong> from </em><code>src</code><em> to </em><code>dst</code><em> with at most </em><code>k</code><em> stops. </em>If there is no such route, return<em> </em><code>-1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/03/18/cheapest-flights-within-k-stops-3drawio.png\" style=\"width: 332px; height: 392px;\" />\n<pre>\n<strong>Input:</strong> n = 4, flights = [[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]], src = 0, dst = 3, k = 1\n<strong>Output:</strong> 700\n<strong>Explanation:</strong>\nThe graph is shown above.\nThe optimal path with at most 1 stop from city 0 to 3 is marked in red and has cost 100 + 600 = 700.\nNote that the path through cities [0,1,2,3] is cheaper but is invalid because it uses 2 stops.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/03/18/cheapest-flights-within-k-stops-1drawio.png\" style=\"width: 332px; height: 242px;\" />\n<pre>\n<strong>Input:</strong> n = 3, flights = [[0,1,100],[1,2,100],[0,2,500]], src = 0, dst = 2, k = 1\n<strong>Output:</strong> 200\n<strong>Explanation:</strong>\nThe graph is shown above.\nThe optimal path with at most 1 stop from city 0 to 2 is marked in red and has cost 100 + 100 = 200.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/03/18/cheapest-flights-within-k-stops-2drawio.png\" style=\"width: 332px; height: 242px;\" />\n<pre>\n<strong>Input:</strong> n = 3, flights = [[0,1,100],[1,2,100],[0,2,500]], src = 0, dst = 2, k = 0\n<strong>Output:</strong> 500\n<strong>Explanation:</strong>\nThe graph is shown above.\nThe optimal path with no stops from city 0 to 2 is marked in red and has cost 500.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 100</code></li>\n\t<li><code>0 &lt;= flights.length &lt;= (n * (n - 1) / 2)</code></li>\n\t<li><code>flights[i].length == 3</code></li>\n\t<li><code>0 &lt;= from<sub>i</sub>, to<sub>i</sub> &lt; n</code></li>\n\t<li><code>from<sub>i</sub> != to<sub>i</sub></code></li>\n\t<li><code>1 &lt;= price<sub>i</sub> &lt;= 10<sup>4</sup></code></li>\n\t<li>There will not be any multiple flights between two cities.</li>\n\t<li><code>0 &lt;= src, dst, k &lt; n</code></li>\n\t<li><code>src != dst</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 5332,
+        "dislikes": 246,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Maximum Vacation Days\", \"titleSlug\": \"maximum-vacation-days\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Cost to Reach City With Discounts\", \"titleSlug\": \"minimum-cost-to-reach-city-with-discounts\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "4\n[[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]]\n0\n3\n1\n3\n[[0,1,100],[1,2,100],[0,2,500]]\n0\n2\n1\n3\n[[0,1,100],[1,2,100],[0,2,500]]\n0\n2\n0",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Graph",
+                "slug": "graph",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Heap (Priority Queue)",
+                "slug": "heap-priority-queue",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Shortest Path",
+                "slug": "shortest-path",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 13}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"InMobi\", \"slug\": \"inmobi\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Qualtrics\", \"slug\": \"qualtrics\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def findCheapestPrice(self, n, flights, src, dst, k):\n        \"\"\"\n        :type n: int\n        :type flights: List[List[int]]\n        :type src: int\n        :type dst: int\n        :type k: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint findCheapestPrice(int n, int** flights, int flightsSize, int* flightsColSize, int src, int dst, int k){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int FindCheapestPrice(int n, int[][] flights, int src, int dst, int k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} n\n * @param {number[][]} flights\n * @param {number} src\n * @param {number} dst\n * @param {number} k\n * @return {number}\n */\nvar findCheapestPrice = function(n, flights, src, dst, k) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer} n\n# @param {Integer[][]} flights\n# @param {Integer} src\n# @param {Integer} dst\n# @param {Integer} k\n# @return {Integer}\ndef find_cheapest_price(n, flights, src, dst, k)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func findCheapestPrice(_ n: Int, _ flights: [[Int]], _ src: Int, _ dst: Int, _ k: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func findCheapestPrice(n int, flights [][]int, src int, dst int, k int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def findCheapestPrice(n: Int, flights: Array[Array[Int]], src: Int, dst: Int, k: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun findCheapestPrice(n: Int, flights: Array<IntArray>, src: Int, dst: Int, k: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn find_cheapest_price(n: i32, flights: Vec<Vec<i32>>, src: i32, dst: i32, k: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer[][] $flights\n     * @param Integer $src\n     * @param Integer $dst\n     * @param Integer $k\n     * @return Integer\n     */\n    function findCheapestPrice($n, $flights, $src, $dst, $k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function findCheapestPrice(n: number, flights: number[][], src: number, dst: number, k: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (find-cheapest-price n flights src dst k)\n  (-> exact-integer? (listof (listof exact-integer?)) exact-integer? exact-integer? exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec find_cheapest_price(N :: integer(), Flights :: [[integer()]], Src :: integer(), Dst :: integer(), K :: integer()) -> integer().\nfind_cheapest_price(N, Flights, Src, Dst, K) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec find_cheapest_price(n :: integer, flights :: [[integer]], src :: integer, dst :: integer, k :: integer) :: integer\n  def find_cheapest_price(n, flights, src, dst, k) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"253K\", \"totalSubmission\": \"705.3K\", \"totalAcceptedRaw\": 252964, \"totalSubmissionRaw\": 705297, \"acRate\": \"35.9%\"}",
+        "hints": [],
+        "solution": {
+            "id": "957",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "4\n[[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]]\n0\n3\n1",
+        "metaData": "{\n  \"name\": \"findCheapestPrice\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"flights\",\n      \"type\": \"integer[][]\"\n    },\n    {\n      \"name\": \"src\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"dst\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"k\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "957",
+        "content": "[TOC]\n\n## Solution\n\n#### Approach 1: Dijkstra's Algorithm\n\n**Intuition**\n\nIf we forget about the part where the number of stops is limited, then the problem simply becomes the shortest path problem on a weighted graph, right? We can treat this as a graph problem where:\n*  the cities can be treated as nodes in a graph\n*  the connections between each of the cities can be treated as the edges and finally\n*  the cost of going from one city to another would be the weight of the edges in the graph.\n\nIt's important to model the problem in a way that standard algorithms or their slight variations can be used for the solutions. Whenever we have a problem where we're given a bunch of entities and they have some sort of connections between them, more often than not it can be modeled as a graph problem. Once you've figured out that the question can be modeled as a graph problem, you then need to think about the various aspects of a graph i.e.\n\n* directed vs undirected\n* weighted vs unweighted\n* cyclic vs acyclic\n\nThese aspects will help define the algorithm that you can consider for solving the problem at hand. For example a standard rule of thumb that is followed for solving shortest path problems is that we mostly use [Breadth-first search](https://en.wikipedia.org/wiki/Breadth-first_search) for unweighted graphs and use [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) for weighted graphs. An implied condition to apply the Dijkstra's algorithm is that the weights of the graph must be positive. If the graph has negative weights and can have negative weighted cycles, we would have to employ another algorithm called the [Bellman Ford's](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm). The point here is that the properties of the graph and the goal define the kind of algorithms we might be able to use.\n\nComing back to the original statement at the beginning of the article. If we don't consider the part where the number of stops is limited, this problem becomes a standard shortest paths problem in a weighted graph with positive weights and hence, it becomes a prime candidate for Dijkstra's. As we all know, Dijkstra's uses a min-heap (priority queue) as the main data structure for always picking out the node which can be reached in the shortest amount of time/cost/weight from the current point starting all the way from the source. That approach as it is won't work out for this problem.\n\nFirst of all, we need to keep track of the number of stops taken to reach a node (city), in addition to the shortest path from the source node. This is important because if at any point we find that we have exhausted $$K$$ stops, we can't progress any further from that node because the number of stops are bounded by the problem. Let's consider a simple example and run through it with the basic Dijkstra's algorithm and see why we might run into a problem with the off-the-shelf code i.e. Dijkstra's without any modifications.\n\n<center>\n<img src=\"../Figures/787/img1.png\" width=\"550\"/>\n</center>\n\nNow suppose that we want to go from the source node `A` in the graph above to the destination node `E` via the cheapest possible route with at most `2` stops. Let's ignore the number of stops for now and see how the usual Dijkstra would unfold and pick the nodes. So first of all, we will consider the neighbors of the source node and add them to our min-heap. Next, we will pick the element with the current shortest distance which would be `D` with a value of `5` as opposed to `B` with `7`.\n\n<center>\n<img src=\"../Figures/787/img2.png\"/>\n</center>\n\nMoving on, the next node that will be picked is `B` since it has the current shortest distance from the source. Let's see what the heap looks like once we pick `B` and process its neighbors. Note that according to the algorithm, once a node has been processed i.e., once a node is popped from the min-heap, we never consider that node again in some other node's neighbors i.e., we never add it again to the heap down the line. This is because of the greedy nature of the algorithm. When a node is removed from the heap, it is guaranteed that the distance from the source at that point is the shortest distance. The processed nodes are marked in blue in the figures here.\n\n<center>\n<img src=\"../Figures/787/img3.png\"/>\n</center>\n\nMoving on, the algorithm will pick `C` and its neighbor `E` will be added into the heap. You'll notice that there are two nodes containing the city `E` which is fine since `E` hasn't been processed yet and this just means there are multiple paths of reaching `E`. \n\n<center>\n<img src=\"../Figures/787/img4.png\"/>\n</center>\n\nNext, we will remove the node `E` with a distance of `12` from the source and `3` stops from the source. At this point, we cannot go any further i.e. we cannot consider its neighbor because We have already exhausted the number of stops in this example. So, we don't add the neighbor which also happens to be the destination node to the heap. The only node left in the heap is `E` with a distance of `15` from source and `2` stops from the source. \n\n> Here's the problem now. We will not consider this node because we have already processed the node `E` in the previous step. Clearly, the distance `15` is greater than `12`. So Dijkstra's will discard this heap node and the algorithm will finish, without ever reaching the destination!\n\nThe thing we need to modify here is that we need to re-consider a node if the distance from the source is shorter than what we have recorded. So we won't change the min-heap's priority which is to pick nodes with the shortest distance from the source. However, if we ever encounter a node that has already been processed before but the number of stops from the source is lesser than what was recorded before, we will add it to the heap so that it gets considered again! That's the only change we need to make to make Dijkstra's compliant with the limitation on the number of stops.\n\n**Algorithm**\n\n1. Initialize a min-heap or a priority queue. Let's call it `H` for our algorithm.\n2. We will need a couple of arrays here. One would be for maintaining the shortest distances of each node from the source and another one would be for maintaining the shortest number of stops from the source.\n3. Next, we need to convert the input into an adjacency matrix format. So, we will process the given input and build an adjacency matrix out of it.\n4. Add $$(\\text{source}, 0, 0)$$ into the heap. The middle value represents the current shortest distance from the source and the last value represents the current minimum number of stops from the source to reach this node.\n5. We assume that these values for all the other nodes in the graph are `inf`.\n6. We continue processing the nodes until either of the following conditions are met:\n     1. We reach the destination node or\n     2. We exhaust the heap which would mean we were not able to reach the destination at all.\n     \n7. At each step, we remove a node from the heap i.e. `ExtractMin` operation on the min-heap. This would represent the node with the shortest distance from the source amongst the ones in the heap. Let's call this node `C`.\n8. We iterate over all of `C's` neighbors which we can obtain from our adjacency matrix. For each neighbor, we check if the value $$\\text{dC} + \\text{W}_\\text{C, V}$$ is less than $$\\text{dV}$$ where $$V$$ represents the neighbor node, $$\\text{dC}$$ and $$\\text{dV}$$ represent the shortest distances (from the dictionary) of these nodes from the source and finally, $$\\text{W}_\\text{C, V}$$ represents the weight (cost of the flight) from node (city) $$C$$ to $$V$$. \n9. If this is not the case then we check if number of stops for node $$C$$ `+ 1` is lower than the number of stops for the node $$V$$ (from the other dictionary). If that is the case, then it means there is a path from the source to the node $$V$$ which is slightly expensive than what we have right now, but it has lesser stops and hence, it should be considered.\n10. If either of the two conditions above are satisfied, we add the node $$V$$ to the heap with updated distance and number of stops. In any case, we will update the corresponding dictionary as well.\n\n<iframe src=\"https://leetcode.com/playground/ksbWo2fB/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ksbWo2fB\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: Let $$E$$ represent the number of flights and $$V$$ represent the number of cities. The time complexity is mainly governed by the number of times we pop and push into the heap. We will process each node (city) atleast once and for each city popped from the queue, we iterate over its adjacency matrix and can potentially add all its neighbors to the heap. Thus, the time taken for extract min and then addition to the heap (or simply, heap replace) would be $$\\text{O}(\\text{V}^2 \\cdot \\text{log V})$$. \n    - Let's talk a bit more about the implementation of Dijkstra's here. The traditional algorithm is not exactly written the way we've explained above. \n    - The traditional algorithm adds *all the nodes* into the heap with the source having a distance value of `0` and all others having a value `inf`. \n    - When we process the neighbors of a node and find that a particular neighbor can be reached in a shorter distance (or lesser number of stops), we *update its value in the heap*. In our implementation, we add a new node with updated values rather than updating the value of the existing node. To do that, we will need another dictionary that will probably keep the index location for a node in the heap or something like that. This would be necessary because a heap is not a binary search tree and it doesn't have any search properties for quick search and updates. \n    - If we keep the number of nodes in the heap fixed to $$V$$, then the complexity would be $$\\text{O}((\\text{V} + \\text{E}) \\cdot \\text{log V})$$. Granted, in our case, the heap might contain more than $$\\text{V}$$ nodes at some point due to the same city being added multiple times. Therefore, the complexity would be slightly more. That is not being accounted for here since that is an implementation detail and not necessary for the algorithm we discussed here.\n    - Yet another point to keep in mind here is that we are using an adjacency matrix rather than adjacency list here. The typical Dijkstra's algorithm would use an adjacency list and that brings down the complexity slightly because you don't \"check\" if a connection exists or not unlike in adjacency matrix. However, since the number of nodes are very less for this problem, we preferred to take the route of adjacency matrix as that gives us sequential access to elements and leads to speed-ups due to cache localization.\n\n* Space Complexity: $$\\text{O}(\\text{V}^2)$$ is the overall space complexity. $$\\text{O}(\\text{V})$$ is occupied by the two dictionaries and also by the heap and $$\\text{V}^2$$ by the adjacency matrix structure. As mentioned above, there might be duplicate cities in the heap with different distances and number of stops due to our implementation. But we are not taking that into consideration here. This is the space complexity of the traditional Dijkstra's and it doesn't change with the algorithm modifications (not the implementation modifications) we've done here.\n<br/>\n<br/>\n\n---\n#### Approach 2: Depth-First-Search with Memoization\n\n**Intuition**\n\nThis problem can easily be modeled as a dynamic programming problem on graphs. What does a dynamic programming problem entail?\n* It has a recursive structure.\n* A bunch of choices to explore at each step.\n* Use the optimal solutions for sub-problems to solve top-level problems.\n* A base case.\n\nThis problem fits the bill. We have a dedicated start and endpoint. We have a bunch of choices for each node in the form of its neighbors. And, we want to minimize the overall shortest distance from the source to the destination which can be represented as a recursive structure in terms of shortest distances of its neighbors to the destination. So, we can apply a dynamic programming approach to solve this problem. We'll look at a recursive implementation here with memoization first and then talk about the iterative approach as well.\n\nAs with any recursive approach, we need to figure out the state of recursion. There are two parameters here which will control our recursion. One is obviously the node itself. The other is the number of steps. Let's call our recursion function `recurse` and define what the state of recursion looks like. $$\\text{recurse}(\\text{node},\\text{stops})$$ will basically return the shortest distance for us to reach the destination from $$\\text{node}$$ considering that there are `stops` left. This being said, it's easy to figure out what the top-level problem would be. It would be $$\\text{recurse}(\\text{0},\\text{K})$$. \n\nLet's consider the following graph to understand why memoization (or caching) is required here.\n\n<center>\n<img src=\"../Figures/787/img5.png\" width=\"550\"/>\n</center>\n\nSay we start the source node `A` and build our recursion tree from there. There are two possible routes of getting to the node `C` with exactly `2` stops. Let's look at what these are.\n\n<center>\n<img src=\"../Figures/787/img6.png\"/>\n</center>\n\nWhile the cost of these two paths is different, once we are at the node `C`, we have `2` steps less than what we had when we started off from the source node `A`. Our recursion representation doesn't care about the path you took to get to a node. It is about the shortest (cheapest) path from the current node with the given number of steps to get to a destination. In that sense, both these scenarios are exactly the same because both lead us to the same recursion state which is $$(\\text{recurse}(\\text{C}, \\text{K-2}))$$ and hence, the result for this recursion state can be cached or memoized.\n\n**Algorithm**\n\n1. We'll define a function called `recurse` which will take two inputs: `node` and `stops`.\n2. We'll also define a dictionary `memo` of tuples that will store the optimal solution for each recursion state encountered.\n3. At each stage, we'll first check if we have reached the destination or not. If we have, then no more moves have to be made and we return a value of `0` since the destination is at a zero distance from itself.\n4. Next, we check if we have any more stops left. If we don't then we return `inf` basically representing that we cannot reach the destination from the current recursion state.\n5. Finally, we check if the current recursion state is cached in the `memo` dictionary and if it is, we return the answer right away.\n6. If none of these conditions are met,we progress in our recursion. For that we will iterate over the adjacency matrix to obtain the neighbors for the current node and make a recursive call for each one of them. The `node` would be the neighboring node and the number of stops would incremeneted by `1`.\n7. To each of these recursion calls, we add the weight of the corresponding edge i.e.\n\n    <pre>recurse(neighbor, stops + 1) + weight(node, neighbor)</pre>\n\n8. We need to return the result of `recurse(src, 0)` as the answer.\n\n<iframe src=\"https://leetcode.com/playground/mdxF6tWd/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"mdxF6tWd\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: The time complexity for a recursive solution is defined by the number of recursive calls we make and the time it takes to process one recursive call. The number of recursive calls we can `potentially` make is $$\\text{O}(\\text{V} \\cdot \\text{K})$$. In each recursive call, we iterate over a given node's neighbors. That takes time $$O(\\text{V})$$ because we are using an adjacency matrix. Thus, the overall time complexity is $$\\text{O}(\\text{V}^2 \\cdot \\text{K})$$.\n* Space Complexity: $$\\text{O}(\\text{V} \\cdot \\text{K} + \\text{V}^2)$$ where $$\\text{O}(\\text{V} \\cdot \\text{K})$$ is occupied by the `memo` dictionary and the rest by the adjacency matrix structure we build in the beginning.\n<br/>\n<br/>\n\n---\n#### Approach 3: Bellman-Ford\n\n**Intuition**\n\nLet's look at the official definition of the Bellman-Ford algorithm straight from Wikipedia:\n\nLike Dijkstra's algorithm, Bellman-Ford proceeds by relaxation, in which approximations to the correct distance are replaced by better ones until they eventually reach the solution. In both algorithms, the approximate distance to each vertex is always an overestimate of the true distance and is replaced by the minimum of its old value and the length of a newly found path. \n\nHowever, Dijkstra's algorithm uses a priority queue to greedily select the closest vertex that has not yet been processed, and performs this relaxation process on all of its outgoing edges; by contrast, the Bellman-Ford algorithm simply relaxes all the edges and does this $${|V|-1}$$ times, where $$|V|$$ is the number of vertices in the graph. In each of these repetitions, the number of vertices with correctly calculated distances grows, from which it follows that eventually, all vertices will have their correct distances. This method allows the Bellman-Ford algorithm to be applied to a wider class of inputs than Dijkstra.\n\nThe term `relax an edge` simply means that for a given edge `U -> V` we check if $$\\text{dU} + W_{\\text{U,V}} < \\text{dV}$$ where $$\\text{dU}$$ and $$\\text{dV}$$ represent the shortest path distances of these nodes from the source right now. To relax an edge means to see if the shortest distance can be updated or not.\n\nAn important part to understanding the Bellman Ford's working is that at each step, the relaxations lead to the discovery of new shortest paths to nodes. After the first iteration over all the vertices, the algorithm finds out all the shortest paths from the source to nodes which can be reached with one hop (one edge). That makes sense because the only edges we'll be able to relax are the ones that are directly connected to the source as all the other nodes have shortest distances set to `inf` initially.\n\nSimilarly, after the $$(\\text{K}+1)^{\\text{th}}$$ step, Bellman-Ford will find the shortest distances for all the nodes that can be reached from the source using a maximum of `K` stops. Isn't that what the question asks us to do? If we run Bellman-Ford for $$\\text{K} + 1$$ iterations, it will find out shortest paths of length $$K$$ or less and it will find all such paths. We can then check if our destination node was reached or not and if it was, then the value for that node would be our shortest path!\n\nLet's quickly look at a couple of iterations of Bellman-Ford on a sample graph to understand how relaxation works and how $$\\text{K+1}$$ iterations can possibly give us our solution. The image below showcases the initial setup before the first iteration of Bellman-Ford is executed. \n\n<center>\n<img src=\"../Figures/787/img7.png\" width=\"550\"/>\n</center>\n\nLet's look at what the graph looks like after a single iteration.\n\n<center>\n<img src=\"../Figures/787/img8.png\"/>\n</center>\n\nIt's important to understand the meaning of what we said in the figure above. We are not saying that after the first iteration we will find the absolute shortest distance from `A` to `B` and `D`. We are just saying that the shortest distance using a single edge only will be found after first iteration. What happens in the next iteration? Well, we will find all the shortest paths that can be reached from the source by using at-most `2` edges. In this example, since the values for nodes `B` and `D` were updated in the previous iteration, they will be re-used in the next iteration to relax edges `B -> E`, `B -> C`, and `D -> C`. \n\nIsn't that what Dynamic Programming is all about......\n\nWell, yes! Using the optimal solutions to sub-problems to find optimal solutions to bigger problems. We use the optimal solutions to shortest paths using `1` edge to find shortest paths using `2` edges and so on.\n\n<center>\n<img src=\"../Figures/787/img9.png\" width=\"550\"/>\n</center>\n\nWe'll go one final iteration here since this is where things get interesting and this will bring some more clarity. The node `E` was discovered in the second iteration and we have the value `15` corresponding to it. However, one of the incoming edges `C -> E` wasn't relaxed in the second iteration because `C` was also discovered during that iteration. Now that we have a non-infinite value associated with `C`, we can use it to relax the edge `C -> E` and that leads to an even shorter path from `A ... E`! \n\n<center>\n<img src=\"../Figures/787/img10.png\"/>\n</center>\n\nAnother important thing to note about this algorithm is that we don't need to build an adjacency matrix. This algorithm simply iterates over the edges of the graph and that information is already available in the input for the program. So we save on space there as opposed to other algorithms which we've seen.\n\n**Algorithm**\n\n1. We have a loop that does `K + 1` iterations. The plus one is because we need to find the cheapest flight route with at most `K` stops in between. That translates to `K + 1` edges at most.\n2. In each iteration, we loop over all the edges in the graph and try to relax each one of them. Again, note that the edges or the flights are already given to us in the input and don't need to build any kind of adjacency list or matrix structure which is otherwise standard for other graph algorithms.\n3. After `K + 1` iterations, we check if the destination has been reached or not. If it's been discovered, then the distance at that point will be the shortest using at most `K + 1` edges.\n4. We use an array to store the current shortest distances of each node from the source. This is possible because the number of nodes is less and we don't need to use a dictionary here. However, a single array is not sufficient here because any values updated in a particular iteration cannot be used to update other values in the same iteration. Thus, we need another distance array which will kind of server as `values in the previous iteration`. So we essentially use 2 arrays of size $$V$$ and we swap between them in each iteration i.e. \n\n    <pre>Iteration-0 ----\n   Array-1 is the main array\n   Array-2 becomes the previous array\n   Iteration-1 ----\n   Array-2 is the main array\n   Array-1 becomes the previous array</pre>\n\nLet's look at how the two arrays look like at the start of the first iteration. We'll take a look at a couple of iterations so that the it's easier to understand the implementations.\n\n<center>\n<img src=\"../Figures/787/img11.png\" width=\"550\"/>\n</center>\n\nWe discovered two new vertices which are directly connected from the source and their corresponding distances were updated accordingly. \n\n<center>\n<img src=\"../Figures/787/img12.png\" width=\"550\"/>\n</center>\n\nNow let's look at how the two arrays would look like at the start of the second iteration. Now the roles would be reversed. The `current` array in the previous iteration now servers as the `previous` array.\n\n<center>\n<img src=\"../Figures/787/img13.png\" width=\"550\"/>\n</center>\n\nNotice how the two arrays have swapped roles. You might be thinking that even though the `red` array is the current one, it doesn't have the latest values `7` and `5`. Well, they will be used for the calculation of distance of node `C` and also, they will be copied over (re-calculated again due to the node `A` in `previous` array). Let's see how the two arrays look after the second iteration is complete.\n\n<center>\n<img src=\"../Figures/787/img14.png\" width=\"550\"/>\n</center>\n\n<iframe src=\"https://leetcode.com/playground/85CBRq5s/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"85CBRq5s\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(\\text{K} \\cdot \\text{E})$$ since we have $$\\text{K}+1$$ iterations and in each iteration, we go over all the edges in the graph.\n* Space Complexity: $$\\text{O}(\\text{V})$$ occupied by the two distance arrays.\n<br/>\n<br/>\n\n---\n#### Approach 4: Breadth First Search\n\n**Intuition**\n\nWe say that the breadth-first search is a good algorithm to use if we want to find the shortest path in an undirected, unweighted graph. The claim for BFS is that the first time a node is discovered during the traversal, that distance from the source would give us the shortest path. The same cannot be said for a weighted graph. For a weighted graph, there is no correlation between the number of edges composing the path and the actual length of the path which is composed of the weights of all the edges in it. Thus, we cannot employ breadth-first search for weighted graphs.\n\nBreadth-first search has no way of knowing if a particular discovery of a node would give us the shortest path to that node. And so, the only possible way for BFS (or DFS) to find the shortest path in a weighted graph is to search the entire graph and keep recording the minimum distance from source to the destination vertex.\n\n> That being said, Breadth-first search is actually a great algorithm of choice for this problem because the number of levels to be explored by the algorithm is bounded by K\n\nThe number of levels that the search would go to is limited by the value `K+1` in the question. So essentially, we would be trying to find the shortest path, but we won\u2019t have to explore the entire graph as such. We will just go up to the level `K+1` and we just need to return the shortest path to the destination (if reachable by level `K+1`) at the end of the algorithm.\n\nAn important consideration here is the size of the queue. We need to control it somehow otherwise, even at very small depths, the graph could grow exponentially. For this very problem however, we will be able to bound the size of a given level (and hence the queue) by $$V$$, the number of vertices in the graph. Let's think about what it means to encounter the same node multiple times during breadth first traversal.\n\nSince we will be going only till the level `K+1`, we don't really have to worry about the number of stops getting exhausted or something. So if the number of stops are out of the way, the only way we will consider adding a node again to the queue is if we found a shorter distance from the source than what we already have stored for that node. If that is not the case then on encountering a node again during the traversal, we can safely discard it i.e not add it to the queue again.\n\nSince this is weighted graph, we cannot assume anything about the shortest distance from source to a node when its first discovered after being popped from the queue. We will have to go to all the `K+1` levels and once we've exhausted `K+1` levels, we can be sure that the shortest distances we have are the \"best\" we can find with `K+1` edges or less.\n\n**Algorithm**\n\n1. This is standard BFS and we'll be using a queue here. Let's call it `Q`.\n2. We'll need a dictionary to keep track of shortest distances from the source. An important thing to note in this approach is that we need to keep a dictionary with the `node, stops` as the key. Basically, we need to keep track of the shortest distance of a node from the source provided that it takes `stops` stops to reach it.\n3. Add the source node to the queue. There are multiple ways of tracking the level of a node during breadth-first traversal. We'll be using the size of the queue at the beginning of the level to loop over a particular level.\n4. We iterate until we exhaust the queue or `K+1` levels whichever comes first.\n5. For each iteration, we pop a node from the queue and iterate over its neighbors which we can get from the adjacency matrix.\n6. For each of the neighbors, we check if the current edge improves that neighbor's shortest distance from source or not. If it does, then we update the shortest distance dictionary (array) accordingly and also add the neighbor to the queue.\n7. We continue doing this for until one of our terminal conditions are met.\n8. We will also maintain an `ans` variable to track the minimum distance of the destination from the source. At each step, whenever we update the shortest distance of a node from source, we check if that node is the destination and if it is, we will update the `ans` variable accordingly.\n8. At the end, we simply check if we were able to reach the destination node by looking at the `ans` variable's value. If we did reach it, then the recorded distance would be the shortest in under `K` hops (or `K + 1` edges at most).\n\n<iframe src=\"https://leetcode.com/playground/UUPeLTSC/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"UUPeLTSC\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(\\text{E} \\cdot \\text{K})$$ since we can process each edge multiple times depending upon the improvement in the shortest distances. However, the maximum number of times an edge would be processed is bounded by $$\\text{K + 1}$$ since that's the number of levels we are going to explore in this algorithm. \n* Space Complexity: $$O(\\text{V}^2 + \\text{V} \\cdot \\text{K})$$. The first part is the standard memory occupied by the adjacency matrix and in addition to that, the distances dictionary can occupy a maximum of $$O(\\text{V} \\cdot \\text{K})$$.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "902",
+            "count": 244,
+            "average": "3.025",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "cheapest-flights-within-k-stops",
+    "playgroundData": {
+        "ksbWo2fB": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "cheapest-flights-within-k-stops-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "mdxF6tWd": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "cheapest-flights-within-k-stops-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "85CBRq5s": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "cheapest-flights-within-k-stops-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "UUPeLTSC": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "cheapest-flights-within-k-stops-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

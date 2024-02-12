@@ -1,0 +1,216 @@
+{
+    "id": "330",
+    "question": {
+        "questionId": "330",
+        "questionFrontendId": "330",
+        "boundTopicId": null,
+        "title": "Patching Array",
+        "titleSlug": "patching-array",
+        "content": "<p>Given a sorted integer array <code>nums</code> and an integer <code>n</code>, add/patch elements to the array such that any number in the range <code>[1, n]</code> inclusive can be formed by the sum of some elements in the array.</p>\n\n<p>Return <em>the minimum number of patches required</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,3], n = 6\n<strong>Output:</strong> 1\nExplanation:\nCombinations of nums are [1], [3], [1,3], which form possible sums of: 1, 3, 4.\nNow if we add/patch 2 to nums, the combinations are: [1], [2], [3], [1,3], [2,3], [1,2,3].\nPossible sums are 1, 2, 3, 4, 5, 6, which now covers the range [1, 6].\nSo we only need 1 patch.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,5,10], n = 20\n<strong>Output:</strong> 2\nExplanation: The two patches can be [2, 4].\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,2], n = 5\n<strong>Output:</strong> 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\n\t<li><code>nums</code> is sorted in <strong>ascending order</strong>.</li>\n\t<li><code>1 &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 1133,
+        "dislikes": 116,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Maximum Number of Consecutive Values You Can Make\", \"titleSlug\": \"maximum-number-of-consecutive-values-you-can-make\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[1,3]\n6\n[1,5,10]\n20\n[1,2,2]\n5",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Greedy",
+                "slug": "greedy",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}], \"1\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int minPatches(vector<int>& nums, int n) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int minPatches(int[] nums, int n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def minPatches(self, nums, n):\n        \"\"\"\n        :type nums: List[int]\n        :type n: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def minPatches(self, nums: List[int], n: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint minPatches(int* nums, int numsSize, int n){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int MinPatches(int[] nums, int n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} nums\n * @param {number} n\n * @return {number}\n */\nvar minPatches = function(nums, n) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} nums\n# @param {Integer} n\n# @return {Integer}\ndef min_patches(nums, n)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func minPatches(_ nums: [Int], _ n: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func minPatches(nums []int, n int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def minPatches(nums: Array[Int], n: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun minPatches(nums: IntArray, n: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn min_patches(nums: Vec<i32>, n: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $n\n     * @return Integer\n     */\n    function minPatches($nums, $n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function minPatches(nums: number[], n: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (min-patches nums n)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec min_patches(Nums :: [integer()], N :: integer()) -> integer().\nmin_patches(Nums, N) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec min_patches(nums :: [integer], n :: integer) :: integer\n  def min_patches(nums, n) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"57.3K\", \"totalSubmission\": \"144.1K\", \"totalAcceptedRaw\": 57258, \"totalSubmissionRaw\": 144142, \"acRate\": \"39.7%\"}",
+        "hints": [],
+        "solution": {
+            "id": "71",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[1,3]\n6",
+        "metaData": "{\r\n  \"name\": \"minPatches\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "71",
+        "content": "## Solution\n\n**Intuition**\n\nFor any missing number, if we want to cover it, we have to add at least one number smaller or equal to that number. Otherwise, it will not be covered.\nImagine you want to give someone change of $$x$$ cents, and you don't have enough coins. You will need to ask for coin less than or equal to $$x$$.\n\n**Algorithm**\n\nSuppose `miss` is the smallest missing number, then we know that `[1, miss)` (left-closed, right-open) is already covered . In order to cover `miss`, we have to add something smaller than or equal to `miss`. Otherwise, there is no way we can cover it.\n\nFor example, you have any array `nums = [1,2,3,8]` and `n = 16`. The numbers already covered is in the ranges `[1, 6]` and `[8, 14]`. In other words, `7, 15, 16` are missing. If you add patches larger than `7`, then `7` is still missing.\n\nSuppose the number we added is $$x$$ then, the ranges `[1, miss)` and `[x, x + miss)` are both covered. And since we know that `x <= miss`, the two ranges will cover the range `[1, x + miss)`. We want to choose $$x$$ as large as possible so that the range can cover as large as possible. Therefore, the best option is `x = miss`.\n\nAfter we covered `miss`, we can recalculate the coverage and see what's the new smallest missing number. We then patch that number. We do this repeatedly until no missing number.  \n\nHere is the recipe of this greedy algorithm:\n\n* Initialize the range `[1, miss)` = `[1, 1)` = empty\n* While n is not covered yet\n  * if the current element `nums[i]` is less than or equal to `miss`\n    * extends the range to `[1, miss + nums[i])`\n    * increase `i` by 1\n  * otherwise\n    * patch the array with `miss`, extends the range to `[1, miss + miss)`\n    * increase the number of patches\n* Return the number of patches  \n\n**Example:**\n\n`nums = [1,2,3,8]` and `n = 80`\n\n| iteration | `miss` | covered range | `i` | `nums[i]` | patches | comment  |\n|:---------:|:------:|:-------------:|:-:|:-------:|:-------:|----------|\n|     0     |    1   |     [1, 1)    | 0 |    1    |    0    |          |\n|     1     |    2   |     [1, 2)    | 1 |    2    |    0    |          |\n|     2     |    4   |     [1, 4)    | 2 |    3    |    0    |          |\n|     3     |    7   |     [1, 7)    | 3 |    8    |    0    |          |\n|     4     |   14   |    [1, 14)    | 3 |    8    |    1    | patch 7  |\n|     5     |   22   |    [1, 22)    | 4 |   none  |    1    |          |\n|     6     |   44   |    [1, 44)    | 4 |   none  |    2    | patch 22 |\n|     7     |   88   |    [1, 88)    | 4 |   none  |    3    | patch 44 |\n\n\n**Correctness**\n\nOne may ask how do you know this is correct? In this section, we will prove that the greedy algorithm always gives the smallest possible number of patches:\n\n*Lemma*\n\n> If the greedy algorithm needs to patch $$k$$ numbers to cover $$[1, n]$$, it is impossible to patch less than $$k$$ numbers to do the same.\n\n*Proof by contradiction*\n\n For a given number $$n$$ and array $$\\mathrm{nums}$$, suppose the $$k$$ patches found by greedy algorithm is $$X_1 \\lt X_2 \\lt \\ldots \\lt X_k \\leq n$$. If there is another set of patches $$Y_1 \\leq Y_2 \\leq \\ldots \\leq Y_{k'} \\leq n$$, with $$k' \\lt k$$, then we have $$Y_1 \\leq X_1$$, otherwise $$X_1$$ is not covered. And since adding $$X_1$$ cannot cover $$X_2$$ which means the sum of all the elements including $$X_1$$ is smaller than $$X_2$$. Thus adding $$Y_1$$ will also not cover $$X_2$$. And so we have:\n\n$$\nY_2 \\leq X_2\n$$\n\notherwise $$X_2$$ will not be covered and so on so forth.\n\n$$\nY_i \\leq X_i, i = 1, 2, \\ldots k'\n$$\n\nFinally, we can see that since $$X_1, X_2, \\ldots X_{k'}$$ is not enough to cover $$X_k$$, therefore $$Y_1, Y_2, \\ldots, Y_{k'}$$ is also not enough to cover $$X_k \\leq n$$. This contradicts the fact that $$Y_1 \\leq Y_2 \\leq \\ldots \\leq Y_{k'} \\leq n$$ covers $$[1, n]$$. **This completes the proof.**\n\n\n\nThus, the greedy algorithm will always return the fewest patches possible. Even through for particular cases, there could be many different ways to patch. But none of them will have fewer patches than the greedy algorithm does.\n\n\n\n<iframe src=\"https://leetcode.com/playground/mWaJh5cz/shared\" frameBorder=\"0\" name=\"mWaJh5cz\" width=\"100%\" height=\"309\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(m + \\log n)$$. In each iteration, we either increase the index `i` or we double the variable `miss`. The total number of increment for index `i` is $$m$$ and the total number of doubling `miss` is $$\\log n$$\n\n* Space complexity : $$O(1)$$. We only need three variables, `patches`, `i` and `miss`.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "69",
+            "count": 79,
+            "average": "4.684",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "patching-array",
+    "playgroundData": {
+        "mWaJh5cz": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "330_patching_arraymd1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

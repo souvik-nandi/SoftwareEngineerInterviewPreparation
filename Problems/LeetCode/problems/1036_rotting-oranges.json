@@ -1,0 +1,247 @@
+{
+    "id": "1036",
+    "question": {
+        "questionId": "1036",
+        "questionFrontendId": "994",
+        "boundTopicId": null,
+        "title": "Rotting Oranges",
+        "titleSlug": "rotting-oranges",
+        "content": "<p>You are given an <code>m x n</code> <code>grid</code> where each cell can have one of three values:</p>\n\n<ul>\n\t<li><code>0</code> representing an empty cell,</li>\n\t<li><code>1</code> representing a fresh orange, or</li>\n\t<li><code>2</code> representing a rotten orange.</li>\n</ul>\n\n<p>Every minute, any fresh orange that is <strong>4-directionally adjacent</strong> to a rotten orange becomes rotten.</p>\n\n<p>Return <em>the minimum number of minutes that must elapse until no cell has a fresh orange</em>. If <em>this is impossible, return</em> <code>-1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/02/16/oranges.png\" style=\"width: 650px; height: 137px;\" />\n<pre>\n<strong>Input:</strong> grid = [[2,1,1],[1,1,0],[0,1,1]]\n<strong>Output:</strong> 4\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> grid = [[2,1,1],[0,1,1],[1,0,1]]\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> The orange in the bottom left corner (row 2, column 0) is never rotten, because rotting only happens 4-directionally.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> grid = [[0,2]]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> Since there are already no fresh oranges at minute 0, the answer is just 0.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 10</code></li>\n\t<li><code>grid[i][j]</code> is <code>0</code>, <code>1</code>, or <code>2</code>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 7309,
+        "dislikes": 285,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Walls and Gates\", \"titleSlug\": \"walls-and-gates\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Detonate the Maximum Bombs\", \"titleSlug\": \"detonate-the-maximum-bombs\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Escape the Spreading Fire\", \"titleSlug\": \"escape-the-spreading-fire\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[[2,1,1],[1,1,0],[0,1,1]]\n[[2,1,1],[0,1,1],[1,0,1]]\n[[0,2]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 42}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 11}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Global Tech\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Samsung\", \"slug\": \"samsung\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Twilio\", \"slug\": \"twilio\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Flipkart\", \"slug\": \"flipkart\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"FactSet\", \"slug\": \"factset\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Hotstar\", \"slug\": \"hotstar\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Accolite\", \"slug\": \"accolite\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int orangesRotting(vector<vector<int>>& grid) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int orangesRotting(int[][] grid) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def orangesRotting(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def orangesRotting(self, grid: List[List[int]]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint orangesRotting(int** grid, int gridSize, int* gridColSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int OrangesRotting(int[][] grid) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar orangesRotting = function(grid) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef oranges_rotting(grid)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func orangesRotting(_ grid: [[Int]]) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func orangesRotting(grid [][]int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def orangesRotting(grid: Array[Array[Int]]): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun orangesRotting(grid: Array<IntArray>): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn oranges_rotting(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function orangesRotting($grid) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function orangesRotting(grid: number[][]): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (oranges-rotting grid)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec oranges_rotting(Grid :: [[integer()]]) -> integer().\noranges_rotting(Grid) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec oranges_rotting(grid :: [[integer]]) :: integer\n  def oranges_rotting(grid) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"426.1K\", \"totalSubmission\": \"819.5K\", \"totalAcceptedRaw\": 426069, \"totalSubmissionRaw\": 819454, \"acRate\": \"52.0%\"}",
+        "hints": [],
+        "solution": {
+            "id": "935",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[[2,1,1],[1,1,0],[0,1,1]]",
+        "metaData": "{\r\n  \"name\": \"orangesRotting\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "935",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Approach 1: Breadth-First Search (BFS)\n\n**Intuition**\n\nThis is yet another 2D traversal problem. As we know, the common algorithmic strategies to deal with these problems would be **_Breadth-First Search_** (BFS) and **_Depth-First Search_** (DFS).\n\nAs suggested by its name, the BFS strategy prioritizes the **breadth** over depth, _i.e._ it goes wider before it goes deeper. On the other hand, the DFS strategy prioritizes the **depth** over breadth.\n\nThe choice of strategy depends on the nature of the problem. Though sometimes, they are both applicable for the same problem. In addition to 2D grids, these two algorithms are often applied to problems associated with _tree_ or _graph_ data structures as well.\n\nIn this problem, one can see that BFS would be a better fit. \n>Because the process of rotting could be explained perfectly with the BFS procedure, _i.e._ the rotten oranges will contaminate their neighbors first, before the contamination propagates to other fresh oranges that are farther away.\n\nIf one is not familiar with the algorithm of BFS, one can refer to our [Explore card of Queue & Stack](https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/) which covers this subject.\n\nHowever, it would be more intuitive to visualize the rotting process with a _graph_ data structure, where each node represents a cell and the edge between two nodes indicates that the given two cells are adjacent to each other.\n\n![Grid to Graph](../Figures/994/994_grid_graph.png)\n\nIn the above graph (pun intended), as we can see, starting from the top rotten orange, the contamination would propagate _**layer by layer**_ (or level by level), until it reaches the farthest fresh oranges. The number of minutes that are elapsed would be equivalent to the number of levels in the graph that we traverse during the propagation.\n\n!?!../Documents/994_LIS.json:1000,619!?!\n\n**Algorithm**\n\nOne of the most distinguished code patterns in BFS algorithms is that often we use a _**queue**_ data structure to keep track of the candidates that we need to visit during the process.\n\nThe main algorithm is built around a loop iterating through the queue. At each iteration, we _pop_ out an element from the head of the queue. Then we do some particular process with the popped element. More importantly, we then _append_ neighbors of the popped element into the queue, to keep the BFS process running.\n\nHere are some sample implementations.\n\n<iframe src=\"https://leetcode.com/playground/xhpYDDNS/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"xhpYDDNS\"></iframe>\n\nIn the above implementations, we applied some tricks to further optimize both the time and space complexities.\n\n- Usually in BFS algorithms, we keep a `visited` table which records the visited candidates. The `visited` table helps us to avoid repetitive visits.\n<br/>\n\n- But as one notices, rather than using the `visited` table, we _reuse_ the input grid to keep track of our visits, _i.e._ we were altering the _status_ of the input grid **in-place**.\n<br/>\n\n- This _in-place_ technique reduces the memory consumption of our algorithm. Also, it has a constant time complexity to check the current status (_i.e._ array access, `grid[row][col]`), rather than referring to the `visited` table which might be of constant time complexity as well (_e.g._ hash table) but in reality could be slower than array access. \n<br/>\n\n- We use a _**delimiter**_ (_i.e._ `(row=-1, col=-1)`) in the queue to separate cells on different levels. In this way, we only need one queue for the iteration. As an alternative, one can *create* a queue for each level and alternate between the queues, though technically the initialization and the assignment of each queue could consume some extra time.\n\n**Complexity**\n\n- Time Complexity: $$\\mathcal{O}(N)$$, where $$N$$ is the size of the grid.\n\n    First, we scan the grid to find the initial values for the queue, which would take $$\\mathcal{O}(N)$$ time.\n    <br/>\n\n    Then we run the BFS process on the queue, which in the worst case would enumerate all the cells in the grid once and only once. Therefore, it takes $$\\mathcal{O}(N)$$ time.\n    <br/>\n\n    Thus combining the above two steps, the overall time complexity would be $$\\mathcal{O}(N) + \\mathcal{O}(N) = \\mathcal{O}(N)$$\n\n\n- Space Complexity: $$\\mathcal{O}(N)$$, where $$N$$ is the size of the grid.\n\n    In the worst case, the grid is filled with rotten oranges. As a result, the queue would be initialized with all the cells in the grid.\n    <br/>\n    \n    By the way, normally for BFS, the main space complexity lies in the process rather than the initialization. For instance, for a BFS traversal in a tree, at any given moment, the queue would hold no more than 2 levels of tree nodes. Therefore, the space complexity of BFS traversal in a tree would depend on the _**width**_ of the input tree.\n\n<br/>\n<br/>\n\n---\n#### Approach 2: In-place BFS\n\n**Intuition**\n\nAlthough there is no doubt that the best strategy for this problem is BFS, some users in the Discussion forum have proposed different implementations of BFS with constant space complexity $$\\mathcal{O}(1)$$. To name just a few, one can see the posts from [@manky](https://leetcode.com/problems/rotting-oranges/discuss/569248/Alternate-approach-BFS-O(N-*-Height)-but-constant-space-easy-to-understand-and-modular-code) and [@votrubac](https://leetcode.com/problems/rotting-oranges/discuss/238579/C%2B%2BJava-with-picture-BFS).\n\nAs one might recall from the previous BFS implementation, its space complexity is mainly due to the `queue` that we were using to keep the order for the visits of cells. In order to achieve $$\\mathcal{O}(1)$$ space complexity, we then need to eliminate the queue in the BFS.\n\n>The secret in doing BFS traversal without a queue lies in the technique called [_in-place algorithm_](https://en.wikipedia.org/wiki/In-place_algorithm), which transforms input to solve the problem without using auxiliary data structure.\n\nActually, we have already had a taste of _in-place algorithm_ in the previous implementation of BFS, where we directly modified the input grid to mark the oranges that turn rotten, rather than using an additional `visited` table.\n\nHow about we apply the in-place algorithm again, but this time for the _role_ of the `queue` variable in our previous BFS implementation?\n\n>The idea is that at each **_round_** of the BFS, we mark the cells to be visited in the input grid with a specific `timestamp`.\n\nBy _round_, we mean a snapshot in time where a group of oranges turns rotten.\n\n**Algorithm**\n\n![Grid Snapshot I](../Figures/994/994_timestamp_I.png)\n\n![Grid Snapshot II](../Figures/994/994_timestamp_II.png)\n\nIn the above graph, we show how we manipulate the values in the input grid _in-place_ in order to run the BFS traversal.\n\n- 1). Starting from the beginning (with `timestamp=2`), the cells that are marked with the value `2` contain rotten oranges. From this moment on, we adopt a **_rule_** stating as \"the cells that have the value of the current timestamp (_i.e._ `2`) should be visited at this round of BFS.\".\n<br/>\n\n- 2). For each of the cell that is marked with the current timestamp, we then go on to mark its neighbor cells that hold a fresh orange with the _**next**_ timestamp (_i.e._ `timestamp += 1`). This _**in-place**_ modification serves the same purpose as the `queue` variable in the previous BFS implementation, which is to select the candidates to visit for the next round.\n<br/>\n\n- 3). At this moment, we should have `timestamp=3`, and meanwhile we also have the cells to be visited at this round marked out. We then repeat the above step **(2)** until there is no more new candidates generated in the step (2) (_i.e._ the end of BFS traversal).\n<br/>\n\nTo summarize, the above algorithm is still a BFS traversal in a 2D grid. But rather than using a queue data structure to keep track of the visiting order, we applied an _in-place algorithm_ to serve the same purpose as a queue in a more classic BFS implementation.\n\n<iframe src=\"https://leetcode.com/playground/2sjoSda5/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"2sjoSda5\"></iframe>\n\n\n**Complexity Analysis**\n\n- Time Complexity: $$\\mathcal{O}(N^2)$$ where $$N$$ is the size of the input grid.\n<br/>\n\n    In the in-place BFS traversal, for each round of BFS, we would have to iterate through the entire grid.\n    <br/>\n\n    The contamination propagates in 4 different directions. If the orange is well adjacent to each other, the chain of propagation would continue until all the oranges turn rotten. \n    <br/>\n\n    In the worst case, the rotten and the fresh oranges might be arranged in a way that we would have to run the BFS loop over and over again, which could amount to $$\\frac{N}{2}$$ times which is the **_longest_** propagation chain that we might have, _i.e._ the zigzag walk in a 2D grid as shown in the following graph.\n    ![Grid Zigzag](../Figures/994/994_zigzag.png) \n    <br/>\n\n    As a result, the overall time complexity of the in-place BFS algorithm is $$\\mathcal{O}(N \\cdot \\frac{N}{2}) = \\mathcal{O}(N^2)$$.\n\n- Space Complexity: $$\\mathcal{O}(1)$$, the memory usage is constant regardless the size of the input. This is the very point of applying in-place algorithm. Here we trade the time complexity with the space complexity, which is a common scenario in many algorithms.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "880",
+            "count": 95,
+            "average": "4.590",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "rotting-oranges",
+    "playgroundData": {
+        "xhpYDDNS": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "rotting-oranges-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "2sjoSda5": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "rotting-oranges-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

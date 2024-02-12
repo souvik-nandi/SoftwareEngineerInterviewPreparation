@@ -1,0 +1,80 @@
+{
+    "id": "2172",
+    "question": {
+        "questionId": "2172",
+        "questionFrontendId": "2026",
+        "boundTopicId": null,
+        "title": "Low-Quality Problems",
+        "titleSlug": "low-quality-problems",
+        "content": "<p>Table: <code>Problems</code></p>\n\n<pre>\n+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| problem_id  | int  |\n| likes       | int  |\n| dislikes    | int  |\n+-------------+------+\nproblem_id is the primary key column for this table.\nEach row of this table indicates the number of likes and dislikes for a LeetCode problem.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to report the IDs of the <strong>low-quality</strong> problems. A LeetCode problem is <strong>low-quality</strong> if the like percentage of the problem (number of likes divided by the total number of votes) is <strong>strictly less than</strong> <code>60%</code>.</p>\n\n<p>Return the result table ordered by <code>problem_id</code> in ascending order.</p>\n\n<p>The query result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nProblems table:\n+------------+-------+----------+\n| problem_id | likes | dislikes |\n+------------+-------+----------+\n| 6          | 1290  | 425      |\n| 11         | 2677  | 8659     |\n| 1          | 4446  | 2760     |\n| 7          | 8569  | 6086     |\n| 13         | 2050  | 4164     |\n| 10         | 9002  | 7446     |\n+------------+-------+----------+\n<strong>Output:</strong> \n+------------+\n| problem_id |\n+------------+\n| 7          |\n| 10         |\n| 11         |\n| 13         |\n+------------+\n<strong>Explanation:</strong> The like percentages are as follows:\n- Problem 1: (4446 / (4446 + 2760)) * 100 = 61.69858%\n- Problem 6: (1290 / (1290 + 425)) * 100 = 75.21866%\n- Problem 7: (8569 / (8569 + 6086)) * 100 = 58.47151%\n- Problem 10: (9002 / (9002 + 7446)) * 100 = 54.73006%\n- Problem 11: (2677 / (2677 + 8659)) * 100 = 23.61503%\n- Problem 13: (2050 / (2050 + 4164)) * 100 = 32.99002%\nProblems 7, 10, 11, and 13 are low-quality problems because their like percentages are less than 60%.</pre>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Easy",
+        "likes": 21,
+        "dislikes": 6,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "{\"headers\":{\"Problems\":[\"problem_id\",\"likes\",\"dislikes\"]},\"rows\":{\"Problems\":[[6,1290,425],[11,2677,8659],[1,4446,2760],[7,8569,6086],[13,2050,4164],[10,9002,7446]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "# Write your MySQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "/* Write your T-SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "/* Write your PL/SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"5.7K\", \"totalSubmission\": \"6.7K\", \"totalAcceptedRaw\": 5712, \"totalSubmissionRaw\": 6671, \"acRate\": \"85.6%\"}",
+        "hints": [],
+        "solution": null,
+        "status": null,
+        "sampleTestCase": "{\"headers\":{\"Problems\":[\"problem_id\",\"likes\",\"dislikes\"]},\"rows\":{\"Problems\":[[6,1290,425],[11,2677,8659],[1,4446,2760],[7,8569,6086],[13,2050,4164],[10,9002,7446]]}}",
+        "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Problems (problem_id int, likes int, dislikes int)\"\n  ],\n  \"mssql\": [\n    \"Create table Problems (problem_id int, likes int, dislikes int)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Problems (problem_id int, likes int, dislikes int)\"\n  ],\n  \"database\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists Problems (problem_id int, likes int, dislikes int)",
+            "Truncate table Problems",
+            "insert into Problems (problem_id, likes, dislikes) values ('6', '1290', '425')",
+            "insert into Problems (problem_id, likes, dislikes) values ('11', '2677', '8659')",
+            "insert into Problems (problem_id, likes, dislikes) values ('1', '4446', '2760')",
+            "insert into Problems (problem_id, likes, dislikes) values ('7', '8569', '6086')",
+            "insert into Problems (problem_id, likes, dislikes) values ('13', '2050', '4164')",
+            "insert into Problems (problem_id, likes, dislikes) values ('10', '9002', '7446')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": null,
+    "questionCode": "low-quality-problems",
+    "playgroundData": null
+}

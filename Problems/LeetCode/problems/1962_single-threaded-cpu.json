@@ -1,0 +1,225 @@
+{
+    "id": "1962",
+    "question": {
+        "questionId": "1962",
+        "questionFrontendId": "1834",
+        "boundTopicId": null,
+        "title": "Single-Threaded CPU",
+        "titleSlug": "single-threaded-cpu",
+        "content": "<p>You are given <code>n</code>\u200b\u200b\u200b\u200b\u200b\u200b tasks labeled from <code>0</code> to <code>n - 1</code> represented by a 2D integer array <code>tasks</code>, where <code>tasks[i] = [enqueueTime<sub>i</sub>, processingTime<sub>i</sub>]</code> means that the <code>i<sup>\u200b\u200b\u200b\u200b\u200b\u200bth</sup></code>\u200b\u200b\u200b\u200b task will be available to process at <code>enqueueTime<sub>i</sub></code> and will take <code>processingTime<sub>i</sub></code><sub> </sub>to finish processing.</p>\n\n<p>You have a single-threaded CPU that can process <strong>at most one</strong> task at a time and will act in the following way:</p>\n\n<ul>\n\t<li>If the CPU is idle and there are no available tasks to process, the CPU remains idle.</li>\n\t<li>If the CPU is idle and there are available tasks, the CPU will choose the one with the <strong>shortest processing time</strong>. If multiple tasks have the same shortest processing time, it will choose the task with the smallest index.</li>\n\t<li>Once a task is started, the CPU will <strong>process the entire task</strong> without stopping.</li>\n\t<li>The CPU can finish a task then start a new one instantly.</li>\n</ul>\n\n<p>Return <em>the order in which the CPU will process the tasks.</em></p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> tasks = [[1,2],[2,4],[3,2],[4,1]]\n<strong>Output:</strong> [0,2,3,1]\n<strong>Explanation: </strong>The events go as follows: \n- At time = 1, task 0 is available to process. Available tasks = {0}.\n- Also at time = 1, the idle CPU starts processing task 0. Available tasks = {}.\n- At time = 2, task 1 is available to process. Available tasks = {1}.\n- At time = 3, task 2 is available to process. Available tasks = {1, 2}.\n- Also at time = 3, the CPU finishes task 0 and starts processing task 2 as it is the shortest. Available tasks = {1}.\n- At time = 4, task 3 is available to process. Available tasks = {1, 3}.\n- At time = 5, the CPU finishes task 2 and starts processing task 3 as it is the shortest. Available tasks = {1}.\n- At time = 6, the CPU finishes task 3 and starts processing task 1. Available tasks = {}.\n- At time = 10, the CPU finishes task 1 and becomes idle.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> tasks = [[7,10],[7,12],[7,5],[7,4],[7,2]]\n<strong>Output:</strong> [4,3,2,0,1]\n<strong>Explanation</strong><strong>: </strong>The events go as follows:\n- At time = 7, all the tasks become available. Available tasks = {0,1,2,3,4}.\n- Also at time = 7, the idle CPU starts processing task 4. Available tasks = {0,1,2,3}.\n- At time = 9, the CPU finishes task 4 and starts processing task 3. Available tasks = {0,1,2}.\n- At time = 13, the CPU finishes task 3 and starts processing task 2. Available tasks = {0,1}.\n- At time = 18, the CPU finishes task 2 and starts processing task 0. Available tasks = {1}.\n- At time = 28, the CPU finishes task 0 and starts processing task 1. Available tasks = {}.\n- At time = 40, the CPU finishes task 1 and becomes idle.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>tasks.length == n</code></li>\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= enqueueTime<sub>i</sub>, processingTime<sub>i</sub> &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 976,
+        "dislikes": 119,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Parallel Courses III\", \"titleSlug\": \"parallel-courses-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[[1,2],[2,4],[3,2],[4,1]]\n[[7,10],[7,12],[7,5],[7,4],[7,2]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Heap (Priority Queue)",
+                "slug": "heap-priority-queue",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}], \"2\": [], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<int> getOrder(vector<vector<int>>& tasks) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int[] getOrder(int[][] tasks) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def getOrder(self, tasks):\n        \"\"\"\n        :type tasks: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def getOrder(self, tasks: List[List[int]]) -> List[int]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* getOrder(int** tasks, int tasksSize, int* tasksColSize, int* returnSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int[] GetOrder(int[][] tasks) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[][]} tasks\n * @return {number[]}\n */\nvar getOrder = function(tasks) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[][]} tasks\n# @return {Integer[]}\ndef get_order(tasks)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func getOrder(_ tasks: [[Int]]) -> [Int] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func getOrder(tasks [][]int) []int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def getOrder(tasks: Array[Array[Int]]): Array[Int] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun getOrder(tasks: Array<IntArray>): IntArray {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn get_order(tasks: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[][] $tasks\n     * @return Integer[]\n     */\n    function getOrder($tasks) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function getOrder(tasks: number[][]): number[] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (get-order tasks)\n  (-> (listof (listof exact-integer?)) (listof exact-integer?))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec get_order(Tasks :: [[integer()]]) -> [integer()].\nget_order(Tasks) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec get_order(tasks :: [[integer]]) :: [integer]\n  def get_order(tasks) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"38.9K\", \"totalSubmission\": \"93.6K\", \"totalAcceptedRaw\": 38917, \"totalSubmissionRaw\": 93613, \"acRate\": \"41.6%\"}",
+        "hints": [
+            "To simulate the problem we first need to note that if at any point in time there are no enqueued tasks we need to wait to the smallest enqueue time of a non-processed element",
+            "We need a data structure like a min-heap to support choosing the task with the smallest processing time from all the enqueued tasks"
+        ],
+        "solution": {
+            "id": "1459",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[[1,2],[2,4],[3,2],[4,1]]",
+        "metaData": "{\n  \"name\": \"getOrder\",\n  \"params\": [\n    {\n      \"name\": \"tasks\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1459",
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Overview\n\nThe problem statement asks us to create a scheduling policy that prioritizes the shortest available task; this is known as **Shortest Job First** (SJF) CPU Scheduling. In SJF CPU Scheduling:\n- If the CPU is idle and there are available tasks, the CPU will choose the one with the **shortest processing time**. If multiple tasks have the **same shortest processing time**, it will choose the task with the **smallest index** (the task which arrived first).\n- Once the CPU starts to execute a task, it will process the entire task without stopping, i.e. it is **non-preemptive**.\n\n![sjf example](../Figures/1834/Slide29.PNG)\n\n</br>\n\n---\n\n#### Approach 1: Sorting + Min-Heap\n\n**Intuition**\n\nThe CPU can only pick a task for execution after it is enqueued. Thus, we need to keep track of `current time` to see which tasks are available for the CPU and sort the tasks in increasing order of their enqueue time.\n\nNow, we can create a list of tasks available at the `current time` (tasks whose enqueue time is less than or equal to the current time). From this list, we will select the task with the shortest processing time, so we can think of sorting all the available tasks in increasing order of their processing time.    \nThen after selecting a task, the CPU will run that task until it is complete, and the `current time` will increase by the processing time of the selected task.   \nAfter increasing `current time`, some more tasks might become available for execution. We would then add these tasks to our list and again sort the list in increasing order of processing time. This approach will work, but sorting our available task list every time we update it will be costly in terms of runtime.\n\nThus, this gives us a hint of using a min-heap data structure. If you are new to the heap data structure, we recommend you visit our [Heap Explore Card](https://leetcode.com/explore/featured/card/heap/).     \nA min-heap is a tree-like data structure that always stores the minimum valued element at the top using some comparison (processing time here, or task index in case of a tie) and where insertion and removal of elements (tasks) take logarithmic time.      \nHence, using min-heap will relieve us from the repeated sorting of our list since we can insert new tasks and retrieve the shortest task from the heap in logarithmic time.\n\nHence, the flow of our approach is something like:   \n(a) We will insert all the currently available tasks in the min-heap.   \n(b) Pick the task with the shortest processing time.   \n(c) Increase the current time by the processing time of the selected task.   \n\nNow, one point to note here is that let's say `current time` is `0`, the heap is empty, and the next available task will enqueue at `10`. The CPU will sit idle until `current time` reaches `10`. Instead of incrementing `current time` by `1`, we will update `current time` directly to `10`, which will reduce the number of iterations in our approach and improve the run-time.\n\nThis approach can be better understood with the following slideshow:\n\n!?!../Documents/1834/slideshow1.json:960,540!?!\n\n<br />\n\n**Algorithm**\n\n1. Initialize some data-structures:\n    - `nextTask`, min-heap to store task with minimum processing time on the top.\n    - `sortedTasks`, array to store tasks in sorted order on the basis of their enqueue time. \n    - `tasksProcessingOrder`, array to store the order in which the CPU will process the tasks.\n\n2. Add all of the tasks (with their index) to `sortedTasks` and sort the array using the built-in sort function.\n\n3. Initialize `currTime` to `0`.\n\n4. While there are tasks in the `sortedTasks` array that have not been added to the min-heap, or there are tasks remaining in the min-heap:\n    - Check if the min-heap is empty and if the enqueue time of the next task is greater than `currTime`. If so, then update the `currTime` to the next task's enqueue time.\n    - Insert all the available tasks (tasks whose enqueue time is less than or equal to `currTime`), into the min-heap.\n    - Pick the task on the top of the min-heap, increment `currTime` by its processing time, and add its index to the `tasksProcessingOrder` array. \n\n5. Return the `tasksProcessingOrder` array.\n\n<br />\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/86GEHGdP/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"86GEHGdP\"></iframe>\n\n<br />\n\n**Complexity Analysis**\n\nLet $$N$$ be the number of tasks in the input array.\n\n* Time complexity: $$O(N\\log N)$$.\n  - We create `sortedTasks`, which is a deep copy of the `tasks` array. This takes $$O(N)$$ time.\n  - Sorting the `sortedTasks` array takes $$O(N \\log N)$$ time.\n  - We push and pop each task once in the min-heap, and both the operations take $$O(\\log N)$$ time for each element. Thus, it takes $$O(N \\log N)$$ time in total.\n  - Thus, overall time complexity is, $$O(N + N \\log N + N \\log N)  \\approx O(N \\log N)$$.\n\n\n* Space complexity: $$O(N)$$.\n  - Our `sortedTasks` array will store all $$N$$ tasks, and the min-heap will also contain at most $$N$$ tasks. \n  - Thus, we use $$O(N + N) \\approx O(N)$$ extra space.\n    \n\n<br/>\n\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1464",
+            "count": 2,
+            "average": "5.000",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "single-threaded-cpu",
+    "playgroundData": {
+        "86GEHGdP": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "single-threaded-cpu-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

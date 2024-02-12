@@ -1,0 +1,78 @@
+{
+    "id": "614",
+    "question": {
+        "questionId": "614",
+        "questionFrontendId": "614",
+        "boundTopicId": null,
+        "title": "Second Degree Follower",
+        "titleSlug": "second-degree-follower",
+        "content": "<p>Table: <code>Follow</code></p>\n\n<pre>\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| followee    | varchar |\n| follower    | varchar |\n+-------------+---------+\n(followee, follower) is the primary key column for this table.\nEach row of this table indicates that the user follower follows the user followee on a social network.\nThere will not be a user following themself.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>A <strong>second-degree follower</strong> is a user who:</p>\n\n<ul>\n\t<li>follows at least one user, and</li>\n\t<li>is followed by at least one user.</li>\n</ul>\n\n<p>Write an SQL query to report the <strong>second-degree users</strong> and the number of their followers.</p>\n\n<p>Return the result table <strong>ordered</strong> by <code>follower</code> <strong>in alphabetical order</strong>.</p>\n\n<p>The query result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nFollow table:\n+----------+----------+\n| followee | follower |\n+----------+----------+\n| Alice    | Bob      |\n| Bob      | Cena     |\n| Bob      | Donald   |\n| Donald   | Edward   |\n+----------+----------+\n<strong>Output:</strong> \n+----------+-----+\n| follower | num |\n+----------+-----+\n| Bob      | 2   |\n| Donald   | 1   |\n+----------+-----+\n<strong>Explanation:</strong> \nUser Bob has 2 followers. Bob is a second-degree follower because he follows Alice, so we include him in the result table.\nUser Donald has 1 follower. Donald is a second-degree follower because he follows Bob, so we include him in the result table.\nUser Alice has 1 follower. Alice is not a second-degree follower because she does not follow anyone, so we don not include her in the result table.\n</pre>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Medium",
+        "likes": 124,
+        "dislikes": 707,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "{\"headers\":{\"Follow\":[\"followee\",\"follower\"]},\"rows\":{\"Follow\":[[\"Alice\", \"Bob\"], [\"Bob\", \"Cena\"], [\"Bob\", \"Donald\"], [\"Donald\", \"Edward\"]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "# Write your MySQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "/* Write your T-SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "/* Write your PL/SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"41.5K\", \"totalSubmission\": \"114.8K\", \"totalAcceptedRaw\": 41515, \"totalSubmissionRaw\": 114811, \"acRate\": \"36.2%\"}",
+        "hints": [],
+        "solution": null,
+        "status": null,
+        "sampleTestCase": "{\"headers\":{\"Follow\":[\"followee\",\"follower\"]},\"rows\":{\"Follow\":[[\"Alice\", \"Bob\"], [\"Bob\", \"Cena\"], [\"Bob\", \"Donald\"], [\"Donald\", \"Edward\"]]}}",
+        "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Follow (followee varchar(255), follower varchar(255))\"\n  ],\n  \"mssql\": [\n    \"Create table Follow (followee varchar(255), follower varchar(255))\"\n  ],\n  \"oraclesql\": [\n    \"Create table Follow (followee varchar(255), follower varchar(255))\"\n  ],\n  \"database\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists Follow (followee varchar(255), follower varchar(255))",
+            "Truncate table Follow",
+            "insert into Follow (followee, follower) values ('Alice', 'Bob')",
+            "insert into Follow (followee, follower) values ('Bob', 'Cena')",
+            "insert into Follow (followee, follower) values ('Bob', 'Donald')",
+            "insert into Follow (followee, follower) values ('Donald', 'Edward')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": null,
+    "questionCode": "second-degree-follower",
+    "playgroundData": null
+}

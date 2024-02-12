@@ -1,0 +1,259 @@
+{
+    "id": "170",
+    "question": {
+        "questionId": "170",
+        "questionFrontendId": "170",
+        "boundTopicId": null,
+        "title": "Two Sum III - Data structure design",
+        "titleSlug": "two-sum-iii-data-structure-design",
+        "content": "<p>Design a data structure that accepts a stream of integers and checks if it has a pair of integers that sum up to a particular value.</p>\n\n<p>Implement the <code>TwoSum</code> class:</p>\n\n<ul>\n\t<li><code>TwoSum()</code> Initializes the <code>TwoSum</code> object, with an empty array initially.</li>\n\t<li><code>void add(int number)</code> Adds <code>number</code> to the data structure.</li>\n\t<li><code>boolean find(int value)</code> Returns <code>true</code> if there exists any pair of numbers whose sum is equal to <code>value</code>, otherwise, it returns <code>false</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;TwoSum&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;, &quot;find&quot;, &quot;find&quot;]\n[[], [1], [3], [5], [4], [7]]\n<strong>Output</strong>\n[null, null, null, null, true, false]\n\n<strong>Explanation</strong>\nTwoSum twoSum = new TwoSum();\ntwoSum.add(1);   // [] --&gt; [1]\ntwoSum.add(3);   // [1] --&gt; [1,3]\ntwoSum.add(5);   // [1,3] --&gt; [1,3,5]\ntwoSum.find(4);  // 1 + 3 = 4, return true\ntwoSum.find(7);  // No two integers sum up to 7, return false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>-10<sup>5</sup> &lt;= number &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-2<sup>31</sup> &lt;= value &lt;= 2<sup>31</sup> - 1</code></li>\n\t<li>At most <code>10<sup>4</sup></code> calls will be made to <code>add</code> and <code>find</code>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Easy",
+        "likes": 558,
+        "dislikes": 385,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Two Sum\", \"titleSlug\": \"two-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Unique Word Abbreviation\", \"titleSlug\": \"unique-word-abbreviation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Two Sum IV - Input is a BST\", \"titleSlug\": \"two-sum-iv-input-is-a-bst\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[\"TwoSum\",\"add\",\"add\",\"add\",\"find\",\"find\"]\n[[],[1],[3],[5],[4],[7]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Design",
+                "slug": "design",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Data Stream",
+                "slug": "data-stream",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}], \"1\": [], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class TwoSum {\npublic:\n    TwoSum() {\n        \n    }\n    \n    void add(int number) {\n        \n    }\n    \n    bool find(int value) {\n        \n    }\n};\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * TwoSum* obj = new TwoSum();\n * obj->add(number);\n * bool param_2 = obj->find(value);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class TwoSum {\n\n    public TwoSum() {\n        \n    }\n    \n    public void add(int number) {\n        \n    }\n    \n    public boolean find(int value) {\n        \n    }\n}\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * TwoSum obj = new TwoSum();\n * obj.add(number);\n * boolean param_2 = obj.find(value);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class TwoSum(object):\n\n    def __init__(self):\n        \n\n    def add(self, number):\n        \"\"\"\n        :type number: int\n        :rtype: None\n        \"\"\"\n        \n\n    def find(self, value):\n        \"\"\"\n        :type value: int\n        :rtype: bool\n        \"\"\"\n        \n\n\n# Your TwoSum object will be instantiated and called as such:\n# obj = TwoSum()\n# obj.add(number)\n# param_2 = obj.find(value)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class TwoSum:\n\n    def __init__(self):\n        \n\n    def add(self, number: int) -> None:\n        \n\n    def find(self, value: int) -> bool:\n        \n\n\n# Your TwoSum object will be instantiated and called as such:\n# obj = TwoSum()\n# obj.add(number)\n# param_2 = obj.find(value)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n\ntypedef struct {\n    \n} TwoSum;\n\n\nTwoSum* twoSumCreate() {\n    \n}\n\nvoid twoSumAdd(TwoSum* obj, int number) {\n  \n}\n\nbool twoSumFind(TwoSum* obj, int value) {\n  \n}\n\nvoid twoSumFree(TwoSum* obj) {\n    \n}\n\n/**\n * Your TwoSum struct will be instantiated and called as such:\n * TwoSum* obj = twoSumCreate();\n * twoSumAdd(obj, number);\n \n * bool param_2 = twoSumFind(obj, value);\n \n * twoSumFree(obj);\n*/",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class TwoSum {\n\n    public TwoSum() {\n        \n    }\n    \n    public void Add(int number) {\n        \n    }\n    \n    public bool Find(int value) {\n        \n    }\n}\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * TwoSum obj = new TwoSum();\n * obj.Add(number);\n * bool param_2 = obj.Find(value);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "\nvar TwoSum = function() {\n    \n};\n\n/** \n * @param {number} number\n * @return {void}\n */\nTwoSum.prototype.add = function(number) {\n    \n};\n\n/** \n * @param {number} value\n * @return {boolean}\n */\nTwoSum.prototype.find = function(value) {\n    \n};\n\n/** \n * Your TwoSum object will be instantiated and called as such:\n * var obj = new TwoSum()\n * obj.add(number)\n * var param_2 = obj.find(value)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "class TwoSum\n    def initialize()\n        \n    end\n\n\n=begin\n    :type number: Integer\n    :rtype: Void\n=end\n    def add(number)\n        \n    end\n\n\n=begin\n    :type value: Integer\n    :rtype: Boolean\n=end\n    def find(value)\n        \n    end\n\n\nend\n\n# Your TwoSum object will be instantiated and called as such:\n# obj = TwoSum.new()\n# obj.add(number)\n# param_2 = obj.find(value)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "\nclass TwoSum {\n\n    init() {\n        \n    }\n    \n    func add(_ number: Int) {\n        \n    }\n    \n    func find(_ value: Int) -> Bool {\n        \n    }\n}\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * let obj = TwoSum()\n * obj.add(number)\n * let ret_2: Bool = obj.find(value)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "type TwoSum struct {\n    \n}\n\n\nfunc Constructor() TwoSum {\n    \n}\n\n\nfunc (this *TwoSum) Add(number int)  {\n    \n}\n\n\nfunc (this *TwoSum) Find(value int) bool {\n    \n}\n\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * obj := Constructor();\n * obj.Add(number);\n * param_2 := obj.Find(value);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "class TwoSum() {\n\n    def add(number: Int) {\n        \n    }\n\n    def find(value: Int): Boolean = {\n        \n    }\n\n}\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * var obj = new TwoSum()\n * obj.add(number)\n * var param_2 = obj.find(value)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class TwoSum() {\n\n    fun add(number: Int) {\n        \n    }\n\n    fun find(value: Int): Boolean {\n        \n    }\n\n}\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * var obj = TwoSum()\n * obj.add(number)\n * var param_2 = obj.find(value)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "struct TwoSum {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl TwoSum {\n\n    fn new() -> Self {\n        \n    }\n    \n    fn add(&self, number: i32) {\n        \n    }\n    \n    fn find(&self, value: i32) -> bool {\n        \n    }\n}\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * let obj = TwoSum::new();\n * obj.add(number);\n * let ret_2: bool = obj.find(value);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class TwoSum {\n    /**\n     */\n    function __construct() {\n        \n    }\n  \n    /**\n     * @param Integer $number\n     * @return NULL\n     */\n    function add($number) {\n        \n    }\n  \n    /**\n     * @param Integer $value\n     * @return Boolean\n     */\n    function find($value) {\n        \n    }\n}\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * $obj = TwoSum();\n * $obj->add($number);\n * $ret_2 = $obj->find($value);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "class TwoSum {\n    constructor() {\n\n    }\n\n    add(number: number): void {\n\n    }\n\n    find(value: number): boolean {\n\n    }\n}\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * var obj = new TwoSum()\n * obj.add(number)\n * var param_2 = obj.find(value)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define two-sum%\n  (class object%\n    (super-new)\n    (init-field)\n    \n    ; add : exact-integer? -> void?\n    (define/public (add number)\n\n      )\n    ; find : exact-integer? -> boolean?\n    (define/public (find value)\n\n      )))\n\n;; Your two-sum% object will be instantiated and called as such:\n;; (define obj (new two-sum%))\n;; (send obj add number)\n;; (define param_2 (send obj find value))",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec two_sum_init_() -> any().\ntwo_sum_init_() ->\n  .\n\n-spec two_sum_add(Number :: integer()) -> any().\ntwo_sum_add(Number) ->\n  .\n\n-spec two_sum_find(Value :: integer()) -> boolean().\ntwo_sum_find(Value) ->\n  .\n\n\n%% Your functions will be called as such:\n%% two_sum_init_(),\n%% two_sum_add(Number),\n%% Param_2 = two_sum_find(Value),\n\n%% two_sum_init_ will be called before every test case, in which you can do some necessary initializations.",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule TwoSum do\n  @spec init_() :: any\n  def init_() do\n\n  end\n\n  @spec add(number :: integer) :: any\n  def add(number) do\n\n  end\n\n  @spec find(value :: integer) :: boolean\n  def find(value) do\n\n  end\nend\n\n# Your functions will be called as such:\n# TwoSum.init_()\n# TwoSum.add(number)\n# param_2 = TwoSum.find(value)\n\n# TwoSum.init_ will be called before every test case, in which you can do some necessary initializations.",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"128.7K\", \"totalSubmission\": \"347.8K\", \"totalAcceptedRaw\": 128652, \"totalSubmissionRaw\": 347814, \"acRate\": \"37.0%\"}",
+        "hints": [],
+        "solution": {
+            "id": "829",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "ac",
+        "sampleTestCase": "[\"TwoSum\",\"add\",\"add\",\"add\",\"find\",\"find\"]\n[[],[1],[3],[5],[4],[7]]",
+        "metaData": "{\n  \"classname\": \"TwoSum\",\n  \"constructor\": {\n    \"params\": []\n  },\n  \"methods\": [\n    {\n      \"params\": [\n        {\n          \"type\": \"integer\",\n          \"name\": \"number\"\n        }\n      ],\n      \"return\": {\n        \"type\": \"void\"\n      },\n      \"name\": \"add\"\n    },\n    {\n      \"params\": [\n        {\n          \"type\": \"integer\",\n          \"name\": \"value\"\n        }\n      ],\n      \"return\": {\n        \"type\": \"boolean\"\n      },\n      \"name\": \"find\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  },\n  \"systemdesign\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "829",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Approach 1: Sorted List\n\n**Intuition**\n\nFirst of all, the problem description is not terribly clear on the requirements of _time_ and _space_ complexity. But let us consider this as part of the challenge or a freedom of design. We could figure out the desired complexity for each function, by trial and error.\n\nThis is one of the followup problems to the first programming problem on LeetCode called [Two Sum](https://leetcode.com/problems/two-sum/), where one is asked to return the indice of two numbers from a **_list_** that could sum up to a given value.\n\n>Let us take the inspiration from the origin problem, by keeping all the incoming numbers in a _list_.\n\nGiven a list, one of the solutions to the Two Sum problem is called **_Two-Pointers Iteration_** where we iterate through the list from two directions with _two pointers_ approaching each other.\n\n![pic](../Figures/170/170_two_pointers.png)\n\n>However, one of the preconditions for the Two-Pointers Iteration solution is that the input list should be _**sorted**_. \n\nSo now, here are the questions:\n\n- Should we keep the list in order while inserting new numbers in the function `add(number)` ? \n\n- Or should we do the sorting on demand, _i.e._ at the invocation of `find(value)` ?\n\nWe will address the above two questions later in the Algorithm section.\n\n**Algorithm**\n\nLet us first give the algorithm of Two-Pointers Iteration to find the two-sum solution from a _sorted_ list:\n\n- We initialize **two pointers** `low` and `high` which point to the head and the tail elements of the list respectively.\n\n- With the two pointers, we start a **loop** to iterate the list. The loop would terminate either we find the two-sum solution or the two pointers meet each other.\n\n- Within the loop, at each step, we would move either of the pointers, according to different conditions:\n\n    - If the sum of the elements pointed by the current pointers is _**less than**_ the desired value, then we should try to increase the sum to meet the desired value, _i.e._ we should move the `low` pointer forwards to have a larger value.\n\n    - Similarly if the sum of the elements pointed by the current pointers is _**greater than**_ the desired value, we then should try to reduce the sum by moving the `high` pointer towards the `low` pointer. \n\n    - If the sum happen to the desired value, then we could simply do an **early return** of the function.\n\n- If the loop is terminated at the case where the two pointers meet each other, then we can be sure that there is no solution to the desired value.\n\n\n<iframe src=\"https://leetcode.com/playground/BtJsFEDc/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"BtJsFEDc\"></iframe>\n\n>The usage pattern of the desired data structure in the online judge, as we would discover, is that the `add(number)` function would be called **frequently** which might be followed a less frequent call of `find(value)` function.\n\nThe usage pattern implies that we should try to minimize the cost of `add(number)` function. As a result, we sort the list within the `find(value)` function instead of the `add(number)` function.\n\n_So to the above questions about where to place the sort operation, actually both options are valid and correct._ Due to the usage pattern of the two functions though, it is **less optimal** to sort the list at each _add_ operation.\n\nOn the other hand, we do not do sorting at each occasion of `find(value)` neither. But rather, we sort on demand, _i.e._ only when the list is updated. As a result, we **_amortize_** the cost of the sorting over the time. And this is the optimization trick for the solution to pass the online judge.\n\n**Complexity Analysis**\n\n- Time Complexity:\n\n    - For the `add(number)` function: $$\\mathcal{O}(1)$$, since we simply append the element into the list.\n\n    - For the `find(value)` function: $$\\mathcal{O}(N \\cdot \\log(N))$$. In the worst case, we would need to sort the list first, which is of $$\\mathcal{O}(N \\cdot \\log(N))$$  time complexity normally. And later, again in the worst case we need to iterate through the entire list, which is of $$\\mathcal{O}(N)$$ time complexity. As a result, the overall time complexity of the function lies on  $$\\mathcal{O}(N \\cdot \\log(N))$$ of the sorting operation, which dominates over the later iteration part.\n\n- Space Complexity: the overall space complexity of the data structure is $$\\mathcal{O}(N)$$ where $$N$$ is the total number of _numbers_ that have been added.\n<br/>\n<br/>\n\n---\n#### Approach 2: HashTable\n\n**Intuition**\n\nAs an alternative solution to the original [Two Sum](https://leetcode.com/problems/two-sum/) problem, one could employ the _HashTable_ to index each number.\n\n>Given a desired sum value `S`, for each number `a`, we just need to verify if there exists a complement number (`S-a`) in the table.\n\nAs we know, the data structure of hashtable could offer us a quick _lookup_ as well as _insertion_ operations, which fits well with the above requirements.\n\n\n**Algorithm**\n\n- First, we initialize a _hashtable_ container in our data structure.\n\n- For the `add(number)` function, we build a frequency hashtable with the _number_ as key and the frequency of the _number_ as the value in the table.\n\n- For the `find(value)` function, we then iterate through the hashtable over the keys. For each key (`number`), we check if there exists a complement (`value - number`) in the table. If so, we could terminate the loop and return the result.\n\n- In a particular case, where the number and its complement are equal, we then need to check if there exists _at least_ **two copies** of the _number_ in the table.\n\nWe illustrate the algorithm in the following figure:\n\n![pic](../Figures/170/170_hashtable.png)\n\n<iframe src=\"https://leetcode.com/playground/RY8zFnba/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"RY8zFnba\"></iframe>\n\n\n**Complexity Analysis**\n\n- Time Complexity:\n\n    - For the `add(number)` function: $$\\mathcal{O}(1)$$, since it takes a constant time to update an entry in hashtable.\n\n    - For the `find(value)` function: $$\\mathcal{O}(N)$$, where $$N$$ is the total number of **unique** _numbers_. In the worst case, we would iterate through the entire table.\n\n- Space Complexity: $$\\mathcal{O}(N)$$, where $$N$$ is the total number of **unique** _numbers_ that we will see during the usage of the data structure.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "793",
+            "count": 27,
+            "average": "4.741",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "two-sum-iii-data-structure-design",
+    "playgroundData": {
+        "BtJsFEDc": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-iii-data-structure-design-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "RY8zFnba": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-iii-data-structure-design-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

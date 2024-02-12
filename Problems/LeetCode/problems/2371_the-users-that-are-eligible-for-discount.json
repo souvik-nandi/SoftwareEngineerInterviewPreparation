@@ -1,0 +1,78 @@
+{
+    "id": "2371",
+    "question": {
+        "questionId": "2371",
+        "questionFrontendId": "2230",
+        "boundTopicId": null,
+        "title": "The Users That Are Eligible for Discount",
+        "titleSlug": "the-users-that-are-eligible-for-discount",
+        "content": "<p>Table: <code>Purchases</code></p>\n\n<pre>\n+-------------+----------+\n| Column Name | Type     |\n+-------------+----------+\n| user_id     | int      |\n| time_stamp  | datetime |\n| amount      | int      |\n+-------------+----------+\n(user_id, time_stamp) is the primary key for this table.\nEach row contains information about the purchase time and the amount paid for the user with ID user_id.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>A user is eligible for a discount if they had a purchase in the inclusive interval of time <code>[startDate, endDate]</code> with at least <code>minAmount</code> amount. To convert the dates to times, both dates should be considered as the <strong>start</strong> of the day (i.e., <code>endDate = 2022-03-05</code> should be considered as the time <code>2022-03-05 00:00:00</code>).</p>\n\n<p>Write an SQL query to report the IDs of the users that are eligible for a discount.</p>\n\n<p>Return the result table ordered by <code>user_id</code>.</p>\n\n<p>The query result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong>\nPurchases table:\n+---------+---------------------+--------+\n| user_id | time_stamp          | amount |\n+---------+---------------------+--------+\n| 1       | 2022-04-20 09:03:00 | 4416   |\n| 2       | 2022-03-19 19:24:02 | 678    |\n| 3       | 2022-03-18 12:03:09 | 4523   |\n| 3       | 2022-03-30 09:43:42 | 626    |\n+---------+---------------------+--------+\nstartDate = 2022-03-08, endDate = 2022-03-20, minAmount = 1000\n<strong>Output:</strong>\n+---------+\n| user_id |\n+---------+\n| 3       |\n+---------+\n<strong>Explanation:</strong>\nOut of the three users, only User 3 is eligible for a discount.\n - User 1 had one purchase with at least minAmount amount, but not within the time interval.\n - User 2 had one purchase within the time interval, but with less than minAmount amount.\n - User 3 is the only user who had a purchase that satisfies both conditions.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Important Note:</strong> This problem is basically the same as <a href=\"https://leetcode.com/problems/the-number-of-users-that-are-eligible-for-discount/\">The Number of Users That Are Eligible for Discount</a>.</p>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Easy",
+        "likes": 10,
+        "dislikes": 11,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"The Number of Users That Are Eligible for Discount\", \"titleSlug\": \"the-number-of-users-that-are-eligible-for-discount\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+        "exampleTestcases": "{\"headers\": {\"Purchases\": [\"user_id\", \"time_stamp\", \"amount\"]}, \"startDate\": \"2022-03-08\", \"endDate\": \"2022-03-20\", \"minAmount\": 1000, \"rows\": {\"Purchases\": [[1, \"2022-04-20 09:03:00\", 4416], [2, \"2022-03-19 19:24:02\", 678], [3, \"2022-03-18 12:03:09\", 4523], [3, \"2022-03-30 09:43:42\", 626]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Analytics quotient\", \"slug\": \"analytics-quotient\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "CREATE PROCEDURE getUserIDs(startDate DATE, endDate DATE, minAmount INT)\nBEGIN\n\t# Write your MySQL query statement below.\n\t\nEND",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "CREATE PROCEDURE getUserIDs(@startDate DATE, @endDate DATE, @minAmount INT) AS\nBEGIN\n    /* Write your T-SQL query statement below. */\n    \nEND",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "CREATE FUNCTION getUserIDs(startDate IN DATE, endDate IN DATE, minAmount IN NUMBER)\nRETURN SYS_REFCURSOR IS result SYS_REFCURSOR;\nBEGIN\n    /* Write your PL/SQL query statement below */\n    \n    RETURN result;\nEND;",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"1.5K\", \"totalSubmission\": \"3K\", \"totalAcceptedRaw\": 1505, \"totalSubmissionRaw\": 2983, \"acRate\": \"50.5%\"}",
+        "hints": [],
+        "solution": null,
+        "status": null,
+        "sampleTestCase": "{\"headers\": {\"Purchases\": [\"user_id\", \"time_stamp\", \"amount\"]}, \"startDate\": \"2022-03-08\", \"endDate\": \"2022-03-20\", \"minAmount\": 1000, \"rows\": {\"Purchases\": [[1, \"2022-04-20 09:03:00\", 4416], [2, \"2022-03-19 19:24:02\", 678], [3, \"2022-03-18 12:03:09\", 4523], [3, \"2022-03-30 09:43:42\", 626]]}}",
+        "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Purchases (user_id int, time_stamp datetime, amount int)\"\n  ],\n  \"mssql\": [\n    \"Create table Purchases (user_id int, time_stamp datetime, amount int)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Purchases (user_id int, time_stamp date, amount int)\",\n    \"ALTER SESSION SET nls_date_format='YYYY-MM-DD HH24:MI:SS'\"\n  ],\n  \"database\": true,\n  \"manual\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists Purchases (user_id int, time_stamp datetime, amount int)",
+            "Truncate table Purchases",
+            "insert into Purchases (user_id, time_stamp, amount) values ('1', '2022-04-20 09:03:00', '4416')",
+            "insert into Purchases (user_id, time_stamp, amount) values ('2', '2022-03-19 19:24:02', '678')",
+            "insert into Purchases (user_id, time_stamp, amount) values ('3', '2022-03-18 12:03:09', '4523')",
+            "insert into Purchases (user_id, time_stamp, amount) values ('3', '2022-03-30 09:43:42', '626')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": null,
+    "questionCode": "the-users-that-are-eligible-for-discount",
+    "playgroundData": null
+}

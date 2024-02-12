@@ -1,0 +1,248 @@
+{
+    "id": "171",
+    "question": {
+        "questionId": "171",
+        "questionFrontendId": "171",
+        "boundTopicId": null,
+        "title": "Excel Sheet Column Number",
+        "titleSlug": "excel-sheet-column-number",
+        "content": "<p>Given a string <code>columnTitle</code> that represents the column title as appears in an Excel sheet, return <em>its corresponding column number</em>.</p>\n\n<p>For example:</p>\n\n<pre>\nA -&gt; 1\nB -&gt; 2\nC -&gt; 3\n...\nZ -&gt; 26\nAA -&gt; 27\nAB -&gt; 28 \n...\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> columnTitle = &quot;A&quot;\n<strong>Output:</strong> 1\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> columnTitle = &quot;AB&quot;\n<strong>Output:</strong> 28\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> columnTitle = &quot;ZY&quot;\n<strong>Output:</strong> 701\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= columnTitle.length &lt;= 7</code></li>\n\t<li><code>columnTitle</code> consists only of uppercase English letters.</li>\n\t<li><code>columnTitle</code> is in the range <code>[&quot;A&quot;, &quot;FXSHRXW&quot;]</code>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 3406,
+        "dislikes": 288,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Excel Sheet Column Title\", \"titleSlug\": \"excel-sheet-column-title\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Cells in a Range on an Excel Sheet\", \"titleSlug\": \"cells-in-a-range-on-an-excel-sheet\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+        "exampleTestcases": "\"A\"\n\"AB\"\n\"ZY\"",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Shopee\", \"slug\": \"shopee\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int titleToNumber(string columnTitle) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int titleToNumber(String columnTitle) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def titleToNumber(self, columnTitle):\n        \"\"\"\n        :type columnTitle: str\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def titleToNumber(self, columnTitle: str) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint titleToNumber(char * columnTitle){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int TitleToNumber(string columnTitle) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} columnTitle\n * @return {number}\n */\nvar titleToNumber = function(columnTitle) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} column_title\n# @return {Integer}\ndef title_to_number(column_title)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func titleToNumber(_ columnTitle: String) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func titleToNumber(columnTitle string) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def titleToNumber(columnTitle: String): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun titleToNumber(columnTitle: String): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn title_to_number(column_title: String) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $columnTitle\n     * @return Integer\n     */\n    function titleToNumber($columnTitle) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function titleToNumber(columnTitle: string): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (title-to-number columnTitle)\n  (-> string? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec title_to_number(ColumnTitle :: unicode:unicode_binary()) -> integer().\ntitle_to_number(ColumnTitle) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec title_to_number(column_title :: String.t) :: integer\n  def title_to_number(column_title) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"518.4K\", \"totalSubmission\": \"850.7K\", \"totalAcceptedRaw\": 518350, \"totalSubmissionRaw\": 850695, \"acRate\": \"60.9%\"}",
+        "hints": [],
+        "solution": {
+            "id": "966",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "\"A\"",
+        "metaData": "{\n  \"name\": \"titleToNumber\",\n  \"params\": [\n    {\n      \"name\": \"columnTitle\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "818",
+            "date": "2022-02-22",
+            "incompleteChallengeCount": 28,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "966",
+        "content": "[TOC]\n\n## Solution\n\n*This problem can be solved as if it is a problem of converting base-26 number \nsystem to base-10 number system.*\n\n---\n\n#### Approach 1: Right to Left\n\n**Intuition**\n\nLet's tabulate the titles of an excel sheet in a table. There will be \n26 rows in each column. Each cell in the table represents an excel sheet title.\n\n![alt text](../Figures/171/171_table.png \"Table\")\n\nPay attention to the \"1 green block\", \"1 orange block\" and \"1 blue block\" in the  figure. \nThese tell how bigger blocks are composed of smaller blocks.\nFor example, blocks of 2-character titles are composed of 1-character blocks and \nblocks of 3-character titles are composed of 2-character blocks. This information \nis useful for finding a general pattern when calculating the values of titles.\n\nLet's say we want to get the value of title **AZZC**. This can be broken down as  `'A***' + 'Z**' + 'Z*' + 'C'`. Here, the `*`s represent smaller blocks. \n`*` means a block of 1-character titles. `**` means a block of 2-character titles.\nThere are 26<sup>1</sup> titles in a block of 1-character titles. There are 26<sup>2</sup> titles in a block of 2-character titles.\n\nScanning **AZZC** from right to left while accumulating results:\n\n1. First, ask the question, what the value of `'C'` is:\n    * `'C'` = 3 x 26<sup>0</sup> = 3 x 1 = 3\n    * `result` = 0 + 3 = **3**\n2. Then, ask the question, what the value of `'Z*'` is:\n    * `'Z*'` = 26 x 26<sup>1</sup> = 26 x 26 = 676\n    * `result` = **3** + 676 = **679**\n3. Then, ask the question, what the value of `'Z**'` is:\n    * `'Z**'` = 26 x 26<sup>2</sup> = 26 x 676 = 17576\n    * `result` = **679** + 17576 = **18255**\n4. Finally, ask the question, what the value of `'A***'` is:\n    * `'A***'` = 1 x 26<sup>3</sup> = 1 x 17576 = 17576\n    * `result` = **18255** + 17576 = 35831\n    \n**Algorithm**\n\n* To get indices of alphabets, create a mapping of alphabets and their corresponding values. (1-indexed)\n* Initialize an accumulator variable `result`.\n* Starting from right to left, calculate the value of the character associated \n with its position and add it to `result`. \n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/GcQyrLmh/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"GcQyrLmh\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(N)$$ where $$N$$ is the number of characters in the \ninput string.\n\n* Space complexity : $$O(1)$$. Even though we have an alphabet to index mapping,\nit is always constant.\n\n---\n\n#### Approach 2: Left to Right\n\n**Intuition**\n\nRather than scanning from right to left as described in Approach 1, we can also \nscan the title from left to right.\n\nFor example, if we want to get the decimal value of string \"1337\", we can iteratively find the result \nby scanning the string from left to right as follows:\n\n1. '1' = **1**\n2. '13' = (**1** x 10) + 3 = **13**\n3. '133' = (**13** x 10) + 3 = **133**\n4. '1337' = (**133** x 10) + 7 = 1337\n\nInstead of base-10, we are dealing with base-26 number system. Based on the same idea,\nwe can just replace 10s with 26s and convert alphabets to numbers.\n\nFor a title \"LEET\":\n\n1. L = **12**\n2. E = (**12** x 26) + 5 = **317**\n3. E = (**317** x 26) + 5 = **8247**\n4. T = (**8247** x 26) + 20  = 214442\n\nIn Approach 1, we have built a mapping of alphabets to numbers. There is another way \nto get the number value of a character without building an alphabet mapping. You can \ndo this by converting a character to its ASCII value and subtracting ASCII value of character 'A' from that value. By doing so, you will get results from 0 (for A) to 25 (for Z). Since \nwe are indexing from 1, we can just add 1 up to the result. This eliminates a\nloop where you create an alphabet to number mapping which was done in Approach 1.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/3rd2PMRq/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"3rd2PMRq\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(N)$$ where $$N$$ is the number of characters in the \ninput string.\n\n* Space complexity : $$O(1)$$.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "911",
+            "count": 29,
+            "average": "4.655",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "excel-sheet-column-number",
+    "playgroundData": {
+        "GcQyrLmh": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "excel-sheet-column-number-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "3rd2PMRq": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "excel-sheet-column-number-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

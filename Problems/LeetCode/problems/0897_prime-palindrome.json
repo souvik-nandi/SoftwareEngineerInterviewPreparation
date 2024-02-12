@@ -1,0 +1,235 @@
+{
+    "id": "897",
+    "question": {
+        "questionId": "897",
+        "questionFrontendId": "866",
+        "boundTopicId": null,
+        "title": "Prime Palindrome",
+        "titleSlug": "prime-palindrome",
+        "content": "<p>Given an integer n, return <em>the smallest <strong>prime palindrome</strong> greater than or equal to </em><code>n</code>.</p>\n\n<p>An integer is <strong>prime</strong> if it has exactly two divisors: <code>1</code> and itself. Note that <code>1</code> is not a prime number.</p>\n\n<ul>\n\t<li>For example, <code>2</code>, <code>3</code>, <code>5</code>, <code>7</code>, <code>11</code>, and <code>13</code> are all primes.</li>\n</ul>\n\n<p>An integer is a <strong>palindrome</strong> if it reads the same from left to right as it does from right to left.</p>\n\n<ul>\n\t<li>For example, <code>101</code> and <code>12321</code> are palindromes.</li>\n</ul>\n\n<p>The test cases are generated so that the answer always exists and is in the range <code>[2, 2 * 10<sup>8</sup>]</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<pre><strong>Input:</strong> n = 6\n<strong>Output:</strong> 7\n</pre><p><strong>Example 2:</strong></p>\n<pre><strong>Input:</strong> n = 8\n<strong>Output:</strong> 11\n</pre><p><strong>Example 3:</strong></p>\n<pre><strong>Input:</strong> n = 13\n<strong>Output:</strong> 101\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>8</sup></code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 328,
+        "dislikes": 722,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Sum of k-Mirror Numbers\", \"titleSlug\": \"sum-of-k-mirror-numbers\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "exampleTestcases": "6\n8\n13",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int primePalindrome(int n) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int primePalindrome(int n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def primePalindrome(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def primePalindrome(self, n: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint primePalindrome(int n){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int PrimePalindrome(int n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar primePalindrome = function(n) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer} n\n# @return {Integer}\ndef prime_palindrome(n)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func primePalindrome(_ n: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func primePalindrome(n int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def primePalindrome(n: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun primePalindrome(n: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn prime_palindrome(n: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer\n     */\n    function primePalindrome($n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function primePalindrome(n: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (prime-palindrome n)\n  (-> exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec prime_palindrome(N :: integer()) -> integer().\nprime_palindrome(N) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec prime_palindrome(n :: integer) :: integer\n  def prime_palindrome(n) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"26.2K\", \"totalSubmission\": \"101.1K\", \"totalAcceptedRaw\": 26174, \"totalSubmissionRaw\": 101054, \"acRate\": \"25.9%\"}",
+        "hints": [],
+        "solution": {
+            "id": "504",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "6",
+        "metaData": "{\n  \"name\": \"primePalindrome\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "504",
+        "content": "[TOC]\n\n## Solution\n---\n#### Approach Framework\n\n**Investigation of Brute Force**\n\nLet's investigate and improve on a brute force method.\n\nWith basic methods, we can check whether an integer $$N$$ is a palindrome in $$O(\\log N)$$ time, and check whether it is prime in $$O(\\sqrt{N})$$ time.  So we would probably like to do the palindrome check first.\n\nNow, say we naively check every number $$N, N+1, \\cdots, N+K$$.  How big is $$K$$?\n\nWell, the palindromes could be approximately $$10^4$$ apart, since for example `99988999`'s next palindrome is `99999999`.  \n\nIf we assume being a palindrome and being a prime is independent, then based on the density of primes, $$K \\approx 10^4 \\log N$$, and we would do a palindrome check on approximately $$10^4 \\log^2 N$$ values, and a primality test on $$\\log N$$ values of complexity $$\\sqrt{N} \\log N$$.  This seems to work.\n\nHowever, we can't make this assumption of independence: whether a number is a palindrome or prime are *negatively correlated* events!  For example, $$22, 33, 44, \\cdots, 99$$ are clearly not prime.  Actually, all palindromes with an even number of digits are divisible by 11, and are therefore not prime!  (Except for 11.)  For example, an 8 digit palindrome can be written as:\n\n$$\\sum_{i=0}^{3} a_i(10^{7-i} + 10^i) \\equiv \\sum a_i((-1)^{7-i} + (-1)^i) \\equiv \\sum a_i(0) \\equiv 0 \\pmod{11}$$\n\nwhere the second-last equivalence follows as $$i$$ and $$7-i$$ have different parity.\n\n**Density of Palindromes**\n\nFor a palindrome of $$d$$ digits, choosing the first $$k = \\lfloor \\frac{d+1}{2} \\rfloor$$ digits uniquely determines the remaining digits.  Hence, there are $$9 * 10^{k-1}$$ of them (the first digit can't be 0.)  Thus, there are\n\n$$9(10^0 + 10^0 + 10^1 + 10^1 + 10^2 + 10^2 + 10^3 + 10^3) < 20000$$\n\npalindromes of 8 digits or less.  \n\nActually, we don't need to check the palindromes with an even number of digits, so there are under 10000 palindromes we need to check.  However, we also need to check palindromes until we encounter the first 9 digit prime palindrome, as all 8 digit numbers $$N$$ will have an answer equal to that.  Luckily, it occurs quickly: `100030001` is the 4th 9-digit value checked.  (We can verify this with brute force.)\n\nFor each palindrome, we can test whether it is prime in $$O(\\sqrt{N})$$ operations.  So in total, an approach centered around enumerating palindromes seems like it will succeed.\n<br />\n<br />\n\n\n---\n#### Approach 1: Iterate Palindromes\n\n**Intuition**\n\nSay we have a palindrome $$X$$.  What is the next palindrome?\n\nEach palindrome of $$d$$ digits has a *palindromic root*, it's first $$k = \\frac{d+1}{2}$$ digits.  The next palindrome is formed by the next root.\n\nFor example, if $$123$$ is a root for the 5 digit palindrome $$12321$$, then the next palindrome is $$12421$$ with root $$124$$.\n\nNotice that roots and palindromes are not a bijection, as palindromes $$123321$$ and $$12321$$ have the same root.\n\n**Algorithm**\n\nFor each *palindromic root*, let's find the two associated palindromes (one with an odd number of digits, and one with an even number.)  For roots with $$k$$ digits, they will generate palindromes of $$2*k - 1$$ and $$2*k$$ digits.\n\nIf we didn't know that palindromes with an even number of digits (and greater than 11) are never prime, we're still fine - we can just check both possibilities.  When checking both possibilities, we check the palindromes with $$2k - 1$$ digits first, as they are all smaller than the palindromes with $$2k$$ digits.\n\nWe'll use an idea from [[LeetCode Problem: Reverse an Integer]](https://leetcode.com/problems/reverse-integer), in order to check whether an integer is a palindrome.  We could have also converted the integer to a string, and checked the indices directly.\n\nAs for testing primes with `isPrime(N)`, we'll use the standard $$O(\\sqrt{N})$$ check: testing whether every number $$\\leq \\sqrt{N}$$ is a divisor of $$N$$.\n\n<iframe src=\"https://leetcode.com/playground/ZbbLAw9v/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ZbbLAw9v\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  Based on our analysis above, we performed on the order of $$O(N)$$ operations (not counting log factors from dealing with integers), given we knew the existence of prime palindrome `100030001`.  \n\n  Interestingly, the time complexity is an open problem in mathematics, as it is not even known whether there are infinitely many prime palindromes, or whether palindromes behave as random integers for our purposes here - see [[\"Almost All Palindromes are Composite\"]](https://arxiv.org/pdf/math/0405056.pdf) for more.\n\n* Space Complexity:  $$O(\\log N)$$, the space used by `s` (or `sb` in Java.)\n<br />\n<br />\n\n\n---\n#### Approach 2: Brute Force with Mathematical Shortcut\n\n**Intuition**\n\nOur brute force works except when $$N$$ is 8 digits (as explained in *Approach Framework* when we established that all 8 digit palindromes are not prime), so we can skip all 8 digit numbers.\n\n**Algorithm**\n\nFor each number, check whether it is a palindrome.  If it is, check whether it is a prime.  If the number is 8 digits, skip to the 9 digit numbers.\n\n<iframe src=\"https://leetcode.com/playground/P4Sirrui/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"P4Sirrui\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, with the caveats explained in *Approach #1*, and ignoring the $$\\log N$$ factor when checking an integer for palindromes.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "497",
+            "count": 36,
+            "average": "2.833",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "prime-palindrome",
+    "playgroundData": {
+        "ZbbLAw9v": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "prime-palindrome-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "P4Sirrui": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "prime-palindrome-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,253 @@
+{
+    "id": "994",
+    "question": {
+        "questionId": "994",
+        "questionFrontendId": "957",
+        "boundTopicId": null,
+        "title": "Prison Cells After N Days",
+        "titleSlug": "prison-cells-after-n-days",
+        "content": "<p>There are <code>8</code> prison cells in a row and each cell is either occupied or vacant.</p>\n\n<p>Each day, whether the cell is occupied or vacant changes according to the following rules:</p>\n\n<ul>\n\t<li>If a cell has two adjacent neighbors that are both occupied or both vacant, then the cell becomes occupied.</li>\n\t<li>Otherwise, it becomes vacant.</li>\n</ul>\n\n<p><strong>Note</strong> that because the prison is a row, the first and the last cells in the row can&#39;t have two adjacent neighbors.</p>\n\n<p>You are given an integer array <code>cells</code> where <code>cells[i] == 1</code> if the <code>i<sup>th</sup></code> cell is occupied and <code>cells[i] == 0</code> if the <code>i<sup>th</sup></code> cell is vacant, and you are given an integer <code>n</code>.</p>\n\n<p>Return the state of the prison after <code>n</code> days (i.e., <code>n</code> such changes described above).</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> cells = [0,1,0,1,1,0,0,1], n = 7\n<strong>Output:</strong> [0,0,1,1,0,0,0,0]\n<strong>Explanation:</strong> The following table summarizes the state of the prison on each day:\nDay 0: [0, 1, 0, 1, 1, 0, 0, 1]\nDay 1: [0, 1, 1, 0, 0, 0, 0, 0]\nDay 2: [0, 0, 0, 0, 1, 1, 1, 0]\nDay 3: [0, 1, 1, 0, 0, 1, 0, 0]\nDay 4: [0, 0, 0, 0, 0, 1, 0, 0]\nDay 5: [0, 1, 1, 1, 0, 1, 0, 0]\nDay 6: [0, 0, 1, 0, 1, 1, 0, 0]\nDay 7: [0, 0, 1, 1, 0, 0, 0, 0]\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> cells = [1,0,0,1,0,0,1,0], n = 1000000000\n<strong>Output:</strong> [0,0,1,1,1,1,1,0]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>cells.length == 8</code></li>\n\t<li><code>cells[i]</code>&nbsp;is either <code>0</code> or <code>1</code>.</li>\n\t<li><code>1 &lt;= n &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 1269,
+        "dislikes": 1558,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "[0,1,0,1,1,0,0,1]\n7\n[1,0,0,1,0,0,1,0]\n1000000000",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Math",
+                "slug": "math",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"1\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<int> prisonAfterNDays(vector<int>& cells, int n) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int[] prisonAfterNDays(int[] cells, int n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def prisonAfterNDays(self, cells, n):\n        \"\"\"\n        :type cells: List[int]\n        :type n: int\n        :rtype: List[int]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def prisonAfterNDays(self, cells: List[int], n: int) -> List[int]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* prisonAfterNDays(int* cells, int cellsSize, int n, int* returnSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int[] PrisonAfterNDays(int[] cells, int n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} cells\n * @param {number} n\n * @return {number[]}\n */\nvar prisonAfterNDays = function(cells, n) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} cells\n# @param {Integer} n\n# @return {Integer[]}\ndef prison_after_n_days(cells, n)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func prisonAfterNDays(_ cells: [Int], _ n: Int) -> [Int] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func prisonAfterNDays(cells []int, n int) []int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def prisonAfterNDays(cells: Array[Int], n: Int): Array[Int] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun prisonAfterNDays(cells: IntArray, n: Int): IntArray {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn prison_after_n_days(cells: Vec<i32>, n: i32) -> Vec<i32> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $cells\n     * @param Integer $n\n     * @return Integer[]\n     */\n    function prisonAfterNDays($cells, $n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function prisonAfterNDays(cells: number[], n: number): number[] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (prison-after-n-days cells n)\n  (-> (listof exact-integer?) exact-integer? (listof exact-integer?))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec prison_after_n_days(Cells :: [integer()], N :: integer()) -> [integer()].\nprison_after_n_days(Cells, N) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec prison_after_n_days(cells :: [integer], n :: integer) :: [integer]\n  def prison_after_n_days(cells, n) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"144.3K\", \"totalSubmission\": \"367.1K\", \"totalAcceptedRaw\": 144256, \"totalSubmissionRaw\": 367072, \"acRate\": \"39.3%\"}",
+        "hints": [],
+        "solution": {
+            "id": "963",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[0,1,0,1,1,0,0,1]\n7",
+        "metaData": "{\n  \"name\": \"prisonAfterNDays\",\n  \"params\": [\n    {\n      \"name\": \"cells\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "963",
+        "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n#### Overview\r\n\r\nFirst of all, one can consider this problem as a simplified version of the [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) invented by the British mathematician John Horton Conway in 1970.\r\n\r\nBy simplification, this problem is played on one dimensional array (compared to 2D in Game of Life), and it has less rules.\r\n\r\n>Due to the nature of game, one of the most intuitive solutions to solve this problem is _playing the game_, _i.e._ we can simply run the **simulation**.\r\n\r\nStarting from the initial state of the prison cells, we could evolve the states following the rules defined in the problem _step by step_.\r\n\r\nIn the following sections, we will give some approaches on how to run the simulation efficiently.\r\n\r\n---\r\n#### Approach 1: Simulation with Fast Forwarding\r\n\r\n**Intuition**\r\n\r\nOne important observation from the Game of Life is that we would encounter some already-seen state over the time, simply due to the fact that there are limited number of states.\r\n\r\nThe above observation applies to our problem here as well. Given $$K$$ number of cells, there could be at most $$2^K$$ possible states. If the number of steps is larger than all possible states (_i.e._ $$N \\gt 2^K$$), we are destined to repeat ourselves sooner or later.\r\n\r\nIn fact, we would encounter the repetitive states **sooner** than the theoretical boundary we estimated above.\r\nFor instance, with the initial state of `[1,0,0,0,1,0,0,1]`, just after `15` steps, we would encounter a previously seen state.\r\nOnce we encounter a state seen before, the history would then repeat itself again and again, assuming that time is infinite.\r\n\r\n>All states between two repetitive states form a cycle, which would repeat itself over the time.\r\nTherefore, based on this observation, we could **fast-forward** the simulation rather than going step by step, once we encounter any repetitive state.\r\n\r\n**Algorithm**\r\n\r\nHere is the overall idea to implement our fast-forward strategy.\r\n\r\n- First of all, we record the state at each step, with the index of the current step, _i.e._ `state -> step_index`.\r\n\r\n- Once we discover a repetitive state, we can then determine the **_length_** (denoted as $$C$$) of the cycle, with the help of hashmap that we recorded.\r\n\r\n- Starting from this repetitive state, the prison cells would play out the states within the cycle over and over, until we run out of steps.\r\n\r\n- In other words, if the remaining steps is $$N$$, at least we could **_fast-forward_** to the step of $$N \\mod C$$.\r\n\r\n- And then from the step of $$N \\mod C$$, we continue the simulation step by step.\r\n\r\n![fastforward](../Figures/957/957_fastforward.png)\r\n\r\nNote: we only need to do the fast-forward once, if there is any.\r\n\r\nHere are some sample implementations based on the above idea.\r\n\r\n<iframe src=\"https://leetcode.com/playground/RaVwhut9/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"RaVwhut9\"></iframe>\r\n\r\n\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$K$$ be the number of cells, and $$N$$ be the number of steps.\r\n\r\n- Time Complexity: $$\\mathcal{O}\\big(K \\cdot \\min(N, 2^K)\\big)$$ \r\n\r\n    - As we discussed before, at most we could have $$2^K$$ possible states. While we run the simulation with $$N$$ steps, we might need to run $$\\min(N, 2^K)$$ steps without fast-forwarding in the worst case.\r\n\r\n    - For each simulation step, it takes $$\\mathcal{O}(K)$$ time to process and evolve the state of cells.\r\n\r\n    - Hence, the overall time complexity of the algorithm is $$\\mathcal{O}\\big(K \\cdot \\min(N, 2^K)\\big)$$.\r\n\r\n- Space Complexity:\r\n\r\n    - The main memory consumption of the algorithm is the hashmap that we used to keep track of the states of the cells. The maximal number of entries in the hashmap would be $$2^K$$ as we discussed before.\r\n\r\n    - In the Java implementation, we encode the state as a single integer value. Therefore, its space complexity would be $$\\mathcal{O}(2^K)$$, assuming that $$K$$ does not exceed 32 so that a state can fit into a single integer number.\r\n\r\n    - In the Python implementation, we keep the states of cells as they are in the hashmap. As a result, for each entry, it takes $$\\mathcal{O}(K)$$ space. In total, its space complexity becomes $$\\mathcal{O}(K \\cdot 2^K)$$.\r\n\r\n---\r\n#### Approach 2: Simulation with Bitmap\r\n\r\n**Intuition**\r\n\r\nIn the above approach, we implemented the function `nextDay(state)`, which runs an **iteration** to calculate the next state of cells, given the current state.\r\n\r\nGiven that we have already encoded the state as a bitmap in the Java implementation of the previous approach, a more efficient way to implement the `nextDay` function would be to apply the **_bit operations_** (_e.g_ _AND, OR, XOR_ _etc._).\r\n\r\nThe next state of a cell depends on its left and right neighbors.\r\nTo align the states of its neighbors, we could make a _left_ and a _right_ shift respectively on the bitmap.\r\nUpon the shifted bitmaps, we then apply the _XOR_ and _NOT_ operations sequentially, which would lead to the next state of the cell.\r\n\r\nHere we show how it works with a concrete example.\r\n\r\n![bit operations](../Figures/957/957_bit_operations.png)\r\n\r\nNote that, the head and tail cells are particular, which would remain vacant once we start the simulation. Therefore, we should reset the head and tail bits by applying the bit _AND_ operation with the **bitmask** of `01111110` (_i.e._ `0x7e`).\r\n\r\n**Algorithm**\r\n\r\nWe could reuse the bulk of the previous implementations, and simply rewrite the `nextDay` function with the bit operations as we discussed.\r\n\r\nAdditionally, at the end of the simulation, we should *decode* the states of the cells from the final bitmap.\r\n\r\n<iframe src=\"https://leetcode.com/playground/EdosuxcW/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"EdosuxcW\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$K$$ be the number of cells, and $$N$$ be the number of steps.\r\n\r\n- Time Complexity: $$\\mathcal{O}\\big(\\min(N, 2^K)\\big)$$ assuming that $$K$$ does not exceed 32.\r\n\r\n    - As we discussed before, at most we could have $$2^K$$ possible states. While we run the simulation, we need to run $$\\min(N, 2^K)$$ steps without fast-forwarding in the worst case.\r\n\r\n    - For each simulation step, it takes a constant $$\\mathcal{O}(1)$$ time to process and evolve the states of cells, since we applied the bit operations rather than iteration. \r\n\r\n    - Hence, the overall time complexity of the algorithm is $$\\mathcal{O}\\big(\\min(N, 2^K)\\big)$$.\r\n\r\n- Space Complexity: $$\\mathcal{O}(2^K)$$\r\n\r\n    - The main memory consumption of the algorithm is the hashmap that we used to keep track of the states of the cells. The maximal number of entries in the hashmap would be $$2^K$$ as we discussed before.\r\n\r\n    - This time we adopted the bitmap for both Java and Python implementation, so that each state consumes a constant $$\\mathcal{O}(1)$$ space.\r\n\r\n    - To sum up, the overall space complexity of the algorithm is $$\\mathcal{O}(2^K)$$.\r\n\r\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "908",
+            "count": 50,
+            "average": "3.820",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "prison-cells-after-n-days",
+    "playgroundData": {
+        "RaVwhut9": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "prison-cells-after-n-days-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "EdosuxcW": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "prison-cells-after-n-days-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

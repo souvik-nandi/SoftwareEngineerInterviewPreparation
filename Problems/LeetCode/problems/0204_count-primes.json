@@ -1,0 +1,237 @@
+{
+    "id": "204",
+    "question": {
+        "questionId": "204",
+        "questionFrontendId": "204",
+        "boundTopicId": null,
+        "title": "Count Primes",
+        "titleSlug": "count-primes",
+        "content": "<p>Given an integer <code>n</code>, return <em>the number of prime numbers that are strictly less than</em> <code>n</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 10\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> There are 4 prime numbers less than 10, they are 2, 3, 5, 7.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 0\n<strong>Output:</strong> 0\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 1\n<strong>Output:</strong> 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= n &lt;= 5 * 10<sup>6</sup></code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 5140,
+        "dislikes": 1044,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Ugly Number\", \"titleSlug\": \"ugly-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Ugly Number II\", \"titleSlug\": \"ugly-number-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Perfect Squares\", \"titleSlug\": \"perfect-squares\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "10\n0\n1",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Math",
+                "slug": "math",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Enumeration",
+                "slug": "enumeration",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Number Theory",
+                "slug": "number-theory",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Capital One\", \"slug\": \"capital-one\", \"timesEncountered\": 11}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Docusign\", \"slug\": \"docusign\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int countPrimes(int n) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int countPrimes(int n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def countPrimes(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def countPrimes(self, n: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint countPrimes(int n){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int CountPrimes(int n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar countPrimes = function(n) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer} n\n# @return {Integer}\ndef count_primes(n)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func countPrimes(_ n: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func countPrimes(n int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def countPrimes(n: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun countPrimes(n: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn count_primes(n: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer\n     */\n    function countPrimes($n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function countPrimes(n: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (count-primes n)\n  (-> exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec count_primes(N :: integer()) -> integer().\ncount_primes(N) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec count_primes(n :: integer) :: integer\n  def count_primes(n) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"628.1K\", \"totalSubmission\": \"1.9M\", \"totalAcceptedRaw\": 628065, \"totalSubmissionRaw\": 1901680, \"acRate\": \"33.0%\"}",
+        "hints": [
+            "<p>Let's start with a <i>isPrime</i> function. To determine if a number is prime, we need to check if it is not divisible by any number less than <i>n</i>. The runtime complexity of <i>isPrime</i> function would be O(<i>n</i>) and hence counting the total prime numbers up to <i>n</i> would be O(<i>n</i><sup>2</sup>). Could we do better?</p>",
+            "<p>As we know the number must not be divisible by any number > <i>n</i> / 2, we can immediately cut the total iterations half by dividing only up to <i>n</i> / 2. Could we still do better?</p>",
+            "<p>Let's write down all of 12's factors:</p>\r\n<pre>\r\n2 \u00d7 6 = 12\r\n3 \u00d7 4 = 12\r\n4 \u00d7 3 = 12\r\n6 \u00d7 2 = 12\r\n</pre>\r\n\r\n<p>As you can see, calculations of 4 \u00d7 3 and 6 \u00d7 2 are not necessary. Therefore, we only need to consider factors up to &radic;<i>n</i> because, if <i>n</i> is divisible by some number <i>p</i>, then <i>n</i> = <i>p</i> \u00d7 <i>q</i> and since <i>p</i> &le; <i>q</i>, we could derive that <i>p</i> &le; &radic;<i>n</i>.</p>\r\n\r\n<p>Our total runtime has now improved to O(<i>n</i><sup>1.5</sup>), which is slightly better. Is there a faster approach?</p>\r\n\r\n<pre>\r\npublic int countPrimes(int n) {\r\n   int count = 0;\r\n   for (int i = 1; i < n; i++) {\r\n      if (isPrime(i)) count++;\r\n   }\r\n   return count;\r\n}\r\n\r\nprivate boolean isPrime(int num) {\r\n   if (num <= 1) return false;\r\n   // Loop's ending condition is i * i <= num instead of i <= sqrt(num)\r\n   // to avoid repeatedly calling an expensive function sqrt().\r\n   for (int i = 2; i * i <= num; i++) {\r\n      if (num % i == 0) return false;\r\n   }\r\n   return true;\r\n}\r\n</pre>",
+            "<p>The <a href=\"http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes\" target=\"_blank\">Sieve of Eratosthenes</a> is one of the most efficient ways to find all prime numbers up to <i>n</i>. But don't let that name scare you, I promise that the concept is surprisingly simple.</p>\r\n\r\n<p>\r\n<img src=\"/static/images/solutions/Sieve_of_Eratosthenes_animation.gif\" /><br />\r\n<small>Sieve of Eratosthenes: algorithm steps for primes below 121. \"<a href=\"http://commons.wikimedia.org/wiki/File:Sieve_of_Eratosthenes_animation.gif\" target=\"_blank\">Sieve of Eratosthenes Animation</a>\" by <a href=\"http://de.wikipedia.org/wiki/Benutzer:SKopp\" target=\"_blank\">SKopp</a> is licensed under <a href=\"http://creativecommons.org/licenses/by/2.0/\" target=\"_blank\">CC BY 2.0</a>.</small>\r\n</p>\r\n\r\n<p>We start off with a table of <i>n</i> numbers. Let's look at the first number, 2. We know all multiples of 2 must not be primes, so we mark them off as non-primes. Then we look at the next number, 3. Similarly, all multiples of 3 such as 3 \u00d7 2 = 6, 3 \u00d7 3 = 9, ... must not be primes, so we mark them off as well. Now we look at the next number, 4, which was already marked off. What does this tell you? Should you mark off all multiples of 4 as well?</p>",
+            "<p>4 is not a prime because it is divisible by 2, which means all multiples of 4 must also be divisible by 2 and were already marked off. So we can skip 4 immediately and go to the next number, 5. Now, all multiples of 5 such as 5 \u00d7 2 = 10, 5 \u00d7 3 = 15, 5 \u00d7 4 = 20, 5 \u00d7 5 = 25, ... can be marked off. There is a slight optimization here, we do not need to start from 5 \u00d7 2 = 10. Where should we start marking off?</p>",
+            "<p>In fact, we can mark off multiples of 5 starting at 5 \u00d7 5 = 25, because 5 \u00d7 2 = 10 was already marked off by multiple of 2, similarly 5 \u00d7 3 = 15 was already marked off by multiple of 3. Therefore, if the current number is <i>p</i>, we can always mark off multiples of <i>p</i> starting at <i>p</i><sup>2</sup>, then in increments of <i>p</i>: <i>p</i><sup>2</sup> + <i>p</i>, <i>p</i><sup>2</sup> + 2<i>p</i>, ... Now what should be the terminating loop condition?</p>",
+            "<p>It is easy to say that the terminating loop condition is <i>p</i> < <i>n</i>, which is certainly correct but not efficient. Do you still remember <i>Hint #3</i>?</p>",
+            "<p>Yes, the terminating loop condition can be <i>p</i> < &radic;<i>n</i>, as all non-primes &ge; &radic;<i>n</i> must have already been marked off. When the loop terminates, all the numbers in the table that are non-marked are prime.</p>\r\n\r\n<p>The Sieve of Eratosthenes uses an extra O(<i>n</i>) memory and its runtime complexity is O(<i>n</i> log log <i>n</i>). For the more mathematically inclined readers, you can read more about its algorithm complexity on <a href=\"http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes#Algorithm_complexity\" target=\"_blank\">Wikipedia</a>.</p>\r\n\r\n<pre>\r\npublic int countPrimes(int n) {\r\n   boolean[] isPrime = new boolean[n];\r\n   for (int i = 2; i < n; i++) {\r\n      isPrime[i] = true;\r\n   }\r\n   // Loop's ending condition is i * i < n instead of i < sqrt(n)\r\n   // to avoid repeatedly calling an expensive function sqrt().\r\n   for (int i = 2; i * i < n; i++) {\r\n      if (!isPrime[i]) continue;\r\n      for (int j = i * i; j < n; j += i) {\r\n         isPrime[j] = false;\r\n      }\r\n   }\r\n   int count = 0;\r\n   for (int i = 2; i < n; i++) {\r\n      if (isPrime[i]) count++;\r\n   }\r\n   return count;\r\n}\r\n</pre>"
+        ],
+        "solution": {
+            "id": "1130",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "10",
+        "metaData": "{\r\n  \"name\": \"countPrimes\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1130",
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Overview\n\nThe basic brute-force solution for this problem is to iterate from `0` to `n` and for each number, we do a prime-check. To check if a number is prime or not, we simply check if its divisors include anything other than `1` and the number itself. If so, then it is not a prime number. This method will not scale for the given limits on `n`. The iteration itself has $$O(n)$$ time complexity and for each iteration, we have the prime check which takes $$O(\\sqrt{n})$$. This will exceed the problem's time limit.  Therefore, we need a more efficient solution.\n\n> Instead of checking if each number is prime or not, what if we mark the multiples of a prime number as non-prime?\n\n</br>\n\n---\n\n#### Approach: Sieve of Eratosthenes\n\n**Intuition**\n\nSuppose we are required to count the number of primes that are less than `21`. Start by creating an array that contains 21 integers (each index represents an integer).\n\n![Array of 21 integers](../Figures/204/img1.png)\n{:align=\"center\"}\n\n*Figure 1. An array of 21 integers which we'll use to mark primes and non-primes.*\n{:align=\"center\"}\n\nNow, let's start with the smallest prime number we know, which is `2`. We mark the multiples of this number as non-primes in the array. To mark a number as non-prime, we set a sentinel value of `-1` in the array at the index corresponding to that number. E.g. the number `4` is not a prime number, so we mark `primes[4] = -1`.\n\n![Multiples of \"2\" marked as composites](../Figures/204/img2.png)\n{:align=\"center\"}\n\n*Figure 2. Multiples of 2 marked as composites in the array.*\n{:align=\"center\"}\n\n> Now let's move on to the next available element in the array that has not yet been marked as a composite number. That number is 3, which is also a prime. Now, we repeat the same process with 3 i.e. we mark all the multiples (some will be repeats like 6) as composites.\n\n![Multiples of \"3\" marked as composites](../Figures/204/img3.png)\n{:align=\"center\"}\n\n*Figure 3. Multiples of 3 are marked as composites in the array.*\n{:align=\"center\"}\n\nAt this point, you may notice that all of the numbers remaining in the array (that are not marked as composites) are primes.\n\n![Remaining numbers as primes](../Figures/204/img4.png)\n{:align=\"center\"}\n\n*Figure 4. Highlighting the remaining numbers as primes.*\n{:align=\"center\"}\n\n> We can start with the smallest prime number, 2, and mark all of its multiples up to \"n\" as non-primes.  Then we repeat the same process for the next available number in the array that is not marked as composite and so on.  \n\nWe have a nested-loop structure. Now the question is: *What are the bounds on these two loops?* The outer loop will start at `2` and go up to $$\\sqrt{n}$$. This is because by that point we will have considered all of the possible multiples of all the prime numbers below `n`. Let's look at the example where `n` is `30`. Now the square-root of `n` is greater than `5`.  \n\n<pre>\nIt is not necessary to consider any number greater than the square root of n. \n\n6 * 1 = 6 = 1 * 6\n6 * 2 = 12 = 2 * 6\n6 * 3 = 18 = 3 * 6\n6 * 4 = 24 = 2 * 12\n6 * 5 = 30 = 5 * 6\n6 * 6 = 36 > 30\n\nNotice that every multiple of 6 was already addressed by some multiple of a prime number less than 6.\n</pre>\n\nNow that the outer loop's boundaries are defined, let's define the boundaries of the inner loop. We will invariantly pick the next available prime number (a number/index not yet marked in the array as a composite) before entering the inner loop. Say the index we picked from the outer loop is `i`, then the inner loop will start at `i*i` and increase by increments of `i` until it surpasses `n`. In short, we iterate over every multiple of `i` between `i` and `n`.  \n\nThe question now is why should we start at `i*i`. Why not start at `2*i` to keep things simple? The reason is that all of the previous multiples would already have been covered by previous primes. In number theory, [the fundamental theorem of arithmetic](https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic), also called the unique factorization theorem or the unique prime factorization theorem, states that every integer greater than 1 either is a prime number itself or can be represented as the product of prime numbers. So the prime numbers smaller than `i` would have already covered the multiples smaller than `i*i`. Let's look at the prime number `7` to see how all the multiples up to `7*7` are already covered by primes smaller than '7'.\n\n<pre>\n\nLet's assume that n is 50 (a value greater than 7*7) to demonstrate this claim. \n\n7 * 2 = 14 = 2 * 7\n7 * 3 = 21 = 3 * 7\n7 * 4 = 28 = 2 * 2 * 7 = 2 * 14\n7 * 5 = 35 = 5 * 7\n7 * 6 = 42 = 2 * 3 * 7 = 2 * 21\n</pre>\n\n**Algorithm**\n\n[Wikipedia](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) provides a great approach for this algorithm. So we will follow their method step by step to find all the prime numbers less than or equal to a given integer `n` by Eratosthenes' method:\n\n1. Create a list of consecutive integers from `2` through `n`: `(2, 3, 4, ..., n)`.\n2. Let `p` be the variable we use in the outer loop that iterates from `2` to $$\\sqrt{n}$$. Initially, let `p` equal `2`, the smallest prime number.\n3. Enumerate the multiples of `p` by counting in increments of `p` from `p*p` to `n`, and mark them in the list (these will be `p*p`, `p*p + p`, `p*p + 2*p`, ...; `p` itself should be prime).\n4. Find the smallest number in the list greater than `p` that is not marked. If there was no such number, stop. Otherwise, let `p` now equal this new number (which is the next prime), and repeat from step 3. \n5. When the algorithm terminates, all of the remaining numbers that are not marked are prime.\n\nA key observation is that p will always be prime because every composite value less than p*p has already been marked as a multiple of some smaller prime. Note that some of the numbers may be marked more than once (e.g., `15` will be marked by both `3` and `5`).\n\n**Implementation Improvement (Theoretical)**\n\nThe original algorithm advocates using an array to keep track of primes. However, if we do that, we will spend $$O(n)$$ space just to initialize the array and $$O(n)$$ time iterating over the array to count the primes. To avoid this, we will use a dictionary. There are two advantages to this:\n\n1. We don't need to iterate from `0..n` to initialize the dictionary. If a number is not a part of the dictionary, it is prime by definition.\n2. In the end, we can simply subtract the length of the dictionary (number of non-primes) from `n` to find the number of primes.\n\nFor `n = 10`, the dictionary would contain `4, 6, 8, 9`. Excluding `1` and `10`, we have `10 - 2 - 4 = 4 primes`.\n\nThis dictionary-based approach unfortunately does not execute within the time limit. Even though on paper it looks like it's worth saving the extra $$O(n)$$ space, in practice, the time required to evaluate and maintain the dictionary makes this approach impractical. So we will stick with the traditional array-based approach. This will add an additional $$O(n)$$ to the time complexity.\n\nWhy does this happen you might ask? Well, it's probably because of the localization property of an array. An array is stored as a consecutive chunk of memory. The compiler can cache most of the array's elements in the RAM and other internal caches for super-fast access since these elements are right next to each other in memory. This is why it takes much less time to access elements in an array than to access elements in a dictionary.  Furthermore, this is what offsets the savings we see on paper regarding the overall complexity for the dictionary-based approach.\n\n**Implementation Improvement (Python Specific)**\n\nIn most cases, for loops are fine, and sometimes they are more readable than built-in functions. However, for loops must be interpreted every iteration which makes them slower than some built-in alternatives that are implemented in C. [Python Built-in Sum versus For Loop Performance](https://stackoverflow.com/questions/24578896/python-built-in-sum-function-vs-for-loop-performance)\n\nIn this problem, `n` may be very large and for every prime number less than or equal to $$\\sqrt{n}$$ we will iterate over all multiples of that number up to `n` and mark them as not prime. In the code below, this is done by using a for loop to iterate over every multiple of prime number $$(p)$$ between $$p^2$$ and n. For readability, this implementation is presented below. \n\n<details>\n\n<summary>However, by replacing the for loop with python's built-in method for accessing an array at every $$p^{th}$$ element, the runtime can be greatly reduced.  This faster implementation is provided here: (click)</summary>\n\n<br>\n\n```python\nclass Solution:\n    def countPrimes(self, n: int) -> int:\n        if n <= 2:\n            return 0\n        \n        # Initialize numbers[0] and numbers[1] as False because 0 and 1 are not prime.\n        # Initialze numbers[2] through numbers[n-1] as True because we assume each number\n        # is prime until we find a prime number (p) that is a divisor of the number\n        numbers = [False, False] + [True] * (n - 2)\n        for p in range(2, int(sqrt(n)) + 1):\n            if numbers[p]:\n                # Set all multiples of p to false because they are not prime.\n                # There are ceil(n / p - p) numbers between p*p and n that are multiples of p.\n                numbers[p * p : n : p] = [False] * math.ceil(n / p - p)\n        \n        # numbers[index] will only be true where index is a prime number\n        # return the number of indices whose value is true.\n        return sum(numbers)\n```\n\n</details>\n\n<br>\n\n<iframe src=\"https://leetcode.com/playground/iyRTs592/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"iyRTs592\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: The overall time complexity is $$O(\\sqrt{n} \\log \\log n))$$. The $$\\sqrt{n}$$ comes from the outer loop. Each time we hit a prime, we \"cross out\" the multiples of that prime because we know they aren't prime. But how many iterations do we perform for each prime number? That depends on how many multiples of that number are lower than $$n$$. Let's look at a rough estimate of these values for all the primes.\n\n    <pre>\n    For 2, we have to cross out n/2 numbers.\n    For 3, we have to cross out n/3 numbers.\n    For 5, we have to cross out n/5 numbers.\n    ...etc for each prime less than n.\n    </pre>\n    \n    This means that the time complexity of \"crossing out\" is $$O(\\frac{n}{2} + \\frac{n}{3} + \\frac{n}{5} + ... + \\frac{n}{\\text{last prime < n}})$$. This is bounded by $$O(\\log \\log n)$$ and the proof is available [here](http://www.cs.umd.edu/~gasarch/BLOGPAPERS/sump.pdf). Cheers to this [discussion](https://bit.ly/3fgqsE0) post for explaining the complexity analysis in a detailed manner!\n\n* Space Complexity: $$O(n)$$ because we use an array of length $$n + 1$$ to track primes and their multiples. If you use a dictionary instead of an array, you will still end up marking at least $$\\frac{n}{2}$$ elements as composites of the number `2`. Thus, the overall complexity when using a dictionary is also $$O(n)$$.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1135",
+            "count": 56,
+            "average": "3.946",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "count-primes",
+    "playgroundData": {
+        "iyRTs592": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "count-primes-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

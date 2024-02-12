@@ -1,0 +1,254 @@
+{
+    "id": "59",
+    "question": {
+        "questionId": "59",
+        "questionFrontendId": "59",
+        "boundTopicId": null,
+        "title": "Spiral Matrix II",
+        "titleSlug": "spiral-matrix-ii",
+        "content": "<p>Given a positive integer <code>n</code>, generate an <code>n x n</code> <code>matrix</code> filled with elements from <code>1</code> to <code>n<sup>2</sup></code> in spiral order.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/13/spiraln.jpg\" style=\"width: 242px; height: 242px;\" />\n<pre>\n<strong>Input:</strong> n = 3\n<strong>Output:</strong> [[1,2,3],[8,9,4],[7,6,5]]\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 1\n<strong>Output:</strong> [[1]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 20</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 3876,
+        "dislikes": 187,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Spiral Matrix\", \"titleSlug\": \"spiral-matrix\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Spiral Matrix III\", \"titleSlug\": \"spiral-matrix-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Spiral Matrix IV\", \"titleSlug\": \"spiral-matrix-iv\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "3\n1",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Simulation",
+                "slug": "simulation",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Nvidia\", \"slug\": \"nvidia\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Accenture\", \"slug\": \"accenture\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<vector<int>> generateMatrix(int n) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int[][] generateMatrix(int n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def generateMatrix(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: List[List[int]]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def generateMatrix(self, n: int) -> List[List[int]]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** generateMatrix(int n, int* returnSize, int** returnColumnSizes){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int[][] GenerateMatrix(int n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} n\n * @return {number[][]}\n */\nvar generateMatrix = function(n) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer} n\n# @return {Integer[][]}\ndef generate_matrix(n)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func generateMatrix(_ n: Int) -> [[Int]] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func generateMatrix(n int) [][]int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def generateMatrix(n: Int): Array[Array[Int]] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun generateMatrix(n: Int): Array<IntArray> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn generate_matrix(n: i32) -> Vec<Vec<i32>> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer[][]\n     */\n    function generateMatrix($n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function generateMatrix(n: number): number[][] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (generate-matrix n)\n  (-> exact-integer? (listof (listof exact-integer?)))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec generate_matrix(N :: integer()) -> [[integer()]].\ngenerate_matrix(N) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec generate_matrix(n :: integer) :: [[integer]]\n  def generate_matrix(n) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"376.9K\", \"totalSubmission\": \"574.7K\", \"totalAcceptedRaw\": 376948, \"totalSubmissionRaw\": 574732, \"acRate\": \"65.6%\"}",
+        "hints": [],
+        "solution": {
+            "id": "1003",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "3",
+        "metaData": "{\r\n  \"name\": \"generateMatrix\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[][]\",\r\n    \"rowsize\": \"param_1\",\r\n    \"colsize\": \"param_1\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "877",
+            "date": "2022-04-13",
+            "incompleteChallengeCount": 30,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1003",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Overview\n\nThere are various problems in spiral matrix series with some variations like [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) and [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/).\n\nIn order to solve such questions, the core idea is to decode the underlying pattern. This can be done by simulating the pattern and finding a generic representation that would work for any given $$n$$.\nLet's discuss a few approaches.\n\n---\n#### Approach 1: Traverse Layer by Layer in Spiral Form\n\n**Intuition**\n\nIf we try to build a pattern for a given $$n$$, we observe that the pattern repeats after completing one circular traversal around the matrix. Let's call this one circular traversal as  _layer_. We start traversing from the outer layer and move towards inner layers on every iteration.\n\n![img](../Figures/59/spiral_layers.png)\n\n**Algorithm**\n\nLet's devise an algorithm for the spiral traversal:\n\n-  We can observe that, for any given $$n$$, the total number of layers is given by :\n$$\\lfloor \\frac{n+1}{2} \\rfloor$$\nThis works for both even and odd $$n$$.\n\n_Example_\n\nFor `$$n = 3$$`, `$$layers = 2$$`\n\nFor `$$n = 6$$`, total `$$layers = 3$$`\n\n- Also, for each layer, we traverse in _at most_ 4 directions :\n\n\n![img](../Figures/59/spiral_traverse.png)\n\n\nIn every direction, either row or column remains constant and other parameter changes (increments/decrements).\n\n_Direction 1: From top left corner to top right corner._\n\nThe row remains constant as $$\\text{layer}$$ and column increments from $$\\text{layer}$$ to  $$n-\\text{layer}-1$$\n\n_Direction 2: From top right corner to the bottom right corner._\n\nThe column remains constant as $$n-layer-1$$ and row increments from\n$$\\text{layer}+1$$ to $$n-\\text{layer}$$.\n\n_Direction 3: From bottom right corner to bottom left corner._\n\nThe row remains constant as $$n-\\text{layer}-1$$ and column decrements from $$n-\\text{layer}-2$$ to $$\\text{layer}$$.\n\n_Direction 4: From bottom left corner to top left corner._\n\nThe column remains constant as $$\\text{layer}$$ and column decrements from $$n-\\text{layer}-2$$ to $$\\text{layer}+1$$.\n\nThis process repeats $$(n+1)/2$$ times until all layers are traversed.\n\n![img](../Figures/59/spiral_detailed.png)\n\n\n<iframe src=\"https://leetcode.com/playground/ESy4PJY9/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ESy4PJY9\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$\\mathcal{O}(n^2)$$. Here, $$n$$ is given input and we are iterating over $$n\\cdot n$$ matrix in spiral form.\n* Space Complexity: $$\\mathcal{O}(1)$$  We use constant extra space for storing $$cnt$$.\n\n---\n#### Approach 2: Optimized spiral traversal\n\n**Intuition**\n\nOur main aim is to walk in a spiral form and fill the array in a particular pattern. In the previous approach, we used a separate loop for each direction. Here, we discuss another optimized to achieve the same result.\n\n**Algorithm**\n\n- We have to walk in 4 directions forming a layer. We use an array $$dir$$ that stores the changes in $$x$$ and $$y$$ co-ordinates in each direction.\n\n_Example_\n\nIn left to right walk ( _direction #1_ ), $$x$$ co-ordinates remains same and $$y$$ increments ($$x = 0$$, $$y = 1$$).\n\nIn right to left walk ( _direction #3_ ), $$x$$ remains same and $$y$$ decrements ($$x = 0$$, $$y = -1$$).\n\nUsing this intuition, we pre-define an array $$dir$$ having $$x$$ and $$y$$ co-ordinate changes for each direction. There are a total of 4 directions as discussed in the previous approach.\n\n- The $$\\text{row}$$ and $$col$$ variables represent the current $$x$$ and $$y$$ co-ordinates respectively. It updates based on the direction in which we are moving.\n\n_How do we know when we have to change the direction?_\n\nWhen we find the next row or column in a particular direction has a non-zero value, we are sure it is already traversed and we change the direction.\n\nLet $$d$$ be the current direction index. We go to next direction in array $$dir$$ using $$(d+ 1) \\% 4$$. Using this we could go back to direction 1 after completing one circular traversal from direction 1 to direction 4 .\n\n> It must be noted that we use `floorMod` in Java instead of modulo $$\\%$$ to handle mod of negative numbers. This is required because row and column values might go negative and using $$\\%$$ won't give desired results in such cases.  \n\n<iframe src=\"https://leetcode.com/playground/SnLwSJGR/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"SnLwSJGR\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$\\mathcal{O}(n^2)$$. Here, $$n$$ is given input and we are iterating over $$n\\cdot n$$ matrix in spiral form.\n* Space Complexity: $$\\mathcal{O}(1)$$  We use constant extra space for storing $$cnt$$.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "948",
+            "count": 55,
+            "average": "4.418",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "spiral-matrix-ii",
+    "playgroundData": {
+        "ESy4PJY9": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "spiral-matrix-ii-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "SnLwSJGR": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "spiral-matrix-ii-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

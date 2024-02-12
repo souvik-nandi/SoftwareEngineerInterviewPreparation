@@ -1,0 +1,278 @@
+{
+    "id": "214",
+    "question": {
+        "questionId": "214",
+        "questionFrontendId": "214",
+        "boundTopicId": null,
+        "title": "Shortest Palindrome",
+        "titleSlug": "shortest-palindrome",
+        "content": "<p>You are given a string <code>s</code>. You can convert <code>s</code> to a palindrome by adding characters in front of it.</p>\n\n<p>Return <em>the shortest palindrome you can find by performing this transformation</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"aacecaaa\"\n<strong>Output:</strong> \"aaacecaaa\"\n</pre><p><strong>Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"abcd\"\n<strong>Output:</strong> \"dcbabcd\"\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= s.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>s</code> consists of lowercase English letters only.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 2563,
+        "dislikes": 194,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Longest Palindromic Substring\", \"titleSlug\": \"longest-palindromic-substring\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Implement strStr()\", \"titleSlug\": \"implement-strstr\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Palindrome Pairs\", \"titleSlug\": \"palindrome-pairs\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "exampleTestcases": "\"aacecaaa\"\n\"abcd\"",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Rolling Hash",
+                "slug": "rolling-hash",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String Matching",
+                "slug": "string-matching",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Hash Function",
+                "slug": "hash-function",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Tesla\", \"slug\": \"tesla\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Pocket Gems\", \"slug\": \"pocket-gems\", \"timesEncountered\": 0}], \"1\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    string shortestPalindrome(string s) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public String shortestPalindrome(String s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def shortestPalindrome(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def shortestPalindrome(self, s: str) -> str:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nchar * shortestPalindrome(char * s){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public string ShortestPalindrome(string s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar shortestPalindrome = function(s) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} s\n# @return {String}\ndef shortest_palindrome(s)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func shortestPalindrome(_ s: String) -> String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func shortestPalindrome(s string) string {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def shortestPalindrome(s: String): String = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun shortestPalindrome(s: String): String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn shortest_palindrome(s: String) -> String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function shortestPalindrome($s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function shortestPalindrome(s: string): string {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (shortest-palindrome s)\n  (-> string? string?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec shortest_palindrome(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\nshortest_palindrome(S) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec shortest_palindrome(s :: String.t) :: String.t\n  def shortest_palindrome(s) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"140.4K\", \"totalSubmission\": \"439.5K\", \"totalAcceptedRaw\": 140360, \"totalSubmissionRaw\": 439477, \"acRate\": \"31.9%\"}",
+        "hints": [],
+        "solution": {
+            "id": "174",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "\"aacecaaa\"",
+        "metaData": "{\r\n  \"name\": \"shortestPalindrome\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "174",
+        "content": "[TOC]\n\n## Solution\n---\n#### Approach #1 Brute force [Time Limit Exceeded]\n\n**Intuition**\n\nAccording to the question, we are allowed to insert the characters only at the beginning of the string. Hence, we can find the largest segment from the beginning that is a palindrome, and we can then easily reverse the remaining segment and append to the beginning. This must be the required answer as no shorter palindrome could be found than this by just appending at the beginning.\n\nFor example: Take the string $$\\text{\"abcbabcab\"}$$. Here, the largest palindrome segment from beginning is $$\\text{\"abcba\"}$$, and the remaining segment is $$\\text{\"bcab\"}$$. Hence the required string is reverse of $$\\text{\"bcab\"}$$( = $$\\text{\"bacb\"}$$) + original string( = $$\\text{\"abcbabcab\"}$$) = $$\\text{\"bacbabcbabcab\"}$$.\n\n**Algorithm**\n\n* Create the reverse of the original string $$s$$, say $$\\text{rev}$$. This is used for comparison to find the largest palindrome segment from the front.\n* Iterate over the variable $$i$$ from 0 to the $$\\text{size(s)}-1$$:\n    * If $$s[0:n-i] == rev[i:]$$ (i.e. substring of $$s$$ from $$0$$ to $$n-i$$ is equal to the substring of $$\\text{rev}$$ from $$i$$ to the end of string). This essentially means that that substring from $$0$$ to $$n-i$$ is a palindrome, as $$\\text{rev}$$ is the reverse of $$s$$.\n    * Since, we find the larger palindromes first, we can return reverse of largest palindrome + $$s$$ as soon as we get it.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/JHUjSUze/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"JHUjSUze\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n^2)$$.\n    * We iterate over the entire length of string $$s$$.\n    * In each iteration, we compare the substrings which is linear in size of substrings to be compared.\n    * Hence, the total time complexity is $$O(n*n) = O(n^2)$$.\n\n* Space complexity: $$O(n)$$ extra space for the reverse string $$\\text{rev}$$.\n\n---\n#### Approach #2 Two pointers and recursion [Accepted]\n\n**Intuition**\n\nIn Approach #1, we found the largest palindrome substring from the string using substring matching which is $$O(n)$$ in length of substring. We could make the process more efficient if we could reduce the size of string to search for the substring without checking the complete substring each time.\n\nLets take a string $$\\text{\"abcbabcaba\"}$$. Let us consider 2 pointers $$i$$ and $$j$$.\nInitialize $$i = 0$$. Iterate over $$j$$ from $$n-1$$ to $$0$$, incrementing $$i$$ each time $$\\text{s[i]==s[j]}$$. Now, we just need to search in range $$\\text[0,i)$$. This way, we have reduced the size of string to search for the largest palindrome substring from the beginning. The range $$\\text{[0,i)}$$ must always contain the largest palindrome substring. The proof of correction is that: Say the string was a perfect palindrome, $$i$$ would be incremented $$n$$ times. Had there been other characters at the end, $$i$$ would still be incremented by the size of the palindrome. Hence, even though there is a chance that the range $$\\text{[0,i)}$$ is not always tight, it is ensured that it will always contain the longest palindrome from the beginning.  \n\nThe best case for the algorithm is when the entire string is palindrome and the worst case is string like $$\\text{\"aababababababa\"}$$, wherein $$i$$ first becomes $$12$$(check by doing on paper), and we need to recheck in [0,12) corresponding to string $$\\text{\"aabababababa\"}$$. Again continuing in the same way, we get $${i=10}$$.  In such a case, the string is reduced only by as few as 2 elements at each step. Hence, the number of steps in such cases is linear($$n/2$$).\n\nThis reduction of length could be easily done with the help of a recursive routine, as shown in the algorithm section.\n\n**Algorithm**\n\nThe routine $$\\text{shortestPalindrome}$$ is recursive and takes string $$s$$ as parameter:\n\n* Initialize $$i=0$$\n* Iterate over $$j$$ from $$n-1$$ to $$0$$:\n    * If $$\\text{s[i]==s[j]}$$, increase $$i$$ by $$1$$\n* If $$i$$ equals the size of $$s$$, the entire string is palindrome, and hence return the entire string $$s$$.\n* Else:\n    * Return reverse of remaining substring after $$i$$ to the end of string + $$\\text{shortestPalindrome}$$ routine on substring from start to index $$i-1$$ + remaining substring after $$i$$ to the end of string.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/XcdrwGgr/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"XcdrwGgr\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity: $$O(n^2)$$.\n    * Each iteration of $$\\text{shortestPalindrome}$$ is linear in size of substring and the maximum number of recursive calls can be $$n/2$$ times as shown in the Intuition section.\n    * Let the time complexity of the algorithm be T(n). Since, at the each step for the worst case, the string can be divide into 2 parts and we require only one part for further computation. Hence, the time complexity for the worst case can be represented as : $$T(n)=T(n-2)+O(n)$$. So, $$T(n) = O(n) + O(n-2) + O(n-4) + ... + O(1)$$ which is  $$O(n^2)$$.\n\nThanks @CONOVER for the time complexity analysis.\n\n* Space complexity: $$O(n)$$ extra space for $$\\text{remain\\_rev}$$ string.\n\n---\n#### Approach #3 KMP [Accepted]\n\n**Intuition**\n\nWe have seen that the question boils down to  finding the largest palindrome substring from the beginning.\n\nThe people familiar with KMP(Knuth\u2013Morris\u2013Pratt) algorithm may wonder that the task at hand can be easily be compared with the concept of the lookup table in KMP.\n\n*KMP Overview:*\n\nKMP is a string matching algorithm that runs in $$O(n+m)$$ times, where $$n$$ and $$m$$ are sizes of the text and string to be searched respectively. The key component of KMP is the failure function lookup table,say $$f(s)$$. The purpose of the lookup table is to store the length of the proper prefix of the string $$b_{1}b_{2}...b_{s}$$ that is also a suffix of $$b_{1}b_{2}...b_{s}$$. This table is important because if we are trying to match a text string for $$b_{1}b_{2}...b_{n}$$, and we have matched the first $$s$$ positions, but when we fail, then the value of lookup table for $$s$$ is the longest prefix of $$b_{1}b_{2}...b_{n}$$ that could possibly match the text string upto the point we are at. Thus, we don't need to start all over again, and can resume searching from the matching prefix.\n\nThe algorithm to generate the lookup table is easy and inutitive, as given below:\n\n```\nf(0) = 0\nfor (i = 1; i < n; i++) {\n    t = f(i-1)\n    while (t > 0 && b[i] != b[t]) {\n        t = f(t-1)\n    }\n    if (b[i] == b[t]) {\n        ++t\n    }\n    f(i) = t\n}\n```\n\n* Here, we first set f(0)=0 since, no proper prefix is available.\n* Next, iterate over $$i$$ from $$1$$ to $$n-1$$:\n    * Set $$t=f(i-1)$$\n    * While t>0 and char at $$i$$ doesn't match the char at $$t$$ position, set $$t=f(t)$$, which essentially means that we have problem matching and must consider a shorter prefix, which will be $$b_{f(t-1)}$$, until we find a match or t becomes 0.\n    * If $$b_{i}==b_{t}$$, add 1 to t\n    * Set $$f(i)=t$$  \n\nThe lookup table generation is as illustrated below:\n\n![KMP](../Figures/214/shortest_palindrome.png){:width=\"600px\"}\n{:align=\"center\"}\n\n*Wait! I get it!!*\n\nIn Approach #1, we reserved the original string $$s$$ and stored it as $$\\text{rev}$$. We iterate over $$i$$ from $$0$$ to $$n-1$$ and check for $$s[0:n-i] == rev[i:]$$.\nPondering over this statement, had the $$\\text{rev}$$ been concatenated to $$s$$, this statement is just finding the longest prefix that is equal to the suffix. Voila!\n\n**Algorithm**\n\n* We use the KMP lookup table generation\n* Create $$\\text{new_s}$$ as $$s + \\text{\"#\"} + \\text{reverse(s)}$$ and use the string in the lookup-generation algorithm\n    * The \"#\" in the middle is required, since without the #, the  2 strings could mix with each ther, producing wrong answer. For example, take the string $$\\text{\"aaaa\"}$$. Had we not inserted \"#\" in the middle, the new string would be $$\\text{\"aaaaaaaa\"}$$ and the largest prefix size would be 7 corresponding to \"aaaaaaa\" which would be obviously wrong. Hence, a delimiter is required at the middle.\n* Return reversed string after the largest palindrome from beginning length(given by $$n-\\text{f[n\\_new-1]}$$) + original string $$s$$\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/RCgYpajF/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"RCgYpajF\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity: $$O(n)$$.\n    * In every iteration of the inner while loop, $$t$$ decreases until it reaches 0 or until it matches. After that, it is incremented by one. Therefore, in the worst case, $$t$$ can only be decreased up to $$n$$ times and increased up to $$n$$ times.\n    * Hence, the algorithm is linear with maximum $$(2 * n) * 2$$ iterations.\n\n* Space complexity: $$O(n)$$. Additional space for the reverse string and the concatenated string.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "169",
+            "count": 135,
+            "average": "3.385",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "shortest-palindrome",
+    "playgroundData": {
+        "JHUjSUze": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "shortest-palindrome-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "XcdrwGgr": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "shortest-palindrome-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "RCgYpajF": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "shortest-palindrome-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

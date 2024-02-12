@@ -1,0 +1,220 @@
+{
+    "id": "41",
+    "question": {
+        "questionId": "41",
+        "questionFrontendId": "41",
+        "boundTopicId": null,
+        "title": "First Missing Positive",
+        "titleSlug": "first-missing-positive",
+        "content": "<p>Given an unsorted integer array <code>nums</code>, return the smallest missing positive integer.</p>\n\n<p>You must implement an algorithm that runs in <code>O(n)</code> time and uses constant extra space.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<pre><strong>Input:</strong> nums = [1,2,0]\n<strong>Output:</strong> 3\n</pre><p><strong>Example 2:</strong></p>\n<pre><strong>Input:</strong> nums = [3,4,-1,1]\n<strong>Output:</strong> 2\n</pre><p><strong>Example 3:</strong></p>\n<pre><strong>Input:</strong> nums = [7,8,9,11,12]\n<strong>Output:</strong> 1\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 5 * 10<sup>5</sup></code></li>\n\t<li><code>-2<sup>31</sup> &lt;= nums[i] &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 10462,
+        "dislikes": 1391,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Missing Number\", \"titleSlug\": \"missing-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Find the Duplicate Number\", \"titleSlug\": \"find-the-duplicate-number\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find All Numbers Disappeared in an Array\", \"titleSlug\": \"find-all-numbers-disappeared-in-an-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Couples Holding Hands\", \"titleSlug\": \"couples-holding-hands\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Smallest Number in Infinite Set\", \"titleSlug\": \"smallest-number-in-infinite-set\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[1,2,0]\n[3,4,-1,1]\n[7,8,9,11,12]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 16}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 14}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Grab\", \"slug\": \"grab\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Global Tech\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Twitch\", \"slug\": \"twitch\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Shopee\", \"slug\": \"shopee\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Snapdeal\", \"slug\": \"snapdeal\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Toptal\", \"slug\": \"toptal\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Databricks\", \"slug\": \"databricks\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cohesity\", \"slug\": \"cohesity\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Tesla\", \"slug\": \"tesla\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Tencent\", \"slug\": \"tencent\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ServiceNow\", \"slug\": \"servicenow\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"JPMorgan\", \"slug\": \"jpmorgan\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Docusign\", \"slug\": \"docusign\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"DRW\", \"slug\": \"drw\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int firstMissingPositive(vector<int>& nums) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int firstMissingPositive(int[] nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def firstMissingPositive(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def firstMissingPositive(self, nums: List[int]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint firstMissingPositive(int* nums, int numsSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int FirstMissingPositive(int[] nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar firstMissingPositive = function(nums) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef first_missing_positive(nums)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func firstMissingPositive(_ nums: [Int]) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func firstMissingPositive(nums []int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def firstMissingPositive(nums: Array[Int]): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun firstMissingPositive(nums: IntArray): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn first_missing_positive(nums: Vec<i32>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function firstMissingPositive($nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function firstMissingPositive(nums: number[]): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (first-missing-positive nums)\n  (-> (listof exact-integer?) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec first_missing_positive(Nums :: [integer()]) -> integer().\nfirst_missing_positive(Nums) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec first_missing_positive(nums :: [integer]) :: integer\n  def first_missing_positive(nums) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"717.3K\", \"totalSubmission\": \"2M\", \"totalAcceptedRaw\": 717323, \"totalSubmissionRaw\": 1979145, \"acRate\": \"36.2%\"}",
+        "hints": [
+            "Think about how you would solve the problem in non-constant space.  Can you apply that logic to the existing space?",
+            "We don't care about duplicates or non-positive integers",
+            "Remember that O(2n) = O(n)"
+        ],
+        "solution": {
+            "id": "681",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[1,2,0]",
+        "metaData": "{\r\n  \"name\": \"firstMissingPositive\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "681",
+        "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: Index as a hash key.\n\n**Data clean up**\n\nFirst of all let's get rid of negative numbers and zeros since there is no\nneed of them. One could get rid of all numbers larger than `n` as well,\nsince the first missing positive is for sure smaller or equal to `n + 1`.\nThe case when the first missing positive is equal to `n + 1` will be\ntreated separately.  \n\n![max_first](../Figures/41/41_max_possible_first.png)\n\nWhat does it mean - to get rid of, if one has to keep $$\\mathcal{O}(N)$$\ntime complexity and hence could not pop unwanted elements out? \nLet's just replace all these by `1`s. \n\n![max_first](../Figures/41/41_replace.png)\n\nTo ensure that the first missing positive is not `1`, one has to verify \nthe presence of `1` before proceeding to this operation.\n\n**How to solve in-place**\n\nNow there we have an array which contains only positive numbers\nin a range from `1` to `n`,\nand the problem is to find a first missing positive in \n$$\\mathcal{O}(N)$$ time and constant space. \n\nThat would be simple, if one would be allowed to \nhave a hash-map `positive number -> its presence` for the array.\n\n![max_first](../Figures/41/41_missing.png)\n\nSort of \"dirty workaround\" solution would be to allocate a string `hash_str` \nwith `n` zeros, and use it as a sort of hash map by changing \n`hash_str[i]` to `1` each time one meets number `i` in the array. \n\n![max_first](../Figures/41/41_string.png)\n\nLet's not use this solution, but just take away a pretty nice idea _to use \nindex as a hash-key_ for a positive number.\n\nThe final idea is to _use index in nums as a hash key_ and _sign of \nthe element as a hash value_ which is presence detector.\n\n> For example, negative sign of `nums[2]` element means that \nnumber `2` is present in `nums`. The positive sign of `nums[3]` element\nmeans that number `3` is not present (missing) in `nums`.\n\nTo achieve that let's walk along the array (which after clean up contains \nonly positive numbers), check each element value `elem` \nand change the sign of element `nums[elem]` to negative to mark \nthat number `elem` is present in `nums`. Be careful \nwith duplicates and ensure that the sign was changed only once.\n\n![max_first](../Figures/41/41_true_solution.png)\n\n**Algorithm**\n\nNow everything is ready to write down the algorithm.\n\n* Check if `1` is present in the array. If not, you're done and `1`\nis the answer.\n* Replace negative numbers, zeros, and numbers larger than `n` by `1`s.\n* Walk along the array. Change the sign of a-th element if you meet number `a`. \nBe careful with duplicates : do sign change only once.\nUse index `0` to save an information about presence of number `n` since \nindex `n` is not available.\n* Walk again along the array. Return the index of the first positive element.\n* If `nums[0] > 0` return `n`.\n* If on the previous step you didn't find the positive element in nums, that means\nthat the answer is `n + 1`.\n\n**Implementation**\n\n!?!../Documents/41_LIS.json:1000,589!?!\n\n<iframe src=\"https://leetcode.com/playground/EWb7uHW9/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"EWb7uHW9\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$ since all we do here is four walks \nalong the array of length `N`.\n* Space complexity : $$\\mathcal{O}(1)$$ since this is a constant space solution.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "666",
+            "count": 170,
+            "average": "3.559",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "first-missing-positive",
+    "playgroundData": {
+        "EWb7uHW9": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "first-missing-positive-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,341 @@
+{
+    "id": "132",
+    "question": {
+        "questionId": "132",
+        "questionFrontendId": "132",
+        "boundTopicId": null,
+        "title": "Palindrome Partitioning II",
+        "titleSlug": "palindrome-partitioning-ii",
+        "content": "<p>Given a string <code>s</code>, partition <code>s</code> such that every substring of the partition is a palindrome.</p>\n\n<p>Return <em>the minimum cuts needed</em> for a palindrome partitioning of <code>s</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aab&quot;\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> The palindrome partitioning [&quot;aa&quot;,&quot;b&quot;] could be produced using 1 cut.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;a&quot;\n<strong>Output:</strong> 0\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;ab&quot;\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 2000</code></li>\n\t<li><code>s</code> consists of lowercase English letters only.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 3703,
+        "dislikes": 88,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Palindrome Partitioning\", \"titleSlug\": \"palindrome-partitioning\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Palindrome Partitioning IV\", \"titleSlug\": \"palindrome-partitioning-iv\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "exampleTestcases": "\"aab\"\n\"a\"\n\"ab\"",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int minCut(string s) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int minCut(String s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def minCut(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def minCut(self, s: str) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint minCut(char * s){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int MinCut(string s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minCut = function(s) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} s\n# @return {Integer}\ndef min_cut(s)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func minCut(_ s: String) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func minCut(s string) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def minCut(s: String): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun minCut(s: String): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn min_cut(s: String) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function minCut($s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function minCut(s: string): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (min-cut s)\n  (-> string? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec min_cut(S :: unicode:unicode_binary()) -> integer().\nmin_cut(S) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec min_cut(s :: String.t) :: integer\n  def min_cut(s) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"212.3K\", \"totalSubmission\": \"636.8K\", \"totalAcceptedRaw\": 212306, \"totalSubmissionRaw\": 636779, \"acRate\": \"33.3%\"}",
+        "hints": [],
+        "solution": {
+            "id": "1151",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "\"aab\"",
+        "metaData": "{\r\n  \"name\": \"minCut\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1151",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Overview\n\nThe problem is to partition the given string `s` into palindromic substrings such that the number of partitions is _minimum_.\n\nNow, how can we achieve this?\nGenerate all possible substrings of the string `s` that are palindromes and find the number of cuts. In the end, you will find the partitioning scheme with the minimum number of cuts.\n\nIf you have solved similar problems before like [Palindrome Partitioning I](https://leetcode.com/problems/palindrome-partitioning/), you know that this can be implemented using backtracking. But there is more to it. It is interesting to see how this problem touches various algorithm concepts as we move forward towards more optimized solutions.\n\nIt is recommended for the reader to be patient and read through all the approaches as it will help in understanding how a naive solution can be iteratively optimized into an efficient solution. So stay tuned!!\n\n---\n#### Approach 1: Backtracking\n\n**Intuition**\n\nIn this approach, we will partition the given string `s` in all possible ways such that, each substring is a palindrome. In the end, we can find the partitioning scheme with the minimum cut.\n\nConsider string `s = aab`. Let's take a pen and paper and find the palindromic partitioning of this string.\n\n_First Iteration_\n\n    string = \"aab\", Number of cuts = 0\n\nPick the first substring beginning with the start of the string: `a`. (**a**ab)\n\n   As `a` is a palindrome, place a cut after the first `a` and move ahead towards the remaining substring.\n\n![img](../Figures/132/Approach1_iteration1_1.png)\n\n    string = `ab`, Number of cuts = 1\n\n   Again, `a` is a palindrome. (a**a**b) Place a cut after 2nd `a` and move towards the remaining substring.\n\n![img](../Figures/132/Approach1_iteration1_2.png)\n\n    string = `b`, Number of cuts = 2\n\n  The next substring `b`(aa**b**) is also a palindrome. With this, we have reached the end of the string. We have found our first palindrome partitioning scheme wherein each substring is a palindrome.\n\n![img](../Figures/132/Approach1_iteration1_finalConfig.png)\n\nNow, we will go back to `string = b` and `number of cuts = 1`  and choose the next substring `ab` (a**ab**), but since it is not a palindrome, we will not explore this choice.\n\nLet's go back to the original substring again and find out other possible ways to partition the string.\n\n_Second Iteration_\n\n    string = `aab`, Number of cuts = 0\n\nIn the previous iteration, we picked up the first substring `a` and found a partitioning scheme. Let's move ahead to pick the next\nsubstring `aa` (**aa**b)\n\n    string = `b`, Number of cuts = 1\n\n![img](../Figures/132/Approach1_iteration2.png)\n\nThe next substring `b`(aa**b**) is a palindrome. With this, we have reached the end of the string and we found our 2nd palindrome partitioning scheme.\n\n![img](../Figures/132/Approach1_iteration2_finalConfig.png)\n\n_Third Iteration_\n\n    string = `aab`, Number of cuts = 0\n\nIn this iteration, we would pick the next substring `aab` (**aab**). It is not a palindrome. As we have reached the end of the string, we terminate our search.\n\nWe can conclude that we found 2 possible partitioning schemes such that each substring is a palindrome and the minimum cut obtained is `1`.\n\n![img](../Figures/132/Approach1_bestSolution.png)\n\nWhat are we doing here?\n\nWe are breaking the string `aab`  into all possible substrings, starting with `a`, then `aa`, then `aab`, and so on. If any of the substrings is a palindrome, we are placing a cut at that position and continuing the same process for the remaining string.\n\nThat's exactly how [Backtracking]( https://leetcode.com/explore/learn/card/recursion-ii/472/backtracking/) works!! It incrementally builds the candidates for the solution and discards the candidates (backtrack) if it doesn't satisfy the condition.\n\nIn the Backtracking algorithm we must identify following parameters:\n\n_Choose Candidates_: The potential candidates are all substrings that can be generated from the given string.\n\n_Define Constraint_: We will explore a potential candidate if and only if it is a _palindrome_.\n\n_Identify Terminating Condition_: The search will terminate when we reach the end of the string.\n\nLet's understand how we can implement this approach.\n\n**Algorithm**\n\n1. The backtracking algorithm is implemented by recursively exploring the candidate substrings. We define a recursive method `findMinimumCut` that will find the minimum number of cuts for a substring starting at index `start` and ending at index `end`.\n\n    To find the minimum cuts, we must also know the minimum cuts seen so far for other palindrome partitions. This information is tracked in the variable `minimumCut`.\n\n   The initial value of `minimumCut` would be the maximum possible number of cuts in a string which is equal to the length of string _minus_ 1 (i.e. cut in between each character).\n\n2. Now, that we know the `start` and `end` indices, we must generate all possible substrings beginning at the `start` index. For this, we will keep the `start` index constant. The `currentEndIndex` marks the end of the current substring.\n\n    If the current substring is a palindrome, we will place a cut after `currentEndIndex` and recursively find the minimum cut for the remaining string.\n\n  The minimum cut will be calculated as,\n\n     Minimum( minimum cut seen so far, 1 + minimum cuts for the remaining substring )\n\nThe following figure illustrates how the recursive backtracking process works:\n\n![img](../Figures/132/Approach1_Recursion_tree.png)\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/aeCMeamx/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"aeCMeamx\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N \\cdot 2^N)$$, where `N` is the length of string `s`.\n\n   Let's understand the time complexity of the backtracking method call `findMinimumCut` given by `T(N)`.\n\n   For a string of size `N` the recursive method `findMinimumCut` will recur for substrings of size `N-1`, `N-2`, `N-3` and so on. This can be written as,\n\n   $$T(N) = T(N-1) + T(N-2) + ... + T(1)$$.   \n\n   Similarly, T(N - 1) can be written as,\n\n   $$T(N - 1) = T(N-2) + T(N-3) + ... + T(1)$$\n\n   Subtracting the above 2 expressions and solving the expression, we get,\n\n   $$T(N) = 2T(N-1)$$   \n\n   The time complexity of above recurrence relation is given by,\n\n    $$T(N) = O(2 ^ N)$$\n\n    >  $$T(N) = 2T(N-1)$$          ... _Equation 1_  \n    >  \n    > Substituting N = N - 1 in _Equation 1_\n    >\n    >  $$T(N - 1) = 2T(N-2)$$    ... _Equation 2_  \n    >   \n    > Putting the value of _Equation 2_ in _Equation 1_\n    >\n    > $$T(N) = 2 \\cdot [2T(N-2)]$$\n    >\n    > $$T(N) = 4T(N-2)$$    ... _Equation 3_  \n    >\n    > Substituting N = N - 2 in _Equation 1_\n    >\n    >  $$T(N - 2) = 2T(N- 3)$$    ... _Equation 4_\n    >\n    > Putting the value of _Equation 4_ in _Equation 3_\n    >\n    > $$T(N) = 4 \\cdot [2T(N- 3)]$$    \n    >\n    > $$T(N) = 8T(N- 3) = 2^KT(N- K)$$  ... _Equation 5_\n    >\n    > Substituting K = N in _Equation 5_\n    >\n    > $$T(N) = 2^NT(N- N)$$\n    >\n    > $$T(N) = 2^N = O(2 ^ N)$$\n\n\n   Thus, we can say that for a given string of size $$N$$, the worst-case time complexity of the recursive method call `findMinimumCut` would be $$O(2 ^ N)$$.\nAdditionally, to check if a substring is a palindrome or not we must iterate $$O(N/2)$$ times within each recursive call.\n\n   This gives us total time complexity of $$O(2 ^ N) \\cdot O(N/2) = O(2 ^ N \\cdot N)$$.\n\n   This approach is exhaustive and results in _Time Limit Exceeded(TLE)_.\n\n* Space Complexity: $$O(n)$$. The recursive method uses an internal call stack. In this case, if we place a cut after every character in the string `(a|a|b)`, the size of the internal stack would be at most `n`.\n\n---\n#### Approach 2: Dynamic Programming - Top Down (Recursion, Memoization)\n\n**Intuition**\n\nWe found that the Backtracking approach is exhaustive. What do we observe?\n\nIn the above recursion tree, the result of substring `b` for `s = aab` is calculated twice. For larger substrings, there would be many such substrings for which the results would be unnecessarily computed again and again. In fact, for every repeated computation the results would be always the same.\n\n> How about if our algorithm remembers the result for a subproblem when it is computed the first time and reuses the stored result every other time.\n\nIf you have learned the basics of [Dynamic Programming](https://en.wikipedia.org/wiki/Dynamic_programming), you know that if a recursive problem computes and solves the same subproblem multiple times, it has an _Overlapping Subproblem_ property. Such problems can be optimized using a dynamic programming technique called Memoization.\n\nIn this approach, the result after computing minimum cuts for a substring is stored. The subsequent calls can look at these stored results before going ahead and computing the minimum number of cuts for a substring.\nMoreover, we can observe that the same optimization can be also applied to determine if a substring is a palindrome.\n\nThe following figure illustrates the recursive tree for s = `aaab` and how we can use memoization to optimize the approach.\n\n![img](../Figures/132/Approach2_Recursion_tree.png)\n\n> Fact: The recursion plus memoization approach starts with the larger problem and recursively breaks it into smaller subproblems. Hence it is also called Top-Down Dynamic Programming.\n\n**Algorithm**\n\n-  To record the results of computation on every substring, we must store the substring and its result.\n\n   Now, instead of storing the substring, we can just store its `start` and `end` index. We will use a 2-dimensional array `memoCuts`, where the value of  `memoCuts[start][end]` would give the minimum number of cuts for a substring starting at index start and ending at index `end`.\n\n   Similarly, we need another 2-dimensional array `memoPalindrome` to store the results for palindrome computations.\n\n   The implementation is the same as in _Approach 1_ with the following differences in each recursive call:\n\n- In `findMinimumCut`, check if `memoCuts` has the result for the current substring. If so, return the result, otherwise, proceed with the next steps to compute the result.\n\n- After computing the result, store the result in `memoCuts[start][end]`.\n\n- A similar approach is followed in `isPalindrome` to store the results of palindrome computations.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/NYrcuQgw/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"NYrcuQgw\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2 \\cdot N)$$, where `N` is the length of string `s`.\n\n   In the recursive method `findMinimumCut`, we are calculating the results for any substring only once. We know that a string size $$N$$ has $$N^2$$ possible substrings. Thus, the worst-case time complexity of the recursive method `findMinimumCut` is $$O(N^2)$$.\n\n   Additionally, within each recursive call, we are also checking if a substring is palindrome or not. The worst-case time complexity for method `isPalindrome` is $$O(N/2)$$.\n\n   This gives us total time complexity as, $$O(N ^ 2) \\cdot O(N/2) = O(N ^ 2 \\cdot N)$$\n\n* Space Complexity: $$O(N ^ 2)$$, as we are using two 2-dimensional arrays `memoCuts` and `memoPalindrome` of size $$N \\cdot N$$.\n\n   This gives us total space complexity as $$(N^2 + N^ 2) = N^2$$.\n\n---\n#### Approach 3: Dynamic Programming - Top Down (Optimized Space Complexity)\n\n**Intuition**\n\nIn _Approach 2_, we used a 2-dimensional array for `memoCuts`. On careful observation, we notice that when we update or access the stored values to or from `memoCuts`, the value of variable `end` always remains the same.\n\nThus, we only need to track and update the `start` index when finding the minimum number of cuts. The `memoCuts[start]` will determine the minimum number of cuts for a substring starting at index `start` and ending at index `length(s) - 1`.\n\n**Algorithm**\n\nThe algorithm is similar as in _Approach 2_ with a minor difference:\n\n- Store the results of a substring starting at index `start` in `memoCuts[start]`.\n\n- Before calculating the result of any substring starting at index `start` and ending at index `end`, check if `memoCuts[start]` already contains the computed result.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/DaLgetLw/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"DaLgetLw\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2 \\cdot N)$$, where `N` is the length of string `s`.\n\n  The time complexity is the same as in _Approach 2_.\n\n* Space Complexity: $$O(N ^ 2)$$, as we are using one 1-dimensional array `memoCuts` of size $$N$$ and one 2-dimensional array `memoPalindrome` of size $$N \\cdot N$$.\n This gives us a total space complexity of $$(N + N^ N) = N^2$$.\n\n---\n#### Approach 4: Dynamic Programming - Bottom Up (Tabulation)\n\n**Intuition**\n\nThere is yet another technique to implement Dynamic Programming problems. Here, we will use an iterative approach and store the result of subproblems in a bottom-up fashion, also known as Tabulation.\n\n> Challenge: Can you try this on your own?\n\nWe must understand that the basic insight of dynamic programming: to compute the result of a problem, we must first compute the results of its subproblems. For example, to find the minimum number of cuts for the string `aab`, we must know the result for all the substrings `a`, `aa`, `ab`, and so on.\n\nMemoization follows the top-down approach. We started by finding the result for the original string `aab` and recursively moved towards computing the result of smaller subproblems like `a`, `aa`, `ab`.\n\nTabulation solves it in a bottom-up manner. We must compute the results of all the subproblems before moving towards the larger problem. As the name suggests, the results of subproblems are stored in a table which can be referred to in the future for computing the result of a larger problem.\n\n**Algorithm**\n\n1. Bottom-up Dynamic Programming follows an iterative approach to solve the problem. We have to start by finding the minimum possible cuts in the smallest substring and move towards a larger substring.\n\n    This can be implemented using a nested loop. The outer loop sets the upper bound for the substring index with variable `end`. The inner loop takes each substring between `start` and `end` and calculates the minimum number of cuts for substring from index 0 to `end`.\n\n2. Build a one-dimensional array `cutsDp` to store the results of subproblems. `cutsDp[i]` stores the minimum number of cuts for a substring ending at index `i`.\n\n3. Calculating the minimum number of cuts is similar to the Memoization approach.\n\n   Initially, the `minimumCut` will be equal to the maximum possible cuts for a substring. So for a substring ending at index `end`, the `minimumCut` would be equal to the value of index `end`.\n\n   The minimum cut for `s.substring(start, end)` can be calculated as,\n\n       minimum(minimumCut, Minimum cuts for substring s(start, end))\n       Minimum cuts for substring s(start, end) = 1 + Minimum cuts for substring s(0, start - 1)\n\n   Minimum cuts for substring `s.substring(0, start - 1)` is equivalent to finding the result for substring ending at index `start - 1` which can be given by `cutsDp[start - 1]`. So, we can say that,\n\n       Minimum cuts for s.substring(start, end) = 1 + cutsDp[start - 1]\n\n   In the end, we will store the results of the current calculation at `cutsDp[end]` as every chosen substring ends at index `end`.\n\n4. We are using a similar iterative approach to check if a substring is a palindrome or not. We will build the `palindromeDp` beforehand. While finding the minimum cuts will refer to the stored values in `palindromeDp` and proceed only if the current substring is a palindrome. Refer to Approach 2 in [Palindrome Partitioning Solution](https://leetcode.com/problems/palindrome-partitioning/solution/).\n\n5. Return the minimum number of cuts for the original substring starting at index `0` and ending at `n - 1` which will be given by `cutsDp[n - 1]`.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/LA2pJ52p/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"LA2pJ52p\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2)$$, where `N` is the length of string `s`.\n\n   We are iterating $$N \\cdot N$$ times to build the `palindromeDp` array and $$N \\cdot N$$ times to find the minimum cuts in a nested for-loop. This gives us a total time complexity of $$ O(N \\cdot N) + O(N \\cdot N) = O(N \\cdot N)$$.\n\n* Space Complexity: $$O(N ^ 2)$$, as we are using a 2-dimensional arrays `palindromeDp` of size $$N \\cdot N$$ and a 1-dimensional array `cutsDp` of size $$N$$. Thus, the space complexity can be given by, $$ O(N \\cdot N) + O(N) = O(N \\cdot N)$$.\n\n---\n#### Approach 5: Optimized Tabulation Approach\n\n**Intuition**\n\nIn Approach 4, we built the palindrome array beforehand. However, both the process of building the palindrome array and finding the minimum cuts iterate in a similar fashion.\nThere is no need to build the array beforehand. We can combine both processes into a single loop.\nThere is no need to build the matrix beforehand. We can combine both processes into a single loop.\n\n**Algorithm**\n\n- Iterate over the string and generate all possible substrings in a nested for loop as in _Approach 4_.\n\n- Check if the substring is a palindrome using the previously calculated values in `palindromeDp`.\n   If the substring is a palindrome, update the results in the `palindromeDp` array. Keep doing this to find the minimum cut for the substring ending at index `end` and save it in `cutsDp[end]`.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/naSo4meT/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"naSo4meT\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2)$$, where `N` is the length of string `s`.\n\n   We are iterating $$N \\cdot N$$ times only once to find the minimum cuts.\n\n* Space Complexity: $$O(N ^ 2)$$, as we are using two 2-dimensional arrays `palindromeDp` and  1-dimensional array `cutsDp` of size $$N \\cdot N$$. Thus the space complexity can be given by, $$ O(N \\cdot N) + O(N) = O(N \\cdot N)$$ .\n---\n\n#### Approach 6: Expand Around the Center\n\n**Intuition**\n\nThis approach takes advantage of _Palindrome Property_. We know that a palindrome is a sequence of characters that reads the same backward and forward. If you cut any palindromic string at the center, the characters from the middle till the beginning of the string would be the same as the characters from the middle till the end.\nIn other words, the palindromic string mirrors around the center.\n\n![img](../Figures/132/Approach5_figure1.png)\n\nWe will fix the middle index and expand the string in both directions,\n1. The `start` index will begin at the middle index and expand to the left (towards the beginning of the string).\n2. The `end` index will begin at the middle index and expand to the right (towards the end of the string).\n\nThis expansion will continue as long as `s[start] == s[end]`, making the substring a palindrome. Once we have found the boundaries of our current palindromic string, we will place a cut after the `end` index.\n\nIn this way, we will fix every index in the string as a middle index and find the palindrome around that index. We will also take the advantage of pre-calculated results using the dynamic programming technique (tabulation).\n\n**Algorithm**\n\n1. Build an array `cutsDp` to store the results of every computation. Initially, the value of `cutsDp[i]` would be the maximum possible number of cuts till index `i`, which is equivalent to `i`.\n\n   As we progress, after every computation of minimum cuts for a substring ending at index `i`, the value of `cutsDp[i]` would be updated.\n\n2. Start by fixing the middle index `mid` at every position beginning from index `0` till the index length to string `s`.\n\n    We know from the above examples that, for even length palindromes, the middle index is between 2 characters (_Example: noon_) and for odd length palindromes the middle index is at 1 character. (_Example: madam_). To consider both scenarios, we will expand around the middle index twice.\n\n   - First, check if there is an odd length palindrome around the middle index. The `start` and `end` index will begin iteration from the `mid` position.\n\n    - Second, check if there is an even-length palindrome around the middle index. The `end` index will begin iteration from the `mid` position and the `start` index will begin from the `mid - 1` position.\n\n![img](../Figures/132/Approach5_figure2.png)\n\n3. The substring will be expanded i.e `start` index would be _incremented_ and `end` index _decremented_ until the characters at those indices are the same.\n\n    As the expansion stops, we will place a cut after the `end` index. This can be calculated as,\n\n        Minimum cuts at end = Minimum(Cuts calculated so far, 1 + Minimum cuts at (start - 1))\n\n    The cuts calculated so far for substring ending at `end` index can be given by `cutsDp[end]` and minimum cuts for a substring ending at `start - 1` index can be given by `cutsDp[start - 1]`.\n\n![img](../Figures/132/Approach5_figure3.png)\n\n4. After every computation, update `cutsDp[end]` with a new minimum value.\n\n5. At the end return `cutsDp[n - 1]` that has the value of the minimum number of cuts for the original string ending at index `n - 1`.\n\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/YYHEUNaa/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"YYHEUNaa\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2)$$, where `N` is the length of string `s`.\n\n   The outer loop that fixes the middle index iterates $$N$$ times. The are 2 inner loops iterates for $$N/2$$ times each. This gives us time complexity as, $$O(N \\cdot (N/2 + N/2)) = O(N ^ 2)$$.\n\n* Space Complexity: $$O(N)$$, as we are using single 1 dimensional array `cutsDp` of size $$N$$.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1156",
+            "count": 45,
+            "average": "4.822",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "palindrome-partitioning-ii",
+    "playgroundData": {
+        "aeCMeamx": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "palindrome-partitioning-ii-5",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "NYrcuQgw": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "palindrome-partitioning-ii-4",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "DaLgetLw": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "palindrome-partitioning-ii-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "LA2pJ52p": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "palindrome-partitioning-ii-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "naSo4meT": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "palindrome-partitioning-ii-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "YYHEUNaa": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "palindrome-partitioning-ii-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

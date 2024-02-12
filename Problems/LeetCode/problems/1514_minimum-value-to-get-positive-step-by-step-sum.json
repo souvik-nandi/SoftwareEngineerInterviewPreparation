@@ -1,0 +1,250 @@
+{
+    "id": "1514",
+    "question": {
+        "questionId": "1514",
+        "questionFrontendId": "1413",
+        "boundTopicId": null,
+        "title": "Minimum Value to Get Positive Step by Step Sum",
+        "titleSlug": "minimum-value-to-get-positive-step-by-step-sum",
+        "content": "<p>Given an array of integers&nbsp;<code>nums</code>, you start with an initial <strong>positive</strong> value <em>startValue</em><em>.</em></p>\n\n<p>In each iteration, you calculate the step by step sum of <em>startValue</em>&nbsp;plus&nbsp;elements in <code>nums</code>&nbsp;(from left to right).</p>\n\n<p>Return the minimum <strong>positive</strong> value of&nbsp;<em>startValue</em> such that the step by step sum is never less than 1.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [-3,2,-3,4,2]\n<strong>Output:</strong> 5\n<strong>Explanation: </strong>If you choose startValue = 4, in the third iteration your step by step sum is less than 1.\n<strong>step by step sum</strong>\n<strong>startValue = 4 | startValue = 5 | nums</strong>\n  (4 <strong>-3</strong> ) = 1  | (5 <strong>-3</strong> ) = 2    |  -3\n  (1 <strong>+2</strong> ) = 3  | (2 <strong>+2</strong> ) = 4    |   2\n  (3 <strong>-3</strong> ) = 0  | (4 <strong>-3</strong> ) = 1    |  -3\n  (0 <strong>+4</strong> ) = 4  | (1 <strong>+4</strong> ) = 5    |   4\n  (4 <strong>+2</strong> ) = 6  | (5 <strong>+2</strong> ) = 7    |   2\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> Minimum start value should be positive. \n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,-2,-3]\n<strong>Output:</strong> 5\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>-100 &lt;= nums[i] &lt;= 100</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 1058,
+        "dislikes": 236,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "[-3,2,-3,4,2]\n[1,2]\n[1,-2,-3]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Prefix Sum",
+                "slug": "prefix-sum",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ZScaler\", \"slug\": \"zscaler\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Swiggy\", \"slug\": \"swiggy\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Hotstar\", \"slug\": \"hotstar\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"JPMorgan\", \"slug\": \"jpmorgan\", \"timesEncountered\": 4}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int minStartValue(vector<int>& nums) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int minStartValue(int[] nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def minStartValue(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def minStartValue(self, nums: List[int]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint minStartValue(int* nums, int numsSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int MinStartValue(int[] nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minStartValue = function(nums) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef min_start_value(nums)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func minStartValue(_ nums: [Int]) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func minStartValue(nums []int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def minStartValue(nums: Array[Int]): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun minStartValue(nums: IntArray): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn min_start_value(nums: Vec<i32>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function minStartValue($nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function minStartValue(nums: number[]): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"73.5K\", \"totalSubmission\": \"107.1K\", \"totalAcceptedRaw\": 73482, \"totalSubmissionRaw\": 107096, \"acRate\": \"68.6%\"}",
+        "hints": [
+            "Find the minimum prefix sum."
+        ],
+        "solution": {
+            "id": "1205",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[-3,2,-3,4,2]",
+        "metaData": "{\n  \"name\": \"minStartValue\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1205",
+        "content": "[TOC]\n\n## Solution\n\n--- \n#### Overview\n\nIn this problem, we are given an integer array `nums`. Then we pick a positive value (let's call it `startValue`) and iterate over `nums`. In the iteration, we calculate the step-by-step total of this `startValue` plus the value of each elements in `nums`. \n\n\n\nSince there the array might contain negative values, it is possible for the total to become less than 1. However, if we select a sufficiently large `startValue`, we can ensure the step-by-step total will never be less than 1. For this problem, a `startValue` is **valid** if it makes the step-by-step total always remain positive.  Otherwise, the `startValue` is **invalid**.\n\n\nHere, our task is to find the **minimum valid** `startValue`.\n\n\n<br/>\n\n---\n\n#### Approach 1: Brute Force\n\n**Intuition**   \n\nFirstly, let's walk through two examples using the array `nums`, which equals $$[-3,2,-3,4,2]$$, to demonstrate a valid and an invalid `startValue`. \n\nIn the first example, we will iterate over `nums` starting with a `startValue` equal to 10.\n\n!?!../Documents/1413/walkthrough_1.json:601,301!?!\n\nWe can tell that 10 is a valid `startValue`, nice! \nThen let's try `startValue = 4`.\n\n!?!../Documents/1413/walkthrough_2.json:601,301!?!\n\nUnfortunately, 4 is not a valid `startValue`.\n\n\nSince the start value must be positive and we are looking for the minimum valid `startValue`, an intuitive method is to start from the smallest possible start value, that is, `startValue = 1`.  Then we can test whether `startValue` is valid by setting `total` equal to the start value and iterative over each number in `nums`, adding each number to `total` along the way, as shown above.  \n\nIf `total` is smaller than 1 during the iteration, this implies that the `startValue` is too small to ensure `total` remains positive. Therefore, we can stop this iteration and try a larger value. Since we don't want to miss any `startValue`, we will increase `startValue` by 1 each time, that is `startValue = startValue + 1`. We use this new start value to iterate over the array again. We keep iterating over the array with the new `startValue` until the step-by-step total remains positive for the entire iteration, indicating that we have found the minimum valid `startValue`.\n\n\n**Algorithm**\n1) Start with `startValue = 1`.  \n2) Set `total = startValue` and iterate over the array `nums`. At each step of the iteration, add the current element in `nums` to `total`.\n3) If the `total` ever drops below 1 during the iteration, stop the iteration, and repeat **step 2** with `startValue = startValue + 1`. Otherwise, the current `startValue` must be the minimum valid start value, so return `startValue`.\n \n\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/b2o9ndKJ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"b2o9ndKJ\"></iframe>\n\n\n**Complexity Analysis**\n\nLet $$n$$ be the length of the array `nums` and $$m$$ be the absolute value of the lower bound of elements in `nums`.\n\n* Time complexity: $$O(n^2 \\cdot m)$$\n\n    Imagine the case when every element in the first half of `nums` is 1 and every element in the second half of `nums` is $$-m$$, that is $$nums = [1,1,1,1,...,-m,-m,-m]$$.\n    \n    In this case, the minimum valid `startValue` is $$(n/2)\\cdot(m-1) + 1$$, the same number of times we will do the iteration.\n\n    Every iteration, we will start with `startValue`, and we must update the step-by-step total at least $$(n/2) + 1$$ times. \n    Therefore, for large enough values of $$m$$ and $$n$$, we will have time complexity equals: $$O(n^2 \\cdot m)$$ \n    \n\n* Space complexity: $$O(1)$$\n\n    For each loop, we only need the current total and a flag to determine if it was ever smaller than 1, which only costs constant space.\n\n<br/>\n\n---\n\n#### Approach 2: Binary Search\n\n**Intuition**   \n\nTwo key observations we can make from the previous walkthrough examples are that:\n- If `startValue` is valid, then `startValue + 1` must be valid as well. In the iteration that starts with `startValue`, every step-by-step total is larger than or equal to 1. Therefore, using a larger `startValue` makes every total larger.\n- If `startValue` is invalid, then `startValue - 1` is invalid as well. An invalid `startValue`, indicates that there is at least one step-by-step total less than 1, thus using a smaller start value `startValue - 1` will make this total even smaller. \n\nTherefore, the start values will be distributed like the figure below, and we are supposed to find the minimum valid `startValue`.\n\n![limits](../Figures/1413/lc1413_distribute.png)\n\n>From the above illustration, we can observe that the optimal value separates all valid start values from all invalid start values. Therefore if we guess a start value that is **invalid**, the actual start value must be **higher**.  Likewise, if we guess a start value that is **valid**, then the optimal start value must be **equal or lower**. Any time we see this higher-lower guessing game, it means that we can use binary search to find the optimal value.\n\nFirst, let's set the left (lower) and the right (upper) bounds for the binary search.\nSince the start value is always greater than or equal to 1, we can set `left` equal to 1. For the right boundary, we shall find a \"safe value\", a relatively large value that is guaranteed to be valid. Let's say that there are `n` elements in the array `nums`, and the range of the element is `[-m, m]` (In this question we have `m = 100`, that is `-100 <= nums[i] <= 100` ). Therefore, $$m\\cdot n + 1$$ is large enough to guarantee each step-by-step total will remain greater than or equal to 1. Hence, we will set `right = m * n + 1`.\n\n\nNow that we have set the boundaries of the search space as `left = 1` and `right = m * n + 1`, we can get the middle index of these boundaries `middle = (left + right) / 2`. Then we will set `startValue` equal to `middle` and iterate over the array.\nIf `middle` is a valid start value, that means we can eliminate the search space `(middle, right]` because any number larger than `middle` will also be valid. Thus we will continue searching the remaining half of the search space `[left, middle]` by setting `right` equal to `middle`. On the other hand, if `middle` is an invalid start value, we will set `left = middle + 1` to eliminate the search space `[left, middle]` and continue searching the remaining half of the search space `[middle + 1, right]`.\n\n\n\n**Algorithm**\n\n1) Set `left = 1` and `right = m * n + 1`, where `n` is the number of elements in `nums` and `m` is the absolute value that an element could be. If the minimum possible value of an element is unknown, the minimum value in the array `nums` can be used instead.\n2) Get middle value from `left` and `right`, which is `middle = (left + right) / 2`. \n3) Iterate over the array `nums` with `total = middle` as the initial total. Each step, increment total by the current number in `nums`.   \n4) If we complete the iteration and at every step-by-step `total` was greater than or equal to 1, then `total` is valid, so let `right = middle`. Otherwise, let `left = middle + 1`.\n5) Repeat the **steps 2, 3, and 4** until the two boundaries overlap, i.e., `left == right`, which means that we have found the minimum valid `startValue` that ensures every step-by-step total is greater than or equal to 1. We can return either `left` or `right` as the answer.\n\t\u00a0 \n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/EjqeoStg/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"EjqeoStg\"></iframe>\n\n\n**Complexity Analysis**\n\nLet $$n$$ be the length of the array `nums` and $$m$$ be the absolute value of the lower bound of elements in `nums`.\n\n* Time complexity: $$O(n \\cdot \\log(m n))$$\n\n    The lower and upper bounds are 1 and $$mn + 1$$ respectively. Thus, the number of binary searches we will do is $$log (mn)$$.\n    For every single search, we need to iterate over the array, which takes $$O(n)$$ time. \n    \n\n* Space complexity: $$O(1)$$\n\n    For every search, we just need to calculate the step-by-step total `total`, which only requires constant space.\n\n<br/>\n\n---\n\n#### Approach 3: Prefix total\n\n**Intuition**   \n\nIn both of the previous approaches, we needed to iterate over the array multiple times before finding the minimum valid `startValue`, is there perhaps a more efficient method? Whenever we want to improve the efficiency of an existing approach, a good place to start is by considering the inefficiencies of the current approach. In both of the previous approaches, we must iterate over all of the numbers in `nums` to see if a `startValue` is valid. However, after testing each `startValue`, we would guess the next start value. We improved on the naive solution by using binary search to strategically select our next guess for the minimum valid `startValue`, but could we further improve our solution by making a more informed decision when selecting `startValue`? To find out, let's consider the following example.\n\nSuppose the array `nums` is:\n$$[a, b, c, d]$$\nIf we iterate the array with `startValue = 0` (There are other values we can use, but 0 is the most convenient), the first step-by-step total will be 0, and we can have a list of all step-by-step sums (we call it `List`):\n\n$$List = [0, a, a + b, a + b + c, a + b + c + d]$$\n\nThis is very similar to the prefix total of `nums`. Notice that 0 will be invalid, because the first element in `List` is less than 1, plus there might also be some other elements that are less than 1. Therefore, we should use a larger start value instead of 0, say `startValue`, then all the elements in `List` will be increased by `startValue`. \n\nHere comes the key step: the minimum `startValue` is the value that makes **the minimum element in the step-by-step sums equal to exactly 1.**\n\n> Why exactly 1?\n\n- If the minimum element is smaller than 1, this means that the current `startValue` is invalid since a valid `startValue` is supposed to make every step-by-step total greater than or equal to 1. \n- If the minimum element is strictly larger than 1, this means that the current `startValue` is too large since the `startValue - 1` is valid as well.\n\n> Proof complete! \n\nTherefore, we just need to iterate over the array using `startValue = 0`, find the minimum step-by-step total in this iteration (say `minVal`), according to the previous proof, we should have `minVal + startValue = 1`, which is exactly `startValue = 1 - minVal`.\n\nTake the figure below as an example. \n\n![limits](../Figures/1413/lc1413-solution_3.png)\n\nFirst, let's iterate over the array using 0 as the initial value and we will have a list that consists of all step-by-step sums, where the minimum total is -4. Therefore, we shall choose the `startValue` that changes this minimum total from -4 to exactly 1, that is, `-4 + startValue = 1`. Hence, `startValue = 5` is the minimum valid `startValue` for this array. \n\n\n\n**Algorithm**\n1) Traverse the array `nums` and calculate every step-by-step total, use `total` to record the current step-by-step total, and `minVal` to record the minimum step-by-step total.\n2) Return `-minVal + 1`, that is the minimum valid `startValue`.\n\n**Implementation**\n\n\n<iframe src=\"https://leetcode.com/playground/Msqc9Ddx/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"Msqc9Ddx\"></iframe>\n\n\n**Complexity Analysis**\n\nLet $$n$$ be the length of the array `nums`.\n\n* Time complexity: $$O(n)$$\n\n    In this method, we just need to traverse the array once. \n    \n\n* Space complexity: $$O(1)$$\n\n    We just need to calculate the step-by-step total of the array and record the minimum step-by-step total, both only require constant space.\n\n<br/>",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1210",
+            "count": 19,
+            "average": "4.684",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "minimum-value-to-get-positive-step-by-step-sum",
+    "playgroundData": {
+        "b2o9ndKJ": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "minimum-value-to-get-positive-step-by-step-total-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "EjqeoStg": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "minimum-value-to-get-positive-step-by-step-total-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Msqc9Ddx": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "minimum-value-to-get-positive-step-by-step-total-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

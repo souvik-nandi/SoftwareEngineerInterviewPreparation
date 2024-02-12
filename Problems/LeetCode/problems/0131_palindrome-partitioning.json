@@ -1,0 +1,248 @@
+{
+    "id": "131",
+    "question": {
+        "questionId": "131",
+        "questionFrontendId": "131",
+        "boundTopicId": null,
+        "title": "Palindrome Partitioning",
+        "titleSlug": "palindrome-partitioning",
+        "content": "<p>Given a string <code>s</code>, partition <code>s</code> such that every substring of the partition is a <strong>palindrome</strong>. Return all possible palindrome partitioning of <code>s</code>.</p>\n\n<p>A <strong>palindrome</strong> string is a string that reads the same backward as forward.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"aab\"\n<strong>Output:</strong> [[\"a\",\"a\",\"b\"],[\"aa\",\"b\"]]\n</pre><p><strong>Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"a\"\n<strong>Output:</strong> [[\"a\"]]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 16</code></li>\n\t<li><code>s</code> contains only lowercase English letters.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 7464,
+        "dislikes": 234,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Palindrome Partitioning II\", \"titleSlug\": \"palindrome-partitioning-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Palindrome Partitioning IV\", \"titleSlug\": \"palindrome-partitioning-iv\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "exampleTestcases": "\"aab\"\n\"a\"",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Backtracking",
+                "slug": "backtracking",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<vector<string>> partition(string s) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public List<List<String>> partition(String s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def partition(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[List[str]]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def partition(self, s: str) -> List[List[str]]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nchar *** partition(char * s, int* returnSize, int** returnColumnSizes){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public IList<IList<string>> Partition(string s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @return {string[][]}\n */\nvar partition = function(s) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} s\n# @return {String[][]}\ndef partition(s)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func partition(_ s: String) -> [[String]] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func partition(s string) [][]string {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def partition(s: String): List[List[String]] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun partition(s: String): List<List<String>> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn partition(s: String) -> Vec<Vec<String>> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String[][]\n     */\n    function partition($s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function partition(s: string): string[][] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec partition(S :: unicode:unicode_binary()) -> [[unicode:unicode_binary()]].\npartition(S) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec partition(s :: String.t) :: [[String.t]]\n  def partition(s) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"483.2K\", \"totalSubmission\": \"795.2K\", \"totalAcceptedRaw\": 483164, \"totalSubmissionRaw\": 795216, \"acRate\": \"60.8%\"}",
+        "hints": [],
+        "solution": {
+            "id": "1012",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "ac",
+        "sampleTestCase": "\"aab\"",
+        "metaData": "{\r\n  \"name\": \"partition\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<list<string>>\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "765",
+            "date": "2022-01-05",
+            "incompleteChallengeCount": 25,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1012",
+        "content": "[TOC]\n\n## Solution\n---\n\n#### Overview ####\n\nThe aim to partition the string into all possible palindrome combinations. To achieve this, we must generate all possible substrings of a string by partitioning at every index until we reach the end of the string. Example, `abba` can be partitioned as `[\"a\",\"ab\",\"abb\",\"abba\"]`. Each generated substring is considered as a potential candidate if it a [Palindrome](https://en.wikipedia.org/wiki/Palindrome).\n\nLet's look at a few approaches to implement this idea.\n\n---\n\n#### Approach 1: Backtracking\n\n**Intuition**\n\nThe idea is to generate all possible substrings of a given string and expand each possibility if is a potential candidate. The first thing that comes to our mind is  [Depth First Search](https://en.wikipedia.org/wiki/Depth-first_search). In Depth First Search, we recursively expand potential candidate until the defined goal is achieved. After that, we backtrack to explore the next potential candidate.\n\n[Backtracking](https://en.wikipedia.org/wiki/Backtracking)  incrementally build the candidates for the solution and discard the candidates (backtrack) if it doesn't satisfy the condition.\n\nThe backtracking algorithms consists of the following steps:\n\n- _Choose_: Choose the potential candidate. Here, our potential candidates are all substrings that could be generated from the given string.\n\n- _Constraint_: Define a constraint that must be satisfied by the chosen candidate. In this case, the constraint is that the string must be a _palindrome_.\n\n- _Goal_: We must define the goal that determines if have found the required solution and we must backtrack. Here, our goal is achieved if we have reached the end of the string.\n\n**Algorithm**\n\nIn the backtracking algorithm, we recursively traverse over the string in depth-first search fashion. For each recursive call, the beginning index of the string is given as $$\\text{start}$$.\n\n1) Iteratively generate all possible substrings beginning at $$\\text{start}$$ index. The $$\\text{end}$$ index increments from $$\\text{start}$$ till the end of the string.\n\n3) For each of the substring generated, check if it is a palindrome.\n\n4) If the substring is a palindrome, the substring is a potential candidate. Add substring to the $$\\text{currentList}$$ and perform a depth-first search on the remaining substring. If current substring ends at index $$\\text{end}$$, $$\\text{end}+1$$ becomes the $$\\text{start}$$ index for the next recursive call.\n\n5) Backtrack if $$\\text{start}$$ index is greater than or equal to the string length and add the $$\\text{currentList}$$ to the result.\n\n\n!?!../Documents/131_LIS.json:1772,888!?!\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/SVz6Z7cu/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"SVz6Z7cu\"></iframe>\n\n**Complexity Analysis**\n\n- Time Complexity : $$\\mathcal{O}(N \\cdot 2^{N})$$, where $$N$$ is the length of string $$s$$. This is the worst-case time complexity when all the possible substrings are palindrome.\n\nExample, if = s = `aaa`, the recursive tree can be illustrated as follows:\n\n![img](../Figures/131/time_complexity.png)\n\n\nHence, there could be $$2^{N}$$ possible substrings in the worst case. For each substring, it takes $$\\mathcal{O}(N)$$ time to generate substring and determine if it a palindrome or not. This gives us time complexity as $$\\mathcal{O}(N \\cdot 2^{N})$$\n\n- Space Complexity: $$\\mathcal{O}(N)$$, where $$N$$ is the length of the string $$s$$. This space will be used to store the recursion stack. For s = `aaa`, the maximum depth of the recursive call stack is 3 which is equivalent to $$N$$.\n\n---\n\n#### Approach 2: Backtracking with Dynamic Programming\n\n**Intuition**\n\nThis approach uses a similar Backtracking algorithm as discussed in _Approach 1_. But, the previous approach performs one extra iteration to determine if a given substring is a palindrome or not. Here, we are repeatedly iterating over the same substring multiple times and the result is always the same. There are [Overlapping Subproblems](https://en.wikipedia.org/wiki/Overlapping_subproblems) and we could further optimize the approach by using dynamic programming to determine if a string is a palindrome in constant time. Let's understand the algorithm in detail.\n\n**Algorithm**\n\nA given string $$s$$ starting at index $$\\text{start}$$ and ending at index $$\\text{end}$$ is a palindrome if  following conditions are satisfied :\n1) The characters at $$\\text{start}$$ and $$\\text{end}$$ indexes are equal.\n2) The substring starting at index $$\\text{start}+1$$ and ending at index $$\\text{end}-1$$ is a palindrome.\n\n![img](../Figures/131/palindrome_dp.png)\n\nLet $$N$$ be the length of the string.\nTo determine if a substring starting at index $$\\text{start}$$ and ending at index $$\\text{end}$$ is a palindrome or not, we use a 2 Dimensional array $$\\text{dp}$$ of size $$N \\cdot N$$  where,\n\n$$\\text{dp[start][end]} = \\text{true}$$ , if the substring beginning at index $$\\text{start}$$ and ending at index $$\\text{end}$$ is a palindrome.\n\nOtherwise, $$\\text{dp[start][end] }== \\text{false}$$.\n\nAlso, we must update the $$\\text{dp}$$ array, if we find that the current string is a palindrome.  \n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/foWP6HLD/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"foWP6HLD\"></iframe>\n\n**Complexity Analysis**\n\n- Time Complexity : $$\\mathcal{O}(N \\cdot 2^{N})$$, where $$N$$ is the length of string $$s$$. In the worst case, there could be $$2^{N}$$ possible substrings and it will take $$\\mathcal{O}(N)$$ to generate each substring using `substr` as in _Approach 1_. However, we are eliminating one additional iteration to check if substring is a palindrome or not.\n\n- Space Complexity: $$\\mathcal{O}(N \\cdot N)$$, where $$N$$ is the length of the string $$s$$. The recursive call stack would require $$N$$ space as in _Approach 1_. Additionally we also use 2 dimensional array $$\\text{dp}$$ of size $$N \\cdot N$$ .\n\nThis gives us total space complexity as $$\\mathcal{O}(N \\cdot N)$$ + $$\\mathcal{O}(N)$$ = $$\\mathcal{O}(N \\cdot N)$$",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "957",
+            "count": 156,
+            "average": "4.442",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "palindrome-partitioning",
+    "playgroundData": {
+        "SVz6Z7cu": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "palindrome-partitioning-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "foWP6HLD": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "palindrome-partitioning-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

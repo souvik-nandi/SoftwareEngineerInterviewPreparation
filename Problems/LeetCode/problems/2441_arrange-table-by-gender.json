@@ -1,0 +1,83 @@
+{
+    "id": "2441",
+    "question": {
+        "questionId": "2441",
+        "questionFrontendId": "2308",
+        "boundTopicId": null,
+        "title": "Arrange Table by Gender",
+        "titleSlug": "arrange-table-by-gender",
+        "content": "<p>Table: <code>Genders</code></p>\n\n<pre>\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| user_id     | int     |\n| gender      | varchar |\n+-------------+---------+\nuser_id is the primary key for this table.\ngender is ENUM of type &#39;female&#39;, &#39;male&#39;, or &#39;other&#39;.\nEach row in this table contains the ID of a user and their gender.\nThe table has an equal number of &#39;female&#39;, &#39;male&#39;, and &#39;other&#39;.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to rearrange the <code>Genders</code> table such that the rows alternate between <code>&#39;female&#39;</code>, <code>&#39;other&#39;</code>, and <code>&#39;male&#39;</code> in order. The table should be rearranged such that the IDs of each gender are sorted in ascending order.</p>\n\n<p>Return the result table in <strong>the mentioned order</strong>.</p>\n\n<p>The query result format is shown in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nGenders table:\n+---------+--------+\n| user_id | gender |\n+---------+--------+\n| 4       | male   |\n| 7       | female |\n| 2       | other  |\n| 5       | male   |\n| 3       | female |\n| 8       | male   |\n| 6       | other  |\n| 1       | other  |\n| 9       | female |\n+---------+--------+\n<strong>Output:</strong> \n+---------+--------+\n| user_id | gender |\n+---------+--------+\n| 3       | female |\n| 1       | other  |\n| 4       | male   |\n| 7       | female |\n| 2       | other  |\n| 5       | male   |\n| 9       | female |\n| 6       | other  |\n| 8       | male   |\n+---------+--------+\n<strong>Explanation:</strong> \nFemale gender: IDs 3, 7, and 9.\nOther gender: IDs 1, 2, and 6.\nMale gender: IDs 4, 5, and 8.\nWe arrange the table alternating between &#39;female&#39;, &#39;other&#39;, and &#39;male&#39;.\nNote that the IDs of each gender are sorted in ascending order.\n</pre>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Medium",
+        "likes": 14,
+        "dislikes": 5,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": null,
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "# Write your MySQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "/* Write your T-SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "/* Write your PL/SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"672\", \"totalSubmission\": \"855\", \"totalAcceptedRaw\": 672, \"totalSubmissionRaw\": 855, \"acRate\": \"78.6%\"}",
+        "hints": [],
+        "solution": null,
+        "status": null,
+        "sampleTestCase": "{\"headers\": {\"Genders\": [\"user_id\", \"gender\"]}, \"rows\": {\"Genders\": [[4, \"male\"], [7, \"female\"], [2, \"other\"], [5, \"male\"], [3, \"female\"], [8, \"male\"], [6, \"other\"], [1, \"other\"], [9, \"female\"]]}}",
+        "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Genders (user_id int, gender ENUM('female', 'other', 'male'))\"\n  ],\n  \"mssql\": [\n    \"Create table Genders (user_id int, gender VARCHAR(6) NOT NULL CHECK (gender IN ('female', 'other', 'male')))\"\n  ],\n  \"oraclesql\": [\n    \"Create table Genders (user_id int, gender VARCHAR(6) NOT NULL CHECK (gender IN ('female', 'other', 'male')))\"\n  ],\n  \"database\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists Genders (user_id int, gender ENUM('female', 'other', 'male'))",
+            "Truncate table Genders",
+            "insert into Genders (user_id, gender) values ('4', 'male')",
+            "insert into Genders (user_id, gender) values ('7', 'female')",
+            "insert into Genders (user_id, gender) values ('2', 'other')",
+            "insert into Genders (user_id, gender) values ('5', 'male')",
+            "insert into Genders (user_id, gender) values ('3', 'female')",
+            "insert into Genders (user_id, gender) values ('8', 'male')",
+            "insert into Genders (user_id, gender) values ('6', 'other')",
+            "insert into Genders (user_id, gender) values ('1', 'other')",
+            "insert into Genders (user_id, gender) values ('9', 'female')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": null,
+    "questionCode": "arrange-table-by-gender",
+    "playgroundData": null
+}

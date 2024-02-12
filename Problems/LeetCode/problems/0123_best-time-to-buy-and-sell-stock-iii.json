@@ -1,0 +1,241 @@
+{
+    "id": "123",
+    "question": {
+        "questionId": "123",
+        "questionFrontendId": "123",
+        "boundTopicId": null,
+        "title": "Best Time to Buy and Sell Stock III",
+        "titleSlug": "best-time-to-buy-and-sell-stock-iii",
+        "content": "<p>You are given an array <code>prices</code> where <code>prices[i]</code> is the price of a given stock on the <code>i<sup>th</sup></code> day.</p>\n\n<p>Find the maximum profit you can achieve. You may complete <strong>at most two transactions</strong>.</p>\n\n<p><strong>Note:</strong> You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> prices = [3,3,5,0,0,3,1,4]\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> Buy on day 4 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.\nThen buy on day 7 (price = 1) and sell on day 8 (price = 4), profit = 4-1 = 3.</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> prices = [1,2,3,4,5]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.\nNote that you cannot buy on day 1, buy on day 2 and sell them later, as you are engaging multiple transactions at the same time. You must sell before buying again.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> prices = [7,6,4,3,1]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> In this case, no transaction is done, i.e. max profit = 0.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= prices.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= prices[i] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 6294,
+        "dislikes": 124,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Best Time to Buy and Sell Stock\", \"titleSlug\": \"best-time-to-buy-and-sell-stock\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Best Time to Buy and Sell Stock II\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Best Time to Buy and Sell Stock IV\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-iv\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Maximum Sum of 3 Non-Overlapping Subarrays\", \"titleSlug\": \"maximum-sum-of-3-non-overlapping-subarrays\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Maximum Profit From Trading Stocks\", \"titleSlug\": \"maximum-profit-from-trading-stocks\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[3,3,5,0,0,3,1,4]\n[1,2,3,4,5]\n[7,6,4,3,1]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bolt\", \"slug\": \"bolt\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Qualtrics\", \"slug\": \"qualtrics\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int maxProfit(vector<int>& prices) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int maxProfit(int[] prices) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def maxProfit(self, prices):\n        \"\"\"\n        :type prices: List[int]\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def maxProfit(self, prices: List[int]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint maxProfit(int* prices, int pricesSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int MaxProfit(int[] prices) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} prices\n * @return {number}\n */\nvar maxProfit = function(prices) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} prices\n# @return {Integer}\ndef max_profit(prices)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func maxProfit(_ prices: [Int]) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func maxProfit(prices []int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def maxProfit(prices: Array[Int]): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun maxProfit(prices: IntArray): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn max_profit(prices: Vec<i32>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $prices\n     * @return Integer\n     */\n    function maxProfit($prices) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function maxProfit(prices: number[]): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (max-profit prices)\n  (-> (listof exact-integer?) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec max_profit(Prices :: [integer()]) -> integer().\nmax_profit(Prices) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec max_profit(prices :: [integer]) :: integer\n  def max_profit(prices) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"400.7K\", \"totalSubmission\": \"914.6K\", \"totalAcceptedRaw\": 400683, \"totalSubmissionRaw\": 914614, \"acRate\": \"43.8%\"}",
+        "hints": [],
+        "solution": {
+            "id": "924",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[3,3,5,0,0,3,1,4]",
+        "metaData": "{\r\n  \"name\": \"maxProfit\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"prices\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "924",
+        "content": "[TOC]\n\n## Solution\n\n---\n### Overview\nFirst of all, as one should know, this is one of the problems from the series of [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) problem. One could start from the first problem in the series and progress one by one from easy to hard.\n\nIf there is ever a God of the stock market, who knows the price of stock at any moment, then the strategies to gain the maximum profits from the stock market is actually surprisingly intuitive, which also depends on the number of transactions that one can make.\n\n>If one can only make one transaction (_i.e._ buy and sell once), then better to make this one _bet_ count. The best strategy would be to _buy_ at the **_lowest_** price and then _sell_ at the **_highest_** price. To put it simple, _buy low sell high._\n\n![example of price sequence](../Figures/123/123_example.png)\n\nLet us look at a concrete example as shown in the above graph, given a list of prices, the task becomes to find maximal _difference_ between a **_latter_** stock price and an **_earlier_** one, which would be the maximal profits that we could gain, if only one transaction is allowed.\n\nIn the above example, the best moment to buy the stock would be the timestamp `t1`, and the best moment to sell the stock would be the timestamp `t9`.\n\nThe above strategy is actually the solution to the first problem of the series, _i.e._ [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/).\n\n>On the other hand, if one can make as many transactions as one would like, then in order to gain the maximal profits, one must _capture_ each **augmentation** and _avoid_ each **plunging** of stock price.\n\nSpecifically, given a list of prices, for any two adjacent time points with stock prices `p1` and `p2`, the above best strategies can be broke down into the following two cases:\n\n- If later the price augments, _i.e._ `p2 > p1`, then a good trader should buy at `p1` and then sell at `p2`, seizing this moment to make profits.\n<br/>\n\n- If later the price stays the same or even plunges, _i.e._ `p2 <= p1`, then a good trader should just hold the money in the pocket, neither to buy nor sell any stock.\n\nWith the above strategies, as one can see, we would _perfectly_ capitalize at each right moment, meanwhile avoiding any loss. At the end, the accumulative profits that we gain over the time would reach the maximum.\n\n![example of price sequence](../Figures/123/123_example.png)\n\nWith the same example above, we would buy at the moment of `t1` and sell it at the moment of `t2`. Similarly, we would also buy at the moment of `t2` and sell the moment of `t3`. As one might notice, the profits we gain from these two transactions are equivalent to the single transaction of buying at the moment of `t1` and selling at the moment of `t3`. \n\nThe above strategy would be the solution for the second problem of series, _i.e._ [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) where there is no limit on the number of transactions.\n<br/>\n<br/>\n\n---\n#### Approach 1: Bidirectional Dynamic Programming\n\n**Intuition**\n\nThe only difference between this problem and the previous two problems is that in this problem we are allowed to make **at most two** transactions.\n\nAdditionally, there is a constraint on the order of transactions stated in the problem description as follows:\n\n>You may not engage in multiple transactions at the same time, (_i.e._ you must sell the stock before you buy again).\n\nWe could interpret this constraint as that there would be **no overlapping** in the sequence of transactions. \n\n![order of transaction actions](../Figures/123/123_division.png)\n\nIn other words, the two transactions that we should make would situate in two different subsequences of the stock prices, without any overlapping, which we illustrate in the above graph.\n\n>That being said, we can solve the problem in a **divide-and-conquer** manner, where we divide the original sequence of prices into two subsequences and then we calculate the maximum profit that we could gain from making a single transaction in each subsequence.\n\nThe total profits would be the sum of profits from each subsequence. If we enumerate all possible divisions (or we could consider them as combinations of subsequences), we could find the maximum total profits among them, which is also the desired result of the problem.\n\n![visual of partitions on sequence](../Figures/123/123_partition.png)\n\nSo we divide this problem into two subproblems, and each subproblem is actually of the same problem of [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) as we discussed in the overview section.\n\n**Algorithm**\n\nA naive implementation of the above idea would be to divide the sequences into two and then enumerate each of the subsequences, though this is definitely not the most optimized solution.\n\nFor a sequence of length $$N$$, we would have $$N$$ possible divisions (including no division), each of the elements would be visited once in each division. As a result, the overall time complexity of this naive implementation would be $$\\mathcal{O}(N^2)$$.\n\nWe could do better than the naive $$\\mathcal{O}(N^2)$$ implementation. Regarding the algorithms of divide-and-conquer,\none common technique that we can apply in order to optimize the time complexity is called **dynamic programming** (DP) where we trade less repetitive calculation with some extra space.\n\nIn dynamic programming algorithms, normally we create an array of one or two dimensions to keep the intermediate optimal results. In this problem though, we would use two arrays, with one array keeping the results of sequence from left to right and the other array keeping the results of sequence from right to left. For the sake of name, we could call it **_bidirectional dynamic programming_**.\n\n![visualization of dp arrays](../Figures/123/123_dp.png)\n\nFirst, we denote a sequence of prices as `Prices[i]`, with index starting from `0` to `N-1`. Then we define two arrays, namely `left_profits[i]` and `right_profits[i]`.\n\n- As suggested by the name, each element in the `left_profits[i]` array would hold the maximum profits that one can gain from doing one single transaction on the left subsequence of prices from the index zero to `i`, (_i.e._ `Prices[0], Prices[1], ... Prices[i]`).\nFor instance, for the subsequences of `[7, 1, 5]`, the corresponding `left_profits[2]` would be 4, which is to buy the price of 1 and sell it at the price of 5.\n<br/>\n\n- And each element in the `right_profits[i]` array would hold the maximum profits that one can gain from doing one single transaction on the right subsequence of the prices from the index `i` up to `N-1`, (_i.e._ `Prices[i], Prices[i+1], ... Prices[N-1]`).\nFor example, for the right subsequence of `[3, 6, 4]`, the corresponding `right_profits[3]` would be 3, which is to buy at the price of 3 and then sell it at the price of 6.\n\nNow, if we divide the sequence of prices around the element at the index `i`, into two subsequences, with left subsequences as `Prices[0], Prices[1], ... Prices[i]` and the right subsequence as `Prices[i+1], ... Prices[N-1]`,\nthen the total maximum profits that we obtain from this division (denoted as `max_profits[i]`) can be expressed as follows:\n$$\n    \\text{max\\_profits[i]} = \\text{left\\_profits[i]} + \\text{right\\_profits[i+1]}\n$$\n\n>Then if we exhaust all possible divisions, _i.e._ we place the two transactions in all possible combinations of subsequences, we would then obtain the global maximum profits that we could gain from this sequence of stock prices, which can be expressed as follows:\n$$\n    \\max_{i=[0, N)}{(\\text{max\\_profits[i]})}\n$$\n\nWe demonstrate how the DP arrays are calculated in the following animation.\n\n!?!../Documents/123_LIS.json:1000,418!?!\n\nFollowing the above idea, Here are some sample implementations.\n\n<iframe src=\"https://leetcode.com/playground/xWK3YtAf/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"xWK3YtAf\"></iframe>\n\nIn the above implementations, we refined the code a bit to make it a bit more concise and hopefully more intuitive. Here are some tweaks that we applied.\n\n- Rather than constructing the two DP arrays in two separate loops, we do the calculation in a single loop (two birds with one stone).\n<br>\n\n- We pad the `right_profits[i]` array with an additional zero, which indicates the maximum profits that we can gain from an empty right subsequence, so that we can compare the result of having only one transaction (_i.e._ `left_profits[N-1]`) with the profits gained from doing two transactions. \n\nBy the way, one can try the above algorithm on another problem called [Sliding Window Maximum](https://leetcode.com/articles/sliding-window-maximum/).\n\n\n**Complexity**\n\n- Time Complexity: $$\\mathcal{O}(N)$$ where $$N$$ is the length of the input sequence, since we have two iterations of length $$N$$. \n<br/>\n\n- Space Complexity: $$\\mathcal{O}(N)$$ for the two arrays that we keep in the algorithm.\n<br/>\n<br/>\n\n---\n#### Approach 2: One-pass Simulation\n\n**Intuition**\n\nJust when we think that the space complexity of $$\\mathcal{O}(N)$$ is the best we can get for this problem, many users in the Discussion forum proposed a more optimized solution that reduced the space complexity to $$O(1)$$, (just to name a few of them [@weijiac](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/discuss/39611/Is-it-Best-Solution-with-O(n)-O(1).), [@shetty4l](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/discuss/149383/Easy-DP-solution-using-state-machine-O(n)-time-complexity-O(1)-space-complexity)).\nThe idea is quite brilliant, and requires only a single iteration without the additional DP arrays.\n\nThe intuition is that we can consider the problem as a game, and we as agent could make at most two transactions in order to gain the maximum points (profits) from the game.\n\nThe two transactions be decomposed into 4 actions: _\"buy of transaction #1\"_, _\"sell of transaction #1\"_, _\"buy of transaction #2\"_ and _\"sell of transaction #2\"_.\n\n>To solve the game, we simply run a simulation along the sequence of prices, at each time step, we calculate the potential outcomes for each of our actions. At the end of the simulation, the outcome of the final action _\"sell of transaction #2\"_ would be the desired output of the problem.\n\n![game simulation](../Figures/123/123_game.png)\n\n**Algorithm**\n\nOverall, we run an iteration over the sequence of prices.\n\nOver the iteration, we calculate 4 variables which correspond to the costs or the profits of each action respectively, as follows:\n\n- `t1_cost`: the _minimal_ cost of buying the stock in transaction #1. The minimal cost to acquire a stock would be the minimal price value that we have seen so far at each step.\n<br/>\n\n- `t1_profit`: the _maximal_ profit of selling the stock in transaction #1. Actually, at the end of the iteration, this value would be the answer for the first problem in the series, _i.e._ [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/).\n<br/>\n\n- `t2_cost`: the _minimal_ cost of buying the stock in transaction #2, while taking into account the profit gained from the previous transaction #1. One can consider this as the cost of reinvestment. Similar with `t1_cost`, we try to find the lowest price so far, which in addition would be partially compensated by the profits gained from the first transaction.\n<br>\n\n- `t2_profit`: the _maximal_ profit of selling the stock in transaction #2. With the help of `t2_cost` as we prepared so far, we would find out the maximal profits with at most two transactions at each step.\n\n<iframe src=\"https://leetcode.com/playground/LdcNxUY6/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"LdcNxUY6\"></iframe>\n\n\n**Complexity**\n\n- Time Complexity: $$\\mathcal{O}(N)$$, where $$N$$ is the length of the input sequence.\n<br/>\n\n- Space Complexity: $$\\mathcal{O}(1)$$, only constant memory is required, which is invariant from the input sequence.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "872",
+            "count": 74,
+            "average": "4.176",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "best-time-to-buy-and-sell-stock-iii",
+    "playgroundData": {
+        "xWK3YtAf": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "best-time-to-buy-and-sell-stock-iii-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "LdcNxUY6": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "best-time-to-buy-and-sell-stock-iii-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

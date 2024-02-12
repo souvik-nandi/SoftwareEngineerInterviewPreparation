@@ -1,0 +1,310 @@
+{
+    "id": "421",
+    "question": {
+        "questionId": "421",
+        "questionFrontendId": "421",
+        "boundTopicId": null,
+        "title": "Maximum XOR of Two Numbers in an Array",
+        "titleSlug": "maximum-xor-of-two-numbers-in-an-array",
+        "content": "<p>Given an integer array <code>nums</code>, return <em>the maximum result of </em><code>nums[i] XOR nums[j]</code>, where <code>0 &lt;= i &lt;= j &lt; n</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,10,5,25,2,8]\n<strong>Output:</strong> 28\n<strong>Explanation:</strong> The maximum result is 5 XOR 25 = 28.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [14,70,53,83,49,91,36,80,92,51,66,70]\n<strong>Output:</strong> 127\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 2 * 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 4129,
+        "dislikes": 334,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Maximum XOR With an Element From Array\", \"titleSlug\": \"maximum-xor-with-an-element-from-array\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Maximum XOR After Operations \", \"titleSlug\": \"maximum-xor-after-operations\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[3,10,5,25,2,8]\n[14,70,53,83,49,91,36,80,92,51,66,70]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Trie",
+                "slug": "trie",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Infosys\", \"slug\": \"infosys\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int findMaximumXOR(vector<int>& nums) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int findMaximumXOR(int[] nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def findMaximumXOR(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def findMaximumXOR(self, nums: List[int]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint findMaximumXOR(int* nums, int numsSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int FindMaximumXOR(int[] nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar findMaximumXOR = function(nums) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef find_maximum_xor(nums)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func findMaximumXOR(_ nums: [Int]) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func findMaximumXOR(nums []int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def findMaximumXOR(nums: Array[Int]): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun findMaximumXOR(nums: IntArray): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn find_maximum_xor(nums: Vec<i32>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function findMaximumXOR($nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function findMaximumXOR(nums: number[]): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (find-maximum-xor nums)\n  (-> (listof exact-integer?) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec find_maximum_xor(Nums :: [integer()]) -> integer().\nfind_maximum_xor(Nums) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec find_maximum_xor(nums :: [integer]) :: integer\n  def find_maximum_xor(nums) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"127.3K\", \"totalSubmission\": \"233.5K\", \"totalAcceptedRaw\": 127283, \"totalSubmissionRaw\": 233512, \"acRate\": \"54.5%\"}",
+        "hints": [],
+        "solution": {
+            "id": "778",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "notac",
+        "sampleTestCase": "[3,10,5,25,2,8]",
+        "metaData": "{\n  \"name\": \"findMaximumXOR\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "787",
+            "date": "2022-01-27",
+            "incompleteChallengeCount": 25,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "778",
+        "content": "[TOC]\n\n## Solution\n\n---\n\n#### Overview\n\nRequirements are to have $$\\mathcal{O}(N)$$ time complexity, \nand we'll discuss here two standard approaches to achieve that complexity.\n\n1. Bitwise Prefixes in HashSet.\n\n2. Bitwise Prefixes in Trie. \n\nThe idea behind both solutions is the same: to convert all numbers into the binary form,\nand to construct the maximum XOR bit by bit, starting from the leftmost one. \nThe difference is in the data structure used to store unique bitwise prefixes, \ni.e. the first i*th* bits. \n\nThe first approach works faster on the given testcase set, \nbut the second one is standard, more simple, \nand easily generalised for more complex problems \nlike _Find maximum subarray XOR in a given array_.\n\n**Prerequisites**\n\nXOR of zero and a bit results in that bit\n\n$$\n0 \\oplus x = x  \n$$\n\nXOR of two equal bits (even if they are zeros) results in a zero\n\n$$\nx \\oplus x = 0  \n$$\n<br />\n<br />\n\n\n---\n#### Approach 1: Bitwise Prefixes in HashSet \n\nLet's start from rewriting all numbers `[3, 10, 5, 25, 2, 8]` in binary from\n\n$$3 = (00011)_2$$\n\n$$10 = (01010)_2$$\n\n$$5 = (00101)_2$$\n\n$$25 = (11001)_2$$\n\n$$2 = (00010)_2$$\n\n$$8 = (01000)_2$$\n\nTo simplify the work with prefixes, better to use the same number of bits\n$$L$$ for all the numbers. It's enough to take $$L$$ equal to the length \nof the max number in the binary representation. \n\nNow let's construct the max XOR starting from the leftmost bit. \nThe absolute maximum one could have with $$L = 5$$ bits here is \n$$(11111)_2$$. So let's check bit by bit:\n\n- Could we have the leftmost bit for XOR to be equal to 1-bit, i.e.\nmax XOR to be equal to $$(1****)_2$$? \n\nYes, for that it's enough to pair $$25 = (11001)_2$$ with another number\nstarting with the zero leftmost bit.\nSo the max XOR is $$(1****)_2$$. \n\n- Next step. Could we have max XOR to be equal to $$(11***)_2$$? \n\nFor that, let's consider all prefixes of length 2 \nand check if there is a pair of them, $$p_1$$ and $$p_2$$, \nsuch that its XOR is equal to 11: $$p_1 \\oplus p_2 == 11$$\n\n$$3 = (00***)_2$$\n\n$$10 = (01***)_2$$\n\n$$5 = (00***)_2$$\n\n$$25 = (11***)_2$$\n\n$$2 = (00***)_2$$\n\n$$8 = (01***)_2$$\n\nYes, it's the case, for example, pair $$5 = (00***)_2$$ and $$25 = (11***)_2$$,\nor $$2 = (00***)_2$$ and $$25 = (11***)_2$$, or $$3 = (00***)_2$$ and\n$$25 = (11***)_2$$. \n\nAnd so on, and so forth. \nThe complexity remains linear. One has\nto perform $$N$$ operations to compute prefixes, though the number\nof prefixes containing $$L - i$$ bits could not be greater than $$2^{L - i}$$.\nHence the check if XOR could have the i*th* bit to be equal to 1-bit\ntakes $$2^{L - i} \\times 2^{L - i}$$ operations.\n\n**Algorithm**\n\n- Compute the number of bits $$L$$ to be used. It's a length of max number in \nbinary representation.\n\n- Initiate `max_xor = 0`.\n\n- Loop from $$i = L - 1$$ down to $$i = 0$$ (from the leftmost bit $$L - 1$$ to \nthe rightmost bit 0):\n\n    - Left shift the `max_xor` to free the next bit. \n    \n    - Initiate variable `curr_xor = max_xor | 1` by setting 1 in the \n    rightmost bit of `max_xor`. Now let's check if `curr_xor` could \n    be done using available prefixes.\n    \n    - Compute all possible prefixes of length $$L - i$$ by iterating over `nums`.\n        \n        - Put in the hashset `prefixes` the prefix of the current \n        number of the length $$L - i$$: `num >> i`.\n        \n    - Iterate over all prefixes and check if `curr_xor` could \n    be done using two of them: `p1^p2 == curr_xor`. \n    Using self-inverse property of XOR `p1^p2^p2 = p1`, one \n    could rewrite it as `p1 == curr_xor^p2` and simply check for each \n    `p` if `curr_xor^p` is in prefixes. If so, set `max_xor` to be equal to\n    `curr_xor`, i.e. set 1-bit in the rightmost bit. \n    Otherwise, let `max_xor` keep 0-bit in the rightmost bit. \n    \n- Return `max_xor`. \n\n<iframe src=\"https://leetcode.com/playground/TWSCBrq2/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"TWSCBrq2\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N)$$. One has\nto perform $$N$$ operations to compute prefixes, though the number\nof prefixes containing $$L - i$$ bits is $$2^{L - i}$$.\nCheck if XOR could have the i*th* bit to be equal to 1-bit\ntakes $$2^{L - i} \\times 2^{L - i}$$ operations. Altogether that results in\n$$\\sum_{i = 0}^{L - 1}{(N + 4^{L - i})} = NL + \\frac{4}{3}(4^L - 1)$$ operations,\nthat means $$\\mathcal{O}(N)$$ time complexity.\n\n* Space complexity: $$\\mathcal{O}(1)$$. \nOne has to keep not more than $$L$$ prefixes, and $$L = 1 + [\\log_2 M]$$,\nwhere M is maximum number in nums.\n<br />\n<br />\n\n\n---\n#### Approach 2: Bitwise Trie\n\n**Why HashSet is not a Good Structure to Store Prefixes**\n\nHashset structure, used to store the prefixes in Approach 1, \ndoesn't provide the functionality to cut off some paths \nwhich don't lead to the solution. \n\nFor example, after two steps of max XOR computation $$(11***)_2$$ \nit's quite obvious that 25 should be paired with $$00$$ prefix, \ni.e. with 2, 3, or 5. \n\n$$3 = (00011)_2$$\n\n$$10 = (01010)_2$$\n\n$$5 = (00101)_2$$\n\n$$25 = (11001)_2$$\n\n$$2 = (00010)_2$$\n\n$$8 = (01000)_2$$\n\nAlthough for the third step we'll again compute all possible prefixes, \nincluding the ones for 10 and 8, even if it's quite obvious that they will\nnot lead to the solution.\n\n$$3 = (000**)_2$$\n\n$$10 = (010**)_2$$\n\n$$5 = (001**)_2$$\n\n$$25 = (110**)_2$$\n\n$$2 = (000**)_2$$\n\n$$8 = (010**)_2$$\n\nTo cut these branches off, would be great to use some sort of tree structure.  \n\n**Bitwise Trie: What is it and How to Construct**\n\nThe standard way is to use [Bitwise Trie](https://en.wikipedia.org/wiki/Trie#Bitwise_tries).\nIt's a special type of [Trie](https://leetcode.com/articles/word-search-ii/), \nwhich is used to store binary prefixes in an efficient way. \nThere are plenty of real-life examples of bitwise trie usage, \nfor example, [in GCC](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/trie_based_containers.html).\n\nLet's start with Bitwise Trie for the array `[3, 10, 5, 25, 2]`\n\n$$3 = (00011)_2$$\n\n$$10 = (01010)_2$$\n\n$$5 = (00101)_2$$\n\n$$25 = (11001)_2$$\n\n$$2 = (00010)_2$$\n\n![fig](../Figures/421/trie.png)\n\nEach root -> leaf path in Bitwise Trie represents a binary form of a number\nin nums, for example, 0 -> 0 -> 0 -> 1 -> 1 is 3. \nAs before, the same number of bits $$L$$ is used for all numbers, and $$L\n= 1 + [\\log_2 M]$$, where M is a maximum number in nums. \nThe depth of Bitwise Trie is equal to $$L$$ as well, \nand all leafs are on the same level.  \n\nBitwise Trie is a perfect way to see how different the binary forms of numbers are, \nfor example, 3 and 2 share 4 bits of 5. \nThe construction of Bitwise Trie is pretty straightforward, \nit's basically nested hashmaps.\nAt each step one has to verify, \nif the child node to add (0 or 1) is already present. \nIf yes, just go one step down.\nIf not, add it into the Trie and then go one step down.  \n\n<iframe src=\"https://leetcode.com/playground/Wa5wWTzi/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"Wa5wWTzi\"></iframe>\n\n**Maximum XOR of a Given Number with All Numbers in Trie** \n\nNow the Trie is constructed, so let's find the maximum XOR of \na given number with all numbers that have been already inserted into Bitwise Trie. \n\nTo maximize XOR, the strategy is to choose the opposite bit at each step \nwhenever it's possible. Step by step for 25 as a given number:\n\n![fig](../Figures/421/max_xor.png)\n\nThe implementation is also pretty simple: \n\n- Try to go down to the opposite bit at each step if it's possible. \nAdd 1-bit at the end of current XOR.\n\n- If not, just go down to the same bit. \nAdd 0-bit at the end of current XOR.\n\n<iframe src=\"https://leetcode.com/playground/Xc7uoNBd/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"Xc7uoNBd\"></iframe>\n\n**Algorithm** \n\nTo summarise, now one could\n\n- Insert a number into Bitwise Trie.\n\n- Find maximum XOR of a given number \nwith all numbers that have been inserted so far.\n\nThat's all one needs to solve the initial problem:\n\n- Convert all numbers to the binary form.\n\n- Add the numbers into Trie one by one and compute the maximum XOR\nof a number to add with all previously inserted. Update maximum XOR at each step.  \n\n- Return `max_xor`.\n\n**Implementation** \n\n<iframe src=\"https://leetcode.com/playground/kZqoRR2k/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"kZqoRR2k\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$. \nIt takes $$\\mathcal{O}(L)$$ to insert a number\nin Trie, and $$\\mathcal{O}(L)$$ to find the max XOR of the given number \nwith all already inserted ones. $$L = 1 + [\\log_2 M]$$ is defined by the \nmaximum number in the array and could be considered as a constant here. Hence\nthe overall time complexity is $$\\mathcal{O}(N)$$.\n\n* Space complexity : $$\\mathcal{O}(1)$$, since one needs at maximum \n$$\\mathcal{O}(2^L) = \\mathcal{O}(M)$$ space to keep Trie, \nand L and M could be considered as constants here because of input limitations.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "763",
+            "count": 95,
+            "average": "4.526",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "maximum-xor-of-two-numbers-in-an-array",
+    "playgroundData": {
+        "TWSCBrq2": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-xor-of-two-numbers-in-an-array-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Wa5wWTzi": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-xor-of-two-numbers-in-an-array-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Xc7uoNBd": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-xor-of-two-numbers-in-an-array-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "kZqoRR2k": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-xor-of-two-numbers-in-an-array-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

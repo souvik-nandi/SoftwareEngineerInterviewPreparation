@@ -1,0 +1,322 @@
+{
+    "id": "436",
+    "question": {
+        "questionId": "436",
+        "questionFrontendId": "436",
+        "boundTopicId": null,
+        "title": "Find Right Interval",
+        "titleSlug": "find-right-interval",
+        "content": "<p>You are given an array of <code>intervals</code>, where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code> and each <code>start<sub>i</sub></code> is <strong>unique</strong>.</p>\n\n<p>The <strong>right interval</strong> for an interval <code>i</code> is an interval <code>j</code> such that <code>start<sub>j</sub> &gt;= end<sub>i</sub></code> and <code>start<sub>j</sub></code> is <strong>minimized</strong>. Note that <code>i</code> may equal <code>j</code>.</p>\n\n<p>Return <em>an array of <strong>right interval</strong> indices for each interval <code>i</code></em>. If no <strong>right interval</strong> exists for interval <code>i</code>, then put <code>-1</code> at index <code>i</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> intervals = [[1,2]]\n<strong>Output:</strong> [-1]\n<strong>Explanation:</strong> There is only one interval in the collection, so it outputs -1.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> intervals = [[3,4],[2,3],[1,2]]\n<strong>Output:</strong> [-1,0,1]\n<strong>Explanation:</strong> There is no right interval for [3,4].\nThe right interval for [2,3] is [3,4] since start<sub>0</sub> = 3 is the smallest start that is &gt;= end<sub>1</sub> = 3.\nThe right interval for [1,2] is [2,3] since start<sub>1</sub> = 2 is the smallest start that is &gt;= end<sub>2</sub> = 2.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> intervals = [[1,4],[2,3],[3,4]]\n<strong>Output:</strong> [-1,2,-1]\n<strong>Explanation:</strong> There is no right interval for [1,4] and [3,4].\nThe right interval for [2,3] is [3,4] since start<sub>2</sub> = 3 is the smallest start that is &gt;= end<sub>1</sub> = 3.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= intervals.length &lt;= 2 * 10<sup>4</sup></code></li>\n\t<li><code>intervals[i].length == 2</code></li>\n\t<li><code>-10<sup>6</sup> &lt;= start<sub>i</sub> &lt;= end<sub>i</sub> &lt;= 10<sup>6</sup></code></li>\n\t<li>The start point of each interval is <strong>unique</strong>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 1315,
+        "dislikes": 264,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Data Stream as Disjoint Intervals\", \"titleSlug\": \"data-stream-as-disjoint-intervals\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[[1,2]]\n[[3,4],[2,3],[1,2]]\n[[1,4],[2,3],[3,4]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 2}], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<int> findRightInterval(vector<vector<int>>& intervals) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int[] findRightInterval(int[][] intervals) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def findRightInterval(self, intervals):\n        \"\"\"\n        :type intervals: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def findRightInterval(self, intervals: List[List[int]]) -> List[int]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* findRightInterval(int** intervals, int intervalsSize, int* intervalsColSize, int* returnSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int[] FindRightInterval(int[][] intervals) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[][]} intervals\n * @return {number[]}\n */\nvar findRightInterval = function(intervals) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[][]} intervals\n# @return {Integer[]}\ndef find_right_interval(intervals)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func findRightInterval(_ intervals: [[Int]]) -> [Int] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func findRightInterval(intervals [][]int) []int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def findRightInterval(intervals: Array[Array[Int]]): Array[Int] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun findRightInterval(intervals: Array<IntArray>): IntArray {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn find_right_interval(intervals: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[][] $intervals\n     * @return Integer[]\n     */\n    function findRightInterval($intervals) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function findRightInterval(intervals: number[][]): number[] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (find-right-interval intervals)\n  (-> (listof (listof exact-integer?)) (listof exact-integer?))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec find_right_interval(Intervals :: [[integer()]]) -> [integer()].\nfind_right_interval(Intervals) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec find_right_interval(intervals :: [[integer]]) :: [integer]\n  def find_right_interval(intervals) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"81.3K\", \"totalSubmission\": \"162.6K\", \"totalAcceptedRaw\": 81263, \"totalSubmissionRaw\": 162607, \"acRate\": \"50.0%\"}",
+        "hints": [],
+        "solution": {
+            "id": "89",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[[1,2]]",
+        "metaData": "{\r\n  \"name\": \"findRightInterval\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"intervals\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "89",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Approach 1: Brute Force\n\n The simplest solution consists of picking up every interval in the set and looking for the the interval whose start point is larger(by a\n minimum difference) than\n the chosen interval's end point by scanning the complete set for every interval chosen. While scanning, we keep a track of the interval\n with the minimum start point satisfying the given criteria along with its index. The result obtained for every interval chosen is\n stored at the corresponding index in the res array which is returned at the end.\n\n \n<iframe src=\"https://leetcode.com/playground/VY9oKXqp/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"VY9oKXqp\"></iframe>\n\n **Complexity Analysis**\n\n * Time complexity : $$\\mathcal{O}(n^2)$$. The complete set of $$n$$ intervals is scanned for every($$n$$) interval chosen.\n\n * Space complexity : $$\\mathcal{O}(n)$$. $$\\text{res}$$ array of size $$n$$ is used.\n</br>\n</br>\n\n\n---\n\n#### Approach 2: Using Sorting + Scanning\n\nWe make use of a hashmap $$\\text{hash}$$, which stores the data in the form of a $$\\text{(Key, Value)}$$ pair. Here, the $$\\text{Key}$$ corresponds to the interval chosen and the $$\\text{Value}$$ corresponds to the index of the particular interval in the given $$\\text{intervals}$$ array. We store every element of the $$\\text{intervals}$$ array in the $$hash$$-map.\n\nNow, we sort the $$\\text{intervals}$$ array based on the starting points. We needed to store the indices of the array in the hashmap, so as to be able to obtain the indices even after the sorting.\n\nNow, we pick up every interval of the sorted array, and find out the interval from the remaining ones whose start point comes just after\nthe end point of the interval chosen. How do we proceed? Say, we've picked up the $$i^{th}$$ interval right now. In order to find an\ninterval satisfying the given criteria, we need not search in the intervals behind it. This is because the $$\\text{intervals}$$ array has been sorted based on the\nstarting points and the end point is always greater than the starting point for a given interval. Thus, we search in the intervals only with indices $$j$$, such that $$i+1< j < n$$. The first element encountered while scanning in the ascending order is the required result for the interval chosen, since all the intervals lying after this interval will have comparatively larger start points.\n\nThen, we can obtain the index corresponding to the corresponding interval from the hashmap, which is stored in the corresponding entry of the $$res$$ array. If no interval satisfies the criteria, we put a $$\\text{-1}$$ in the corresponding entry.\n\n\n<iframe src=\"https://leetcode.com/playground/LSFk7j8R/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"LSFk7j8R\"></iframe>\n\n **Complexity Analysis**\n\n * Time complexity : $$O(n^2)$$.\n    - Sorting takes $$O\\big(n\\log{n}\\big)$$ time.\n    - For the first interval we need to search among $$n-1$$ elements.\n    - For the second interval, the search is done among $$n-2$$ elements and so on leading to a total of: $$(n-1) + (n-2) + ... + 1 = \\frac{n.(n-1)}{2} = O(n^2)$$ calculations.\n\n * Space complexity : $$O(n)$$. $$\\text{res}$$ array of size $$n$$ is used. A hashmap $$\\text{hash}$$ of size $$n$$ is used.\n</br>\n</br>\n\n\n---\n\n#### Approach 3: Using Sorting + Binary Search\n\nWe can optimize the above approach to some extent, since we can make use of the factor of the $$\\text{intervals}$$ array being sorted. Instead of searching for the required interval in a linear manner, we can make use of Binary Search to find an interval whose start point is just larger than the end point of the current interval.\n\nAgain, if such an interval is found, we obtain its index from the hashmap and store the result in the appropriate $$\\text{res}$$ entry. If not, we put a $$\\text{-1}$$ at the corresponding entry.\n\n\n<iframe src=\"https://leetcode.com/playground/ig5D4ooi/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ig5D4ooi\"></iframe>\n\n **Complexity Analysis**\n\n * Time complexity : $$O\\big(n\\log{n}\\big)$$. Sorting takes $$O\\big(n\\log{n}\\big)$$ time. Binary search takes $$O\\big(\\log{n}\\big)$$ time for each of the $$n$$ intervals.\n\n * Space complexity : $$O(n)$$. $$\\text{res}$$ array of size $$n$$ is used. A hashmap $$\\text{hash}$$ of size $$O(n)$$ is used.\n</br>\n</br>\n\n\n---\n\n#### Approach 4: Using TreeMap\n\nIn this approach, instead of using a hashmap, we make use of a TreeMap $$\\text{starts}$$, which is simply a Red-Black Tree(a kind of balanced Binary Search Tree) . This Treemap $$\\text{start}$$ stores data in the form of $$\\text{(Key, Value)}$$ pair and always remain sorted based on its keys.\nIn our case, we store the data such that the start point of an interval acts as the $$\\text{Key}$$ and the index corresponding to the interval acts as the value, since we are concerned with data sorted based on the start points, as discussed in previous approaches. Every element of the $$\\text{intervals}$$ array is stored in the TreeMap.\n\nNow, we choose each element of the $$\\text{intervals}$$ array and make use of a function `TreeMap.ceilingEntry(end_point)` to obtain the element in the TreeMap with its $$\\text{Key}$$ just larger than the $$\\text{end\\_point}$$ of the currently chosen interval. The function `ceilingEntry(Key)` returns the element just with its $$\\text{Key}$$ larger than the `Key`(passed as the argument) from amongst the elements of the TreeMap and returns `null` if no such element exists.\n\nIf non-null value is returned, we obtain the $$\\text{Value}$$ from the $$\\text{(Key, Value)}$$ pair obtained at the appropriate entry in the $$\\text{res}$$ array. If a null value is returned, we simply store a $$\\text{-1}$$ at the corresponding $$\\text{res}$$ entry.\n\n<iframe src=\"https://leetcode.com/playground/b3YoKLw8/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"b3YoKLw8\"></iframe>\n\n **Complexity Analysis**\n\n * Time complexity : $$O\\big(N \\cdot \\log{N}\\big)$$. Inserting an element into TreeMap takes $$O\\big(\\log{N}\\big)$$ time. $$N$$ such insertions are done. The search in TreeMap using `ceilingEntry` also takes $$O\\big(\\log{N}\\big)$$ time. $$N$$ such searches are done.\n\n * Space complexity : $$O(N)$$. $$\\text{res}$$ array of size $$n$$ is used. TreeMap $$\\text{starts}$$ of size $$O(N)$$ is used.\n</br>\n</br>\n\n\n---\n\n#### Approach 5: Using Two Arrays without Binary Search\n\n**Algorithm**\n\nThe intuition behind this approach is as follows: If we maintain two arrays,\n\n1. $$\\text{intervals}$$, which is sorted based on the start points.\n\n2. $$\\text{endIntervals}$$, which is sorted based on the end points.\n\nOnce we pick up the first interval(or, say the $$i^{th}$$ interval) from the $$\\text{endIntervals}$$ array, we can determine the appropriate interval satisfying the right interval criteria by scanning the intervals in $$\\text{intervals}$$ array from left towards the right, since the $$\\text{intervals}$$ array is sorted based on the start points. Say, the index of the element chosen from the $$\\text{intervals}$$ array happens to be $$j$$.\n\nNow, when we pick up the next interval(say the $$(i+1)^{th}$$ interval) from the $$\\text{endIntervals}$$ array, we need not start scanning the $$\\text{intervals}$$ array from the first index. Rather, we can start off directly from the $$j^{th}$$ index where we left off last time in the $$\\text{intervals}$$ array. This is because end point corresponding to $$\\text{endIntervals[i+1]}$$ is larger than the one corresponding to $$\\text{endIntervals[i]}$$ and none of the intervals from $$\\text{intervals[k]}$$, such that $$0< k < j$$, satisfies the right neighbor criteria with $$\\text{endIntervals[i]}$$, and hence not with $$\\text{endIntervals[i+1]}$$ as well.\n\nIf at any moment, we reach the end of the array i.e. $$j=\\text{intervals.length}$$ and no element satisfying the right interval criteria is available in the $$\\text{intervals}$$ array, we put a $$\\text{-1}$$ in the corresponding $$\\text{res}$$ entry. The same holds for all the remaining elements of the $$\\text{endIntervals}$$ array, whose end points are even larger than the previous interval encountered.\n\nAlso we make use of a hashmap $$\\text{hash}$$ initially to preserve the indices corresponding to the intervals even after sorting.\n\nFor more understanding see the below animation:\n\n<!--![Find_Right_Interval](../Figures/436_Find_Right_Interval.gif)-->\n!?!../Documents/436_Find.json:1000,563!?!\n\n<iframe src=\"https://leetcode.com/playground/ECckfEWR/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"ECckfEWR\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O\\big(N \\cdot \\log{N}\\big)$$. Sorting takes $$O\\big(N \\cdot \\log{N}\\big)$$ time. A total of $$O(N)$$ time is spent on searching for the appropriate intervals, since the $$\\text{endIntervals}$$ and $$\\text{intervals}$$ array is scanned only once.\n\n* Space complexity : $$O(N)$$. $$\\text{endIntervals}$$, $$\\text{intervals}$$ and $$\\text{res}$$ array of size $$N$$ are used. A hashmap $$\\text{hash}$$ of size $$O(N)$$ is used.\n</br>\n</br>",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "87",
+            "count": 26,
+            "average": "4.000",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "find-right-interval",
+    "playgroundData": {
+        "VY9oKXqp": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "find-right-interval-4",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "LSFk7j8R": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "find-right-interval-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "ig5D4ooi": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "find-right-interval-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "b3YoKLw8": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "find-right-interval-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "ECckfEWR": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "find-right-interval-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

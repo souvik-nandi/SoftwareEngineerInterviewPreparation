@@ -1,0 +1,259 @@
+{
+    "id": "378",
+    "question": {
+        "questionId": "378",
+        "questionFrontendId": "378",
+        "boundTopicId": null,
+        "title": "Kth Smallest Element in a Sorted Matrix",
+        "titleSlug": "kth-smallest-element-in-a-sorted-matrix",
+        "content": "<p>Given an <code>n x n</code> <code>matrix</code> where each of the rows and columns is sorted in ascending order, return <em>the</em> <code>k<sup>th</sup></code> <em>smallest element in the matrix</em>.</p>\n\n<p>Note that it is the <code>k<sup>th</sup></code> smallest element <strong>in the sorted order</strong>, not the <code>k<sup>th</sup></code> <strong>distinct</strong> element.</p>\n\n<p>You must find a solution with a memory complexity better than <code>O(n<sup>2</sup>)</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> matrix = [[1,5,9],[10,11,13],[12,13,15]], k = 8\n<strong>Output:</strong> 13\n<strong>Explanation:</strong> The elements in the matrix are [1,5,9,10,11,12,13,<u><strong>13</strong></u>,15], and the 8<sup>th</sup> smallest number is 13\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> matrix = [[-5]], k = 1\n<strong>Output:</strong> -5\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == matrix.length == matrix[i].length</code></li>\n\t<li><code>1 &lt;= n &lt;= 300</code></li>\n\t<li><code>-10<sup>9</sup> &lt;= matrix[i][j] &lt;= 10<sup>9</sup></code></li>\n\t<li>All the rows and columns of <code>matrix</code> are <strong>guaranteed</strong> to be sorted in <strong>non-decreasing order</strong>.</li>\n\t<li><code>1 &lt;= k &lt;= n<sup>2</sup></code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong></p>\n\n<ul>\n\t<li>Could you solve the problem with a constant memory (i.e., <code>O(1)</code> memory complexity)?</li>\n\t<li>Could you solve the problem in <code>O(n)</code> time complexity? The solution may be too advanced for an interview but you may find reading <a href=\"http://www.cse.yorku.ca/~andy/pubs/X+Y.pdf\" target=\"_blank\">this paper</a> fun.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 6241,
+        "dislikes": 247,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Find K Pairs with Smallest Sums\", \"titleSlug\": \"find-k-pairs-with-smallest-sums\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Kth Smallest Number in Multiplication Table\", \"titleSlug\": \"kth-smallest-number-in-multiplication-table\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Find K-th Smallest Pair Distance\", \"titleSlug\": \"find-k-th-smallest-pair-distance\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"K-th Smallest Prime Fraction\", \"titleSlug\": \"k-th-smallest-prime-fraction\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[[1,5,9],[10,11,13],[12,13,15]]\n8\n[[-5]]\n1",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Heap (Priority Queue)",
+                "slug": "heap-priority-queue",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 15}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Splunk\", \"slug\": \"splunk\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 0}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int kthSmallest(vector<vector<int>>& matrix, int k) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int kthSmallest(int[][] matrix, int k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def kthSmallest(self, matrix, k):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def kthSmallest(self, matrix: List[List[int]], k: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint kthSmallest(int** matrix, int matrixSize, int* matrixColSize, int k){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int KthSmallest(int[][] matrix, int k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[][]} matrix\n * @param {number} k\n * @return {number}\n */\nvar kthSmallest = function(matrix, k) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[][]} matrix\n# @param {Integer} k\n# @return {Integer}\ndef kth_smallest(matrix, k)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func kthSmallest(_ matrix: [[Int]], _ k: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func kthSmallest(matrix [][]int, k int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def kthSmallest(matrix: Array[Array[Int]], k: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun kthSmallest(matrix: Array<IntArray>, k: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn kth_smallest(matrix: Vec<Vec<i32>>, k: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[][] $matrix\n     * @param Integer $k\n     * @return Integer\n     */\n    function kthSmallest($matrix, $k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function kthSmallest(matrix: number[][], k: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (kth-smallest matrix k)\n  (-> (listof (listof exact-integer?)) exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec kth_smallest(Matrix :: [[integer()]], K :: integer()) -> integer().\nkth_smallest(Matrix, K) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec kth_smallest(matrix :: [[integer]], k :: integer) :: integer\n  def kth_smallest(matrix, k) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"404.1K\", \"totalSubmission\": \"672.8K\", \"totalAcceptedRaw\": 404051, \"totalSubmissionRaw\": 672752, \"acRate\": \"60.1%\"}",
+        "hints": [],
+        "solution": {
+            "id": "941",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[[1,5,9],[10,11,13],[12,13,15]]\n8",
+        "metaData": "{\r\n  \"name\": \"kthSmallest\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"matrix\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "941",
+        "content": "[TOC]\n\n## Solution\n\n#### Approach 1: Min-Heap approach\n\n**Intuition**\n\nThe intuition for this approach is really simple. If you think about it, we can reframe the problem as finding the $$K^{\\text{th}}$$ smallest elements from amongst `N sorted lists` right? We know that the rows are sorted and so are the columns. So, we can treat each row (or column) as a sorted list in itself. Then, the problem just boils down to finding the $$K^{\\text{th}}$$ smallest element from amongst these `N` sorted lists. However, before we get to this problem, lets first talk about a simpler version of the problem which is to find the $$K^{\\text{th}}$$ smallest element from amongst 2 sorted lists. This is easy enough to solve since all we need are a pair of pointers which act as indices in the two lists. \n\nAt each step we check which element is smaller amongst the two being pointed at by the indices and progress the corresponding index accordingly. If you think about it, we just need to run the algorithm for merging two sorted lists without actually merging them. We need to keep on running this algorithm until we find our $$K^{\\text{th}}$$ element. Let's quickly look at how this would look like diagrammatically.\n\n<center>\n<img src=\"../Figures/378/img1.png\"/>\n</center>\n\nWe can use this two-pointer approach for finding the $$K^{\\text{th}}$$ element. As explained above, at each step we check the two values and move the pointer corresponding to the smaller value forward.\n\n<center>\n<img src=\"../Figures/378/img2.png\"/>\n</center>\n\nNow that was simple enough to do. In this particular problem, we have $$N$$ sorted lists instead of just 2. That's what adds to the complexity. We can't really keep $$N$$ different pointers now, can we? The heap data structure is perfect for this problem since at all times, we want to maintain `N` different `variables` with each of them pointing to an element in their corresponding lists. We want to be able to find the `minimum` amongst these $$N$$ pointers quickly and then replace that element with the next one in its corresponding list. \n\nThe heap data structure gives us $$O(1)$$ access to the minimum element and $$log(N)$$ removal of the minimum element and addition of a new one. We just need to perform this operation `K` times to get our $$K^{\\text{th}}$$ smallest number. It's possible that our matrix has say 100 rows whereas we just need to find out the 5th smallest element. In this case, we can safely discard the rows in the lower part of the matrix i.e. in this case starting from the 6th row to the end of the matrix because the columns are sorted as well. So, we need the $$min(N, K)$$ rows essentially to find out the answer.\n\n**Algorithm**\n\n1. Initialize a min-heap called `H`.\n2. For our implementation, we will be considering each row an individual list. Since the columns are sorted as well, we can easily treat each column as an individual list as well.\n3. As mentioned before, we will take the first element of $$min(N, K)$$ rows where $$N$$ represents the number of rows, and add each of these elements to the heap. It's important to know what row and column an element belongs to. Without knowing that, we won't be able to move forward in that particular list. So, apart from adding an element to the heap, we also need to add its row and column number. Hence, our min-heap will contain a triplet of information `(value, row, column)`. The heap will be arranged on the basis of the values and we will use the row and column number to add a replacement for the next element in case it gets popped off the heap. \n\n    <center>\n    <img src=\"../Figures/378/img3.png\"/>\n    </center>\n\n4. At this point, our heap contains $$min(N, K)$$ elements. Now we start a loop that goes until we iterate over `K` elements.\n5. At each step, we remove the minimum element from the heap. The element will tell us which row should be further consumed. Using the row and column information we will add the next element to the heap. Specifically, if the current minimum element was from row `r` and had a column position `c`, then the next element to be added to the heap will be `(r, c+1)`.\n\n    `Extract-Min`\n    \n    <center>\n    <img src=\"../Figures/378/img4.png\"/>\n    </center>\n\n    `Add a new element`\n\n    <center>\n    <img src=\"../Figures/378/img5.png\"/>\n    </center>\n\n\n6. Keep on iterating till we exhaust `K` elements. The last element to be popped at the end of the loop will be the $$K^{\\text{th}}$$ smallest element.\n\n<iframe src=\"https://leetcode.com/playground/mYWQvQXz/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"mYWQvQXz\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$\\text{let X=} \\text{min}(K, N); X + K \\log(X)$$\n\n    * Well the heap construction takes $$O(X)$$ time.\n    * After that, we perform $$K$$ iterations and each iteration has two operations. We extract the minimum element from a heap containing $$X$$ elements. Then we add a new element to this heap. Both the operations will take $$O(\\log(X))$$ time. \n    * Thus, the total time complexity for this algorithm comes down to be $$O(X + K\\log(X))$$ where $$X$$ is $$\\text{min}(K, N)$$.\n\n* Space Complexity: $$O(X)$$ which is occupied by the heap.\n<br/>\n<br/>\n\n---\n#### Approach 2: Binary Search\n\n**Inuition**\n\nSince each row and column of the matrix is sorted, is it possible to use Binary Search to find the $$K^{\\text{th}}$$ smallest number? The biggest problem to use Binary Search in this case is that we don\u2019t have a straightforward sorted array, instead we have a matrix. As we remember, in Binary Search, we calculate the middle index of the search space (`1` to `N`) and see if our required number is pointed out by the middle index; if not we either search in the lower half or the upper half. In a sorted matrix, we can't really find a middle. Even if we do consider some index as middle, it is not straightforward to find the search space containing numbers bigger or smaller than the number pointed out by the middle index.\n\nAn alternate could be to apply the Binary Search on the `number range` instead of the `index range`. As we know that the smallest number of our matrix is at the top left corner and the biggest number is at the bottom lower corner. These two number can represent the `range` i.e., the start and the end for the Binary Search. This does sound a bit counter-intuitive now, however, it will start to make sense soon. We are all accustomed to the linear array binary search algorithm. So, to delve into this idea a bit deeper, let's represent the `number range` on a single line as a one-dimensional array and see why and how binary search makes sense.\n\n<center>\n<img src=\"../Figures/378/img6.png\"/>\n</center>\n\nNow, let's proceed with the first step that we take in any binary search implementation. We find the middle element, right? In a normal, one-dimensional binary search, we use the indices to find the middle element. In this case, the left and the right ends of our sorted matrix are the two values. So, we use them to find the `hypothetical` middle of the matrix. The reason we call this hypothetical is because it is not necessary that the middle value will exist in the matrix. However, that is not a requirement for our algorithm. \n\n<center>\n<img src=\"../Figures/378/img7.png\"/>\n</center>\n\nEven though this is a stupid question, it will help us to understand the overall logic here: How will you find out the $$K^{\\text{th}}$$ smallest number in a sorted one-dimensional array? It's simple, right? You'll just return the $$K^{\\text{th}}$$ element in the array. This is because you know the index $$K$$ in the array contains your answer. In our example, we know the two extremes and the middle element value. However, what we don't know are the sizes of the two halves. For all we know, we could have 8 elements in the left half and just 2 on the right in the example above. We don't know! \n\n>So, after finding the middle element, we need to determine the size of the left half. Why, you might ask? Well because we want the Kth smallest element and not the largest. If the question asked us for the largest, we would be determining the size of the right half.\n\nWe already have a [problem on LeetCode](https://leetcode.com/problems/search-a-2d-matrix/solution/) that is about searching for an element in a sorted 2D matrix. However, we don't want to search for our middle element. We want to `count the number of elements` in the left half of the number range of which we know the middle element and the two extremes as well. As it turns out, this can be done in $$O(N + N) = O(N)$$ time where $$N$$ represents the number of rows and columns. We will make use of the sorted nature of the matrix and count all the elements we need without actually iterating over them.\n\n> For example, if an element in the cell [i, j] is smaller than our middle element, then it means that all the elements in the column \"j\" before this element i.r. (i-1) other elements in this column are also going to be less than the middle element. Why? Because the columns are sorted as well!\n\n<center>\n<img src=\"../Figures/378/img8.png\"/>\n</center>\n\n<center>\n<img src=\"../Figures/378/img9.png\"/>\n</center>\n\n<center>\n<img src=\"../Figures/378/img10.png\"/>\n</center>\n\nWhat do we do with this newfound information of ours? Well, that depends on the value of K. So, let's consider our 3 different cases here. \n\n`Case 1: The size of the left half is EQUAL to K`\n\n<center>\n<img src=\"../Figures/378/img11.png\"/>\n</center>\n\n`Case 2: The size of the left half is MORE than K`\n\n<center>\n<img src=\"../Figures/378/img12.png\"/>\n</center>\n\n`Case 3: The size of the left half is LESS than K`\n\n<center>\n<img src=\"../Figures/378/img13.png\"/>\n</center>\n\nSo, as we can see from the above figures, when we are trying to determine the size of our left-half, we also need to keep track of two values. The largest element less-than-or-equal-to the middle element and the smallest element greater than the middle. For an index-based binary search, this wouldn't be a problem since `middle+1` and `middle-1` would represent these entries :).\n\n**Algorithm**\n\n* Start the binary search with `start = matrix[0][0]` and `end = matrix[N-1][N-1]`\n* Find the `middle` of the start and the end. This middle number is `NOT` necessarily an element in the matrix.\n* Count all the numbers smaller than or equal to middle in the matrix. As the matrix is sorted, we can do this in $$O(N)$$. Note that this is determining the size of the left-half of the array.\n* While counting, we need to keep track of the `smallest number greater than the middle` (let\u2019s call it `R`) and at the same time the `biggest number less than or equal to the middle` (let\u2019s call it `L`). These two numbers will be used to adjust the `number range` for the binary search in the next iteration.\n* If the count is equal to `K`, `L` will be our required number as it is the `biggest number less than or equal to the middle`, and is definitely present in the matrix.\n* If the count is less than `K`, we can update `start = R` to search in the higher part of the matrix\n* If the count is greater than `K`, we can update `end = L` to search in the lower part of the matrix in the next iteration.\n\n<iframe src=\"https://leetcode.com/playground/jRdCaLHf/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"jRdCaLHf\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\times log(\\text{Max}-\\text{Min}))$$\n\n    * Let's think about the time complexity in terms of the normal binary search algorithm. For a one-dimensional binary search over an array with $$N$$ elements, the complexity comes out to be $$O(log(N))$$. \n    * For our scenario, we are kind of defining our binary search space in terms of the minimum and the maximum numbers in the array. Going by this idea, the complexity for our binary search should be $$O(log(\\text{Max}-\\text{Min}))$$ where $$\\text{Max}$$ is the maximum element in the array and likewise, $$\\text{Min}$$ is the minimum element. \n    * However, we update our search space after each iteration. So, even if the maximum element is super large as compared to the remaining elements in the matrix, we will bring down the search space considerably in the next iterations. But, going purely by the extremes for our search space, the complexity of our binary search in search of $$K^{\\text{th}}$$ smallest element will be $$O(log(\\text{Max}-\\text{Min}))$$.\n    * In each iteration of our binary search approach, we iterate over the matrix trying to determine the size of the left-half as explained before. That takes $$O(N)$$. \n    * Thus, the overall time complexity is $$O(N \\times log(\\text{Max}-\\text{Min}))$$\n\n* Space Complexity: $$O(1)$$ since we don't use any additional space for performing our binary search.\n\nAlthough there are a series of posts about the Binary Search approach in our discussions section, the one I consulted personally was [this](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/discuss/301357/Java-0ms-(added-Python-and-C++):-Easy-to-understand-solutions-using-Heap-and-Binary-Search). Most of the code and some portions of the explanation are taken from the post. I just tried to add a bit more visual flair to further explain things.\n\nAlso, [Stefan Pochmann](https://leetcode.com/stefanpochmann/) has another great approach based on a research paper for this very problem. [Do check it out](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/discuss/85170/O(n)-from-paper.-Yes-O(rows).)!\n<br/><br/>",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "886",
+            "count": 155,
+            "average": "4.664",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "kth-smallest-element-in-a-sorted-matrix",
+    "playgroundData": {
+        "mYWQvQXz": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "kth-smallest-element-in-a-sorted-matrix-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "jRdCaLHf": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "kth-smallest-element-in-a-sorted-matrix-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

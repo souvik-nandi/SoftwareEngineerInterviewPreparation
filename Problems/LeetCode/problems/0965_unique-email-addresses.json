@@ -1,0 +1,247 @@
+{
+    "id": "965",
+    "question": {
+        "questionId": "965",
+        "questionFrontendId": "929",
+        "boundTopicId": null,
+        "title": "Unique Email Addresses",
+        "titleSlug": "unique-email-addresses",
+        "content": "<p>Every <strong>valid email</strong> consists of a <strong>local name</strong> and a <strong>domain name</strong>, separated by the <code>&#39;@&#39;</code> sign. Besides lowercase letters, the email may contain one or more <code>&#39;.&#39;</code> or <code>&#39;+&#39;</code>.</p>\n\n<ul>\n\t<li>For example, in <code>&quot;alice@leetcode.com&quot;</code>, <code>&quot;alice&quot;</code> is the <strong>local name</strong>, and <code>&quot;leetcode.com&quot;</code> is the <strong>domain name</strong>.</li>\n</ul>\n\n<p>If you add periods <code>&#39;.&#39;</code> between some characters in the <strong>local name</strong> part of an email address, mail sent there will be forwarded to the same address without dots in the local name. Note that this rule <strong>does not apply</strong> to <strong>domain names</strong>.</p>\n\n<ul>\n\t<li>For example, <code>&quot;alice.z@leetcode.com&quot;</code> and <code>&quot;alicez@leetcode.com&quot;</code> forward to the same email address.</li>\n</ul>\n\n<p>If you add a plus <code>&#39;+&#39;</code> in the <strong>local name</strong>, everything after the first plus sign <strong>will be ignored</strong>. This allows certain emails to be filtered. Note that this rule <strong>does not apply</strong> to <strong>domain names</strong>.</p>\n\n<ul>\n\t<li>For example, <code>&quot;m.y+name@email.com&quot;</code> will be forwarded to <code>&quot;my@email.com&quot;</code>.</li>\n</ul>\n\n<p>It is possible to use both of these rules at the same time.</p>\n\n<p>Given an array of strings <code>emails</code> where we send one email to each <code>emails[i]</code>, return <em>the number of different addresses that actually receive mails</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> emails = [&quot;test.email+alex@leetcode.com&quot;,&quot;test.e.mail+bob.cathy@leetcode.com&quot;,&quot;testemail+david@lee.tcode.com&quot;]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> &quot;testemail@leetcode.com&quot; and &quot;testemail@lee.tcode.com&quot; actually receive mails.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> emails = [&quot;a@leetcode.com&quot;,&quot;b@leetcode.com&quot;,&quot;c@leetcode.com&quot;]\n<strong>Output:</strong> 3\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= emails.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= emails[i].length &lt;= 100</code></li>\n\t<li><code>emails[i]</code> consist of lowercase English letters, <code>&#39;+&#39;</code>, <code>&#39;.&#39;</code> and <code>&#39;@&#39;</code>.</li>\n\t<li>Each <code>emails[i]</code> contains exactly one <code>&#39;@&#39;</code> character.</li>\n\t<li>All local and domain names are non-empty.</li>\n\t<li>Local names do not start with a <code>&#39;+&#39;</code> character.</li>\n\t<li>Domain names end with the <code>&quot;.com&quot;</code> suffix.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 1864,
+        "dislikes": 249,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "[\"test.email+alex@leetcode.com\",\"test.e.mail+bob.cathy@leetcode.com\",\"testemail+david@lee.tcode.com\"]\n[\"a@leetcode.com\",\"b@leetcode.com\",\"c@leetcode.com\"]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Wix\", \"slug\": \"wix\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Intuit\", \"slug\": \"intuit\", \"timesEncountered\": 4}], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int numUniqueEmails(vector<string>& emails) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int numUniqueEmails(String[] emails) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def numUniqueEmails(self, emails):\n        \"\"\"\n        :type emails: List[str]\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def numUniqueEmails(self, emails: List[str]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint numUniqueEmails(char ** emails, int emailsSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int NumUniqueEmails(string[] emails) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string[]} emails\n * @return {number}\n */\nvar numUniqueEmails = function(emails) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String[]} emails\n# @return {Integer}\ndef num_unique_emails(emails)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func numUniqueEmails(_ emails: [String]) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func numUniqueEmails(emails []string) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def numUniqueEmails(emails: Array[String]): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun numUniqueEmails(emails: Array<String>): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn num_unique_emails(emails: Vec<String>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String[] $emails\n     * @return Integer\n     */\n    function numUniqueEmails($emails) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function numUniqueEmails(emails: string[]): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (num-unique-emails emails)\n  (-> (listof string?) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec num_unique_emails(Emails :: [unicode:unicode_binary()]) -> integer().\nnum_unique_emails(Emails) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec num_unique_emails(emails :: [String.t]) :: integer\n  def num_unique_emails(emails) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"372.1K\", \"totalSubmission\": \"553.4K\", \"totalAcceptedRaw\": 372110, \"totalSubmissionRaw\": 553430, \"acRate\": \"67.2%\"}",
+        "hints": [],
+        "solution": {
+            "id": "1161",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "ac",
+        "sampleTestCase": "[\"test.email+alex@leetcode.com\",\"test.e.mail+bob.cathy@leetcode.com\",\"testemail+david@lee.tcode.com\"]",
+        "metaData": "{\r\n  \"name\": \"numUniqueEmails\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"emails\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1161",
+        "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n\r\n#### Overview\r\n\r\nWe need to clean the emails given to us. The most intuitive solution will be to iterate over the emails and clean them one by one.  \r\nHere, cleaning the email means removing unnecessary characters, per the rules given to us. Once an email has been cleaned, it can be pushed into a hash set. The size of this hash set will then equal the count of unique emails.\r\n\r\n<br />\r\n\r\n**Rules to clean email:**\r\n\r\n-   If there are periods `'.'` in _local name_ ignore them.\r\n-   If there is a plus `'+'` in _local name_ skip all local name characters till `'@'`.\r\n-   There is only one `'@'` symbol and the substring after it is our _domain name_; we will keep the _domain name_ as it is.\r\n\r\n---\r\n\r\n#### Approach 1: Linear Iteration\r\n\r\n**Intuition**\r\n\r\nWe can iterate over an email from left to right, and add characters to local name until a `'+'` occurs, then we can skip all characters until `'@'` occurs, then we can again start appending the characters till the end of the email string to form the domain name.\r\n \r\nNotice that per the rules, we do not need to read any characters between the first `'+'` and `'@'`.  While checking each character from left to right, after finding the first `'+'` in the local name we can directly find the domain name by switching to a reverse iteration as there is only one `'@'` and we will skip all characters in between `'+'` and `'@'`.\r\n\r\n> This reduces the number of characters iterated, but the overall order time complexity remains the same.\r\n\r\n> For example, consider `email = ab.c+abcdefghijklmnopqrstuvwxyz@leetcode.com`.  \r\n> Performing a linear scan from left to right, we will traverse all the characters in the given email.  \r\n> Using the method proposed above, we can skip the characters from index `5` to index `30`, thus saving time.\r\n> However, keep in mind that because we read the domain name from right to left, we must also reverse the domain name before appending it to the local name.  Thus, this improvement will be less effective when the domain name is long compared to the number of characters skipped.\r\n\r\n**Algorithm**\r\n\r\n1. For each email present in the `emails` array:\r\n    - Iterate over the characters in the email and append each character to the local name if it is not `'.'`.\r\n    - If the character is `'+'`, do not append the character and break out of the loop.\r\n2. Find the domain name using reverse traversal in the given email and append it to the string formed till now.\r\n    - After cleaning the email insert it into the hash set.\r\n3. Return the size of the hash set.\r\n\r\n!?!../Documents/929/929_unique_email_addresses.json:960,540!?!\r\n\r\n<br />\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/9MiABgew/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"9MiABgew\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$N$$ be the number of the emails and $$M$$ be the average length of an email.\r\n\r\n-   Time Complexity: $$O(N \\cdot M)$$  \r\n    In the worst case, we iterate over all the characters of each of the emails given.  \r\n    If we have `N` emails and each email has `M` characters in it.\r\n    Then complexity is of order `(Number of emails) * (Number of characters in average email) = N*M`.\r\n\r\n-   Space Complexity: $$O(N \\cdot M)$$  \r\n    In the worst case, when all emails are unique, we will store every email address given to us in the hash set.\r\n\r\n<br/>\r\n\r\n---\r\n\r\n#### Approach 2: Using String Split Method\r\n\r\n**Intuition**\r\n\r\nA more elegant way of cleaning emails is to leverage built-in functions such as `split` and `replace`.\r\n\r\n-   The string `split()` method breaks a given string around matches of the given regular expression.\r\n-   The string `replace()` method returns a new string after replacing all occurrences of some substring or character (in this case `'.'`) with a new substring or character (in this case `''`).\r\n\r\n**Algorithm**\r\n\r\n1. For each email present in the `emails` array:\r\n    - Split the string into two parts separated by`'@'`, local name, and domain name.\r\n    - Split the local name into parts separated by `'+'`. Since we do not need the part after `'+'`, let the first part be the local name.\r\n    - Remove all `'.'` from the local name and append the domain name to it.\r\n    - After cleaning the email, insert it into the hash set.\r\n2. Return the size of the hash set.\r\n\r\n<br />\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/m6kqwFBc/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"m6kqwFBc\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$N$$ be the number of the emails and $$M$$ be the average length of an email.\r\n\r\n-   Time Complexity: $$O(N \\cdot M)$$  \r\n    The split method must iterate over all of the characters in each email and the replace method must iterate over all of the characters in each local name.  As such, they both require linear time and are $$O(M)$$ operations.\r\n    Since there are `N` emails and the average email has `M` characters in it, the complexity is of order `(Number of emails) * (Number of characters in an email) = N*M`.\r\n\r\n-   Space Complexity: $$O(N \\cdot M)$$  \r\n    In the worst case, when all emails are unique, we will store every email address given to us in the hash set.\r\n\r\n<br/>\r\n\r\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1166",
+            "count": 31,
+            "average": "4.903",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "unique-email-addresses",
+    "playgroundData": {
+        "9MiABgew": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "unique-email-addresses-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "m6kqwFBc": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "unique-email-addresses-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

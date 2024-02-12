@@ -1,0 +1,102 @@
+{
+    "id": "603",
+    "question": {
+        "questionId": "603",
+        "questionFrontendId": "603",
+        "boundTopicId": null,
+        "title": "Consecutive Available Seats",
+        "titleSlug": "consecutive-available-seats",
+        "content": "<p>Table: <code>Cinema</code></p>\n\n<pre>\n+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| seat_id     | int  |\n| free        | bool |\n+-------------+------+\nseat_id is an auto-increment primary key column for this table.\nEach row of this table indicates whether the i<sup>th</sup> seat is free or not. 1 means free while 0 means occupied.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to report all the consecutive available seats in the cinema.</p>\n\n<p>Return the result table <strong>ordered</strong> by <code>seat_id</code> <strong>in ascending order</strong>.</p>\n\n<p>The test cases are generated so that more than two seats are consecutively available.</p>\n\n<p>The query result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nCinema table:\n+---------+------+\n| seat_id | free |\n+---------+------+\n| 1       | 1    |\n| 2       | 0    |\n| 3       | 1    |\n| 4       | 1    |\n| 5       | 1    |\n+---------+------+\n<strong>Output:</strong> \n+---------+\n| seat_id |\n+---------+\n| 3       |\n| 4       |\n| 5       |\n+---------+\n</pre>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Easy",
+        "likes": 499,
+        "dislikes": 45,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "{\"headers\":{\"Cinema\":[\"seat_id\",\"free\"]},\"rows\":{\"Cinema\":[[1,1],[2,0],[3,1],[4,1],[5,1]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}], \"2\": [], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "# Write your MySQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "/* Write your T-SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "/* Write your PL/SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"60.8K\", \"totalSubmission\": \"89.5K\", \"totalAcceptedRaw\": 60796, \"totalSubmissionRaw\": 89463, \"acRate\": \"68.0%\"}",
+        "hints": [],
+        "solution": {
+            "id": "168",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "{\"headers\":{\"Cinema\":[\"seat_id\",\"free\"]},\"rows\":{\"Cinema\":[[1,1],[2,0],[3,1],[4,1],[5,1]]}}",
+        "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Cinema (seat_id int primary key auto_increment, free bool)\"\n  ],\n  \"mssql\": [\n    \"Create table Cinema (seat_id int primary key, free BIT)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Cinema (seat_id int primary key, free NUMBER(1))\"\n  ],\n  \"database\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists Cinema (seat_id int primary key auto_increment, free bool)",
+            "Truncate table Cinema",
+            "insert into Cinema (seat_id, free) values ('1', '1')",
+            "insert into Cinema (seat_id, free) values ('2', '0')",
+            "insert into Cinema (seat_id, free) values ('3', '1')",
+            "insert into Cinema (seat_id, free) values ('4', '1')",
+            "insert into Cinema (seat_id, free) values ('5', '1')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "168",
+        "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using self `join` and `abs()`[Accepted]\n\n**Intuition**\n\nThere is only one table in this problem, so we probably need to use **self join** for this relative complex problem.\n\n**Algorithm**\n\nFirst, let's see what we have after joining this table with itself.\n>Note: The result of join two tables is the [Cartesian product](https://en.wikipedia.org/wiki/Cartesian_product) of these two tables.\n\n```sql\nselect a.seat_id, a.free, b.seat_id, b.free\nfrom cinema a join cinema b;\n```\n\n| seat_id | free | seat_id | free |\n|---------|------|---------|------|\n| 1       | 1    | 1       | 1    |\n| 2       | 0    | 1       | 1    |\n| 3       | 1    | 1       | 1    |\n| 4       | 1    | 1       | 1    |\n| 5       | 1    | 1       | 1    |\n| 1       | 1    | 2       | 0    |\n| 2       | 0    | 2       | 0    |\n| 3       | 1    | 2       | 0    |\n| 4       | 1    | 2       | 0    |\n| 5       | 1    | 2       | 0    |\n| 1       | 1    | 3       | 1    |\n| 2       | 0    | 3       | 1    |\n| 3       | 1    | 3       | 1    |\n| 4       | 1    | 3       | 1    |\n| 5       | 1    | 3       | 1    |\n| 1       | 1    | 4       | 1    |\n| 2       | 0    | 4       | 1    |\n| 3       | 1    | 4       | 1    |\n| 4       | 1    | 4       | 1    |\n| 5       | 1    | 4       | 1    |\n| 1       | 1    | 5       | 1    |\n| 2       | 0    | 5       | 1    |\n| 3       | 1    | 5       | 1    |\n| 4       | 1    | 5       | 1    |\n| 5       | 1    | 5       | 1    |\n\n\nTo find the consecutive available seats, the value in the a.seat_id should be more(or less) than the value b.seat_id, and both of them should be free.\n\n```sql\nselect a.seat_id, a.free, b.seat_id, b.free\nfrom cinema a join cinema b\n  on abs(a.seat_id - b.seat_id) = 1\n  and a.free = true and b.free = true;\n```\n\n| seat_id | free | seat_id | free |\n|---------|------|---------|------|\n| 4       | 1    | 3       | 1    |\n| 3       | 1    | 4       | 1    |\n| 5       | 1    | 4       | 1    |\n| 4       | 1    | 5       | 1    |\n\nAt last, choose the concerned column seat_id, and display the result ordered by seat_id.\n>Note: You may notice that the seat with *seat_id* '4' appears twice in this table. This is because seat '4' next to '3' and also next to '5'. So we need to use `distinct` to filter the duplicated records.\n\n**MySQL**\n\n```sql\nselect distinct a.seat_id\nfrom cinema a join cinema b\n  on abs(a.seat_id - b.seat_id) = 1\n  and a.free = true and b.free = true\norder by a.seat_id\n;\n```",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "163",
+            "count": 29,
+            "average": "4.586",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "consecutive-available-seats",
+    "playgroundData": {}
+}

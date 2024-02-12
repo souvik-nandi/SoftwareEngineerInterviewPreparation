@@ -1,0 +1,317 @@
+{
+    "id": "535",
+    "question": {
+        "questionId": "535",
+        "questionFrontendId": "535",
+        "boundTopicId": null,
+        "title": "Encode and Decode TinyURL",
+        "titleSlug": "encode-and-decode-tinyurl",
+        "content": "<blockquote>Note: This is a companion problem to the <a href=\"https://leetcode.com/discuss/interview-question/system-design/\" target=\"_blank\">System Design</a> problem: <a href=\"https://leetcode.com/discuss/interview-question/124658/Design-a-URL-Shortener-(-TinyURL-)-System/\" target=\"_blank\">Design TinyURL</a>.</blockquote>\n\n<p>TinyURL is a URL shortening service where you enter a URL such as <code>https://leetcode.com/problems/design-tinyurl</code> and it returns a short URL such as <code>http://tinyurl.com/4e9iAk</code>. Design a class to encode a URL and decode a tiny URL.</p>\n\n<p>There is no restriction on how your encode/decode algorithm should work. You just need to ensure that a URL can be encoded to a tiny URL and the tiny URL can be decoded to the original URL.</p>\n\n<p>Implement the <code>Solution</code> class:</p>\n\n<ul>\n\t<li><code>Solution()</code> Initializes the object of the system.</li>\n\t<li><code>String encode(String longUrl)</code> Returns a tiny URL for the given <code>longUrl</code>.</li>\n\t<li><code>String decode(String shortUrl)</code> Returns the original long URL for the given <code>shortUrl</code>. It is guaranteed that the given <code>shortUrl</code> was encoded by the same object.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> url = &quot;https://leetcode.com/problems/design-tinyurl&quot;\n<strong>Output:</strong> &quot;https://leetcode.com/problems/design-tinyurl&quot;\n\n<strong>Explanation:</strong>\nSolution obj = new Solution();\nstring tiny = obj.encode(url); // returns the encoded tiny url.\nstring ans = obj.decode(tiny); // returns the original url after deconding it.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= url.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>url</code> is guranteed to be a valid URL.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 1626,
+        "dislikes": 3145,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "\"https://leetcode.com/problems/design-tinyurl\"",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Design",
+                "slug": "design",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Hash Function",
+                "slug": "hash-function",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 0}], \"1\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n\n    // Encodes a URL to a shortened URL.\n    string encode(string longUrl) {\n        \n    }\n\n    // Decodes a shortened URL to its original URL.\n    string decode(string shortUrl) {\n        \n    }\n};\n\n// Your Solution object will be instantiated and called as such:\n// Solution solution;\n// solution.decode(solution.encode(url));",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "public class Codec {\n\n    // Encodes a URL to a shortened URL.\n    public String encode(String longUrl) {\n        \n    }\n\n    // Decodes a shortened URL to its original URL.\n    public String decode(String shortUrl) {\n        \n    }\n}\n\n// Your Codec object will be instantiated and called as such:\n// Codec codec = new Codec();\n// codec.decode(codec.encode(url));",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Codec:\n\n    def encode(self, longUrl):\n        \"\"\"Encodes a URL to a shortened URL.\n        \n        :type longUrl: str\n        :rtype: str\n        \"\"\"\n        \n\n    def decode(self, shortUrl):\n        \"\"\"Decodes a shortened URL to its original URL.\n        \n        :type shortUrl: str\n        :rtype: str\n        \"\"\"\n        \n\n# Your Codec object will be instantiated and called as such:\n# codec = Codec()\n# codec.decode(codec.encode(url))",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Codec:\n\n    def encode(self, longUrl: str) -> str:\n        \"\"\"Encodes a URL to a shortened URL.\n        \"\"\"\n        \n\n    def decode(self, shortUrl: str) -> str:\n        \"\"\"Decodes a shortened URL to its original URL.\n        \"\"\"\n        \n\n# Your Codec object will be instantiated and called as such:\n# codec = Codec()\n# codec.decode(codec.encode(url))",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "/** Encodes a URL to a shortened URL. */\nchar* encode(char* longUrl) {\n    \n}\n\n/** Decodes a shortened URL to its original URL. */\nchar* decode(char* shortUrl) {\n    \n}\n\n// Your functions will be called as such:\n// char* s = encode(s);\n// decode(s);",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Codec {\n\n    // Encodes a URL to a shortened URL\n    public string encode(string longUrl) {\n        \n    }\n\n    // Decodes a shortened URL to its original URL.\n    public string decode(string shortUrl) {\n        \n    }\n}\n\n// Your Codec object will be instantiated and called as such:\n// Codec codec = new Codec();\n// codec.decode(codec.encode(url));",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * Encodes a URL to a shortened URL.\n *\n * @param {string} longUrl\n * @return {string}\n */\nvar encode = function(longUrl) {\n    \n};\n\n/**\n * Decodes a shortened URL to its original URL.\n *\n * @param {string} shortUrl\n * @return {string}\n */\nvar decode = function(shortUrl) {\n    \n};\n\n/**\n * Your functions will be called as such:\n * decode(encode(url));\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# Encodes a URL to a shortened URL.\n#\n# @param {string} longUrl\n# @return {string}\ndef encode(longUrl)\n    \nend\n\n# Decodes a shortened URL to its original URL.\n#\n# @param {string} shortUrl\n# @return {string}\ndef decode(shortUrl)\n    \nend\n\n\n# Your functions will be called as such:\n# decode(encode(url))",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Codec {\n    // Encodes a URL to a shortened URL.\n    func encode(_ longUrl: String) -> String {\n        \n    }\n    \n    // Decodes a shortened URL to its original URL.\n    func decode(_ shortUrl: String) -> String {\n        \n    }\n}\n\n/**\n * Your Codec object will be instantiated and called as such:\n * let obj = Codec()\n * val s = obj.encode(longUrl)\n * let ans = obj.decode(s)\n*/",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "type Codec struct {\n    \n}\n\n\nfunc Constructor() Codec {\n    \n}\n\n// Encodes a URL to a shortened URL.\nfunc (this *Codec) encode(longUrl string) string {\n\t\n}\n\n// Decodes a shortened URL to its original URL.\nfunc (this *Codec) decode(shortUrl string) string {\n    \n}\n\n\n/**\n * Your Codec object will be instantiated and called as such:\n * obj := Constructor();\n * url := obj.encode(longUrl);\n * ans := obj.decode(url);\n */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "class Codec {\n    // Encodes a URL to a shortened URL.\n    def encode(longURL: String): String = {\n        \n    }\n    \n    // Decodes a shortened URL to its original URL.\n    def decode(shortURL: String): String = {\n        \n    }\n}\n\n/**\n * Your Codec object will be instantiated and called as such:\n * var obj = new Codec()\n * val s = obj.encode(longURL)\n * val ans = obj.decode(s)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Codec() {\n    // Encodes a URL to a shortened URL.\n    fun encode(longUrl: String): String {\n        \n    }\n\n    // Decodes a shortened URL to its original URL.\n    fun decode(shortUrl: String): String {\n        \n    }\n}\n\n/**\n * Your Codec object will be instantiated and called as such:\n * var obj = Codec()\n * var url = obj.encode(longUrl)\n * var ans = obj.decode(url)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "struct Codec {\n\t\n}\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl Codec {\n    fn new() -> Self {\n        \n    }\n\t\n    // Encodes a URL to a shortened URL.\n    fn encode(&self, longURL: String) -> String {\n        \n    }\n\t\n    // Decodes a shortened URL to its original URL.\n    fn decode(&self, shortURL: String) -> String {\n        \n    }\n}\n\n/**\n * Your Codec object will be instantiated and called as such:\n * let obj = Codec::new();\n * let s: String = obj.encode(strs);\n * let ans: VecVec<String> = obj.decode(s);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Codec {\n    /**\n     * Encodes a URL to a shortened URL.\n     * @param String $longUrl\n     * @return String\n     */\n    function encode($longUrl) {\n        \n    }\n    \n    /**\n     * Decodes a shortened URL to its original URL.\n     * @param String $shortUrl\n     * @return String\n     */\n    function decode($shortUrl) {\n        \n    }\n}\n\n/**\n * Your Codec object will be instantiated and called as such:\n * $obj = Codec();\n * $s = $obj->encode($longUrl);\n * $ans = $obj->decode($s);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "/**\n * Encodes a URL to a shortened URL.\n */\nfunction encode(longUrl: string): string {\n\t\n};\n\n/**\n * Decodes a shortened URL to its original URL.\n */\nfunction decode(shortUrl: string): string {\n\t\n};\n\n/**\n * Your functions will be called as such:\n * decode(encode(strs));\n */",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"208.5K\", \"totalSubmission\": \"243.8K\", \"totalAcceptedRaw\": 208527, \"totalSubmissionRaw\": 243764, \"acRate\": \"85.5%\"}",
+        "hints": [],
+        "solution": {
+            "id": "93",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "\"https://leetcode.com/problems/design-tinyurl\"",
+        "metaData": "{\n  \"name\": \"CodecDriver\",\n  \"params\": [\n    {\n      \"name\": \"url\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  },\n  \"manual\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "887",
+            "date": "2022-04-23",
+            "incompleteChallengeCount": 30,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "93",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Using Simple Counter\n\nIn order to encode the URL, we make use of a counter($$i$$), which is incremented for every new URL encountered. We put the URL along with its encoded count($$i$$) in a HashMap. This way we can retrieve it later at the time of decoding easily.\n\n<iframe src=\"https://leetcode.com/playground/mg2ui66j/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"mg2ui66j\"></iframe>\n\n**Performance Analysis**\n\n* The range of URLs that can be decoded is limited by the range of $$\\text{int}$$.\n\n* If excessively large number of URLs have to be encoded, after the range of $$\\text{int}$$ is exceeded, integer overflow could lead to overwriting the previous URLs' encodings, leading to the performance degradation.\n\n* The length of the URL isn't necessarily shorter than the incoming $$\\text{longURL}$$. It is only dependent on the relative order in which the URLs are encoded.\n\n* One problem with this method is that it is very easy to predict the next code generated, since the pattern can be detected by generating a few encoded URLs.\n\n\n---\n#### Approach #2 Variable-length Encoding\n\n**Algorithm**\n\nIn this case, we make use of variable length encoding to encode the given URLs. For every $$\\text{longURL}$$, we choose a variable codelength for the input URL, which can be any length between 0 and 61. Further, instead of using only numbers as the Base System for encoding the URLSs, we make use of a set of integers and alphabets to be used for encoding.\n\n<iframe src=\"https://leetcode.com/playground/fNkx8FFf/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"fNkx8FFf\"></iframe>\n\n**Performance Analysis**\n\n* The number of URLs that can be encoded is, again, dependent on the range of $$\\text{int}$$, since, the same $$count$$ will be generated after overflow of integers.\n\n* The length of the encoded URLs isn't necessarily short, but is to some extent dependent on the order in which the incoming $$\\text{longURL}$$'s are encountered. For example, the codes generated will have the lengths in the following order: 1(62 times), 2(62 times) and so on.\n\n* The performance is quite good, since the same code will be repeated only after the integer overflow limit, which is quite large.\n\n* In this case also, the next code generated could be predicted by the use of some calculations.\n\n---\n#### Approach #3 Using hashcode\n\n**Algorithm**\n\nIn this method, we make use of an inbuilt function $$\\text{hashCode()}$$ to determine a code for mapping every URL. Again, the mapping is stored in a HashMap for decoding.\n\nThe hash code for a String object is computed(using int arithmetic) as \u2212\n\n$$s[0]*31^{(n - 1)} + s[1]*31^{(n - 2)} + ... + s[n - 1]$$ , where s[i] is the ith character of the string, n is the length of the string.\n\n<iframe src=\"https://leetcode.com/playground/Nf44zrof/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"Nf44zrof\"></iframe>\n\n**Performance Analysis**\n\n* The number of URLs that can be encoded is limited by the range of $$\\text{int}$$, since $$\\text{hashCode}$$ uses integer calculations.\n\n* The average length of the encoded URL isn't directly related to the incoming $$\\text{longURL}$$ length.\n\n* The $$\\text{hashCode()}$$ doesn't generate unique codes for different string. This property of getting the same code for two different inputs is called collision. Thus, as the number of encoded URLs increases, the probability of collisions increases, which leads to failure.\n\n* The following figure demonstrates the mapping of different objects to the same hashcode and the increasing probability of collisions with increasing number of objects.\n\n![Encode_and_Decode_URLs](../Figures/535_Encode_and_Decode.png)\n\n* Thus, it isn't necessary that the collisions start occuring only after a certain number of strings have been encoded, but they could occur way before the limit is even near to the $$\\text{int}$$. This is similar to birthday paradox i.e. the probability of two people having the same birthday is nearly 50% if we consider only 23 people and 99.9% with just 70 people.\n\n* Predicting the encoded URL isn't easy in this scheme.\n\n---\n#### Approach #4 Using random number\n\n**Algorithm**\n\nIn this case, we generate a random integer to be used as the code. In case the generated code happens to be already mapped to some previous $$\\text{longURL}$$, we generate a new random integer to be used as the code. The data is again stored in a HashMap to help in the decoding process.\n\n<iframe src=\"https://leetcode.com/playground/7EWA42ZM/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"7EWA42ZM\"></iframe>\n\n**Performance Analysis**\n\n* The number of URLs that can be encoded is limited by the range of $$\\text{int}$$.\n\n* The average length of the codes generated is independent of the $$\\text{longURL}$$'s length, since a random integer is used.\n\n* The length of the URL isn't necessarily shorter than the incoming $$\\text{longURL}$$. It is only dependent on the relative order in which the URLs are encoded.\n\n* Since a random number is used for coding, again, as in the previous case, the number of collisions could increase with the increasing number of input strings, leading to performance degradation.\n\n* Determining the encoded URL isn't possible in this scheme, since we make use of random numbers.\n\n---\n#### Approach #5 Random fixed-length encoding\n\n**Algorithm**\n\nIn this case, again, we make use of the set of numbers and alphabets to generate the coding for the given URLs, similar to Approach 2. But in this case, the length of the code is fixed to 6 only. Further, random characters from the string to form the characters of the code. In case, the code generated collides with some previously generated code, we form a new random code.\n\n<iframe src=\"https://leetcode.com/playground/FTLYf9nH/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"FTLYf9nH\"></iframe>\n\n**Performance Analysis**\n\n* The number of URLs that can be encoded is quite large in this case, nearly of the order $$(10+26*2)^6$$.\n\n* The length of the encoded URLs is fixed to 6 units, which is a significant reduction for very large URLs.\n\n* The performance of this scheme is quite good, due to a very less probability of repeated same codes generated.\n\n* We can increase the number of encodings possible as well, by increasing the length of the encoded strings. Thus, there exists a  tradeoff between the length of the code and the number of encodings possible.\n\n* Predicting the encoding isn't possible in this scheme since random numbers are used.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "91",
+            "count": 82,
+            "average": "4.829",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "encode-and-decode-tinyurl",
+    "playgroundData": {
+        "mg2ui66j": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "encode-and-decode-tinyurl-4",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "fNkx8FFf": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "encode-and-decode-tinyurl-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Nf44zrof": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "encode-and-decode-tinyurl-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "7EWA42ZM": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "encode-and-decode-tinyurl-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "FTLYf9nH": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "encode-and-decode-tinyurl-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

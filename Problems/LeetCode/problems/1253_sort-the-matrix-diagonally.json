@@ -1,0 +1,276 @@
+{
+    "id": "1253",
+    "question": {
+        "questionId": "1253",
+        "questionFrontendId": "1329",
+        "boundTopicId": null,
+        "title": "Sort the Matrix Diagonally",
+        "titleSlug": "sort-the-matrix-diagonally",
+        "content": "<p>A <strong>matrix diagonal</strong> is a diagonal line of cells starting from some cell in either the topmost row or leftmost column and going in the bottom-right direction until reaching the matrix&#39;s end. For example, the <strong>matrix diagonal</strong> starting from <code>mat[2][0]</code>, where <code>mat</code> is a <code>6 x 3</code> matrix, includes cells <code>mat[2][0]</code>, <code>mat[3][1]</code>, and <code>mat[4][2]</code>.</p>\n\n<p>Given an <code>m x n</code> matrix <code>mat</code> of integers, sort each <strong>matrix diagonal</strong> in ascending order and return <em>the resulting matrix</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/01/21/1482_example_1_2.png\" style=\"width: 500px; height: 198px;\" />\n<pre>\n<strong>Input:</strong> mat = [[3,3,1,1],[2,2,1,2],[1,1,1,2]]\n<strong>Output:</strong> [[1,1,1,1],[1,2,2,2],[1,2,3,3]]\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> mat = [[11,25,66,1,69,7],[23,55,17,45,15,52],[75,31,36,44,58,8],[22,27,33,25,68,4],[84,28,14,11,5,50]]\n<strong>Output:</strong> [[5,17,4,1,52,7],[11,11,25,45,8,69],[14,23,25,44,58,15],[22,27,31,36,50,66],[84,28,75,33,55,68]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == mat.length</code></li>\n\t<li><code>n == mat[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 100</code></li>\n\t<li><code>1 &lt;= mat[i][j] &lt;= 100</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 1728,
+        "dislikes": 181,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "[[3,3,1,1],[2,2,1,2],[1,1,1,2]]\n[[11,25,66,1,69,7],[23,55,17,45,15,52],[75,31,36,44,58,8],[22,27,33,25,68,4],[84,28,14,11,5,50]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Quora\", \"slug\": \"quora\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Databricks\", \"slug\": \"databricks\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Robinhood\", \"slug\": \"robinhood\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ServiceNow\", \"slug\": \"servicenow\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<vector<int>> diagonalSort(vector<vector<int>>& mat) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int[][] diagonalSort(int[][] mat) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def diagonalSort(self, mat):\n        \"\"\"\n        :type mat: List[List[int]]\n        :rtype: List[List[int]]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def diagonalSort(self, mat: List[List[int]]) -> List[List[int]]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** diagonalSort(int** mat, int matSize, int* matColSize, int* returnSize, int** returnColumnSizes){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int[][] DiagonalSort(int[][] mat) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[][]} mat\n * @return {number[][]}\n */\nvar diagonalSort = function(mat) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[][]} mat\n# @return {Integer[][]}\ndef diagonal_sort(mat)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func diagonalSort(_ mat: [[Int]]) -> [[Int]] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func diagonalSort(mat [][]int) [][]int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def diagonalSort(mat: Array[Array[Int]]): Array[Array[Int]] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun diagonalSort(mat: Array<IntArray>): Array<IntArray> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn diagonal_sort(mat: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[][] $mat\n     * @return Integer[][]\n     */\n    function diagonalSort($mat) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function diagonalSort(mat: number[][]): number[][] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (diagonal-sort mat)\n  (-> (listof (listof exact-integer?)) (listof (listof exact-integer?)))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec diagonal_sort(Mat :: [[integer()]]) -> [[integer()]].\ndiagonal_sort(Mat) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec diagonal_sort(mat :: [[integer]]) :: [[integer]]\n  def diagonal_sort(mat) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"87.7K\", \"totalSubmission\": \"107.7K\", \"totalAcceptedRaw\": 87682, \"totalSubmissionRaw\": 107735, \"acRate\": \"81.4%\"}",
+        "hints": [
+            "Use a data structure to store all values of each diagonal.",
+            "How to index the data structure with the id of the diagonal?",
+            "All cells in the same diagonal (i,j) have the same difference so we can get the diagonal of a cell using the difference i-j."
+        ],
+        "solution": {
+            "id": "1077",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": true,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[[3,3,1,1],[2,2,1,2],[1,1,1,2]]",
+        "metaData": "{\n  \"name\": \"diagonalSort\",\n  \"params\": [\n    {\n      \"name\": \"mat\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[][]\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1077",
+        "content": "[TOC]\r\n\r\n## Video Solution\r\n\r\n<div>\r\n  <div class=\"video-container\">\r\n    <iframe src=\"https://player.vimeo.com/video/503255206?texttrack=en\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>\r\n  </div>\r\n</div>\r\n\r\n</br>\r\n\r\n## Solution Article\r\n\r\n---\r\n\r\n#### Approach 1: Hash Table of Heaps\r\n\r\nThe most straightforward idea is to create a **hash table of heaps** to store the diagonals.\r\nThis way, the diagonals are automatically sorted, and one has nothing to\r\ndo but to push these sorted diagonals back into the matrix.\r\n\r\n![Demonstrate the process of building heaps for each diagonal and then generating the result.](../Figures/1329/hashmap.png) \r\n*Fig 1. Approach 1: HashMap of Heaps.*\r\n{:align=\"center\"}\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/E2sSLZ8s/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"E2sSLZ8s\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$M$$ be the number of rows, and $$N$$ be the number of columns.\r\n\r\n\r\n* Time complexity: $$\\mathcal{O}\\Big(N \\times M \\times \\log \\big(\\min(N, M)\\big)\\Big)$$.\r\n\r\n    We perform $$N \\times M$$ operations in two nested loops. At each iteration, we push an element into a heap that contains the current diagonal. The longest diagonal contains $$\\min(N, M)$$ element, and so pushing an element to a heap has a cost of $$\\mathcal{O}\\Big(\\log\\big(\\min(N, M)\\big)\\Big)$$. Multiplying these together, we get a time complexity of $$\\mathcal{O}\\Big(N \\times M \\times \\log \\big(\\min(N, M)\\big)\\Big)$$\r\n    \r\n* Space complexity: $$\\mathcal{O}(M \\times N)$$.\r\n\r\n    The `diagonals` Hash Map has to store each element in the input matrix.\r\n\r\n<br />\r\n\r\n---\r\n\r\n#### Approach 2: Sort Diagonals One by One Using Heap\r\n\r\nTo optimize the space, we could sort diagonals one by one. That would decrease the space complexity from $$\\mathcal{O}(N \\times M)$$ down to $$\\mathcal{O}(\\min(N, M))$$.\r\n\r\n![Demonstrate the process of building heaps one by one for each diagonal and then generating the result.](../Figures/1329/diagonals.png) \r\n*Fig 2. Approach 2: Sort Diagonals One by One Using Heap.*\r\n{:align=\"center\"}\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/9Bf53dNH/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"9Bf53dNH\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$M$$ be the number of rows, and $$N$$ be the number of columns.\r\n\r\n* Time complexity: $$\\mathcal{O}\\Big(N \\times M \\times \\log \\big(\\min(N, M)\\big)\\Big)$$.\r\n\r\n    We perform $$N \\times M$$ operations in two nested loops. At each iteration, we push an element into a heap that contains the current diagonal. The longest diagonal contains $$\\min(N, M)$$ element, and so pushing an element to a heap has a cost of $$\\mathcal{O}\\Big(\\log\\big(\\min(N, M)\\big)\\Big)$$. Multiplying these together, we get a time complexity of $$\\mathcal{O}\\Big(N \\times M \\times \\log \\big(\\min(N, M)\\big)\\Big)$$\r\n    \r\n* Space complexity: $$\\mathcal{O}(\\min(N, M))$$.\r\n\r\n    The space is used by the heap with diagonal elements, and the longest diagonal contains $$\\min(N, M)$$ elements.\r\n\r\n<br />\r\n\r\n---\r\n\r\n#### Approach 3: Sort Diagonals One by One Using Counting Sort\r\n\r\n**Intuition**\r\n\r\nInstead of using a heap, we could put each diagonal into a list and then sort it using built-in sorting functions. This would achieve the same time and space complexity as the previous approach.\r\n\r\nBut can we do better on the time complexity? Yes, we can! Instead of using heaps or built-in sort, we could implement a [counting sort](https://en.wikipedia.org/wiki/Counting_sort). Recall that counting sort runs in $$\\mathcal{O}(A + B)$$ time, where $$A$$ is the number of items to be sorted, and $$B$$ is the difference between the smallest and largest element.\r\n\r\n![Demonstrate the process of applying counting sort for each diagonal and then generating the result.](../Figures/1329/diagonals.png)\r\n*Fig 3. Approach 3: Sort Diagonals One by One Using Sort.*\r\n{:align=\"center\"}\r\n\r\n> **Interview Tip**: A somewhat popular follow-up question for \"sorting\" problems goes something like this. Assume that the maximum value in the data to be sorted is `x`, where `x` is small compared to the *number* of elements to be sorted. Assuming that the number of values to be sorted is $$n$$, can you come up with a solution that runs in $$O(x \\cdot n)$$ time, as opposed to $$O(n \\log n)$$ time?\r\n> \r\n> The solution to this is to use counting sort. It is important to practice implementing counting sort so that you can confidently tackle this common follow-up question.\r\n\r\n<iframe src=\"https://leetcode.com/playground/CEkqZoHn/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"CEkqZoHn\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$M$$ be the number of rows, $$N$$ the number of columns, and $$V$$ the range of values in the matrix.\r\n\r\nThe time complexity is dependent on whether we're treating $$V$$ as a variable or a constant. In the code above, we treated it as a constant; we simply set the minimum and maximum for the range to `min = 0` and `max = 100`, which would give a fixed-size range of `V = 100`. Alternatively, if we'd done `min = min value in diagonal` and `max = max value in diagonal`, then this would make it a variable.\r\n\r\n* Time complexity (Treating $$V$$ as a variable): $$\\mathcal{O}\\big((V \\times M) + (V \\times N) + (M \\times N)\\big)$$.\r\n\r\n    The best way of analyzing the time complexity for this approach is to summarise all of the steps as follows.\r\n\r\n    - Each of the $$M \\times N$$ elements is getting taken out of the matrix *once*.\r\n    - Each of the $$M \\times N$$ elements is getting returned to the matrix *once*.\r\n    - Each of the $$M \\times N$$ elements is getting inserted into an array (direct access) *once*.\r\n    - Each of the $$M \\times N$$ elements is getting removed from an array *once*.\r\n    The total cost for these $$4$$ operations is $$\\mathcal{O}(4 \\times M \\times N) = \\mathcal{O}(M \\times N)$$.\r\n\r\n    We're not quite done though, we also need to consider the cost of creating and traversing the `counts` arrays.\r\n\r\n    - There are a total of $$M + N - 1$$ diagonals, and for each diagonal, an array of length $$V$$ is created.\r\n    - Each of the $$M + N - 1$$ arrays of length $$V$$ are traversed once.\r\n    The total cost for these $$2$$ operations is $$\\mathcal{O}(2 \\times V \\times (M + N - 1))$$. Dropping the constants, we\r\n    get $$\\mathcal{O}\\big(V \\times (M + N)\\big)$$ and expanding the brackets gives $$\\mathcal{O}\\big((V \\times M) + (V \\times N)\\big)$$.\r\n    \r\n    Combining the two parts, we get a final result of $$\\mathcal{O}\\big((V \\times M) + (V \\times N) + (M \\times N)\\big)$$.\r\n\r\n* Time complexity (Treating $$V$$ as a constant): $$\\mathcal{O}(N \\times M)$$.\r\n\r\n    Each of the $$M \\times N$$ values in the matrix is being put into a bucket of a fixed-size array. Putting a value has a cost of $$O(1)$$, as does iterating over the buckets. Therefore, we're only left with the cost of iterating the matrix.\r\n\r\n* Space complexity: $$\\mathcal{O}\\big(\\min(N, M)\\big)$$.\r\n\r\n    We use additional space for the current diagonal we're processing. The maximum possible diagonal size is $$\\min(N, M)$$.\r\n\r\n</br>\r\n\r\n> **Further Thoughts: A slippery slope for arbitrary constants**\r\n>\r\n> The \"constant range\" way of implementing and analyzing counting sort is popular, but not without its issues. If, for example, the range was the size of a 32-bit integer, then the constant would be over 4 billion - and would no doubt lead to a `TLE` if you tried to run it here on LeetCode! Also, it leads to another compelling question: Why is it OK to treat the range as a constant, but not the array length? We could easily write some code that hardcodes the maximum array size, and then simply skips all out-of-bounds indexes. This, technically, would allow us to iterate an array, up to a size big enough to solve the problem, in $$O(1)$$ time. And why stop there? By hardcoding high enough values, we could, in theory, solve every problem on LeetCode in $$O(1)$$ time. This all seems pretty silly, so the moral of the story is: we need to be very careful about hardcoding *any* problem constraints.\r\n>  \r\n> In an interview, you should be careful to explain and justify whether or not you're treating the number range as a constant.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": true,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1032",
+            "count": 67,
+            "average": "4.851",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "sort-the-matrix-diagonally",
+    "playgroundData": {
+        "E2sSLZ8s": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "sort-the-matrix-diagonally-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "9Bf53dNH": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "sort-the-matrix-diagonally-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "CEkqZoHn": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "sort-the-matrix-diagonally-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

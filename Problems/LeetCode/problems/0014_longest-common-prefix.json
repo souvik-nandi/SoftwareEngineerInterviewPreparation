@@ -1,0 +1,310 @@
+{
+    "id": "14",
+    "question": {
+        "questionId": "14",
+        "questionFrontendId": "14",
+        "boundTopicId": null,
+        "title": "Longest Common Prefix",
+        "titleSlug": "longest-common-prefix",
+        "content": "<p>Write a function to find the longest common prefix string amongst an array of strings.</p>\n\n<p>If there is no common prefix, return an empty string <code>&quot;&quot;</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> strs = [&quot;flower&quot;,&quot;flow&quot;,&quot;flight&quot;]\n<strong>Output:</strong> &quot;fl&quot;\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> strs = [&quot;dog&quot;,&quot;racecar&quot;,&quot;car&quot;]\n<strong>Output:</strong> &quot;&quot;\n<strong>Explanation:</strong> There is no common prefix among the input strings.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= strs.length &lt;= 200</code></li>\n\t<li><code>0 &lt;= strs[i].length &lt;= 200</code></li>\n\t<li><code>strs[i]</code> consists of only lowercase English letters.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 9020,
+        "dislikes": 3173,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "[\"flower\",\"flow\",\"flight\"]\n[\"dog\",\"racecar\",\"car\"]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 21}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 16}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 15}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 11}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Quora\", \"slug\": \"quora\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"tcs\", \"slug\": \"tcs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Epam Systems\", \"slug\": \"epam-systems\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Accenture\", \"slug\": \"accenture\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"IBM\", \"slug\": \"ibm\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Intel\", \"slug\": \"intel\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Nutanix\", \"slug\": \"nutanix\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cognizant\", \"slug\": \"cognizant\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"persistent systems\", \"slug\": \"persistent-systems\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 0}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    string longestCommonPrefix(vector<string>& strs) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public String longestCommonPrefix(String[] strs) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def longestCommonPrefix(self, strs):\n        \"\"\"\n        :type strs: List[str]\n        :rtype: str\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def longestCommonPrefix(self, strs: List[str]) -> str:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nchar * longestCommonPrefix(char ** strs, int strsSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public string LongestCommonPrefix(string[] strs) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string[]} strs\n * @return {string}\n */\nvar longestCommonPrefix = function(strs) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String[]} strs\n# @return {String}\ndef longest_common_prefix(strs)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func longestCommonPrefix(_ strs: [String]) -> String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func longestCommonPrefix(strs []string) string {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def longestCommonPrefix(strs: Array[String]): String = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun longestCommonPrefix(strs: Array<String>): String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn longest_common_prefix(strs: Vec<String>) -> String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String[] $strs\n     * @return String\n     */\n    function longestCommonPrefix($strs) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function longestCommonPrefix(strs: string[]): string {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (longest-common-prefix strs)\n  (-> (listof string?) string?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec longest_common_prefix(Strs :: [unicode:unicode_binary()]) -> unicode:unicode_binary().\nlongest_common_prefix(Strs) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec longest_common_prefix(strs :: [String.t]) :: String.t\n  def longest_common_prefix(strs) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"1.7M\", \"totalSubmission\": \"4.3M\", \"totalAcceptedRaw\": 1708153, \"totalSubmissionRaw\": 4271120, \"acRate\": \"40.0%\"}",
+        "hints": [],
+        "solution": {
+            "id": "46",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "ac",
+        "sampleTestCase": "[\"flower\",\"flow\",\"flight\"]",
+        "metaData": "{\r\n  \"name\": \"longestCommonPrefix\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"strs\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "46",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Approach 1: Horizontal scanning\n\n**Intuition**\n\nFor a start we will describe a simple way of finding the longest prefix shared by a set of strings $$LCP(S_1  \\ldots  S_n)$$.\nWe will use the observation that :\n\n$$LCP(S_1 \\ldots S_n) = LCP(LCP(LCP(S_1, S_2),S_3),\\ldots S_n)$$\n\n**Algorithm**\n\n To employ this idea, the algorithm iterates through the strings $$[S_1  \\ldots  S_n]$$, finding at each iteration $$i$$ the longest common prefix of strings $$LCP(S_1  \\ldots  S_i)$$ When $$LCP(S_1  \\ldots  S_i)$$ is an empty string, the algorithm ends. Otherwise after $$n$$ iterations, the algorithm returns $$LCP(S_1  \\ldots  S_n)$$.\n\n ![Finding the longest common prefix](https://leetcode.com/media/original_images/14_basic.png){:width=\"539px\"}\n {:align=\"center\"}\n\n *Figure 1. Finding the longest common prefix (Horizontal scanning)*\n {:align=\"center\"}\n\n <iframe src=\"https://leetcode.com/playground/g6BuFAno/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"g6BuFAno\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(S)$$ , where S is the sum of all characters in all strings.\n\n    In the worst case all $$n$$ strings are the same. The algorithm compares the string $$S1$$ with the other strings $$[S_2 \\ldots S_n]$$ There are $$S$$ character comparisons, where $$S$$ is the sum of all characters in the input array.\n\n* Space complexity : $$O(1)$$. We only used constant extra space.\n<br />\n<br />\n---\n#### Approach 2: Vertical scanning\n\n**Algorithm**\n\nImagine a very short string is the common prefix at the end of the array. The above approach will still do $$S$$ comparisons. One way to optimize this case is to do vertical scanning. We compare characters from top to bottom on the same column (same character index of  the strings) before moving on to the next column.\n\n<iframe src=\"https://leetcode.com/playground/GY95TnTh/shared\" frameBorder=\"0\" width=\"100%\" height=\"242\" name=\"GY95TnTh\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(S)$$ , where S is the sum of all characters in all strings.\nIn the worst case there will be $$n$$ equal strings with length $$m$$ and the algorithm performs  $$S = m \\cdot n$$ character comparisons.\nEven though the worst case is still the same as [Approach 1](#approach-1-horizontal-scanning), in the best case there are at most $$n \\cdot minLen$$ comparisons where $$minLen$$ is the length of the shortest string in the array.\n* Space complexity : $$O(1)$$. We only used constant extra space.\n<br />\n<br />\n---\n#### Approach 3: Divide and conquer\n\n**Intuition**\n\nThe idea of the algorithm comes from the associative property of LCP operation. We notice that :\n$$LCP(S_1 \\ldots S_n) = LCP(LCP(S_1 \\ldots S_k), LCP (S_{k+1} \\ldots S_n))$$\n, where $$LCP(S_1 \\ldots S_n)$$ is the longest common prefix in set of strings $$[S_1 \\ldots S_n]$$ , $$1 < k < n$$\n\n**Algorithm**\n\nTo apply the observation above, we use divide and conquer technique, where we split the $$LCP(S_i \\ldots S_j)$$ problem into two subproblems $$LCP(S_i \\ldots S_{mid})$$   and $$LCP(S_{mid+1} \\ldots S_j)$$, where `mid` is $$\\frac{i + j}{2}$$. We use their solutions `lcpLeft` and `lcpRight` to construct the solution of the main problem $$LCP(S_i \\ldots S_j)$$. To accomplish this we compare one by one the characters of `lcpLeft` and `lcpRight` till there is no character match. The found common prefix of `lcpLeft` and `lcpRight` is the solution of the  $$LCP(S_i \\ldots S_j)$$.\n\n![Finding the longest common prefix](https://leetcode.com/media/original_images/14_lcp_diviso_et_lmpera.png){:width=\"539px\"}\n{:align=\"center\"}\n\n*Figure 2. Finding the longest common prefix of strings using divide and conquer technique*\n{:align=\"center\"}\n\n<iframe src=\"https://leetcode.com/playground/Fh93dSMz/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"Fh93dSMz\"></iframe>\n\n**Complexity Analysis**\n\nIn the worst case we have $$n$$ equal strings with length $$m$$\n\n* Time complexity : $$O(S)$$, where $$S$$ is the number of all characters in the array, $$S = m \\cdot n$$\n Time complexity is $$2 \\cdot T\\left ( \\frac{n}{2} \\right ) + O(m)$$. Therefore time complexity is $$O(S)$$.\n  In the best case this algorithm performs  $$O(minLen \\cdot n)$$ comparisons, where  $$minLen$$ is the shortest string of the array\n\n* Space complexity : $$O(m \\cdot \\log n)$$\n\n    There is a memory overhead since we store recursive calls in the execution stack. There are $$\\log n$$ recursive calls, each store need $$m$$ space to store the result,  so space complexity is $$O(m \\cdot \\log n)$$\n\n<br />\n\n---\n#### Approach 4: Binary search\n\nThe idea is to apply binary search method to find the string with maximum value `L`, which is common prefix of all of the strings. The algorithm searches space is the interval $$(0 \\ldots minLen)$$, where `minLen` is minimum string length and the maximum possible common prefix. Each time search space is divided in two equal parts, one of them is discarded, because it is sure that it doesn't contain the solution. There are two possible cases:\n* `S[1...mid]` is not a common string. This means that for each `j > i S[1..j]` is not a common string and we discard the second half of the  search space.\n* `S[1...mid]` is common string. This means that for for each `i < j S[1..i]` is a common string and we discard the first half of the search space, because we try to find longer common prefix.\n\n![Finding the longest common prefix](https://leetcode.com/media/original_images/14_lcp_binary_search.png){:width=\"539px\"}\n{:align=\"center\"}\n\n*Figure 3. Finding the longest common prefix of strings using binary search technique*\n{:align=\"center\"}\n\n<iframe src=\"https://leetcode.com/playground/aax2Uusd/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"aax2Uusd\"></iframe>\n\n**Complexity Analysis**\n\nIn the worst case we have $$n$$ equal strings with length $$m$$\n\n* Time complexity : $$O(S \\cdot \\log m)$$, where $$S$$ is the sum of all characters in all strings.\n\n    The algorithm makes $$\\log m$$ iterations, for each of them there are $$S = m \\cdot n$$ comparisons, which gives in total $$O(S \\cdot \\log m)$$ time complexity.\n\n* Space complexity : $$O(1)$$. We only used constant extra space.\n<br />\n<br />\n---\n#### Further Thoughts / Follow up\n\nLet's take a look at a slightly different problem:\n\n> Given a set of keys S = $$[S_1,S_2 \\ldots S_n]$$, find the longest common prefix among a string `q` and S. This LCP query will be called frequently.\n\nWe could optimize LCP queries by storing the set of keys S in a Trie. For more information about Trie, please see this article [Implement a trie (Prefix trie)](https://leetcode.com/articles/implement-trie-prefix-tree/). In a Trie, each node descending from the root represents a common prefix of some keys. But we need to find the longest common prefix of a string `q` and all key strings. This means that we have to find the deepest path from the root, which satisfies the following conditions:\n* it is prefix of query string `q`\n* each node along the path must contain only one child element. Otherwise the found path will not be a common prefix among all strings.\n* the path doesn't comprise of nodes which are marked as end of key. Otherwise the path couldn't be a prefix a of key which is shorter than itself.\n\n**Algorithm**\n\nThe only question left, is how to find the deepest path in the Trie, that fulfills the requirements above. The most effective way is to build a trie from $$[S_1 \\ldots   S_n]$$ strings. Then find the prefix of query string `q` in the Trie. We traverse the Trie from the root, till it is impossible to continue the path in the Trie because one of the conditions above is not satisfied.\n\n![Finding the longest common prefix using Trie](https://leetcode.com/media/original_images/14_lcp_trie.png){:width=\"539px\"}\n{:align=\"center\"}\n\n*Figure 4. Finding the longest common prefix of strings using Trie*\n{:align=\"center\"}\n\n\n<iframe src=\"https://leetcode.com/playground/Cdjd2ZPt/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Cdjd2ZPt\"></iframe>\n\n**Complexity Analysis**\n\nIn the worst case query $$q$$ has length $$m$$ and it is equal to all $$n$$ strings of the array.\n\n* Time complexity : preprocessing $$O(S)$$, where $$S$$ is the number of all characters in the array, LCP query $$O(m)$$.\n\n    Trie build has $$O(S)$$ time complexity. To find the common prefix of $$q$$ in the Trie takes in the worst case $$O(m)$$.\n\n* Space complexity : $$O(S)$$. We only used additional  $$S$$ extra space for the Trie.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "44",
+            "count": 600,
+            "average": "4.375",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "longest-common-prefix",
+    "playgroundData": {
+        "g6BuFAno": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "longest-common-prefix-4",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "GY95TnTh": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "longest-common-prefix-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Fh93dSMz": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "longest-common-prefix-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "aax2Uusd": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "longest-common-prefix-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Cdjd2ZPt": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "longest-common-prefix-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

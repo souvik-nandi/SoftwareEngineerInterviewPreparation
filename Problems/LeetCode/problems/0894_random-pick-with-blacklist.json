@@ -1,0 +1,284 @@
+{
+    "id": "894",
+    "question": {
+        "questionId": "894",
+        "questionFrontendId": "710",
+        "boundTopicId": null,
+        "title": "Random Pick with Blacklist",
+        "titleSlug": "random-pick-with-blacklist",
+        "content": "<p>You are given an integer <code>n</code> and an array of <strong>unique</strong> integers <code>blacklist</code>. Design an algorithm to pick a random integer in the range <code>[0, n - 1]</code> that is <strong>not</strong> in <code>blacklist</code>. Any integer that is in the mentioned range and not in <code>blacklist</code> should be <strong>equally likely</strong> to be returned.</p>\n\n<p>Optimize your algorithm such that it minimizes the number of calls to the <strong>built-in</strong> random function of your language.</p>\n\n<p>Implement the <code>Solution</code> class:</p>\n\n<ul>\n\t<li><code>Solution(int n, int[] blacklist)</code> Initializes the object with the integer <code>n</code> and the blacklisted integers <code>blacklist</code>.</li>\n\t<li><code>int pick()</code> Returns a random integer in the range <code>[0, n - 1]</code> and not in <code>blacklist</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;Solution&quot;, &quot;pick&quot;, &quot;pick&quot;, &quot;pick&quot;, &quot;pick&quot;, &quot;pick&quot;, &quot;pick&quot;, &quot;pick&quot;]\n[[7, [2, 3, 5]], [], [], [], [], [], [], []]\n<strong>Output</strong>\n[null, 0, 4, 1, 6, 1, 0, 4]\n\n<strong>Explanation</strong>\nSolution solution = new Solution(7, [2, 3, 5]);\nsolution.pick(); // return 0, any integer from [0,1,4,6] should be ok. Note that for every call of pick,\n                 // 0, 1, 4, and 6 must be equally likely to be returned (i.e., with probability 1/4).\nsolution.pick(); // return 4\nsolution.pick(); // return 1\nsolution.pick(); // return 6\nsolution.pick(); // return 1\nsolution.pick(); // return 0\nsolution.pick(); // return 4\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>9</sup></code></li>\n\t<li><code>0 &lt;= blacklist.length &lt;= min(10<sup>5</sup>, n - 1)</code></li>\n\t<li><code>0 &lt;= blacklist[i] &lt; n</code></li>\n\t<li>All the values of <code>blacklist</code> are <strong>unique</strong>.</li>\n\t<li>At most <code>2 * 10<sup>4</sup></code> calls will be made to <code>pick</code>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 664,
+        "dislikes": 93,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Random Pick Index\", \"titleSlug\": \"random-pick-index\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Random Pick with Weight\", \"titleSlug\": \"random-pick-with-weight\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find Unique Binary String\", \"titleSlug\": \"find-unique-binary-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[\"Solution\",\"pick\",\"pick\",\"pick\",\"pick\",\"pick\",\"pick\",\"pick\"]\n[[7,[2,3,5]],[],[],[],[],[],[],[]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Math",
+                "slug": "math",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Randomized",
+                "slug": "randomized",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Pinterest\", \"slug\": \"pinterest\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Two Sigma\", \"slug\": \"two-sigma\", \"timesEncountered\": 3}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    Solution(int n, vector<int>& blacklist) {\n        \n    }\n    \n    int pick() {\n        \n    }\n};\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution* obj = new Solution(n, blacklist);\n * int param_1 = obj->pick();\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n\n    public Solution(int n, int[] blacklist) {\n        \n    }\n    \n    public int pick() {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution obj = new Solution(n, blacklist);\n * int param_1 = obj.pick();\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n\n    def __init__(self, n, blacklist):\n        \"\"\"\n        :type n: int\n        :type blacklist: List[int]\n        \"\"\"\n        \n\n    def pick(self):\n        \"\"\"\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your Solution object will be instantiated and called as such:\n# obj = Solution(n, blacklist)\n# param_1 = obj.pick()",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n\n    def __init__(self, n: int, blacklist: List[int]):\n        \n\n    def pick(self) -> int:\n        \n\n\n# Your Solution object will be instantiated and called as such:\n# obj = Solution(n, blacklist)\n# param_1 = obj.pick()",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n\ntypedef struct {\n    \n} Solution;\n\n\nSolution* solutionCreate(int n, int* blacklist, int blacklistSize) {\n    \n}\n\nint solutionPick(Solution* obj) {\n  \n}\n\nvoid solutionFree(Solution* obj) {\n    \n}\n\n/**\n * Your Solution struct will be instantiated and called as such:\n * Solution* obj = solutionCreate(n, blacklist, blacklistSize);\n * int param_1 = solutionPick(obj);\n \n * solutionFree(obj);\n*/",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n\n    public Solution(int n, int[] blacklist) {\n        \n    }\n    \n    public int Pick() {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution obj = new Solution(n, blacklist);\n * int param_1 = obj.Pick();\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} n\n * @param {number[]} blacklist\n */\nvar Solution = function(n, blacklist) {\n    \n};\n\n/**\n * @return {number}\n */\nSolution.prototype.pick = function() {\n    \n};\n\n/** \n * Your Solution object will be instantiated and called as such:\n * var obj = new Solution(n, blacklist)\n * var param_1 = obj.pick()\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "class Solution\n\n=begin\n    :type n: Integer\n    :type blacklist: Integer[]\n=end\n    def initialize(n, blacklist)\n        \n    end\n\n\n=begin\n    :rtype: Integer\n=end\n    def pick()\n        \n    end\n\n\nend\n\n# Your Solution object will be instantiated and called as such:\n# obj = Solution.new(n, blacklist)\n# param_1 = obj.pick()",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "\nclass Solution {\n\n    init(_ n: Int, _ blacklist: [Int]) {\n        \n    }\n    \n    func pick() -> Int {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * let obj = Solution(n, blacklist)\n * let ret_1: Int = obj.pick()\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "type Solution struct {\n    \n}\n\n\nfunc Constructor(n int, blacklist []int) Solution {\n    \n}\n\n\nfunc (this *Solution) Pick() int {\n    \n}\n\n\n/**\n * Your Solution object will be instantiated and called as such:\n * obj := Constructor(n, blacklist);\n * param_1 := obj.Pick();\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "class Solution(_n: Int, _blacklist: Array[Int]) {\n\n    def pick(): Int = {\n        \n    }\n\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * var obj = new Solution(n, blacklist)\n * var param_1 = obj.pick()\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution(n: Int, blacklist: IntArray) {\n\n    fun pick(): Int {\n        \n    }\n\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * var obj = Solution(n, blacklist)\n * var param_1 = obj.pick()\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "struct Solution {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl Solution {\n\n    fn new(n: i32, blacklist: Vec<i32>) -> Self {\n        \n    }\n    \n    fn pick(&self) -> i32 {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * let obj = Solution::new(n, blacklist);\n * let ret_1: i32 = obj.pick();\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n    /**\n     * @param Integer $n\n     * @param Integer[] $blacklist\n     */\n    function __construct($n, $blacklist) {\n        \n    }\n  \n    /**\n     * @return Integer\n     */\n    function pick() {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * $obj = Solution($n, $blacklist);\n * $ret_1 = $obj->pick();\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "class Solution {\n    constructor(n: number, blacklist: number[]) {\n\n    }\n\n    pick(): number {\n\n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * var obj = new Solution(n, blacklist)\n * var param_1 = obj.pick()\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define solution%\n  (class object%\n    (super-new)\n\n    ; n : exact-integer?\n\n    ; blacklist : (listof exact-integer?)\n    (init-field\n      n\n      blacklist)\n    \n    ; pick : -> exact-integer?\n    (define/public (pick)\n\n      )))\n\n;; Your solution% object will be instantiated and called as such:\n;; (define obj (new solution% [n n] [blacklist blacklist]))\n;; (define param_1 (send obj pick))",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec solution_init_(N :: integer(), Blacklist :: [integer()]) -> any().\nsolution_init_(N, Blacklist) ->\n  .\n\n-spec solution_pick() -> integer().\nsolution_pick() ->\n  .\n\n\n%% Your functions will be called as such:\n%% solution_init_(N, Blacklist),\n%% Param_1 = solution_pick(),\n\n%% solution_init_ will be called before every test case, in which you can do some necessary initializations.",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec init_(n :: integer, blacklist :: [integer]) :: any\n  def init_(n, blacklist) do\n\n  end\n\n  @spec pick() :: integer\n  def pick() do\n\n  end\nend\n\n# Your functions will be called as such:\n# Solution.init_(n, blacklist)\n# param_1 = Solution.pick()\n\n# Solution.init_ will be called before every test case, in which you can do some necessary initializations.",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"30.9K\", \"totalSubmission\": \"91.8K\", \"totalAcceptedRaw\": 30851, \"totalSubmissionRaw\": 91783, \"acRate\": \"33.6%\"}",
+        "hints": [],
+        "solution": {
+            "id": "500",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[\"Solution\",\"pick\",\"pick\",\"pick\",\"pick\",\"pick\",\"pick\",\"pick\"]\n[[7,[2,3,5]],[],[],[],[],[],[],[]]",
+        "metaData": "{\n  \"classname\": \"Solution\",\n  \"maxbytesperline\": 200000,\n  \"constructor\": {\n    \"params\": [\n      {\n        \"name\": \"n\",\n        \"type\": \"integer\"\n      },\n      {\n        \"name\": \"blacklist\",\n        \"type\": \"integer[]\"\n      },\n      {\n        \"type\": \"integer\",\n        \"name\": \"blacklistSize\",\n        \"lang\": \"c\",\n        \"value\": \"size_2\"\n      }\n    ]\n  },\n  \"methods\": [\n    {\n      \"name\": \"pick\",\n      \"params\": [],\n      \"return\": {\n        \"type\": \"integer\"\n      }\n    }\n  ],\n  \"systemdesign\": true,\n  \"params\": [\n    {\n      \"name\": \"inputs\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"name\": \"inputs\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<String>\",\n    \"dealloc\": true\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "500",
+        "content": "[TOC]\n\n## Solution\n---\n\n#### Approach 1: Whitelist\n\n**Intuition**\n\nThe problem is trivial if we have a whitelist.\n\n**Algorithm**\n\nCreate a whitelist by initializing a HashSet with all numbers $$[0, N)$$, removing all blacklisted numbers, and then storing the remaining numbers into a list.\n\n<iframe src=\"https://leetcode.com/playground/W2a93NVr/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"W2a93NVr\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$ preprocessing. $$O(1)$$ pick. Preprocessing is too slow to pass the time limit.\n* Space Complexity: $$O(N)$$. <code>MLE</code> (Memory Limit Exceeded) will occur.\n\n<br/>\n\n---\n\n#### Approach 2: Binary Search over Blacklist\n\n**Intuition**\n\nGiven a sorted blacklist, we can quickly find the gap between the blacklist numbers where the k-th largest whitelist number would be located. This makes it easy to compute the k-th largest whitelist number.\n\n**Algorithm**\n\nLets say that we are given a non-empty blacklist $$B$$ and need to figure out what the k-th [zero-based](https://en.wikipedia.org/wiki/Zero-based_numbering) largest whitelist number, hereafter called $$W[k]$$, is.\n\nFirst, sort the blacklist.\n\nThen, use binary search to find the largest blacklist number which is smaller than $$W[k]$$.\n\nInitially, the search space is the entire blacklist, so $$\\text{lo} = 0$$ and $$\\text{hi} = \\text{len}(B)-1$$.\n\nLoop while $$\\text{lo} \\neq \\text{hi}$$:\n\n* \u3000$$\\text{mid} = \\frac{\\text{lo} + \\text{hi} + 1}{2}$$\n* \u3000$$c = B[\\text{mid}]-\\text{mid}$$, the number of whitelist numbers less than $$B[\\text{mid}]$$.\n* If $$c > k$$, then $$B[\\text{mid}]$$ is larger than $$W[k]$$. $$B[\\text{mid}]$$ and larger blacklist numbers are no longer candidates, so $$\\text{hi} = \\text{mid}-1$$.\n* If $$c \\leq k$$, then $$B[\\text{mid}]$$ is smaller than $$W[k]$$. Blacklist numbers smaller than $$B[\\text{mid}]$$ are no longer candidates, so $$\\text{lo} = \\text{mid}$$.\n\nAt termination, the search space will narrow down to one blacklist number. If it is smaller than $$W[k]$$, it is the largest blacklist number smaller than $$W[k]$$. In this case, the equation for $$W[k]$$ is $$k + \\text{lo} + 1$$. If it is larger than $$W[k]$$, no blacklist number is smaller than $$W[k]$$, so $$W[k]$$ is simply $$k$$.\n\nLastly, to get random whitelist number, randomly pick $$k$$ in $$[0, N-\\text{len}(B))$$.\n\n<iframe src=\"https://leetcode.com/playground/SVFB6zKB/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"SVFB6zKB\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(B\\text{log}B)$$ preprocessing. $$O(\\text{log}B)$$ pick.\n* Space Complexity: $$O(B)$$. Or $$O(1)$$ if in-place sort is used and input array is not considered extra space.\n\n<br/>\n\n---\n\n#### Approach 3: Virtual Whitelist\n\n**Intuition**\n\nRe-map all blacklist numbers in $$[0, N-\\text{len}(B))$$ to whitelist numbers such that when we randomly pick a number from $$[0, N-\\text{len}(B))$$, we actually randomly pick amongst all whitelist numbers.\n\nFor example, for $$N = 6$$ and $$B = [0, 2, 3]$$ a remapping could look like this:\n\n<center>\n    <img src=\"../Figures/864/864_Virtual_Whitelist.png\" alt=\"864_Virtual_Whitelist\" style=\"height: 300px;\"/>\n</center>\n\n**Algorithm**\n\nSplit $$B$$ into two blacklists, $$X$$ and $$Y$$, such that $$X$$ contains all blacklist numbers less than $$N-\\text{len}(B)$$ and $$Y$$ contains the rest.\n\nUse $$Y$$ to create $$W$$, a list of all whitelist numbers in $$[N-\\text{len(B)}, N)$$. Approach 1 describes an efficient way to create this whitelist.\n\nDefine a HashMap $$M$$, where $$M[i] = i$$ by default (when there is nothing assigned to $$M[i]$$ yet), but $$M[i]$$ can also be assigned some other value.\n\nNow, iterate through all numbers in $$X$$, assigning $$M[X[i]] = W[i]$$. Note that $$\\text{len}(X) == \\text{len}(W)$$.\n\n\u3000$$M[0] ... M[N-\\text{len}(B)-1]$$ now maps to all whitelist numbers, so we can randomly pick in $$[0, N-\\text{len}(B))$$ to get a random whitelist number.\n\n\n\nThe implementation below optimizes this algorithm in various ways, but the overall idea remains the same.\n\n<iframe src=\"https://leetcode.com/playground/kgWQhkj5/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"kgWQhkj5\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(B)$$ preprocessing. $$O(1)$$ pick.\n* Space Complexity: $$O(B)$$.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "493",
+            "count": 52,
+            "average": "3.365",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "random-pick-with-blacklist",
+    "playgroundData": {
+        "W2a93NVr": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "random-pick-with-blacklist-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "SVFB6zKB": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "random-pick-with-blacklist-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "kgWQhkj5": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "random-pick-with-blacklist-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

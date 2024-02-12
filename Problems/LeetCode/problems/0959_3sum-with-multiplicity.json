@@ -1,0 +1,291 @@
+{
+    "id": "959",
+    "question": {
+        "questionId": "959",
+        "questionFrontendId": "923",
+        "boundTopicId": null,
+        "title": "3Sum With Multiplicity",
+        "titleSlug": "3sum-with-multiplicity",
+        "content": "<p>Given an integer array <code>arr</code>, and an integer <code>target</code>, return the number of tuples <code>i, j, k</code> such that <code>i &lt; j &lt; k</code> and <code>arr[i] + arr[j] + arr[k] == target</code>.</p>\n\n<p>As the answer can be very large, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [1,1,2,2,3,3,4,4,5,5], target = 8\n<strong>Output:</strong> 20\n<strong>Explanation: </strong>\nEnumerating by the values (arr[i], arr[j], arr[k]):\n(1, 2, 5) occurs 8 times;\n(1, 3, 4) occurs 8 times;\n(2, 2, 4) occurs 2 times;\n(2, 3, 3) occurs 2 times.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [1,1,2,2,2,2], target = 5\n<strong>Output:</strong> 12\n<strong>Explanation: </strong>\narr[i] = 1, arr[j] = arr[k] = 2 occurs 12 times:\nWe choose one 1 from [1,1] in 2 ways,\nand two 2s from [2,2,2,2] in 6 ways.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [2,1,3], target = 6\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> (1, 2, 3) occured one time in the array so we return 1.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>3 &lt;= arr.length &lt;= 3000</code></li>\n\t<li><code>0 &lt;= arr[i] &lt;= 100</code></li>\n\t<li><code>0 &lt;= target &lt;= 300</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 2290,
+        "dislikes": 274,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "[1,1,2,2,3,3,4,4,5,5]\n8\n[1,1,2,2,2,2]\n5\n[2,1,3]\n6",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Counting",
+                "slug": "counting",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Quora\", \"slug\": \"quora\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int threeSumMulti(vector<int>& arr, int target) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int threeSumMulti(int[] arr, int target) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def threeSumMulti(self, arr, target):\n        \"\"\"\n        :type arr: List[int]\n        :type target: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def threeSumMulti(self, arr: List[int], target: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint threeSumMulti(int* arr, int arrSize, int target){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int ThreeSumMulti(int[] arr, int target) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} arr\n * @param {number} target\n * @return {number}\n */\nvar threeSumMulti = function(arr, target) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} arr\n# @param {Integer} target\n# @return {Integer}\ndef three_sum_multi(arr, target)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func threeSumMulti(_ arr: [Int], _ target: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func threeSumMulti(arr []int, target int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def threeSumMulti(arr: Array[Int], target: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun threeSumMulti(arr: IntArray, target: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn three_sum_multi(arr: Vec<i32>, target: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @param Integer $target\n     * @return Integer\n     */\n    function threeSumMulti($arr, $target) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function threeSumMulti(arr: number[], target: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (three-sum-multi arr target)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec three_sum_multi(Arr :: [integer()], Target :: integer()) -> integer().\nthree_sum_multi(Arr, Target) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec three_sum_multi(arr :: [integer], target :: integer) :: integer\n  def three_sum_multi(arr, target) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"89.5K\", \"totalSubmission\": \"196.7K\", \"totalAcceptedRaw\": 89477, \"totalSubmissionRaw\": 196708, \"acRate\": \"45.5%\"}",
+        "hints": [],
+        "solution": {
+            "id": "587",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[1,1,2,2,3,3,4,4,5,5]\n8",
+        "metaData": "{\n  \"name\": \"threeSumMulti\",\n  \"params\": [\n    {\n      \"name\": \"arr\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"name\": \"target\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "870",
+            "date": "2022-04-06",
+            "incompleteChallengeCount": 30,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "587",
+        "content": "[TOC]\n\n## Solution\n---\n#### Approach Notes\n\nThe approaches described below assume some familiarity with the two pointer technique that can be used to solve the LeetCode problem \"Two Sum\".\n\nIn the problem, we have a sorted array `A` of unique elements, and want to know how many `i < j` with `A[i] + A[j] == target`.\n\nThe idea that does it in linear time, is that for each `i` in increasing order, the `j`'s that satisfy the equation `A[i] + A[j] == target` are decreasing.\n\n```python\ndef solve(A, target):\n    # Assume A already sorted\n    i, j = 0, len(A) - 1\n    ans = 0\n    while i < j:\n        if A[i] + A[j] < target:\n            i += 1\n        elif A[i] + A[j] > target:\n            j -= 1\n        else:\n            ans += 1\n            i += 1\n            j -= 1\n    return ans\n```\n\nThis is not a complete explanation.  For more on this problem, please review the LeetCode problem \"Two Sum\".\n\n---\n#### Approach 1: Three Pointer\n\n**Intuition and Algorithm**\n\nSort the array.  For each `i`, set `T = target - A[i]`, the remaining target.  We can try using a two-pointer technique to find `A[j] + A[k] == T`.  This approach is the natural continuation of trying to make the two-pointer technique we know from previous problems, work on this problem.\n\nBecause some elements are duplicated, we have to be careful.  In a typical case, the target is say, `8`, and we have a remaining array (`A[i+1:]`) of `[2,2,2,2,3,3,4,4,4,5,5,5,6,6]`.  We can analyze this situation with cases.\n\nWhenever `A[j] + A[k] == T`, we should count the multiplicity of `A[j]` and `A[k]`.  In this example, if `A[j] == 2` and `A[k] == 6`, the multiplicities are `4` and `2`, and the total number of pairs is `4 * 2 = 8`.  We then move to the remaining window `A[j:k+1]` of `[3,3,4,4,4,5,5,5]`.\n\nAs a special case, if `A[j] == A[k]`, then our manner of counting would be incorrect.  If for example the remaining window is `[4,4,4]`, there are only 3 such pairs.  In general, when `A[j] == A[k]`, we have $$\\binom{M}{2} = \\frac{M*(M-1)}{2}$$ pairs `(j,k)` (with `j < k`) that satisfy `A[j] + A[k] == T`, where $$M$$ is the multiplicity of `A[j]` (in this case $$M=3$$).\n\nFor more details, please see the inline comments.\n\n<iframe src=\"https://leetcode.com/playground/EWTFv5RC/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"EWTFv5RC\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n#### Approach 2: Counting with Cases\n\n**Intuition and Algorithm**\n\nLet `count[x]` be the number of times that `x` occurs in `A`.  For every `x+y+z == target`, we can try to count the correct contribution to the answer.  There are a few cases:\n\n* If `x`, `y`, and `z` are all different, then the contribution is `count[x] * count[y] * count[z]`.\n\n* If `x == y != z`, the contribution is $$\\binom{\\text{count[x]}}{2} * \\text{count[z]}$$.\n\n* If `x != y == z`, the contribution is $$\\text{count[x]} * \\binom{\\text{count[y]}}{2}$$.\n\n* If `x == y == z`, the contribution is $$\\binom{\\text{count[x]}}{3}$$.\n\n(*Here, $$\\binom{n}{k}$$ denotes the binomial coefficient $$\\frac{n!}{(n-k)!k!}$$.*)\n\nEach case is commented in the implementations below.\n\n<iframe src=\"https://leetcode.com/playground/QMn7ASUe/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"QMn7ASUe\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N + W^2)$$, where $$N$$ is the length of `A`, and $$W$$ is the maximum possible value of `A[i]`.  (Note that this solution can be adapted to be $$O(N^2)$$ even in the case that $$W$$ is very large.)\n\n* Space Complexity:  $$O(W)$$.\n<br />\n<br />\n\n\n---\n#### Approach 3: Adapt from Three Sum\n\n**Intuition and Algorithm**\n\nAs in *Approach 2*, let `count[x]` be the number of times that `x` occurs in `A`.  Also, let `keys` be a sorted list of unique values of `A`.  We will try to adapt a 3Sum algorithm to work on `keys`, but add the correct answer contributions.\n\nFor example, if `A = [1,1,2,2,3,3,4,4,5,5]` and `target = 8`, then `keys = [1,2,3,4,5]`.  When doing 3Sum on `keys` (with `i <= j <= k`), we will encounter some tuples that sum to the target, like `(x,y,z) = (1,2,5), (1,3,4), (2,2,4), (2,3,3)`.  We can then use `count` to calculate how many such tuples there are in each case.\n\nThis approach assumes familiarity with *3Sum*.  For more, please visit the associated LeetCode problem here [https://leetcode.com/problems/3sum](https://leetcode.com/problems/3sum).\n\n<iframe src=\"https://leetcode.com/playground/vJkoVsKq/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"vJkoVsKq\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "573",
+            "count": 70,
+            "average": "4.357",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "3sum-with-multiplicity",
+    "playgroundData": {
+        "EWTFv5RC": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "3sum-with-multiplicity-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "QMn7ASUe": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "3sum-with-multiplicity-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "vJkoVsKq": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "3sum-with-multiplicity-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

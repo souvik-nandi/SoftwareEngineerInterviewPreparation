@@ -1,0 +1,100 @@
+{
+    "id": "613",
+    "question": {
+        "questionId": "613",
+        "questionFrontendId": "613",
+        "boundTopicId": null,
+        "title": "Shortest Distance in a Line",
+        "titleSlug": "shortest-distance-in-a-line",
+        "content": "<p>Table: <code>Point</code></p>\n\n<pre>\n+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| x           | int  |\n+-------------+------+\nx is the primary key column for this table.\nEach row of this table indicates the position of a point on the X-axis.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to report the shortest distance between any two points from the <code>Point</code> table.</p>\n\n<p>The query result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nPoint table:\n+----+\n| x  |\n+----+\n| -1 |\n| 0  |\n| 2  |\n+----+\n<strong>Output:</strong> \n+----------+\n| shortest |\n+----------+\n| 1        |\n+----------+\n<strong>Explanation:</strong> The shortest distance is between points -1 and 0 which is |(-1) - 0| = 1.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> How could you optimize your query if the <code>Point</code> table is ordered <strong>in ascending order</strong>?</p>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Easy",
+        "likes": 259,
+        "dislikes": 36,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "{\"headers\":{\"Point\":[\"x\"]},\"rows\":{\"Point\":[[-1],[0],[2]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "# Write your MySQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "/* Write your T-SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "/* Write your PL/SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"53.7K\", \"totalSubmission\": \"66K\", \"totalAcceptedRaw\": 53699, \"totalSubmissionRaw\": 66026, \"acRate\": \"81.3%\"}",
+        "hints": [],
+        "solution": {
+            "id": "179",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "{\"headers\":{\"Point\":[\"x\"]},\"rows\":{\"Point\":[[-1],[0],[2]]}}",
+        "metaData": "{\n  \"mysql\": [\n    \"Create Table If Not Exists Point (x int not null)\"\n  ],\n  \"mssql\": [\n    \"Create Table Point (x int not null)\"\n  ],\n  \"oraclesql\": [\n    \"Create Table Point (x int not null)\"\n  ],\n  \"database\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create Table If Not Exists Point (x int not null)",
+            "Truncate table Point",
+            "insert into Point (x) values ('-1')",
+            "insert into Point (x) values ('0')",
+            "insert into Point (x) values ('2')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "179",
+        "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using `ABS()` and `MIN()` functions [Accepted]\n\n**Intuition**\n\nCalculate the distances between each two points first, and then display the minimum one.\n\n**Algorithm**\n\nTo get the distances of each two points, we need to join this table with itself and use `ABS()` function since the distance is nonnegative.\nOne trick here is to add the condition in the join to avoid calculating the distance between a point with itself.\n\n```sql\nSELECT\n    p1.x, p2.x, ABS(p1.x - p2.x) AS distance\nFROM\n    point p1\n        JOIN\n    point p2 ON p1.x != p2.x\n;\n```\n>Note: The columns p1.x, p2.x are only for demonstrating purpose, so they are not actually needed in the end.\n\nTaking the sample data for example, the output would be as below.\n```\n| x  | x  | distance |\n|----|----|----------|\n| 0  | -1 | 1        |\n| 2  | -1 | 3        |\n| -1 | 0  | 1        |\n| 2  | 0  | 2        |\n| -1 | 2  | 3        |\n| 0  | 2  | 2        |\n```\n\nAt last, use `MIN()` to select the smallest value in the *distance* column.\n\n**MySQL**\n\n```sql\nSELECT\n    MIN(ABS(p1.x - p2.x)) AS shortest\nFROM\n    point p1\n        JOIN\n    point p2 ON p1.x != p2.x\n;\n```",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "175",
+            "count": 20,
+            "average": "4.700",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "shortest-distance-in-a-line",
+    "playgroundData": {}
+}

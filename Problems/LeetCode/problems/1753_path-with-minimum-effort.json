@@ -1,0 +1,345 @@
+{
+    "id": "1753",
+    "question": {
+        "questionId": "1753",
+        "questionFrontendId": "1631",
+        "boundTopicId": null,
+        "title": "Path With Minimum Effort",
+        "titleSlug": "path-with-minimum-effort",
+        "content": "<p>You are a hiker preparing for an upcoming hike. You are given <code>heights</code>, a 2D array of size <code>rows x columns</code>, where <code>heights[row][col]</code> represents the height of cell <code>(row, col)</code>. You are situated in the top-left cell, <code>(0, 0)</code>, and you hope to travel to the bottom-right cell, <code>(rows-1, columns-1)</code> (i.e.,&nbsp;<strong>0-indexed</strong>). You can move <strong>up</strong>, <strong>down</strong>, <strong>left</strong>, or <strong>right</strong>, and you wish to find a route that requires the minimum <strong>effort</strong>.</p>\r\n\r\n<p>A route&#39;s <strong>effort</strong> is the <strong>maximum absolute difference</strong><strong> </strong>in heights between two consecutive cells of the route.</p>\r\n\r\n<p>Return <em>the minimum <strong>effort</strong> required to travel from the top-left cell to the bottom-right cell.</em></p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/04/ex1.png\" style=\"width: 300px; height: 300px;\" /></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> heights = [[1,2,2],[3,8,2],[5,3,5]]\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong> The route of [1,3,5,3,5] has a maximum absolute difference of 2 in consecutive cells.\r\nThis is better than the route of [1,2,2,2,5], where the maximum absolute difference is 3.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/04/ex2.png\" style=\"width: 300px; height: 300px;\" /></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> heights = [[1,2,3],[3,8,4],[5,3,5]]\r\n<strong>Output:</strong> 1\r\n<strong>Explanation:</strong> The route of [1,2,3,4,5] has a maximum absolute difference of 1 in consecutive cells, which is better than route [1,3,5,3,5].\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/04/ex3.png\" style=\"width: 300px; height: 300px;\" />\r\n<pre>\r\n<strong>Input:</strong> heights = [[1,2,1,1,1],[1,2,1,2,1],[1,2,1,2,1],[1,2,1,2,1],[1,1,1,2,1]]\r\n<strong>Output:</strong> 0\r\n<strong>Explanation:</strong> This route does not require any effort.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>rows == heights.length</code></li>\r\n\t<li><code>columns == heights[i].length</code></li>\r\n\t<li><code>1 &lt;= rows, columns &lt;= 100</code></li>\r\n\t<li><code>1 &lt;= heights[i][j] &lt;= 10<sup>6</sup></code></li>\r\n</ul>",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 3301,
+        "dislikes": 136,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Swim in Rising Water\", \"titleSlug\": \"swim-in-rising-water\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Path With Maximum Minimum Value\", \"titleSlug\": \"path-with-maximum-minimum-value\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[[1,2,2],[3,8,2],[5,3,5]]\n[[1,2,3],[3,8,4],[5,3,5]]\n[[1,2,1,1,1],[1,2,1,2,1],[1,2,1,2,1],[1,2,1,2,1],[1,1,1,2,1]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Union Find",
+                "slug": "union-find",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Heap (Priority Queue)",
+                "slug": "heap-priority-queue",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 11}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Houzz\", \"slug\": \"houzz\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"MindTickle\", \"slug\": \"mindtickle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Swiggy\", \"slug\": \"swiggy\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\r\npublic:\r\n    int minimumEffortPath(vector<vector<int>>& heights) {\r\n        \r\n    }\r\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\r\n    public int minimumEffortPath(int[][] heights) {\r\n        \r\n    }\r\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\r\n    def minimumEffortPath(self, heights):\r\n        \"\"\"\r\n        :type heights: List[List[int]]\r\n        :rtype: int\r\n        \"\"\"",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\r\n    def minimumEffortPath(self, heights: List[List[int]]) -> int:",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "int minimumEffortPath(int** heights, int heightsSize, int* heightsColSize){\r\n\r\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\r\n    public int MinimumEffortPath(int[][] heights) {\r\n        \r\n    }\r\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\r\n * @param {number[][]} heights\r\n * @return {number}\r\n */\r\nvar minimumEffortPath = function(heights) {\r\n    \r\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[][]} heights\r\n# @return {Integer}\r\ndef minimum_effort_path(heights)\r\n    \r\nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\r\n    func minimumEffortPath(_ heights: [[Int]]) -> Int {\r\n        \r\n    }\r\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func minimumEffortPath(heights [][]int) int {\r\n    \r\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\r\n    def minimumEffortPath(heights: Array[Array[Int]]): Int = {\r\n        \r\n    }\r\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\r\n    fun minimumEffortPath(heights: Array<IntArray>): Int {\r\n        \r\n    }\r\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\r\n    pub fn minimum_effort_path(heights: Vec<Vec<i32>>) -> i32 {\r\n        \r\n    }\r\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\r\n\r\n    /**\r\n     * @param Integer[][] $heights\r\n     * @return Integer\r\n     */\r\n    function minimumEffortPath($heights) {\r\n        \r\n    }\r\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function minimumEffortPath(heights: number[][]): number {\r\n\r\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (minimum-effort-path heights)\r\n  (-> (listof (listof exact-integer?)) exact-integer?)\r\n\r\n  )",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"115.8K\", \"totalSubmission\": \"209.7K\", \"totalAcceptedRaw\": 115762, \"totalSubmissionRaw\": 209659, \"acRate\": \"55.2%\"}",
+        "hints": [
+            "Consider the grid as a graph, where adjacent cells have an edge with cost of the difference between the cells.",
+            "If you are given threshold k, check if it is possible to go from (0, 0) to (n-1, m-1) using only edges of \u2264 k cost.",
+            "Binary search the k value."
+        ],
+        "solution": {
+            "id": "1036",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[[1,2,2],[3,8,2],[5,3,5]]",
+        "metaData": "{\n  \"name\": \"minimumEffortPath\",\n  \"params\": [\n    {\n      \"name\": \"heights\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "892",
+            "date": "2022-04-28",
+            "incompleteChallengeCount": 30,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1036",
+        "content": "[TOC]\n\n## Solution\n---\n\n#### Overview ####\n\nThe problem is that given a 2D matrix $$\\text{heights}$$ of size $$\\text{row} \\cdot \\text{col}$$ representing the height of each cell, we have travel from top right corner `(0, 0)` to bottom right corner `(row-1, col-1)` of the matrix and find a path with minimum effort. The effort to move from one cell to another is the absolute difference in the heights of those cells.\n\nThe following example illustrates the effort required to travel from cell `A` to all the neighboring cells `B`,`C`, `D`, and `F`.  The first matrix represents the heights of each cell and the second represents the absolute difference from cell `A` to all the adjacent cells. The path with minimum effort is from cell `A` to cell `E`.\n\n![img](../Figures/5548/minEffortOverview.png)\n\nLet's understand the different approaches to implement the solution in detail.\n\n---\n\n#### Approach 1: Brute Force using Backtracking\n\n**Intuition**\n\nThe brute force approach would be to traverse all the possible paths from the source cell to the destination cell and track the path with minimum efforts. To try all possible paths, the first thing that comes in our mind is [Backtracking](https://leetcode.com/explore/learn/card/recursion-ii/472/backtracking/2654/). Backtracking incrementally builds the candidates for a solution using depth first search and discards the candidates (backtrack) if it doesn't satisfy the condition.\n\nThe backtracking algorithms consists of the following steps,\n\n- _Choose_: Choose the potential candidate. For any given cell A, we must choose the adjacent cells in all 4 directions (up, down, left, right) as a potential candidate.\n- _Constraint_: Define a constraint that must be satisfied by the chosen candidate. In this case, a chosen cell is valid if it is within the boundaries of the matrix and it is not visited before.\n- _Goal_: We must define the goal that determines if we have found the required solution and we must backtrack. Here, our goal is achieved once we have reached the destination cell. On reaching the destination cell, we must track the maximum absolute difference in that path and backtrack.\n\n> To make the algorithm more efficient, once we find any path from source to destination, we track the maximum absolute difference of all adjacent cells in that path in a variable $$\\text{maxSoFar}$$. With this, we can avoid going into other paths in the future where effort is greater than or equal to $$\\text{maxSoFar}$$.\n>\n>In other words, if we have already found a path to reach the destination cell with $$\\text{maxSoFar}$$, then, we would only explore other paths if it takes efforts less than $$\\text{maxSoFar}$$.\n\n**Algorithm**\n\nWe must begin the Depth First Search traversal from source cell `(x = 0 and y = 0)`. Using the intuition discussed above, we must explore all the potential paths using the following steps,\n\n- For a given cell `(x, y)`, explore the adjacent cells in all the 4 directions defined by `directions` and choose the one with minimum effort.\n- The `maxDifference` keeps track of the maximum absolute difference seen so far in the current path. On every move to the adjacent cell, we must update the `maxDifference` if it is lesser than the `currentDifference` (The absolute difference between current cell`(x, y)` and adjacent cell`(adjacentX, adjacentY)`).\n-  We must backtrack from the depth first search traversal once we reach the destination cell `(row-1)` and `(col-1)` and return the maximum absolute difference of the current path.\n\nThus, for each cell, we recursively calculate the effort required to reach the destination cell from all the adjacent cells and find the minimum effort.\n\n**Note**\n\nIt must be noted that we mark the current cell as visited by setting the height of the current cell `(x,y)` as 0. We must update the height back to the previous value once we backtrack from the current path. This is necessary because the cell must be visited again for other paths.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/ExWd5JJL/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ExWd5JJL\"></iframe>\n\n**Complexity Analysis**\n\nLet $$m$$ be the number of rows and $$n$$ be the number of columns in the matrix $$\\text{heights}$$.\n- Time Complexity : $$\\mathcal{O}(3^{m \\cdot n})$$. The total number of cells in the matrix is given by $$m \\cdot n$$. For the backtracking, there are at most 4 possible directions to explore, but further, the choices are reduced to 3 (since we won't go back to where we come from). Thus, considering 3 possibilities for every cell in the matrix the time complexity would be $$\\mathcal{O}(3^{m \\cdot n})$$.\n\nThe time complexity is exponential, hence this approach is exhaustive and results in _Time Limit Exceeded (TLE)_.\n\n- Space Complexity: $$\\mathcal{O}(m \\cdot n)$$ This space will be used to store the recursion stack. As we recursively move to the adjacent cells, in the worst case there could be $$m \\cdot n$$ cells in the recursive call stack.\n\n---\n\n#### Approach 2: Variations of Dijkstra's Algorithm\n\n**Intuition**\n\nThe previous approach is exhaustive as it traverses all the paths. If we observe, the problem is similar to finding the shortest path from a source cell to a destination cell. Here, the shortest path is the one with **minimum absolute difference** between every adjacent cells in that path. Also, since there is height associated with each cell, simple BFS traversal won't be sufficient.\n\nThe _absolute difference_ between adjacent cells `A` and `B` can be perceived as the weight of an edge from cell `A` to cell `B`. Thus, we could use [Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) which is used to find the shortest path in a weighted graph with a slight modification of criteria for the shortest path.\n\nLet's look at the algorithm in detail.\n\n\n**Algorithm**\n\n-  We use a `differenceMatrix` of size $$\\text{row} \\cdot \\text{col}$$ where each cell represents the minimum effort required to reach that cell from all the possible paths.\nAlso, initialize we all the cells in the `differenceMatrix` to infinity $$\\text{(MAX\\_INT)}$$ since none of the cells are reachable initially.\n\n- As we start visiting each cell, all the adjacent cells are now reachable. We update the _absolute difference_ between the current cell and adjacent cells in the `differenceMatrix`. At the same time, we also push all the adjacent cells in a priority queue. The priority queue holds all the reachable cells sorted by its value in `differenceMatrix`, i.e the cell with  _minimum absolute difference_ with its adjacent cells would be at the top of the queue.\n- We begin by adding the source cell `(x=0, y=0)` in the queue. Now, until we have visited the destination cell or the queue is not empty, we visit each cell in the queue sorted in the order of priority. The less is the difference value(absolute difference with adjacent cell) of a cell, the higher is its priority.\n\n     - Get the cell from the top of the queue `curr` and visit the current cell.\n\n     - For each of the 4 cells adjacent to the current cell, calculate the `maxDifference` which is the _maximum absolute difference_  to reach the adjacent cell `(adjacentX, adjacentY)` from current cell `(curr.x, curr.y)`.\n\n      - If the current value of the adjacent cell `(adjacentX, adjacentY)` in the difference matrix is greater than the `maxDifference`, we must update that value with `maxDifference`. In other words, we have found that the path from the current cell to the adjacent cell takes lesser efforts than the other paths that have reached the adjacent cell so far. Also, we must add this updated difference value in the queue.\n\n>Ideally, for updating the priority queue, we must delete the old value and reinsert with the new `maxDifference` value. But, as we know that the updated maximum value is always lesser than the old value and would be popped from the queue and visited before the old value, we could save time and avoid removing the old value from the queue.\n\n- At the end, the value at `differenceMatrix[row - 1][col - 1]` is the minimum effort required to reach the destination cell `(row-1,col-1)`.\n\n!?!../Documents/5548_LIS.json:1714,782!?!\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/8ew93Csq/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"8ew93Csq\"></iframe>\n\n**Complexity Analysis**\n\n- Time Complexity : $$\\mathcal{O}(m \\cdot n \\log (m \\cdot n))$$, where $$m$$ is the number of rows and $$n$$ is the number of columns in matrix $$\\text{heights}$$.\nIt will take $$\\mathcal{O}(m \\cdot n)$$ time to visit every cell in the matrix. The priority queue will contain at most $$m \\cdot n$$ cells, so it will take $$\\mathcal{O}(\\log (m \\cdot n))$$ time to re-sort the queue after every adjacent cell is added to the queue.\nThis given as total time complexiy as $$\\mathcal{O}(m \\cdot n \\log(m \\cdot n))$$.\n\n- Space Complexity: $$\\mathcal{O}(m \\cdot n)$$, where $$m$$ is the number of rows and $$n$$ is the number of columns in matrix $$\\text{heights}$$.\nThe maximum queue size is equal to the total number of cells in the matrix $$\\text{height}$$ which is given by $$m \\cdot n$$. Also, we use a difference matrix of size $$m \\cdot n$$. This gives as time complexity as $$\\mathcal{O}(m \\cdot n + m \\cdot n)$$ = $$\\mathcal{O}(m \\cdot n)$$\n\n---\n\n#### Approach 3: Union Find - Disjoint Set\n\n**Intuition**\n\nUsing [Disjoint Set](https://en.wikipedia.org/wiki/Disjoint-set_data_structure) is another intuitive way to solve the problem. Each cell in the matrix is a single node/component in a graph. The path from the current cell to adjacent cells is an edge connecting the 2 cells. Using this intuition, we could use _Union Find_ algorithm to form a connected component from the source cell to the destination cell.\n\nInitially, every cell is a disconnected component and we aim to form a single connected component that connects the source cell to the destination cell.  Each connected component connects multiple cells and is identified by a parent. We must continue connecting components until the source cell and destination cell shares the same parent.\n\nThe union find algorithm performs 2 operations,\n\n`Find(x)`: Returns the parent of the connected component to which `x` belongs.\n\n`Union(x, y)`: Merges the two disconnected components to which `x` and `y` belongs.\n\nTo efficiently implement the above operations, we could use _Union By Rank_ and _Path Compression_ strategy.\n\n**Algorithm**\n\n- Initially, each cell is a disconnected component, so we initialize each cell as a parent of itself. Also we flatten a 2D matrix into a 1D matrix of size `row * col` and each cell `(currentRow, currentCol)` in a 2D matrix can be stored at `(currentRow * col + currentCol)` in a 1D matrix.\nThe below figure illustrates this idea.\n\n![img](../Figures/5548/flatten2DMatrix2.png)\n\n\n- We also build an `edgeList` which consists of the _absolute difference_ between every adjacent cell in the matrix. We also sort the edge list in non-decreasing order of difference. The below example illustrates the edge list of given heights matrix `[[1,2,2],[3,8,2],[5,3,5]]` sorted by difference.\n\n![img](../Figures/5548/unionFindEdgeList.png)\n\n- Start iterating over the sorted edge list and connect each edge to form a connected component using Union Find Algorithm.\n\n- After every union, check if the source cell `(0)` and destination cell `(row * col - 1)` are connected. If yes, the absolute difference between the current edge is our result.\nSince we access the edges in increasing order of difference, and the current edge connected the source and destination cell, we are sure that the current difference is the maximum absolute difference in our path with minimum efforts.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/Re5oV7Vy/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Re5oV7Vy\"></iframe>\n\n**Complexity Analysis**\n\nLet $$m$$ be the number of rows and $$n$$ be the number of columns of the matrix $$\\text{height}$$.\n- Time Complexity : $$\\mathcal{O}(m\\cdot n(\\log(m\\cdot n)))$$. We iterate each edge in the matrix. From the above example, it is evident that for a matrix of size $$3 \\cdot3$$, the total number of edges are $$12$$.  Thus, for a $$m \\cdot n$$ matrix,  the total number of edges could be given by $$(m\\cdot n \\cdot 2)-(m+n)$$ `(3*3*2) - (3+3))`, which is roughly equivalent to $$m \\cdot n$$.\n\nFor every edge, we `find` the parent of each cell and perform the `union` (Union Find). For $$n$$ elements, the time complexity of Union Find is $$\\log n$$. (Refer [Proof Of Time Complexity Of Union Find](https://en.wikipedia.org/wiki/Proof_of_O(log*n)_time_complexity_of_union%E2%80%93find)). Thus for $$m \\cdot n$$ cells, the time taken to perform Union Find would be $$\\log m \\cdot n$$.  This gives us total time complexity as, $$\\mathcal{O}(m\\cdot n(\\log(m\\cdot n)))$$.\n- Space Complexity : $$\\mathcal{O}(m \\cdot n)$$ , we use arrays `edgeList`, `parent`, and `rank` of size $$m \\cdot n$$.\n\n---\n\n#### Approach 4: Binary Search Using BFS\n\n**Intuition**\n\nOur aim to find the minimum effort required to travel from source cell to destination cell. We know from the given constraints that the maximum height could be $$10^6 (1000000)$$. So we know that our required absolute difference values would between $$0$$ and  $$10^6$$. We could use [Binary Search](https://leetcode.com/explore/learn/card/binary-search/) and reduce our search space by half.\n\nGiven the lower bound as $$0$$ and upper bound as $$10^6$$, we could repeatedly calculate the middle value. Let this middle value be `mid`. We could divide our search space based on the following condition,\n\n- If there exists a path from the source cell to the destination cell with the effort less than the value `mid`, we know that the required minimum effort value lies between lower bound $$0$$ and `mid`.\n- Similarly, if there doesn't exist any path from a source cell to destination cell with the effort less than the value `mid`, we know that the required minimum effort value lies between `mid` and upper bound $$10^6$$ .\n\nTo find if there exists a path from the source cell to the destination cell for a given `mid` value, we could use simple graph traversal. In this approach, we use [Breadth First Search](https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/1376/) traversal.\n\n**Algorithm**\n\n- Intialize the lower bound `left` as $$0$$ and upper bound `right` as $$10^6$$. Calculate the middle value  `mid ` of  the `left` and `right` value.\n\n- Using Breadth First Search, check if there exists a path from source cell `(x=0, y=0)` to destination cell `(x=row-1, y=column-1)` with effort less than or equal to `mid` using method `canReachDestination` which returns a boolean value.\n- If there exists a path from the source cell to the destination cell, we must update the result value as a minimum of the current result and `mid` and continue the search in the range between `left` and `mid-1`. For this, we must update the value of `right` to `mid-1`. \n\n  Otherwise, we must search in the range between `mid+1` and `right` and update `left` to `mid+1`.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/VvdJUBRU/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"VvdJUBRU\"></iframe>\n\n**Complexity Analysis**\n\nLet $$m$$ be the number of rows and $$n$$ be the number of columns for the matrix $$\\text{height}$$.\n- Time Complexity : $$\\mathcal{O}(m \\cdot n)$$. We do a binary search to calculate the `mid` values and then do Breadth First Search on the matrix for each of those values.\n\n_Binary Search_:To perform Binary search on numbers in range $$(0.. 10^{6})$$, the time taken would be $$\\mathcal{O}(\\log 10^{6})$$.\n\n_Breadth First Search_: The time complexity for the Breadth First Search for vertices V and edges E is $$\\mathcal{O}(V+E)$$  ([See our Explore Card on BFS](https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/1376/))\nThus, in the matrix of size $$m \\cdot n$$, with $$m \\cdot n$$ vertices and $$m \\cdot n$$ edges (Refer time complexity of _Approach 3_), the time complexity to perform Breadth First Search would be $$\\mathcal{O}(m \\cdot n + m \\cdot n)$$ = $$\\mathcal{O}(m \\cdot n)$$.\n\nThis gives us total time complexity as $$\\mathcal{O}(\\log10^{6}\\cdot(m \\cdot n))$$ which is equivalent to $$\\mathcal{O}(m \\cdot n)$$.\n- Space Complexity: $$\\mathcal{O}(m \\cdot n)$$, as we use a queue and visited array of size $$m \\cdot n$$\n\n---\n\n#### Approach 5: Binary Search Using DFS\n\n**Intuition and Algorithm**\n\nThe solution is similar to _Approach 4_. Except that, here, we use a Depth First Search traversal to find if there exists a path from the source cell to destination cell for a given value middle value `mid`.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/kGevNCuS/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"kGevNCuS\"></iframe>\n\n**Complexity Analysis**\n\n- Time Complexity : $$\\mathcal{O}(m \\cdot n)$$. As in _Approach 4_. The only difference is that we are using Depth First Search instead of Breadth First Search and have similar time complexity.\n\n- Space Complexity: $$\\mathcal{O}(m \\cdot n)$$, As in _Approach 4_. In Depth First Search, we use the internal call stack (instead of the queue in Breadth First Search).",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "991",
+            "count": 114,
+            "average": "4.825",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "path-with-minimum-effort",
+    "playgroundData": {
+        "ExWd5JJL": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "path-with-minimum-effort-4",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "8ew93Csq": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "path-with-minimum-effort-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Re5oV7Vy": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "path-with-minimum-effort-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "VvdJUBRU": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "path-with-minimum-effort-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "kGevNCuS": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "path-with-minimum-effort-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,220 @@
+{
+    "id": "325",
+    "question": {
+        "questionId": "325",
+        "questionFrontendId": "325",
+        "boundTopicId": null,
+        "title": "Maximum Size Subarray Sum Equals k",
+        "titleSlug": "maximum-size-subarray-sum-equals-k",
+        "content": "<p>Given an integer array <code>nums</code> and an integer <code>k</code>, return <em>the maximum length of a subarray that sums to</em> <code>k</code>. If there is not one, return <code>0</code> instead.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,-1,5,-2,3], k = 3\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> The subarray [1, -1, 5, -2] sums to 3 and is the longest.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [-2,-1,2,1], k = 1\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The subarray [-1, 2] sums to 1 and is the longest.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 2 * 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\n\t<li><code>-10<sup>9</sup>&nbsp;&lt;= k &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Medium",
+        "likes": 1738,
+        "dislikes": 48,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Minimum Size Subarray Sum\", \"titleSlug\": \"minimum-size-subarray-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Range Sum Query - Immutable\", \"titleSlug\": \"range-sum-query-immutable\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Contiguous Array\", \"titleSlug\": \"contiguous-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Subarray Product Less Than K\", \"titleSlug\": \"subarray-product-less-than-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[1,-1,5,-2,3]\n3\n[-2,-1,2,1]\n1",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Palantir Technologies\", \"slug\": \"palantir-technologies\", \"timesEncountered\": 0}], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int maxSubArrayLen(vector<int>& nums, int k) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int maxSubArrayLen(int[] nums, int k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def maxSubArrayLen(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def maxSubArrayLen(self, nums: List[int], k: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint maxSubArrayLen(int* nums, int numsSize, int k){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int MaxSubArrayLen(int[] nums, int k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maxSubArrayLen = function(nums, k) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Integer}\ndef max_sub_array_len(nums, k)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func maxSubArrayLen(_ nums: [Int], _ k: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func maxSubArrayLen(nums []int, k int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def maxSubArrayLen(nums: Array[Int], k: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun maxSubArrayLen(nums: IntArray, k: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn max_sub_array_len(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Integer\n     */\n    function maxSubArrayLen($nums, $k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function maxSubArrayLen(nums: number[], k: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (max-sub-array-len nums k)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec max_sub_array_len(Nums :: [integer()], K :: integer()) -> integer().\nmax_sub_array_len(Nums, K) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec max_sub_array_len(nums :: [integer], k :: integer) :: integer\n  def max_sub_array_len(nums, k) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"160.2K\", \"totalSubmission\": \"325.2K\", \"totalAcceptedRaw\": 160243, \"totalSubmissionRaw\": 325158, \"acRate\": \"49.3%\"}",
+        "hints": [
+            "Compute the prefix sum array where psum[i] is the sum of all the elements from <i>0</i> to <i>i</i>.",
+            "At each index <i>i</i>, the sum of the prefix is psum[i], so we are searching for the index x where psum[x] = psum[i] - k.\r\nThe subarray [x + 1, i] will be of sum k.",
+            "Use a hashmap to get the index x efficiently or to determine that it does not exist."
+        ],
+        "solution": {
+            "id": "1164",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[1,-1,5,-2,3]\n3",
+        "metaData": "{\r\n  \"name\": \"maxSubArrayLen\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1164",
+        "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach: Prefix Sum + Hash Map\n\n**Intuition**\n\nHow many possible subarrays are there in an array of size `n`? There is 1 subarray with length `n`, 2 subarrays with length `n - 1`, 3 subarrays with length `n - 2` and so on. This means there are $$n + (n - 1) + (n - 2) + ... + 2 + 1 = \\frac{n(n + 1)}{2}$$ possible subarrays. This question has bounds of $$n <= 2 * 10^5$$, which means naively checking every possible subarray could mean looking at over 20 billion subarrays. This is far too slow and we need a better solution.\n\nFortunately, we don't care about the vast majority of the subarrays - only the ones that have a sum equal to `k`, so we can do much better than the naive solution. The fact that a subarray needs to be contiguous helps us a lot - it allows us to make use of an idea called **prefix sum**. For those who are unfamiliar with the term prefix sum, a prefix sum is simply the running total of an array. For example, for `nums = [1, 2, 2, 3]`, the prefix sum would be `prefix = [1, 3, 5, 8]`. For an index `i`, `prefix[i]` is the sum of all numbers in `nums` up to and including the number at index `i`.\n\nLet's take a step back - if the question was instead asking \"does a subarray with sum `k` exist,\" how would we detect a subarray having sum `k`? In a prefix sum, differences between elements represent subarray sums. For example, if you had `prefix` representing the prefix sum for an array `nums`, then `prefix[10] - prefix[2]` would be equal to the sum of the subarray in `nums` from index `3` to index `10`. This is because `prefix[10] = nums[0] + nums[1] + nums[2] + ... + nums[10]` and `prefix[2] = nums[0] + nums[1] + nums[2]`. As you can see, all of `prefix[2]` is contained within `prefix[10]`, and subtracting it leaves `nums[3] + ... + nums[10]`.\n\n!?!../Documents/325_1.json:960,540!?!\n\n<br>\n\nTherefore, if there is a subarray with sum `k` in `nums`, then there is a pair of numbers in `prefix` whose difference is `k`. This rephrased problem may seem familiar to you; it's basically a variation of [Two Sum](https://leetcode.com/problems/two-sum/). In Two Sum, we must find two different numbers in an array that equal a target value when added.  We can accomplish this in one pass by storing previously seen numbers in a hash table and, for each number, check if its complement has already been seen. We can adopt a similar technique to solve this problem - store the previously seen prefix sums in a hash map for quick ($$O(1)$$) checking, and check if a specific value exists in the hash map as we iterate along `prefix`. In this case, as we iterate from left to right along `prefix`, if `prefix[i] - k` has already been seen, then we found a pair of indices for a subarray with sum `k`.\n\nNow that we've established how to detect subarrays with sum k, we need to deal with the other part of the original problem - finding the length of the longest subarray with sum k. As mentioned before, we use a hash map to check for existing numbers quickly. Similar to Two Sum, we can store indices as values in this hash map. Therefore, when we find a pair, we can use the stored index and the current index to find the length of the subarray formed by the index pair.\n\nWe don't actually have a prefix array, nor do we need it - one was just being used to describe examples above. Instead, we can use an integer variable to keep track of the prefix sum, and at each number, store the prefix sum up to that number (inclusive) in a hash map along with the current index. If we run into a duplicate (which is possible because of negative numbers), we should not update the index in the hash map because we want the longest subarray, so we want to keep the index as far to the left as possible. For example, if we had the input `nums = [1, -1, 1, 3]` and `k = 4`, then the longest subarray would be the entire array. The prefix sum at each step would be `[1, 0, 1, 4]`. As you can see, we always want to pick the leftmost index to maximize length. Therefore, when we get to the third element and see that `1` already exists in the hash map, we should not replace the value with the current index.\n\nOne more thing: we need to consider the case when the prefix sum is equal to `k`. We can either specifically check when the prefix sum is equal to `k` or we can initialize our hash map with a key of `0` corresponding to a value of `-1`. If you had, for example, `nums = [1, 2]` and `k = 1`, then the longest subarray is, of course, `1`. However, at the first element, our prefix sum is `1`, which means we would need to find a `0` in our hash map to make a pair. Without checking for this case, our algorithm will think that no subarray exists with a sum of `1`.\n\n**Algorithm**\n\n1. Initialize three variables: \n   - An integer `prefixSum` that keeps track of the prefix sum of `nums` as `0`.\n   - An integer `longestSubarray` that will keep track of the longest subarray with sum `k` as 0.\n   - A hash map `indices` that has keys of prefix sums seen so far and values of the first index that each key was seen.\n\n2. Iterate through `nums`. At each index `i`, add `nums[i]` to `prefixSum`. Then, make the following checks:\n    - If `prefixSum == k`, that means the sum of the array up to this index is equal to `k`. Update `longestSubarray = i + 1` (because `i` is 0-indexed)\n    - If `prefixSum - k` exists in `indices`, that means there is a subarray with sum `k` ending at the current `i`. The length will be `i - indices[prefixSum - k]`. If this length is greater than `longestSubarray`, update `longestSubarray`.\n    - If the current `prefixSum` does not yet exist in `indices`, then set `indices[prefixSum] = i`. Only do this if it does not already exist because we only want the earliest instance of this presum.\n\n3. Return `longestSubarray`.\n\n!?!../Documents/325_2.json:960,540!?!\n\n<br>\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/Xwh7JT5L/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Xwh7JT5L\"></iframe>\n\n\n**Complexity Analysis**\n\nGiven $$N$$ as the length of `nums`,\n\n* Time complexity: $$O(N)$$\n\n    We only make one pass through `nums`, each time doing a constant amount of work. All hash map operations are $$O(1)$$.\n\n* Space complexity: $$O(N)$$\n\n    Our hash map can potentially hold as many key-value pairs as there are numbers in `nums`. An example of this is when there are no negative numbers in the array.\n    \n<br/>\n\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1169",
+            "count": 30,
+            "average": "4.633",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "maximum-size-subarray-sum-equals-k",
+    "playgroundData": {
+        "Xwh7JT5L": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-size-subarray-sum-equals-k-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

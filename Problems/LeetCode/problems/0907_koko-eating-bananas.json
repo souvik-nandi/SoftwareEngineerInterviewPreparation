@@ -1,0 +1,248 @@
+{
+    "id": "907",
+    "question": {
+        "questionId": "907",
+        "questionFrontendId": "875",
+        "boundTopicId": null,
+        "title": "Koko Eating Bananas",
+        "titleSlug": "koko-eating-bananas",
+        "content": "<p>Koko loves to eat bananas. There are <code>n</code> piles of bananas, the <code>i<sup>th</sup></code> pile has <code>piles[i]</code> bananas. The guards have gone and will come back in <code>h</code> hours.</p>\n\n<p>Koko can decide her bananas-per-hour eating speed of <code>k</code>. Each hour, she chooses some pile of bananas and eats <code>k</code> bananas from that pile. If the pile has less than <code>k</code> bananas, she eats all of them instead and will not eat any more bananas during this hour.</p>\n\n<p>Koko likes to eat slowly but still wants to finish eating all the bananas before the guards return.</p>\n\n<p>Return <em>the minimum integer</em> <code>k</code> <em>such that she can eat all the bananas within</em> <code>h</code> <em>hours</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> piles = [3,6,7,11], h = 8\n<strong>Output:</strong> 4\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> piles = [30,11,23,4,20], h = 5\n<strong>Output:</strong> 30\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> piles = [30,11,23,4,20], h = 6\n<strong>Output:</strong> 23\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= piles.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>piles.length &lt;= h &lt;= 10<sup>9</sup></code></li>\n\t<li><code>1 &lt;= piles[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 4557,
+        "dislikes": 201,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Minimize Max Distance to Gas Station\", \"titleSlug\": \"minimize-max-distance-to-gas-station\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Maximum Candies Allocated to K Children\", \"titleSlug\": \"maximum-candies-allocated-to-k-children\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimized Maximum of Products Distributed to Any Store\", \"titleSlug\": \"minimized-maximum-of-products-distributed-to-any-store\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[3,6,7,11]\n8\n[30,11,23,4,20]\n5\n[30,11,23,4,20]\n6",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 10}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"DoorDash\", \"slug\": \"doordash\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int minEatingSpeed(vector<int>& piles, int h) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int minEatingSpeed(int[] piles, int h) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def minEatingSpeed(self, piles, h):\n        \"\"\"\n        :type piles: List[int]\n        :type h: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def minEatingSpeed(self, piles: List[int], h: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint minEatingSpeed(int* piles, int pilesSize, int h){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int MinEatingSpeed(int[] piles, int h) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} piles\n * @param {number} h\n * @return {number}\n */\nvar minEatingSpeed = function(piles, h) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} piles\n# @param {Integer} h\n# @return {Integer}\ndef min_eating_speed(piles, h)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func minEatingSpeed(_ piles: [Int], _ h: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func minEatingSpeed(piles []int, h int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def minEatingSpeed(piles: Array[Int], h: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun minEatingSpeed(piles: IntArray, h: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn min_eating_speed(piles: Vec<i32>, h: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $piles\n     * @param Integer $h\n     * @return Integer\n     */\n    function minEatingSpeed($piles, $h) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function minEatingSpeed(piles: number[], h: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (min-eating-speed piles h)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec min_eating_speed(Piles :: [integer()], H :: integer()) -> integer().\nmin_eating_speed(Piles, H) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec min_eating_speed(piles :: [integer], h :: integer) :: integer\n  def min_eating_speed(piles, h) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"197.8K\", \"totalSubmission\": \"367.7K\", \"totalAcceptedRaw\": 197772, \"totalSubmissionRaw\": 367659, \"acRate\": \"53.8%\"}",
+        "hints": [],
+        "solution": {
+            "id": "1292",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "ac",
+        "sampleTestCase": "[3,6,7,11]\n8",
+        "metaData": "{\n  \"name\": \"minEatingSpeed\",\n  \"params\": [\n    {\n      \"name\": \"piles\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"name\": \"h\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "780",
+            "date": "2022-01-20",
+            "incompleteChallengeCount": 25,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1292",
+        "content": "[TOC]\n\n## Solution\n\n--- \n#### Overview\n\nIn the problem, Koko is given n piles of bananas, represented by an integer array of length n. She eats bananas at a constant speed, for example, $$x$$ bananas per hour. The time taken to eat a pile of $$y$$ bananas is $$y/x$$ after rounding up to the closest integer. For example, if she eats $$3$$ bananas per hour, it takes her $$2$$ hours to eat a pile of $$4$$ bananas.\n\n\nThe first constraint of the problem is that Koko has to eat all the piles within $$h$$ hours, where $$h$$ is no less than the number of piles. We can imagine that with a fast speed, Koko spends $$1$$ hour on each pile, therefore, she can always finish all the piles within $$h$$ hours. Let's call this kind of speed **workable speed**. Likewise, let any eating speed at which Koko can't eat all the piles be **unworkable speed**.\n\n\nHowever, we have another constraint that Koko would like to eat as slow as possible, therefore, among all the workable eating speeds, we need to find out the minimum one.\n\n\n\n---\n\n#### Approach 1: Brute Force\n\n**Intuition**   \n\n\n> How do we calculate the overall time for Koko to eat all the piles?\n\nLet's refer to two examples below:\n\n!?!../Documents/875/walkthrough_1.json:601,301!?!\n\n> Does the order by which Koko eats affect the overall time?\n\nThe answer is no. The order does not matter because Koko will stop eating for the rest of the hour, even if there are no more bananas left in the current pile. Therefore, the time she spends eating a particular pile is given as $$currTime = \\lceil NumberOfBananas / speed \\rceil$$, regardless of the order of this pile in her eating plan $$( \\lceil x \\rceil $$ denotes $$ \\text{ceil(x)} )$$. Thus, we can conclude that as long as the eating speed is the same, the order of the piles by which Koko eats does not affect the total hours, so we can keep the array as it is for convenience.\n\n The brute force approach is to try every possible eating speed to find the smallest workable speed. Starting from $$speed = 1$$ and incrementing it by 1 each time, we will find a speed at which Koko can eat all piles within $$h$$ hours, that is, the first minimum speed.\n\n\n![limits](../Figures/875/875-sol_1.png)\n\n\n<br>\n\n**Algorithm**\n\n1) Start at $$speed = 1$$.\n2) Given the current speed, calculate how many hours Koko needs to eat all of the piles.\n    - If Koko cannot finish all piles within $$h$$ hours, increment $$speed$$ by 1, that is $$speed = speed + 1$$ and start over step 2.\n    - If Koko can finish all piles within $$h$$ hours, go to step 3.\n3) Return the $$speed$$ as the answer. \n\n**Implementation**\n\n> Note: The following implementation is included because it is an intuitive first approach and it helps lay the foundation needed to understand the following optimized approach. However, it is a brute force approach and is not expected to pass all test cases.\n\n<iframe src=\"https://leetcode.com/playground/6cCnRaZk/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"6cCnRaZk\"></iframe>\n\n\n**Complexity Analysis**\n\nLet $$n$$ be the length of input array $$piles$$ and $$m$$ be the upper bound of elements in $$piles$$.\n\n* Time complexity: $$O(nm)$$\n\n    - For each eating speed $$speed$$, we iterate over $$piles$$ and calculate the overall time, which takes $$O(n)$$ time. \n    - Before finding the first workable eating speed, we must try every smaller eating speed. Suppose in the worst-case scenario (when the answer is $$m$$), we have to try every eating speed from $$1$$ to $$m$$, that is a total of $$m$$ iterations over the array.\n    - To sum up, the overall time complexity is $$O(nm)$$\n    \n\n* Space complexity: $$O(1)$$\n\n    - For each eating speed $$speed$$, we iterate over the array and calculate the total hours Koko spends, which costs constant space. \n    - Therefore, the overall space complexity is $$O(1)$$.\n\n\n<br/>\n\n\n---\n\n#### Approach 2: Binary Search\n\n**Intuition**   \n\nIn the previous approach, we tried every smaller eating speed, before finding the first workable speed. We shall look for a more efficient way to locate the minimum workable eating speed.\n\nRecall how we calculated the total time for Koko to finish eating all the piles in approach 1. We can observe two laws:\n\n1. If Koko can eat all the piles with a speed of $$n$$, she can also finish the task with the speed of $$n + 1$$. \nWith a larger eating speed, Koko will spend less or equal time on every pile. Thus, the overall time is guaranteed to be less than or equal to that of the speed $$n$$.\n2. If Koko can't finish with a speed of $$n$$, then she can't finish with the speed of $$n - 1$$ either.\nWith a smaller eating speed, Koko will spend more or equal time on every pile, thus the overall time will be greater than or equal to that of the speed $$n$$.\n\n![limits](../Figures/875/875-ana.png)\n\nGiven the previous laws, the distribution will be:\n\n![limits](../Figures/875/875-ana_2.png)\n\nIf the current speed is workable, the minimum workable speed should be on its left inclusively. If the current speed is not workable, that is, too slow to finish the eating task, then the minimum workable speed should be on its right exclusively.\n\n\nTherefore, we can use binary search to locate the boundary that separates workable speeds and unworkable speeds, to get the minimum workable speed.\n\n\nFirst, let's set a reasonable upper and lower bound for binary search (to ensure that we do not miss any workable speed). Let the lower bound be 1, the minimum possible eating speed since there is no speed slower than 1. The upper bound will be the maximum eating speed, that is the maximum number of bananas in a pile. For instance, if the piles are `[3,5,7,9]`, then $$9$$ is the maximum number of bananas in a single pile, we can set the upper boundary as $$9$$. Because Koko can eat every pile within 1 hour with a speed of $$9$$, or any other faster speed,  $$9$$ is thus guaranteed to be a workable value.\n\n\nOnce we set the boundaries, we can then apply the binary search to reduce the search space. In each iteration, we will reduce the remaining search space by half until we have narrowed down the search space to just one element, which is the minimum workable eating speed!\n\n\n<details>\n\n<summary>There are many other interesting problems that can be solved by performing a binary search to find the optimal value. You can practice using the binary search approach on the following problems! (click to show)</summary>\n\n<br>\n\n- [1231. Divide Chocolate](https://leetcode.com/problems/divide-chocolate/)\n- [410. Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/) \n- [774. Minimize Max Distance to Gas Station](https://leetcode.com/problems/minimize-max-distance-to-gas-station/) \n- [1011. Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)\n \n \n\n</details>\n\n<br>\n\n**Algorithm**\n\n1) Initialize the two boundaries of the binary search as $$left = 1$$, $$right = max(piles)$$.\n2) Get the middle value from $$left$$ and $$right$$, that is, $$middle = (left + right) / 2$$, this is Koko's eating speed during this iteration.\n3) Iterate over the piles and check if Koko can eat all the piles within $$h$$ hours given this eating speed of $$middle$$.\n4) If Koko can finish all the piles within $$h$$ hours, set $$right$$ equal to $$middle$$ signifying that all speeds greater than $$middle$$ are workable but less desirable by Koko. Otherwise, set $$left$$ equal to $$middle + 1$$ signifying that all speeds less than or equal to $$middle$$ are not workable.\n5) Repeat the **steps 2, 3, and 4** until the two boundaries overlap, i.e., $$left = right$$, which means that we have found the minimum speed by which Koko could finish eating all the piles within $$h$$ hours. We can return either $$left$$ or $$right$$ as the answer.\u00a0 \n\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/Aqqv6JUh/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Aqqv6JUh\"></iframe>\n\n\n**Complexity Analysis**\n\nLet $$n$$ be the length of the input array $$piles$$ and $$m$$ be the maximum number of bananas in a single pile from $$piles$$.\n\n\n* Time complexity: $$O(n \\cdot \\log m)$$\n\n    - The initial search space is from $$1$$ to $$m$$, it takes $$\\log m$$ comparisons to reduce the search space to 1.\n    - For each eating speed $$middle$$, we traverse the array and calculate the overall time Koko spends, which takes $$O(n)$$ for each traversal.\n    - To sum up, the time complexity is $$O(n \\cdot \\log m)$$.\n    \n\n* Space complexity: $$O(1)$$\n\n    - For each eating speed $$middle$$, we iterate over the array and calculate the total hours Koko spends, which costs constant space. \n    - Therefore, the overall space complexity is $$O(1)$$.\n\n\n<br/>",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1297",
+            "count": 84,
+            "average": "4.905",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "koko-eating-bananas",
+    "playgroundData": {
+        "6cCnRaZk": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "koko-eating-bananas-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Aqqv6JUh": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "koko-eating-bananas-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

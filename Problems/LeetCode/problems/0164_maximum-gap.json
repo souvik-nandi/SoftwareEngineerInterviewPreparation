@@ -1,0 +1,278 @@
+{
+    "id": "164",
+    "question": {
+        "questionId": "164",
+        "questionFrontendId": "164",
+        "boundTopicId": null,
+        "title": "Maximum Gap",
+        "titleSlug": "maximum-gap",
+        "content": "<p>Given an integer array <code>nums</code>, return <em>the maximum difference between two successive elements in its sorted form</em>. If the array contains less than two elements, return <code>0</code>.</p>\n\n<p>You must write an algorithm that runs in linear time and uses linear extra space.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,6,9,1]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> The sorted form of the array is [1,3,6,9], either (3,6) or (6,9) has the maximum difference 3.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [10]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> The array contains less than 2 elements, therefore return 0.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 2255,
+        "dislikes": 299,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Maximum Consecutive Floors Without Special Floors\", \"titleSlug\": \"maximum-consecutive-floors-without-special-floors\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[3,6,9,1]\n[10]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Bucket Sort",
+                "slug": "bucket-sort",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Radix Sort",
+                "slug": "radix-sort",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int maximumGap(vector<int>& nums) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int maximumGap(int[] nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def maximumGap(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def maximumGap(self, nums: List[int]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint maximumGap(int* nums, int numsSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int MaximumGap(int[] nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maximumGap = function(nums) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef maximum_gap(nums)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func maximumGap(_ nums: [Int]) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func maximumGap(nums []int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def maximumGap(nums: Array[Int]): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun maximumGap(nums: IntArray): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn maximum_gap(nums: Vec<i32>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function maximumGap($nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function maximumGap(nums: number[]): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (maximum-gap nums)\n  (-> (listof exact-integer?) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec maximum_gap(Nums :: [integer()]) -> integer().\nmaximum_gap(Nums) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec maximum_gap(nums :: [integer]) :: integer\n  def maximum_gap(nums) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"145.1K\", \"totalSubmission\": \"346.2K\", \"totalAcceptedRaw\": 145060, \"totalSubmissionRaw\": 346161, \"acRate\": \"41.9%\"}",
+        "hints": [],
+        "solution": {
+            "id": "81",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[3,6,9,1]",
+        "metaData": "{\r\n  \"name\": \"maximumGap\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "81",
+        "content": "[TOC]\r\n\r\n## Solution\r\n---\r\n#### Approach 1: Comparison Sorting\r\n\r\n**Intuition**\r\n\r\nDo what the question says.\r\n\r\n**Algorithm**\r\n\r\nSort the entire array. Then iterate over it to find the maximum gap between two successive elements.\r\n\r\n<iframe src=\"https://leetcode.com/playground/tE9iwqVk/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"tE9iwqVk\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity: $$O(n\\log n)$$.\r\n\r\n    Time taken to sort the array is $$O(n\\log n)$$ (average case). Time taken for linear iteration through the array is of $$O(n)$$ complexity. Hence overall time complexity is $$O(n\\log n)$$.\r\n\r\n* Space complexity: No extra space needed, other than the input array (since sorting can usually be done in-place).\r\n<br />\r\n<br />\r\n---\r\n#### Approach 2: Radix Sort\r\n\r\n**Algorithm**\r\n\r\nThis approach is similar to [Approach 1](#approach-1-comparison-sorting), except we use [Radix Sort](https://en.wikipedia.org/wiki/Radix_sort) instead of a traditional comparison sort.\r\n\r\n<iframe src=\"https://leetcode.com/playground/Ta7AXDt5/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Ta7AXDt5\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity: $$O(d \\cdot (n + k)) \\approx O(n)$$.\r\n\r\n    Since a linear iteration over the array (once it is sorted) is of linear (i.e. $$O(n)$$) complexity, the performance of this approach is limited by the performance of Radix sort.\r\n\r\n    Radix sort uses [Counting sort](https://en.wikipedia.org/wiki/Counting_sort) as a subroutine.\r\n\r\n    + Counting sort runs in $$O(n + k)$$ time (where $$k$$ is the radix or base of the digits comprising the $$n$$ elements in the array). If $$k \\leq O(n)$$, Counting sort would run in linear time. In our case, the radix is fixed (i.e. $$k = 10$$). Hence our Counting sort subroutine runs in $$O(n)$$ linear time.\r\n\r\n    + Radix sort works by running $$d$$ passes of the Counting sort subroutine (where the elements are composed of, maximally, $$d$$ digits). Hence effective runtime of Radix sort would be $$O(d \\cdot (n + k))$$. However, in our case an element can, maximally, be the maximum 32-bit signed integer `2,147,483,647`. Hence $$d \\leq 10$$ is a constant.\r\n\r\n    Thus Radix sort has a runtime performance complexity of about $$O(n)$$ for reasonably large input.\r\n\r\n* Space complexity: $$O(n + k) \\approx O(n)$$ extra space.\r\n\r\n    Counting sort requires $$O(k)$$ extra space. Radix sort requires an auxiliary array of the same size as input array. However given that $$k$$ is a small fixed constant, the space required by Counting sort can be ignored for reasonably large input.\r\n\r\n<br />\r\n\r\n---\r\n#### Approach 3: Buckets and The Pigeonhole Principle\r\n\r\n**Intuition**\r\n\r\nSorting an entire array can be costly. At worst, it requires comparing each element with *every* other element.\r\nWhat if we didn't need to compare all pairs of elements? That would be possible if we could somehow divide the elements into representative groups, or rather, *buckets*. Then we would only need to compare these buckets.\r\n\r\n> **Digression: The Pigeonhole Principle**\r\nThe [Pigeonhole Principle](https://en.wikipedia.org/wiki/Pigeonhole_principle) states that if $$n$$ items are put into $$m$$ containers, with $$n > m$$, then at least one container must contain more than one item.\r\n\r\nSuppose for each of the $$n$$ elements in our array, there was a bucket. Then each element would occupy one bucket. Now what if we reduced, the number of buckets? Some buckets would have to accommodate more than one element.\r\n\r\nNow let's talk about the gaps between the elements. Let's take the best case, where all elements of the array are sorted and have a uniform gap between them. This means every adjacent pair of elements differ by the same constant value. So for $$n$$ elements of the array, there are $$n-1$$ gaps, each of width, say, $$t$$. It is trivial to deduce that $$t = (max - min)/(n-1)$$ (where $$max$$ and $$min$$ are the minimum and maximum elements of the array). This width is the maximal width/gap between two adjacent elements in the array; precisely the quantity we are looking for!\r\n\r\nOne can safely argue that this value of $$t$$, is in fact, the smallest value that $$t$$ can ever accomplish of any array with the same number of elements (i.e. $$n$$) and the same range (i.e. $$(max - min)$$). To test this fact, you can start with a uniform width array (as described above) and try to reduce the gap between any two adjacent elements. If you reduce the gap between $$arr[i-1]$$ and $$arr[i]$$ to some value $$t - p$$, then you will notice that the gap between $$arr[i]$$ and $$arr[i+1]$$ would have increased to $$t + p$$. Hence the maximum attainable gap would have become $$t + p$$ from $$t$$. Thus the value of the **maximum gap** $$t$$ can only increase.\r\n\r\n**Buckets!**\r\n\r\nComing back to our problem, we have already established by application of the Pigeonhole Principle, that if we used *buckets* instead of individual elements as our base for comparison, the number of comparisons would reduce if we could accommodate more than one element in a single bucket. That does not immediately solve the problem though. What if we had to compare elements *within* a bucket? We would end up no better.\r\n\r\nSo the current motivation remains: somehow, if we only had to compare among the buckets, and *not* the elements *within* the buckets, we would be good. It would also solve our sorting problem: we would just distribute the elements to the right buckets. Since the buckets can be already ordered, and we only compare among buckets, we wouldn't have to compare all elements to sort them!\r\n\r\nBut if we only had buckets to compare, we would have to *ensure*, that the gap between the buckets itself represent the maximal gap in the input array. How do we go about doing that?\r\n\r\nWe could do that just by setting the buckets to be smaller than $$t = (max - min)/(n-1)$$ (as described above). Since the gaps (between elements) within the same bucket would only be $$\\leq t$$, we could deduce that the maximal gap would *indeed* occur **only between two adjacent buckets**.\r\n\r\nHence by setting bucket size $$b$$ to be $$1 < b \\leq (max - min)/(n-1)$$, we can ensure that at least one of the gaps between adjacent buckets would serve as the **maximal gap.**\r\n\r\n**Clarifications**\r\n\r\nA few clarifications are in order:\r\n\r\n+ **Would the buckets be of uniform size?**\r\nYes. Each of them would be of the same size $$b$$.\r\n\r\n+ **But, then wouldn't the gap between them be uniform/constant as well?**\r\nYes it would be. The gap between them would be $$1$$ integer unit wide. That means a two adjacent buckets of size $$3$$ could hold integers with values, say, $$3 - 6$$ and $$7 - 9$$. We avoid overlapping buckets.\r\n\r\n+ **Then what are you talking about when you say the gap between two adjacent buckets could be the maximal gap?**\r\nWhen we are talking about the size of a bucket, we are talking about its holding capacity. That is the range of values the bucket can represent (or *hold*). However the actual extent of the bucket are determined by the values of the maximum and minimum element a bucket holds. For example a bucket of size $$5$$ could have a capacity to hold values between $$6 - 10$$. However, if it only holds the elements $$7, 8$$ and $$9$$, then its actual extent is only $$(9 - 7) + 1 = 3$$ which is not the same as the capacity of the bucket.\r\n\r\n+ **Then how do you compare adjacent buckets?**\r\nWe do that by comparing their extents. Thus we compare the minimum element of the next bucket to the maximum element of the current bucket. For example: if we have two buckets of size $$5$$ each, holding elements $$[1, 2, 3]$$ and $$[9, 10]$$ respectively, then the gap between the buckets would essentially refer to the value $$9 - 3 = 6$$ (which is larger than the size of either bucket).\r\n\r\n+ **But then aren't we comparing elements again?!**\r\nWe are, yes! But only compare about twice the elements as the number of buckets (i.e. the minimum and maximum elements of each bucket). If you followed the above, you would realize that this amount is certainly less than the actual number of elements in the array, given a suitable bucket size was chosen.\r\n\r\n**Algorithm**\r\n\r\n+ We choose a bucket size $$b$$ such that $$1 < b \\leq (max - min)/(n-1)$$. Let's just choose $$b = \\lfloor (max - min)/(n-1) \\rfloor$$.\r\n\r\n+ Thus all the $$n$$ elements would be divided among $$k = \\lceil (max - min)/b \\rceil$$ buckets.\r\n\r\n+ Hence the $$i^{th}$$ bucket would hold the range of values: $$\\bigg [min + (i-1) * b, \\space min + i*b \\bigg )$$ (`1`-based indexing).\r\n\r\n+ It is trivial to calculate the index of the bucket to which a particular element belongs. That is given by $$\\lfloor (num - min)/b \\rfloor$$ (`0`-based indexing) where $$num$$ is the element in question.\r\n\r\n+ Once all $$n$$ elements have been distributed, we compare $$k-1$$ adjacent bucket pairs to find the maximum gap.\r\n\r\n<iframe src=\"https://leetcode.com/playground/XPXwrKmS/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"XPXwrKmS\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity: $$O(n + b) \\approx O(n)$$.\r\n\r\n    Distributing the elements of the array takes one linear pass (i.e. $$O(n)$$ complexity). Finding the maximum gap among the buckets takes a linear pass over the bucket storage (i.e. $$O(b)$$ complexity). Hence overall process takes linear runtime.\r\n\r\n* Space complexity: $$O(2 \\cdot b) \\approx O(b)$$ extra space.\r\n\r\n    Each bucket stores a maximum and a minimum element. Hence extra space linear to the number of buckets is required.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "78",
+            "count": 99,
+            "average": "4.687",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "maximum-gap",
+    "playgroundData": {
+        "tE9iwqVk": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-gap-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Ta7AXDt5": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-gap-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "XPXwrKmS": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-gap-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

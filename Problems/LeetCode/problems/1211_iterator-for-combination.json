@@ -1,0 +1,331 @@
+{
+    "id": "1211",
+    "question": {
+        "questionId": "1211",
+        "questionFrontendId": "1286",
+        "boundTopicId": null,
+        "title": "Iterator for Combination",
+        "titleSlug": "iterator-for-combination",
+        "content": "<p>Design the <code>CombinationIterator</code> class:</p>\n\n<ul>\n\t<li><code>CombinationIterator(string characters, int combinationLength)</code> Initializes the object with a string <code>characters</code> of <strong>sorted distinct</strong> lowercase English letters and a number <code>combinationLength</code> as arguments.</li>\n\t<li><code>next()</code> Returns the next combination of length <code>combinationLength</code> in <strong>lexicographical order</strong>.</li>\n\t<li><code>hasNext()</code> Returns <code>true</code> if and only if there exists a next combination.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;CombinationIterator&quot;, &quot;next&quot;, &quot;hasNext&quot;, &quot;next&quot;, &quot;hasNext&quot;, &quot;next&quot;, &quot;hasNext&quot;]\n[[&quot;abc&quot;, 2], [], [], [], [], [], []]\n<strong>Output</strong>\n[null, &quot;ab&quot;, true, &quot;ac&quot;, true, &quot;bc&quot;, false]\n\n<strong>Explanation</strong>\nCombinationIterator itr = new CombinationIterator(&quot;abc&quot;, 2);\nitr.next();    // return &quot;ab&quot;\nitr.hasNext(); // return True\nitr.next();    // return &quot;ac&quot;\nitr.hasNext(); // return True\nitr.next();    // return &quot;bc&quot;\nitr.hasNext(); // return False\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= combinationLength &lt;= characters.length &lt;= 15</code></li>\n\t<li>All the characters of <code>characters</code> are <strong>unique</strong>.</li>\n\t<li>At most <code>10<sup>4</sup></code> calls will be made to <code>next</code> and <code>hasNext</code>.</li>\n\t<li>It is guaranteed that all calls of the function <code>next</code> are valid.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 1190,
+        "dislikes": 95,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "[\"CombinationIterator\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\"]\n[[\"abc\",2],[],[],[],[],[],[]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Backtracking",
+                "slug": "backtracking",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Design",
+                "slug": "design",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Iterator",
+                "slug": "iterator",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"1\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class CombinationIterator {\npublic:\n    CombinationIterator(string characters, int combinationLength) {\n        \n    }\n    \n    string next() {\n        \n    }\n    \n    bool hasNext() {\n        \n    }\n};\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * CombinationIterator* obj = new CombinationIterator(characters, combinationLength);\n * string param_1 = obj->next();\n * bool param_2 = obj->hasNext();\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class CombinationIterator {\n\n    public CombinationIterator(String characters, int combinationLength) {\n        \n    }\n    \n    public String next() {\n        \n    }\n    \n    public boolean hasNext() {\n        \n    }\n}\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * CombinationIterator obj = new CombinationIterator(characters, combinationLength);\n * String param_1 = obj.next();\n * boolean param_2 = obj.hasNext();\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class CombinationIterator(object):\n\n    def __init__(self, characters, combinationLength):\n        \"\"\"\n        :type characters: str\n        :type combinationLength: int\n        \"\"\"\n        \n\n    def next(self):\n        \"\"\"\n        :rtype: str\n        \"\"\"\n        \n\n    def hasNext(self):\n        \"\"\"\n        :rtype: bool\n        \"\"\"\n        \n\n\n# Your CombinationIterator object will be instantiated and called as such:\n# obj = CombinationIterator(characters, combinationLength)\n# param_1 = obj.next()\n# param_2 = obj.hasNext()",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class CombinationIterator:\n\n    def __init__(self, characters: str, combinationLength: int):\n        \n\n    def next(self) -> str:\n        \n\n    def hasNext(self) -> bool:\n        \n\n\n# Your CombinationIterator object will be instantiated and called as such:\n# obj = CombinationIterator(characters, combinationLength)\n# param_1 = obj.next()\n# param_2 = obj.hasNext()",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n\ntypedef struct {\n    \n} CombinationIterator;\n\n\nCombinationIterator* combinationIteratorCreate(char * characters, int combinationLength) {\n    \n}\n\nchar * combinationIteratorNext(CombinationIterator* obj) {\n  \n}\n\nbool combinationIteratorHasNext(CombinationIterator* obj) {\n  \n}\n\nvoid combinationIteratorFree(CombinationIterator* obj) {\n    \n}\n\n/**\n * Your CombinationIterator struct will be instantiated and called as such:\n * CombinationIterator* obj = combinationIteratorCreate(characters, combinationLength);\n * char * param_1 = combinationIteratorNext(obj);\n \n * bool param_2 = combinationIteratorHasNext(obj);\n \n * combinationIteratorFree(obj);\n*/",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class CombinationIterator {\n\n    public CombinationIterator(string characters, int combinationLength) {\n        \n    }\n    \n    public string Next() {\n        \n    }\n    \n    public bool HasNext() {\n        \n    }\n}\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * CombinationIterator obj = new CombinationIterator(characters, combinationLength);\n * string param_1 = obj.Next();\n * bool param_2 = obj.HasNext();\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} characters\n * @param {number} combinationLength\n */\nvar CombinationIterator = function(characters, combinationLength) {\n    \n};\n\n/**\n * @return {string}\n */\nCombinationIterator.prototype.next = function() {\n    \n};\n\n/**\n * @return {boolean}\n */\nCombinationIterator.prototype.hasNext = function() {\n    \n};\n\n/** \n * Your CombinationIterator object will be instantiated and called as such:\n * var obj = new CombinationIterator(characters, combinationLength)\n * var param_1 = obj.next()\n * var param_2 = obj.hasNext()\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "class CombinationIterator\n\n=begin\n    :type characters: String\n    :type combination_length: Integer\n=end\n    def initialize(characters, combination_length)\n        \n    end\n\n\n=begin\n    :rtype: String\n=end\n    def next()\n        \n    end\n\n\n=begin\n    :rtype: Boolean\n=end\n    def has_next()\n        \n    end\n\n\nend\n\n# Your CombinationIterator object will be instantiated and called as such:\n# obj = CombinationIterator.new(characters, combination_length)\n# param_1 = obj.next()\n# param_2 = obj.has_next()",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "\nclass CombinationIterator {\n\n    init(_ characters: String, _ combinationLength: Int) {\n        \n    }\n    \n    func next() -> String {\n        \n    }\n    \n    func hasNext() -> Bool {\n        \n    }\n}\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * let obj = CombinationIterator(characters, combinationLength)\n * let ret_1: String = obj.next()\n * let ret_2: Bool = obj.hasNext()\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "type CombinationIterator struct {\n    \n}\n\n\nfunc Constructor(characters string, combinationLength int) CombinationIterator {\n    \n}\n\n\nfunc (this *CombinationIterator) Next() string {\n    \n}\n\n\nfunc (this *CombinationIterator) HasNext() bool {\n    \n}\n\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * obj := Constructor(characters, combinationLength);\n * param_1 := obj.Next();\n * param_2 := obj.HasNext();\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "class CombinationIterator(_characters: String, _combinationLength: Int) {\n\n    def next(): String = {\n        \n    }\n\n    def hasNext(): Boolean = {\n        \n    }\n\n}\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * var obj = new CombinationIterator(characters, combinationLength)\n * var param_1 = obj.next()\n * var param_2 = obj.hasNext()\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class CombinationIterator(characters: String, combinationLength: Int) {\n\n    fun next(): String {\n        \n    }\n\n    fun hasNext(): Boolean {\n        \n    }\n\n}\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * var obj = CombinationIterator(characters, combinationLength)\n * var param_1 = obj.next()\n * var param_2 = obj.hasNext()\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "struct CombinationIterator {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl CombinationIterator {\n\n    fn new(characters: String, combinationLength: i32) -> Self {\n        \n    }\n    \n    fn next(&self) -> String {\n        \n    }\n    \n    fn has_next(&self) -> bool {\n        \n    }\n}\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * let obj = CombinationIterator::new(characters, combinationLength);\n * let ret_1: String = obj.next();\n * let ret_2: bool = obj.has_next();\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class CombinationIterator {\n    /**\n     * @param String $characters\n     * @param Integer $combinationLength\n     */\n    function __construct($characters, $combinationLength) {\n        \n    }\n  \n    /**\n     * @return String\n     */\n    function next() {\n        \n    }\n  \n    /**\n     * @return Boolean\n     */\n    function hasNext() {\n        \n    }\n}\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * $obj = CombinationIterator($characters, $combinationLength);\n * $ret_1 = $obj->next();\n * $ret_2 = $obj->hasNext();\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "class CombinationIterator {\n    constructor(characters: string, combinationLength: number) {\n\n    }\n\n    next(): string {\n\n    }\n\n    hasNext(): boolean {\n\n    }\n}\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * var obj = new CombinationIterator(characters, combinationLength)\n * var param_1 = obj.next()\n * var param_2 = obj.hasNext()\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define combination-iterator%\n  (class object%\n    (super-new)\n\n    ; characters : string?\n\n    ; combination-length : exact-integer?\n    (init-field\n      characters\n      combination-length)\n    \n    ; next : -> string?\n    (define/public (next)\n\n      )\n    ; has-next : -> boolean?\n    (define/public (has-next)\n\n      )))\n\n;; Your combination-iterator% object will be instantiated and called as such:\n;; (define obj (new combination-iterator% [characters characters] [combination-length combination-length]))\n;; (define param_1 (send obj next))\n;; (define param_2 (send obj has-next))",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec combination_iterator_init_(Characters :: unicode:unicode_binary(), CombinationLength :: integer()) -> any().\ncombination_iterator_init_(Characters, CombinationLength) ->\n  .\n\n-spec combination_iterator_next() -> unicode:unicode_binary().\ncombination_iterator_next() ->\n  .\n\n-spec combination_iterator_has_next() -> boolean().\ncombination_iterator_has_next() ->\n  .\n\n\n%% Your functions will be called as such:\n%% combination_iterator_init_(Characters, CombinationLength),\n%% Param_1 = combination_iterator_next(),\n%% Param_2 = combination_iterator_has_next(),\n\n%% combination_iterator_init_ will be called before every test case, in which you can do some necessary initializations.",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule CombinationIterator do\n  @spec init_(characters :: String.t, combination_length :: integer) :: any\n  def init_(characters, combination_length) do\n\n  end\n\n  @spec next() :: String.t\n  def next() do\n\n  end\n\n  @spec has_next() :: boolean\n  def has_next() do\n\n  end\nend\n\n# Your functions will be called as such:\n# CombinationIterator.init_(characters, combination_length)\n# param_1 = CombinationIterator.next()\n# param_2 = CombinationIterator.has_next()\n\n# CombinationIterator.init_ will be called before every test case, in which you can do some necessary initializations.",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"63.9K\", \"totalSubmission\": \"87.1K\", \"totalAcceptedRaw\": 63896, \"totalSubmissionRaw\": 87085, \"acRate\": \"73.4%\"}",
+        "hints": [
+            "Generate all combinations as a preprocessing.",
+            "Use bit masking to generate all the combinations."
+        ],
+        "solution": {
+            "id": "945",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[\"CombinationIterator\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\"]\n[[\"abc\",2],[],[],[],[],[],[]]",
+        "metaData": "{\n  \"classname\": \"CombinationIterator\",\n  \"maxbytesperline\": 200000,\n  \"constructor\": {\n    \"params\": [\n      {\n        \"type\": \"string\",\n        \"name\": \"characters\"\n      },\n      {\n        \"type\": \"integer\",\n        \"name\": \"combinationLength\"\n      }\n    ]\n  },\n  \"methods\": [\n    {\n      \"name\": \"next\",\n      \"params\": [],\n      \"return\": {\n        \"type\": \"string\"\n      }\n    },\n    {\n      \"name\": \"hasNext\",\n      \"params\": [],\n      \"return\": {\n        \"type\": \"boolean\"\n      }\n    }\n  ],\n  \"systemdesign\": true,\n  \"params\": [\n    {\n      \"name\": \"inputs\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"name\": \"inputs\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<String>\",\n    \"dealloc\": true\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "945",
+        "content": "[TOC]\n\n## Solution\n\n---\n\n#### Disclaimer\n\nThis is a review article, and the goal is to propose 5 different\nsolutions and to discuss a possible interview strategy.\nIf you'd like to read a more detailed explanation of each \nsolution, please check the following articles:\n\n[Combinations](https://leetcode.com/articles/combinations/).\n\n[Subsets](https://leetcode.com/articles/subsets/).\n\n#### Precomputation or Next Combination: Why It's Risky to Use Backtracking\n\nThe interpretation of this problem depends on the interviewer. \nThere are three possible scenarios:\n\n- You could be asked to implement $$\\mathcal{O}(1)$$ runtime by precomputing all the combinations. \n\n- Or, you could be asked to save space, to use no precomputation and \nto implement the `nextCombination` function to generate \neach new combination from the previous one during the runtime. \n\n- Or, the interviewer could let you choose one of the problems above\nand then asks you to implement the second one as a follow-up. \n\nThat's why it's a risky strategy [to compute combinations using standard backtacking](https://leetcode.com/articles/combinations/).\nTo precompute all the combinations using backtracking is doable.\n\n<iframe src=\"https://leetcode.com/playground/Z8AgQbvC/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Z8AgQbvC\"></iframe>\n\nAs a follow-up you could be asked to rewrite your algorithm implementing \n`nextCombination` function, and that could be quite stressful during the interview\nif you choose backtracking.\n\n#### Overview: Bitmasking and Algorithm L\n\nIn this article, we're going to consider Bitmasking and Algorithm L. \nThese two approaches could be easily used both for the precomputation, \nand the `nextCombination` function.\n\n![pic](../Figures/1286/overall4.png)\n\n**Bitmasking**\n\nIt's more simple to generate numbers than combinations.\nSo let us generate numbers, and then use their binary representations, bitmasks.\n\nThe idea is that we map each bitmask of length n to a combination.\nEach bit is mapped to a character, the lowest bit to the last character,\nthe highest bit - to the first character.\n\n![pic](../Figures/1286/lowest_bit22.png)\n \nThe character `characters[i]` is present in the combination if \nbit at the `n - 1 - i`*th* position is set.\n\n![pic](../Figures/1286/present22.png)\n\n$$\n(1111)_2 - abcd \\\\\n(0011)_2 - cd \\\\\n(0101)_2 - bd \\\\\n(0110)_2 - bc \\\\\n(1001)_2 - ad \\\\\n(1010)_2 - ac \\\\ \n(1100)_2 - ab\n$$\n\n![pic](../Figures/1286/bitmasks2.png)\n\nIn this article, we're going to keep bitmasking approach as simple as possible, \nhaving $$\\mathcal{O}(2^N \\cdot N)$$ time complexity for the precomputation \ncase. \n\n**Algorithm L by D. E. Knuth**\n\n![pic](../Figures/1286/algorithm_l2.png)\n\nAlgorithm L is an efficient BFS approach to generate lexicographic \n(_i.e._ binary sorted) combinations. \nIt works by generating the combinations of indexes.\n\nThe advantage of this algorithm is that it \"jumps\" from one combination \nto another instead of brute-forcing $$2^N$$ bitmasks.\nIn total, there are $$C^k_N$$ combinations of length $$k$$, \nand hence one needs $$\\mathcal{O}(k C_N^k)$$ time for the precomputation. \n\n> This approach is better than simple bitmasking: $$\\mathcal{O}(k C_N^k)$$ \nvs $$\\mathcal{O}(2^N \\cdot N)$$.  \n\n<br/>\n<br/>\n\n---\n#### Approach 1: Bitmasking: Precomputation\n\n![pic](../Figures/1286/pre_bitmasks2.png)\n\n**Algorithm**\n\n- Generate all possible binary bitmasks of length $$n$$: from $$0$$ to $$2^n - 1$$.\n\n- Use bitmasks with $$k$$ set bits to generate combinations with $$k$$ elements.\nIf the `n - 1 - j`*th* bit set in the bitmask, it indicates the presence of \nthe character `characters[j]` in the combination, and vise versa. \n\n>Bit manipulation trick.\nTo test if the `i`*th* bit is set in the bitmask, check the following:\n`bitmask & (1 << i) != 0`.\nIt shifts the first 1-bit i positions to the left\nand then uses logical AND operation to eliminate all bits from bitmask \nbut `i`*th*. Hence, the result is nonzero only if `i`*th* bit is set in the bitmask.\n\n- Now you have all combinations precomputed. Pop them out one \nby one at each request. \n\n![pic](../Figures/1286/bitmasking2.png)\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/VrKMmP4V/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"VrKMmP4V\"></iframe>\n\n\n**Complexity Analysis**\n\n- Time Complexity: \n    - $$\\mathcal{O}(2^N \\cdot N)$$ to generate $$2^N$$ bitmasks and then count a \n    number of bits set in each bitmask in $$\\mathcal{O}(N)$$ time. \n    \n    - $$\\mathcal{O}(1)$$ runtime, _i.e._ for each `next()` call. \n\n- Space Complexity: $$\\mathcal{O}(k \\cdot C_N^k)$$ to keep $$C_N^k$$ \ncombinations of length $$k$$.\n\n<br/>\n<br/>\n\n---\n#### Approach 2: Bitmasking: Next Combination\n\n![pic](../Figures/1286/bitmasks2.png)\n\nDuring precomputation, we've generated combinations in the _descending_ order.\nThat was done to pop them out later in the _ascending_ order easily.\n\n> For the runtime generation at each `next()` call, the strategy should be changed:\nthe combinations should be generated directly in the _ascending_ order. \n\n**Algorithm**\n\n- Start from the \"highest\" bitmask: \n$$\n1^{(k)}0^{(n - k)} = \\underbrace{1...1}_\\text{k times} \\space \\underbrace{0...0}_\\text{n-k times}\n$$.\n\n- At each step, generate a combination out of the current bitmask.\nIf the `n - 1 - j`*th* bit set in the bitmask, that means the presence of \nthe character `characters[j]` in the combination, and vise versa. \n\n- Generate the next bitmask. Decrease bitmask gradually till you meet\na bitmask with exactly $$k$$ set bits.  \n\n![pic](../Figures/1286/approach222.png)\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/Wt8NCkBE/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Wt8NCkBE\"></iframe>\n\n\n**Complexity Analysis**\n\n- Time Complexity: $$\\mathcal{O}(2^N \\cdot N / C_N^k)$$ in average. \nTo generate $$C_N^k$$ combinations, one has to parse $$2^N$$ bitmasks and to check \na number of bits set in each bitmask, \nthat makes an average computation cost per combination to be equal to \n$$\\mathcal{O}(2^N \\cdot N / C_N^k)$$.\n\n- Space Complexity: $$\\mathcal{O}(k)$$ to keep the current combination of \nlength $$k$$.\n\n<br/>\n<br/>\n\n---\n#### Approach 3: Algorithm L by D. E. Knuth: Lexicographic Combinations: Precomputation\n\nAlgorithm L is an efficient BFS that generates one by one the _combinations \nof indexes_. Here is how it works:\n\n![pic](../Figures/1286/algorithm_l2.png)\n\n$$\n3210 - abcd \\\\\n01 - cd \\\\\n02 - bd \\\\\n12 - bc \\\\\n03 - ad \\\\\n13 - ac \\\\\n23 - ab \\\\\n$$\n\n**Algorithm**\n\nThe algorithm is quite straightforward:\n\n- Initialize `nums` to be a list of integers from $$0$$ to $$k$$. \nAdd $$n$$ as the last element. It serves as a sentinel. \nSet the pointer at the beginning of the list `j = 0`.\n\n- While `j < k`:\n\n    - Convert the first $$k$$ elements (_i.e._ all elements but the sentinel) \n    from `nums` into the combination to save.\n\n    - Find the first number in `nums` such that `nums[j + 1] != nums[j] + 1` \n    and increase it by one `nums[j] += 1` to move to the next combination.\n\n- Now you have all combinations precomputed. Pop them out one \nby one at each request. \n\n<iframe src=\"https://leetcode.com/playground/iWuStyvd/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"iWuStyvd\"></iframe>\n\n\n**Complexity Analysis**\n\n- Time Complexity: $$\\mathcal{O}(k \\times C_N^k)$$ for the precomputation\nand $$\\mathcal{O}(1)$$ during the runtime, i.e. for each `next()` call. \nThe algorithm generates new combination from the previous one in \n$$\\mathcal{O}(k)$$ time, and then uses $$\\mathcal{O}(k)$$ time to save\nit for later usage. In total there are $$C_N^k$$ combinations, that makes\nprecomputation time complexity to be equal to $$\\mathcal{O}(k \\times C_N^k)$$.\nRuntime complexity is $$\\mathcal{O}(1)$$.\n\n- Space Complexity: $$\\mathcal{O}(k \\times C_N^k)$$ to keep $$C_N^k$$ \ncombinations of length $$k$$.\n\n<br/>\n<br/>\n\n---\n#### Approach 4: Algorithm L by D. E. Knuth: Lexicographic Combinations: Next Combination\n\n> For the runtime generation, the strategy should be changed:\nthe combinations will be generated directly in the _ascending_ order.\n\n![pic](../Figures/1286/l_reversed2.png)\n\n**Algorithm**\n\n- Initialize `nums` as a list of integers from $$0$$ to $$k$$. \n\n- At each step:\n\n    - Convert nums into the combination to save.\n    \n    - Generate next combination:\n    \n        - Set the pointer at the end of the list `j = k - 1`.\n    \n        - Find the greatest j, where j < k, such that `nums[j] != n - k + j` \n        and increase `nums[j]` by one `nums[j] += 1`.\n        \n        - Set `nums[i] = nums[j] + i - j` for \n        every `i` in range `(j + 1, k)` to move to the next combination.\n        \n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/G92X4vno/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"G92X4vno\"></iframe>\n\n\n**Complexity Analysis**\n\n- Time Complexity: $$\\mathcal{O}(k)$$ both for `init()` and `next()` functions. \nThe algorithm generates a new combination from the previous one in \n$$\\mathcal{O}(k)$$ time. \n\n- Space Complexity: $$\\mathcal{O}(k)$$ to keep the current combination of \nlength $$k$$.\n\n<br/>\n<br/>",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "890",
+            "count": 35,
+            "average": "4.657",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "iterator-for-combination",
+    "playgroundData": {
+        "Z8AgQbvC": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "iterator-for-combination-4",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "VrKMmP4V": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "iterator-for-combination-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Wt8NCkBE": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "iterator-for-combination-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "iWuStyvd": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "iterator-for-combination-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "G92X4vno": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "iterator-for-combination-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

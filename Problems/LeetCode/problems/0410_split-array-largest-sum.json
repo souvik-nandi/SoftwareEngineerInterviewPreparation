@@ -1,0 +1,285 @@
+{
+    "id": "410",
+    "question": {
+        "questionId": "410",
+        "questionFrontendId": "410",
+        "boundTopicId": null,
+        "title": "Split Array Largest Sum",
+        "titleSlug": "split-array-largest-sum",
+        "content": "<p>Given an array <code>nums</code> which consists of non-negative integers and an integer <code>m</code>, you can split the array into <code>m</code> non-empty continuous subarrays.</p>\n\n<p>Write an algorithm to minimize the largest sum among these <code>m</code> subarrays.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [7,2,5,10,8], m = 2\n<strong>Output:</strong> 18\n<strong>Explanation:</strong>\nThere are four ways to split nums into two subarrays.\nThe best way is to split it into [7,2,5] and [10,8],\nwhere the largest sum among the two subarrays is only 18.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3,4,5], m = 2\n<strong>Output:</strong> 9\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,4,4], m = 3\n<strong>Output:</strong> 4\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 1000</code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 10<sup>6</sup></code></li>\n\t<li><code>1 &lt;= m &lt;= min(50, nums.length)</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 6291,
+        "dislikes": 156,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Capacity To Ship Packages Within D Days\", \"titleSlug\": \"capacity-to-ship-packages-within-d-days\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Divide Chocolate\", \"titleSlug\": \"divide-chocolate\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Fair Distribution of Cookies\", \"titleSlug\": \"fair-distribution-of-cookies\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Subsequence of Size K With the Largest Even Sum\", \"titleSlug\": \"subsequence-of-size-k-with-the-largest-even-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Total Beauty of the Gardens\", \"titleSlug\": \"maximum-total-beauty-of-the-gardens\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Number of Ways to Split Array\", \"titleSlug\": \"number-of-ways-to-split-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[7,2,5,10,8]\n2\n[1,2,3,4,5]\n2\n[1,4,4]\n3",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Greedy",
+                "slug": "greedy",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Directi\", \"slug\": \"directi\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Baidu\", \"slug\": \"baidu\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 3}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int splitArray(vector<int>& nums, int m) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int splitArray(int[] nums, int m) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def splitArray(self, nums, m):\n        \"\"\"\n        :type nums: List[int]\n        :type m: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def splitArray(self, nums: List[int], m: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint splitArray(int* nums, int numsSize, int m){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int SplitArray(int[] nums, int m) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} nums\n * @param {number} m\n * @return {number}\n */\nvar splitArray = function(nums, m) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} nums\n# @param {Integer} m\n# @return {Integer}\ndef split_array(nums, m)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func splitArray(_ nums: [Int], _ m: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func splitArray(nums []int, m int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def splitArray(nums: Array[Int], m: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun splitArray(nums: IntArray, m: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn split_array(nums: Vec<i32>, m: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $m\n     * @return Integer\n     */\n    function splitArray($nums, $m) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function splitArray(nums: number[], m: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (split-array nums m)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec split_array(Nums :: [integer()], M :: integer()) -> integer().\nsplit_array(Nums, M) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec split_array(nums :: [integer], m :: integer) :: integer\n  def split_array(nums, m) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"220.3K\", \"totalSubmission\": \"418.7K\", \"totalAcceptedRaw\": 220283, \"totalSubmissionRaw\": 418676, \"acRate\": \"52.6%\"}",
+        "hints": [],
+        "solution": {
+            "id": "1294",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[7,2,5,10,8]\n2",
+        "metaData": "{\r\n  \"name\": \"splitArray\",\r\n  \"params\": [\r\n\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n          {\r\n       \"name\": \"m\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "859",
+            "date": "2022-03-31",
+            "incompleteChallengeCount": 31,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1294",
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Overview\nWe have an array of $$n$$ non-negative integers which we must split into $$m$$ subarrays. The goal is to split it in such a way that the largest sum of a subarray among these $$m$$ subarrays is minimized.\n\nWhile dividing the array, we can observe that for each integer, there are two options: either add it to the current subarray or start a new subarray with it (as long as the number of subarrays does not exceed $$m$$). The maximum number of possible combinations is $${n - 1} \\choose {m - 1}$$ (because we must split the array at $$m - 1$$ positions to obtain $$m$$ subarrays, and there are $$n - 1$$ positions where the array can be split). The brute force approach is to enumerate every possible combination and select the combination with the smallest maximum sum subarray. However, given the problem constraints, the worst-case scenario will have $${999} \\choose {49}$$ combinations, which is extraordinarily large. So let's try to find a better-optimized approach.\n\nThere are two characteristics of this problem that we should take note of at this time. First, as we iterate over each element, we must decide whether to add the element to the current subarray or to start a new subarray. This decision will depend on the number of subarrays we have already made. In other words, each decision we make is affected by the previous decisions we have made. Second, the problem is asking to **minimize** the largest sum of subarrays. These are two common characteristics of dynamic programming problems, and as such we will first approach this problem using dynamic programming.\n\n> **Note:** If you arrived at this conclusion before reading this article, then you have done well! The clues in the problem description hint that we should consider using dynamic programming to solve this problem. However, what makes this problem especially tricky is that the optimal solution does not use dynamic programming! This speaks to the importance of taking a moment to consider other possible approaches, even after arriving at the first possible solution. Take a moment to try to come up with another viable approach now, and we will discuss the optimal approach last. \n</br>\n\n---\n\n#### Approach 1: Top-Down Dynamic Programming\n\n**Intuition**\n\nLet's start with the first subarray, which can have a range like `[0, i]`. We need to decide the value of index `i`. Once we have decided the value of `i`, we can find the sum for the first subarray `sum[0, i]`. Then the problem simplifies to finding the maximum value out of `sum[0, i]` and the largest sum subarray for the array in the range `[i + 1, n - 1]` with $$m - 1$$ subarrays. This way we are able to divide the problem into smaller subproblems.\n\nHow do we find the optimal value of `i`? Let's try with every possible value of `i`. We can try every possible first subarray and then recursively solve the problem for the remaining array. Let's define our recurrence relation `F[currIndex, subarrayCount]` to be the minimum largest subarray sum for the array `[currIndex, n - 1]` with `subarrayCount` subarrays, we can write it in the following way:\n\n`F[currIndex, subarrayCount] = min( max(sum[currIndex, i], F[i + 1, subarrayCount - 1]) )`, For all `i` in range `[currIndex, n - subarrayCount]`\n\nNote that the function `F` shown here, represents `getMinimumLargestSplitSum` in the code provided below.\n\nLet's break down the expression `max(sum[currIndex, i], F[i + 1, subarrayCount - 1])` so that we understand it better. \n- `F[i + 1, subarrayCount - 1]` represents the smallest possible largest sum subarray in the range `[i + 1, n - 1]` with  ` subarrayCount - 1` subarrays. \n- `sum[currIndex, i]` represents the sum of the current subarray spanning the range of `[currIndex, i]`. \n- We take the `max` of these two values, the expression as a whole represents the largest sum subarray in the range `[currIndex, n - 1]` with `subarrayCount` subarrays, when we make the first split at index `i`. \n- To find the optimal place to split the array, we calculate this for all `i` in the range `[currIndex, n - subarrayCount]` and take the minimum value as the result.\n\nAlso, it's worth noting a small optimization that we just did here by deciding the range for `i` as `[currIndex, n - subarrayCount]` instead of `[currIndex, n - 1]` this is because we need to divide the array into exactly `m` subarrays. Hence, if `i` goes beyond `n - subarrayCount` we won't be able to make `m` subarrays even if we only place a single element in each of the remaining subarrays.\n\nIf we can calculate the result for the subproblem without using the above recurrence relation (a base case) then we can simply return the result instead of making further recursive calls. In this problem, when there is only one subarray remaining, all of the numbers remaining must go in that subarray, so when `subarrayCount` is `1`, we can simply return the sum of the numbers between `currIndex` and the end of the array.\n\nThis recursive approach will have repeated subproblems; this can be observed in the figure below. Notice the green nodes are repeat subproblems signifying that we have already solved these subproblems before.\n\n![fig](../Figures/410/410A.png)\n\nTo avoid spending time recalculating the results for previously seen subproblems, the first time we calculate the minimum largest sum for a certain range and number of subarrays, we will store the value in an array. Then, the next time we need to calculate the result for this same range and subarray count we can look up the result in constant time. This technique is known as memoization and it helps us avoid recalculating repeated subproblems.\n\n**Algorithm**\n\n1. Fill the array `prefixSum`. The $$i^{th}$$ index of `prefixSum` will have the sum of integers in `nums` in the range `[0, i - 1]` with `prefix[0] = 0`. (We need `prefixSum` because  each time we reach a base case, we must return the sum of the remaining elements, and a prefix sum array allows us to do this in constant time.)\n2. Start with index `currIndex` as `0` and the number of subarrays  `subarrayCount` as `m`, this represents the subarray with range `[0, n - 1]` and `m` subarrays.\n3. Select which elements will go in the current subarray by traversing over the indices starting from `currIndex` to `N - subarrayCount`. At each index:\n   - Use `prefixSum` to find the sum of the elements in the current subarray (`firstSplitSum`).\n   - Recursively call `getMinimumLargestSplitSum` to find the minimum largest subarray that can be obtained from the remaining elements.\n   - The maximum of these two values (`largestSplitSum`) will be the largest subarray sum **if** the first subarray is `[currIndex, i]`.\n   - Repeat this process for all `i` up to `n - subarrayCount`, then store the minimum possible `largestSplitSum` in `minimumLargestSplitSum`.\n4. Return `minimumLargestSplitSum`; to avoid repeat calculations, also store it in the memoization table `memo` corresponding to `currIndex` and `subarrayCount`.\n5. Base case: If `subarrayCount` is `1`, then we know that all of the remaining numbers **must** go in the current subarray. So instead of making recursive calls according to step 3, when `subarrayCount` is `1`, we can simply return the sum of numbers between `currIndex` and the end of the array.\n\n**Note:**  In the for loop for traversing `i`, once `firstSplitSum` is larger than `minimumLargestSplitSum` it is impossible for us to find a better `minimumLargestSplitSum` because `firstSplitSum` will only continue to increase (because all numbers are non-negative) and so does the `largestSplitSum`. So we can prune our search by breaking when `firstSplitSum` becomes greater than or equal to the `minimumLargestSplitSum`.\n\n**Implementation**\n\n\n<iframe src=\"https://leetcode.com/playground/GSeWmstf/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"GSeWmstf\"></iframe>\n\n\n**Complexity Analysis**\n\nHere $$N$$ is the length of the array and $$M$$ is the number of subarrays allowed.\n\n* Time complexity: $$O(N^2 \\cdot M)$$\n\n  Each state is defined by the values `currIndex` and `subarrayCount`. As such, there are $$N \\cdot M$$ possible states, and we must visit almost every state in order to solve the original problem. Each state (subproblem) requires $$O(N)$$ time because we have a for loop from `currIndex` to `N - subarrayCount`. Thus the total time complexity is equal to $$O(N^2 \\cdot M)$$.\n\n* Space complexity: $$O(N \\cdot M)$$\n  \n  The memoization results are stored in the table `memo` with size $$N \\cdot M$$. Also, stack space in the recursion is equal to the maximum number of active functions. The maximum number of active functions can be equal to $$M$$ as we only make a recursive call when splitting the array and we do not make a recursive call when there is only $$1$$ subarray remaining. Hence, the space complexity is equal to $$O(N \\cdot M)$$.\n<br/>\n\n---\n\n#### Approach 2: Bottom-Up Dynamic Programming\n\n**Intuition**\n\nIn the previous approach, the recursive calls incurred stack space. This can be avoided by applying the same approach iteratively which is generally faster than the top-down approach. We will follow a similar approach as the previous one just in a reverse manner.\n\nIn this approach, we will use the same recurrence relation and the base case as we used in the previous approach. So the code will remain largely the same as in the previous approach. The difference lies in the way of filling the memoization table `memo`.  In the top-down implementation, we visited each subproblem by making recursive calls until we reached a base case. Whereas in the bottom-up implementation, we will use two for loops to iterate over every subproblem (`currIndex`, `subarrayCount`), starting from the base case (`subarrayCount = 1`). We will iterate `subarrayCount` from `1` to `m`, and for each value, we will find the largest minimum subarray sum for every range `[currIndex, n - 1]`, where `currIndex` varies from `0` to `n - 1`.\n\n**Algorithm**\n1. Fill the array `prefixSum`. The $$i^{th}$$ index of `prefixSum` will have the sum of integers in `nums` in the range `[0, i - 1]` with `prefix[0] = 0`.\n2. Initialize an array `memo` where `memo[currIndex][subarrayCount]` will store the result for the subproblem (`currIndex`, `subarrayCount`).\n3. We need to find the value of `memo[0][m]` which represents the minimum largest subarray sum starting at index `0` with `m` subarrays. But we only know what the result will be for the base cases. To fill the `memo` array, we will iterate `subarrayCount` over the range `[1, m]` (starting at 1 because that is our base case) and iterate `currIndex` over the range `[0, n - 1]`.\n4. For each value of `subarrayCount` and `currIndex`, we will update `memo[subarrayCount][currIndex]`:\n   - As the sum of the elements between `currIndex` and the end of the array if we are at a base case (`subarrayCount` equals 1).\n   - Otherwise, we will use the recurrence relation and the results from previously solved subproblems to calculate `memo[subarrayCount][currIndex]`. \n5. Return the value stored at `memo[0][m]`.\n\n**Implementation**\n\n\n<iframe src=\"https://leetcode.com/playground/VxxJ2iWW/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"VxxJ2iWW\"></iframe>\n\n\n**Complexity Analysis**\n\nHere $$N$$ is the length of the array and $$M$$ is the number of subarrays allowed.\n\n* Time complexity: $$O(N^2 \\cdot M)$$\n\n  Each state is defined by the values `currIndex` and `subarrayCount`. As such, there are $$N \\cdot M$$ possible states, and we must visit almost every state in order to solve the original problem. Each state (subproblem) requires $$O(N)$$ time because we have a for loop from `currIndex` to `N - subarrayCount`; because we have stored the result in the table `memo`, any repeated calls will only require constant time. Thus the total time complexity is equal to $$O(N^2 \\cdot M)$$.\n\n* Space complexity: $$O(N \\cdot M)$$\n  \n  The results are stored in the table `memo` with size $$N \\cdot M$$. Hence, the space complexity is equal to $$O(N \\cdot M)$$.\n<br/>\n\n---\n\n#### Approach 3: Binary Search\n\n**Intuition**\n\nThis approach is quite different from the previous approaches. The characteristics of this problem are a good fit for the dynamic programming solution hence, it's easy to overlook the idea of using binary search. This problem satisfies the property that we can guess the answer (the minimum largest sum subarray value) and check if that value was too high or too low, thus narrowing our search space. It requires a different perspective to think of this approach, but after realizing that this problem is a candidate for a binary search solution, it becomes easier to implement than the previous approaches.\n\nThe goal of this problem is to find the minimum largest subarray sum with $$m$$ subarrays. Instead of finding the answer directly, what if we try to guess the answer (say $$X$$), and check whether this particular value could be the largest subarray sum with $$m$$ subarrays. If this is possible, we can check all values for $$X \\geq  0$$, and the first value that satisfies the condition will be the answer. Thus, by repeatedly solving the following problem, we can find the minimum largest subarray sum needed to split `nums` into $$m$$ subarrays:\n\n> Given an array of $$n$$ integers and a value $$X$$, determine the minimum number of subarrays the array needs to be divided into such that no subarray sum is greater than $$X$$.\n\nIf the minimum number of subarrays required is less than or equal to $$m$$ then the value $$X$$ could be the largest subarray sum.\n\nThe solution to this newly defined problem is as follows\n\n- First, make sure $$X$$ is greater than or equal to the maximum element in the array. Otherwise, no solution would be possible because we cannot divide an element.\n- Start from `0th` index and keep adding elements to `sum` only if adding the element does not make `sum` greater than $$X$$.\n- If adding the current element would make the `sum` greater than $$X$$ then we have to split the subarray here. So we will increment the number of splits required (`splitsRequired`) and set `sum` to the value of current element (signifying that the current subarray only contains the current element).\n- Once we traversed the whole array, return `splitsRequired + 1`. This is the minimum number of subarrays required.\n\nNow the problem with the current solution is that the value of $$X$$ can be as large as the sum of integers in the given array. Hence, checking for all values of $$X$$ is not feasible.\n\nThe key observation here is that if we are able to split the array into $$m$$ or fewer subarrays for a value $$X$$ then we will also be able to do it for any value greater than $$X$$. This is because the number of subarrays would be even less in case of any value greater than $$X$$. Similarly, if it's not possible for a value $$X$$ it will not be possible to have $$m$$ or fewer splits for any value less than $$X$$.\n\nThe following slideshow demonstrates this algorithm:\n\n!?!../Documents/410_Split_Array_Largest_Sum.json:960,720!?! <br>\n\nTherefore, instead of searching linearly for $$X$$, we can do a binary search! If we can split the array into $$m$$ or fewer subarrays all with a sum that is less than or equal to $$X$$ then we will try a smaller value for $$X$$ otherwise we will try a larger value for $$X$$. Each time we will select $$X$$ so that we reduce the size of the search space by half.\n\n**Algorithm**\n\n1. Store the sum of elements in `nums` in the variable `sum` and the maximum element of the array in `maxElement`.\n2. Initialize the boundary for binary search. The minimum value for the largest subarray sum is `maxElement` and the maximum value is equal to `sum`. Hence assign `left` and `right` to `maxElement` and `sum` respectively.\n3. Then while the left is not greater than right:\n\n    a. Find the mid-value in range `[left, right]`, this is equal to the maximum subarray sum allowed. Store it in `maxSumAllowed`.\n\n    b. Find the minimum number of subarrays required to have the largest subarray sum equal to `maxSumAllowed`. \n      \n     - If the number of subarrays is less than or equal to $$m$$ then assign `maxSumAllowed` as the answer `minimumLargestSplitSum` and decrease the value of our right boundary.\n     - If the number of subarrays is more than $$m$$ this can't be the answer hence, increase the value of our left boundary.\n4. Return `minimumLargestSplitSum`.\n\n**Implementation**\n\n\n<iframe src=\"https://leetcode.com/playground/aDDPpECf/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"aDDPpECf\"></iframe>\n\n\n**Complexity Analysis**\n\nHere $$N$$ is the length of the array and $$S$$ is the sum of integers in the array.\n\n* Time complexity: $$O(N \\cdot \\log(S))$$\n   \n   The total number of iterations in the binary search is $$\\log(S)$$, and for each such iteration, we call `minimumSubarraysRequired` which takes $$O(N)$$ time. Hence, the time complexity is equal to $$O(N \\cdot \\log(S))$$.\n   \n* Space complexity: $$O(1)$$\n   \n   We do not use any data structures that require more than constant extra space.\n\n<br/>\n\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1299",
+            "count": 76,
+            "average": "4.684",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "split-array-largest-sum",
+    "playgroundData": {
+        "GSeWmstf": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "split-array-largest-sum-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "VxxJ2iWW": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "split-array-largest-sum-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "aDDPpECf": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "split-array-largest-sum-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

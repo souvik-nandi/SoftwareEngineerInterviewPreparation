@@ -1,0 +1,304 @@
+{
+    "id": "3",
+    "question": {
+        "questionId": "3",
+        "questionFrontendId": "3",
+        "boundTopicId": null,
+        "title": "Longest Substring Without Repeating Characters",
+        "titleSlug": "longest-substring-without-repeating-characters",
+        "content": "<p>Given a string <code>s</code>, find the length of the <strong>longest substring</strong> without repeating characters.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abcabcbb&quot;\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> The answer is &quot;abc&quot;, with the length of 3.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;bbbbb&quot;\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> The answer is &quot;b&quot;, with the length of 1.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;pwwkew&quot;\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> The answer is &quot;wke&quot;, with the length of 3.\nNotice that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= s.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>s</code> consists of English letters, digits, symbols and spaces.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 26363,
+        "dislikes": 1146,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Longest Substring with At Most Two Distinct Characters\", \"titleSlug\": \"longest-substring-with-at-most-two-distinct-characters\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Substring with At Most K Distinct Characters\", \"titleSlug\": \"longest-substring-with-at-most-k-distinct-characters\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Subarrays with K Different Integers\", \"titleSlug\": \"subarrays-with-k-different-integers\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Maximum Erasure Value\", \"titleSlug\": \"maximum-erasure-value\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Equal Count Substrings\", \"titleSlug\": \"number-of-equal-count-substrings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Consecutive Cards to Pick Up\", \"titleSlug\": \"minimum-consecutive-cards-to-pick-up\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "\"abcabcbb\"\n\"bbbbb\"\n\"pwwkew\"",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sliding Window",
+                "slug": "sliding-window",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Alation\", \"slug\": \"alation\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Morgan Stanley\", \"slug\": \"morgan-stanley\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"tcs\", \"slug\": \"tcs\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Coupang\", \"slug\": \"coupang\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"FactSet\", \"slug\": \"factset\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Houzz\", \"slug\": \"houzz\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Huawei\", \"slug\": \"huawei\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Tesla\", \"slug\": \"tesla\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Splunk\", \"slug\": \"splunk\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wayfair\", \"slug\": \"wayfair\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Nagarro\", \"slug\": \"nagarro\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Optum\", \"slug\": \"optum\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 58}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 30}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 22}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 20}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 19}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 15}, {\"taggedByAdmin\": false, \"name\": \"Spotify\", \"slug\": \"spotify\", \"timesEncountered\": 9}, {\"taggedByAdmin\": true, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Walmart Global Tech\", \"slug\": \"walmart-labs\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Zoho\", \"slug\": \"zoho\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Intuit\", \"slug\": \"intuit\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"JPMorgan\", \"slug\": \"jpmorgan\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"PayTM\", \"slug\": \"paytm\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zillow\", \"slug\": \"zillow\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Docusign\", \"slug\": \"docusign\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Infosys\", \"slug\": \"infosys\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"American Express\", \"slug\": \"american-express\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"IBM\", \"slug\": \"ibm\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Rubrik\", \"slug\": \"rubrik\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Airtel\", \"slug\": \"airtel\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"ServiceNow\", \"slug\": \"servicenow\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Samsung\", \"slug\": \"samsung\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Nvidia\", \"slug\": \"nvidia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Accenture\", \"slug\": \"accenture\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int lengthOfLongestSubstring(string s) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int lengthOfLongestSubstring(String s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def lengthOfLongestSubstring(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def lengthOfLongestSubstring(self, s: str) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint lengthOfLongestSubstring(char * s){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int LengthOfLongestSubstring(string s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar lengthOfLongestSubstring = function(s) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} s\n# @return {Integer}\ndef length_of_longest_substring(s)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func lengthOfLongestSubstring(_ s: String) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func lengthOfLongestSubstring(s string) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def lengthOfLongestSubstring(s: String): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun lengthOfLongestSubstring(s: String): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn length_of_longest_substring(s: String) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function lengthOfLongestSubstring($s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function lengthOfLongestSubstring(s: string): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (length-of-longest-substring s)\n  (-> string? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec length_of_longest_substring(S :: unicode:unicode_binary()) -> integer().\nlength_of_longest_substring(S) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec length_of_longest_substring(s :: String.t) :: integer\n  def length_of_longest_substring(s) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"3.6M\", \"totalSubmission\": \"10.6M\", \"totalAcceptedRaw\": 3556395, \"totalSubmissionRaw\": 10613001, \"acRate\": \"33.5%\"}",
+        "hints": [],
+        "solution": {
+            "id": "36",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": true,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "ac",
+        "sampleTestCase": "\"abcabcbb\"",
+        "metaData": "{ \r\n  \"name\": \"lengthOfLongestSubstring\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "945",
+            "date": "2022-06-10",
+            "incompleteChallengeCount": 30,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "36",
+        "content": "## Video Solution\r\n\r\n---\r\n\r\n<div>\r\n    <div class=\"video-container\">\r\n        <iframe src=\"https://player.vimeo.com/video/497431788?texttrack=en\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>\r\n    </div>\r\n</div>\r\n\r\n<div>&nbsp;\r\n</div>\r\n\r\n## Solution Article\r\n\r\n---\r\n\r\n#### Approach 1: Brute Force\r\n\r\n**Intuition**\r\n\r\nCheck all the substring one by one to see if it has no duplicate character.\r\n\r\n**Algorithm**\r\n\r\nSuppose we have a function `boolean allUnique(String substring)` which will return true if the characters in the substring are all unique, otherwise false. We can iterate through all the possible substrings of the given string `s` and call the function `allUnique`. If it turns out to be true, then we update our answer of the maximum length of substring without duplicate characters.\r\n\r\nNow let's fill the missing parts:\r\n\r\n1. To enumerate all substrings of a given string, we enumerate the start and end indices of them. Suppose the start and end indices are $$i$$ and $$j$$, respectively. Then we have $$0 \\leq i \\lt j \\leq n$$ (here end index $$j$$ is exclusive by convention). Thus, using two nested loops with $$i$$ from 0 to $$n - 1$$ and $$j$$ from $$i+1$$ to $$n$$, we can enumerate all the substrings of `s`.\r\n\r\n2. To check if one string has duplicate characters, we can use a set. We iterate through all the characters in the string and put them into the `set` one by one. Before putting one character, we check if the set already contains it. If so, we return `false`. After the loop, we return `true`.\r\n\r\n<iframe src=\"https://leetcode.com/playground/cqFhjPgG/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"cqFhjPgG\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n^3)$$.\r\n\r\n    To verify if characters within index range $$[i, j)$$ are all unique, we need to scan all of them. Thus, it costs $$O(j - i)$$ time.\r\n\r\n    For a given `i`, the sum of time costed by each $$j \\in [i+1, n]$$ is\r\n\r\n    $$\r\n    \\sum_{i+1}^{n}O(j - i)\r\n    $$\r\n\r\n    Thus, the sum of all the time consumption is:\r\n\r\n    $$\r\n    O\\left(\\sum_{i = 0}^{n - 1}\\left(\\sum_{j = i + 1}^{n}(j - i)\\right)\\right) =\r\n    O\\left(\\sum_{i = 0}^{n - 1}\\frac{(1 + n - i)(n - i)}{2}\\right) =\r\n    O(n^3)\r\n    $$\r\n\r\n* Space complexity : $$O(min(n, m))$$. We need $$O(k)$$ space for checking a substring has no duplicate characters, where $$k$$ is the size of the `Set`. The size of the Set is upper bounded by the size of the string $$n$$ and the size of the charset/alphabet $$m$$.\r\n<br />\r\n<br />\r\n---\r\n#### Approach 2: Sliding Window\r\n\r\n**Algorithm**\r\n\r\nThe naive approach is very straightforward. But it is too slow. So how can we optimize it?\r\n\r\nIn the naive approaches, we repeatedly check a substring to see if it has duplicate character. But it is unnecessary. If a substring $$s_{ij}$$ from index $$i$$ to $$j - 1$$ is already checked to have no duplicate characters. We only need to check if $$s[j]$$ is already in the substring $$s_{ij}$$.\r\n\r\nTo check if a character is already in the substring, we can scan the substring, which leads to an $$O(n^2)$$ algorithm. But we can do better.\r\n\r\nBy using HashSet as a sliding window, checking if a character in the current can be done in $$O(1)$$.\r\n\r\nA sliding window is an abstract concept commonly used in array/string problems. A window is a range of elements in the array/string which usually defined by the start and end indices, i.e. $$[i, j)$$ (left-closed, right-open). A sliding window is a window \"slides\" its two boundaries to the certain direction. For example, if we slide $$[i, j)$$ to the right by $$1$$ element, then it becomes $$[i+1, j+1)$$ (left-closed, right-open).\r\n\r\nBack to our problem. We use HashSet to store the characters in current window $$[i, j)$$ ($$j = i$$ initially). Then we slide the index $$j$$ to the right. If it is not in the HashSet, we slide $$j$$ further. Doing so until s[j] is already in the HashSet. At this point, we found the maximum size of substrings without duplicate characters start with index $$i$$. If we do this for all $$i$$, we get our answer.\r\n\r\n<iframe src=\"https://leetcode.com/playground/ivDRgKu6/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ivDRgKu6\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(2n) = O(n)$$. In the worst case each character will be visited twice by $$i$$ and $$j$$.\r\n\r\n* Space complexity : $$O(min(m, n))$$. Same as the previous approach. We need $$O(k)$$ space for the sliding window, where $$k$$ is the size of the `Set`. The size of the Set is upper bounded by the size of the string $$n$$ and the size of the charset/alphabet $$m$$.\r\n<br />\r\n<br />\r\n---\r\n#### Approach 3: Sliding Window Optimized\r\n\r\nThe above solution requires at most 2n steps. In fact, it could be optimized to require only n steps. Instead of using a set to tell if a character exists or not, we could define a mapping of the characters to its index. Then we can skip the characters immediately when we found a repeated character.\r\n\r\nThe reason is that if $$s[j]$$ have a duplicate in the range $$[i, j)$$ with index $$j'$$, we don't need to increase $$i$$ little by little. We can skip all the elements in the range $$[i, j']$$ and let $$i$$ to be $$j' + 1$$ directly.\r\n\r\n**Java (Using HashMap)**\r\n\r\n<iframe src=\"https://leetcode.com/playground/HRFnMpL9/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"HRFnMpL9\"></iframe>\r\n\r\nHere is a visualization of the above code.\r\n\r\n<div class=\"video-container\">\r\n<iframe src=\"https://player.vimeo.com/video/484238122\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>\r\n</div>\r\n\r\n**Java (Assuming ASCII 128)**\r\n\r\nThe previous implements all have no assumption on the charset of the string `s`.\r\n\r\nIf we know that the charset is rather small, we can replace the `Map` with an integer array as direct access table.\r\n\r\nCommonly used tables are:\r\n\r\n* `int[26]` for Letters 'a' - 'z' or 'A' - 'Z'\r\n* `int[128]` for ASCII\r\n* `int[256]` for Extended ASCII\r\n\r\n<iframe src=\"https://leetcode.com/playground/LEu2h2DZ/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"LEu2h2DZ\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n)$$. Index $$j$$ will iterate $$n$$ times.\r\n\r\n* Space complexity (HashMap) : $$O(min(m, n))$$. Same as the previous approach.\r\n\r\n* Space complexity (Table): $$O(m)$$. $$m$$ is the size of the charset.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": true,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "34",
+            "count": 944,
+            "average": "4.625",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "longest-substring-without-repeating-characters",
+    "playgroundData": {
+        "cqFhjPgG": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "longest-substring-without-repeating-characters-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "ivDRgKu6": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "longest-substring-without-repeating-characters-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "HRFnMpL9": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "longest-substring-without-repeating-characters-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "LEu2h2DZ": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "longest-substring-without-repeating-characters-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

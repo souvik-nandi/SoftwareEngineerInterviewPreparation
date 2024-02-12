@@ -1,0 +1,459 @@
+{
+    "id": "308",
+    "question": {
+        "questionId": "308",
+        "questionFrontendId": "308",
+        "boundTopicId": null,
+        "title": "Range Sum Query 2D - Mutable",
+        "titleSlug": "range-sum-query-2d-mutable",
+        "content": "<p>Given a 2D matrix <code>matrix</code>, handle multiple queries of the following types:</p>\n\n<ol>\n\t<li><strong>Update</strong> the value of a cell in <code>matrix</code>.</li>\n\t<li>Calculate the <strong>sum</strong> of the elements of <code>matrix</code> inside the rectangle defined by its <strong>upper left corner</strong> <code>(row1, col1)</code> and <strong>lower right corner</strong> <code>(row2, col2)</code>.</li>\n</ol>\n\n<p>Implement the NumMatrix class:</p>\n\n<ul>\n\t<li><code>NumMatrix(int[][] matrix)</code> Initializes the object with the integer matrix <code>matrix</code>.</li>\n\t<li><code>void update(int row, int col, int val)</code> <strong>Updates</strong> the value of <code>matrix[row][col]</code> to be <code>val</code>.</li>\n\t<li><code>int sumRegion(int row1, int col1, int row2, int col2)</code> Returns the <strong>sum</strong> of the elements of <code>matrix</code> inside the rectangle defined by its <strong>upper left corner</strong> <code>(row1, col1)</code> and <strong>lower right corner</strong> <code>(row2, col2)</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/14/summut-grid.jpg\" style=\"width: 500px; height: 222px;\" />\n<pre>\n<strong>Input</strong>\n[&quot;NumMatrix&quot;, &quot;sumRegion&quot;, &quot;update&quot;, &quot;sumRegion&quot;]\n[[[[3, 0, 1, 4, 2], [5, 6, 3, 2, 1], [1, 2, 0, 1, 5], [4, 1, 0, 1, 7], [1, 0, 3, 0, 5]]], [2, 1, 4, 3], [3, 2, 2], [2, 1, 4, 3]]\n<strong>Output</strong>\n[null, 8, null, 10]\n\n<strong>Explanation</strong>\nNumMatrix numMatrix = new NumMatrix([[3, 0, 1, 4, 2], [5, 6, 3, 2, 1], [1, 2, 0, 1, 5], [4, 1, 0, 1, 7], [1, 0, 3, 0, 5]]);\nnumMatrix.sumRegion(2, 1, 4, 3); // return 8 (i.e. sum of the left red rectangle)\nnumMatrix.update(3, 2, 2);       // matrix changes from left image to right image\nnumMatrix.sumRegion(2, 1, 4, 3); // return 10 (i.e. sum of the right red rectangle)\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == matrix.length</code></li>\n\t<li><code>n == matrix[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 200</code></li>\n\t<li><code>-10<sup>5</sup> &lt;= matrix[i][j] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= row &lt; m</code></li>\n\t<li><code>0 &lt;= col &lt; n</code></li>\n\t<li><code>-10<sup>5</sup> &lt;= val &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= row1 &lt;= row2 &lt; m</code></li>\n\t<li><code>0 &lt;= col1 &lt;= col2 &lt; n</code></li>\n\t<li>At most <code>10<sup>4</sup></code> calls will be made to <code>sumRegion</code> and <code>update</code>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Hard",
+        "likes": 678,
+        "dislikes": 78,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Range Sum Query 2D - Immutable\", \"titleSlug\": \"range-sum-query-2d-immutable\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Range Sum Query - Mutable\", \"titleSlug\": \"range-sum-query-mutable\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[\"NumMatrix\",\"sumRegion\",\"update\",\"sumRegion\"]\n[[[[3,0,1,4,2],[5,6,3,2,1],[1,2,0,1,5],[4,1,0,1,7],[1,0,3,0,5]]],[2,1,4,3],[3,2,2],[2,1,4,3]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Design",
+                "slug": "design",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Binary Indexed Tree",
+                "slug": "binary-indexed-tree",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Segment Tree",
+                "slug": "segment-tree",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class NumMatrix {\npublic:\n    NumMatrix(vector<vector<int>>& matrix) {\n        \n    }\n    \n    void update(int row, int col, int val) {\n        \n    }\n    \n    int sumRegion(int row1, int col1, int row2, int col2) {\n        \n    }\n};\n\n/**\n * Your NumMatrix object will be instantiated and called as such:\n * NumMatrix* obj = new NumMatrix(matrix);\n * obj->update(row,col,val);\n * int param_2 = obj->sumRegion(row1,col1,row2,col2);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class NumMatrix {\n\n    public NumMatrix(int[][] matrix) {\n        \n    }\n    \n    public void update(int row, int col, int val) {\n        \n    }\n    \n    public int sumRegion(int row1, int col1, int row2, int col2) {\n        \n    }\n}\n\n/**\n * Your NumMatrix object will be instantiated and called as such:\n * NumMatrix obj = new NumMatrix(matrix);\n * obj.update(row,col,val);\n * int param_2 = obj.sumRegion(row1,col1,row2,col2);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class NumMatrix(object):\n\n    def __init__(self, matrix):\n        \"\"\"\n        :type matrix: List[List[int]]\n        \"\"\"\n        \n\n    def update(self, row, col, val):\n        \"\"\"\n        :type row: int\n        :type col: int\n        :type val: int\n        :rtype: None\n        \"\"\"\n        \n\n    def sumRegion(self, row1, col1, row2, col2):\n        \"\"\"\n        :type row1: int\n        :type col1: int\n        :type row2: int\n        :type col2: int\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your NumMatrix object will be instantiated and called as such:\n# obj = NumMatrix(matrix)\n# obj.update(row,col,val)\n# param_2 = obj.sumRegion(row1,col1,row2,col2)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class NumMatrix:\n\n    def __init__(self, matrix: List[List[int]]):\n        \n\n    def update(self, row: int, col: int, val: int) -> None:\n        \n\n    def sumRegion(self, row1: int, col1: int, row2: int, col2: int) -> int:\n        \n\n\n# Your NumMatrix object will be instantiated and called as such:\n# obj = NumMatrix(matrix)\n# obj.update(row,col,val)\n# param_2 = obj.sumRegion(row1,col1,row2,col2)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n\ntypedef struct {\n    \n} NumMatrix;\n\n\nNumMatrix* numMatrixCreate(int** matrix, int matrixSize, int* matrixColSize) {\n    \n}\n\nvoid numMatrixUpdate(NumMatrix* obj, int row, int col, int val) {\n  \n}\n\nint numMatrixSumRegion(NumMatrix* obj, int row1, int col1, int row2, int col2) {\n  \n}\n\nvoid numMatrixFree(NumMatrix* obj) {\n    \n}\n\n/**\n * Your NumMatrix struct will be instantiated and called as such:\n * NumMatrix* obj = numMatrixCreate(matrix, matrixSize, matrixColSize);\n * numMatrixUpdate(obj, row, col, val);\n \n * int param_2 = numMatrixSumRegion(obj, row1, col1, row2, col2);\n \n * numMatrixFree(obj);\n*/",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class NumMatrix {\n\n    public NumMatrix(int[][] matrix) {\n        \n    }\n    \n    public void Update(int row, int col, int val) {\n        \n    }\n    \n    public int SumRegion(int row1, int col1, int row2, int col2) {\n        \n    }\n}\n\n/**\n * Your NumMatrix object will be instantiated and called as such:\n * NumMatrix obj = new NumMatrix(matrix);\n * obj.Update(row,col,val);\n * int param_2 = obj.SumRegion(row1,col1,row2,col2);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[][]} matrix\n */\nvar NumMatrix = function(matrix) {\n    \n};\n\n/** \n * @param {number} row \n * @param {number} col \n * @param {number} val\n * @return {void}\n */\nNumMatrix.prototype.update = function(row, col, val) {\n    \n};\n\n/** \n * @param {number} row1 \n * @param {number} col1 \n * @param {number} row2 \n * @param {number} col2\n * @return {number}\n */\nNumMatrix.prototype.sumRegion = function(row1, col1, row2, col2) {\n    \n};\n\n/** \n * Your NumMatrix object will be instantiated and called as such:\n * var obj = new NumMatrix(matrix)\n * obj.update(row,col,val)\n * var param_2 = obj.sumRegion(row1,col1,row2,col2)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "class NumMatrix\n\n=begin\n    :type matrix: Integer[][]\n=end\n    def initialize(matrix)\n        \n    end\n\n\n=begin\n    :type row: Integer\n    :type col: Integer\n    :type val: Integer\n    :rtype: Void\n=end\n    def update(row, col, val)\n        \n    end\n\n\n=begin\n    :type row1: Integer\n    :type col1: Integer\n    :type row2: Integer\n    :type col2: Integer\n    :rtype: Integer\n=end\n    def sum_region(row1, col1, row2, col2)\n        \n    end\n\n\nend\n\n# Your NumMatrix object will be instantiated and called as such:\n# obj = NumMatrix.new(matrix)\n# obj.update(row, col, val)\n# param_2 = obj.sum_region(row1, col1, row2, col2)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "\nclass NumMatrix {\n\n    init(_ matrix: [[Int]]) {\n        \n    }\n    \n    func update(_ row: Int, _ col: Int, _ val: Int) {\n        \n    }\n    \n    func sumRegion(_ row1: Int, _ col1: Int, _ row2: Int, _ col2: Int) -> Int {\n        \n    }\n}\n\n/**\n * Your NumMatrix object will be instantiated and called as such:\n * let obj = NumMatrix(matrix)\n * obj.update(row, col, val)\n * let ret_2: Int = obj.sumRegion(row1, col1, row2, col2)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "type NumMatrix struct {\n    \n}\n\n\nfunc Constructor(matrix [][]int) NumMatrix {\n    \n}\n\n\nfunc (this *NumMatrix) Update(row int, col int, val int)  {\n    \n}\n\n\nfunc (this *NumMatrix) SumRegion(row1 int, col1 int, row2 int, col2 int) int {\n    \n}\n\n\n/**\n * Your NumMatrix object will be instantiated and called as such:\n * obj := Constructor(matrix);\n * obj.Update(row,col,val);\n * param_2 := obj.SumRegion(row1,col1,row2,col2);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "class NumMatrix(_matrix: Array[Array[Int]]) {\n\n    def update(row: Int, col: Int, `val`: Int) {\n        \n    }\n\n    def sumRegion(row1: Int, col1: Int, row2: Int, col2: Int): Int = {\n        \n    }\n\n}\n\n/**\n * Your NumMatrix object will be instantiated and called as such:\n * var obj = new NumMatrix(matrix)\n * obj.update(row,col,`val`)\n * var param_2 = obj.sumRegion(row1,col1,row2,col2)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class NumMatrix(matrix: Array<IntArray>) {\n\n    fun update(row: Int, col: Int, `val`: Int) {\n        \n    }\n\n    fun sumRegion(row1: Int, col1: Int, row2: Int, col2: Int): Int {\n        \n    }\n\n}\n\n/**\n * Your NumMatrix object will be instantiated and called as such:\n * var obj = NumMatrix(matrix)\n * obj.update(row,col,`val`)\n * var param_2 = obj.sumRegion(row1,col1,row2,col2)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "struct NumMatrix {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl NumMatrix {\n\n    fn new(matrix: Vec<Vec<i32>>) -> Self {\n        \n    }\n    \n    fn update(&self, row: i32, col: i32, val: i32) {\n        \n    }\n    \n    fn sum_region(&self, row1: i32, col1: i32, row2: i32, col2: i32) -> i32 {\n        \n    }\n}\n\n/**\n * Your NumMatrix object will be instantiated and called as such:\n * let obj = NumMatrix::new(matrix);\n * obj.update(row, col, val);\n * let ret_2: i32 = obj.sum_region(row1, col1, row2, col2);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class NumMatrix {\n    /**\n     * @param Integer[][] $matrix\n     */\n    function __construct($matrix) {\n        \n    }\n  \n    /**\n     * @param Integer $row\n     * @param Integer $col\n     * @param Integer $val\n     * @return NULL\n     */\n    function update($row, $col, $val) {\n        \n    }\n  \n    /**\n     * @param Integer $row1\n     * @param Integer $col1\n     * @param Integer $row2\n     * @param Integer $col2\n     * @return Integer\n     */\n    function sumRegion($row1, $col1, $row2, $col2) {\n        \n    }\n}\n\n/**\n * Your NumMatrix object will be instantiated and called as such:\n * $obj = NumMatrix($matrix);\n * $obj->update($row, $col, $val);\n * $ret_2 = $obj->sumRegion($row1, $col1, $row2, $col2);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "class NumMatrix {\n    constructor(matrix: number[][]) {\n\n    }\n\n    update(row: number, col: number, val: number): void {\n\n    }\n\n    sumRegion(row1: number, col1: number, row2: number, col2: number): number {\n\n    }\n}\n\n/**\n * Your NumMatrix object will be instantiated and called as such:\n * var obj = new NumMatrix(matrix)\n * obj.update(row,col,val)\n * var param_2 = obj.sumRegion(row1,col1,row2,col2)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define num-matrix%\n  (class object%\n    (super-new)\n\n    ; matrix : (listof (listof exact-integer?))\n    (init-field\n      matrix)\n    \n    ; update : exact-integer? exact-integer? exact-integer? -> void?\n    (define/public (update row col val)\n\n      )\n    ; sum-region : exact-integer? exact-integer? exact-integer? exact-integer? -> exact-integer?\n    (define/public (sum-region row1 col1 row2 col2)\n\n      )))\n\n;; Your num-matrix% object will be instantiated and called as such:\n;; (define obj (new num-matrix% [matrix matrix]))\n;; (send obj update row col val)\n;; (define param_2 (send obj sum-region row1 col1 row2 col2))",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec num_matrix_init_(Matrix :: [[integer()]]) -> any().\nnum_matrix_init_(Matrix) ->\n  .\n\n-spec num_matrix_update(Row :: integer(), Col :: integer(), Val :: integer()) -> any().\nnum_matrix_update(Row, Col, Val) ->\n  .\n\n-spec num_matrix_sum_region(Row1 :: integer(), Col1 :: integer(), Row2 :: integer(), Col2 :: integer()) -> integer().\nnum_matrix_sum_region(Row1, Col1, Row2, Col2) ->\n  .\n\n\n%% Your functions will be called as such:\n%% num_matrix_init_(Matrix),\n%% num_matrix_update(Row, Col, Val),\n%% Param_2 = num_matrix_sum_region(Row1, Col1, Row2, Col2),\n\n%% num_matrix_init_ will be called before every test case, in which you can do some necessary initializations.",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule NumMatrix do\n  @spec init_(matrix :: [[integer]]) :: any\n  def init_(matrix) do\n\n  end\n\n  @spec update(row :: integer, col :: integer, val :: integer) :: any\n  def update(row, col, val) do\n\n  end\n\n  @spec sum_region(row1 :: integer, col1 :: integer, row2 :: integer, col2 :: integer) :: integer\n  def sum_region(row1, col1, row2, col2) do\n\n  end\nend\n\n# Your functions will be called as such:\n# NumMatrix.init_(matrix)\n# NumMatrix.update(row, col, val)\n# param_2 = NumMatrix.sum_region(row1, col1, row2, col2)\n\n# NumMatrix.init_ will be called before every test case, in which you can do some necessary initializations.",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"67.2K\", \"totalSubmission\": \"161.4K\", \"totalAcceptedRaw\": 67196, \"totalSubmissionRaw\": 161363, \"acRate\": \"41.6%\"}",
+        "hints": [],
+        "solution": {
+            "id": "1081",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[\"NumMatrix\",\"sumRegion\",\"update\",\"sumRegion\"]\n[[[[3,0,1,4,2],[5,6,3,2,1],[1,2,0,1,5],[4,1,0,1,7],[1,0,3,0,5]]],[2,1,4,3],[3,2,2],[2,1,4,3]]",
+        "metaData": "{\r\n    \"classname\": \"NumMatrix\",\r\n    \"maxbytesperline\": 115000,\r\n    \"constructor\": {\r\n        \"params\": [\r\n            {\r\n                \"type\": \"integer[][]\",\r\n                \"name\": \"matrix\"\r\n            },\r\n            {\r\n                \"type\": \"integer\",\r\n                \"name\": \"matrixRowSize\",\r\n                \"lang\": \"c\",\r\n                \"value\": \"size_1\"\r\n            },\r\n            {\r\n                \"type\": \"integer\",\r\n                \"name\": \"matrixColSize\",\r\n                \"lang\": \"c\",\r\n                \"value\": \"col_size_1\"\r\n            }\r\n        ]\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"update\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"row\"\r\n                },\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"col\"\r\n                },\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"val\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"void\"\r\n            }\r\n        },\r\n        {\r\n            \"name\" : \"sumRegion\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"row1\"\r\n                },\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"col1\"\r\n                },\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"row2\"\r\n                },\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"col2\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"integer\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1081",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Approach 1: Brute Force\n\nWe use the same brute force method as we used in [2D Immutable version](https://leetcode.com/problems/range-sum-query-2d-immutable/solution/) to calculate the sum of region. In addition to the previous problem, here we have to update the value of the matrix as well, which we simply do with `data[row][col] = val`.\n\n**Algorithm**\n\nBelow is the implementation of this approach.\n\n<iframe src=\"https://leetcode.com/playground/P5cZWzhs/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"P5cZWzhs\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity\n\n    * **sumRegion** - $$O(MN)$$ per query. Where $$M$$ and $$N$$ represents the number of rows and columns respectively, each *sumRegion* query can go through at most $$M \\times N$$ elements.\n\n    * **update** -  $$O(1)$$ per query.\n\n* Space Complexity: $$O(1)$$.\n\n---\n\n#### Approach 2: Using Binary Indexed Tree\n\n**Intuition**\n\nThe problem differs than the [2D Immutable version](https://leetcode.com/problems/range-sum-query-2d-immutable/solution/) as there is an additional update method that changes the values present inside the matrix, hence it's not even a good choice to cache or pre-compute all the results. There is a special data structure called **Binary Indexed Tree** that we will use to solve this problem efficiently which is based on the idea of storing the *partial sums*. We then use these partial sums to obtain the overall sum in the *sumRegion* method. The way we store these partial sums in a Binary Indexed Tree (BIT), a.k.a. Fenwick Tree, allows us to achieve both the update and query to be done in logarithmic time.\n\nConsider the case of 1-D array. Assume we have an array `nums` of size 8 (`nums[1], nums[2] ... nums[8]`) (1-based indexing). We store the partial sums of the array `nums` in another array `bit` of size 8 (`bit[1], bit[2] ... bit[8]`). The idea is to compute each value of `bit` array in a way that allows us to \"quickly\" compute the sum as well as update the values for the array `nums`. We do it using the idea of bit manipulation.\n\nEach number can be represented as sum of power of two's and this is what will allow us to obtain the overall sum from the partial sums. For example, 7 can be represented as $$1 + 2 + 4 = (2^{0} + 2^{1} + 2^{2})$$ hence whenever we want to calculate the cumulative sum till 7th index in the **nums array**, we will utilize the values stored in the 1st, 2nd and 4th index in the **bit array**. Here in case of Binary Indexed Tree, the 1st, 2nd and 4th index of the `bit` array will store the **non-overlapping partial sums** which can be added up to obtain the cumulative sum till 7th index in the `nums` array. Hence, we have $$cum\\_sum(7) = bit[1] + bit[2] + bit[4] = a[1] + a[2] + ... + a[7]$$ (where cum_sum(7) refers to cumulative sum till 7th index of `nums` array). But how do we obtain the sum in such a manner? For this, consider the `bit` array as shown below (let's assume that we can efficiently obtain the below mentioned array, we'll discuss later how we can actually do it).\n\n```\nbit[1] = nums[1]\nbit[2] = nums[1] + nums[2]\nbit[3] = nums[3]\nbit[4] = nums[1] + nums[2] + nums[3] + nums[4]\nbit[5] = nums[5]\nbit[6] = nums[5] + nums[6]\nbit[7] = nums[7]\nbit[8] = nums[1] + nums[2] + nums[3] + nums[4] + nums[5] + nums[6] + nums[7] + nums[8]\n```\n\nWhen we try to calculate cumulative sum till any index *n* the steps that we follow are.\n\n1. Decompose *n* as the sum of power of 2's. Let's say $$n = n_{1} + n_{2} + ... + n_{k}$$ where each of the number $$n_{i}$$ is a number which is a power of 2. For example, When $$n = 7$$, we have $$n_{1} = 1, n_{2} = 2, n_{3} = 4\\ (7 = 1 + 2 + 4)$$\n\n2. The cumulative sum till index `n` in the `nums` array can then be obtained with the help of `bit` array as $$cum\\_sum(n) = bit[n_{1}] + bit[n_{2}] + ... + bit[n_{k}]$$\n\nAs mentioned before, since we'll store the values in the bit array as **non-overlapping partial sums**, that's why step 2 is possible and gives us the cumulative sum as the sum of the values from the `bit` array. The question that we must ask now is - How can we build the `bit` array in such a manner? For this, we need to do two things.\n\n1. Understand lsb (least significant bit, non-zero) of a number.\n\n2. Observe the pattern of occurence of each number from `nums` array in the `bit` array.\n\n#### LSB (least significant bit)\n\nConsider the binary representation of 5 (`5 -> 101`). The least significant (non-zero) bit of a number is obtained by taking the right most non-zero bit from the binary representation and ignoring all the other bits (i.e. considering all the other bits as 0). Hence `lsb(5) = 001` (considering only the rightmost non-zero bit and ignoring all others). Similarly `lsb(6) = 010`. Why? Since `6 -> 110` and the right most set bit occurs at the second position.\n\nNext, let's notice the occurence of each element of nums array in the bit array as follows.\n\n```\nnums[1] isPresentIn -> bit[1], bit[2], bit[4], bit[8]\nnums[2] isPresentIn -> bit[2], bit[4], bit[8]\nnums[3] isPresentIn -> bit[3], bit[4], bit[8]\nnums[4] isPresentIn -> bit[4], bit[8]\nnums[5] isPresentIn -> bit[5], bit[6], bit[8]\nnums[6] isPresentIn -> bit[6], bit[8]\nnums[7] isPresentIn -> bit[7], bit[8]\nnums[8] isPresentIn -> bit[8]\n```\n\nLet's convert all the indices shown above into their binary representation. We then have (indices for nums array on the LHS and bit array on the RHS)\n\n```\nLHS        -> RHS\nnums[0001] -> bit[0001], bit[0010], bit[0100], bit[1000]\nnums[0010] -> bit[0010], bit[0100], bit[1000]\nnums[0011] -> bit[0011], bit[0100], bit[1000]\nnums[0100] -> bit[0100], bit[1000],\nnums[0101] -> bit[0101], bit[0110], bit[1000]\nnums[0110] -> bit[0110], bit[1000]\nnums[0111] -> bit[0111], bit[1000]\nnums[1000] -> bit[1000]\n```\n\nOn seeing the pattern above, we can notice that the sequence of indices on the RHS can be obtained by continuously adding the number to it's lsb, starting from the index on the LHS.\n\nExample\n\n```\n0101 -> (add 0001) -> 0110 -> (add 0010) -> 1000\n```\n\nWe can use this observation to build the bit array as we now know all the indices in the `bit` array where a particular value from the `nums` array occurs.\n\nNote: We have used 1-based indexing at all the places in the 1-D BIT explanation part.\n\n<iframe src=\"https://leetcode.com/playground/TfnVinxt/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"TfnVinxt\"></iframe>\n\nThe process of adding a particular number `val` to the appropriate locations in the `bit` array is what is known as the *update* process in a Binary Indexed Tree. Hence we can re-write the above code as.\n\n<iframe src=\"https://leetcode.com/playground/6esFhejf/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"6esFhejf\"></iframe>\n\nBelow is the animation of the `buildBIT` process for the array `[2, 3, 1, 2, 4, 1, 2, 3]`. We initialize all the elements of the `bit` array to zero and then build it.\n\n<div>\n    <center>\n        <video controls preload=\"none\" width=\"100%\" poster=\"../Figures/308/buildBIT-1D/poster.JPG\">\n            <source src=\"../Figures/308/buildBIT-1D/buildBIT.mp4\" type=\"video/mp4\">\n        </video>\n    </center>\n</div>\n\nHaving a separate update method also allows us to perform the \"updates\" in a Binary Indexed Tree, i.e. if we want to change the values of `nums[i]` from an old value `a` to new updated value `b`, we simply calculate the difference `b - a` and call the update function as `updateBIT(i, b - a)` (note that we do not change the actual `nums` array, only the `bit` array changes). We still haven't implemented the `sumRegion` for our 1-D example here. This is known as \"query\" method for a Binary Indexed Tree. When query method is called for a particular index `i` on the Binary Indexed Tree, it returns the cumulative sum till the index `i`. Similar to update method, where we kept adding the lsb of the index to itself, here, we'll keep subtracting the lsb of the index from itself to calculate the cumulative sum from partial sums stored in `bit` array. The code is as follows.\n\n<iframe src=\"https://leetcode.com/playground/J8vDrBju/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"J8vDrBju\"></iframe>\n\nBelow is the animation of the query process for the array `[2, 3, 1, 2, 4, 1, 2, 3]` in case of `index = 7`, i.e. we are trying to calculate the cumulative sum till the 7th index of the nums array.\n\n<div>\n    <center>\n        <video controls preload=\"none\" width=\"100%\" poster=\"../Figures/308/queryBIT-1D/poster.JPG\">\n            <source src=\"../Figures/308/queryBIT-1D/queryBIT.mp4\" type=\"video/mp4\">\n        </video>\n    </center>\n</div>\n\nWe can now use the `queryBIT` and `updateBIT` methods to obtain the sum between any two indices `(i, j)` and can update the value at any given index `i` as follows\n\n<iframe src=\"https://leetcode.com/playground/9XzxjJcW/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"9XzxjJcW\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity\n\n    * Update (1D) - $$O(\\log{N})$$\n\n    * Query (1D) - $$O(\\log{N})$$\n\n    * Build (1D) - $$O(N \\cdot \\log{N})$$\n\n    * Here N denotes the number of elements present in the array. Maximum number of steps that we'll have to iterate for update and query method is upper bounded by the number of bits in the binary representation of the size of the array (N).\n\n* Space Complexity\n\n    * $$O(N)$$ - Since we'll need an extra `bit` array to store the non-overlapping partial sums.\n\nWe now have the required pre-requisites to implement an efficient solution for the case of 2D arrays (or matrix), which we'll see next.\n\n**Note**: The build method can be optimized further and can be done in time $$O(N)$$. We do this by adding the entry from the nums array to the immediate next entry in the `bit` array, i.e. the next higher index that the value from the nums array contributes to. Below is the implementation for this\n\n<iframe src=\"https://leetcode.com/playground/GQbpSxk6/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"GQbpSxk6\"></iframe>\n\n#### 2D BIT\n\nTill now, we have seen how to perform \"query\" and \"update\" in case of 1-D example. We'll try to extend this to 2D array (matrix) now.\n\nIn case of 1D example, we were iterating directly over the indices of the array in 1 direction, but here in the case of a matrix, we have a 2-dimensional indices. Hence in order to use the concept of BIT for 2D case, we'll iterate in both the directions, i.e. over the rows and columns of the matrix to perform the update and query method. If `i` and `j` represents the indices corresponding to rows and columns that are used for iterating over the matrix, we simply increment these variables by `lsb(i)` and `lsb(j)` in the update operation and decrement by `lsb(i)` and `lsb(j)` in decrement operation. Another change that happens in the case of 2D bit is, the partial sums that we store now are corresponding to partial sum of the non-overlapping sub-rectangles or sub-matrix present in the matrix.\n\nThe update and the query for the 2D matrix then are as follows.\n\n<iframe src=\"https://leetcode.com/playground/5mp9yK7Y/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"5mp9yK7Y\"></iframe>\n\nThe build method in case of 2D array can be implemented as follows.\n\n<iframe src=\"https://leetcode.com/playground/6ed7oMQe/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"6ed7oMQe\"></iframe>\n\nWe can now use the `queryBIT` and `updateBIT` methods to obtain the sum for any rectangular region, denoted by `(row1, col1)` and `(row2, col2)` and can update the value at any given location `(row, col)` as follows\n\n<iframe src=\"https://leetcode.com/playground/SEbS2K5M/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"SEbS2K5M\"></iframe>\n\nThe overall solution code for 2D case is as follows.\n\nNote that there will be some minor modifications in the final implementation from the code snippets provided above as the input that we have here is based on 0-based indexing and not 1-based indexing. Hence we'll take that into account in the final implementation. \n\n<iframe src=\"https://leetcode.com/playground/Fr3EPYnJ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Fr3EPYnJ\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity\n\n    * Update (2D) - $$O(\\log{N} \\cdot \\log{M})$$\n\n    * Query (2D) - $$O(\\log{N} \\cdot \\log{M})$$\n\n    * Build (2D) - $$O(N \\cdot M \\cdot \\log{N} \\cdot \\log{M})$$\n\n    * Here N denotes the number of rows and M denotes the number of columns.\n\n* Space Complexity\n\n    * $$O(NM)$$ - Since we'll need an extra `bit` matrix to store the non-overlapping partial sums",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1036",
+            "count": 23,
+            "average": "3.478",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "range-sum-query-2d-mutable",
+    "playgroundData": {
+        "P5cZWzhs": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "range-sum-query-2d-mutable-9",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "TfnVinxt": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "range-sum-query-2d-mutable-8",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "6esFhejf": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "range-sum-query-2d-mutable-7",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "J8vDrBju": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "range-sum-query-2d-mutable-6",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "9XzxjJcW": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "range-sum-query-2d-mutable-5",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "GQbpSxk6": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "range-sum-query-2d-mutable-4",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "5mp9yK7Y": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "range-sum-query-2d-mutable-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "6ed7oMQe": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "range-sum-query-2d-mutable-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "SEbS2K5M": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "range-sum-query-2d-mutable-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Fr3EPYnJ": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "range-sum-query-2d-mutable-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

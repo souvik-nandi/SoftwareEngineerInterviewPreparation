@@ -1,0 +1,204 @@
+{
+    "id": "296",
+    "question": {
+        "questionId": "296",
+        "questionFrontendId": "296",
+        "boundTopicId": null,
+        "title": "Best Meeting Point",
+        "titleSlug": "best-meeting-point",
+        "content": "<p>Given an <code>m x n</code> binary grid <code>grid</code> where each <code>1</code> marks the home of one friend, return <em>the minimal <strong>total travel distance</strong></em>.</p>\n\n<p>The <strong>total travel distance</strong> is the sum of the distances between the houses of the friends and the meeting point.</p>\n\n<p>The distance is calculated using <a href=\"http://en.wikipedia.org/wiki/Taxicab_geometry\" target=\"_blank\">Manhattan Distance</a>, where <code>distance(p1, p2) = |p2.x - p1.x| + |p2.y - p1.y|</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/14/meetingpoint-grid.jpg\" style=\"width: 413px; height: 253px;\" />\n<pre>\n<strong>Input:</strong> grid = [[1,0,0,0,1],[0,0,0,0,0],[0,0,1,0,0]]\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> Given three friends living at (0,0), (0,4), and (2,2).\nThe point (0,2) is an ideal meeting point, as the total travel distance of 2 + 2 + 2 = 6 is minimal.\nSo return 6.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> grid = [[1,1]]\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 200</code></li>\n\t<li><code>grid[i][j]</code> is either <code>0</code> or <code>1</code>.</li>\n\t<li>There will be <strong>at least two</strong> friends in the <code>grid</code>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Hard",
+        "likes": 911,
+        "dislikes": 80,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Shortest Distance from All Buildings\", \"titleSlug\": \"shortest-distance-from-all-buildings\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Moves to Equal Array Elements II\", \"titleSlug\": \"minimum-moves-to-equal-array-elements-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[[1,0,0,0,1],[0,0,0,0,0],[0,0,1,0,0]]\n[[1,1]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Math",
+                "slug": "math",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Reddit\", \"slug\": \"reddit\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 6}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int minTotalDistance(vector<vector<int>>& grid) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int minTotalDistance(int[][] grid) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def minTotalDistance(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def minTotalDistance(self, grid: List[List[int]]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint minTotalDistance(int** grid, int gridSize, int* gridColSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int MinTotalDistance(int[][] grid) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar minTotalDistance = function(grid) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef min_total_distance(grid)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func minTotalDistance(_ grid: [[Int]]) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func minTotalDistance(grid [][]int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def minTotalDistance(grid: Array[Array[Int]]): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun minTotalDistance(grid: Array<IntArray>): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn min_total_distance(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function minTotalDistance($grid) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function minTotalDistance(grid: number[][]): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (min-total-distance grid)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec min_total_distance(Grid :: [[integer()]]) -> integer().\nmin_total_distance(Grid) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec min_total_distance(grid :: [[integer]]) :: integer\n  def min_total_distance(grid) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"60.2K\", \"totalSubmission\": \"101.2K\", \"totalAcceptedRaw\": 60187, \"totalSubmissionRaw\": 101157, \"acRate\": \"59.5%\"}",
+        "hints": [
+            "Try to solve it in one dimension first. How can this solution apply to the two dimension case?"
+        ],
+        "solution": {
+            "id": "16",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[[1,0,0,0,1],[0,0,0,0,0],[0,0,1,0,0]]",
+        "metaData": "{\r\n  \"name\": \"minTotalDistance\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "16",
+        "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n#### Approach #1 (Breadth-first Search) [Time Limit Exceeded]\r\n\r\nA brute force approach is to evaluate all possible meeting points in the grid. We could apply breadth-first search originating from each of the point.\r\n\r\nWhile inserting a point into the queue, we need to record the distance of that point from the meeting point.  Also, we need an extra `visited` table to record which point had already been visited to avoid being inserted into the queue again.\r\n\r\n```java\r\npublic int minTotalDistance(int[][] grid) {\r\n    int minDistance = Integer.MAX_VALUE;\r\n    for (int row = 0; row < grid.length; row++) {\r\n        for (int col = 0; col < grid[0].length; col++) {\r\n            int distance = search(grid, row, col);\r\n            minDistance = Math.min(distance, minDistance);\r\n        }\r\n    }\r\n    return minDistance;\r\n}\r\n\r\nprivate int search(int[][] grid, int row, int col) {\r\n    Queue<Point> q = new LinkedList<>();\r\n    int m = grid.length;\r\n    int n = grid[0].length;\r\n    boolean[][] visited = new boolean[m][n];\r\n    q.add(new Point(row, col, 0));\r\n    int totalDistance = 0;\r\n    while (!q.isEmpty()) {\r\n        Point point = q.poll();\r\n        int r = point.row;\r\n        int c = point.col;\r\n        int d = point.distance;\r\n        if (r < 0 || c < 0 || r >= m || c >= n || visited[r][c]) {\r\n            continue;\r\n        }\r\n        if (grid[r][c] == 1) {\r\n            totalDistance += d;\r\n        }\r\n        visited[r][c] = true;\r\n        q.add(new Point(r + 1, c, d + 1));\r\n        q.add(new Point(r - 1, c, d + 1));\r\n        q.add(new Point(r, c + 1, d + 1));\r\n        q.add(new Point(r, c - 1, d + 1));\r\n    }\r\n    return totalDistance;\r\n}\r\n\r\npublic class Point {\r\n    int row;\r\n    int col;\r\n    int distance;\r\n    public Point(int row, int col, int distance) {\r\n        this.row = row;\r\n        this.col = col;\r\n        this.distance = distance;\r\n    }\r\n}\r\n```\r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : $$O(m^2n^2)$$.\r\nFor each point in the $$m \\times n$$ size grid, the breadth-first search takes at most $$m \\times n$$ steps to reach all points. Therefore the time complexity is $$O(m^2n^2)$$.\r\n\r\n* Space complexity : $$O(mn)$$.\r\nThe `visited` table consists of $$m \\times n$$ elements map to each point in the grid. We insert at most $$m \\times n$$ points into the queue.\r\n\r\n---\r\n#### Approach #2 (Manhattan Distance Formula) [Time Limit Exceeded]\r\n\r\nYou may notice that breadth-first search is unnecessary. You can just calculate the Manhattan distance using the formula:\r\n\r\n$$\r\ndistance(p1, p2) = \\left | p2.x - p1.x \\right | + \\left | p2.y - p1.y \\right |\r\n$$\r\n\r\n```java\r\npublic int minTotalDistance(int[][] grid) {\r\n    List<Point> points = getAllPoints(grid);\r\n    int minDistance = Integer.MAX_VALUE;\r\n    for (int row = 0; row < grid.length; row++) {\r\n        for (int col = 0; col < grid[0].length; col++) {\r\n            int distance = calculateDistance(points, row, col);\r\n            minDistance = Math.min(distance, minDistance);\r\n        }\r\n    }\r\n    return minDistance;\r\n}\r\n\r\nprivate int calculateDistance(List<Point> points, int row, int col) {\r\n    int distance = 0;\r\n    for (Point point : points) {\r\n        distance += Math.abs(point.row - row) + Math.abs(point.col - col);\r\n    }\r\n    return distance;\r\n}\r\n\r\nprivate List<Point> getAllPoints(int[][] grid) {\r\n    List<Point> points = new ArrayList<>();\r\n    for (int row = 0; row < grid.length; row++) {\r\n        for (int col = 0; col < grid[0].length; col++) {\r\n            if (grid[row][col] == 1) {\r\n                points.add(new Point(row, col));\r\n            }\r\n        }\r\n    }\r\n    return points;\r\n}\r\n\r\npublic class Point {\r\n    int row;\r\n    int col;\r\n    public Point(int row, int col) {\r\n        this.row = row;\r\n        this.col = col;\r\n    }\r\n}\r\n```\r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : $$O(m^2n^2)$$.\r\nAssume that $$k$$ is the total number of houses. For each point in the $$m \\times n$$ size grid, we calculate the manhattan distance in $$O(k)$$. Therefore the time complexity is $$O(mnk)$$. But do note that there could be up to $$m \\times n$$ houses, making the worst case time complexity to be $$O(m^2n^2)$$.\r\n\r\n* Space complexity : $$O(mn)$$.\r\n\r\n---\r\n#### Approach #3 (Sorting) [Accepted]\r\n\r\nFinding the best meeting point in a 2D grid seems difficult. Let us take a step back and solve the 1D case which is much simpler. Notice that the Manhattan distance is the sum of two independent variables. Therefore, once we solve the 1D case, we can solve the 2D case as two independent 1D problems.\r\n\r\nLet us look at some 1D examples below:\r\n\r\n    Case #1: 1-0-0-0-1\r\n\r\n    Case #2: 0-1-0-1-0\r\n\r\nWe know the best meeting point must locate somewhere between the left-most and right-most point. For the above two cases, we would select the center point at $$x = 2$$ as the best meeting point. How about choosing the mean of all points as the meeting point?\r\n\r\nConsider this case:\r\n\r\n    Case #3: 1-0-0-0-0-0-0-1-1\r\n\r\n\r\n\r\nUsing the mean gives us $$\\bar{x} = \\frac{0 + 7 + 8}{3} = 5$$ as the meeting point. The total distance is $$10$$.\r\n\r\nBut the best meeting point should be at $$x = 7$$ and the total distance is $$8$$.\r\n\r\nYou may argue that the mean is *close* to the optimal point. But imagine a larger case with many 1's congregating on the right side and just a single 1 on the left-most side. Using the mean as the meeting point would be far from optimal.\r\n\r\nBesides mean, what is a better way to represent the distribution of points? Would median be a better representation? Indeed. In fact, the median *must* be the optimal meeting point.\r\n\r\n    Case #4: 1-1-0-0-1\r\n\r\nTo see why this is so, let us look at case #4 above and choose the median $$x = 1$$ as our initial meeting point. Assume that the total distance traveled is *d*. Note that we have equal number of points distributed to its left and to its right. Now let us move one step to its right where $$x = 2$$ and notice how the distance changes accordingly.\r\n\r\nSince there are two points to the left of $$x = 2$$, we add $$2 * (+1)$$ to *d*. And *d* is offset by \u20131 since there is one point to the right. This means the distance had overall increased by 1.\r\n\r\nTherefore, it is clear that:\r\n\r\n>As long as there is equal number of points to the left and right of the meeting point, the total distance is minimized.\r\n\r\n    Case #5: 1-1-0-0-1-1\r\n\r\nOne may think that the optimal meeting point must fall on one of the 1's. This is true for cases with odd number of 1's, but not necessarily true when there are even number of 1's, just like case #5 does. You can choose any of the $$x = 1$$ to $$x = 4$$ points and the total distance is minimized. Why?\r\n\r\nThe implementation is direct. First we collect both the row and column coordinates, sort them and select their middle elements. Then we calculate the total distance as the sum of two independent 1D problems.\r\n\r\n```java\r\npublic int minTotalDistance(int[][] grid) {\r\n    List<Integer> rows = new ArrayList<>();\r\n    List<Integer> cols = new ArrayList<>();\r\n    for (int row = 0; row < grid.length; row++) {\r\n        for (int col = 0; col < grid[0].length; col++) {\r\n            if (grid[row][col] == 1) {\r\n                rows.add(row);\r\n                cols.add(col);\r\n            }\r\n        }\r\n    }\r\n    int row = rows.get(rows.size() / 2);\r\n    Collections.sort(cols);\r\n    int col = cols.get(cols.size() / 2);\r\n    return minDistance1D(rows, row) + minDistance1D(cols, col);\r\n}\r\n\r\nprivate int minDistance1D(List<Integer> points, int origin) {\r\n    int distance = 0;\r\n    for (int point : points) {\r\n        distance += Math.abs(point - origin);\r\n    }\r\n    return distance;\r\n}\r\n```\r\n\r\nNote that in the code above we do not need to sort *rows*, why?\r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : $$O(mn \\log mn)$$.\r\nSince there could be at most $$m \\times n$$ points, therefore the time complexity is $$O(mn \\log mn)$$ due to sorting.\r\n\r\n* Space complexity : $$O(mn)$$.\r\n\r\n---\r\n#### Approach #4 (Collect Coordinates in Sorted Order) [Accepted]\r\n\r\nWe could use the [Selection algorithm](https://en.wikipedia.org/wiki/Selection_algorithm) to select the median in $$O(mn)$$ time, but there is an easier way. Notice that we can collect both the row and column coordinates in sorted order.\r\n\r\n```java\r\npublic int minTotalDistance(int[][] grid) {\r\n    List<Integer> rows = collectRows(grid);\r\n    List<Integer> cols = collectCols(grid);\r\n    int row = rows.get(rows.size() / 2);\r\n    int col = cols.get(cols.size() / 2);\r\n    return minDistance1D(rows, row) + minDistance1D(cols, col);\r\n}\r\n\r\nprivate int minDistance1D(List<Integer> points, int origin) {\r\n    int distance = 0;\r\n    for (int point : points) {\r\n        distance += Math.abs(point - origin);\r\n    }\r\n    return distance;\r\n}\r\n\r\nprivate List<Integer> collectRows(int[][] grid) {\r\n    List<Integer> rows = new ArrayList<>();\r\n    for (int row = 0; row < grid.length; row++) {\r\n        for (int col = 0; col < grid[0].length; col++) {\r\n            if (grid[row][col] == 1) {\r\n                rows.add(row);\r\n            }\r\n        }\r\n    }\r\n    return rows;\r\n}\r\n\r\nprivate List<Integer> collectCols(int[][] grid) {\r\n    List<Integer> cols = new ArrayList<>();\r\n    for (int col = 0; col < grid[0].length; col++) {\r\n        for (int row = 0; row < grid.length; row++) {\r\n            if (grid[row][col] == 1) {\r\n                cols.add(col);\r\n            }\r\n        }\r\n    }\r\n    return cols;\r\n}\r\n```\r\n\r\n<br>\r\nYou can calculate the distance without knowing the median using a two pointer approach. This neat approach is inspired by [@larrywang2014's solution](https://leetcode.com/discuss/65336/14ms-java-solution).\r\n\r\n```java\r\npublic int minTotalDistance(int[][] grid) {\r\n    List<Integer> rows = collectRows(grid);\r\n    List<Integer> cols = collectCols(grid);\r\n    return minDistance1D(rows) + minDistance1D(cols);\r\n}\r\n\r\nprivate int minDistance1D(List<Integer> points) {\r\n    int distance = 0;\r\n    int i = 0;\r\n    int j = points.size() - 1;\r\n    while (i < j) {\r\n        distance += points.get(j) - points.get(i);\r\n        i++;\r\n        j--;\r\n    }\r\n    return distance;\r\n}\r\n```\r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : $$O(mn)$$.\r\n\r\n* Space complexity : $$O(mn)$$.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "6",
+            "count": 92,
+            "average": "4.685",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "best-meeting-point",
+    "playgroundData": {}
+}

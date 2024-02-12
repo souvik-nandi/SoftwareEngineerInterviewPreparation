@@ -1,0 +1,284 @@
+{
+    "id": "85",
+    "question": {
+        "questionId": "85",
+        "questionFrontendId": "85",
+        "boundTopicId": null,
+        "title": "Maximal Rectangle",
+        "titleSlug": "maximal-rectangle",
+        "content": "<p>Given a <code>rows x cols</code>&nbsp;binary <code>matrix</code> filled with <code>0</code>&#39;s and <code>1</code>&#39;s, find the largest rectangle containing only <code>1</code>&#39;s and return <em>its area</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg\" style=\"width: 402px; height: 322px;\" />\n<pre>\n<strong>Input:</strong> matrix = [[&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,&quot;0&quot;,&quot;0&quot;],[&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,&quot;1&quot;,&quot;1&quot;],[&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,&quot;1&quot;],[&quot;1&quot;,&quot;0&quot;,&quot;0&quot;,&quot;1&quot;,&quot;0&quot;]]\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> The maximal rectangle is shown in the above picture.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> matrix = [[&quot;0&quot;]]\n<strong>Output:</strong> 0\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> matrix = [[&quot;1&quot;]]\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>rows == matrix.length</code></li>\n\t<li><code>cols == matrix[i].length</code></li>\n\t<li><code>1 &lt;= row, cols &lt;= 200</code></li>\n\t<li><code>matrix[i][j]</code> is <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 7058,
+        "dislikes": 114,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Largest Rectangle in Histogram\", \"titleSlug\": \"largest-rectangle-in-histogram\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Maximal Square\", \"titleSlug\": \"maximal-square\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[[\"1\",\"0\",\"1\",\"0\",\"0\"],[\"1\",\"0\",\"1\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\",\"1\"],[\"1\",\"0\",\"0\",\"1\",\"0\"]]\n[[\"0\"]]\n[[\"1\"]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Stack",
+                "slug": "stack",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Monotonic Stack",
+                "slug": "monotonic-stack",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Karat\", \"slug\": \"karat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Global Tech\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Dunzo\", \"slug\": \"dunzo\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int maximalRectangle(vector<vector<char>>& matrix) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int maximalRectangle(char[][] matrix) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def maximalRectangle(self, matrix):\n        \"\"\"\n        :type matrix: List[List[str]]\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def maximalRectangle(self, matrix: List[List[str]]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint maximalRectangle(char** matrix, int matrixSize, int* matrixColSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int MaximalRectangle(char[][] matrix) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {character[][]} matrix\n * @return {number}\n */\nvar maximalRectangle = function(matrix) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Character[][]} matrix\n# @return {Integer}\ndef maximal_rectangle(matrix)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func maximalRectangle(_ matrix: [[Character]]) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func maximalRectangle(matrix [][]byte) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def maximalRectangle(matrix: Array[Array[Char]]): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun maximalRectangle(matrix: Array<CharArray>): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn maximal_rectangle(matrix: Vec<Vec<char>>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String[][] $matrix\n     * @return Integer\n     */\n    function maximalRectangle($matrix) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function maximalRectangle(matrix: string[][]): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (maximal-rectangle matrix)\n  (-> (listof (listof char?)) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec maximal_rectangle(Matrix :: [[char()]]) -> integer().\nmaximal_rectangle(Matrix) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec maximal_rectangle(matrix :: [[char]]) :: integer\n  def maximal_rectangle(matrix) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"305.8K\", \"totalSubmission\": \"705.8K\", \"totalAcceptedRaw\": 305832, \"totalSubmissionRaw\": 705810, \"acRate\": \"43.3%\"}",
+        "hints": [],
+        "solution": {
+            "id": "712",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[[\"1\",\"0\",\"1\",\"0\",\"0\"],[\"1\",\"0\",\"1\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\",\"1\"],[\"1\",\"0\",\"0\",\"1\",\"0\"]]",
+        "metaData": "{\r\n  \"name\": \"maximalRectangle\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"matrix\",\r\n      \"type\": \"character[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "712",
+        "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: Brute Force\n\n**Algorithm**\n\nTrivially we can enumerate every possible rectangle. This is done by iterating over all possible combinations of coordinates `(x1, y1)` and `(x2, y2)` and letting them define a rectangle with the coordinates being opposite corners. This is too slow to pass all test cases.\n\n\n**Complexity Analysis**\n\n* Time complexity : $$O(N^3M^3)$$, with `N` being the number of rows and `M` the number of columns.\n\n    Iterating over all possible coordinates is $$O(N^2M^2)$$, and iterating over the rectangle defined by two coordinates is an additional $$O(NM)$$. $$O(NM) * O(N^2M^2) = O(N^3M^3)$$.\n\n* Space complexity : $$O(1)$$.\n<br />\n<br />\n\n---\n\n#### Approach 2: Dynamic Programming - Better Brute Force on Histograms\n\n**Algorithm**\n\nWe can compute the maximum width of a rectangle that ends at a given coordinate in constant time. We do this by keeping track of the number of consecutive ones each square in each row. As we iterate over each row we update the maximum possible width at that point. This is done using `row[i] = row[i - 1] + 1 if row[i] == '1'`.\n\n!?!../Documents/85_maximal_rectangle_anim1.json:2000,500!?!\n\nOnce we know the maximum widths for each point above a given point, we can compute the maximum rectangle with the lower right corner at that point in linear time. As we iterate up the column, we know that the maximal width of a rectangle spanning from the original point to the current point is the running minimum of each maximal width we have encountered.\n\nWe define:\n\n$$maxWidth = min(maxWidth, widthHere)$$\n\n$$curArea = maxWidth * (currentRow - originalRow + 1)$$\n\n$$maxArea = max(maxArea, curArea)$$\n\nThe following animation makes this more clear. Given the maximal width of all points above it, let's calculate the maximum area of any rectangle at the bottom yellow square:\n\n!?!../Documents/85_maximal_rectangle_anim3.json:1400,1125!?!\n\nRepeating this process for every point in our input gives us the global maximum.\n\nNote that our method of precomputing our maximum width essentially breaks down our input into a set of histograms, with each column being a new histogram. We are computing the maximal area for each histogram.\n\n![Histograms](../Figures/85/histogram.jpg)\n\nAs a result, the above approach is essentially a repeated use of the better brute force approach detailed in [84 - Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/solution/).\n\n<iframe src=\"https://leetcode.com/playground/dcjhsddR/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"dcjhsddR\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(N^2M)$$. Computing the maximum area for one point takes $$O(N)$$ time, since it iterates over the values in the same column. This is done for all $$N * M$$ points, giving $$O(N) * O(NM) = O(N^2M)$$.\n\n* Space complexity : $$O(NM)$$. We allocate an equal sized array to store the maximum width at each point.\n<br />\n<br />\n\n---\n\n#### Approach 3: Using Histograms - Stack\n\n**Algorithm**\n\nIn the previous approach we discussed breaking the input into a set of histograms - one histogram representing the substructure at each column. To compute the maximum area in our rectangle, we merely have to compute the maximum area of each histogram and find the global maximum (note that the below approach builds a histogram for each row instead of each column, but the idea is still the same).\n\nSince [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) is already a problem on leetcode, we can just borrow the fastest stack-based solution [here](https://leetcode.com/problems/largest-rectangle-in-histogram/solution/) and apply it onto each histogram we generate. For an in-depth explanation on how the Largest Rectangle in Histogram algorithm works, please use the links above.\n\n<iframe src=\"https://leetcode.com/playground/8CCzCXhA/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"8CCzCXhA\"></iframe>\n\nNote that the code under the function `leetcode84` is a direct copy paste from the final solution in [84 - Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/solution/).\n\n**Complexity Analysis**\n\n* Time complexity : $$O(NM)$$. Running `leetcode84` on each row takes `M` (length of each row) time. This is done `N` times for $$O(NM)$$.\n\n* Space complexity : $$O(M)$$. We allocate an array the size of the the number of columns to store our widths at each row.\n<br />\n<br />\n\n---\n\n#### Approach 4: Dynamic Programming - Maximum Height at Each Point\n\n**Intuition**\n\nImagine an algorithm where for each point we computed a rectangle by doing the following:\n\n * Finding the maximum height of the rectangle by iterating upwards until a 0 is reached\n\n * Finding the maximum width of the rectangle by iterating outwards left and right until a height that doesn't accommodate the maximum height of the rectangle\n\n For example finding the rectangle defined by the yellow point:\n\n !?!../Documents/85_maximal_rectangle_anim2.json:1125,1125!?!\n\n We know that the maximal rectangle must be one of the rectangles constructed in this manner.\n\n Given a maximal rectangle with height `h`, left bound `l`, and right bound `r`, there must be a point on the interval `[l, r]` on the rectangle's base where the number of consecutive ones (height) above the point is `<=h`. If this point exists, then the rectangle defined by the point in the above manner will be the maximal rectangle, as it will reach height `h` iterating upward and then expand to the bounds of `[l, r]` as all heights within those bounds must accommodate `h` for the rectangle to exist.\n\n\n If this point does not exist, then the rectangle cannot be maximum, as you would be able to create a bigger rectangle by simply increasing the height of original rectangle, since all heights on the interval `[l, r]` would be greater than `h`.\n\n As a result for each point you only need to compute `h`, `l`, and `r` - the height, left bound, and right bound of the rectangle it defines.\n\n Using dynamic programming, we can use the `h`, `l`, and `r` of each point in the previous row to compute the `h`, `l`, and `r` for every point in the next row in linear time.\n\n\n**Algorithm**\n\nGiven row `matrix[i]`, we keep track of the `h`, `l`, and `r` of each point in the row by defining three arrays - `height`, `left`, and `right`.\n\n`height[j]` will correspond to the height of `matrix[i][j]`, and so on and so forth with the other arrays.\n\nThe question now becomes how to update each array.\n\nHeight:\n\nThis one is easy. `h` is defined as the number of continuous ones in a line from our point. We explored how to compute this in Approach 2 in one row with:\n\n    row[j] = row[j - 1] + 1 if row[j] == '1'\n\nWe can just make a minor modification for it to work for us here:\n\n    new_height[j] = old_height[j] + 1 if row[j] == '1' else 0\n\n\nLeft:\n\nConsider what causes changes to the left bound of our rectangle. Since all instances of zeros occurring in the row above the current one have already been factored into the current version of `left`, the only thing that affects our `left` is if we encounter a zero in our current row.\n\nAs a result we can define:\n\n    new_left[j] = max(old_left[j], cur_left)\n\n`cur_left` is one greater than rightmost occurrence of zero we have encountered. When we \"expand\" the rectangle to the left, we know it can't expand past that point, otherwise it'll run into the zero.\n\nRight:\n\nHere we can reuse our reasoning in `left` and define:\n\n    new_right[j] = min(old_right[j], cur_right)\n\n`cur_right` is the leftmost occurrence of zero we have encountered. For the sake of simplicity, we don't decrement `cur_right` by one (like how we increment `cur_left`) so we can compute the area of the rectangle with `height[j] * (right[j] - left[j])` instead of `height[j] * (right[j] + 1 - left[j])`.\n\nThis means that _technically_ the base of the rectangle is defined by the half-open interval `[l, r)` instead of the closed interval `[l, r]`, and `right` is really one greater than right boundary. Although the algorithm will still work if we don't do this with `right`, doing it this way makes the area calculation a little cleaner.\n\nNote that to keep track of our `cur_right` correctly, we must iterate from right to left, so this is what is done when updating `right`.\n\nWith our `left`, `right`, and `height` arrays appropriately updated, all that there is left to do is compute the area of each rectangle.\n\nSince we know the bounds and height of rectangle `j`, we can trivially compute it's area with `height[j] * (right[j] - left[j])`, and change our `max_area` if we find that rectangle `j`'s area is greater.\n\n\n<iframe src=\"https://leetcode.com/playground/dASvyiBj/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"dASvyiBj\"></iframe>\n\nThe code and idea for the above solution originates from user [morrischen2008](https://leetcode.com/morrischen2008/).\n\n**Complexity Analysis**\n\n* Time complexity : $$O(NM)$$. In each iteration over `N` we iterate over `M` a constant number of times.\n\n* Space complexity : $$O(M)$$. `M` is the length of the additional arrays we keep.\n\n<br />\n\n---\n\nWritten by [@alwinpeng](https://leetcode.com/alwinpeng/).",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "697",
+            "count": 104,
+            "average": "4.356",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "maximal-rectangle",
+    "playgroundData": {
+        "dcjhsddR": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximal-rectangle-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "8CCzCXhA": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximal-rectangle-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "dASvyiBj": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximal-rectangle-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

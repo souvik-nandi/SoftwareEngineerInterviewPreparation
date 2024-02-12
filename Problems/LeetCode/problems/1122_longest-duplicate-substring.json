@@ -1,0 +1,262 @@
+{
+    "id": "1122",
+    "question": {
+        "questionId": "1122",
+        "questionFrontendId": "1044",
+        "boundTopicId": null,
+        "title": "Longest Duplicate Substring",
+        "titleSlug": "longest-duplicate-substring",
+        "content": "<p>Given a string <code>s</code>, consider all <em>duplicated substrings</em>: (contiguous) substrings of s that occur 2 or more times.&nbsp;The occurrences&nbsp;may overlap.</p>\n\n<p>Return <strong>any</strong> duplicated&nbsp;substring that has the longest possible length.&nbsp;If <code>s</code> does not have a duplicated substring, the answer is <code>&quot;&quot;</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"banana\"\n<strong>Output:</strong> \"ana\"\n</pre><p><strong>Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"abcd\"\n<strong>Output:</strong> \"\"\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= s.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 1772,
+        "dislikes": 341,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "\"banana\"\n\"abcd\"",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sliding Window",
+                "slug": "sliding-window",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Rolling Hash",
+                "slug": "rolling-hash",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Suffix Array",
+                "slug": "suffix-array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Hash Function",
+                "slug": "hash-function",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 10}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    string longestDupSubstring(string s) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public String longestDupSubstring(String s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def longestDupSubstring(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def longestDupSubstring(self, s: str) -> str:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nchar * longestDupSubstring(char * s){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public string LongestDupSubstring(string s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar longestDupSubstring = function(s) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} s\n# @return {String}\ndef longest_dup_substring(s)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func longestDupSubstring(_ s: String) -> String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func longestDupSubstring(s string) string {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def longestDupSubstring(s: String): String = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun longestDupSubstring(s: String): String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn longest_dup_substring(s: String) -> String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function longestDupSubstring($s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function longestDupSubstring(s: string): string {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec longest_dup_substring(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\nlongest_dup_substring(S) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec longest_dup_substring(s :: String.t) :: String.t\n  def longest_dup_substring(s) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"55.2K\", \"totalSubmission\": \"178.6K\", \"totalAcceptedRaw\": 55201, \"totalSubmissionRaw\": 178611, \"acRate\": \"30.9%\"}",
+        "hints": [
+            "Binary search for the length of the answer.  (If there's an answer of length 10, then there are answers of length 9, 8, 7, ...)",
+            "To check whether an answer of length K exists, we can use Rabin-Karp 's algorithm."
+        ],
+        "solution": {
+            "id": "742",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "\"banana\"",
+        "metaData": "{\n  \"name\": \"longestDupSubstring\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "742",
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Approach 1: Binary Search + Rabin-Karp\n\n**String Searching Algorithms**\n\nThe problem is a follow-up of [Longest Repeating Substring](https://leetcode.com/problems/longest-repeating-substring/),\nand typically used to check if you're comfortable with\n[string searching algortihms](https://en.wikipedia.org/wiki/String-searching_algorithm#Single-pattern_algorithms).\n\nBest algorithms have a linear execution time on average. \nThe most popular ones are\n[Aho-Corasick](https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm),\n[KMP](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm) and \n[Rabin-Karp](https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm):\nAho-Corasick is used by [fgrep](https://en.wikipedia.org/wiki/Grep#Variations),\nKMP is used for [chinese string searching](https://www.aclweb.org/anthology/C96-2200),\nand Rabin-Karp is used for plagiarism detection and in bioinformatics to look for similarities in two\nor more proteins.\n\nThe first two are optimized for a single pattern search,\nand Rabin-Karp for a multiple pattern search, \nthat is exactly the case here.\n\n**Split into two subtasks**\n\nHere we have a \"two in one\" problem:\n\n1. Perform a search by a substring length in the interval from 1 to N.\n\n2. Check if there is a duplicate substring of a given length L.\n\n**Subtask one: Binary search**\n\nA naive solution would be to check all possible string length \none by one starting from N - 1: \nif there is a duplicate substring of length N - 1, then of length N - 2, etc. \nNote that if there is a duplicate substring of length k, that means\nthat there is a duplicate substring of length k - 1. \nHence one could use a binary search by string length here,\nand have the first problem solved in $$O(\\log N)$$ time.\n\n![fig](../Figures/1044/binary.png)\n\n**Subtask two: Rabin-Karp**\n\nSubtask two, to check if there is duplicate substring of a given length,\nis a multiple pattern search. \nLet's use Rabin-Karp algorithm to solve it in a linear time. \n\nThe idea is very simple: \n\n- Move a sliding window of length L along the string of length N.\n \n- Check if the string in the sliding window\nis in the hashset of already seen strings. \n\n    - If yes, the duplicate substring is right here.\n    \n    - If not, save the string in the sliding window in the hashset.\n    \n!?!../Documents/1044_LIS.json:1000,411!?!\n\nThe linear time implementation of this idea is a bit\ntricky because of two technical problems:\n\n1. [How to implement a string slice in a constant time?](https://stackoverflow.com/questions/35180377/time-complexity-of-string-slice) \n\n2. Hashset memory consumption could be huge for very long strings. \nOne could keep the string hash instead of string itself\nbut hash generation costs $$O(L)$$ for the string of length L,\nand the complexity of the algorithm would be $$O((N - L)L)$$,\nN - L for the slice and L for the hash generation. \nTherefore, we should think about how to generate a hash in a constant time.\n\nLet's now address these problems.\n\n**String slice in a constant time**\n\nThat's a very language-dependent problem. For the moment for \nJava and Python there is no straightforward solution, \nand to move sliding window in a constant time\none has to convert string to another data structure. \n\nPython is already providing [memoryview](https://docs.python.org/3/library/stdtypes.html#memoryview),\nwhich is known to be surprisingly slow,\nand there is a lot of discussion about [strview](https://mail.python.org/pipermail/python-ideas/2011-December/012993.html).\n\nThe simplest solution both for Java and Python is to convert string to integer array of ascii-values.\n\n**Rolling hash: hash generation in a constant time**\n\nTo generate hash of array of length L, one needs $$O(L)$$ time.\n\n> How to have constant time of hash generation? Use the advantage of \nslice: only one integer in, and only one - out. \n\nThat's the idea of [rolling hash](https://en.wikipedia.org/wiki/Rolling_hash).\nHere we'll implement the simplest one, polynomial rolling hash.\nBeware that's polynomial rolling hash is NOT the [Rabin fingerprint](https://en.wikipedia.org/wiki/Rolling_hash#Rabin_fingerprint).\n\nSince one deals here with lowercase English letters, all values \nin the integer array are between 0 and 25:\n\n`arr[i] = (int)S.charAt(i) - (int)'a'`\n\nSo one could consider string `abcd` -> `[0, 1, 2, 3]` as a number \nin a [numeral system](https://en.wikipedia.org/wiki/Numeral_system) with the base 26. \nHence `abcd` -> `[0, 1, 2, 3]` could be hashed as \n\n$$\nh_0 = 0 \\times 26^3 + 1 \\times 26^2 + 2 \\times 26^1 + 3 \\times 26^0\n$$\n\nLet's write the same formula in a generalized way, where $$c_i$$\nis an integer array element and $$a = 26$$ is a system base.\n\n$$\nh_0 = c_0 a^{L - 1} + c_1 a^{L - 2} + ... + c_i a^{L - 1 - i} + ... + c_{L - 1} a^1 + c_L a^0\n$$\n\n$$\nh_0 = \\sum_{i = 0}^{L - 1}{c_i a^{L - 1 - i}}\n$$\n\nNow let's consider the slice `abcd` -> `bcde`. For int arrays that means\n`[0, 1, 2, 3]` -> `[1, 2, 3, 4]`, to remove number 0 and to add number 4.\n\n$$\nh_1 = (h_0 - 0 \\times 26^3) \\times 26 + 4 \\times 26^0\n$$\n\nLet's look at what changed piece by piece. First, we subtracted $$0 \\times 26^3$$ from $$h_0$$; this removed the contribution of the first element in the array from the hash. Then we multiplied the remaining hash value by $$26$$, which increased the power of the base value for each of the elements remaining in the array (i.e., $$2 \\times 26^1) \\times 26 = 2 \\times 26^2$$).  Finally, we add the contribution of the new element (`e`) to the hash. This results in:\n\n$$\nh_1 = 1 \\times 26^3 + 2 \\times 26^2 + 3 \\times 26^1 + 4 \\times 26^0\n$$\n\nThus after applying a constant amount of operations to the hash for `abcd`, we have obtained the hash for the next substring, `bcde`.\n\nIn general form:\n\n$$\nh_1 = (h_0 a - c_0 a^L) + c_{L + 1}\n$$\n\nNow hash regeneration is perfect and fits in a constant time. \nThere is one more issue to address: the possible overflow problem. \n\n**How to avoid overflow:**\n\n$$a^L$$ could be a large number and hence\nthe idea is to set limits to avoid the overflow. \nTo set limits means to limit a hash by a modulus\nand instead of using the hash itself, we will use `h % modulus`.\n\nWe should select a modulus that is large enough for our purpose, but how \nlarge is that? [You can read more about the topic here.](https://en.wikipedia.org/wiki/Linear_congruential_generator#Parameters_in_common_use)\n\nWe must use caution when using a rolling hash to assess the equality of two substrings. The modulus can be thought of as the number of bins that we will use to store the starting index of seen substrings. So there is a higher probability of having two different substrings being stored in the same bin (`h % modulus`) when the modulus is small. \n\nWhen two **different** strings have the same hash value, we call this a collision. In an ideal setting, where every test case is known, this issue could be resolved by adjusting the modulus to avoid collisions. However, in a real-world setting, whenever two substrings have the same hash, we must verify that the substrings are truly equal. This leads to a Rabin-Karp time complexity of $$O(L(N - L))$$ in the worst case, when many substring hashes collide. \n\nFortunately, we can reduce the probability of collisions by selecting a good value for our modulus.\n\nGenerally speaking, a good modulus will have two traits:\n1. The modulus is not too big and not too small. That is to say, it is large, which helps reduce the probability of collisions, but it is still small enough to fit in a 32-bit integer.\n2. It is prime. This helps increase the uniformity of our hash values after taking `h % modulus`, which in turn decreases the probability of collisions occurring. If you would like to know more about why this is, you can read about it [here](https://stackoverflow.com/questions/1145217/why-should-hash-functions-use-a-prime-number-modulus).\n\nHere, we will use our favorite modulus, $$10^9 + 7$$, which satisfies both of these conditions.\n\nOne last note, there is another overflow issue here that is purely Java-related.\nWhile in Python, the hash regeneration goes perfectly fine, \nin Java, the same thing is better to rewrite to avoid\nlong overflow. Check [here](https://leetcode.com/problems/longest-duplicate-substring/discuss/292982/Java-version-with-comment) \nthe nice explanation by @[hqt](https://leetcode.com/hqt/).\n\n<iframe src=\"https://leetcode.com/playground/7pDby8V8/shared\" frameBorder=\"0\" width=\"100%\" height=\"89\" name=\"7pDby8V8\"></iframe>\n\n**Binary search algorithm**\n\n- Use binary search by a substring length to check lengths from 1 to N\n`left = 1, right = N`. While left != right:\n\n    - L = left + (right - left) / 2\n    \n    - If search(L) != -1 (i.e. there is a duplicate substring), left = L + 1\n    \n    - Otherwise (no duplicate substring), right = L. \n    \n- Return a duplicate string of length `left - 1`, or an empty string if \nthere is no such a string.\n\n**Rabin-Karp algorithm**\n    \n- Compute the hash of the substring consisting of the first `L` characters of string `S`. \n\n- We will initialize the hash map of already seen substrings with this hash value as a key and a list containing the starting index of the substring (`0`) as the value.  \n\n  The reason we store the first index of the substring is so that if we see this hash value again, we can compare the current substring to each substring that has the same hash value to see if the two strings actually match or if this is a hash collision.  \n  \n  Every time we compare two strings will cost $$O(L)$$ time. If we designed a very poor hash function or picked a very weak modulus value (like 1), we could potentially spend $$O(L \\cdot (N - L)^2)$$ time comparing each substring of length `L` to all previous substrings of length `L` on each call to `search`. \n\n  Fortunately, the hash function we are using guarantees that there will not be any collisions between hash values that are less than `MOD` (before taking the modulus). Furthermore, selecting a large, prime modulus helps create a more uniform distribution of the hash values that are greater than `MOD`. So the probability of two hash values colliding is very small, and on average, we expect the number of collisions to be negligible. Therefore, we can expect the `search` function to take $$O(N)$$ time on average.\n        \n- Iterate over the start position of each substring in `S` from $$1$$ to $$N - L$$. Note we already initialized our hashmap with the substring starting at index zero.\n        \n    - Compute the rolling hash based on the previous hash value.\n    \n    - If the hash is in t\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/egK33tRD/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"egK33tRD\"></iframe>\n\n**Complexity Analysis**\n\nLet $$N$$ be the length of input `S`.\n\n* Time complexity: $$O(N \\log N)$$. \n\n  Performing a binary search requires $$O(\\log N)$$ iterations. At each iteration, we spend on average $$O(N)$$ time for the Rabin-Karp algorithm. Note that the worst-case scenario for the Rabin-Karp algorithm is when every substring of length $$L$$ has the same hash value and there are no duplicate substrings of length $$L$$. This would require $$O(L \\cdot (N - L) / 2)$$ time to compare each of the $$O(N - L)$$ substrings to all previous substrings resulting in $$O(L \\cdot (N - L)^{2})$$.\n  \n  However, because of the problem constraints, there can be at most $$30,000$$ substrings and because we have $$10^9 + 7$$ bins, the probability of a collision occurring between two different substrings is small. It is quite possible that there will be some collisions, but the probability of there being many collisions (on the order of $$N - L$$ collisions) is extraordinarily small. So the average time complexity of the Rabin-Karp algorithm will be $$O(N - L)$$ which simplifies to $$O(N)$$.\n  \n* Space complexity: $$O(N)$$ \n\n  We use a hashmap `seen` to store the starting index and hash value for each substring. This will contain at most $$N$$ key-value pairs.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "727",
+            "count": 95,
+            "average": "4.305",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "longest-duplicate-substring",
+    "playgroundData": {
+        "7pDby8V8": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "longest-duplicate-substring-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "egK33tRD": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "longest-duplicate-substring-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,241 @@
+{
+    "id": "367",
+    "question": {
+        "questionId": "367",
+        "questionFrontendId": "367",
+        "boundTopicId": null,
+        "title": "Valid Perfect Square",
+        "titleSlug": "valid-perfect-square",
+        "content": "<p>Given a <strong>positive</strong> integer <i>num</i>, write a function which returns True if <i>num</i> is a perfect square else False.</p>\n\n<p><b>Follow up:</b> <b>Do not</b> use any built-in library function such as <code>sqrt</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<pre><strong>Input:</strong> num = 16\n<strong>Output:</strong> true\n</pre><p><strong>Example 2:</strong></p>\n<pre><strong>Input:</strong> num = 14\n<strong>Output:</strong> false\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num &lt;= 2^31 - 1</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 2542,
+        "dislikes": 243,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Sqrt(x)\", \"titleSlug\": \"sqrtx\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Sum of Square Numbers\", \"titleSlug\": \"sum-of-square-numbers\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "16\n14",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    bool isPerfectSquare(int num) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public boolean isPerfectSquare(int num) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def isPerfectSquare(self, num):\n        \"\"\"\n        :type num: int\n        :rtype: bool\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def isPerfectSquare(self, num: int) -> bool:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nbool isPerfectSquare(int num){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public bool IsPerfectSquare(int num) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} num\n * @return {boolean}\n */\nvar isPerfectSquare = function(num) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer} num\n# @return {Boolean}\ndef is_perfect_square(num)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func isPerfectSquare(_ num: Int) -> Bool {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func isPerfectSquare(num int) bool {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def isPerfectSquare(num: Int): Boolean = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun isPerfectSquare(num: Int): Boolean {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn is_perfect_square(num: i32) -> bool {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer $num\n     * @return Boolean\n     */\n    function isPerfectSquare($num) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function isPerfectSquare(num: number): boolean {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (is-perfect-square num)\n  (-> exact-integer? boolean?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec is_perfect_square(Num :: integer()) -> boolean().\nis_perfect_square(Num) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec is_perfect_square(num :: integer) :: boolean\n  def is_perfect_square(num) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"390.9K\", \"totalSubmission\": \"905.4K\", \"totalAcceptedRaw\": 390905, \"totalSubmissionRaw\": 905445, \"acRate\": \"43.2%\"}",
+        "hints": [],
+        "solution": {
+            "id": "792",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "16",
+        "metaData": "{\r\n  \"name\": \"isPerfectSquare\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"num\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "792",
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Overview\n\nSquare root related problems usually could be solved in logarithmic time.\nThere are three standard logarithmic time approaches, \nlisted here from the worst to the best:\n\n- Recursion. The slowest one. \n\n- Binary Search. The simplest one.\n\n- Newton's Method. The fastest one, and therefore widely used in dynamical\nsimulations. \n\nThe last two algorithms are interesting ones, let's discuss them in details. \n\nThese solutions have the same starting point.\nIf one knows an [integer square](https://en.wikipedia.org/wiki/Integer_square_root)\n$$x$$ of num, the answer is straightforward: num is a perfect square \nif $$x * x == \\textrm{num}$$. Hence the problem is to compute this integer\nsquare.\n\n<br /> \n<br />\n\n\n---\n#### Approach 1: Binary Search \n\nFor $$\\textrm{num} > 2$$ the square root $$a$$ is always less than \n$$\\textrm{num} / 2$$ and greater than 1: \n$$1 < x < \\textrm{num} / 2$$.\nSince $$x$$ is an integer, the problem goes down to the search in the \nsorted set of integer numbers.\nBinary search is a standard way to proceed in such a situation. \n\n**Algorithm**\n\n- If num < 2, return True.\n\n- Set the left boundary to 2, and the right boundary to num / 2.\n\n- While left <= right:\n\n    - Take x = (left + right) / 2 as a guess. \n    Compute guess_squared = x * x and compare it with num:\n    \n        - If guess_squared == num, then the perfect square is right here, return True.\n        \n        - If guess_squared > num, move the right boundary right = x - 1.\n        \n        - Otherwise, move the left boundary left = x + 1.\n        \n- If we're here, the number is not a prefect square. Return False.\n\n**Implementation**\n\n![fig](../Figures/367/binary.png) \n\n<iframe src=\"https://leetcode.com/playground/QxVjwegu/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"QxVjwegu\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(\\log N)$$. \n\n    Let's compute time complexity with the help of \n    [master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)) \n    $$T(N) = aT\\left(\\frac{N}{b}\\right) + \\Theta(N^d)$$.\n    The equation represents dividing the problem \n    up into $$a$$ subproblems of size $$\\frac{N}{b}$$ in $$\\Theta(N^d)$$ time. \n    Here at step there is only one subproblem `a = 1`, its size \n    is a half of the initial problem `b = 2`, \n    and all this happens in a constant time `d = 0`.\n    That means that $$\\log_b{a} = d$$ and hence we're dealing with \n    [case 2](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)#Case_2_example)\n    that results in $$\\mathcal{O}(n^{\\log_b{a}} \\log^{d + 1} N)$$\n    = $$\\mathcal{O}(\\log N)$$ time complexity.\n\n* Space complexity : $$\\mathcal{O}(1)$$.\n<br /> \n<br />\n\n\n---\n#### Approach 2: Newton's Method\n\n**Newton's Algorithm: How to Figure out the Formula**\n\nLet's do a very rough derivation of Newton's sequence which could be\ndone in two minutes during the interview. Please note that it's more\na way to memorize than a strict mathematical proof. \n\nThe problem is to find a root of \n\n$$f(x) = x^2 - \\textrm{num} = 0$$\n\nThe idea of Newton's algorithm is to start from a seed (= initial guess) \nand then to compute a root as a sequence of improved guesses.  \n\n![fig](../Figures/367/parabola4.png) \n\nFor example, there is a guess $$x_k$$.\nTo compute next guess $$x_{k + 1}$$, let's\napproximate $$f(x_k)$$ by its tangent line, that would result in\n\n$$x_{k + 1} = x_k - \\frac{f(x_k)}{f'(x_k)}$$\n\nNow use $$f(x_k) = x_k^2 - \\textrm{num}$$ and $$f'(x_k) = 2x_k$$, and voila\nthe result\n\n$$x_{k + 1} = \\frac{1}{2}\\left(x_k + \\frac{\\textrm{num}}{x_k}\\right)$$\n\n**Choose a seed**\n\nHow to choose a seed? Since the function $$f(x) = x^2 - \\textrm{num}$$\nis monotonous, the smaller seed the better, so let's take $$\\textrm{num}/2$$.\n\n**Algorithm**\n\n- Take num / 2 as a seed.\n\n- While x * x > num, compute the next guess using Newton's method: \n$$x = \\frac{1}{2}\\left(x + \\frac{\\textrm{num}}{x}\\right)$$.\n\n- Return x * x == num\n\n**Implementation**\n\n![fig](../Figures/367/newton2.png) \n\n<iframe src=\"https://leetcode.com/playground/Rc8xCfCk/shared\" frameBorder=\"0\" width=\"100%\" height=\"242\" name=\"Rc8xCfCk\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(\\log N)$$ because [guess sequence converges\nquadratically](https://en.wikipedia.org/wiki/Newton%27s_method#Proof_of_quadratic_convergence_for_Newton's_iterative_method). \n\n* Space complexity : $$\\mathcal{O}(1)$$.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "769",
+            "count": 28,
+            "average": "4.821",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "valid-perfect-square",
+    "playgroundData": {
+        "QxVjwegu": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "valid-perfect-square-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Rc8xCfCk": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "valid-perfect-square-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

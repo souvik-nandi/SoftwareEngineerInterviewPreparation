@@ -1,0 +1,234 @@
+{
+    "id": "244",
+    "question": {
+        "questionId": "244",
+        "questionFrontendId": "244",
+        "boundTopicId": null,
+        "title": "Shortest Word Distance II",
+        "titleSlug": "shortest-word-distance-ii",
+        "content": "<p>Design a data structure that will be initialized with a string array, and then it should answer queries of the shortest distance between two different strings from the array.</p>\n\n<p>Implement the <code>WordDistance</code> class:</p>\n\n<ul>\n\t<li><code>WordDistance(String[] wordsDict)</code> initializes the object with the strings array <code>wordsDict</code>.</li>\n\t<li><code>int shortest(String word1, String word2)</code> returns the shortest distance between <code>word1</code> and <code>word2</code> in the array <code>wordsDict</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;WordDistance&quot;, &quot;shortest&quot;, &quot;shortest&quot;]\n[[[&quot;practice&quot;, &quot;makes&quot;, &quot;perfect&quot;, &quot;coding&quot;, &quot;makes&quot;]], [&quot;coding&quot;, &quot;practice&quot;], [&quot;makes&quot;, &quot;coding&quot;]]\n<strong>Output</strong>\n[null, 3, 1]\n\n<strong>Explanation</strong>\nWordDistance wordDistance = new WordDistance([&quot;practice&quot;, &quot;makes&quot;, &quot;perfect&quot;, &quot;coding&quot;, &quot;makes&quot;]);\nwordDistance.shortest(&quot;coding&quot;, &quot;practice&quot;); // return 3\nwordDistance.shortest(&quot;makes&quot;, &quot;coding&quot;);    // return 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= wordsDict.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= wordsDict[i].length &lt;= 10</code></li>\n\t<li><code>wordsDict[i]</code> consists of lowercase English letters.</li>\n\t<li><code>word1</code> and <code>word2</code> are in <code>wordsDict</code>.</li>\n\t<li><code>word1 != word2</code></li>\n\t<li>At most <code>5000</code> calls will be made to <code>shortest</code>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Medium",
+        "likes": 901,
+        "dislikes": 282,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Merge Two Sorted Lists\", \"titleSlug\": \"merge-two-sorted-lists\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Shortest Word Distance\", \"titleSlug\": \"shortest-word-distance\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Shortest Word Distance III\", \"titleSlug\": \"shortest-word-distance-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[\"WordDistance\",\"shortest\",\"shortest\"]\n[[[\"practice\",\"makes\",\"perfect\",\"coding\",\"makes\"]],[\"coding\",\"practice\"],[\"makes\",\"coding\"]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Design",
+                "slug": "design",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 77}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class WordDistance {\npublic:\n    WordDistance(vector<string>& wordsDict) {\n        \n    }\n    \n    int shortest(string word1, string word2) {\n        \n    }\n};\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * WordDistance* obj = new WordDistance(wordsDict);\n * int param_1 = obj->shortest(word1,word2);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class WordDistance {\n\n    public WordDistance(String[] wordsDict) {\n        \n    }\n    \n    public int shortest(String word1, String word2) {\n        \n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * WordDistance obj = new WordDistance(wordsDict);\n * int param_1 = obj.shortest(word1,word2);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class WordDistance(object):\n\n    def __init__(self, wordsDict):\n        \"\"\"\n        :type wordsDict: List[str]\n        \"\"\"\n        \n\n    def shortest(self, word1, word2):\n        \"\"\"\n        :type word1: str\n        :type word2: str\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your WordDistance object will be instantiated and called as such:\n# obj = WordDistance(wordsDict)\n# param_1 = obj.shortest(word1,word2)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class WordDistance:\n\n    def __init__(self, wordsDict: List[str]):\n        \n\n    def shortest(self, word1: str, word2: str) -> int:\n        \n\n\n# Your WordDistance object will be instantiated and called as such:\n# obj = WordDistance(wordsDict)\n# param_1 = obj.shortest(word1,word2)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n\ntypedef struct {\n    \n} WordDistance;\n\n\nWordDistance* wordDistanceCreate(char ** wordsDict, int wordsDictSize) {\n    \n}\n\nint wordDistanceShortest(WordDistance* obj, char * word1, char * word2) {\n  \n}\n\nvoid wordDistanceFree(WordDistance* obj) {\n    \n}\n\n/**\n * Your WordDistance struct will be instantiated and called as such:\n * WordDistance* obj = wordDistanceCreate(wordsDict, wordsDictSize);\n * int param_1 = wordDistanceShortest(obj, word1, word2);\n \n * wordDistanceFree(obj);\n*/",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class WordDistance {\n\n    public WordDistance(string[] wordsDict) {\n        \n    }\n    \n    public int Shortest(string word1, string word2) {\n        \n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * WordDistance obj = new WordDistance(wordsDict);\n * int param_1 = obj.Shortest(word1,word2);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string[]} wordsDict\n */\nvar WordDistance = function(wordsDict) {\n    \n};\n\n/** \n * @param {string} word1 \n * @param {string} word2\n * @return {number}\n */\nWordDistance.prototype.shortest = function(word1, word2) {\n    \n};\n\n/** \n * Your WordDistance object will be instantiated and called as such:\n * var obj = new WordDistance(wordsDict)\n * var param_1 = obj.shortest(word1,word2)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "class WordDistance\n\n=begin\n    :type words_dict: String[]\n=end\n    def initialize(words_dict)\n        \n    end\n\n\n=begin\n    :type word1: String\n    :type word2: String\n    :rtype: Integer\n=end\n    def shortest(word1, word2)\n        \n    end\n\n\nend\n\n# Your WordDistance object will be instantiated and called as such:\n# obj = WordDistance.new(words_dict)\n# param_1 = obj.shortest(word1, word2)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "\nclass WordDistance {\n\n    init(_ wordsDict: [String]) {\n        \n    }\n    \n    func shortest(_ word1: String, _ word2: String) -> Int {\n        \n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * let obj = WordDistance(wordsDict)\n * let ret_1: Int = obj.shortest(word1, word2)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "type WordDistance struct {\n    \n}\n\n\nfunc Constructor(wordsDict []string) WordDistance {\n    \n}\n\n\nfunc (this *WordDistance) Shortest(word1 string, word2 string) int {\n    \n}\n\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * obj := Constructor(wordsDict);\n * param_1 := obj.Shortest(word1,word2);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "class WordDistance(_wordsDict: Array[String]) {\n\n    def shortest(word1: String, word2: String): Int = {\n        \n    }\n\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * var obj = new WordDistance(wordsDict)\n * var param_1 = obj.shortest(word1,word2)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class WordDistance(wordsDict: Array<String>) {\n\n    fun shortest(word1: String, word2: String): Int {\n        \n    }\n\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * var obj = WordDistance(wordsDict)\n * var param_1 = obj.shortest(word1,word2)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "struct WordDistance {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl WordDistance {\n\n    fn new(wordsDict: Vec<String>) -> Self {\n        \n    }\n    \n    fn shortest(&self, word1: String, word2: String) -> i32 {\n        \n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * let obj = WordDistance::new(wordsDict);\n * let ret_1: i32 = obj.shortest(word1, word2);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class WordDistance {\n    /**\n     * @param String[] $wordsDict\n     */\n    function __construct($wordsDict) {\n        \n    }\n  \n    /**\n     * @param String $word1\n     * @param String $word2\n     * @return Integer\n     */\n    function shortest($word1, $word2) {\n        \n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * $obj = WordDistance($wordsDict);\n * $ret_1 = $obj->shortest($word1, $word2);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "class WordDistance {\n    constructor(wordsDict: string[]) {\n\n    }\n\n    shortest(word1: string, word2: string): number {\n\n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * var obj = new WordDistance(wordsDict)\n * var param_1 = obj.shortest(word1,word2)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define word-distance%\n  (class object%\n    (super-new)\n\n    ; words-dict : (listof string?)\n    (init-field\n      words-dict)\n    \n    ; shortest : string? string? -> exact-integer?\n    (define/public (shortest word1 word2)\n\n      )))\n\n;; Your word-distance% object will be instantiated and called as such:\n;; (define obj (new word-distance% [words-dict words-dict]))\n;; (define param_1 (send obj shortest word1 word2))",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec word_distance_init_(WordsDict :: [unicode:unicode_binary()]) -> any().\nword_distance_init_(WordsDict) ->\n  .\n\n-spec word_distance_shortest(Word1 :: unicode:unicode_binary(), Word2 :: unicode:unicode_binary()) -> integer().\nword_distance_shortest(Word1, Word2) ->\n  .\n\n\n%% Your functions will be called as such:\n%% word_distance_init_(WordsDict),\n%% Param_1 = word_distance_shortest(Word1, Word2),\n\n%% word_distance_init_ will be called before every test case, in which you can do some necessary initializations.",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule WordDistance do\n  @spec init_(words_dict :: [String.t]) :: any\n  def init_(words_dict) do\n\n  end\n\n  @spec shortest(word1 :: String.t, word2 :: String.t) :: integer\n  def shortest(word1, word2) do\n\n  end\nend\n\n# Your functions will be called as such:\n# WordDistance.init_(words_dict)\n# param_1 = WordDistance.shortest(word1, word2)\n\n# WordDistance.init_ will be called before every test case, in which you can do some necessary initializations.",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"134.9K\", \"totalSubmission\": \"224.1K\", \"totalAcceptedRaw\": 134949, \"totalSubmissionRaw\": 224051, \"acRate\": \"60.2%\"}",
+        "hints": [],
+        "solution": {
+            "id": "692",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[\"WordDistance\",\"shortest\",\"shortest\"]\n[[[\"practice\",\"makes\",\"perfect\",\"coding\",\"makes\"]],[\"coding\",\"practice\"],[\"makes\",\"coding\"]]",
+        "metaData": "{\n  \"classname\": \"WordDistance\",\n  \"maxbytesperline\": 300000,\n  \"constructor\": {\n    \"params\": [\n      {\n        \"type\": \"string[]\",\n        \"name\": \"wordsDict\"\n      },\n      {\n        \"type\": \"integer\",\n        \"name\": \"wordsSize\",\n        \"lang\": \"c\",\n        \"value\": \"size_1\"\n      }\n    ]\n  },\n  \"methods\": [\n    {\n      \"name\": \"shortest\",\n      \"params\": [\n        {\n          \"type\": \"string\",\n          \"name\": \"word1\"\n        },\n        {\n          \"type\": \"string\",\n          \"name\": \"word2\"\n        }\n      ],\n      \"return\": {\n        \"type\": \"integer\"\n      }\n    }\n  ],\n  \"systemdesign\": true,\n  \"params\": [\n    {\n      \"name\": \"inputs\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"name\": \"inputs\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<String>\",\n    \"dealloc\": true\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "692",
+        "content": "[TOC]\n\n## Solution\n\nBefore looking at the solution for this problem, let's look at what the problem asks us to do in simpler terms. We have to design a class which receives a list of words as input in the constructor. The class has a function which we need to implement and that function is `shortest` which takes two words as input and returns the minimum distance between the two as the output.\n\nWhen the problem talks about the distance between two words, it essentially means the absolute gap between the indices of the two words in the list. For e.g. if the first word occurs at a location `i` and the second word occurs at the location `j`, then the distance between the two would be `abs(i - j)`.\n\nThe question asks us to find the `minimum` such different between words which clearly indicates that the words can occur at multiple locations. If we have `K` occurrences for the `word1` and `L` occurrences for the `word2`, then iteratively checking every pair of indices will give us a $$O(N^2)$$ algorithm which won't be optimal at all. We won't discuss that algorithm here since it is very straightforward.\n\nThe brute-force algorithm would simple consider all possible pairs of indices for (`word1_location`, `word2_location`) and see which one produces the minimum distance. Let's try and build on this idea and see if some pre-processing can help us out reduce the complexity of the brute-force algorithm.\n<br>\n<br>\n\n---\n\n#### Approach 1: Using Preprocessed Sorted Indices\n\n**Intuition**\n\nA given word can occur multiple times in the original word list. Let's suppose the first word, `word1` in the input to the function `shortest` occurs at the indices `[i1, i2, i3, i4]` in the original list. Similarly, let's assume that the second word, `word2`, appears at the following locations inside the word list `[j1, j2, j3]`.\n\nNow, given these list of indices, we are to simply find the pair of indices `(i, j)` such that their absolute difference is minimum.\n\n> The main idea for this approach is that if the list of these indices is in sorted order, we can find such a pair in linear time.\n\nThe idea is to use a two pointer approach. Let's say we have a pointer `i` for the sorted list of indices of `word1` and `j` for the sorted list of indices of `word2`. At every iteration, we record the difference of indices i.e. `abs(word1[i] - word2[j])`. Once we've done that, we have two possible choices for progressing the two pointers.\n\n<pre>\nword1[i] < word2[j]\n</pre>\n\nIf this is the case, that means there is no point in moving the `j` pointer forward. The location indices for the words are in a sorted order. We know that `word2[j + 1] > word2[j]` because these indices are sorted. So, if we move `j` forward, then the difference `abs(word1[i] - word2[j + 1])` would be even greater than `abs(word1[i] - word2[j])`. That doesn't help us since we want to find the minimum possible distance (difference) overall.\n\n> So, if we have (word1[i] < word2[j]), we move the pointer 'i' one step forward i.e. (i + 1) in the hopes that abs(word1[i + 1] - word2[j]) would give us a lower distance than abs(word1[i] - word2[j]). We say \"hopes\" because it is not certain this improvement would happen.\n\nLet's look at two different examples. In the first example we will see that moving `i` forward gave us the best difference overall (0). In the second example we see that moving `i` forward leads us to our second case (yet to discuss) but doesn't lead to any improvement in the difference.\n\n**Example-1**\n\n```\nword1_locations = [2,4,5,9]\nword2_locations = [4,10,11]\n\ni, j = 0, 0\nmin_diff = 2 (abs(2 - 4))\nword1[i] < word2[j] i.e. 2 < 4\n  move i one step forward\n\ni, j = 1, 0 (abs(4 - 4))\nmin_diff = 0 (We hit the jackpot!)  \n```\n\n**Example-2**\n\n```\nword1_locations = [2,7,15,16]\nword2_locations = [4,10,11]\n\ni, j = 0, 0\nmin_diff = 2 (abs(2 - 4))\nword1[i] < word2[j] i.e. 2 < 4\n  move i one step forward\n\ni, j = 1, 0\nmin_diff = 2 (2 < abs(7 - 4))\n\nHere, we did not update out global minimum difference.\nThat is why we said earlier, moving 'i' forward may or\nmay not give a lower difference. But moving 'j' forward in\nour case would definitely worsen the difference (or keep it same!).\n```\nLet's move onto our second scenario.\n\n<pre>\nword1[i] > word2[j]\n</pre>\n\nIf this is the case, that means there is no point in moving the `i` pointer forward. We know that `word1[i + 1] > word2[j]` because these indices are sorted. So, if we move `i` forward, then the difference `abs(word1[i + 1] - word2[j])` would be even greater than `abs(word1[i] - word2[j])`. That doesn't help us since we want to find the minimum possible distance (difference) overall.\n\n> So, along the similar lines of thought as the previous case, if we have (word1[i] > word2[j]), we move the pointer 'j' one step forward i.e. (j + 1) in the hopes that abs(word1[i] - word2[j + 1]) would give us a lower distance than abs(word1[i] - word2[j]). We say \"hopes\" because as showcased in the previous scenario, it is not certain this improvement would happen.\n\nNow let's formally look at the algorithm for solving this problem.\n\n**Algorithm**\n\n1. In the `constructor` of the class, we simply iterate over the given list of words and prepare a dictionary, mapping a word to all it's locations in the array.\n2. Since we process all the words from left to right, we will get all the indices in a sorted order by default for all the words. So, we don't have to sort the indices ourselves.\n3. Let's call the dictionary that we build, `locations`.\n4. For a given pair of words, obtain the list of indices (appearances inside the original list/array of words). Let's call the two arrays `loc1` and `loc2`.\n5. Initialize two pointer variables `l1 = 0` and `l2 = 0`.\n6. For a given `l1` and `l2`, we first update (if possible) the minimum difference (distance) till now i.e. `dist = min(dist, abs(loc1[l1] - loc2[l2]))`. Then, we check if `loc1[l1] < loc2[l2]` and if this is the case, we move `l1` one step forward i.e. `l1 = l1 + 1`. Otherwise, we move `l2` one step forward i.e. `l2 = l2 + 1`.\n7. We keep doing this until all the elements in the smaller of the two location arrays are processed.\n8. Return the global minimum distance between the words.\n\n<center>\n<img src=\"../Figures/244/postings_list.png\" width=\"500\">\n</center>\n\nThis represents the locations dictionary that we should build given the original words list in the constructor. The key represents the word and the value is a list containing indices in ascending order of occurrences throughout the array. Let's look at the minimum distance between the words `apple` and `football` in the array. So, we will be considering the two *sorted* lists of indices: `[3, 6, 8, 12]` and `[2, 7, 9]`.\n\n<center>\n\n!?!../Documents/244_Anim.json!?!\n\n</center>\n\n<iframe src=\"https://leetcode.com/playground/9kJr9mNg/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"9kJr9mNg\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity : The time complexity of the constructor of our class is $$O(N)$$ considering there were $$N$$ words in the original list. We iterate over them and prepare a mapping from key to list of indices as described before. Then, for the function that finds the minimum distance between the two words, the complexity would be $$O(max(K, L))$$ where $$K$$ and $$L$$ represent the number of occurrences of the two words. However, $$K = O(N)$$ and also $$L = O(N)$$. Therefore, the overall time complexity would also be $$O(N)$$. The reason the complexity is $$O(max(K, L))$$ and not $$O(min(K, L))$$ is because of the scenario where the minimum element of the smaller list is larger than `all` the elements of the larger list. In that scenario, the pointer for the smaller list will not progress at all and the one for the longer list will reach to the very end.\n* Space complexity: $$O(N)$$ for the dictionary that we prepare in the constructor. The keys represent all the unique words in the input and the values represent all of the indices from $$0 ... N$$.\n<br />",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "677",
+            "count": 62,
+            "average": "4.258",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "shortest-word-distance-ii",
+    "playgroundData": {
+        "9kJr9mNg": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "shortest-word-distance-ii-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

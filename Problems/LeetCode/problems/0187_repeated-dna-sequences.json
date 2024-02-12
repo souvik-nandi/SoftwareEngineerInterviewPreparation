@@ -1,0 +1,290 @@
+{
+    "id": "187",
+    "question": {
+        "questionId": "187",
+        "questionFrontendId": "187",
+        "boundTopicId": null,
+        "title": "Repeated DNA Sequences",
+        "titleSlug": "repeated-dna-sequences",
+        "content": "<p>The <strong>DNA sequence</strong> is composed of a series of nucleotides abbreviated as <code>&#39;A&#39;</code>, <code>&#39;C&#39;</code>, <code>&#39;G&#39;</code>, and <code>&#39;T&#39;</code>.</p>\n\n<ul>\n\t<li>For example, <code>&quot;ACGAATTCCG&quot;</code> is a <strong>DNA sequence</strong>.</li>\n</ul>\n\n<p>When studying <strong>DNA</strong>, it is useful to identify repeated sequences within the DNA.</p>\n\n<p>Given a string <code>s</code> that represents a <strong>DNA sequence</strong>, return all the <strong><code>10</code>-letter-long</strong> sequences (substrings) that occur more than once in a DNA molecule. You may return the answer in <strong>any order</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT\"\n<strong>Output:</strong> [\"AAAAACCCCC\",\"CCCCCAAAAA\"]\n</pre><p><strong>Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"AAAAAAAAAAAAA\"\n<strong>Output:</strong> [\"AAAAAAAAAA\"]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s[i]</code> is either <code>&#39;A&#39;</code>, <code>&#39;C&#39;</code>, <code>&#39;G&#39;</code>, or <code>&#39;T&#39;</code>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 2174,
+        "dislikes": 425,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "\"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT\"\n\"AAAAAAAAAAAAA\"",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sliding Window",
+                "slug": "sliding-window",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Rolling Hash",
+                "slug": "rolling-hash",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Hash Function",
+                "slug": "hash-function",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<string> findRepeatedDnaSequences(string s) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public List<String> findRepeatedDnaSequences(String s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def findRepeatedDnaSequences(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[str]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def findRepeatedDnaSequences(self, s: str) -> List[str]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** findRepeatedDnaSequences(char * s, int* returnSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public IList<string> FindRepeatedDnaSequences(string s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @return {string[]}\n */\nvar findRepeatedDnaSequences = function(s) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} s\n# @return {String[]}\ndef find_repeated_dna_sequences(s)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func findRepeatedDnaSequences(_ s: String) -> [String] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func findRepeatedDnaSequences(s string) []string {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def findRepeatedDnaSequences(s: String): List[String] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun findRepeatedDnaSequences(s: String): List<String> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn find_repeated_dna_sequences(s: String) -> Vec<String> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String[]\n     */\n    function findRepeatedDnaSequences($s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function findRepeatedDnaSequences(s: string): string[] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (find-repeated-dna-sequences s)\n  (-> string? (listof string?))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec find_repeated_dna_sequences(S :: unicode:unicode_binary()) -> [unicode:unicode_binary()].\nfind_repeated_dna_sequences(S) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec find_repeated_dna_sequences(s :: String.t) :: [String.t]\n  def find_repeated_dna_sequences(s) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"278.5K\", \"totalSubmission\": \"613.7K\", \"totalAcceptedRaw\": 278473, \"totalSubmissionRaw\": 613692, \"acRate\": \"45.4%\"}",
+        "hints": [],
+        "solution": {
+            "id": "769",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "\"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT\"",
+        "metaData": "{\r\n  \"name\": \"findRepeatedDnaSequences\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "769",
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Overview\n\nFollow-up here is to solve the same problem for \narbitrary sequence length $$L$$,\nand to check the situation when $$L$$ is quite large. \nHence let's use $$L = 10$$ notation everywhere to ease the problem generalisation.\n\n> We will discuss three different ideas how to proceed.\nThey are all based on sliding window + hashset. \nThe key point is how to implement a window slice. \n\nLinear-time window slice $$\\mathcal{O}(L)$$ is easy stupid,\njust take a substring. \nOverall that would result in \n$$\\mathcal{O}((N - L) L)$$ time complexity and \nhuge space consumption in the case of large sequences.\n\nConstant-time slice $$\\mathcal{O}(1)$$ is where the fun starts,\nbecause the way you choose will show your actual background.\nThere are two ways to proceed: \n\n- Rabin-Karp = constant-time slice using rolling hash algorithm.\n\n- Bit manipulation = constant-time slice using bitmasks.\n\nLast two approaches have $$\\mathcal{O}(N - L)$$ time complexity and \nmoderate space consumption even in the case of large sequences.\n\n![pic](../Figures/187/algorithms.png)\n<br /> \n<br />\n\n\n---\n#### Approach 1: Linear-time Slice Using Substring + HashSet\n\nThe idea is straightforward : \n\n- Move a sliding window of length L along the string of length N.\n \n- Check if the sequence in the sliding window\nis in the hashset of already seen sequences. \n\n    - If yes, the repeated sequence is right here. Update the output.\n    \n    - If not, save the sequence in the sliding window in the hashset.  \n\n![pic](../Figures/187/hashes2.png)\n\n<iframe src=\"https://leetcode.com/playground/KJnqFkpQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"KJnqFkpQ\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}((N - L)L)$$, that is $$\\mathcal{O}(N)$$\nfor the constant $$L = 10$$. \nIn the loop executed $$N - L + 1$$ one builds a \nsubstring of length $$L$$. Overall that results in $$\\mathcal{O}((N - L)L)$$\ntime complexity.\n\n* Space complexity : $$\\mathcal{O}((N - L)L)$$ to keep the hashset, \nthat results in $$\\mathcal{O}(N)$$ for the constant $$L = 10$$. \n<br /> \n<br />\n\n\n---\n#### Approach 2: Rabin-Karp : Constant-time Slice Using Rolling Hash\n\nRabin-Karp algorithm is used to perform a multiple pattern search.\nIt's used for plagiarism detection and \nin bioinformatics to look for similarities in two or more proteins. \n\nDetailed implementation of Rabin-Karp algorithm for quite a \ncomplex case you could find in the article\n[Longest Duplicate Substring](https://leetcode.com/articles/longest-duplicate-substring/),\nhere we do a very basic implementation.\n\n> The idea is to slice over the string and to compute\nthe hash of the sequence in the sliding window, both in a constant time.\n\nLet's use string `AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT` as an example.\nFirst, convert string to integer array:\n\n- 'A' -> 0, 'C' -> 1, 'G' -> 2, 'T' -> 3\n\n`AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT` -> `00000111110000011111100000222333`.\nTime to compute hash for the first sequence of length L:\n`0000011111`. The sequence could be considered as a number \nin a [numeral system](https://en.wikipedia.org/wiki/Numeral_system) \nwith the base 4 and hashed as \n\n$$h_0 = \\sum_{i = 0}^{L - 1}{c_i 4^{L - 1 - i}}$$\n\nHere $$c_{0..4} = 0$$ and $$c_{5..9} = 1$$ are digits of `0000011111`.\n\nNow let's consider the slice `AAAAACCCCC` -> `AAAACCCCCA`. \nFor int arrays that means `0000011111` -> `0000111110`, \nto remove leading 0 and to add trailing 0.\nOne integer in, and one out, let's recompute the hash:\n\n$$h_1 = (h_0 \\times 4 - c_0 4^L) + c_{L + 1}$$.\n\nVoila, window slice and hash recomputation are both done in a constant time.\n \n**Algorithm**\n        \n- Iterate over the start position of sequence : from 1 to $$N - L$$.\n\n    - If `start == 0`, compute the hash of the first sequence `s[0: L]`. \n        \n    - Otherwise, compute rolling hash from the previous hash value.\n            \n    - If hash is in the hashset,\n    one met a repeated sequence, time to update the output. \n            \n    - Otherwise, add hash in the hashset.\n         \n- Return output list.\n \n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/LHZ8DjUE/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"LHZ8DjUE\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N - L)$$, that is $$\\mathcal{O}(N)$$\nfor the constant $$L = 10$$. \nIn the loop executed $$N - L + 1$$ one builds a \nhash in a constant time, that results in $$\\mathcal{O}(N - L)$$\ntime complexity.\n\n* Space complexity : $$\\mathcal{O}(N - L)$$ to keep the hashset, \nthat results in $$\\mathcal{O}(N)$$ for the constant $$L = 10$$.\n<br /> \n<br />\n\n\n---\n#### Approach 3: Bit Manipulation : Constant-time Slice Using Bitmask\n\n> The idea is to slice over the string and to compute\nthe bitmask of the sequence in the sliding window, both in a constant time.\n\nAs for Rabin-Karp, let's start from conversion of string to 2-bits integer array:\n\n$$A -> 0 = 00_2, \\quad C -> 1 = 01_2, \\quad G -> 2 = 10_2, \\quad T -> 3 = 11_2$$\n\n`GAAAAACCCCCAAAAACCCCCCAAAAAGGGTTT` -> `200000111110000011111100000222333`.\n\nTime to compute bitmask for the first sequence of length L: `2000001111`.\nEach digit in the sequence (0, 1, 2 or 3) takes not more than 2 bits:\n\n$$0 = 00_2, \\quad 1 = 01_2, \\quad 2 = 10_2, \\quad 3 = 11_2$$\n\nHence the bitmask could be computed in the loop:\n\n- Do left shift to free the last two bits: `bitmask <<= 2`\n\n- Save current digit from `2000001111` \nin these last two bits: `bitmask |= nums[i]`\n\n![pic](../Figures/187/first_bitmask2.png)\n\nNow let's consider the slice `GAAAAACCCCC` -> `AAAAACCCCC`. \nFor int arrays that means `20000011111` -> `0000011111`, \nto remove leading 2 and to add trailing 1.\n\n![pic](../Figures/187/slice.png)\n\nTo add trailing 1 is simple, the same idea as just above: \n\n- Do left shift to free the last two bits: `bitmask <<= 2`\n\n- Save 1 into these last two bits: `bitmask |= 1`\n\nNow the problem is to remove two leading bits, which contain 2.\nIn other words, the problem is to set 2L-bit and (2L + 1)-bit to zero.\n\n> Let's use bitwise trick to unset n-th bit: `bitmask &= ~(1 << n)`.\n\nThis trick is very simple:\n\n- `1 << n` is to set n-th bit equal to 1.\n\n- `~(1 << n)` is to set n-th bit equal to 0, and all lower bits to 1.\n\n- `bitmask &= ~(1 << n)` is to set n-th bit of bitmask equal to 0.\n\nStraightforward trick usage is to unset first 2L-bit and then (2L + 1)-bit:\n`bitmask &= ~(1 << 2 * L) & ~(1 << (2 * L + 1)`. That could be simplified\nas `bitmask &= ~(3 << 2 * L)`:\n\n- $$3 = (11)_2$$, and hence `3 << 2 * L` would set 2L-bit and (2L + 1)-bit\nequal to 1.\n\n- `~(3 << 2 * L)` would set 2L-bit and (2L + 1)-bit equal to 0,\nand all lower bits to 1.\n\n- `bitmask &= ~(3 << 2 * L)` would set 2L-bit and (2L + 1)-bit \nof bitmask equal to 0.\n\n![pic](../Figures/187/unset.png)\n\nVoila, window slice and bitmask recomputation are both done in a constant time.\n\n**Algorithm**\n\n- Iterate over the start position of sequence : from 1 to $$N - L$$.\n\n    - If `start == 0`, compute the bitmask of the first sequence `s[0: L]`. \n        \n    - Otherwise, compute bitmask from the previous bitmask.\n            \n    - If bitmask is in the hashset,\n    one met a repeated sequence, time to update the output. \n            \n    - Otherwise, add bitmask in the hashset.\n         \n- Return output list.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/zSLkPVuQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"zSLkPVuQ\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N - L)$$, that is $$\\mathcal{O}(N)$$\nfor the constant $$L = 10$$. \nIn the loop executed $$N - L + 1$$ one builds a \nbitmask in a constant time, that results in $$\\mathcal{O}(N - L)$$\ntime complexity.\n\n* Space complexity : $$\\mathcal{O}(N - L)$$ to keep the hashset, \nthat results in $$\\mathcal{O}(N)$$ for the constant $$L = 10$$.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "754",
+            "count": 63,
+            "average": "4.016",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "repeated-dna-sequences",
+    "playgroundData": {
+        "KJnqFkpQ": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "repeated-dna-sequences-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "LHZ8DjUE": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "repeated-dna-sequences-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "zSLkPVuQ": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "repeated-dna-sequences-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

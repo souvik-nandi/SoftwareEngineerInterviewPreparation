@@ -1,0 +1,202 @@
+{
+    "id": "208",
+    "question": {
+        "questionId": "208",
+        "questionFrontendId": "208",
+        "boundTopicId": null,
+        "title": "Implement Trie (Prefix Tree)",
+        "titleSlug": "implement-trie-prefix-tree",
+        "content": "<p>A <a href=\"https://en.wikipedia.org/wiki/Trie\" target=\"_blank\"><strong>trie</strong></a> (pronounced as &quot;try&quot;) or <strong>prefix tree</strong> is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker.</p>\n\n<p>Implement the Trie class:</p>\n\n<ul>\n\t<li><code>Trie()</code> Initializes the trie object.</li>\n\t<li><code>void insert(String word)</code> Inserts the string <code>word</code> into the trie.</li>\n\t<li><code>boolean search(String word)</code> Returns <code>true</code> if the string <code>word</code> is in the trie (i.e., was inserted before), and <code>false</code> otherwise.</li>\n\t<li><code>boolean startsWith(String prefix)</code> Returns <code>true</code> if there is a previously inserted string <code>word</code> that has the prefix <code>prefix</code>, and <code>false</code> otherwise.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;Trie&quot;, &quot;insert&quot;, &quot;search&quot;, &quot;search&quot;, &quot;startsWith&quot;, &quot;insert&quot;, &quot;search&quot;]\n[[], [&quot;apple&quot;], [&quot;apple&quot;], [&quot;app&quot;], [&quot;app&quot;], [&quot;app&quot;], [&quot;app&quot;]]\n<strong>Output</strong>\n[null, null, true, false, true, null, true]\n\n<strong>Explanation</strong>\nTrie trie = new Trie();\ntrie.insert(&quot;apple&quot;);\ntrie.search(&quot;apple&quot;);   // return True\ntrie.search(&quot;app&quot;);     // return False\ntrie.startsWith(&quot;app&quot;); // return True\ntrie.insert(&quot;app&quot;);\ntrie.search(&quot;app&quot;);     // return True\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= word.length, prefix.length &lt;= 2000</code></li>\n\t<li><code>word</code> and <code>prefix</code> consist only of lowercase English letters.</li>\n\t<li>At most <code>3 * 10<sup>4</sup></code> calls <strong>in total</strong> will be made to <code>insert</code>, <code>search</code>, and <code>startsWith</code>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 7569,
+        "dislikes": 94,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Design Add and Search Words Data Structure\", \"titleSlug\": \"design-add-and-search-words-data-structure\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Design Search Autocomplete System\", \"titleSlug\": \"design-search-autocomplete-system\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Replace Words\", \"titleSlug\": \"replace-words\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Implement Magic Dictionary\", \"titleSlug\": \"implement-magic-dictionary\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Encrypt and Decrypt Strings\", \"titleSlug\": \"encrypt-and-decrypt-strings\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Implement Trie II (Prefix Tree)\", \"titleSlug\": \"implement-trie-ii-prefix-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[\"Trie\",\"insert\",\"search\",\"search\",\"startsWith\",\"insert\",\"search\"]\n[[],[\"apple\"],[\"apple\"],[\"app\"],[\"app\"],[\"app\"],[\"app\"]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Design",
+                "slug": "design",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Trie",
+                "slug": "trie",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 13}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 8}, {\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 7}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Pinterest\", \"slug\": \"pinterest\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Opendoor\", \"slug\": \"opendoor\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Qualtrics\", \"slug\": \"qualtrics\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Square\", \"slug\": \"square\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Docusign\", \"slug\": \"docusign\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Trie {\npublic:\n    Trie() {\n        \n    }\n    \n    void insert(string word) {\n        \n    }\n    \n    bool search(string word) {\n        \n    }\n    \n    bool startsWith(string prefix) {\n        \n    }\n};\n\n/**\n * Your Trie object will be instantiated and called as such:\n * Trie* obj = new Trie();\n * obj->insert(word);\n * bool param_2 = obj->search(word);\n * bool param_3 = obj->startsWith(prefix);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Trie {\n\n    public Trie() {\n        \n    }\n    \n    public void insert(String word) {\n        \n    }\n    \n    public boolean search(String word) {\n        \n    }\n    \n    public boolean startsWith(String prefix) {\n        \n    }\n}\n\n/**\n * Your Trie object will be instantiated and called as such:\n * Trie obj = new Trie();\n * obj.insert(word);\n * boolean param_2 = obj.search(word);\n * boolean param_3 = obj.startsWith(prefix);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Trie(object):\n\n    def __init__(self):\n        \n\n    def insert(self, word):\n        \"\"\"\n        :type word: str\n        :rtype: None\n        \"\"\"\n        \n\n    def search(self, word):\n        \"\"\"\n        :type word: str\n        :rtype: bool\n        \"\"\"\n        \n\n    def startsWith(self, prefix):\n        \"\"\"\n        :type prefix: str\n        :rtype: bool\n        \"\"\"\n        \n\n\n# Your Trie object will be instantiated and called as such:\n# obj = Trie()\n# obj.insert(word)\n# param_2 = obj.search(word)\n# param_3 = obj.startsWith(prefix)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Trie:\n\n    def __init__(self):\n        \n\n    def insert(self, word: str) -> None:\n        \n\n    def search(self, word: str) -> bool:\n        \n\n    def startsWith(self, prefix: str) -> bool:\n        \n\n\n# Your Trie object will be instantiated and called as such:\n# obj = Trie()\n# obj.insert(word)\n# param_2 = obj.search(word)\n# param_3 = obj.startsWith(prefix)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n\ntypedef struct {\n    \n} Trie;\n\n\nTrie* trieCreate() {\n    \n}\n\nvoid trieInsert(Trie* obj, char * word) {\n  \n}\n\nbool trieSearch(Trie* obj, char * word) {\n  \n}\n\nbool trieStartsWith(Trie* obj, char * prefix) {\n  \n}\n\nvoid trieFree(Trie* obj) {\n    \n}\n\n/**\n * Your Trie struct will be instantiated and called as such:\n * Trie* obj = trieCreate();\n * trieInsert(obj, word);\n \n * bool param_2 = trieSearch(obj, word);\n \n * bool param_3 = trieStartsWith(obj, prefix);\n \n * trieFree(obj);\n*/",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Trie {\n\n    public Trie() {\n        \n    }\n    \n    public void Insert(string word) {\n        \n    }\n    \n    public bool Search(string word) {\n        \n    }\n    \n    public bool StartsWith(string prefix) {\n        \n    }\n}\n\n/**\n * Your Trie object will be instantiated and called as such:\n * Trie obj = new Trie();\n * obj.Insert(word);\n * bool param_2 = obj.Search(word);\n * bool param_3 = obj.StartsWith(prefix);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "\nvar Trie = function() {\n    \n};\n\n/** \n * @param {string} word\n * @return {void}\n */\nTrie.prototype.insert = function(word) {\n    \n};\n\n/** \n * @param {string} word\n * @return {boolean}\n */\nTrie.prototype.search = function(word) {\n    \n};\n\n/** \n * @param {string} prefix\n * @return {boolean}\n */\nTrie.prototype.startsWith = function(prefix) {\n    \n};\n\n/** \n * Your Trie object will be instantiated and called as such:\n * var obj = new Trie()\n * obj.insert(word)\n * var param_2 = obj.search(word)\n * var param_3 = obj.startsWith(prefix)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "class Trie\n    def initialize()\n        \n    end\n\n\n=begin\n    :type word: String\n    :rtype: Void\n=end\n    def insert(word)\n        \n    end\n\n\n=begin\n    :type word: String\n    :rtype: Boolean\n=end\n    def search(word)\n        \n    end\n\n\n=begin\n    :type prefix: String\n    :rtype: Boolean\n=end\n    def starts_with(prefix)\n        \n    end\n\n\nend\n\n# Your Trie object will be instantiated and called as such:\n# obj = Trie.new()\n# obj.insert(word)\n# param_2 = obj.search(word)\n# param_3 = obj.starts_with(prefix)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "\nclass Trie {\n\n    init() {\n        \n    }\n    \n    func insert(_ word: String) {\n        \n    }\n    \n    func search(_ word: String) -> Bool {\n        \n    }\n    \n    func startsWith(_ prefix: String) -> Bool {\n        \n    }\n}\n\n/**\n * Your Trie object will be instantiated and called as such:\n * let obj = Trie()\n * obj.insert(word)\n * let ret_2: Bool = obj.search(word)\n * let ret_3: Bool = obj.startsWith(prefix)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "type Trie struct {\n    \n}\n\n\nfunc Constructor() Trie {\n    \n}\n\n\nfunc (this *Trie) Insert(word string)  {\n    \n}\n\n\nfunc (this *Trie) Search(word string) bool {\n    \n}\n\n\nfunc (this *Trie) StartsWith(prefix string) bool {\n    \n}\n\n\n/**\n * Your Trie object will be instantiated and called as such:\n * obj := Constructor();\n * obj.Insert(word);\n * param_2 := obj.Search(word);\n * param_3 := obj.StartsWith(prefix);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "class Trie() {\n\n    def insert(word: String) {\n        \n    }\n\n    def search(word: String): Boolean = {\n        \n    }\n\n    def startsWith(prefix: String): Boolean = {\n        \n    }\n\n}\n\n/**\n * Your Trie object will be instantiated and called as such:\n * var obj = new Trie()\n * obj.insert(word)\n * var param_2 = obj.search(word)\n * var param_3 = obj.startsWith(prefix)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Trie() {\n\n    fun insert(word: String) {\n        \n    }\n\n    fun search(word: String): Boolean {\n        \n    }\n\n    fun startsWith(prefix: String): Boolean {\n        \n    }\n\n}\n\n/**\n * Your Trie object will be instantiated and called as such:\n * var obj = Trie()\n * obj.insert(word)\n * var param_2 = obj.search(word)\n * var param_3 = obj.startsWith(prefix)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "struct Trie {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl Trie {\n\n    fn new() -> Self {\n        \n    }\n    \n    fn insert(&self, word: String) {\n        \n    }\n    \n    fn search(&self, word: String) -> bool {\n        \n    }\n    \n    fn starts_with(&self, prefix: String) -> bool {\n        \n    }\n}\n\n/**\n * Your Trie object will be instantiated and called as such:\n * let obj = Trie::new();\n * obj.insert(word);\n * let ret_2: bool = obj.search(word);\n * let ret_3: bool = obj.starts_with(prefix);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Trie {\n    /**\n     */\n    function __construct() {\n        \n    }\n  \n    /**\n     * @param String $word\n     * @return NULL\n     */\n    function insert($word) {\n        \n    }\n  \n    /**\n     * @param String $word\n     * @return Boolean\n     */\n    function search($word) {\n        \n    }\n  \n    /**\n     * @param String $prefix\n     * @return Boolean\n     */\n    function startsWith($prefix) {\n        \n    }\n}\n\n/**\n * Your Trie object will be instantiated and called as such:\n * $obj = Trie();\n * $obj->insert($word);\n * $ret_2 = $obj->search($word);\n * $ret_3 = $obj->startsWith($prefix);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "class Trie {\n    constructor() {\n\n    }\n\n    insert(word: string): void {\n\n    }\n\n    search(word: string): boolean {\n\n    }\n\n    startsWith(prefix: string): boolean {\n\n    }\n}\n\n/**\n * Your Trie object will be instantiated and called as such:\n * var obj = new Trie()\n * obj.insert(word)\n * var param_2 = obj.search(word)\n * var param_3 = obj.startsWith(prefix)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define trie%\n  (class object%\n    (super-new)\n    (init-field)\n    \n    ; insert : string? -> void?\n    (define/public (insert word)\n\n      )\n    ; search : string? -> boolean?\n    (define/public (search word)\n\n      )\n    ; starts-with : string? -> boolean?\n    (define/public (starts-with prefix)\n\n      )))\n\n;; Your trie% object will be instantiated and called as such:\n;; (define obj (new trie%))\n;; (send obj insert word)\n;; (define param_2 (send obj search word))\n;; (define param_3 (send obj starts-with prefix))",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec trie_init_() -> any().\ntrie_init_() ->\n  .\n\n-spec trie_insert(Word :: unicode:unicode_binary()) -> any().\ntrie_insert(Word) ->\n  .\n\n-spec trie_search(Word :: unicode:unicode_binary()) -> boolean().\ntrie_search(Word) ->\n  .\n\n-spec trie_starts_with(Prefix :: unicode:unicode_binary()) -> boolean().\ntrie_starts_with(Prefix) ->\n  .\n\n\n%% Your functions will be called as such:\n%% trie_init_(),\n%% trie_insert(Word),\n%% Param_2 = trie_search(Word),\n%% Param_3 = trie_starts_with(Prefix),\n\n%% trie_init_ will be called before every test case, in which you can do some necessary initializations.",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Trie do\n  @spec init_() :: any\n  def init_() do\n\n  end\n\n  @spec insert(word :: String.t) :: any\n  def insert(word) do\n\n  end\n\n  @spec search(word :: String.t) :: boolean\n  def search(word) do\n\n  end\n\n  @spec starts_with(prefix :: String.t) :: boolean\n  def starts_with(prefix) do\n\n  end\nend\n\n# Your functions will be called as such:\n# Trie.init_()\n# Trie.insert(word)\n# param_2 = Trie.search(word)\n# param_3 = Trie.starts_with(prefix)\n\n# Trie.init_ will be called before every test case, in which you can do some necessary initializations.",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"622.4K\", \"totalSubmission\": \"1M\", \"totalAcceptedRaw\": 622416, \"totalSubmissionRaw\": 1049197, \"acRate\": \"59.3%\"}",
+        "hints": [],
+        "solution": {
+            "id": "40",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[\"Trie\",\"insert\",\"search\",\"search\",\"startsWith\",\"insert\",\"search\"]\n[[],[\"apple\"],[\"apple\"],[\"app\"],[\"app\"],[\"app\"],[\"app\"]]",
+        "metaData": "{\n  \"classname\": \"Trie\",\n  \"constructor\": {\n    \"params\": []\n  },\n  \"methods\": [\n    {\n      \"params\": [\n        {\n          \"type\": \"string\",\n          \"name\": \"word\"\n        }\n      ],\n      \"name\": \"insert\",\n      \"return\": {\n        \"type\": \"void\"\n      }\n    },\n    {\n      \"params\": [\n        {\n          \"type\": \"string\",\n          \"name\": \"word\"\n        }\n      ],\n      \"name\": \"search\",\n      \"return\": {\n        \"type\": \"boolean\"\n      }\n    },\n    {\n      \"params\": [\n        {\n          \"type\": \"string\",\n          \"name\": \"prefix\"\n        }\n      ],\n      \"name\": \"startsWith\",\n      \"return\": {\n        \"type\": \"boolean\"\n      }\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  },\n  \"systemdesign\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "40",
+        "content": "[TOC]\r\n\r\n## Summary\r\nThis article is for intermediate level users. It introduces the following ideas:\r\nThe data structure Trie (Prefix tree) and most common operations with it.\r\n\r\n## Solution\r\n\r\n#### Applications\r\n\r\nTrie (we pronounce \"try\") or prefix tree is a tree data structure, which is used for retrieval of a key in a dataset of strings.\r\nThere are various applications of this very efficient data structure such as :\r\n\r\n##### 1. [Autocomplete](https://en.wikipedia.org/wiki/Autocomplete)\r\n\r\n![Google Suggest](https://leetcode.com/media/original_images/208_GoogleSuggest.png){:width=\"539px\"}\r\n{:align=\"center\"}\r\n\r\n*Figure 1. Google Suggest in action.*\r\n{:align=\"center\"}\r\n\r\n##### 2. [Spell checker](https://en.wikipedia.org/wiki/Spell_checker)\r\n\r\n![Spell Checker](https://leetcode.com/media/original_images/208_SpellCheck.png){:width=\"400px\"}\r\n{:align=\"center\"}\r\n\r\n*Figure 2. A spell checker used in word processor.*\r\n{:align=\"center\"}\r\n\r\n##### 3. [IP routing (Longest prefix matching)](https://en.wikipedia.org/wiki/Longest_prefix_match)\r\n\r\n![IP Routing](https://leetcode.com/media/original_images/208_IPRouting.gif){:width=\"539px\"}\r\n{:align=\"center\"}\r\n\r\n*Figure 3. Longest prefix matching algorithm uses Tries in Internet Protocol (IP) routing to select an entry from a forwarding table.*\r\n{:align=\"center\"}\r\n\r\n##### 4. [T9 predictive text](https://en.wikipedia.org/wiki/T9_(predictive_text))\r\n\r\n![T9 Predictive Text](https://leetcode.com/media/original_images/208_T9.jpg)\r\n{:align=\"center\"}\r\n\r\n*Figure 4. T9 which stands for Text on 9 keys, was used on phones to input texts during the late 1990s.*\r\n{:align=\"center\"}\r\n\r\n##### 5. [Solving word games](https://en.wikipedia.org/wiki/Boggle)\r\n\r\n![Boggle](https://leetcode.com/media/original_images/208_Boggle.png){:width=\"350px\"}\r\n{:align=\"center\"}\r\n\r\n*Figure 5. Tries is used to solve Boggle efficiently by pruning the search space.*\r\n{:align=\"center\"}\r\n\r\nThere are several other data structures, like balanced trees and hash tables, which give us the possibility to search for a word in a dataset of strings. Then why do we need trie?\r\nAlthough hash table has $$O(1)$$ time complexity for looking for a key, it is not efficient in the following operations :\r\n\r\n* Finding all keys with a common prefix.\r\n* Enumerating a dataset of strings in lexicographical order.\r\n\r\nAnother reason why trie outperforms hash table, is that as hash table increases in size, there are lots of hash collisions and the search time complexity could deteriorate to $$O(n)$$, where $$n$$ is the number of keys inserted.\r\nTrie could use less space compared to Hash Table when storing many keys with the same prefix.\r\nIn this case using trie has only $$O(m)$$ time complexity, where $$m$$ is the key length.\r\nSearching for a key in a balanced tree costs  $$O(m \\log n)$$ time complexity.\r\n\r\n#### Trie node structure\r\n\r\nTrie is a rooted tree. Its nodes have the following fields:\r\n\r\n* Maximum of $$R$$ links to its children, where each link corresponds to one of $$R$$ character values from dataset alphabet.\r\nIn this article we assume that $$R$$ is 26, the number of lowercase latin letters.\r\n* Boolean field which specifies whether the node corresponds to the end of the key, or is just a key prefix.\r\n\r\n![Representation of a key in trie](https://leetcode.com/media/original_images/208_Node.png){:width=\"539px\"}\r\n{:align=\"center\"}\r\n\r\n*Figure 6. Representation of a key \"leet\" in trie.*\r\n{:align=\"center\"}\r\n\r\n**Java**\r\n\r\n```java\r\nclass TrieNode {\r\n\r\n    // R links to node children\r\n    private TrieNode[] links;\r\n\r\n    private final int R = 26;\r\n\r\n    private boolean isEnd;\r\n\r\n    public TrieNode() {\r\n        links = new TrieNode[R];\r\n    }\r\n\r\n    public boolean containsKey(char ch) {\r\n        return links[ch -'a'] != null;\r\n    }\r\n    public TrieNode get(char ch) {\r\n        return links[ch -'a'];\r\n    }\r\n    public void put(char ch, TrieNode node) {\r\n        links[ch -'a'] = node;\r\n    }\r\n    public void setEnd() {\r\n        isEnd = true;\r\n    }\r\n    public boolean isEnd() {\r\n        return isEnd;\r\n    }\r\n}\r\n```\r\n\r\nTwo of the most common operations in a trie are insertion of a key and search for a key.\r\n\r\n#### Insertion of a key to a trie\r\n\r\nWe insert a key by searching into the trie. We start from the root and search a link, which corresponds to the first key character. There are two cases :\r\n\r\n* A link exists. Then we move down the tree following the link to the next child level. The algorithm continues with searching for the next key character.\r\n* A link does not exist. Then we create a new node and link it with the parent's link matching the current key character.\r\nWe repeat this step until we encounter the last character of the key, then we mark the current node as an end node and the algorithm finishes.\r\n\r\n![Insertion of keys into a trie](https://leetcode.com/media/original_images/208_TrieInsert.png){:width=\"539px\"}\r\n{:align=\"center\"}\r\n\r\n*Figure 7. Insertion of keys into a trie.*\r\n{:align=\"center\"}\r\n\r\n**Java**\r\n```java\r\nclass Trie {\r\n    private TrieNode root;\r\n\r\n    public Trie() {\r\n        root = new TrieNode();\r\n    }\r\n\r\n    // Inserts a word into the trie.\r\n    public void insert(String word) {\r\n        TrieNode node = root;\r\n        for (int i = 0; i < word.length(); i++) {\r\n            char currentChar = word.charAt(i);\r\n            if (!node.containsKey(currentChar)) {\r\n                node.put(currentChar, new TrieNode());\r\n            }\r\n            node = node.get(currentChar);\r\n        }\r\n        node.setEnd();\r\n    }\r\n}\r\n```\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(m)$$, where m is the key length.\r\n\r\nIn each iteration of the algorithm, we either examine or create a node in the trie till we reach the end of the key. This takes only $$m$$ operations.\r\n\r\n* Space complexity : $$O(m)$$.\r\n\r\nIn the worst case newly inserted key doesn't share a prefix with the the keys already inserted in the trie. We have to add $$m$$\r\nnew nodes, which takes us  $$O(m)$$ space.\r\n\r\n#### Search for a key in a trie\r\n\r\nEach key is represented in the trie as a path from the root to the internal node or leaf.\r\nWe start from the root with the first key character. We examine the current node for a link corresponding to the key character. There are two cases :\r\n\r\n* A link exist. We move to the next node in the path following this link, and proceed searching for the next key character.\r\n* A link does not exist. If there are no available key characters and current node is marked as `isEnd` we return true. Otherwise there are possible two cases in each of them we return false :\r\n\r\n    * There are key characters left, but it is impossible to follow the key path in the trie, and the key is missing.\r\n    * No key characters left, but current node is not marked as `isEnd`. Therefore the search key is only a prefix of another key in the trie.\r\n\r\n![Search of a key in a trie](https://leetcode.com/media/original_images/208_TrieSearchKey.png){:width=\"539px\"}\r\n{:align=\"center\"}\r\n\r\n*Figure 8. Search for a key in a trie.*\r\n{:align=\"center\"}\r\n\r\n**Java**\r\n\r\n```java\r\nclass Trie {\r\n    ...\r\n\r\n    // search a prefix or whole key in trie and\r\n    // returns the node where search ends\r\n    private TrieNode searchPrefix(String word) {\r\n        TrieNode node = root;\r\n        for (int i = 0; i < word.length(); i++) {\r\n           char curLetter = word.charAt(i);\r\n           if (node.containsKey(curLetter)) {\r\n               node = node.get(curLetter);\r\n           } else {\r\n               return null;\r\n           }\r\n        }\r\n        return node;\r\n    }\r\n\r\n    // Returns if the word is in the trie.\r\n    public boolean search(String word) {\r\n       TrieNode node = searchPrefix(word);\r\n       return node != null && node.isEnd();\r\n    }\r\n}\r\n```\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(m)$$\r\nIn each step of the algorithm we search for the next key character. In the worst case the algorithm performs $$m$$ operations.\r\n\r\n* Space complexity : $$O(1)$$\r\n\r\n#### Search for a key prefix in a trie\r\n\r\nThe approach is very similar to the one we used for searching a key in a trie. We traverse the trie from the root, till there are no characters left in key prefix or it is impossible to continue the path in the trie with the current key character. The only difference with the mentioned above `search for a key` algorithm is that when we come to an end of the key prefix, we always return true. We don't need to consider the `isEnd` mark of the current trie node, because we are searching for a prefix of a key, not for a whole key.\r\n\r\n![Search of a key prefix in a trie](https://leetcode.com/media/original_images/208_TrieSearchPrefix.png){:width=\"539px\"}\r\n{:align=\"center\"}\r\n\r\n*Figure 9. Search for a key prefix in a trie.*\r\n{:align=\"center\"}\r\n\r\n**Java**\r\n\r\n```java\r\nclass Trie {\r\n    ...\r\n\r\n    // Returns if there is any word in the trie\r\n    // that starts with the given prefix.\r\n    public boolean startsWith(String prefix) {\r\n        TrieNode node = searchPrefix(prefix);\r\n        return node != null;\r\n    }\r\n}\r\n```\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(m)$$\r\n\r\n* Space complexity : $$O(1)$$\r\n\r\n## Practice Problems\r\n\r\nHere are some wonderful problems for you to practice which uses the Trie data structure.\r\n\r\n1. [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/) - Pretty much a direct application of Trie.\r\n2. [Word Search II](https://leetcode.com/problems/word-search-ii/) - Similar to Boggle.\r\n\r\nAnalysis written by: @elmirap.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "37",
+            "count": 909,
+            "average": "4.927",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "implement-trie-prefix-tree",
+    "playgroundData": {}
+}

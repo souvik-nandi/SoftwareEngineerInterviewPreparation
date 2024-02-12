@@ -1,0 +1,247 @@
+{
+    "id": "592",
+    "question": {
+        "questionId": "592",
+        "questionFrontendId": "592",
+        "boundTopicId": null,
+        "title": "Fraction Addition and Subtraction",
+        "titleSlug": "fraction-addition-and-subtraction",
+        "content": "<p>Given a string <code>expression</code> representing an expression of fraction addition and subtraction, return the calculation result in string format.</p>\n\n<p>The final result should be an <a href=\"https://en.wikipedia.org/wiki/Irreducible_fraction\" target=\"_blank\">irreducible fraction</a>. If your final result is an integer, change it to the format of a fraction that has a denominator <code>1</code>. So in this case, <code>2</code> should be converted to <code>2/1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> expression = &quot;-1/2+1/2&quot;\n<strong>Output:</strong> &quot;0/1&quot;\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> expression = &quot;-1/2+1/2+1/3&quot;\n<strong>Output:</strong> &quot;1/3&quot;\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> expression = &quot;1/3-1/2&quot;\n<strong>Output:</strong> &quot;-1/6&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The input string only contains <code>&#39;0&#39;</code> to <code>&#39;9&#39;</code>, <code>&#39;/&#39;</code>, <code>&#39;+&#39;</code> and <code>&#39;-&#39;</code>. So does the output.</li>\n\t<li>Each fraction (input and output) has the format <code>&plusmn;numerator/denominator</code>. If the first input fraction or the output is positive, then <code>&#39;+&#39;</code> will be omitted.</li>\n\t<li>The input only contains valid <strong>irreducible fractions</strong>, where the <strong>numerator</strong> and <strong>denominator</strong> of each fraction will always be in the range <code>[1, 10]</code>. If the denominator is <code>1</code>, it means this fraction is actually an integer in a fraction format defined above.</li>\n\t<li>The number of given fractions will be in the range <code>[1, 10]</code>.</li>\n\t<li>The numerator and denominator of the <strong>final result</strong> are guaranteed to be valid and in the range of <strong>32-bit</strong> int.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 315,
+        "dislikes": 449,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Solve the Equation\", \"titleSlug\": \"solve-the-equation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "\"-1/2+1/2\"\n\"-1/2+1/2+1/3\"\n\"1/3-1/2\"",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Simulation",
+                "slug": "simulation",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"IXL\", \"slug\": \"ixl\", \"timesEncountered\": 10}], \"1\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    string fractionAddition(string expression) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public String fractionAddition(String expression) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def fractionAddition(self, expression):\n        \"\"\"\n        :type expression: str\n        :rtype: str\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def fractionAddition(self, expression: str) -> str:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nchar * fractionAddition(char * expression){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public string FractionAddition(string expression) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} expression\n * @return {string}\n */\nvar fractionAddition = function(expression) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} expression\n# @return {String}\ndef fraction_addition(expression)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func fractionAddition(_ expression: String) -> String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func fractionAddition(expression string) string {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def fractionAddition(expression: String): String = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun fractionAddition(expression: String): String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn fraction_addition(expression: String) -> String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $expression\n     * @return String\n     */\n    function fractionAddition($expression) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function fractionAddition(expression: string): string {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (fraction-addition expression)\n  (-> string? string?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec fraction_addition(Expression :: unicode:unicode_binary()) -> unicode:unicode_binary().\nfraction_addition(Expression) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec fraction_addition(expression :: String.t) :: String.t\n  def fraction_addition(expression) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"29.6K\", \"totalSubmission\": \"57.1K\", \"totalAcceptedRaw\": 29616, \"totalSubmissionRaw\": 57090, \"acRate\": \"51.9%\"}",
+        "hints": [],
+        "solution": {
+            "id": "140",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "\"-1/2+1/2\"",
+        "metaData": "{\r\n  \"name\": \"fractionAddition\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"expression\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "140",
+        "content": "[TOC]\n\n\n## Solution\n\n---\n#### Approach 1: Using LCM\n\nThe first obvious step to be undertaken is to split the given string into individual fractions. We split the string based on `+` and `-` sign. We store the signs in the order in which they appear in the string in $$sign$$ array. Further, after getting the individual fractions, we further split the fractions based on `/` sign. Thus, we obtain the individual numerator and denominator parts. We store the same in $$num$$ and $$den$$ arrays respectively.\n\nNow, we've got the data ready to be worked upon. In order to see the method we've used in this implementation, we'll take an example and understand the way we work on it.\n\nLet's say, the given fraction is:\n\n$$\n\\frac{3}{2} + \\frac{5}{3} -\\frac{7}{6}\n$$\n\nWe need to equalize all the denominators so as to be able to add and subtract the numerators easily. The nearest value the denominators can be scaled upto is the LCM of all the denominators. Thus, we need to find the LCM of all the denominators and then multiply all the denominators with appropriate integer factors to make them equal to the LCM. But, in order to keep the individual fraction values unchanged, we need to multiply the individual numerators also with the same factors. \n\nIn order to find the LCM, we can go as follows. We use the method $$lcm(a,b,c) = lcm( lcm(a,b), c)$$. Thus, if we can compute the lcm of two denominators, we can keep on repeating the process iteratively over the denominators to get the overall lcm. To find the lcm of two numbers $$a$$ and $$b$$, we use $$lcm(a,b) = (a*b)/gcd(a,b)$$. For the above example, the $$lcm$$ turns out to be 6.\n\nThus, we scale up the denominators to 6 as follows:\n\n$$\n\\frac{3*3}{2*3} + \\frac{5*2}{3*2} -\\frac{7}{6}\n$$\n\nThus, we can observe that, the scaling factor for a fraction $$\\frac{num}{den}$$ is given by: $${num*x}/{den*x}$$, where $$x$$ is the corresponding scaling factor. Note that, $$den*x=lcm$$. Thus, $$x=lcm/den$$. Thus, we find out the corresponding scaling factor $$x_i$$ for each fraction.\n\nAfter this, we can directly add or subtract the new scaled numerators.\n\nIn the current example, we obtain $$\\frac{12}{6}$$ as the result. Now, we need to convert this into an irreducible fraction. Thus, if we obtain $$\\frac{num_i}{den_i}$$ as the final result, we need to find a largest factor $$y$$, which divides both $$num_i$$ and $$den_i$$. Such a number, as we know, is the gcd of $$num_i$$ and $$den_i$$.\n\nThus, to convert the result $$\\frac{num_i}{den_i}$$, we divide both the numerator and denominator by the gcd of the two numbers $$y$$ to obtain the final irreducible $$\\frac{num_i/y}{den_i/y}$$.\n\nNote: A problem with this approach is that we find the lcm of all the denominators in a single go and then reduce the overall fraction at the end. Thus, the lcm value could become very large and could lead to an overflow. But, this solution suffices for the current range of numbers.\n\n<iframe src=\"https://leetcode.com/playground/JiKTFxbd/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"JiKTFxbd\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n \\log x)$$. Euclidean GCD algorithm takes $$O(\\log(ab))$$ time for finding gcd of two numbers $$a$$ and $$b$$. Here $$n$$ refers to the number of fractions in the input string and $$x$$ is the maximum possible value of denominator.\n\n* Space complexity : $$O(n)$$. Size of $$num$$, $$den$$ and $$sign$$ list grows upto $$n$$.\n\n---\n#### Approach 2: Using GCD\n\n**Algorithm**\n\nWe know that we can continue the process of evaluating the given fractions by considering pairs of fractions at a time and continue the process considering the result obtained and the new fraction to be evaluated this time. We make use of this observation, and thus, instead of segregating the signs, numerators and denominators first, we directly start scanning the given strings and operate on the fractions obtained till now whenever a new sign is encountered.\n\nWe operate on the pairs of fractions, and keep on reducing the result obtained to irreducible fractions on the way. By doing this, we can reduce the chances of the problem of potential overflow possible in case the denominators lead to a large value of lcm.\n\nWe also observed from the last approach, that we need to equalize the denominators of a pair of fractions say:\n\n$$\\frac{a}{b} + \\frac{c}{d}$$\n\nWe used a scaling factor of $$x$$ for the first fraction (both numerator and denominator). Here, $$x=\\frac{\\text{lcm}(b,d)}{b}$$. For the second fraction, the scaling factor $$y$$ is given by $$y= \\frac{\\text{lcm(b,d)}}{d}$$. Here, $$\\text{lcm}(b,d)=\\frac{b \\cdot d}{\\gcd(b,d)}$$. Thus, instead of finding the lcm and then again determining the scaling factor, we can directly use: $$x=\\frac{b \\cdot d}{\\gcd(b,d) \\cdot b} = \\frac{d}{\\gcd(b,d)}$$, and $$y=\\frac{b \\cdot d}{\\gcd(b,d) \\cdot d}$$. Thus, we need to scale the numerators appropriately and add/subtract them in terms of pairs. The denominators are scaled in the same manner to the lcm of the two denominators involved.\n\nAfter evaluting every pair of fractions, we again reduce them to irreducible fractions by diving both the numerator and denominator of the resultant fraction by the gcd of the two.\n\n\n<iframe src=\"https://leetcode.com/playground/sDp78cmU/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"sDp78cmU\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n \\log x)$$. Euclidean GCD algorithm takes $$O(\\log(ab))$$ time for finding gcd of two numbers $$a$$ and $$b$$. Here $$n$$ refers to the number of fractions in the input string and $$x$$ is the maximum possible value of denominator.\n\n* Space complexity : $$O(n)$$. Size of $$sign$$ list grows upto $$n$$.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "136",
+            "count": 27,
+            "average": "3.074",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "fraction-addition-and-subtraction",
+    "playgroundData": {
+        "JiKTFxbd": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "fraction-additon-and-subtraction-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "sDp78cmU": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "fraction-additon-and-subtraction-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

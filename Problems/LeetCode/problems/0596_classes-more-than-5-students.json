@@ -1,0 +1,106 @@
+{
+    "id": "596",
+    "question": {
+        "questionId": "596",
+        "questionFrontendId": "596",
+        "boundTopicId": null,
+        "title": "Classes More Than 5 Students",
+        "titleSlug": "classes-more-than-5-students",
+        "content": "<p>Table: <code>Courses</code></p>\n\n<pre>\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| student     | varchar |\n| class       | varchar |\n+-------------+---------+\n(student, class) is the primary key column for this table.\nEach row of this table indicates the name of a student and the class in which they are enrolled.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to report all the classes that have <strong>at least five students</strong>.</p>\n\n<p>Return the result table in <strong>any order</strong>.</p>\n\n<p>The query result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nCourses table:\n+---------+----------+\n| student | class    |\n+---------+----------+\n| A       | Math     |\n| B       | English  |\n| C       | Math     |\n| D       | Biology  |\n| E       | Math     |\n| F       | Computer |\n| G       | Math     |\n| H       | Math     |\n| I       | Math     |\n+---------+----------+\n<strong>Output:</strong> \n+---------+\n| class   |\n+---------+\n| Math    |\n+---------+\n<strong>Explanation:</strong> \n- Math has 6 students, so we include it.\n- English has 1 student, so we do not include it.\n- Biology has 1 student, so we do not include it.\n- Computer has 1 student, so we do not include it.\n</pre>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 491,
+        "dislikes": 936,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "{\"headers\": {\"Courses\": [\"student\", \"class\"]}, \"rows\": {\"Courses\": [[\"A\", \"Math\"], [\"B\", \"English\"], [\"C\", \"Math\"], [\"D\", \"Biology\"], [\"E\", \"Math\"], [\"F\", \"Computer\"], [\"G\", \"Math\"], [\"H\", \"Math\"], [\"I\", \"Math\"]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}], \"1\": [], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "# Write your MySQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "/* Write your T-SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "/* Write your PL/SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"180.1K\", \"totalSubmission\": \"405.3K\", \"totalAcceptedRaw\": 180132, \"totalSubmissionRaw\": 405256, \"acRate\": \"44.4%\"}",
+        "hints": [],
+        "solution": {
+            "id": "202",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "{\"headers\": {\"Courses\": [\"student\", \"class\"]}, \"rows\": {\"Courses\": [[\"A\", \"Math\"], [\"B\", \"English\"], [\"C\", \"Math\"], [\"D\", \"Biology\"], [\"E\", \"Math\"], [\"F\", \"Computer\"], [\"G\", \"Math\"], [\"H\", \"Math\"], [\"I\", \"Math\"]]}}",
+        "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Courses (student varchar(255), class varchar(255))\"\n  ],\n  \"mssql\": [\n    \"Create table Courses (student varchar(255), class varchar(255))\"\n  ],\n  \"oraclesql\": [\n    \"Create table Courses (student varchar(255), class varchar(255))\"\n  ],\n  \"database\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists Courses (student varchar(255), class varchar(255))",
+            "Truncate table Courses",
+            "insert into Courses (student, class) values ('A', 'Math')",
+            "insert into Courses (student, class) values ('B', 'English')",
+            "insert into Courses (student, class) values ('C', 'Math')",
+            "insert into Courses (student, class) values ('D', 'Biology')",
+            "insert into Courses (student, class) values ('E', 'Math')",
+            "insert into Courses (student, class) values ('F', 'Computer')",
+            "insert into Courses (student, class) values ('G', 'Math')",
+            "insert into Courses (student, class) values ('H', 'Math')",
+            "insert into Courses (student, class) values ('I', 'Math')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "202",
+        "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using `GROUP BY` clause and **sub-query** [Accepted]\n\n**Intuition**\n\nFirst, we can count the student number in each class. And then select the ones have more than 5 students.\n\n**Algorithm**\n\nTo get the student number in each class. We can use `GROUP BY` and `COUNT`, which is very popular used to statistic bases on some character in a table.\n\n```sql\nSELECT\n    class, COUNT(DISTINCT student)\nFROM\n    courses\nGROUP BY class\n;\n```\n>Note: We use `DISTINCT` here since the student name may duplicated in a class as it is mentioned int he problem description.\n\n```\n| class    | COUNT(student) |\n|----------|----------------|\n| Biology  | 1              |\n| Computer | 1              |\n| English  | 1              |\n| Math     | 6              |\n```\nTo continue, we can filter the classes by taking the above query as a sub-query.\n\n```sql\nSELECT\n    class\nFROM\n    (SELECT\n        class, COUNT(DISTINCT student) AS num\n    FROM\n        courses\n    GROUP BY class) AS temp_table\nWHERE\n    num >= 5\n;\n```\n>Note: Make an alias of `COUNT(student)` ('num' in this case) so that you can use in the `WHERE` clause because it cannot be used directly over there.\n\n#### Approach: Using `GROUP BY` and `HAVING` condition [Accepted]\n\n**Algorithm**\n\nUsing sub-query is one way to add some condition to a `GROUP BY` clause, however, using [`HAVING`](https://dev.mysql.com/doc/refman/5.7/en/group-by-handling.html) is another simpler and natural approach. So we can rewrite the above solution as below.\n\n**MySQL**\n```sql\nSELECT\n    class\nFROM\n    courses\nGROUP BY class\nHAVING COUNT(DISTINCT student) >= 5\n;\n```",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "196",
+            "count": 33,
+            "average": "4.364",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "classes-more-than-5-students",
+    "playgroundData": {}
+}

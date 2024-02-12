@@ -1,0 +1,341 @@
+{
+    "id": "371",
+    "question": {
+        "questionId": "371",
+        "questionFrontendId": "371",
+        "boundTopicId": null,
+        "title": "Sum of Two Integers",
+        "titleSlug": "sum-of-two-integers",
+        "content": "<p>Given two integers <code>a</code> and <code>b</code>, return <em>the sum of the two integers without using the operators</em> <code>+</code> <em>and</em> <code>-</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<pre><strong>Input:</strong> a = 1, b = 2\n<strong>Output:</strong> 3\n</pre><p><strong>Example 2:</strong></p>\n<pre><strong>Input:</strong> a = 2, b = 3\n<strong>Output:</strong> 5\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>-1000 &lt;= a, b &lt;= 1000</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 2717,
+        "dislikes": 4026,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Add Two Numbers\", \"titleSlug\": \"add-two-numbers\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "1\n2\n2\n3",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"tcs\", \"slug\": \"tcs\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Hulu\", \"slug\": \"hulu\", \"timesEncountered\": 0}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int getSum(int a, int b) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int getSum(int a, int b) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def getSum(self, a, b):\n        \"\"\"\n        :type a: int\n        :type b: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def getSum(self, a: int, b: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint getSum(int a, int b){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int GetSum(int a, int b) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} a\n * @param {number} b\n * @return {number}\n */\nvar getSum = function(a, b) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer} a\n# @param {Integer} b\n# @return {Integer}\ndef get_sum(a, b)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func getSum(_ a: Int, _ b: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func getSum(a int, b int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def getSum(a: Int, b: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun getSum(a: Int, b: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn get_sum(a: i32, b: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer $a\n     * @param Integer $b\n     * @return Integer\n     */\n    function getSum($a, $b) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function getSum(a: number, b: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (get-sum a b)\n  (-> exact-integer? exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec get_sum(A :: integer(), B :: integer()) -> integer().\nget_sum(A, B) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec get_sum(a :: integer, b :: integer) :: integer\n  def get_sum(a, b) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"314.2K\", \"totalSubmission\": \"620.8K\", \"totalAcceptedRaw\": 314190, \"totalSubmissionRaw\": 620829, \"acRate\": \"50.6%\"}",
+        "hints": [],
+        "solution": {
+            "id": "962",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "1\n2",
+        "metaData": "{\r\n  \"name\": \"getSum\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"a\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"b\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "962",
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Overview\n\nApproach 1 is a detailed explanation of bit manipulation basics.\nApproach 2 is a language-specific discussion of a possible follow-up \nand mainly written for fun.  \n\n#### Approach 1: Bit Manipulation: Easy and Language-Independent\n\nThat's an extremely popular Facebook problem \ndesigned to check your knowledge of [bitwise operators](https://wiki.python.org/moin/BitwiseOperators):\n\n$$\nx \\oplus y \\qquad \\textrm{that means} \\qquad \\textrm{bitwise XOR}  \n$$\n\n$$\nx \\& y \\qquad \\textrm{that means} \\qquad \\textrm{bitwise AND} \n$$\n\n$$\n\\sim x \\qquad \\textrm{that means} \\qquad \\textrm{bitwise NOT} \n$$\n\n**Reduce the Number of Use Cases**\n\nFirst of all, there are too many use cases here:\nboth $$a$$ and $$b$$ could be positive or negative, \n`abs(a)` could be greater or less than `abs(b)`.\nIn total, that results in $$2 \\times 2 \\times 2 = 8$$ use cases.\n\nLet's start by reducing the problem down to two simple cases:\n\n- Sum of two positive integers: $$x + y$$, where $$x > y$$.\n\n- Difference of two positive integers: $$x - y$$, where $$x > y$$.\n\n<iframe src=\"https://leetcode.com/playground/TYBa8DGK/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"TYBa8DGK\"></iframe>\n\n**Interview Tip for Bit Manipulation Problems: Use XOR** \n\nHow to start? There is an interview tip for bit manipulation problems:\nif you don't know how to start, start from computing XOR for your input data.\nStrangely, that helps out for quite a lot of problems,\n[Single Number II](https://leetcode.com/articles/single-number-ii/),\n[Single Number III](https://leetcode.com/articles/single-number-iii/),\n[Maximum XOR of Two Numbers in an Array](https://leetcode.com/articles/maximum-xor-of-two-numbers-in-an-array/),\n[Repeated DNA Sequences](https://leetcode.com/articles/repeated-dna-sequences/),\n[Maximum Product of Word Lengths](https://leetcode.com/articles/maximum-product-of-word-lengths/),\netc.\n\n> What is XOR?\n\nXOR of zero and a bit results in that bit.\n\n$$ \n0 \\oplus x = x\n$$\n\nXOR of two equal bits (even if they are zeros) results in a zero.\n\n$$ \nx \\oplus x = 0\n$$\n\n**Sum of Two Positive Integers**\n\nNow let's use this tip for the first use case: the sum of two positive integers. Here XOR is a key as well because it's a sum of two integers\nin the binary form without taking carry into account.\nIn other words, XOR is a sum of bits of x and y where at \nleast one of the bits is not set.\n\n![fig](../Figures/371/answer_sum2_fixed.png) \n\nThe next step is to find the carry. \nIt contains the common set bits of x and y, shifted one bit to the left. \n_I.e._ it's logical AND of two input numbers, shifted one bit to the left:\n$$\\text{carry} = (x \\& y) << 1$$. \n\n![fig](../Figures/371/carry_fixed.png)\n\nThe problem is reduced down to find the sum of the answer without carry and \nthe carry.   \n\nTechnically, it's the same problem: to sum two numbers,\nand hence one could solve it in a loop with the condition statement \n\"while carry is not equal to zero\". \n\n![fig](../Figures/371/sum_fixed.png)\n\n**Difference of Two Positive Integers**\n\nAs for addition, XOR is a difference of two integers without taking borrow \ninto account.\n\n![fig](../Figures/371/answer_sub2_fixed.png)\n\nThe next step is to find the borrow. It contains common\nset bits of $$y$$ and unset bits of $$x$$, \n_i.e._ $$\\text{borrow} = ((\\sim x) \\& y) << 1$$.  \n\n![fig](../Figures/371/borrow2_fixed.png)\n\nThe problem is reduced down to the subtraction of the borrow\nfrom the answer without borrow. As for the sum, it could be solved recursively\nor in a loop with the condition statement \"while borrow is not equal to zero\". \n\n![fig](../Figures/371/sub2_fixed.png)\n\n**Algorithm**\n\n- Simplify problem down to two cases: sum or subtraction of two \npositive integers: $$x \\pm y$$, where $$x > y$$. Save down the sign of the result.\n\n- If one has to compute the sum:\n\n    - While carry is nonzero: `y != 0`:\n    \n        - Current answer without carry is XOR of x and y: `answer = x^y`.\n        \n        - Current carry is left-shifted AND of x and y: `carry = (x & y) << 1`.\n        \n        - Job is done, prepare the next loop: `x = answer`, `y = carry`.\n        \n    - Return `x * sign`.\n    \n- If one has to compute the difference:\n\n    - While borrow is nonzero: `y != 0`:\n    \n        - Current answer without borrow is XOR of x and y: `answer = x^y`.\n        \n        - Current borrow is left-shifted AND of NOT x and y: `borrow = ((~x) & y) << 1`.\n        \n        - Job is done, prepare the next loop: `x = answer`, `y = borrow`.\n        \n    - Return `x * sign`.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/NJHXh5bw/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"NJHXh5bw\"></iframe>\n\nThis solution could be written a bit shorter in Python:\n\n<iframe src=\"https://leetcode.com/playground/ZbKrWWea/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"ZbKrWWea\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(1)$$ because each integer contains $$32$$ bits.\n\n* Space complexity: $$\\mathcal{O}(1)$$ because we don't use any additional\ndata structures.\n\n<br />\n<br />\n\n\n---\n#### Approach 2: Bit Manipulation: Short Language-Specific Solution\n\nApproach 1 is easy to attack during the follow-up:\n\n> Please don't use multiplication to manage negative numbers and make a clean bitwise solution.\n\nLet's be honest, it's a trap. \nOnce you start to manage negative numbers using bit manipulation, your solution becomes\n_language-specific_. \n\n**Different languages represent negative numbers differently.** \n\n**Java**\n\nFor example, Java integer is a number of 32 bits. \n31 bits are used for the value. \nThe first bit is used for the sign: if it's equal to 1, the number is negative,\nif it's equal to 0, the number is positive. \n\nAnd now the fun starts. Does it mean that \n\n$$1 = (\\underbrace{0}_\\text{positive}\\underbrace{00000..0}_\\text{30 times}1)_2$$ \n\nand \n\n$$ -1 = (\\underbrace{1}_\\text{negative}\\underbrace{00000..0}_\\text{30 times}1)_2$$? \n\nNo!\n\nFor the representation of a negative number Java uses the so-called \"two's complement\":\n\n$$ -1 = (\\underbrace{1}_\\text{negative}\\underbrace{11111..1}_\\text{30 times}1)_2$$\n\nThe idea is simple:\n\n$$\n(- 1 + 1) \\& \\underbrace{(111111..1)_2}_\\text{32 1-bits} = 0\n$$\n\n$$\n(- x + x) \\& \\underbrace{(111111..1)_2}_\\text{32 1-bits} = 0 \n$$\n\nThe main goal of \"two's complement\" is to decrease the complexity of bit manipulations.\nHow does Java compute \"two's complement\" and manage 32-bits limit? Here is how:\n\n- After each operation we have an invisible `& mask`, where `mask = 0xFFFFFFFF`, _i.e._\nbitmask of 32 1-bits.\n\n- The overflow, _i.e._ the situation of `x > 0x7FFFFFFF` (bitmask of 31 1-bits), is managed  as `x --> ~(x ^ 0xFFFFFFFF)`.\n\nAt this point, we could come back to approach 1 and, surprisingly, \nall management of negative numbers, signs, and subtractions Java already \ndoes for us. That simplifies the solution to the \ncomputation of a sum of two positive integers. That's how the\nmagic of \"two's complement\" works! \n\n<iframe src=\"https://leetcode.com/playground/Euhg3rHW/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"Euhg3rHW\"></iframe>\n\n**Python**\n\nNow let's go back to real life. \nPython has no 32-bits limit, and hence its representation of negative\nintegers is entirely different. \n\nThere is no Java magic by default, and if you need a magic - \njust do it:\n\n- After each operation we have an invisible `& mask`, where `mask = 0xFFFFFFFF`, _i.e._\nbitmask of 32 1-bits.\n\n- The overflow, _i.e._ the situation of `x > 0x7FFFFFFF` (bitmask of 31 1-bits), is managed  as `x --> ~(x ^ 0xFFFFFFFF)`.\n\n<iframe src=\"https://leetcode.com/playground/mdpL3U3n/shared\" frameBorder=\"0\" width=\"100%\" height=\"208\" name=\"mdpL3U3n\"></iframe>\n\n**Implementation**\n \nEach language has its beauty.\n\n<iframe src=\"https://leetcode.com/playground/ZQjQJons/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"ZQjQJons\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(1)$$. \n\n* Space complexity: $$\\mathcal{O}(1)$$.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "907",
+            "count": 83,
+            "average": "3.277",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "sum-of-two-integers",
+    "playgroundData": {
+        "TYBa8DGK": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "sum-of-two-integers-5",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "NJHXh5bw": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "sum-of-two-integers-4",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "ZbKrWWea": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "sum-of-two-integers-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Euhg3rHW": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "sum-of-two-integers-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "mdpL3U3n": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "sum-of-two-integers-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "ZQjQJons": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "sum-of-two-integers-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

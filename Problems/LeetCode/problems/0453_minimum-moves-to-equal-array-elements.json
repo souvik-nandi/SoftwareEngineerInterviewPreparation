@@ -1,0 +1,341 @@
+{
+    "id": "453",
+    "question": {
+        "questionId": "453",
+        "questionFrontendId": "453",
+        "boundTopicId": null,
+        "title": "Minimum Moves to Equal Array Elements",
+        "titleSlug": "minimum-moves-to-equal-array-elements",
+        "content": "<p>Given an integer array <code>nums</code> of size <code>n</code>, return <em>the minimum number of moves required to make all array elements equal</em>.</p>\n\n<p>In one move, you can increment <code>n - 1</code> elements of the array by <code>1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> Only three moves are needed (remember each move increments two elements):\n[1,2,3]  =&gt;  [2,3,3]  =&gt;  [3,4,3]  =&gt;  [4,4,4]\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,1,1]\n<strong>Output:</strong> 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == nums.length</code></li>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n\t<li>The answer is guaranteed to fit in a <strong>32-bit</strong> integer.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 1708,
+        "dislikes": 1683,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Minimum Moves to Equal Array Elements II\", \"titleSlug\": \"minimum-moves-to-equal-array-elements-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Running Time of N Computers\", \"titleSlug\": \"maximum-running-time-of-n-computers\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Pour Water Between Buckets to Make Water Levels Equal\", \"titleSlug\": \"pour-water-between-buckets-to-make-water-levels-equal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[1,2,3]\n[1,1,1]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Math",
+                "slug": "math",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Mathworks\", \"slug\": \"mathworks\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"JPMorgan\", \"slug\": \"jpmorgan\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Morgan Stanley\", \"slug\": \"morgan-stanley\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"FactSet\", \"slug\": \"factset\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Swiggy\", \"slug\": \"swiggy\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Coursera\", \"slug\": \"coursera\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Indeed\", \"slug\": \"indeed\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"IBM\", \"slug\": \"ibm\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int minMoves(vector<int>& nums) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int minMoves(int[] nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def minMoves(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def minMoves(self, nums: List[int]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint minMoves(int* nums, int numsSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int MinMoves(int[] nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minMoves = function(nums) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef min_moves(nums)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func minMoves(_ nums: [Int]) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func minMoves(nums []int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def minMoves(nums: Array[Int]): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun minMoves(nums: IntArray): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn min_moves(nums: Vec<i32>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function minMoves($nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function minMoves(nums: number[]): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (min-moves nums)\n  (-> (listof exact-integer?) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec min_moves(Nums :: [integer()]) -> integer().\nmin_moves(Nums) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec min_moves(nums :: [integer]) :: integer\n  def min_moves(nums) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"131.9K\", \"totalSubmission\": \"240.2K\", \"totalAcceptedRaw\": 131937, \"totalSubmissionRaw\": 240231, \"acRate\": \"54.9%\"}",
+        "hints": [],
+        "solution": {
+            "id": "77",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[1,2,3]",
+        "metaData": "{\r\n  \"name\": \"minMoves\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "77",
+        "content": "[TOC]\n\n\n## Solution\n\n---\n#### Approach #1 Brute Force [Time Limit Exceeded]\n\nFirstly, we know that in order to make all the elements equal to each other with minimum moves, we need to do the increments in all but the maximum element of the array.\n Thus, in the brute force approach, we scan the complete array to find the maximum and the minimum element. After this, we add 1 to all the elements except the maximum element, and\nincrement the count for the number of moves done. Again, we repeat the same process, and this continues until the maximum and the minimum element become equal to each other.\n\n<iframe src=\"https://leetcode.com/playground/zDzVEUkJ/shared\" frameBorder=\"0\" name=\"zDzVEUkJ\" width=\"100%\" height=\"479\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2 k)$$, where $$n$$ is the length of the array and $$k$$ is the difference between maximum element and minimum element.\n* Space complexity : $$O(1)$$. No extra space required.\n\n---\n#### Approach #2 Better Brute Force[Time Limit Exceeded]\n\n**Algorithm**\n\nIn the previous approach, we added 1 to every element in a single step. But, we can modify this approach to some extent. In order to make the minimum element equal to the maximum element, we need to add 1 atleast $$k$$ times,\nafter which, the maximum element could change. Thus, instead of incrementing in steps of 1,we increment in bursts, where each burst will be of size $$k=max-min$$.\nThus, we scan the complete array to find the maximum and minimum element. Then, we increment every element by $$k$$ units and add $$k$$ to the count of moves. Again we\nrepeat the same process, until the maximum and minimum element become equal.\n\n<iframe src=\"https://leetcode.com/playground/FG9JKTT6/shared\" frameBorder=\"0\" name=\"FG9JKTT6\" width=\"100%\" height=\"496\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$. In every iteration two elements are equalized.\n* Space complexity : $$O(1)$$. No extra space required.\n\n---\n#### Approach #3 Using Sorting [Accepted]\n\n**Algorithm**\n\nThe problem gets simplified if we sort the given array in order to obtain a sorted array $$a$$. Now, similar to Approach 2,we use the difference $$diff=max-min$$ to update the elements of the array, but we need not traverse the whole array to find the maximum and minimum element every time,\nsince if the array is sorted, we can make use of this property to find the maximum and minimum element after updation in $$O(1)$$ time. Further, we need not actually update all the elements of the array.\nTo understand how this works, we'll go in a stepwise manner.\n\nFirstly, assume that we are updating the elements of the sorted array after every step of calculating the difference $$diff$$. We'll see how to find the maximum and minimum element without\ntraversing the array. In the first step, the last element is the largest element. Therefore, $$diff=a[n-1]-a[0]$$. We add $$diff$$ to all the elements except the last one i.e. $$a[n-1]$$.\n Now, the updated element at index 0 ,$$a'[0]$$ will be $$a[0]+diff=a[n-1]$$. Thus, the smallest element $$a'[0]$$ is now equal to the previous largest element $$a[n-1]$$. Since, the\n elements of the array are sorted, the elements upto index $$i-2$$ satisfy the property $$a[j]>=a[j-1]$$. Thus, after updation, the element $$a'[n-2]$$ will become the largest element, which is obvious due to the sorted array property. Also, a[0]\n is still the smallest element.\n\n Thus, for the second updation, we consider the difference $$diff$$ as $$diff=a[n-2]-a[0]$$. After updation, $$a''[0]$$ will become equal to $$a'[n-2]$$ similar to the first iteration.\n Further, since $$a'[0]$$ and $$a'[n-1]$$ were equal. After the second updation, we get $$a''[0]=a''[n-1]=a'[n-2]$$. Thus, now the largest element will be $$a[n-3]$$.\n Thus, we can continue in this fashion, and keep on incrementing the number of moves with the difference found at every step.\n\n Now, let's come to step 2. In the first step, we assumed that we are updating the elements of the array $$a$$ at every step, but we need not do this. This is because, even after updating\n the elements the difference which we consider to add to the number of moves required remains the same because both the elements $$max$$ and $$min$$ required to find the $$diff$$ get updated by the\n same amount everytime.\n\n Thus, we can simply sort the given array once and use $$moves=\\sum_{i=1}^{n-1} (a[i]-a[0])$$.\n\n<iframe src=\"https://leetcode.com/playground/RaVVUTFL/shared\" frameBorder=\"0\" name=\"RaVVUTFL\" width=\"100%\" height=\"224\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O\\big(nlog(n)\\big)$$. Sorting will take $$O\\big(nlog(n)\\big)$$ time.\n\n* Space complexity : $$O(1)$$. No extra space required.\n\n---\n\n#### Approach #4 Using DP [Accepted]\n\n**Algorithm**\n\nThe given problem can be simplified if we sort the given array once. If we consider a sorted array $$a$$, instead of trying to work on the complete problem of\nequalizing every element of the array, we can break the problem for array of size $$n$$ into problems of solving arrays of smaller sizes. Assuming, the elements upto\nindex $$i-1$$ have been equalized, we can simply consider the element at index $$i$$ and add the difference $$diff=a[i]-a[i-1]$$ to the total number of moves for the array upto index $$i$$ to be equalized i.e. $$moves=moves+diff$$.\n But when we try to proceed with this step, as per a valid move, the elements following $$a[i]$$ will also be incremented by the amount $$diff$$ i.e. $$a[j]=a[j]+diff$$, for $$j>i$$.\n But while implementing this approach, we need not increment all such $$a[j]$$'s. Instead, we'll add the number of $$moves$$ done so far to the current element i.e. $$a[i]$$ and update it to $$a'[i]=a[i]+moves$$.\n\n  In short, we sort the given array, and keep on updating the $$moves$$ required so far in order to equalize the elements upto the current index without actually changing the elements of the\n  array except the current element. After the complete array has been scanned $$moves$$ gives the required solution.\n  \n  The following animation will make the process more clear for this example:\n  \n  ```\n  [13 18 3 10 35 68 50 20 50]\n  ```\n  \n  <!-- ![Minimum_Moves_dp](../Figures/453_Minimum_Moves.gif)-->\n  !?!../Documents/453_Minimum_Moves.json:1000,563!?!\n\n\n<iframe src=\"https://leetcode.com/playground/ZeTzTVy6/shared\" frameBorder=\"0\" name=\"ZeTzTVy6\" width=\"100%\" height=\"258\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O\\big(nlog(n)\\big)$$. Sorting will take $$O\\big(nlog(n)\\big)$$ time.\n\n* Space complexity : $$O(1)$$. Only single extra variable is used.\n\n---\n\n#### Approach #5 Using Math[Accepted]\n\n**Algorithm**\n\nThis approach is based on the idea that adding 1 to all the elements except one is equivalent to decrementing 1 from a single element, since we are interested in the relative levels of the\n elements which need to be equalized. Thus, the problem is simplified to find the number of decrement operations required to equalize all the elements of the given array.\n For finding this, it is obvious that we'll reduce all the elements of the array to the minimum element. But, in order to find the solution, we need not actually decrement the elements. We can find the\n number of moves required as $$moves=\\sum_{i=0}^{n-1} a[i] - min(a)*n$$, where $$n$$ is the length of the array.\n\n<iframe src=\"https://leetcode.com/playground/n9x34Fi5/shared\" frameBorder=\"0\" name=\"n9x34Fi5\" width=\"100%\" height=\"241\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. We traverse the complete array once.\n\n* Space complexity : $$O(1)$$. No extra space required.\n\n---\n\n#### Approach #6 Modified Approach Using Maths[Accepted]\n\n**Algorithm**\n\nThere could be a problem with the above approach. The value $$\\sum_{i=0}^{n-1} a[i]$$ could be very large and hence could lead to integer overflow if the $$a[i]$$'s are\nvery large. To avoid this problem, we can calculate the required number of $$moves$$ on the fly. $$\\sum_{i=0}^{n-1} (a[i]-min(a))$$.\n\n<iframe src=\"https://leetcode.com/playground/9udsqVkr/shared\" frameBorder=\"0\" name=\"9udsqVkr\" width=\"100%\" height=\"258\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. One pass for finding minimum and one pass for calculating moves.\n\n* Space complexity : $$O(1)$$. No extra space required.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "75",
+            "count": 52,
+            "average": "3.769",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "minimum-moves-to-equal-array-elements",
+    "playgroundData": {
+        "zDzVEUkJ": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "453_minimum_movesmd7",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "FG9JKTT6": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "453_minimum_movesmd6",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "RaVVUTFL": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "453_minimum_movesmd5",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "ZeTzTVy6": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "453_minimum_movesmd3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "n9x34Fi5": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "453_minimum_movesmd2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "9udsqVkr": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "453_minimum_movesmd1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,247 @@
+{
+    "id": "332",
+    "question": {
+        "questionId": "332",
+        "questionFrontendId": "332",
+        "boundTopicId": null,
+        "title": "Reconstruct Itinerary",
+        "titleSlug": "reconstruct-itinerary",
+        "content": "<p>You are given a list of airline <code>tickets</code> where <code>tickets[i] = [from<sub>i</sub>, to<sub>i</sub>]</code> represent the departure and the arrival airports of one flight. Reconstruct the itinerary in order and return it.</p>\n\n<p>All of the tickets belong to a man who departs from <code>&quot;JFK&quot;</code>, thus, the itinerary must begin with <code>&quot;JFK&quot;</code>. If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string.</p>\n\n<ul>\n\t<li>For example, the itinerary <code>[&quot;JFK&quot;, &quot;LGA&quot;]</code> has a smaller lexical order than <code>[&quot;JFK&quot;, &quot;LGB&quot;]</code>.</li>\n</ul>\n\n<p>You may assume all tickets form at least one valid itinerary. You must use all the tickets once and only once.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/14/itinerary1-graph.jpg\" style=\"width: 382px; height: 222px;\" />\n<pre>\n<strong>Input:</strong> tickets = [[&quot;MUC&quot;,&quot;LHR&quot;],[&quot;JFK&quot;,&quot;MUC&quot;],[&quot;SFO&quot;,&quot;SJC&quot;],[&quot;LHR&quot;,&quot;SFO&quot;]]\n<strong>Output:</strong> [&quot;JFK&quot;,&quot;MUC&quot;,&quot;LHR&quot;,&quot;SFO&quot;,&quot;SJC&quot;]\n</pre>\n\n<p><strong>Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/14/itinerary2-graph.jpg\" style=\"width: 222px; height: 230px;\" />\n<pre>\n<strong>Input:</strong> tickets = [[&quot;JFK&quot;,&quot;SFO&quot;],[&quot;JFK&quot;,&quot;ATL&quot;],[&quot;SFO&quot;,&quot;ATL&quot;],[&quot;ATL&quot;,&quot;JFK&quot;],[&quot;ATL&quot;,&quot;SFO&quot;]]\n<strong>Output:</strong> [&quot;JFK&quot;,&quot;ATL&quot;,&quot;JFK&quot;,&quot;SFO&quot;,&quot;ATL&quot;,&quot;SFO&quot;]\n<strong>Explanation:</strong> Another possible reconstruction is [&quot;JFK&quot;,&quot;SFO&quot;,&quot;ATL&quot;,&quot;JFK&quot;,&quot;ATL&quot;,&quot;SFO&quot;] but it is larger in lexical order.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= tickets.length &lt;= 300</code></li>\n\t<li><code>tickets[i].length == 2</code></li>\n\t<li><code>from<sub>i</sub>.length == 3</code></li>\n\t<li><code>to<sub>i</sub>.length == 3</code></li>\n\t<li><code>from<sub>i</sub></code> and <code>to<sub>i</sub></code> consist of uppercase English letters.</li>\n\t<li><code>from<sub>i</sub> != to<sub>i</sub></code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 4009,
+        "dislikes": 1578,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Longest Common Subpath\", \"titleSlug\": \"longest-common-subpath\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Valid Arrangement of Pairs\", \"titleSlug\": \"valid-arrangement-of-pairs\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[[\"MUC\",\"LHR\"],[\"JFK\",\"MUC\"],[\"SFO\",\"SJC\"],[\"LHR\",\"SFO\"]]\n[[\"JFK\",\"SFO\"],[\"JFK\",\"ATL\"],[\"SFO\",\"ATL\"],[\"ATL\",\"JFK\"],[\"ATL\",\"SFO\"]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Graph",
+                "slug": "graph",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Eulerian Circuit",
+                "slug": "eulerian-circuit",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 11}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Qualtrics\", \"slug\": \"qualtrics\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Intuit\", \"slug\": \"intuit\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Square\", \"slug\": \"square\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Akuna Capital\", \"slug\": \"akuna-capital\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Netflix\", \"slug\": \"netflix\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"JPMorgan\", \"slug\": \"jpmorgan\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Media.net\", \"slug\": \"medianet\", \"timesEncountered\": 16}, {\"taggedByAdmin\": false, \"name\": \"Directi\", \"slug\": \"directi\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Twilio\", \"slug\": \"twilio\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"DoorDash\", \"slug\": \"doordash\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Global Tech\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<string> findItinerary(vector<vector<string>>& tickets) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public List<String> findItinerary(List<List<String>> tickets) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def findItinerary(self, tickets):\n        \"\"\"\n        :type tickets: List[List[str]]\n        :rtype: List[str]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def findItinerary(self, tickets: List[List[str]]) -> List[str]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** findItinerary(char *** tickets, int ticketsSize, int* ticketsColSize, int* returnSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public IList<string> FindItinerary(IList<IList<string>> tickets) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string[][]} tickets\n * @return {string[]}\n */\nvar findItinerary = function(tickets) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String[][]} tickets\n# @return {String[]}\ndef find_itinerary(tickets)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func findItinerary(_ tickets: [[String]]) -> [String] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func findItinerary(tickets [][]string) []string {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def findItinerary(tickets: List[List[String]]): List[String] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun findItinerary(tickets: List<List<String>>): List<String> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn find_itinerary(tickets: Vec<Vec<String>>) -> Vec<String> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String[][] $tickets\n     * @return String[]\n     */\n    function findItinerary($tickets) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function findItinerary(tickets: string[][]): string[] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (find-itinerary tickets)\n  (-> (listof (listof string?)) (listof string?))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec find_itinerary(Tickets :: [[unicode:unicode_binary()]]) -> [unicode:unicode_binary()].\nfind_itinerary(Tickets) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec find_itinerary(tickets :: [[String.t]]) :: [String.t]\n  def find_itinerary(tickets) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"292.5K\", \"totalSubmission\": \"722.1K\", \"totalAcceptedRaw\": 292458, \"totalSubmissionRaw\": 722099, \"acRate\": \"40.5%\"}",
+        "hints": [],
+        "solution": {
+            "id": "875",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[[\"MUC\",\"LHR\"],[\"JFK\",\"MUC\"],[\"SFO\",\"SJC\"],[\"LHR\",\"SFO\"]]",
+        "metaData": "{\r\n  \"name\": \"findItinerary\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"tickets\",\r\n      \"type\": \"list<list<string>>\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "875",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Overview\n\nOverall, we could consider this problem as a **graph traversal** problem, where an airport can be viewed as a *vertex* in graph and flight between airports as an *edge* in graph.\n\n![pic](../Figures/332/332_graph.png)\n\nWe would like to make a few clarification on the input of the problem, since it is not clear in the description of the problem.\n\nAs one might notice in the above example, the input graph is NOT what we call a **DAG** (_Directed Acyclic Graph_), since we could find at least a cycle in the graph.\n\nIn addition, the graph could even have some duplicate edges (_i.e._ we might have multiple flights with the same origin and destination).\n<br/>\n<br/>\n\n---\n#### Approach 1: Backtracking + Greedy\n\n**Intuition**\n\nAs common strategies for problems of graph traversal, we often apply the methodologies of **backtracking** or **greedy**. As it turns out, we can apply both of them for this problem.\n\n>Typically, [backtracking](https://leetcode.com/explore/learn/card/recursion-ii/472/backtracking/) is used to enumerate all possible solutions for a problem, in a trial-fail-and-fallback strategy.\n\nAt each airport, one might have several possible destinations to fly to. With backtracking, we enumerate each possible destination. We mark the choice at each iteration (_i.e._ trial) before we move on to the chosen destination. If the destination does not lead to a solution (_i.e._ fail), we would then _fallback_ to the previous state and start another iteration of trial-fail-and-fallback cycle. \n\n>A [greedy algorithm](https://en.wikipedia.org/wiki/Greedy_algorithm) is any algorithm that follows the problem-solving _heuristic_ of making locally optimal choice at each step, with the intent of reaching the global optimum at the end.\n\nAs suggested by its definition, a greedy algorithm does not necessarily lead to a globally optimal solution, but rather a reasonable approximation in exchange of less computing time.\n\nNonetheless, sometimes it is the way to produce a global optimum for certain problems. This is the case for this problem as well.\n\nAt each airport, given a list of possible destinations, while backtracking, at each step we would pick the destination **_greedily_** in lexical order, _i.e._ the one with the smallest lexical order would have its trial first.\n\nWith this **_greedy_** strategy, we would ensure that the final solution that we find would have the *smallest lexical order*, because all other solutions that have smaller lexical order have been trialed and failed during the process of backtracking. \n\n\n**Algorithm**\n\nHere we explain how we implement a solution for this problem, by combining the strategies of backtracking and greedy.\n\n- As the first step, we build a graph data structure from the given input. This graph should allow us to quickly identify a list of potential destinations, given an origin. Here we adopted the hashmap (or dictionary) data structure, with each entry as `<origin, [destinations]>`. \n\n- Then due to our greedy strategy, we then should order the destination list for each entry in lexical order. As an alternative solution, one could use `PriorityQueue` data structure in the first step to keep the list of destinations, which would maintain the order at the moment of constructing the list. \n\n- As the final step, we kick off the backtracking traversal on the above graph, to obtain the final result.\n\n    - At the beginning of the backtracking function, as the bottom case, we check if we have already obtained a valid itinerary.\n\n    - Otherwise, we enumerate the next destinations in order.\n\n    - We mark the status of visit, before and after each backtracking loop.\n\n!?!../Documents/332_LIS.json:1000,317!?!\n\nNote that there is certain code pattern that one can follow in order to implement an algorithm of backtracking. We provide an example in the [Explore card of Recursion II](https://leetcode.com/explore/learn/card/recursion-ii/472/backtracking/2793/).\n\n\n<iframe src=\"https://leetcode.com/playground/9SSu2Q26/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"9SSu2Q26\"></iframe>\n\n\n**Complexity**\n\n- Time Complexity: $$\\mathcal{O}(|E|^d)$$ where $$|E|$$ is the number of total flights and $$d$$ is the maximum number of flights from an airport.\n\n    - It is tricky to estimate the time complexity of the backtracking algorithm, since the algorithm often has an early stopping depending on the input.\n\n    - To calculate a loose upper bound for the time complexity, let us consider it as a combination problem where the goal is to construct a sequence of a specific order, _i.e._ $$|V_1V_2...V_n|$$. For each position  $$V_i$$, we could have $$d$$ choices, _i.e._ at each airport one could have at most $$d$$ possible destinations. Since the length of the sequence is $$|E|$$, the total number of combination would be $$|E|^d$$.\n\n    - In the worst case, our backtracking algorithm would have to enumerate all possible combinations.\n\n\n- Space Complexity: $$\\mathcal{O}(|V| + |E|)$$ where $$|V|$$ is the number of airports and $$|E|$$ is the number of flights.\n\n    - In the algorithm, we use the graph as well as the visit bitmap, which would require the space of $$|V| + |E|$$.\n\n    - Since we applied recursion in the algorithm, which would incur additional memory consumption in the function call stack. The maximum depth of the recursion would be exactly the number of flights in the input, _i.e._ $$|E|$$.\n\n    - As a result, the total space complexity of the algorithm would be $$\\mathcal{O}(|V| + 2\\cdot|E|) = \\mathcal{O}(|V| + |E|)$$.\n<br/>\n<br/>\n\n---\n#### Approach 2: Hierholzer's Algorithm\n\n**Eulerian Cycle**\n\n>In graph theory, an Eulerian trail (or **Eulerian path**) is a trail in a finite graph that visits every edge exactly once (allowing for revisiting vertices). \n\nIn our problem, we are asked to construct an itinerary that uses all the flights (edges), starting from the airport of \"JFK\". \nAs one can see, the problem is actually a variant of [Eulerian path](https://en.wikipedia.org/wiki/Eulerian_path), with a fixed starting point.\n\n\n>Similarly, an Eulerian circuit or **Eulerian cycle** is an Eulerian trail that starts and ends on the same vertex.\n\nThe Eulerian cycle problem has been discussed by [Leonhard Euler](https://en.wikipedia.org/wiki/Leonhard_Euler) back in 1736. Ever since, there have been several algorithms proposed to solve the problem.\n\nIn 1873, Hierholzer proposed an efficient algorithm to find the Eulerian cycle in linear time ($$\\mathcal{O}(|E|)$$).\nOne could find more details about the Hierholzer's algorithm in this [course](https://www-m9.ma.tum.de/graph-algorithms/hierholzer/index_en.html).\n\n>The basic idea of Hierholzer's algorithm is the stepwise construction of the Eulerian cycle by connecting _disjunctive circles_.\n\nTo be more specific, the algorithm consists of two steps:\n\n* It starts with a random node and then follows an arbitrary unvisited edge to a neighbor. This step is repeated until one returns to the starting node. This yields a first circle in the graph.\n<br/>\n\n* If this circle covers all nodes it is an Eulerian cycle and the algorithm is finished. Otherwise, one chooses another node among the cycles' nodes with unvisited edges and constructs another circle, called subtour.\n\n![pic](../Figures/332/332_eulerian_cycle.png)\n\nBy connecting all the circles in the above process, we build the Eulerian cycle at the end.\n\n**Eulerian Path**\n\n>To find the Eulerian path, inspired from the original Hierzolher's algorithm, we simply change one condition of loop, rather than stopping at the starting point, we stop at the vertex where we do not have any unvisited edges.\n\nTo summarize, the main idea to find the Eulerian path consists of two steps:\n\n- Step 1). Starting from any vertex, we keep following the unused edges until we get **stuck** at certain vertex where we have no more unvisited outgoing edges.\n\n- Step 2). We then backtrack to the nearest neighbor vertex in the current path that has unused edges and we **repeat** the process until all the edges have been used.\n\nThe first vertex that we got stuck at would be the **end point** of our _**Eulerian path**_. So if we follow all the stuck _points_ backwards, we could reconstruct the Eulerian path at the end.\n\n\n**Algorithm**\n\nNow let us get back to our itinerary reconstruction problem. As we know now, it is a problem of Eulerian path, except that we have a fixed starting point.\n\nMore importantly, as stated in the problem, the given input is guaranteed to have a solution. So we have one less issue to consider.\n\nAs a result, our final algorithm is a bit simpler than the above Eulerian path algorithm, without the backtracking step.\n\n>The essential step is that starting from the fixed starting vertex (airport 'JFK'), we keep following the *ordered* and *unused* edges (flights) until we get **stuck** at certain vertex where we have no more unvisited outgoing edges.\n\nThe point that we got stuck would be the _last_ airport that we visit. And then we follow the visited vertex (airport) **backwards**, we would obtain the final itinerary.\n\nHere are some sample implementations which are inspired from a [thread of discussion](https://leetcode.com/problems/reconstruct-itinerary/discuss/78768/Short-Ruby-Python-Java-C%2B%2B) in the forum. \n\n<iframe src=\"https://leetcode.com/playground/xd6pksyz/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"xd6pksyz\"></iframe>\n\n\n**Discussion**\n\nTo better understand the above algorithm, we could look at it from another perspective.\n\n>Actually, we could consider the algorithm as the **postorder DFS** (Depth-First Search) in a directed graph, from a fixed starting point.\n\nAs we know that, each input is guaranteed to have a solution. Therefore, the task of the problem can be interpreted as that given a list of flights (_i.e._ edges in graph), we should find an order to use each flight _once and only once_.\n\nIn the resulted path, before we visit the last airport (denoted as `V`), we can say that we have already used all the rest flights, _i.e._ if there is any flight starting from `V`, then we must have already taken that before.\n\n>Or to put it another way, before adding the last airport (vertex) in the final path, we have visited all its **outgoing** vertex.\n\nActually, the above statement applies to each airport in the final itinerary. _Before adding an airport into the final itinerary, we must first visit all its outgoing neighbor vertex._\n\nIf we consider the outgoing vertex in a directed graph as children nodes in a tree, one could see the reason why we could consider the algorithm as a sort of **postorder DFS traversal** in a tree.\n\n!?!../Documents/332_RES.json:1000,354!?!\n\n\n**Complexity**\n\n- Time Complexity: $$\\mathcal{O}(|E| \\log{\\frac{|E|}{|V|}})$$ where $$|E|$$ is the number of edges (flights) in the input.\n\n    - As one can see from the above algorithm, during the DFS process, we would traverse each edge once. Therefore, the complexity of the DFS function would be $$|E|$$.\n\n    - However, before the DFS, we need to sort the outgoing edges for each vertex. And this, unfortunately, dominates the overall complexity.\n\n    - It is though tricky to estimate the complexity of sorting, which depends on the structure of the input graph.\n\n    - In the worst case where the graph is not balanced, _i.e._ the connections are concentered in a single airport. Imagine the graph is of star shape, in this case, the JFK airport would assume half of the flights (since we still need the return flight). As a result, the sorting operation on this airport would be exceptionally expensive, _i.e._ $$N \\log{N}$$, where $$N = \\frac{|E|}{2}$$. And this would be the final complexity as well, since it dominates the rest of the calculation.\n\n    - Let us consider a less bad case, or an average case, where the graph is less clustered, _i.e._ each node has the equal number of outgoing flights. Under this assumption, each airport would have $$\\frac{|E|}{(2\\cdot|V|)}$$ number of flights (still we need the return flights). Again, we can plug it into the $$N \\log N$$ minimal sorting complexity. In addition, this time, we need to take into consideration all airports, rather than the superhub (JFK) in the above case. As a result, we have $$|V| \\cdot (N \\log N)$$, where $$N = \\frac{|E|}{2\\cdot|V|}$$. If we expand the formula, we will obtain the complexity of the average case as $$ \\mathcal{O}(\\frac{|E|}{2} \\log{\\frac{|E|}{2\\cdot|V|}}) = \\mathcal{O}(|E| \\log{\\frac{|E|}{|V|}})$$\n\n\n- Space Complexity: $$\\mathcal{O}(|V| + |E|)$$ where $$|V|$$ is the number of airports and $$|E|$$ is the number of flights.\n\n    - In the algorithm, we use the graph, which would require the space of $$|V| + |E|$$.\n\n    - Since we applied recursion in the algorithm, which would incur additional memory consumption in the function call stack. The maximum depth of the recursion would be exactly the number of flights in the input, _i.e._ $$|E|$$.\n\n    - As a result, the total space complexity of the algorithm would be $$\\mathcal{O}(|V| + 2\\cdot|E|) = \\mathcal{O}(|V| + |E|)$$.\n<br/>\n<br/>",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "833",
+            "count": 127,
+            "average": "4.291",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "reconstruct-itinerary",
+    "playgroundData": {
+        "9SSu2Q26": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "reconstruct-itinerary-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "xd6pksyz": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "reconstruct-itinerary-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

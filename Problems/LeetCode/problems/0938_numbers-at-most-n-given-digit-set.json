@@ -1,0 +1,253 @@
+{
+    "id": "938",
+    "question": {
+        "questionId": "938",
+        "questionFrontendId": "902",
+        "boundTopicId": null,
+        "title": "Numbers At Most N Given Digit Set",
+        "titleSlug": "numbers-at-most-n-given-digit-set",
+        "content": "<p>Given an array of <code>digits</code> which is sorted in <strong>non-decreasing</strong> order. You can write numbers using each <code>digits[i]</code> as many times as we want. For example, if <code>digits = [&#39;1&#39;,&#39;3&#39;,&#39;5&#39;]</code>, we may write numbers such as <code>&#39;13&#39;</code>, <code>&#39;551&#39;</code>, and <code>&#39;1351315&#39;</code>.</p>\n\n<p>Return <em>the number of positive integers that can be generated </em>that are less than or equal to a given integer <code>n</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> digits = [&quot;1&quot;,&quot;3&quot;,&quot;5&quot;,&quot;7&quot;], n = 100\n<strong>Output:</strong> 20\n<strong>Explanation: </strong>\nThe 20 numbers that can be written are:\n1, 3, 5, 7, 11, 13, 15, 17, 31, 33, 35, 37, 51, 53, 55, 57, 71, 73, 75, 77.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> digits = [&quot;1&quot;,&quot;4&quot;,&quot;9&quot;], n = 1000000000\n<strong>Output:</strong> 29523\n<strong>Explanation: </strong>\nWe can write 3 one digit numbers, 9 two digit numbers, 27 three digit numbers,\n81 four digit numbers, 243 five digit numbers, 729 six digit numbers,\n2187 seven digit numbers, 6561 eight digit numbers, and 19683 nine digit numbers.\nIn total, this is 29523 integers that can be written using the digits array.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> digits = [&quot;7&quot;], n = 8\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= digits.length &lt;= 9</code></li>\n\t<li><code>digits[i].length == 1</code></li>\n\t<li><code>digits[i]</code> is a digit from&nbsp;<code>&#39;1&#39;</code>&nbsp;to <code>&#39;9&#39;</code>.</li>\n\t<li>All the values in&nbsp;<code>digits</code> are <strong>unique</strong>.</li>\n\t<li><code>digits</code> is sorted in&nbsp;<strong>non-decreasing</strong> order.</li>\n\t<li><code>1 &lt;= n &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 1087,
+        "dislikes": 90,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "[\"1\",\"3\",\"5\",\"7\"]\n100\n[\"1\",\"4\",\"9\"]\n1000000000\n[\"7\"]\n8",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Math",
+                "slug": "math",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int atMostNGivenDigitSet(vector<string>& digits, int n) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int atMostNGivenDigitSet(String[] digits, int n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def atMostNGivenDigitSet(self, digits, n):\n        \"\"\"\n        :type digits: List[str]\n        :type n: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def atMostNGivenDigitSet(self, digits: List[str], n: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint atMostNGivenDigitSet(char ** digits, int digitsSize, int n){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int AtMostNGivenDigitSet(string[] digits, int n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string[]} digits\n * @param {number} n\n * @return {number}\n */\nvar atMostNGivenDigitSet = function(digits, n) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String[]} digits\n# @param {Integer} n\n# @return {Integer}\ndef at_most_n_given_digit_set(digits, n)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func atMostNGivenDigitSet(_ digits: [String], _ n: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func atMostNGivenDigitSet(digits []string, n int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def atMostNGivenDigitSet(digits: Array[String], n: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun atMostNGivenDigitSet(digits: Array<String>, n: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn at_most_n_given_digit_set(digits: Vec<String>, n: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String[] $digits\n     * @param Integer $n\n     * @return Integer\n     */\n    function atMostNGivenDigitSet($digits, $n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function atMostNGivenDigitSet(digits: string[], n: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (at-most-n-given-digit-set digits n)\n  (-> (listof string?) exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec at_most_n_given_digit_set(Digits :: [unicode:unicode_binary()], N :: integer()) -> integer().\nat_most_n_given_digit_set(Digits, N) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec at_most_n_given_digit_set(digits :: [String.t], n :: integer) :: integer\n  def at_most_n_given_digit_set(digits, n) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"36.4K\", \"totalSubmission\": \"88.7K\", \"totalAcceptedRaw\": 36375, \"totalSubmissionRaw\": 88696, \"acRate\": \"41.0%\"}",
+        "hints": [],
+        "solution": {
+            "id": "551",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[\"1\",\"3\",\"5\",\"7\"]\n100",
+        "metaData": "{\n  \"name\": \"atMostNGivenDigitSet\",\n  \"params\": [\n    {\n      \"name\": \"digits\",\n      \"type\": \"string[]\"\n    },\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "551",
+        "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Dynamic Programming + Counting\n\n**Intuition**\n\nFirst, call a positive integer `X` *valid* if `X <= N` and `X` only consists of digits from `D`.  Our goal is to find the number of valid integers.\n\nSay `N` has `K` digits.  If we write a valid number with `k` digits (`k < K`), then there are $$(D\\text{.length})^k$$ possible numbers we could write, since all of them will definitely be less than `N`.\n\nNow, say we are to write a valid `K` digit number from left to right.  For example, `N = 2345`, `K = 4`, and `D = '1', '2', ..., '9'`.  Let's consider what happens when we write the first digit.\n\n * If the first digit we write is less than the first digit of `N`, then we could write any numbers after, for a total of $$(D\\text{.length})^{K-1}$$ valid numbers from this one-digit prefix.  In our example, if we start with `1`, we could write any of the numbers `1111` to `1999` from this prefix.\n\n * If the first digit we write is the same, then we require that the next digit we write is equal to or lower than the next digit in `N`.  In our example (with `N = 2345`), if we start with `2`, the next digit we write must be `3` or less.\n\n * We can't write a larger digit, because if we started with eg. `3`, then even a number of `3000` is definitely larger than `N`.\n\n**Algorithm**\n\nLet `dp[i]` be the number of ways to write a valid number if `N` became `N[i], N[i+1], ...`.  For example, if `N = 2345`, then `dp[0]` would be the number of valid numbers at most `2345`, `dp[1]` would be the ones at most `345`, `dp[2]` would be the ones at most `45`, and `dp[3]` would be the ones at most `5`.\n\nThen, by our reasoning above, `dp[i] = (number of d in D with d < S[i]) * ((D.length) ** (K-i-1))`, plus `dp[i+1]` if `S[i]` is in `D`.\n\n<iframe src=\"https://leetcode.com/playground/nQTiok4n/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"nQTiok4n\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\log N)$$, and assuming $$D\\text{.length}$$ is constant.  (We could make this better by pre-calculating the number of `d < S[i]` for all possible digits `S[i]`, but this isn't necessary.)\n\n* Space Complexity:  $$O(\\log N)$$, the space used by `S` and `dp`.  (Actually, we could store only the last 2 entries of `dp`, but this isn't necessary.)\n<br />\n<br />\n\n\n---\n#### Approach 2: Mathematical\n\n\n**Intuition**\n\nAs in *Approach #1*, call a positive integer `X` *valid* if `X <= N` and `X` only consists of digits from `D`.\n\nNow let `B = D.length`.  There is a bijection between valid integers and so called \"bijective-base-`B`\" numbers.  For example, if `D = ['1', '3', '5', '7']`, then we could write the numbers `'1', '3', '5', '7', '11', '13', '15', '17', '31', ...` as (bijective-base-`B`) numbers `'1', '2', '3', '4', '11', '12', '13', '14', '21', ...`.\n\nIt is clear that both of these sequences are increasing, which means that the first sequence is a contiguous block of valid numbers, followed by invalid numbers.\n\nOur approach is to find the largest valid integer, and convert it into bijective-base-`B` from which it is easy to find its rank (position in the sequence.)  Because of the bijection, the rank of this element must be the number of valid integers.\n\nContinuing our example, if `N = 64`, then the valid numbers are `'1', '3', ..., '55', '57'`, which can be written as bijective-base-4 numbers `'1', '2', ..., '33', '34'`.  Converting this last entry `'34'` to decimal, the answer is `16` (3 * 4 + 4).\n\n**Algorithm**\n\nLet's convert `N` into the largest possible valid integer `X`, convert `X` to bijective-base-B, then convert that result to a decimal answer.  The last two conversions are relatively straightforward, so let's focus on the first part of the task.\n\nLet's try to write `X` one digit at a time.  Let's walk through an example where `D = ['2', '4', '6', '8']`.  There are some cases:\n\n* If the first digit of `N` is in `D`, we write that digit and continue.  For example, if `N = 25123`, then we will write `2` and continue.\n\n* If the first digit of `N` is larger than `min(D)`, then we write the largest possible number from `D` less than that digit, and the rest of the numbers will be big.  For example, if `N = 5123`, then we will write `4888` (`4` then `888`).\n\n* If the first digit of `N` is smaller than `min(D)`, then we must \"subtract 1\" (in terms of `X`'s bijective-base-B representation), and the rest of the numbers will be big.\n\n    For example, if  `N = 123`, we will write `88`.  If `N = 4123`, we will write `2888`.  And if `N = 22123`, we will write `8888`.  This is because \"subtracting 1\" from `'', '4', '22'` yields `'', '2', '8'` (can't go below 0).\n\nActually, in our solution, it is easier to write in bijective-base-B, so instead of writing digits of `D`, we'll write the index of those digits (1-indexed).  For example, `X = 24888` will be `A = [1, 2, 4, 4, 4]`.  Afterwards, we convert this to decimal.\n\n<iframe src=\"https://leetcode.com/playground/kYLmUWsf/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"kYLmUWsf\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\log N)$$, and assuming $$D\\text{.length}$$ is constant.\n\n* Space Complexity:  $$O(\\log N)$$, the space used by `A`.\n<br />\n<br />",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "542",
+            "count": 45,
+            "average": "4.111",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "numbers-at-most-n-given-digit-set",
+    "playgroundData": {
+        "nQTiok4n": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "numbers-at-most-n-given-digit-set-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "kYLmUWsf": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "numbers-at-most-n-given-digit-set-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

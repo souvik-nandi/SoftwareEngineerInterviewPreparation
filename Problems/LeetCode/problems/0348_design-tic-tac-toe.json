@@ -1,0 +1,256 @@
+{
+    "id": "348",
+    "question": {
+        "questionId": "348",
+        "questionFrontendId": "348",
+        "boundTopicId": null,
+        "title": "Design Tic-Tac-Toe",
+        "titleSlug": "design-tic-tac-toe",
+        "content": "<p>Assume the following rules are for the tic-tac-toe game on an <code>n x n</code> board between two players:</p>\n\n<ol>\n\t<li>A move is guaranteed to be valid and is placed on an empty block.</li>\n\t<li>Once a winning condition is reached, no more moves are allowed.</li>\n\t<li>A player who succeeds in placing <code>n</code> of their marks in a horizontal, vertical, or diagonal row wins the game.</li>\n</ol>\n\n<p>Implement the&nbsp;<code>TicTacToe</code> class:</p>\n\n<ul>\n\t<li><code>TicTacToe(int n)</code> Initializes the object the size of the board <code>n</code>.</li>\n\t<li><code>int move(int row, int col, int player)</code> Indicates that the player with id <code>player</code> plays at the cell <code>(row, col)</code> of the board. The move is guaranteed to be a valid move.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;TicTacToe&quot;, &quot;move&quot;, &quot;move&quot;, &quot;move&quot;, &quot;move&quot;, &quot;move&quot;, &quot;move&quot;, &quot;move&quot;]\n[[3], [0, 0, 1], [0, 2, 2], [2, 2, 1], [1, 1, 2], [2, 0, 1], [1, 0, 2], [2, 1, 1]]\n<strong>Output</strong>\n[null, 0, 0, 0, 0, 0, 0, 1]\n\n<strong>Explanation</strong>\nTicTacToe ticTacToe = new TicTacToe(3);\nAssume that player 1 is &quot;X&quot; and player 2 is &quot;O&quot; in the board.\nticTacToe.move(0, 0, 1); // return 0 (no one wins)\n|X| | |\n| | | |    // Player 1 makes a move at (0, 0).\n| | | |\n\nticTacToe.move(0, 2, 2); // return 0 (no one wins)\n|X| |O|\n| | | |    // Player 2 makes a move at (0, 2).\n| | | |\n\nticTacToe.move(2, 2, 1); // return 0 (no one wins)\n|X| |O|\n| | | |    // Player 1 makes a move at (2, 2).\n| | |X|\n\nticTacToe.move(1, 1, 2); // return 0 (no one wins)\n|X| |O|\n| |O| |    // Player 2 makes a move at (1, 1).\n| | |X|\n\nticTacToe.move(2, 0, 1); // return 0 (no one wins)\n|X| |O|\n| |O| |    // Player 1 makes a move at (2, 0).\n|X| |X|\n\nticTacToe.move(1, 0, 2); // return 0 (no one wins)\n|X| |O|\n|O|O| |    // Player 2 makes a move at (1, 0).\n|X| |X|\n\nticTacToe.move(2, 1, 1); // return 1&nbsp;(player 1 wins)\n|X| |O|\n|O|O| |    // Player 1 makes a move at (2, 1).\n|X|X|X|\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n &lt;= 100</code></li>\n\t<li>player is <code>1</code> or <code>2</code>.</li>\n\t<li><code>0 &lt;= row, col &lt; n</code></li>\n\t<li><code>(row, col)</code> are <strong>unique</strong> for each different call to <code>move</code>.</li>\n\t<li>At most <code>n<sup>2</sup></code> calls will be made to <code>move</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow-up:</strong> Could you do better than <code>O(n<sup>2</sup>)</code> per <code>move()</code> operation?</p>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Medium",
+        "likes": 1734,
+        "dislikes": 103,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Valid Tic-Tac-Toe State\", \"titleSlug\": \"valid-tic-tac-toe-state\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[\"TicTacToe\",\"move\",\"move\",\"move\",\"move\",\"move\",\"move\",\"move\"]\n[[3],[0,0,1],[0,2,2],[2,2,1],[1,1,2],[2,0,1],[1,0,2],[2,1,1]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Design",
+                "slug": "design",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 13}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 10}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Intuit\", \"slug\": \"intuit\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class TicTacToe {\npublic:\n    TicTacToe(int n) {\n        \n    }\n    \n    int move(int row, int col, int player) {\n        \n    }\n};\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * TicTacToe* obj = new TicTacToe(n);\n * int param_1 = obj->move(row,col,player);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class TicTacToe {\n\n    public TicTacToe(int n) {\n        \n    }\n    \n    public int move(int row, int col, int player) {\n        \n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * TicTacToe obj = new TicTacToe(n);\n * int param_1 = obj.move(row,col,player);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class TicTacToe(object):\n\n    def __init__(self, n):\n        \"\"\"\n        :type n: int\n        \"\"\"\n        \n\n    def move(self, row, col, player):\n        \"\"\"\n        :type row: int\n        :type col: int\n        :type player: int\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your TicTacToe object will be instantiated and called as such:\n# obj = TicTacToe(n)\n# param_1 = obj.move(row,col,player)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class TicTacToe:\n\n    def __init__(self, n: int):\n        \n\n    def move(self, row: int, col: int, player: int) -> int:\n        \n\n\n# Your TicTacToe object will be instantiated and called as such:\n# obj = TicTacToe(n)\n# param_1 = obj.move(row,col,player)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n\ntypedef struct {\n    \n} TicTacToe;\n\n\nTicTacToe* ticTacToeCreate(int n) {\n    \n}\n\nint ticTacToeMove(TicTacToe* obj, int row, int col, int player) {\n  \n}\n\nvoid ticTacToeFree(TicTacToe* obj) {\n    \n}\n\n/**\n * Your TicTacToe struct will be instantiated and called as such:\n * TicTacToe* obj = ticTacToeCreate(n);\n * int param_1 = ticTacToeMove(obj, row, col, player);\n \n * ticTacToeFree(obj);\n*/",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class TicTacToe {\n\n    public TicTacToe(int n) {\n        \n    }\n    \n    public int Move(int row, int col, int player) {\n        \n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * TicTacToe obj = new TicTacToe(n);\n * int param_1 = obj.Move(row,col,player);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} n\n */\nvar TicTacToe = function(n) {\n    \n};\n\n/** \n * @param {number} row \n * @param {number} col \n * @param {number} player\n * @return {number}\n */\nTicTacToe.prototype.move = function(row, col, player) {\n    \n};\n\n/** \n * Your TicTacToe object will be instantiated and called as such:\n * var obj = new TicTacToe(n)\n * var param_1 = obj.move(row,col,player)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "class TicTacToe\n\n=begin\n    :type n: Integer\n=end\n    def initialize(n)\n        \n    end\n\n\n=begin\n    :type row: Integer\n    :type col: Integer\n    :type player: Integer\n    :rtype: Integer\n=end\n    def move(row, col, player)\n        \n    end\n\n\nend\n\n# Your TicTacToe object will be instantiated and called as such:\n# obj = TicTacToe.new(n)\n# param_1 = obj.move(row, col, player)",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "\nclass TicTacToe {\n\n    init(_ n: Int) {\n        \n    }\n    \n    func move(_ row: Int, _ col: Int, _ player: Int) -> Int {\n        \n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * let obj = TicTacToe(n)\n * let ret_1: Int = obj.move(row, col, player)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "type TicTacToe struct {\n    \n}\n\n\nfunc Constructor(n int) TicTacToe {\n    \n}\n\n\nfunc (this *TicTacToe) Move(row int, col int, player int) int {\n    \n}\n\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * obj := Constructor(n);\n * param_1 := obj.Move(row,col,player);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "class TicTacToe(_n: Int) {\n\n    def move(row: Int, col: Int, player: Int): Int = {\n        \n    }\n\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * var obj = new TicTacToe(n)\n * var param_1 = obj.move(row,col,player)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class TicTacToe(n: Int) {\n\n    fun move(row: Int, col: Int, player: Int): Int {\n        \n    }\n\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * var obj = TicTacToe(n)\n * var param_1 = obj.move(row,col,player)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "struct TicTacToe {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl TicTacToe {\n\n    fn new(n: i32) -> Self {\n        \n    }\n    \n    fn make_a_move(&self, row: i32, col: i32, player: i32) -> i32 {\n        \n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * let obj = TicTacToe::new(n);\n * let ret_1: i32 = obj.move(row, col, player);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class TicTacToe {\n    /**\n     * @param Integer $n\n     */\n    function __construct($n) {\n        \n    }\n  \n    /**\n     * @param Integer $row\n     * @param Integer $col\n     * @param Integer $player\n     * @return Integer\n     */\n    function move($row, $col, $player) {\n        \n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * $obj = TicTacToe($n);\n * $ret_1 = $obj->move($row, $col, $player);\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "class TicTacToe {\n    constructor(n: number) {\n\n    }\n\n    move(row: number, col: number, player: number): number {\n\n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * var obj = new TicTacToe(n)\n * var param_1 = obj.move(row,col,player)\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define tic-tac-toe%\n  (class object%\n    (super-new)\n\n    ; n : exact-integer?\n    (init-field\n      n)\n    \n    ; move : exact-integer? exact-integer? exact-integer? -> exact-integer?\n    (define/public (move row col player)\n\n      )))\n\n;; Your tic-tac-toe% object will be instantiated and called as such:\n;; (define obj (new tic-tac-toe% [n n]))\n;; (define param_1 (send obj move row col player))",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec tic_tac_toe_init_(N :: integer()) -> any().\ntic_tac_toe_init_(N) ->\n  .\n\n-spec tic_tac_toe_move(Row :: integer(), Col :: integer(), Player :: integer()) -> integer().\ntic_tac_toe_move(Row, Col, Player) ->\n  .\n\n\n%% Your functions will be called as such:\n%% tic_tac_toe_init_(N),\n%% Param_1 = tic_tac_toe_move(Row, Col, Player),\n\n%% tic_tac_toe_init_ will be called before every test case, in which you can do some necessary initializations.",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule TicTacToe do\n  @spec init_(n :: integer) :: any\n  def init_(n) do\n\n  end\n\n  @spec move(row :: integer, col :: integer, player :: integer) :: integer\n  def move(row, col, player) do\n\n  end\nend\n\n# Your functions will be called as such:\n# TicTacToe.init_(n)\n# param_1 = TicTacToe.move(row, col, player)\n\n# TicTacToe.init_ will be called before every test case, in which you can do some necessary initializations.",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"190.3K\", \"totalSubmission\": \"331.6K\", \"totalAcceptedRaw\": 190347, \"totalSubmissionRaw\": 331577, \"acRate\": \"57.4%\"}",
+        "hints": [
+            "Could you trade extra space such that <code>move()</code> operation can be done in O(1)?",
+            "You need two arrays: int rows[n], int cols[n], plus two variables: diagonal, anti_diagonal."
+        ],
+        "solution": {
+            "id": "1136",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[\"TicTacToe\",\"move\",\"move\",\"move\",\"move\",\"move\",\"move\",\"move\"]\n[[3],[0,0,1],[0,2,2],[2,2,1],[1,1,2],[2,0,1],[1,0,2],[2,1,1]]",
+        "metaData": "{\n  \"classname\": \"TicTacToe\",\n  \"constructor\": {\n    \"params\": [\n      {\n        \"type\": \"integer\",\n        \"name\": \"n\"\n      }\n    ]\n  },\n  \"methods\": [\n    {\n      \"params\": [\n        {\n          \"type\": \"integer\",\n          \"name\": \"row\"\n        },\n        {\n          \"type\": \"integer\",\n          \"name\": \"col\"\n        },\n        {\n          \"type\": \"integer\",\n          \"name\": \"player\"\n        }\n      ],\n      \"name\": \"move\",\n      \"return\": {\n        \"type\": \"integer\"\n      }\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  },\n  \"systemdesign\": true,\n  \"manual\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1136",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Overview\n\nTic Tac Toe is one of the classic games most of us have played in our childhood. The game rules are pretty simple. There are 2 players that take turns marking a position on an `n * n` board. The first player that makes `n` marks horizontally, vertically, or diagonally, wins the game.\n\nThe brute force approach to solve this problem is to iterate over the entire board of size `n * n` and check if the current player has marked any row, column, diagonal or anti-diagonal.\n\nThis approach is exhaustive and requires $$O(n^2)$$ time for every move. Let's look at other more efficient approaches to solve the problem.\n\n---\n#### Approach 1: Optimized Brute Force\n\n**Intuition**\n\nThe simplest and most intuitive approach is to check on every move if the current player has won. Each player makes a move by marking a cell on the board. The given cell is located at row `row` and column `col`. The 4 ways in which a player can win are as follows:\n\n- Player has marked the entire row given by `row`.\n- Player has marked the entire column given by `col`.\n- Player has marked the diagonal beginning at the top left corner of the board and ending at the bottom right corner.\n- Player has marked the anti-diagonal beginning at the top right corner of the board and ending at the bottom left corner.\n\nThe following figure illustrates the 4 winning conditions.\n\n![img](../Figures/348/basicIdea.png)\n\n> How do we identify which cells lie on the diagonal or anti-diagonal?\n>\n>Every cell on the main diagonal has a unique property; the row index equals the column index.\nSimilarly, for every cell on the anti-diagonal, the value of the column index is equal to `n - row - 1`.\n\n![img](../Figures/348/identifyDiag.png)\n\nEvery move, we will check if any of the above conditions are true. If yes, we declare the current player as the winner and finish the game.\n\n**Algorithm**\n\n1) For a given `n`, initialize a 2-dimensional array `board` of size `n * n` with the values of all elements set to `0`.\n\n2) Every move, mark the `row` and `col` on the `board` with the current player's id `player`.\n\n3) Now, we will check the following conditions to see if the current player has won.\n\n    - Check if all of the cells for the given `row` are marked by the current player. To do so, we must iterate over all the columns ranging from index `0` to `n - 1`, keeping the `row` index constant.\n\n    - Check if all of the positions for the given `col` are marked by the current player. To do so, we must iterate over all the rows ranging from index `0` to `n - 1`, keeping the `col` index constant.\n\n   - Check if the main diagonal is completely marked by the current player.\n\n     From the above intuition, we know that for each cell on the main diagonal, the `row` and `col` indices are equal. Thus, every cell on the diagonal can be given by `board[row][row]`.\n\n    - Check if the anti-diagonal is completely marked by the current player.\n\n      From the above intuition for each cell in the anti-diagonal, the value of the `col` index is equal to `n - row - 1`. Thus, every cell in the anti-diagonal could be given by `board[row][n - row - 1]`.\n\n4) If the current player wins the game, then return `player`. Otherwise, return `0` indicating that no one has won the game.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/ASSkgu7u/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ASSkgu7u\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(n)$$, as for every move we are iterating over `n` cells $$4$$ times to check for each of the column, row, diagonal row, and anti-diagonal. This gives us time complexity of $$O(4 \\cdot n)$$ which is equivalent to $$O(n)$$.\n\n* Space Complexity: $$O(n^2)$$, as we are using 2-dimensional array `board` of size `n * n`.\n\n---\n#### Approach 2: Optimised Approach\n\n**Intuition**\n\nOur goal is to find if a player has won by marking an entire row, column, diagonal, or anti diagonal cells. Can we find this in constant time without iterating over each of the horizontal, vertical, and diagonal rows on every move? Yes! Let's find out how.\n\nLet's break the problem into 2 parts,\n- First, on every move, we must determine whether a player has marked all of the cells in a row or column. In other words, we could say that, if there are `n` rows and `n` columns on a board, the player must have marked a certain row or column `n` times.\n\n  > From the given conditions, we know that a move is always valid and placed on an empty cell. Hence, we can be certain that if a player has marked any row n times, they must have marked a different column each time.\n\n- Second, on every move, we must determine whether a player has marked all of the cells on the main diagonal or anti-diagonal. Irrespective of the size of the board, there can only be one diagonal and one anti-diagonal.\n\n   Also, there are always `n` cells on the diagonal or anti-diagonal. Thus, to win by either of these, a player must have marked the cells on the diagonal or anti-diagonal `n` times.\n\nLet's understand how can we implement this approach.\n\n**Algorithm**\n\nFrom the above intuition, we understand that we must use a data structure to count how many times a player has marked a particular row, column, or diagonal.\n\n- To implement the first part, for each player, we will build an array `rows` of size `n`, where `rows[i]` stores the number of times a player has marked a cell on the $$i^{th}$$ row. Likewise, for each player, we will also build an array `cols` of size `n`.\n\n  Winning Condition:   The player will win if either `rows[i]` or `cols[j]` is equal to `n` after the player has marked the cell on the $$i^{th}$$ row and $$j^{th}$$ column.\n\n   Let `player1Rows` and `player1Cols` be the `rows` and `cols` array for player 1.  Likewise, let `player2Rows` and `player2Cols` be the `rows` and `cols` for player 2. The following figure illustrates the process for `move(0, 0, 1)` and `move(0, 2, 2)`.\n\n![img](../Figures/348/countRowsAndCols.png)\n\n- To implement the second part, we can use a similar idea as above. Since there is only one diagonal and one anti-diagonal, for each player, we only need 2 integer variables `diagonal` and `antiDiagonal`.  These variables will store how many times a cell has been marked on each of the diagonals.\n\n  Winning Condition: After a player has marked a cell on a diagonal row, we check if the value of variable `diagonal` for that player is equal to `n`. Similarly, after a player has marked a cell on an anti-diagonal row, we check if the value of variable `antiDiagonal` for that player is equal to `n`.  \n\n     Let `player1Diagonal` and `player1AntiDiagonal` be the `diagonal` and `antiDiagonal` variables for player 1. Likewise, let `player2Diagonal` and `player2AntiDiagonal` be the `diagonal` and `antiDiagonal` for player 2. The following figure illustrates the process for `move(1, 1, 1)` and `move(2, 0, 2)`.\n\n![img](../Figures/348/countDiag.png)\n\n> Question - Can we further optimize this algorithm?\"\n\nYes, we can. Since there are only 2 players, when implementing part 1, we can use the same data structure to store the marked row and column values for both players.\n\nOne way to implement this is to _increment_ the count when player 1 marks a cell and _decrement_ the count when player 2 marks a cell. With this, we can say that, if the value of `rows[i]` is equal to `n`, player 1 has marked $$i^{th}$$ row `n` times. Similarly, if the value of `rows[i]` is equal to `-n`, then player 2 has marked the $$i^{th}$$ row `n` times.\n\nSimilar logic applies to the columns and diagonals.\n\nThe following animation illustrates the idea.\n\n!?!../Documents/348_LIS.json:1378,684!?!\n\nThe algorithm can be implemented as follows:\n\n1) For a given `n`, initialize arrays `rows` and `cols` of size `n` with the value of every element set to `0`.\n\n2) For each move, we must increment/decrement the row, column, diagonal, and anti-diagonal according to who is the current player and which cell was marked. If the current player is player 1, we _increment_ the value and if it is player 2, we _decrement_ the value.\n\n    > Note: If we apply simple math rules, we can increment or decrement the values irrespective of the player.\n\n   We can use an additional variable `currentPlayer` with the value `1` for player 1 and `-1` for player 2, and add the value of `currentPlayer` to the current row, column, diagonal and anti-diagonal.\n\n  3) As a final step, we must determine whether the current player has won the game. If any row, column, diagonal, or anti-diagonal is equal to `n` (for player 1) or `-n` (for player 2) then the current player has won the game.\n\n     Also, rather than having separate conditions to check whose turn it is, we can check the absolute values.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/Uas7N2Bb/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Uas7N2Bb\"></iframe>\n\n**Complexity Analysis**\n\nLet, $$n$$ be the length of string $$s$$.\n* Time Complexity: $$O(1)$$ because for every move, we mark a particular row, column, diagonal, and anti-diagonal in constant time.\n\n* Space Complexity: $$O(n)$$ because we use arrays `rows` and `cols` of size `n`. The variables `diagonal` and `antiDiagonal` use constant extra space.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1141",
+            "count": 81,
+            "average": "4.951",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "design-tic-tac-toe",
+    "playgroundData": {
+        "ASSkgu7u": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "design-tic-tac-toe-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Uas7N2Bb": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "design-tic-tac-toe-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

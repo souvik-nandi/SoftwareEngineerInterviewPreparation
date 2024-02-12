@@ -1,0 +1,287 @@
+{
+    "id": "220",
+    "question": {
+        "questionId": "220",
+        "questionFrontendId": "220",
+        "boundTopicId": null,
+        "title": "Contains Duplicate III",
+        "titleSlug": "contains-duplicate-iii",
+        "content": "<p>Given an integer array <code>nums</code> and two integers <code>k</code> and <code>t</code>, return <code>true</code> if there are <strong>two distinct indices</strong> <code>i</code> and <code>j</code> in the array such that <code>abs(nums[i] - nums[j]) &lt;= t</code> and <code>abs(i - j) &lt;= k</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<pre><strong>Input:</strong> nums = [1,2,3,1], k = 3, t = 0\n<strong>Output:</strong> true\n</pre><p><strong>Example 2:</strong></p>\n<pre><strong>Input:</strong> nums = [1,0,1,1], k = 1, t = 2\n<strong>Output:</strong> true\n</pre><p><strong>Example 3:</strong></p>\n<pre><strong>Input:</strong> nums = [1,5,9,1,5,9], k = 2, t = 3\n<strong>Output:</strong> false\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 2 * 10<sup>4</sup></code></li>\n\t<li><code>-2<sup>31</sup> &lt;= nums[i] &lt;= 2<sup>31</sup> - 1</code></li>\n\t<li><code>0 &lt;= k &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= t &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 2481,
+        "dislikes": 2352,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Contains Duplicate\", \"titleSlug\": \"contains-duplicate\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Contains Duplicate II\", \"titleSlug\": \"contains-duplicate-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[1,2,3,1]\n3\n0\n[1,0,1,1]\n1\n2\n[1,5,9,1,5,9]\n2\n3",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sliding Window",
+                "slug": "sliding-window",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Bucket Sort",
+                "slug": "bucket-sort",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Ordered Set",
+                "slug": "ordered-set",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Palantir Technologies\", \"slug\": \"palantir-technologies\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def containsNearbyAlmostDuplicate(self, nums, k, t):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :type t: int\n        :rtype: bool\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nbool containsNearbyAlmostDuplicate(int* nums, int numsSize, int k, int t){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public bool ContainsNearbyAlmostDuplicate(int[] nums, int k, int t) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @param {number} t\n * @return {boolean}\n */\nvar containsNearbyAlmostDuplicate = function(nums, k, t) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} nums\n# @param {Integer} k\n# @param {Integer} t\n# @return {Boolean}\ndef contains_nearby_almost_duplicate(nums, k, t)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func containsNearbyAlmostDuplicate(_ nums: [Int], _ k: Int, _ t: Int) -> Bool {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func containsNearbyAlmostDuplicate(nums []int, k int, t int) bool {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def containsNearbyAlmostDuplicate(nums: Array[Int], k: Int, t: Int): Boolean = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun containsNearbyAlmostDuplicate(nums: IntArray, k: Int, t: Int): Boolean {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn contains_nearby_almost_duplicate(nums: Vec<i32>, k: i32, t: i32) -> bool {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @param Integer $t\n     * @return Boolean\n     */\n    function containsNearbyAlmostDuplicate($nums, $k, $t) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function containsNearbyAlmostDuplicate(nums: number[], k: number, t: number): boolean {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (contains-nearby-almost-duplicate nums k t)\n  (-> (listof exact-integer?) exact-integer? exact-integer? boolean?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec contains_nearby_almost_duplicate(Nums :: [integer()], K :: integer(), T :: integer()) -> boolean().\ncontains_nearby_almost_duplicate(Nums, K, T) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec contains_nearby_almost_duplicate(nums :: [integer], k :: integer, t :: integer) :: boolean\n  def contains_nearby_almost_duplicate(nums, k, t) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"208K\", \"totalSubmission\": \"958.1K\", \"totalAcceptedRaw\": 207991, \"totalSubmissionRaw\": 958127, \"acRate\": \"21.7%\"}",
+        "hints": [
+            "Time complexity O(n logk)  - This will give an indication that sorting is involved for k elements.",
+            "Use already existing state to evaluate next state  -  Like, a set of k sorted numbers are only needed to be tracked. When we are processing the next number in array, then we can utilize the existing sorted state and it is not necessary to sort next overlapping set of k numbers again."
+        ],
+        "solution": {
+            "id": "25",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[1,2,3,1]\n3\n0",
+        "metaData": "{\r\n  \"name\": \"containsNearbyAlmostDuplicate\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"t\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "25",
+        "content": "[TOC]\n\n## Summary\nThis article is for intermediate readers. It introduces the following ideas:\nBinary Search Tree, HashMap, and Buckets.\n\n## Solutions\n---\n#### Approach #1 (Naive Linear Search) [Time Limit Exceeded]\n\n**Intuition**\n\nCompare each element with the previous $$k$$ elements and see if their difference is at most $$t$$.\n\n**Algorithm**\n\nThis problem requires us to find $$i$$ and $$j$$ such that the following conditions are satisfied:\n\n1. <a name=\"condition-1\"></a>$$\\bigl| i-j \\bigr| \\le k$$\n2. <a name=\"condition-2\"></a>$$\\bigl| \\mathrm{nums}[i] - \\mathrm{nums}[j] \\bigr| \\le t$$\n\nThe naive approach is the same as [Approach #1 in Contains Duplicate II solution](https://leetcode.com/articles/contains-duplicate-ii/#approach-1-naive-linear-search-time-limit-exceeded), which keeps a virtual sliding window that holds the newest $$k$$ elements. In this way, [Condition 1](#condition-1) above is always satisfied. We then check if [Condition 2](#condition-2) is also satisfied by applying linear search.\n\n<iframe src=\"https://leetcode.com/playground/US6PVv2S/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"US6PVv2S\"></iframe>\n\n\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n \\min(k,n))$$.\nIt costs $$O(\\min(k, n))$$ time for each linear search. Note that we do at most $$n$$ comparisons in one search even if $$k$$ can be larger than $$n$$.\n\n* Space complexity: $$O(1)$$.\nWe only used constant auxiliary space.\n\n\n---\n#### Approach #2 (Binary Search Tree) [Accepted]\n\n**Intuition**\n\n* If elements in the window are maintained in sorted order, we can apply binary search twice to check if [Condition 2](#condition-2) is satisfied.\n\n* By utilizing self-balancing Binary Search Tree, one can keep the window ordered at all times with logarithmic time `insert` and `delete`.\n\n**Algorithm**\n\nThe real bottleneck of [Approach #1](#approach-1-naive-linear-search-time-limit-exceeded) is due to all elements in the sliding window are being scanned to check if [Condition 2](#condition-2) is satisfied. Could we do better?\n\nIf elements in the window are in sorted order, we can apply Binary Search twice to search for the two boundaries $$x+t$$ and $$x-t$$ for each element $$x$$.\n\nUnfortunately, the window is unsorted. A common mistake here is attempting to maintain a sorted array. Although searching in a sorted array costs only logarithmic time, keeping the order of the elements after `insert` and `delete` operation is not as efficient. Imagine you have a sorted array with $$k$$ elements and you are adding a new item $$x$$. Even if you can find the correct position in $$O(\\log k)$$ time, you still need $$O(k)$$ time to insert $$x$$ into the sorted array. The reason is that you need to shift all elements after the insert position one step backward. The same reasoning applies to removal as well. After removing an item from position $$i$$, you need to shift all elements after $$i$$ one step forward. Thus, we gain nothing in speed compared to the [naive linear search approach](#approach-1-naive-linear-search-time-limit-exceeded) above.\n\nTo gain an actual speedup, we need a *dynamic* data structure that supports faster `insert`, `search` and `delete`. Self-balancing Binary Search Tree (BST) is the right data structure. The term *Self-balancing* means the tree automatically keeps its height small after arbitrary `insert` and `delete` operations. Why does self-balancing matter? That is because most operations on a BST take time directly proportional to the height of the tree. Take a look at the following non-balanced BST which is skewed to the left:\n\n```\n            6\n           /\n          5\n         /\n        4\n       /\n      3\n     /\n    2\n   /\n  1\n```\n*Figure 1. A non-balanced BST that is skewed to the left.*\n\nSearching in the above BST degrades to *linear* time, which is like searching in a linked list. Now compare to the BST below which is balanced:\n\n```\n          4\n        /   \\\n       2     6\n      / \\   /\n     1   3  5\n```\n\n*Figure 2. A balanced BST.*\n\nAssume that $$n$$ is the total number of nodes in the tree, a balanced binary tree maintains its height in the order of $$h = \\log n$$. Thus it supports $$O(h) = O(\\log n)$$ time for each of `insert`, `search` and `delete` operations.\n\nHere is the entire algorithm in pseudocode:\n\n* Initialize an empty BST `set`\n* Loop through the array, for each element $$x$$\n    * Find the *smallest* element $$s$$ in `set` that is *greater* than or equal to $$x$$, return true if $$s - x \\leq t$$\n    * Find the *greatest* element $$g$$ in `set` that is *smaller* than or equal to $$x$$, return true if $$x - g \\leq t$$\n    * Put $$x$$ in `set`\n    * If the size of the set is larger than $$k$$, remove the oldest item.\n* Return false\n\nOne may consider the smallest element $$s$$ that is greater or equal to $$x$$ as the *successor* of $$x$$ in the BST, as in: \"What is the next greater value of $$x$$?\". Similarly, we consider the greatest element $$g$$ that is smaller or equal to $$x$$ as the *predecessor* of $$x$$ in the BST, as in: \"What is the previous smaller value of $$x$$?\". These two values $$s$$ and $$g$$ are the two closest neighbors from $$x$$. Thus by checking the distance from them to $$x$$, we can conclude if [Condition 2](#condition-2) is satisfied.\n\n<iframe src=\"https://leetcode.com/playground/FUhXAKok/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"FUhXAKok\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n \\log (\\min(n,k)))$$.\nWe iterate through the array of size $$n$$. For each iteration, it costs $$O(\\log \\min(k, n))$$ time (`search`, `insert` or `delete`) in the BST, since the size of the BST is upper bounded by both $$k$$ and $$n$$.\n\n* Space complexity: $$O(\\min(n,k))$$.\nSpace is dominated by the size of the BST, which is upper bounded by both $$k$$ and $$n$$.\n\n**Note**\n\n* When the array's elements and $$t$$'s value are large, they can cause overflow in arithmetic operation. Consider using a larger size data type instead, such as *long*.\n\n* C++'s `std::set`, `std::set::upper_bound` and `std::set::lower_bound` are equivalent to Java's `TreeSet`, `TreeSet::ceiling` and `TreeSet::floor`, respectively. Python does not provide a Self-balancing BST through its library.\n\n---\n#### Approach #3 (Buckets) [Accepted]\n\n**Intuition**\n\nInspired by `bucket sort`, we can achieve linear time complexity in our problem using *buckets* as window.\n\n**Algorithm**\n\nBucket sort is a sorting algorithm that works by distributing the elements of an array into a number of buckets. Each bucket is then sorted individually, using a different sorting algorithm. Here is an illustration of buckets.\n\n![Illustration of buckets](../Figures/220/220_Buckets.png \"Illustration of buckets\"){:width=\"539px\"}\n{:align=\"center\"}\n\n*Figure 3. Illustration of buckets.*\n{:align=\"center\"}\n\nFrom the above example, we have 8 unsorted integers. We create 5 buckets covering the inclusive ranges of $$[0,9], [10,19], [20, 29], [30, 39], [40, 49]$$ individually. Each of the eight elements is in a particular bucket. For element with value $$x$$, its bucket label is $$x / w$$ and here we have $$w = 10$$. Sort each bucket using some other sorting algorithm and then collect all of them bucket by bucket.\n\nBack to our problem, the critical issue we are trying to solve is:\n\n> 1. For a given element $$x$$ is there an item in the window that is within the range of $$[x-t, x+t]$$?\n> 2. Could we do this in constant time?\n\nLet us consider an example where each element is a person's birthday. Your birthday, say some day in *March*, is the new element $$x$$. Suppose that each month has $$30$$ days and you want to know if anyone has a birthday within $$t = 30$$ days of yours. Immediately, we can rule out all other months except *February, March, April*.\n\nThe reason we know this is because each birthday belongs to a *bucket* we called *month*! And the range covered by the buckets are the same as distance $$t$$ which simplifies things a lot. Any two elements that are not in the same or adjacent buckets must have a distance greater than $$t$$.\n\nWe apply the above bucketing principle and design buckets covering the ranges of $$..., [0,t], [t+1, 2t+1], ...$$. We keep the window using this buckets. Then, each time, all we need to check is the bucket that $$x$$ belongs to and its two adjacent buckets. Thus, we have a constant time algorithm for searching almost duplicate in the window.\n\nOne thing worth mentioning is the difference from bucket sort \u2013 Each of our buckets contains at most one element at any time, because two elements in a bucket means \"almost duplicate\" and we can return early from the function. Therefore, a HashMap with an element associated with a bucket label is enough for our purpose.\n\n<iframe src=\"https://leetcode.com/playground/W4MLnvTf/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"W4MLnvTf\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n)$$.\nFor each of the $$n$$ elements, we do at most three searches, one insert, and one delete on the HashMap, which costs constant time on average. Thus, the entire algorithm costs $$O(n)$$ time.\n\n* Space complexity: $$O(\\min(n,k))$$.\nSpace is dominated by the HashMap, which is linear to the size of its elements. The size of the HashMap is upper bounded by both $$n$$ and $$k$$. Thus the space complexity is $$O(\\min(n, k))$$.\n\n## See Also\n\n* [Problem 217 Contains Duplicate](https://leetcode.com/articles/contains-duplicate/)\n* [Problem 219 Contains Duplicate II](https://leetcode.com/articles/contains-duplicate-ii/)",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "23",
+            "count": 117,
+            "average": "3.752",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "contains-duplicate-iii",
+    "playgroundData": {
+        "US6PVv2S": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "contains-duplicate-iii-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "FUhXAKok": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "contains-duplicate-iii-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "W4MLnvTf": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "contains-duplicate-iii-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

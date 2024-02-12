@@ -1,0 +1,260 @@
+{
+    "id": "662",
+    "question": {
+        "questionId": "662",
+        "questionFrontendId": "662",
+        "boundTopicId": null,
+        "title": "Maximum Width of Binary Tree",
+        "titleSlug": "maximum-width-of-binary-tree",
+        "content": "<p>Given the <code>root</code> of a binary tree, return <em>the <strong>maximum width</strong> of the given tree</em>.</p>\n\n<p>The <strong>maximum width</strong> of a tree is the maximum <strong>width</strong> among all levels.</p>\n\n<p>The <strong>width</strong> of one level is defined as the length between the end-nodes (the leftmost and rightmost non-null nodes), where the null nodes between the end-nodes that would be present in a complete binary tree extending down to that level are also counted into the length calculation.</p>\n\n<p>It is <strong>guaranteed</strong> that the answer will in the range of a <strong>32-bit</strong> signed integer.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/05/03/width1-tree.jpg\" style=\"width: 359px; height: 302px;\" />\n<pre>\n<strong>Input:</strong> root = [1,3,2,5,3,null,9]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> The maximum width exists in the third level with length 4 (5,3,null,9).\n</pre>\n\n<p><strong>Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/03/14/maximum-width-of-binary-tree-v3.jpg\" style=\"width: 442px; height: 422px;\" />\n<pre>\n<strong>Input:</strong> root = [1,3,2,5,null,null,9,6,null,7]\n<strong>Output:</strong> 7\n<strong>Explanation:</strong> The maximum width exists in the fourth level with length 7 (6,null,null,null,null,null,7).\n</pre>\n\n<p><strong>Example 3:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/05/03/width3-tree.jpg\" style=\"width: 289px; height: 299px;\" />\n<pre>\n<strong>Input:</strong> root = [1,3,2,5]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The maximum width exists in the second level with length 2 (3,2).\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[1, 3000]</code>.</li>\n\t<li><code>-100 &lt;= Node.val &lt;= 100</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 4990,
+        "dislikes": 749,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "[1,3,2,5,3,null,9]\n[1,3,2,5,null,null,9,6,null,7]\n[1,3,2,5]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Tree",
+                "slug": "tree",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Binary Tree",
+                "slug": "binary-tree",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 2}], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode() : val(0), left(nullptr), right(nullptr) {}\n *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}\n *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}\n * };\n */\nclass Solution {\npublic:\n    int widthOfBinaryTree(TreeNode* root) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode() {}\n *     TreeNode(int val) { this.val = val; }\n *     TreeNode(int val, TreeNode left, TreeNode right) {\n *         this.val = val;\n *         this.left = left;\n *         this.right = right;\n *     }\n * }\n */\nclass Solution {\n    public int widthOfBinaryTree(TreeNode root) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution(object):\n    def widthOfBinaryTree(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def widthOfBinaryTree(self, root: Optional[TreeNode]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nint widthOfBinaryTree(struct TreeNode* root){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {\n *         this.val = val;\n *         this.left = left;\n *         this.right = right;\n *     }\n * }\n */\npublic class Solution {\n    public int WidthOfBinaryTree(TreeNode root) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val, left, right) {\n *     this.val = (val===undefined ? 0 : val)\n *     this.left = (left===undefined ? null : left)\n *     this.right = (right===undefined ? null : right)\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {number}\n */\nvar widthOfBinaryTree = function(root) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val = 0, left = nil, right = nil)\n#         @val = val\n#         @left = left\n#         @right = right\n#     end\n# end\n# @param {TreeNode} root\n# @return {Integer}\ndef width_of_binary_tree(root)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init() { self.val = 0; self.left = nil; self.right = nil; }\n *     public init(_ val: Int) { self.val = val; self.left = nil; self.right = nil; }\n *     public init(_ val: Int, _ left: TreeNode?, _ right: TreeNode?) {\n *         self.val = val\n *         self.left = left\n *         self.right = right\n *     }\n * }\n */\nclass Solution {\n    func widthOfBinaryTree(_ root: TreeNode?) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc widthOfBinaryTree(root *TreeNode) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(_value: Int = 0, _left: TreeNode = null, _right: TreeNode = null) {\n *   var value: Int = _value\n *   var left: TreeNode = _left\n *   var right: TreeNode = _right\n * }\n */\nobject Solution {\n    def widthOfBinaryTree(root: TreeNode): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun widthOfBinaryTree(root: TreeNode?): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn width_of_binary_tree(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($val = 0, $left = null, $right = null) {\n *         $this->val = $val;\n *         $this->left = $left;\n *         $this->right = $right;\n *     }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return Integer\n     */\n    function widthOfBinaryTree($root) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     val: number\n *     left: TreeNode | null\n *     right: TreeNode | null\n *     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {\n *         this.val = (val===undefined ? 0 : val)\n *         this.left = (left===undefined ? null : left)\n *         this.right = (right===undefined ? null : right)\n *     }\n * }\n */\n\nfunction widthOfBinaryTree(root: TreeNode | null): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "; Definition for a binary tree node.\n#|\n\n; val : integer?\n; left : (or/c tree-node? #f)\n; right : (or/c tree-node? #f)\n(struct tree-node\n  (val left right) #:mutable #:transparent)\n\n; constructor\n(define (make-tree-node [val 0])\n  (tree-node val #f #f))\n\n|#\n\n(define/contract (width-of-binary-tree root)\n  (-> (or/c tree-node? #f) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "%% Definition for a binary tree node.\n%%\n%% -record(tree_node, {val = 0 :: integer(),\n%%                     left = null  :: 'null' | #tree_node{},\n%%                     right = null :: 'null' | #tree_node{}}).\n\n-spec width_of_binary_tree(Root :: #tree_node{} | null) -> integer().\nwidth_of_binary_tree(Root) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "# Definition for a binary tree node.\n#\n# defmodule TreeNode do\n#   @type t :: %__MODULE__{\n#           val: integer,\n#           left: TreeNode.t() | nil,\n#           right: TreeNode.t() | nil\n#         }\n#   defstruct val: 0, left: nil, right: nil\n# end\n\ndefmodule Solution do\n  @spec width_of_binary_tree(root :: TreeNode.t | nil) :: integer\n  def width_of_binary_tree(root) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"198.8K\", \"totalSubmission\": \"493.1K\", \"totalAcceptedRaw\": 198847, \"totalSubmissionRaw\": 493056, \"acRate\": \"40.3%\"}",
+        "hints": [],
+        "solution": {
+            "id": "965",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[1,3,2,5,3,null,9]",
+        "metaData": "{\r\n  \"name\": \"widthOfBinaryTree\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "823",
+            "date": "2022-02-27",
+            "incompleteChallengeCount": 28,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "965",
+        "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n#### Overview\r\n\r\nThe problem defines the concept of **_width_** for the binary tree.\r\nIn essence, it is about binary tree traversal, since we need to traverse the tree in order to measure its width.\r\n\r\nAs one would probably know, the common strategies to traverse a binary tree are Breadth-First Search (_a.k.a._ BFS) and Depth-First Search (_a.k.a._ DFS).\r\nFurthermore, the DFS strategy can be distinguished as _preorder_ DFS, _inorder_ DFS and _postorder_ DFS, depending on the relative order of visit among the node itself and its child nodes.\r\n\r\nIf one is not familiar with the concepts of BFS and DFS, we have an Explore card called [Queue & Stack](https://leetcode.com/explore/learn/card/queue-stack/) where we cover the [BFS traversal](https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/) as well as the [DFS traversal](https://leetcode.com/explore/learn/card/queue-stack/232/practical-application-stack/). Hence, in this article, we won't repeat ourselves on these concepts.\r\n\r\n**Intuition**\r\n\r\n>The key to solve the problem though lie on how we **index** the nodes that are on the same level.\r\n\r\nSuppose that the indices for the first and the last nodes of one particular level are $$C_1$$ and $$C_n$$ respectively, we could then calculate the _width_ of this level as $$C_n - C_i + 1$$.\r\n\r\nNow, let us try to come up with a schema to index the nodes, so that the problem can be solved easily with the above formula.\r\n\r\nAs we know, for a _full_ binary tree, the number of nodes double at each level, since each parent node has two child nodes.\r\nNaturally, the range of our node index would double as well.\r\n\r\n>If the index of a parent node is $$C_i$$, accordingly we can define the index of its **_left_** child node as $$2\\cdot C_i$$ and the index of its **_right_** child node as $$2 \\cdot C_i + 1$$.\r\n\r\nIn the following graph, we show an example of how the index works for a full binary tree, where on each node we label its index rather than its value.\r\n\r\n![full binary tree with index](../Figures/662/662_full_binary_tree.png)\r\n\r\nWith the above indexing schema, we manage to assign a unique index for each node on the same level, and in addition there is no _gap_ among all the indices if it is a full binary tree.\r\n\r\nFor a non-full binary tree, the relationship between the indices of a parent and its child node still holds.\r\n\r\nNow that we have an indexing schema, all we need to do is to assign an index for each node in the tree.\r\nOnce it is done, we can calculate the _width_ for each level, and finally we could return the maximal value among them as the solution.\r\n\r\nVoila. This is the key insight to solve the problem. With this hint, we believe that one could definitely come up with some solutions.\r\n\r\nAs a spoiler alert, we will cover how to implement different solutions with BFS and DFS traversal strategies in the remaining sections.\r\n\r\n---\r\n#### Approach 1: BFS Traversal\r\n\r\n**Intuition**\r\n\r\nNaturally, one might resort to the BFS traversal.\r\nAfter all, the width is measured among the nodes on the same level.\r\nSo let us get down to the BFS traversal first.\r\n\r\nThere are several ways to implement the BFS traversal. Almost all of them share a common point, _i.e._ using the `queue` data structure to maintain the order of visits.\r\n\r\nIn brief, we push the nodes into the queue level by level.\r\nAs a result, the priorities of visiting would roll out from top to down and from left to right, due to the FIFO (First-In First-Out) principle of the queue data structure, _i.e._ the element that enters the queue first would exit first as well.\r\n\r\n![BFS traversal](../Figures/662/662_bfs_traversal.png)\r\n\r\nIn the above graph, we show an example of BFS traversal on a full binary tree where we indicate the _global_ order of visiting along with each node.\r\n\r\n**Algorithm**\r\n\r\nHere are a few steps to implement a solution with the BFS traversal.\r\n\r\n- First of all, we create a `queue` data structure, which would be used to hold elements of tuple as `(node, col_index)`, where the `node` is the tree node and the `col_index` is the corresponding index that is assigned to the node based on our indexing schema.\r\nAlso, we define a global variable called `max_width` which holds the maximal width that we've seen so far.\r\n\r\n- Then we append the root node along with its index 0, to kick off the BFS traversal.\r\n\r\n- The BFS traversal is basically an iteration over the elements of queue. We visit the nodes _level by level_ until there are no more elements in the queue.\r\n\r\n    - At the end of each level, we use the indices of the first and the last elements on the same level, in order to obtain the width of the level.\r\n\r\n- At the end of BFS traversal, we then return the maximal width that we've seen over all levels.\r\n\r\n<iframe src=\"https://leetcode.com/playground/iD9irdqP/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"iD9irdqP\"></iframe>\r\n\r\n\r\n**Note:** in the above implementation, we use the `size` of the queue as a delimiter to determine the boundary between each levels.\r\n\r\nOne could also use a specific dummy element as a marker to separate nodes of different levels in the queue.\r\n\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$N$$ be the total number of nodes in the input tree.\r\n\r\n- Time Complexity: $$\\mathcal{O}(N)$$ \r\n\r\n    - We visit each node once and only once. And at each visit, it takes a constant time to process.\r\n\r\n\r\n- Space Complexity: $$\\mathcal{O}(N)$$\r\n\r\n    - We used a queue to maintain the nodes along with its indices, which is the main memory consumption of the algorithm.\r\n\r\n    - Due to the nature of BFS, at any given moment, the queue holds no more than *two levels* of nodes. In the worst case, a level in a full binary tree contains at most half of the total nodes (_i.e._ $$\\frac{N}{2}$$), _i.e._ this is also the level where the leaf nodes reside.\r\n\r\n    - Hence, the overall space complexity of the algorithm is $$\\mathcal{O}(N)$$.\r\n<br/>\r\n<br/>\r\n\r\n---\r\n#### Approach 2: DFS Traversal\r\n\r\n**Intuition**\r\n\r\nAlthough it is definitely more intuitive to implement a solution with BFS traversal, it is not impossible to do it with DFS.\r\n\r\nIt might sound twisted, but we don't need to visit the nodes strictly in the order of BFS.\r\nAll we need is to compare the indices between the first and the last elements of the same level.\r\n\r\n>We could build a table that records the indices of nodes grouped by level.\r\nThen we could scan the indices level by level to obtain the **_maximal_** difference among them, which is also the width of the level.\r\n\r\nWith the above idea, as we can see, any traversal will do, including the BFS and DFS.\r\n\r\n>Better yet, we don't need to keep the indices of the entire level, but the first and the last index.\r\n\r\nWe could use the table to keep **only** the index of the first element for each level, _i.e._ `depth -> first_col_index`, which we illustrate in the following graph.\r\n\r\n![tree with first_col_index](../Figures/662/662_first_col_index.png)\r\n\r\nAlong with the traversal, we could compare the index of every node with the corresponding first index of its level (_i.e._ `first_col_index`).\r\n\r\nRather than keeping all the indices in the table, we save time and space by keeping only the index of the first element per level.\r\n\r\n**Algorithm**\r\n\r\nThe tricky part is how we can obtain the index for the first element of each level.\r\n\r\nAs we discussed before, we use a table with `depth` of the node as the key and the index of the first element for that depth (level) as the value.\r\n\r\n>If we can make sure that we visit the first element of a level before the rest of elements on that level, we then can easily populate the table along with the traversal.\r\n\r\nIn fact, a DFS traversal can assure the above priority that we desire.\r\nEven better, it could be either _preorder_, _inorder_ or _postorder_ DFS traversal, as long as we **_prioritize_** the visit of the left child node over the right child node.\r\n\r\n>Although in principle DFS prioritizes depth over breadth, it could also ensure the _level-wise_ priority.\r\nBy visiting the left node before the right child node in DFS traversal, we can ensure that the nodes that lean more to the left got visited earlier.\r\n\r\nWe showcase a **preorder DFS** traversal, with an example in the following graph:\r\n\r\n![DFS traversal](../Figures/662/662_preorder_dfs_traversal.png)\r\n\r\nWe label each node with a number that indicates the _global_ order of visit.\r\nAs one can see, the nodes at the same level do get visited from left to right.\r\nFor instance, on the second level, the first node would be visited at the step 2, while the next node at the same level would be visited at the step 5.\r\n\r\nWe give some sample implementations of DFS in the following.\r\n\r\n<iframe src=\"https://leetcode.com/playground/MjhhC66k/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"MjhhC66k\"></iframe>\r\n\r\n\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$N$$ be the total number of nodes in the input tree.\r\n\r\n- Time Complexity: $$\\mathcal{O}(N)$$.\r\n\r\n    - Similar to the BFS traversal, we visit each node once and only once in DFS traversal. And each visit takes a constant time to process as well.\r\n\r\n\r\n- Space Complexity: $$\\mathcal{O}(N)$$\r\n\r\n    - Unlike the BFS traversal, we used an additional table to keep the index for the first element per level.\r\n    In the worst case where the tree is extremely skewed, there could be as many levels as the number of nodes.\r\n    As a result, the space complexity of the table would be $$\\mathcal{O}(N)$$.\r\n\r\n    - Since we implement DFS traversal with recursion which would incur some additional memory consumption in the function call stack, we need to take this into account for the space complexity.\r\n\r\n    - The consumption of function stack is proportional to the depth of recursion. Again, in the same worst case above, where the tree is extremely skewed, the depth of the recursion would be equal to the number of nodes in the tree.\r\n    Therefore, the space complexity of the function stack would be $$\\mathcal{O}(N)$$.\r\n\r\n    - To sum up, the overall space complexity of the algorithm is $$\\mathcal{O}(N) + \\mathcal{O}(N) = \\mathcal{O}(N)$$.\r\n<br/>\r\n\r\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "910",
+            "count": 72,
+            "average": "4.153",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "maximum-width-of-binary-tree",
+    "playgroundData": {
+        "iD9irdqP": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-width-of-binary-tree-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "MjhhC66k": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-width-of-binary-tree-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

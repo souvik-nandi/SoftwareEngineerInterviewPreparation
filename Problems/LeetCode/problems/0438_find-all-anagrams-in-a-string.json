@@ -1,0 +1,254 @@
+{
+    "id": "438",
+    "question": {
+        "questionId": "438",
+        "questionFrontendId": "438",
+        "boundTopicId": null,
+        "title": "Find All Anagrams in a String",
+        "titleSlug": "find-all-anagrams-in-a-string",
+        "content": "<p>Given two strings <code>s</code> and <code>p</code>, return <em>an array of all the start indices of </em><code>p</code><em>&#39;s anagrams in </em><code>s</code>. You may return the answer in <strong>any order</strong>.</p>\n\n<p>An <strong>Anagram</strong> is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;cbaebabacd&quot;, p = &quot;abc&quot;\n<strong>Output:</strong> [0,6]\n<strong>Explanation:</strong>\nThe substring with start index = 0 is &quot;cba&quot;, which is an anagram of &quot;abc&quot;.\nThe substring with start index = 6 is &quot;bac&quot;, which is an anagram of &quot;abc&quot;.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abab&quot;, p = &quot;ab&quot;\n<strong>Output:</strong> [0,1,2]\n<strong>Explanation:</strong>\nThe substring with start index = 0 is &quot;ab&quot;, which is an anagram of &quot;ab&quot;.\nThe substring with start index = 1 is &quot;ba&quot;, which is an anagram of &quot;ab&quot;.\nThe substring with start index = 2 is &quot;ab&quot;, which is an anagram of &quot;ab&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length, p.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>s</code> and <code>p</code> consist of lowercase English letters.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 7965,
+        "dislikes": 263,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Valid Anagram\", \"titleSlug\": \"valid-anagram\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Permutation in String\", \"titleSlug\": \"permutation-in-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "\"cbaebabacd\"\n\"abc\"\n\"abab\"\n\"ab\"",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sliding Window",
+                "slug": "sliding-window",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 13}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 13}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bolt\", \"slug\": \"bolt\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ServiceNow\", \"slug\": \"servicenow\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Tableau\", \"slug\": \"tableau\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"C3 IoT\", \"slug\": \"c3-iot\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Redfin\", \"slug\": \"redfin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<int> findAnagrams(string s, string p) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public List<Integer> findAnagrams(String s, String p) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def findAnagrams(self, s, p):\n        \"\"\"\n        :type s: str\n        :type p: str\n        :rtype: List[int]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def findAnagrams(self, s: str, p: str) -> List[int]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* findAnagrams(char * s, char * p, int* returnSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public IList<int> FindAnagrams(string s, string p) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @param {string} p\n * @return {number[]}\n */\nvar findAnagrams = function(s, p) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} s\n# @param {String} p\n# @return {Integer[]}\ndef find_anagrams(s, p)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func findAnagrams(_ s: String, _ p: String) -> [Int] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func findAnagrams(s string, p string) []int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def findAnagrams(s: String, p: String): List[Int] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun findAnagrams(s: String, p: String): List<Int> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn find_anagrams(s: String, p: String) -> Vec<i32> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String $p\n     * @return Integer[]\n     */\n    function findAnagrams($s, $p) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function findAnagrams(s: string, p: string): number[] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (find-anagrams s p)\n  (-> string? string? (listof exact-integer?))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec find_anagrams(S :: unicode:unicode_binary(), P :: unicode:unicode_binary()) -> [integer()].\nfind_anagrams(S, P) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec find_anagrams(s :: String.t, p :: String.t) :: [integer]\n  def find_anagrams(s, p) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"562K\", \"totalSubmission\": \"1.2M\", \"totalAcceptedRaw\": 561968, \"totalSubmissionRaw\": 1155784, \"acRate\": \"48.6%\"}",
+        "hints": [],
+        "solution": {
+            "id": "863",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "ac",
+        "sampleTestCase": "\"cbaebabacd\"\n\"abc\"",
+        "metaData": "{\r\n  \"name\": \"findAnagrams\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n        \"name\": \"p\",\r\n        \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "798",
+            "date": "2022-02-02",
+            "incompleteChallengeCount": 28,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "863",
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Solution Template\n\n![traversal](../Figures/438/snake3.png)\n\nThis is a problem of multiple pattern search in a string.\nAll such problems usually could be solved by sliding window approach in a linear\ntime. The challenge here is how to implement constant-time slice \nto fit into this linear time. \n\nIf the patterns are not known in advance, i.e. it's \"find duplicates\" problem,\none could use one of two ways to implement constant-time slice: Bitmasks or Rabin-Karp.\nPlease check article [Repeated DNA Sequences](https://leetcode.com/articles/repeated-dna-sequences/)\nfor the detailed comparison of these two algorithms. \n\nHere the situation is more simple: patterns are known in advance, and the set\nof characters in the patterns is very limited as well: 26 lowercase English letters. \nHence one could allocate array or hashmap with 26 elements and use it as a \nletter counter in the sliding window. \n\n![traversal](../Figures/438/anagrams2.png)\n<br />\n<br />\n\n\n---\n#### Approach 1: Sliding Window with HashMap\n\nLet's start from the simplest approach: sliding window + two counter hashmaps \n`letter -> its count`. \nThe first hashmap is a reference counter `pCount` for string `p`, \nand the second one is a counter `sCount` for string in the sliding window.\n\nThe idea is to move sliding window along the string `s`, \nrecompute the second hashmap `sCount` in a \nconstant time and compare it with the first hashmap `pCount`. \nIf `sCount == pCount`, then the string in the sliding window is a permutation\nof string `p`, and one could add its start position in the output list. \n\n**Algorithm**\n\n- Build reference counter `pCount` for string `p`. \n\n- Move sliding window along the string `s`:\n\n    - Recompute sliding window counter `sCount` at each step by adding \n    one letter on the right and removing one letter on the left. \n    \n    - If `sCount == pCount`, update the output list.\n    \n- Return output list.   \n\n**Implementation**\n\n!?!../Documents/438_LIS.json:1000,535!?!\n\n<iframe src=\"https://leetcode.com/playground/8JS6tLGH/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"8JS6tLGH\"></iframe>\n\n**Complexity Analysis**\n\nLet $$N_s$$ and $$N_p$$ be the length of `s` and `p` respectively. Let $$K$$ be the maximum possible number of distinct characters. In this problem, $$K$$ equals $$26$$ because `s` and `p` consist of lowercase English letters.\n\n* Time complexity: $$O(N_s)$$\n\n  We perform one pass along each string when $$N_s \\geq N_p$$ which costs $$O(N_s + N_p)$$ time.  Since we only perform this step when $$N_s \\geq N_p$$ the time complexity simplifies to $$O(N_s)$$. \n\n* Space complexity: $$O(K)$$\n\n  `pCount` and `sCount` will contain at most $$K$$ elements each. Since $$K$$ is fixed at $$26$$ for this problem, this can be considered as $$O(1)$$ space.\n  \n<br /> \n<br />\n\n\n---\n#### Approach 2: Sliding Window with Array\n\n**Algorithm**\n\nHashmap is quite complex structure, \n[with known performance issues in Java](https://github.com/vavr-io/vavr/issues/571).\nLet's implement approach 1 using 26-elements array instead of hashmap: \n\n- Element number 0 contains count of letter `a`.\n\n- Element number 1 contains count of letter `b`.\n\n- ...\n\n- Element number 25 contains count of letter `z`.\n\n**Algorithm**\n\n- Build reference array `pCount` for string `p`. \n\n- Move sliding window along the string `s`:\n\n    - Recompute sliding window array `sCount` at each step by adding \n    one letter on the right and removing one letter on the left. \n    \n    - If `sCount == pCount`, update the output list.\n    \n- Return output list. \n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/dRpRAMYD/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"dRpRAMYD\"></iframe>\n\n**Complexity Analysis**\n\nLet $$N_s$$ and $$N_p$$ be the length of `s` and `p` respectively. Let $$K$$ be the maximum possible number of distinct characters. In this problem, $$K$$ equals $$26$$ because `s` and `p` consist of lowercase English letters.\n\n* Time complexity: $$O(N_s)$$\n\n  We perform one pass along each string when $$N_s \\geq N_p$$ which costs $$O(N_s + N_p)$$ time.  Since we only perform this step when $$N_s \\geq N_p$$ the time complexity simplifies to $$O(N_s)$$. \n\n* Space complexity: $$O(K)$$\n\n  `pCount` and `sCount` contain $$K$$ elements each. Since $$K$$ is fixed at $$26$$ for this problem, this can be considered as $$O(1)$$ space.\n  \n<br /> \n<br />",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "821",
+            "count": 79,
+            "average": "4.316",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "find-all-anagrams-in-a-string",
+    "playgroundData": {
+        "8JS6tLGH": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "find-all-anagrams-in-a-string-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "dRpRAMYD": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "find-all-anagrams-in-a-string-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

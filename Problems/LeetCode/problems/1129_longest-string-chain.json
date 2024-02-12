@@ -1,0 +1,269 @@
+{
+    "id": "1129",
+    "question": {
+        "questionId": "1129",
+        "questionFrontendId": "1048",
+        "boundTopicId": null,
+        "title": "Longest String Chain",
+        "titleSlug": "longest-string-chain",
+        "content": "<p>You are given an array of <code>words</code> where each word consists of lowercase English letters.</p>\n\n<p><code>word<sub>A</sub></code> is a <strong>predecessor</strong> of <code>word<sub>B</sub></code> if and only if we can insert <strong>exactly one</strong> letter anywhere in <code>word<sub>A</sub></code> <strong>without changing the order of the other characters</strong> to make it equal to <code>word<sub>B</sub></code>.</p>\n\n<ul>\n\t<li>For example, <code>&quot;abc&quot;</code> is a <strong>predecessor</strong> of <code>&quot;ab<u>a</u>c&quot;</code>, while <code>&quot;cba&quot;</code> is not a <strong>predecessor</strong> of <code>&quot;bcad&quot;</code>.</li>\n</ul>\n\n<p>A <strong>word chain</strong><em> </em>is a sequence of words <code>[word<sub>1</sub>, word<sub>2</sub>, ..., word<sub>k</sub>]</code> with <code>k &gt;= 1</code>, where <code>word<sub>1</sub></code> is a <strong>predecessor</strong> of <code>word<sub>2</sub></code>, <code>word<sub>2</sub></code> is a <strong>predecessor</strong> of <code>word<sub>3</sub></code>, and so on. A single word is trivially a <strong>word chain</strong> with <code>k == 1</code>.</p>\n\n<p>Return <em>the <strong>length</strong> of the <strong>longest possible word chain</strong> with words chosen from the given list of </em><code>words</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;a&quot;,&quot;b&quot;,&quot;ba&quot;,&quot;bca&quot;,&quot;bda&quot;,&quot;bdca&quot;]\n<strong>Output:</strong> 4\n<strong>Explanation</strong>: One of the longest word chains is [&quot;a&quot;,&quot;<u>b</u>a&quot;,&quot;b<u>d</u>a&quot;,&quot;bd<u>c</u>a&quot;].\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;xbc&quot;,&quot;pcxbcf&quot;,&quot;xb&quot;,&quot;cxbc&quot;,&quot;pcxbc&quot;]\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> All the words can be put in a word chain [&quot;xb&quot;, &quot;xb<u>c</u>&quot;, &quot;<u>c</u>xbc&quot;, &quot;<u>p</u>cxbc&quot;, &quot;pcxbc<u>f</u>&quot;].\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;abcd&quot;,&quot;dbqca&quot;]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> The trivial word chain [&quot;abcd&quot;] is one of the longest word chains.\n[&quot;abcd&quot;,&quot;dbqca&quot;] is not a valid word chain because the ordering of the letters is changed.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= words.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 16</code></li>\n\t<li><code>words[i]</code> only consists of lowercase English letters.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 4944,
+        "dislikes": 202,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "[\"a\",\"b\",\"ba\",\"bca\",\"bda\",\"bdca\"]\n[\"xbc\",\"pcxbcf\",\"xb\",\"cxbc\",\"pcxbc\"]\n[\"abcd\",\"dbqca\"]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Two Sigma\", \"slug\": \"two-sigma\", \"timesEncountered\": 40}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zoom\", \"slug\": \"zoom\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Wix\", \"slug\": \"wix\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 46}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Flipkart\", \"slug\": \"flipkart\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Mathworks\", \"slug\": \"mathworks\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Lucid\", \"slug\": \"lucid\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int longestStrChain(vector<string>& words) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int longestStrChain(String[] words) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def longestStrChain(self, words):\n        \"\"\"\n        :type words: List[str]\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def longestStrChain(self, words: List[str]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint longestStrChain(char ** words, int wordsSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int LongestStrChain(string[] words) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string[]} words\n * @return {number}\n */\nvar longestStrChain = function(words) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String[]} words\n# @return {Integer}\ndef longest_str_chain(words)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func longestStrChain(_ words: [String]) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func longestStrChain(words []string) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def longestStrChain(words: Array[String]): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun longestStrChain(words: Array<String>): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn longest_str_chain(words: Vec<String>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @return Integer\n     */\n    function longestStrChain($words) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function longestStrChain(words: string[]): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (longest-str-chain words)\n  (-> (listof string?) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec longest_str_chain(Words :: [unicode:unicode_binary()]) -> integer().\nlongest_str_chain(Words) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec longest_str_chain(words :: [String.t]) :: integer\n  def longest_str_chain(words) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"264.7K\", \"totalSubmission\": \"446.4K\", \"totalAcceptedRaw\": 264692, \"totalSubmissionRaw\": 446433, \"acRate\": \"59.3%\"}",
+        "hints": [
+            "Instead of adding a character, try deleting a character to form a chain in reverse.",
+            "For each word in order of length, for each word2 which is word with one character removed, length[word2] = max(length[word2], length[word] + 1)."
+        ],
+        "solution": {
+            "id": "1140",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "ac",
+        "sampleTestCase": "[\"a\",\"b\",\"ba\",\"bca\",\"bda\",\"bdca\"]",
+        "metaData": "{\r\n  \"name\": \"longestStrChain\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "950",
+            "date": "2022-06-15",
+            "incompleteChallengeCount": 30,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1140",
+        "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Overview\r\n\r\nA word chain is a sequence of words (word1 -> word2 -> word3 -> word4 -> word5......) such that word1 is a predecessor of word2 and so on. A key point in the problem statement is that word1 can be a predecessor of word2 if and only if we can add exactly one letter anywhere in word1 to make it equal to word2. In other words, word2 should have one letter more than word1 and the position of this new letter can be anywhere. Note that _the order of the words in the list does not need to be maintained while creating the word sequence_.\r\n\r\nSuppose that word1 is `ab` then word2 can be `ab*`, `a*b`, `*ab` where * is any lowercase English letter.   \r\n\r\nTherefore, it is possible for a particular word to have more than one predecessor in the given list, and thus belong to more than one word sequence. Our objective is to determine the length of the longest possible word sequence.\r\n   \r\nLet us consider the following example : `['abcd','abc','bcd','abd','ab','ad','b']`\r\nIn this list, the immediate predecessors of `abcd` are `['abc','bcd','abd']` as all these words are missing exactly one letter from the word `abcd`.\r\nSimilarly, the immediate predecessors of `abd` are `['ab','ad']` and the predecessor of `ab` is `['b']`.\r\n\r\n</br>\r\n\r\n---\r\n\r\n#### Approach 1: Top-Down Dynamic Programming (Recursion + Memoization)\r\n\r\n**Intuition**\r\n\r\nIf you're not familiar with DFS (Depth First Search), check out our [Explore Card](https://leetcode.com/explore/learn/card/queue-stack/232/practical-application-stack/).\r\n\r\nHere we work backwards to find the longest chain, this means that we will start from a word and delete one character at a time. We continue this chain until we come across a word that is not present in the list or is one letter long. \r\n\r\nIn the above example some of the possible word sequences are: `abcd -> abd -> ab -> b` , `abcd -> abc -> ab -> b` , `abcd -> bcd` and so on.\r\nThe possible word sequences are illustrated in Figure 1.\r\n\r\n![fig](../Figures/1048/1048_Overview_Diagram.png)\r\n{:align=\"center\"}\r\n\r\n*Figure 1. Figure demonstrating DFS to find the longest word sequence.*\r\n{:align=\"center\"}\r\n\r\nIn this graph, we can observe that the length of the longest possible word sequence is `4`. There are two word sequences that have the longest length : `abcd -> abd -> ab -> b`  and `abcd -> abc -> ab -> b`. (The longest path is shown in the diagram with red arrows).\r\n\r\nNotice that a particular sequence can be a part of more than one word sequence. For example the sequence `ab -> b` is  part of both the following sequences : `abcd -> abd -> ab -> b` and `abcd -> abc -> ab -> b`. This leads to repeated calculations because every time we encounter `ab` we need to explore the subpath `ab -> a`. For a small list, this is not a problem but as the size of the list increases, the size of the graph grows exponentially.\r\n\r\nWhat we can do is whenever we encounter a new word, we will find all possible sequences with this word as the last word in the sequence. Then, we will store the length of the longest possible sequence that ends with this word. \r\n\r\nWe will use a map for this where each `key` will be an ending word and the `value` will be the length of the longest possible word sequence ending with this word. In the above example when we first encounter the word `ab` we will store the value 2 (word sequence `ab -> b`) for `key` `ab`. The next time we encounter `ab`, we will simply return the value stored against it in the map instead of going through the entire subtree again. This process is known as *memoization* and it prevents recalculation. For every word present in the list, we only need to determine the length of the longest path that ends with this word once.\r\n\r\n\r\n**Algorithm**\r\n\r\n1. Initialize a `set` (`wordsPresent`) and add all the words in the list to the set. This set will be used to check if a word is present in the list.\r\n\r\n2. Initialize a map (`memo`) having `key` type as `String` and `value` type as `Integer`. This map will store the length of the longest possible word sequence where the `key` is the last word in the sequence.\r\n\r\n3. Iterate over the list. For each word in the list perform a depth-first search.\r\n\r\n4. In the DFS, consider the current word (`currentWord`) as the last word in the word sequence.\r\n\r\n5. If `currentWord` was encountered previously we just return its corresponding value in the map `memo`.\r\n\r\n6. Initialize `maxLength` to 1.\r\n\r\n7. Iterate over the entire length of the `currentWord`. \r\n    * Create all possible words (`newWord`) by taking out one character at a time.\r\n    * If `newWord` is present in the `set` perform a DFS with this word and store the intermediate result in a variable `currentLength`.\r\n    * Update the `maxLength` so that it contains the length of the longest sequence possible where the `currentWord` is the end word.\r\n\r\n8. Set the `maxLength` as the `value` for `currentWord` (`key`) in the map.\r\n\r\n9. Return `maxLength`.        \r\n\r\n**Implementation**\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/nvupxDfa/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"nvupxDfa\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$N$$ be the number of words in the list and $$L$$ be the maximum possible length of a word.\r\n\r\n* Time complexity: $$O(L ^ 2 \\cdot N)$$.\r\n\r\n    Initially, we iterate over the list to store all the given words in a `set` (adds $$N$$ to the complexity).\r\n    \r\n    Next, we perform a DFS for each word ($$O(N)$$). For each word, we iterate over its length($$O(L)$$). At each index (`i`) we create a new word by deleting the character at position `i` from the original word ($$O(L)$$). Therefore, the overall time complexity is $$O(N + (L ^ 2 \\cdot N))$$ = $$O(L ^ 2 \\cdot N))$$, because the $$N$$ term is insignificant relative to the $$L ^ 2 \\cdot N$$ term. Note that because of memoization we can be sure that each word in the list is traversed only once.\r\n\r\n* Space complexity: $$O(N)$$. \r\n\r\n    The extra space is used by the recursion call stack. In worst case all the words are a part of the longest word sequence which requires a recursion stack size of $$N$$.\r\n\r\n    Also, we use a `set` to store all distinct words (size $$N$$) and a `map` to store intermediate results (size $$N$$). Since the maximum number of distinct words will be $$N$$ (when there is no repetition) the overall space complexity is $$O(2 \\cdot N)$$ which in Big O notation equals $$O(N)$$.\r\n    \r\n\r\n<br/>\r\n\r\n---\r\n\r\n#### Approach 2: Bottom-Up Dynamic Programming\r\n\r\n**Intuition**\r\n\r\nIn this solution, we will create the word sequence by adding one letter at a time to the last word in the sequence. Thus the resulting word sequence will be a series of words where each word has one more letter than its predecessor. \r\n\r\nIf we know the length (`previousLength`) of the longest word sequence that ends with a word we can use this value to find the length of the longest word sequence for its successor(`newLength = previousLength + 1`).\r\n\r\nLet us again consider the above example `['abcd','abc','bcd','abd','ab','ad','b']`. \r\nThe longest word sequence with the word `b` is 1. Thus the length of the longest word sequence with the word `ab` will be `1 + 1 = 2` (`ab -> b`). This result can in turn be used to find the length of the longest word sequence for the word `abc` (`2 + 1 = 3` for sequence `abc -> ab -> b`). \r\n\r\nThe length of the words in a sequence increases as we move from left to right.  Also, we know that the order of the words in the list doesn't matter. So we can sort the words in ascending order based on their length. Next, we can iterate over the sorted list and calculate the length of the longest sequence possible where the word at index $$i$$ is the end word. We store this result in a map where `key` is the word and `value` is the sequence length. By doing this we ensure that, for each word that we encounter, we already know the result of all of its possible predecessors. This process is demonstrated in the following animation.\r\n\r\n!?!../Documents/1048_Longest_String_Chain.json:960,540!?!\r\n\r\n</br>\r\n\r\n**Algorithm**\r\n\r\n1. Initialize a map where `key` is the word and `value` is the length of the longest word sequence possible with the `key` as the end word.\r\n\r\n2. Sort the word list in increasing order of the word length.\r\n\r\n3. Initialize `longestWordSequenceLength` to 1. This variable holds the length of the longest word sequence possible.\r\n\r\n4. Iterate over the sorted list.\r\n\r\n5. For each word initialize `presentLength` to 1.\r\n\r\n6. Iterate over the entire length of each word.\r\n    - Delete the character at $$i^{th}$$ position from the current word and assign the new word to the variable `predecessor`.\r\n    - Check if `predecessor` is present in the list or not.\r\n    - If the `predecessor` is present, then assign its mapped value to `previousLength`. Update the `presentLength` if `previousLength + 1` is greater than the `presentLength`. \r\n\r\n7. After terminating the inner `for` loop, assign `presentLength` to the current word in the map `dp`.\r\n\r\n8. Update the `longestWordSequenceLength` if the longest word sequence formed with the current word as the end word is longer than the previously considered word sequence.\r\n\r\n9. After terminating the outer `for` loop, return `longestWordSequenceLength`.\r\n\r\n**Implementation**\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/HfbnNnwQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"HfbnNnwQ\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$N$$ be the number of words in the list and $$L$$ be the maximum possible length of a word.\r\n\r\n* Time complexity: $$O(N \\cdot (\\log N + L ^ 2))$$.\r\n\r\n    Sorting a list of size $$N$$ takes $$O(N \\log N)$$ time. Next, we use two for loops in which the outer loop runs for $$O(N)$$ iterations and the inner loop runs for $$O(L ^ 2)$$ iterations in the worst case scenario.  The first $$L$$ is for the inner loop and the second $$L$$ is for creating each `predecessor`. Thus the overall time complexity is $$O(N \\log N + (N \\cdot L ^ 2))$$ which equals $$O(N \\cdot (\\log N + L ^ 2))$$.\r\n\r\n* Space complexity: $$O(N)$$. \r\n\r\n    We use a map to store the length of the longest sequence formed with each of the $$N$$ words as the end word.\r\n    \r\n\r\n<br/>\r\n\r\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1145",
+            "count": 101,
+            "average": "4.812",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "longest-string-chain",
+    "playgroundData": {
+        "nvupxDfa": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "longest-string-chain-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "HfbnNnwQ": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "longest-string-chain-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

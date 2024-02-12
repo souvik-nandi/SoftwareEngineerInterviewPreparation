@@ -1,0 +1,241 @@
+{
+    "id": "1007",
+    "question": {
+        "questionId": "1007",
+        "questionFrontendId": "967",
+        "boundTopicId": null,
+        "title": "Numbers With Same Consecutive Differences",
+        "titleSlug": "numbers-with-same-consecutive-differences",
+        "content": "<p>Return all <strong>non-negative</strong> integers of length <code>n</code> such that the absolute difference between every two consecutive digits is <code>k</code>.</p>\n\n<p>Note that <strong>every</strong> number in the answer <strong>must not</strong> have leading zeros. For example, <code>01</code> has one leading zero and is invalid.</p>\n\n<p>You may return the answer in <strong>any order</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3, k = 7\n<strong>Output:</strong> [181,292,707,818,929]\n<strong>Explanation:</strong> Note that 070 is not a valid number, because it has leading zeroes.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 2, k = 1\n<strong>Output:</strong> [10,12,21,23,32,34,43,45,54,56,65,67,76,78,87,89,98]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n &lt;= 9</code></li>\n\t<li><code>0 &lt;= k &lt;= 9</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 922,
+        "dislikes": 132,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "3\n7\n2\n1",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Backtracking",
+                "slug": "backtracking",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Flipkart\", \"slug\": \"flipkart\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<int> numsSameConsecDiff(int n, int k) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int[] numsSameConsecDiff(int n, int k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def numsSameConsecDiff(self, n, k):\n        \"\"\"\n        :type n: int\n        :type k: int\n        :rtype: List[int]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def numsSameConsecDiff(self, n: int, k: int) -> List[int]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* numsSameConsecDiff(int n, int k, int* returnSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int[] NumsSameConsecDiff(int n, int k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} n\n * @param {number} k\n * @return {number[]}\n */\nvar numsSameConsecDiff = function(n, k) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer} n\n# @param {Integer} k\n# @return {Integer[]}\ndef nums_same_consec_diff(n, k)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func numsSameConsecDiff(_ n: Int, _ k: Int) -> [Int] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func numsSameConsecDiff(n int, k int) []int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def numsSameConsecDiff(n: Int, k: Int): Array[Int] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun numsSameConsecDiff(n: Int, k: Int): IntArray {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn nums_same_consec_diff(n: i32, k: i32) -> Vec<i32> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer $k\n     * @return Integer[]\n     */\n    function numsSameConsecDiff($n, $k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function numsSameConsecDiff(n: number, k: number): number[] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (nums-same-consec-diff n k)\n  (-> exact-integer? exact-integer? (listof exact-integer?))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec nums_same_consec_diff(N :: integer(), K :: integer()) -> [integer()].\nnums_same_consec_diff(N, K) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec nums_same_consec_diff(n :: integer, k :: integer) :: [integer]\n  def nums_same_consec_diff(n, k) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"51.5K\", \"totalSubmission\": \"108.1K\", \"totalAcceptedRaw\": 51523, \"totalSubmissionRaw\": 108051, \"acRate\": \"47.7%\"}",
+        "hints": [],
+        "solution": {
+            "id": "982",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "3\n7",
+        "metaData": "{\n  \"name\": \"numsSameConsecDiff\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"k\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "982",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Overview\n\nThe problem asks us to come up a list of digit combinations that follow the defined pattern.\nBefore jumping to the implementation, it is always helpful to _manually_ deduce some examples.\n\nSuppose that we have `N=3` and `K=2`, _i.e._ we should come up a series of 3-digits numbers, where for each number the difference between each adjacent digits is 2.\n\nLet us try to build the number _**digit by digit**_. Starting from the highest digit, we can pick the digit `1`.\nThen for the next digit, we need to pick `3` (_i.e._ $$1+2$$).\nFinally, for the last digit, we could have two choices: `5` and `1` (_i.e._ $$3+2, 3-2$$).\nWe illustrate the process in the following graph, where each **_node_** represents a digit that we pick, and the **_level_** of the node corresponds to the position that the digit situates in the final number.\n\n![tree illustration](../Figures/967/967_tree_illustration.png)\n\n>As one might notice that, we just converted the problem into a tree traversal problem, where each path from the root to a leaf forms a solution for the problem.\n\nAs we know, the common algorithms for the tree traversal problem would be _**DFS**_ (Depth-First Search) and _**BFS**_ (Breadth-First Search), which are exactly what we will present in the following sections.\n\n\n---\n#### Approach 1: DFS (Depth-First Search)\n\n**Intuition**\n\nIf one is not familiar with the concepts of DFS and BFS, we have an Explore card called [Queue & Stack](https://leetcode.com/explore/learn/card/queue-stack/) where we cover the [DFS traversal](https://leetcode.com/explore/learn/card/queue-stack/232/practical-application-stack/) as well as the [BFS traversal](https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/).\n\nIn this section, we will start from the DFS strategy, which arguably is more intuitive for this problem.\n\nAs we stated in the overview section, we could build a valid digit combination _digit by digit_ or (node by node in terms of tree).\n\nFor a number consisting of `N` digits, we start from the highest digit and walk through to the lowest digit.\nAt each step, we might have several candidates that are eligible to be explored.\n\nWith the DFS strategy, we prioritize the _depth_ over the _breadth_, _i.e._ we pick one of the candidates and continue the exploration before moving on to the other candidates that are of the same level.\n\n**Algorithm**\n\nIntuitively we could implement the DFS algorithm with recursion. Here we define a recursive function `DFS(N, num)` (in Python) whose goal is to come up the combinations for the remaining `N` digits, starting from the current `num`.\nNote that, the signature of the function is slightly different in our Java implementation. Yet, the semantics of the function remains the same.\n\n![DFS example](../Figures/967/967_dfs_example.png)\n\nFor instance, in the previous examples, where `N=3` and `K=2`, and there is a moment we would invoke `DFS(1, 13)` which is to add another digit to the existing number `13` so that the final number meets the requirements.\nIf the DFS function works properly, we should have the numbers of `135` and `131` as results after the invocation.\n\nWe could implement the recursive function in the following steps:\n\n- As a base case, when `N=0` _i.e._ no more remaining digits to complete, we could return the current `num` as the result.\n\n- Otherwise, there are still some remaining digits to be added to the current number, _e.g._ `13`. There are two potential cases to explore, based on the last digit of the current number which we denote as `tail_digit`.\n\n    - Adding the difference `K` to the last digit, _i.e._ `tail_digit + K`.\n\n    - Deducting the difference `K` from the last digit, _i.e._ `tail_digit - K`.\n\n- If the result of either above case falls into the valid digit range (_i.e._ $$[0, 9]$$), we then continue the exploration by invoking the function itself.\n\nOnce we implement the `DFS(N, num)` function, we then simply call this function over the scope of $$[1, 9]$$, _i.e._ the valid digits for the highest position.\n\n**Note**: _If we are asked to return numbers of a single digit (_i.e._ `N=1`), then regardless of `K`, all digits are valid, including zero._\nWe treat this as a special case in the code, since in our implementation of DFS function, we will never return zero as the result.\n\n<iframe src=\"https://leetcode.com/playground/8SpNxKQo/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"8SpNxKQo\"></iframe>\n\n\n**Complexity Analysis**\n\nLet $$N$$ be the number of digits for a valid combination, and $$K$$ be the difference between digits.\n\nFirst of all, let us estimate the number of potential solutions.\nFor the highest digit, we could have 9 potential candidates.\nStarting from the second highest position, we could have at most 2 candidates for each position.\nTherefore, at most, we could have $$9 \\cdot 2^{N-1}$$ solutions, for $$N > 1$$.\n\n- Time Complexity: $$\\mathcal{O}(2^{N})$$\n\n    - Essentially, the execution of the algorithm will unfolder itself as a binary tree, where each node in the tree represents an invocation of the `DFS()` function.\n    The execution of the `DFS()` function itself takes a constant time.\n    Therefore, the overall time complexity is proportional to the number of nodes in the execution binary tree.\n\n    - In the worst case, the total number of nodes in a binary tree of depth $$N-1$$ is $$2^N$$.\n    Hence, the overall time complexity of the algorithm is $$\\mathcal{O}(2^{N})$$.\n\n    - Note that, when $$K = 0$$, at each position, there is only one possible candidate, _e.g._ $$333$$.\n    In total, we would have 9 numbers in the result set, and each number is of $$N$$ digits. The time complexity would then be reduced down to $$\\mathcal{O}(N)$$.\n\n- Space Complexity: $$\\mathcal{O}(2^{N})$$\n\n    - Since we adopt a recursive solution, we would have some additional memory consumption on the function call stack. The maximum number of consecutive calls on the recursion function is $$N$$. Hence, the space complexity for the call stack is $$\\mathcal{O}(N)$$.\n\n    - We use a list to keep all the solutions, which could amount to $$9 \\cdot 2^{N-1}$$ number of elements.\n\n    - To sum up, the overall space complexity of the algorithm is $$\\mathcal{O}(N) + \\mathcal{O}(9 \\cdot 2^{N-1}) = \\mathcal{O}(2^{N})$$.\n\n\n---\n#### Approach 2: BFS (Breadth-First Search)\n\n**Intuition**\n\nIt might be more intuitive to come up a DFS solution as we presented before.\nHowever, it is also viable to solve this problem with _BFS_ (Breadth-First Search) traversal strategy.\n\n>Rather than building the solution one by one, we could do it _batch by batch_, _i.e._ level by level.\n\nEach level contains the numbers that are of the same amount of digits.\nAlso, each level corresponds to the solutions with a specific number of digits.\n\n![BFS](../Figures/967/967_BFS.png)\n\nFor example, given `N=3` and `K=7`, at the first level, we would have potentially 9 candidates (_i.e._ `[1, 2, 3, 4, 5, 7, 8, 9]`).\nWhen we move on to the second level, the candidates are reduced down to `[18, 29, 70, 81, 92]`.\nFinally, at the last level, we would have the solutions as `[181, 292, 707, 818, 929]`.\n\n**Algorithm**\n\nHere are a few steps to implement the BFS algorithm for this problem.\n\n- We could implement the algorithm with nested two-levels loops, where the outer loop iterates through levels and the inner loop handles the elements within each level.\n\n- We could use a list data structure to keep the numbers for a single level, _i.e._ here we name the variable as `queue`.\n\n- For each number in the queue, we could apply the same logics as in the DFS approach, except the last step, rather than making a recursive call for the next number we simply append the number to the queue for the next level.\n\n<iframe src=\"https://leetcode.com/playground/LY83RTQJ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"LY83RTQJ\"></iframe>\n\n\n\n**Complexity Analysis**\n\nLet $$N$$ be the number of digits for a valid combination, and $$K$$ be the difference between digits.\n\n- Time Complexity: $$\\mathcal{O}(2^{N})$$\n\n    - Essentially with the BFS approach, all the intermeidate candidates form a binary tree, same as the execution tree as in the DFS approach.\n    Only this time, we traverse in a breadth-first manner, rather than the depth-first.\n\n    - Therefore, the overall time complexity of the algorithm would be $$\\mathcal{O}(2^{N})$$.\n\n- Space Complexity: $$\\mathcal{O}(2^{N})$$\n\n    - We use two queues to maintain the intermediate solutions, which contain no more than two levels of elements.\n    The number of elements at the level of $$i$$ is up to $$9 \\cdot 2^{i-1}$$.\n\n    - To sum up, the space complexity of the algorithm would be $$\\mathcal{O}(9 \\cdot 2^{N-1} + 9 \\cdot 2^{N-2}) = \\mathcal{O}(2^N)$$.\n\n\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "927",
+            "count": 43,
+            "average": "4.326",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "numbers-with-same-consecutive-differences",
+    "playgroundData": {
+        "8SpNxKQo": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "numbers-with-same-consecutive-differences-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "LY83RTQJ": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "numbers-with-same-consecutive-differences-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

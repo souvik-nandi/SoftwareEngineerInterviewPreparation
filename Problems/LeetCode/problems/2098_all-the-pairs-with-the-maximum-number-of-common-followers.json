@@ -1,0 +1,83 @@
+{
+    "id": "2098",
+    "question": {
+        "questionId": "2098",
+        "questionFrontendId": "1951",
+        "boundTopicId": null,
+        "title": "All the Pairs With the Maximum Number of Common Followers",
+        "titleSlug": "all-the-pairs-with-the-maximum-number-of-common-followers",
+        "content": "<p>Table: <code>Relations</code></p>\n\n<pre>\n+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| user_id     | int  |\n| follower_id | int  |\n+-------------+------+\n(user_id, follower_id) is the primary key for this table.\nEach row of this table indicates that the user with ID follower_id is following the user with ID user_id.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to find all the pairs of users with the maximum number of common followers. In other words, if the maximum number of common followers between any two users is <code>maxCommon</code>, then you have to return all pairs of users that have <code>maxCommon</code> common followers.</p>\n\n<p>The result table should contain the pairs <code>user1_id</code> and <code>user2_id</code> where <code>user1_id &lt; user2_id</code>.</p>\n\n<p>Return the result table in <strong>any order</strong>.</p>\n\n<p>The query result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nRelations table:\n+---------+-------------+\n| user_id | follower_id |\n+---------+-------------+\n| 1       | 3           |\n| 2       | 3           |\n| 7       | 3           |\n| 1       | 4           |\n| 2       | 4           |\n| 7       | 4           |\n| 1       | 5           |\n| 2       | 6           |\n| 7       | 5           |\n+---------+-------------+\n<strong>Output:</strong> \n+----------+----------+\n| user1_id | user2_id |\n+----------+----------+\n| 1        | 7        |\n+----------+----------+\n<strong>Explanation:</strong> \nUsers 1 and 2 have two common followers (3 and 4).\nUsers 1 and 7 have three common followers (3, 4, and 5).\nUsers 2 and 7 have two common followers (3 and 4).\nSince the maximum number of common followers between any two users is 3, we return all pairs of users with three common followers, which is only the pair (1, 7). We return the pair as (1, 7), not as (7, 1).\nNote that we do not have any information about the users that follow users 3, 4, and 5, so we consider them to have 0 followers.\n</pre>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Medium",
+        "likes": 49,
+        "dislikes": 4,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "{\"headers\":{\"Relations\":[\"user_id\",\"follower_id\"]},\"rows\":{\"Relations\":[[1,3],[2,3],[7,3],[1,4],[2,4],[7,4],[1,5],[2,6],[7,5]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"instagram\", \"slug\": \"instagram\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "# Write your MySQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "/* Write your T-SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "/* Write your PL/SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"5K\", \"totalSubmission\": \"6.9K\", \"totalAcceptedRaw\": 4989, \"totalSubmissionRaw\": 6876, \"acRate\": \"72.6%\"}",
+        "hints": [],
+        "solution": null,
+        "status": null,
+        "sampleTestCase": "{\"headers\":{\"Relations\":[\"user_id\",\"follower_id\"]},\"rows\":{\"Relations\":[[1,3],[2,3],[7,3],[1,4],[2,4],[7,4],[1,5],[2,6],[7,5]]}}",
+        "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Relations (user_id int, follower_id int)\"\n  ],\n  \"mssql\": [\n    \"Create table Relations (user_id int, follower_id int)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Relations (user_id int, follower_id int)\"\n  ],\n  \"database\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists Relations (user_id int, follower_id int)",
+            "Truncate table Relations",
+            "insert into Relations (user_id, follower_id) values ('1', '3')",
+            "insert into Relations (user_id, follower_id) values ('2', '3')",
+            "insert into Relations (user_id, follower_id) values ('7', '3')",
+            "insert into Relations (user_id, follower_id) values ('1', '4')",
+            "insert into Relations (user_id, follower_id) values ('2', '4')",
+            "insert into Relations (user_id, follower_id) values ('7', '4')",
+            "insert into Relations (user_id, follower_id) values ('1', '5')",
+            "insert into Relations (user_id, follower_id) values ('2', '6')",
+            "insert into Relations (user_id, follower_id) values ('7', '5')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": null,
+    "questionCode": "all-the-pairs-with-the-maximum-number-of-common-followers",
+    "playgroundData": null
+}

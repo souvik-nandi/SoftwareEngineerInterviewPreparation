@@ -1,0 +1,316 @@
+{
+    "id": "119",
+    "question": {
+        "questionId": "119",
+        "questionFrontendId": "119",
+        "boundTopicId": null,
+        "title": "Pascal's Triangle II",
+        "titleSlug": "pascals-triangle-ii",
+        "content": "<p>Given an integer <code>rowIndex</code>, return the <code>rowIndex<sup>th</sup></code> (<strong>0-indexed</strong>) row of the <strong>Pascal&#39;s triangle</strong>.</p>\n\n<p>In <strong>Pascal&#39;s triangle</strong>, each number is the sum of the two numbers directly above it as shown:</p>\n<img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif\" style=\"height:240px; width:260px\" />\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<pre><strong>Input:</strong> rowIndex = 3\n<strong>Output:</strong> [1,3,3,1]\n</pre><p><strong>Example 2:</strong></p>\n<pre><strong>Input:</strong> rowIndex = 0\n<strong>Output:</strong> [1]\n</pre><p><strong>Example 3:</strong></p>\n<pre><strong>Input:</strong> rowIndex = 1\n<strong>Output:</strong> [1,1]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= rowIndex &lt;= 33</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> Could you optimize your algorithm to use only <code>O(rowIndex)</code> extra space?</p>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 2815,
+        "dislikes": 271,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Pascal's Triangle\", \"titleSlug\": \"pascals-triangle\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Find Triangular Sum of an Array\", \"titleSlug\": \"find-triangular-sum-of-an-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "3\n0\n1",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<int> getRow(int rowIndex) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public List<Integer> getRow(int rowIndex) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def getRow(self, rowIndex):\n        \"\"\"\n        :type rowIndex: int\n        :rtype: List[int]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def getRow(self, rowIndex: int) -> List[int]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* getRow(int rowIndex, int* returnSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public IList<int> GetRow(int rowIndex) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} rowIndex\n * @return {number[]}\n */\nvar getRow = function(rowIndex) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer} row_index\n# @return {Integer[]}\ndef get_row(row_index)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func getRow(_ rowIndex: Int) -> [Int] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func getRow(rowIndex int) []int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def getRow(rowIndex: Int): List[Int] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun getRow(rowIndex: Int): List<Int> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn get_row(row_index: i32) -> Vec<i32> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer $rowIndex\n     * @return Integer[]\n     */\n    function getRow($rowIndex) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function getRow(rowIndex: number): number[] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (get-row rowIndex)\n  (-> exact-integer? (listof exact-integer?))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec get_row(RowIndex :: integer()) -> [integer()].\nget_row(RowIndex) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec get_row(row_index :: integer) :: [integer]\n  def get_row(row_index) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"552.4K\", \"totalSubmission\": \"945.9K\", \"totalAcceptedRaw\": 552361, \"totalSubmissionRaw\": 945890, \"acRate\": \"58.4%\"}",
+        "hints": [],
+        "solution": {
+            "id": "868",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "3",
+        "metaData": "{\r\n  \"name\": \"getRow\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"rowIndex\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "868",
+        "content": "[TOC]\n\n## Solution\n\n> If you haven't attempted [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/), I would strongly recommend that you try that first.\n\n---\n\n#### Approach 1: Brute Force Recursion\n\n**Intuition**\n\nWe'll utilize a nice little property of Pascal's Triangle (given in the problem description):\n\n![](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)\n\n> In Pascal's triangle, each number is the sum of the two numbers directly above it.\n\n[Approach 4](#approach-4-math-specifically-combinatorics) will expand more on why it is so.\n\n**Algorithm**\n\nLet's say we had a function `getNum(rowIndex, colIndex)`, which gave us the `colIndex`<sup>th</sup> number in the `rowIndex`<sup>th</sup> row, we could simply build the $$k^{th}$$ row by repeatedly calling `getNum(...)` for columns $$0$$ to $$k$$.\n\nWe can formulate our intuition into the following recursion:\n\n$$\n\\text{getNum(rowIndex, colIndex) = getNum(rowIndex-1, colIndex-1) + getNum(rowIndex-1, colIndex)}\n$$\n\nThe recursion ends in some known base cases:\n1. The first row is just a single $$1$$, i.e. $$\\text{getNum(0, ...) = 1}$$\n\n2. The first and last number of each row is $$1$$, i.e. $$\\text{getNum(k, 0) = getNum(k, k) = 1}$$\n\n<iframe src=\"https://leetcode.com/playground/RrLxq9Mc/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"RrLxq9Mc\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(2^k)$$. The time complexity recurrence is straightforward:\n\n    $$\n    T(k,i) = T(k-1,i) + T(k-1,i-1) + O(1) \\quad \\ni \\quad T(k,k) = T(k,0) = O(1)\n    $$\n\n    Thus, $$\\text{T(k, m)}$$ takes $${k \\choose m}$$ units of constant time. [^note-1]\n\n    For the $$k^{th}$$ row, total time required is:\n\n    $$\n    T(k, 0) + T(k, 1) + ... + T(k, k-1) + T(k, k)  \\\\\n    \\begin{align}\n    &= \\sum_{m=0}^k T(k, m)                        \\\\\n    &\\simeq \\sum_{m=0}^k O({k \\choose m})         \\\\\n    &\\simeq O(\\sum_{m=0}^k {k \\choose m})         \\\\\n    &= O(2^k)\n    \\end{align}\n    $$\n\n\n* Space complexity : $$O(k) + O(k) \\simeq O(k)$$. \n    * We need $$O(k)$$ space to store the output of the $$k^{th}$$ row.\n    * At worst, the recursive call stack has a maximum of $$k$$ calls in memory, each call taking constant space. That's $$O(k)$$ worst case recursive call stack space.\n\n<br />\n\n---\n\n#### Approach 2: Dynamic Programming\n\n**Intuition**\n\nIn the previous approach, we end up making the same recursive calls repeatedly.\n\n![](../Figures/119/pascal_triangle_dp.png)\n\nFor example, to calculate `getNum(5, 3)` and `getNum(5, 4)`, we end up calling `getNum(3, 2)` thrice. To generate, the entire fifth row (`0`-based row indexing), we'd have to call `getNum(3, 2)` four times.\n\nIt makes sense to store the results of intermediate recursive calls for later use.\n\n**Algorithm**\n\nSimple memoization caches results of deep recursive calls and provides significant savings on runtime.\n\n<iframe src=\"https://leetcode.com/playground/UzGYZXg3/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"UzGYZXg3\"></iframe>\n\nBut, it is worth noting that generating a number for a particular row requires only two numbers from the previous row. Consequently, generating a row only requires numbers from the previous row.\n\nThus, we could reduce our memory footprint by only keeping the latest row generated, and use that to generate a new row.\n\n<iframe src=\"https://leetcode.com/playground/BAU8Vccm/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"BAU8Vccm\"></iframe>\n\n> The `std::move()` operator on vectors in C++ is an $$O(1)$$ operation. [^note-2]\n\n**Complexity Analysis**\n\n* Time complexity : $$O(k^2)$$.\n    * Simple memoization would make sure that a particular element in a row is only calculated once. Assuming that our memoization cache allows constant time lookup and updation (like a hash-map), it takes constant time to calculate each element in Pascal's triangle.\n    * Since calculating a row requires calculating all the previous rows as well, we end up calculating $$1 + 2 + 3 + ... + (k+1) = \\dfrac {(k+1)(k+2)}{2} \\simeq k^2 $$ elements for the $$k^{th}$$ row.\n\n* Space complexity : $$O(k) + O(k) \\simeq O(k)$$.\n    * Simple memoization would need to hold all $$1 + 2 + 3 + ... + (k+1) = \\dfrac {(k+1)(k+2)}{2}$$ elements in the worst case. That would require $$O(k^2)$$ space.\n    * Saving space by keeping only the latest generated row, we need only $$O(k)$$ extra space, other than the $$O(k)$$ space required to store the output.\n\n<br />\n\n---\n\n#### Approach 3: Memory-efficient Dynamic Programming\n\n**Intuition**\n\nNotice that in the previous approach, we have maintained the previous row in memory on the premise that we need terms from it to build the current row. This is true, but not _wholly._\n\nWhat we actually need, to generate a term in the current row, is _just_ the two terms above it (present in the previous row).\n\nFormally, in memory, \n```\npascal[i][j] = pascal[i-1][j-1] + pascal[i-1][j]\n```\nwhere `pascal[i][j]` is the number in _i_<sup>th</sup> row and _j_<sup>th</sup> column of Pascal's triangle. \n\nSo, trying to compute `pascal[i][j]`, only the memory regions of `pascal[i-1][j-1]` and `pascal[i-1][j]` are required to be accessed.\n\n**Algorithm**\n\nLet's take a step back and analyze the circumstances under which `pascal[i][j]` might be accessed. Given that we have already employed DP to save us valuable run-time, the access pattern for `pascal[i][j]` looks a bit like this:\n\n+ `WRITE` `pascal[i][j]` (after generating it from `pascal[i-1][j-1]` and `pascal[i-1][j]`)\n+ `READ` `pascal[i][j]` to generate `pascal[i+1][j]`\n+ `READ` `pascal[i][j]` to generate `pascal[i+1][j+1]`\n\nThat's it! Once we've written out `pascal[i][j]`:\n1. We don't ever need to modify it.\n2. It's only read a _fixed_ number of times, i.e. __twice__ (thanks to DP).\n\nHypothetically, if we kept the the current row (in the process of being generated) and the previous row, in the same memory block, what kind of access patterns would we see (assume `pascal[j]` means the _j_<sup>th</sup> number in a row)?\n\n+ `pascal[j]` was somehow generated in a previous instance. Currently, it holds the previous row value.\n\n+ `pascal[j]` (which holds the _j_<sup>th</sup> number of the previous row) must be read when writing out `pascal[j]` (the _j_<sup>th</sup> number of the current row). \n    + Obviously they are the same memory location, so a conflict exists: the previous row value of `pascal[j]` will be lost after the write-out.\n    + Is that ok? If we don't need to read the previous row value of `pascal[j]` anymore, is there any harm in writing out the current row value in its place?\n\n+ `pascal[j]` (which holds the _j_<sup>th</sup> number of the previous row) must be read when writing out `pascal[j+1]` (the _j+1_<sup>th</sup> number of the current row). These are two different memory locations, so there is no conflict.\n\nIf we managed to keep all read accesses on the previous row value of `pascal[j]`, __before__ any write access to `pascal[j]` for the current row value, we should be good! That's possible by evaluating each row from the end, instead of the beginning. Thus, a new row value of `pascal[j+1]` must be generated _before_ doing so for `pascal[j]`.\n\nThe following animation demonstrates the above algorithm, used to generate the 4<sup>th</sup> row of Pascal's Triangle, from an existing 3<sup>rd</sup> row:\n\n!?!../Documents/119_Pascal_Triangle_II.json:800,600!?!\n\n<iframe src=\"https://leetcode.com/playground/ou8ybppp/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"ou8ybppp\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(k^2)$$. Same as the previous dynamic programming approach.\n\n* Space complexity : $$O(k)$$. No extra space is used other than that required to hold the output.\n\n* Although there is no savings in theoretical computational complexity, in practice there are some minor wins:\n    * We have one vector/array instead of two. So memory consumption is roughly half.\n    * No time wasted in swapping references to vectors for previous and current row.\n    * Locality of reference shines through here. Since every read is for consecutive memory locations in the array/vector, we get a performance boost.\n\n<br />\n\n---\n\n#### Approach 4: Math! (specifically, Combinatorics)\n\n**Intuition**\n\nLet's go back to the definition of a Pascal's Triangle:\n\n> In mathematics, Pascal's triangle is a triangular array of the binomial coefficients.  \n> ...\n> The entry in the *n*<sup>th</sup> row and *r*<sup>th</sup> column of Pascal's triangle is denoted $$\\tbinom {n}{r}$$.\n\nAs a refresher, $${n \\choose r} = \\tfrac {n!}{r!(n-r)!}$$.\n\nBinomial coefficients have an additive property, known as [Pascal's rule](https://en.wikipedia.org/wiki/Pascal%27s_rule):\n\n$$\n{n \\choose r} = {n-1 \\choose r-1} + {n-1 \\choose r} \\quad \\forall \\quad r, n \\in \\N^0, \\space 0 \\leq r \\leq n\n$$\n\nIf you notice carefully, the terms $${n-1 \\choose r-1}$$ and $${n-1 \\choose r}$$, are the two numbers directly above the number $${n \\choose r}$$ in Pascal's triangle. This recurrence is same as the intuition for [Approach 1](#approach-1-brute-force-recursion).\n\n**Algorithm**\n\nWhile knowing Pascal's rule does not give us any benefits over previous approaches, knowing that the numbers in Pascal's triangle are just binomial coefficients will come in handy.\n\nSuccessive binomial coefficients $${n \\choose r-1}$$ and $${n \\choose r}$$ differ by a factor of:\n\n$$\n\\dfrac {n \\choose r}{n \\choose r-1} = \n\\dfrac {\\dfrac {n!}{r! \\cdot (n-r)!}}{\\dfrac {n!}{(r-1)! \\cdot (n-r+1)!}} = \\dfrac {n-r+1}{r}\n$$\n\nThus, we can derive the next term in a row in Pascal's triangle, from a preceding term. Running a loop should give us the required row.\n\n+ We know that each row starts with a $$1$$, so we have a starting point.\n+ We also know that the $$k^{th}$$ row has exactly $$k+1$$ terms, so we know how long we need to run the loop.\n\n<iframe src=\"https://leetcode.com/playground/wi4GJQhz/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"wi4GJQhz\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(k)$$. Each term is calculated once, in constant time.\n\n* Space complexity : $$O(k)$$. No extra space required other than that required to hold the output.\n\n---\n\n#### Further Thoughts\n\n+ The symmetry of a row in Pascal's triangle allows us to get away with computing just half of each row.\n\n> Pop Quiz: Are there any computational complexity benefits of doing this?\n\n> Pop Quiz: Can you prove _why_ these rows are symmetrical?\n\n\n\n---\n\n[^note-1]: This [Stack Overflow answer](https://stackoverflow.com/a/26229383/2844164) has a good explanation. See the parallel between the time complexity recurrence and [Pascal's rule](https://en.wikipedia.org/wiki/Pascal%27s_rule).\n\n[^note-2]: Starting C++11, `std:move()` can be used to move resources across arguments or references. Since underlying representations are simply moved, and _not_ copied, this can be a very efficient operation to transfer elements across collections or containers. See this [Stack Overflow answer](https://stackoverflow.com/a/12613436/2844164) for more.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "826",
+            "count": 54,
+            "average": "4.000",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "pascals-triangle-ii",
+    "playgroundData": {
+        "RrLxq9Mc": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "pascals-triangle-ii-4",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "UzGYZXg3": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "pascals-triangle-ii-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "BAU8Vccm": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "pascals-triangle-ii-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "ou8ybppp": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "pascals-triangle-ii-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "wi4GJQhz": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "pascals-triangle-ii-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

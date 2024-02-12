@@ -1,0 +1,242 @@
+{
+    "id": "8",
+    "question": {
+        "questionId": "8",
+        "questionFrontendId": "8",
+        "boundTopicId": null,
+        "title": "String to Integer (atoi)",
+        "titleSlug": "string-to-integer-atoi",
+        "content": "<p>Implement the <code>myAtoi(string s)</code> function, which converts a string to a 32-bit signed integer (similar to C/C++&#39;s <code>atoi</code> function).</p>\n\n<p>The algorithm for <code>myAtoi(string s)</code> is as follows:</p>\n\n<ol>\n\t<li>Read in and ignore any leading whitespace.</li>\n\t<li>Check if the next character (if not already at the end of the string) is <code>&#39;-&#39;</code> or <code>&#39;+&#39;</code>. Read this character in if it is either. This determines if the final result is negative or positive respectively. Assume the result is positive if neither is present.</li>\n\t<li>Read in next the characters until the next non-digit character or the end of the input is reached. The rest of the string is ignored.</li>\n\t<li>Convert these digits into an integer (i.e. <code>&quot;123&quot; -&gt; 123</code>, <code>&quot;0032&quot; -&gt; 32</code>). If no digits were read, then the integer is <code>0</code>. Change the sign as necessary (from step 2).</li>\n\t<li>If the integer is out of the 32-bit signed integer range <code>[-2<sup>31</sup>, 2<sup>31</sup> - 1]</code>, then clamp the integer so that it remains in the range. Specifically, integers less than <code>-2<sup>31</sup></code> should be clamped to <code>-2<sup>31</sup></code>, and integers greater than <code>2<sup>31</sup> - 1</code> should be clamped to <code>2<sup>31</sup> - 1</code>.</li>\n\t<li>Return the integer as the final result.</li>\n</ol>\n\n<p><strong>Note:</strong></p>\n\n<ul>\n\t<li>Only the space character <code>&#39; &#39;</code> is considered a whitespace character.</li>\n\t<li><strong>Do not ignore</strong> any characters other than the leading whitespace or the rest of the string after the digits.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;42&quot;\n<strong>Output:</strong> 42\n<strong>Explanation:</strong> The underlined characters are what is read in, the caret is the current reader position.\nStep 1: &quot;42&quot; (no characters read because there is no leading whitespace)\n         ^\nStep 2: &quot;42&quot; (no characters read because there is neither a &#39;-&#39; nor &#39;+&#39;)\n         ^\nStep 3: &quot;<u>42</u>&quot; (&quot;42&quot; is read in)\n           ^\nThe parsed integer is 42.\nSince 42 is in the range [-2<sup>31</sup>, 2<sup>31</sup> - 1], the final result is 42.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;   -42&quot;\n<strong>Output:</strong> -42\n<strong>Explanation:</strong>\nStep 1: &quot;<u>   </u>-42&quot; (leading whitespace is read and ignored)\n            ^\nStep 2: &quot;   <u>-</u>42&quot; (&#39;-&#39; is read, so the result should be negative)\n             ^\nStep 3: &quot;   -<u>42</u>&quot; (&quot;42&quot; is read in)\n               ^\nThe parsed integer is -42.\nSince -42 is in the range [-2<sup>31</sup>, 2<sup>31</sup> - 1], the final result is -42.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;4193 with words&quot;\n<strong>Output:</strong> 4193\n<strong>Explanation:</strong>\nStep 1: &quot;4193 with words&quot; (no characters read because there is no leading whitespace)\n         ^\nStep 2: &quot;4193 with words&quot; (no characters read because there is neither a &#39;-&#39; nor &#39;+&#39;)\n         ^\nStep 3: &quot;<u>4193</u> with words&quot; (&quot;4193&quot; is read in; reading stops because the next character is a non-digit)\n             ^\nThe parsed integer is 4193.\nSince 4193 is in the range [-2<sup>31</sup>, 2<sup>31</sup> - 1], the final result is 4193.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= s.length &lt;= 200</code></li>\n\t<li><code>s</code> consists of English letters (lower-case and upper-case), digits (<code>0-9</code>), <code>&#39; &#39;</code>, <code>&#39;+&#39;</code>, <code>&#39;-&#39;</code>, and <code>&#39;.&#39;</code>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 1944,
+        "dislikes": 5682,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Reverse Integer\", \"titleSlug\": \"reverse-integer\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Valid Number\", \"titleSlug\": \"valid-number\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Check if Numbers Are Ascending in a Sentence\", \"titleSlug\": \"check-if-numbers-are-ascending-in-a-sentence\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+        "exampleTestcases": "\"42\"\n\"   -42\"\n\"4193 with words\"",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 23}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 16}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 10}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Redfin\", \"slug\": \"redfin\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Qualtrics\", \"slug\": \"qualtrics\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Intel\", \"slug\": \"intel\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Qualcomm\", \"slug\": \"qualcomm\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zillow\", \"slug\": \"zillow\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Splunk\", \"slug\": \"splunk\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int myAtoi(string s) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int myAtoi(String s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def myAtoi(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def myAtoi(self, s: str) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint myAtoi(char * s){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int MyAtoi(string s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar myAtoi = function(s) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} s\n# @return {Integer}\ndef my_atoi(s)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func myAtoi(_ s: String) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func myAtoi(s string) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def myAtoi(s: String): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun myAtoi(s: String): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn my_atoi(s: String) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function myAtoi($s) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function myAtoi(s: string): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (my-atoi s)\n  (-> string? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec my_atoi(S :: unicode:unicode_binary()) -> integer().\nmy_atoi(S) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec my_atoi(s :: String.t) :: integer\n  def my_atoi(s) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"1M\", \"totalSubmission\": \"6.3M\", \"totalAcceptedRaw\": 1049707, \"totalSubmissionRaw\": 6333165, \"acRate\": \"16.6%\"}",
+        "hints": [],
+        "solution": {
+            "id": "1290",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "ac",
+        "sampleTestCase": "\"42\"",
+        "metaData": "{\n  \"name\": \"myAtoi\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "774",
+            "date": "2022-01-14",
+            "incompleteChallengeCount": 25,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1290",
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Overview\n\nWe need to implement a function that converts the given string into a signed 32-bit integer.     \nIntuitively, we could build the output number out of the input string by iterating over it character by character. However, we stop building the number when a non-digit character is spotted, or the number becomes too large to fit inside a 32-bit signed integer. In the latter case, we need to clamp the result to fit the range.\n\nWe will build the integer one character at a time.  As we traverse the string from left to right, for each digit character, we will shift all digits in the current integer to the left by one place (this is done by multiplying the integer by 10). Then, we can simply add the current digit to the unit place of the integer. To better understand how this process works, let's look at an example:\n\n![atoi](../Figures/8/Slide1.JPG)\n\nThe key to solving this problem is carefully reading the problem statement, following the rules given, thinking about edge cases, and keeping your code simple.\n\n> **Interview Tip:** Asked a question like this in an interview? Be sure to communicate thoroughly with your interviewer to make sure you're covering all cases. In this problem, the rules are very thorough because there is no interviewer to communicate with. However, in an interview, each of these rules is a potential question to ask the interviewer if the rule is not already stated.\n\n</br>\n\n---\n\n#### Approach 1: Follow the Rules\n\n**Intuition**\n\nGiven the rules outlined by the problem's description, we can iterate over the input string and use the given rules to validate it.\n\nFirst read through the problem statement **very carefully**. Let's see what are all the possible characters in the input string:\n\n- Whitespaces **(' ')**\n- Digits **('0', '1', '2', '3', '4', '5', '6', '7', '8', '9')**\n- A sign **('+' or '-')**\n- Anything else (alphabetic characters, symbols, special characters, etc.)\n\nAnd write down all the rules for building the integer for each one these characters which will help us in writing down the conditions while building the algorithm.\n\n**Rules**\n\n- Whitespaces:\n  - If any whitespaces occur at the beginning of the input string, we discard them. \n  - However, if whitespace occurs anywhere else in the input, then we stop and discard the rest of the input.\n\n```scala\n'   1234' => 1234 (whitespaces at beginning are removed)\n'      4' => 4    (whitespaces at beginning are removed)\n' 12   4' => 12   (only the leading whitespaces are removed)\n```\n<br />\n\n- Digits:\n  - Discard any leading zeros.\n  - Read in all the digit characters until the first non-digit character or the end of the input occur and append those to the output number.\n  - If no digits were found, return 0.\n\n```scala\n'12345 567 v' => 12345 (digits are appended until a non-digit character occurs)\n'00123'       => 00123 => 123 (0s in the beginning of the numbers are discarded)\n```\n<br />\n\n- Sign:\n  - There could be at most one sign character presented at the beginning, or after skipping some whitespaces from the beginning of the input string. Otherwise, a sign anywhere else in the input string is not valid and is considered a non-digit character and we stop building the integer.\n  - If a **'+'** or no sign is present, the final number will be a positive integer. On the other hand, the final number will be negative if **'-'** is the first non-whitespace character in the string.\n\n```scala\n'123'  => 123 (a number with no sign is a positive number)\n'+123' => 123 (a number with '+' sign is a positive number)\n'-12'  => -12 (a number with '-' sign is a negative number)\n'-+12' => 0   (another sign after one sign is considered as non-digit character)\n```\n<br />\n\n- Anything else:\n  - If any other character not covered by previously defined rules is spotted, we stop building the output number.\n\n```scala\n'-23a45 567 v' => -23 (we stopped when 'a' character occured)\n'123 45 567 v' => 123 (we stopped when a space character occured)\n'a+123 bcd 45' => 0   (we stopped when 'a' character occured in the beginning)\n```\n<br />\n\n- 32-bit Integer Range:\n  - If the integer exceeds $$2^{31}-1$$ then it will be clamped to $$2^{31}-1$$.\n  - And if the integer becomes less than $$-2^{31}$$ then it will be clamped to $$-2^{31}$$.\n\n```scala\n'12345' => 12345 (integer is in 32-bit range)\n'9999999999999' => 2^31-1 (integer overflow)\n'-999999999999' => -2^31   (integer underflow)\n```\n<br /> \n\n**How to check overflows/underflows?**\n\nIf we were using a `long`, `BigInteger`, or any other numeric data types to store the integers, we could check if the integer exceeds the `32-bit` range, stop building the output number, and return the clamped value.\n\n```scala\nnum = num * 10 + digit\nif num > 2^31 - 1 then return 2^31 - 1\nelse if num < -2^31 then return -2^31\n```\n\nHowever, here we will assume our environment doesn't allow us to use these data types which could be a constraint imposed by the interviewer. But we can't directly use a `32-bit` integer to store the final result.\n\nFor example, assume currently `result` is `1000000000` and `digit` is `1`, we can't append the current digit to result as `10000000001` is more than $$2^{31} - 1$$. So, performing the `result = result * 10 + digit` operation will result in **Runtime Error**.\n\nHence, first we need to check if appending the digit to the result is safe or not. If it is safe to append then update the result. Otherwise, handle the overflow/underflow.\n\n\n**Let's first consider the case for overflow.**     \n\nWe will denote the maximum 32-bit integer value $$2^{31} - 1 \\space = \\space 2147483647$$ with **INT_MAX**, and we will append the digits one by one to the final number.     \n\nSo there could be 3 cases: \n\n- Case 1: If the current number is less than **INT_MAX / 10 = 214748364**, we can append any digit, and the new number will always be less than **INT_MAX**.\n\n```\n'214748363' (less than INT_MAX / 10) + '0' = '2147483630' (less than INT_MAX)\n'214748363' (less than INT_MAX / 10) + '9' = '2147483639' (less than INT_MAX)\n'1' (less than INT_MAX / 10) + '9' = '19' (less than INT_MAX) \n```\n- Case 2: If the current number is more than **INT_MAX / 10 = 214748364**, appending any digit will result in a number greater than **INT_MAX**.\n\n```\n'214748365' + '0' = '2147483650' (more than INT_MAX)\n'214748365' + '9' = '2147483659' (more than INT_MAX)\n'2147483646' + '8' = '21474836468' (more than INT_MAX)\n```\n- Case 3: If the current number is equal to **INT_MAX / 10 = 214748364**, we can only append digits from **0-7** such that the new number will always be less than or equal to **INT_MAX**.\n\n```\n'214748364' + '0' = '2147483640' (which is less than INT_MAX)\n'214748364' + '7' = '2147483647' (which is equal to INT_MAX)\n'214748364' + '8' = '2147483648' (which is more than INT_MAX)\n```\n<br />\n\n**Similarly for underflow.**    \nThe minimum 32-bit integer value is $$-2^{31} \\space = \\space -2147483648$$ denote it with **INT_MIN**. <br /> <br />\nWe append the digits one by one to the final number.     \nJust like before, there could be 3 cases:\n- Case 1: If the current number is greater than **INT_MIN / 10 = -214748364**, then we can append any digit and the new number will always be greater than **INT_MIN**. <br /> <br />\n- Case 2: If the current number is less than **INT_MIN / 10 = -214748364**, appending any digit will result in a number less than **INT_MIN**. <br /> <br />\n- Case 3: If the current number is equal to **INT_MIN / 10 = -214748364**, then we can only append digits from **0-8**, such that the new number will always be greater than or equal to **INT_MIN**. \n\nNotice that **cases 1 and 2** are similar for **overflow** and **underflow**. The only difference is **case 3**: for overflow, we can append any digit between **0 and 7**, but for underflow, we can append any digit between **0 and 8**.\n\nSo we can combine both the underflow and overflow checks as follows:    \n  - Initially, store the sign for the final result and consider only the absolute values to build the integer and return the final result with a correct sign at the end.\n  - If the current number is less than **214748364 = (INT_MAX / 10)**, we can append the next digit.\n  - If the current number is greater than **214748364**:\n    - And, the sign for the result is **'+'**, then the result will **overflow**, so return **INT_MAX**;\n    - Or, the sign for the result is **'-'**, then the result will **underflow**, so return **INT_MIN**.\n  - If the current number is equal to **214748364**:\n    - If the next digit is between **0-7**, the result will always be in range.\n    - If, next digit is **8**:\n      - and the sign is **'+'** the result will **overflow**, so return **INT_MAX**;\n      - if the sign is **'-'**, the result will not **underflow** but will still be equal to INT_MIN, so that we can return **INT_MIN**.\n    - But if, the next digit is greater than **8**:\n      - and the sign is **'+'** the result will **overflow**, so return **INT_MAX**;\n      - if the sign is **'-'**, the result will **underflow**, so return **INT_MIN**.\n\n> **Note:** We do not need to handle **0-7** for positive and **0-8** for negative integers separately. If the sign is **negative** and the current number is **214748364**, then appending the digit **8**, which is more than **7**, will also lead to the same result, i.e., **INT_MIN**.\n\n**Algorithm**\n\n1. Initialize two variables:\n    - `sign` (to store the sign of the final result) as `1`.\n    - `result` (to store the 32-bit integer result) as `0`.\n2. Skip all leading whitespaces in the input string.\n3. Check if the current character is a `'+'` or `'-'` sign:\n    - If there is no symbol or the current character is `'+'`, keep `sign` equal to `1`.\n    - Otherwise, if the current character is `'-'`, change `sign` to `-1`.\n4. Iterate over the characters in the string as long as the current character represents a digit or until we reach the end of the input string.\n    - Before appending the currently selected digit, check if the 32-bit signed integer range is violated.  If it is violated, then return `INT_MAX` or `INT_MIN` as appropriate.\n    - Otherwise, if appending the digit does not result in overflow/underflow, append the current digit to the `result`.\n5. Return the final `result` with its respective sign, `sign * result`.\n\n!?!../Documents/8/slideshow1.json:960,540!?!\n\n<br>\n\n**Implementation**\n\n\n<iframe src=\"https://leetcode.com/playground/b8Sxu57X/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"b8Sxu57X\"></iframe>\n\n\n**Complexity Analysis**\n\nIf $$N$$ is the number of characters in the input string.\n\n* Time complexity: $$O(N)$$     \n\n  We visit each character in the input at most once and for each character we spend a constant amount of time.\n\n* Space complexity: $$O(1)$$     \n\n  We have used only constant space to store the sign and the result.\n    \n<br/>\n\n---\n\n#### Approach 2: Deterministic Finite Automaton (DFA)\n\n**Intuition**\n\nWhile the previous approach would likely be sufficient for an interview, the approach is specific to this problem. Here we will present an approach that uses DFA which is a more generalized approach that can also be applied to similar problems that would otherwise require writing many nested if else conditions which could become very complex. \n\nThe Deterministic Finite Automaton approach may feel familiar to you if you have previously studied TOC (Theory Of Computation).\nIf you're unfamiliar with [DFA](https://en.wikipedia.org/wiki/Deterministic_finite_automaton), we will provide a short introduction below, but we encourage you to read more about DFA outside of this article as well.\n\n<details>\n\n<summary>Here's a short introduction to DFA. (click to expand)</summary>\n\n<br>\n\nTheory of Computing is the study of theoretical machines and problems which can be solved using these machines. These machines are called **state machines**. A state machine reads some input and changes the states based on those inputs.\n\nAlthough we may not realize it, there are many examples of state machines that we experience every day. After becoming more familiar with DFA, you may also start to notice new examples of DFA in your environment. \nOne such example that we are all familiar with is a traffic light. The most common type of traffic light has 3 lights: red, green, and yellow. At any time, only one of the lights is on and the traffic light will cycle from red (wait for some time), then to green (wait for some time), then to yellow (for a short time), and finally, turn back to red. \nEach color can be referred to as a state and the change in color is called a transition. \n\nHow does the state machine know to transition? Each transition will be the result of some input and depending on the input we will either stay in the same state or transition to a different state. In this example, it will be after some amount of time has passed we will transition to a new color and if less than that amount of time has passed, we will remain at the same color.\n\n![lights](../Figures/8/Slide20.JPG)\n\nThe state machines with a finite number of states are called finite state machines. Our traffic light state machine is also finite with only three states.         \n\nBrowsing a website can also be treated as a finite state machine. Think of each webpage as a state and transitions occurring due to certain clicks/events.       \n\nSo can a turnstile. For practice, you can try drawing a [state diagram for a turnstile](https://en.wikipedia.org/wiki/Finite-state_machine) that is initially locked, becomes unlocked when a coin is inserted and becomes locked again after being pushed. \n\nOne possible application for finite state machines is to generate languages.         \nA language is a set of strings made up of characters from a specified set of symbols/alphabets.       \n\nWe can traverse through the states in a state machine diagram to see what kinds of strings the machine will produce, or we can input a string and verify whether or not there exists a set of transitions that could be used to make the string.\n\nFor example, if we have symbols **R, G, Y** which represent red, green, and yellow respectively, then our traffic light state machine can generate a string like, **\"GYRG\"**, and will reject **\"GYRY\"** because, we cannot transition from a red light to a yellow light.\n\nThe finite state machine that either **accepts** or **rejects** a sequence of characters by running through a sequence of states is called **DFA**.        \nThere is only one path for specific input from the current state to the next state in DFA. DFAs are useful to recognize patterns in data.\n\n<hr>\n\n</details>\n\n<br>\n\n<details>\n\n<summary>Some other LeetCode problems which can be solved using DFA:</summary>\n\n1. [Valid Number's](https://leetcode.com/problems/valid-number/) solution article also introduces DFA.\n2. [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)\n3. [Detect Capital](https://leetcode.com/problems/detect-capital/)\n4. [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/)\n5. [Binary Prefix Divisible By 5](https://leetcode.com/problems/binary-prefix-divisible-by-5/)\n6. [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)\n\n</details>\n\n<br>\n\nNow that we have some basic knowledge about state machines, let's try to approach this problem by using a state machine. We can develop a simple state machine where we give the input string characters one by one as the input to the machine and it will produce the desired integer as output.\n\nWe can say, initially we are in some starting state and each time we read a character in the input string, we either stay in the current state or transition to a new state. If at any step the state becomes invalid (i.e. when a non-digit character is spotted, or the 32-bit signed integer range is reached) then we can stop building the integer.      \n\nWhat we've described above is a lot like a deterministic finite automaton as in DFAs there is only one path for specific input from the current state to the next state.\n\nThe first step is to design our DFA. Picture the DFA as a directed graph, where each node is a state, and each edge is a transition labeled with a character.       \n\nNaturally, DFA could be represented as a set of if-else conditions. The following diagram presents a common way to write these if-else conditions.\n\n![dfa](../Figures/8/Slide10.JPG)\n\n1. **State $$q_0$$**: represents the initial state at the beginning of the input string.\n\n    - Discard any leading whitespace characters in the beginning as per the rules given and remain in the same $$q_0$$ state for now. \n    - If a sign character occurs, transition to state $$q_1$$.\n    - If a digit character occurs, transition to state $$q_2$$.\n    - Once a non-digit character is spotted, stop building the output number and immediately transition to a dead state $$q_d$$.\n\n2. **State $$q_1$$**: we arrive at this state after the first sign character has been found.\n\n    - After one sign character if now a digit occurs then we transition to state $$q_2$$.\n    - Once a non-digit character is spotted, stop building the output number and immediately transition to a dead state $$q_d$$.\n\n3. **State $$q_2$$**: we arrive at this state whenever the previous character was a digit.\n\n    - Remain in the current state if the next character happened to be a digit character.\n    - Once a non-digit character is spotted, stop building the output number and immediately transition to a dead state $$q_d$$.\n\n4. **State $$q_d$$**: a dead state meaning one or more rules defined in the beginning have been violated. This state marks the end of the number-building process.\n\n\n\n**Algorithm**\n\n1. Initialize three variables:\n    - `currentState` (to represent current state) as `q0`\n    - `result` (to store result till now) as `0`\n    - `sign` (to represent the sign of the final result) as `1`\n2. For each character of the input string, if the current state is not `qd`:\n    - If the current state is `q0`:\n        - Stay in the same state if whitespaces occur.\n        - If a sign occurs, change the sign variable to `-1` if it's a negative sign and change the state to `q1`.\n        - If a digit occurs, append the current digit to the resulting number (clamp result if needed) and change the state to `q2`.\n        - If anything else occurs, then stop building the number and transition to state `qd`.\n    - If the current state is `q1`:\n        - If a digit occurs, append the current digit to the resulting number (clamp result if needed) and change the state to `q2`.\n        - If anything else occurs, stop building the result number and transition to state `qd`.\n    - If the current state is `q2`:\n        - If a digit occurs, append the current digit to the resulting number (clamp result if needed) and stay in the current state.\n        - Anything else after a digit character will not be valid; hence, stop building the number and transition to state `qd`.\n3. Return the final result with the respective sign, `result * sign`.\n\n!?!../Documents/8/slideshow2.json:960,540!?!\n\n<br>\n\n**Implementation**\n\n\n<iframe src=\"https://leetcode.com/playground/cMcZxUPk/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"cMcZxUPk\"></iframe>\n\n\n**Complexity Analysis**\n\nIf $$N$$ is the number of characters in the input string.\n\n* Time complexity: $$O(N)$$\n   \n  We iterate over the input string exactly once, and each state transition only requires constant time.\n\n* Space complexity: $$O(1)$$\n\n  We have used only constant space to store the state, sign, and result.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1295",
+            "count": 142,
+            "average": "4.599",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "string-to-integer-atoi",
+    "playgroundData": {
+        "b8Sxu57X": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "string-to-integer-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "cMcZxUPk": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "string-to-integer-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

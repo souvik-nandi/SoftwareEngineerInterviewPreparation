@@ -1,0 +1,80 @@
+{
+    "id": "2127",
+    "question": {
+        "questionId": "2127",
+        "questionFrontendId": "1978",
+        "boundTopicId": null,
+        "title": "Employees Whose Manager Left the Company",
+        "titleSlug": "employees-whose-manager-left-the-company",
+        "content": "<p>Table: <code>Employees</code></p>\n\n<pre>\n+-------------+----------+\n| Column Name | Type     |\n+-------------+----------+\n| employee_id | int      |\n| name        | varchar  |\n| manager_id  | int      |\n| salary      | int      |\n+-------------+----------+\nemployee_id is the primary key for this table.\nThis table contains information about the employees, their salary, and the ID of their manager. Some employees do not have a manager (manager_id is null). \n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to report the IDs of the employees whose salary is strictly less than <code>$30000</code> and whose manager left the company. When a manager leaves the company, their information is deleted from the <code>Employees</code> table, but the reports still have their <code>manager_id</code> set to the manager that left.</p>\n\n<p>Return the result table ordered by <code>employee_id</code>.</p>\n\n<p>The query result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input: </strong> \nEmployees table:\n+-------------+-----------+------------+--------+\n| employee_id | name      | manager_id | salary |\n+-------------+-----------+------------+--------+\n| 3           | Mila      | 9          | 60301  |\n| 12          | Antonella | null       | 31000  |\n| 13          | Emery     | null       | 67084  |\n| 1           | Kalel     | 11         | 21241  |\n| 9           | Mikaela   | null       | 50937  |\n| 11          | Joziah    | 6          | 28485  |\n+-------------+-----------+------------+--------+\n<strong>Output:</strong> \n+-------------+\n| employee_id |\n+-------------+\n| 11          |\n+-------------+\n\n<strong>Explanation:</strong> \nThe employees with a salary less than $30000 are 1 (Kalel) and 11 (Joziah).\nKalel&#39;s manager is employee 11, who is still in the company (Joziah).\nJoziah&#39;s manager is employee 6, who left the company because there is no row for employee 6 as it was deleted.\n</pre>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Easy",
+        "likes": 33,
+        "dislikes": 5,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "{\"headers\": {\"Employees\": [\"employee_id\", \"name\", \"manager_id\", \"salary\"]}, \"rows\": {\"Employees\": [[3, \"Mila\", 9, 60301], [12, \"Antonella\", null, 31000], [13, \"Emery\", null, 67084], [1, \"Kalel\", 11, 21241], [9, \"Mikaela\", null, 50937], [11, \"Joziah\", 6, 28485]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "# Write your MySQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "/* Write your T-SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "/* Write your PL/SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"5.9K\", \"totalSubmission\": \"11.7K\", \"totalAcceptedRaw\": 5889, \"totalSubmissionRaw\": 11728, \"acRate\": \"50.2%\"}",
+        "hints": [],
+        "solution": null,
+        "status": null,
+        "sampleTestCase": "{\"headers\": {\"Employees\": [\"employee_id\", \"name\", \"manager_id\", \"salary\"]}, \"rows\": {\"Employees\": [[3, \"Mila\", 9, 60301], [12, \"Antonella\", null, 31000], [13, \"Emery\", null, 67084], [1, \"Kalel\", 11, 21241], [9, \"Mikaela\", null, 50937], [11, \"Joziah\", 6, 28485]]}}",
+        "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Employees (employee_id int, name varchar(20), manager_id int, salary int)\"\n  ],\n  \"mssql\": [\n    \"Create table Employees (employee_id int, name varchar(20), manager_id int, salary int)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Employees (employee_id int, name varchar(20), manager_id int, salary int)\"\n  ],\n  \"database\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists Employees (employee_id int, name varchar(20), manager_id int, salary int)",
+            "Truncate table Employees",
+            "insert into Employees (employee_id, name, manager_id, salary) values ('3', 'Mila', '9', '60301')",
+            "insert into Employees (employee_id, name, manager_id, salary) values ('12', 'Antonella', 'None', '31000')",
+            "insert into Employees (employee_id, name, manager_id, salary) values ('13', 'Emery', 'None', '67084')",
+            "insert into Employees (employee_id, name, manager_id, salary) values ('1', 'Kalel', '11', '21241')",
+            "insert into Employees (employee_id, name, manager_id, salary) values ('9', 'Mikaela', 'None', '50937')",
+            "insert into Employees (employee_id, name, manager_id, salary) values ('11', 'Joziah', '6', '28485')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": null,
+    "questionCode": "employees-whose-manager-left-the-company",
+    "playgroundData": null
+}

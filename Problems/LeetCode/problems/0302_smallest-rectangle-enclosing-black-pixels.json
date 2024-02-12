@@ -1,0 +1,284 @@
+{
+    "id": "302",
+    "question": {
+        "questionId": "302",
+        "questionFrontendId": "302",
+        "boundTopicId": null,
+        "title": "Smallest Rectangle Enclosing Black Pixels",
+        "titleSlug": "smallest-rectangle-enclosing-black-pixels",
+        "content": "<p>You are given an <code>m x n</code> binary matrix <code>image</code> where <code>0</code> represents a white pixel and <code>1</code> represents a black pixel.</p>\n\n<p>The black pixels are connected (i.e., there is only one black region). Pixels are connected horizontally and vertically.</p>\n\n<p>Given two integers <code>x</code> and <code>y</code> that represents the location of one of the black pixels, return <em>the area of the smallest (axis-aligned) rectangle that encloses all black pixels</em>.</p>\n\n<p>You must write an algorithm with less than <code>O(mn)</code> runtime complexity</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/14/pixel-grid.jpg\" style=\"width: 333px; height: 253px;\" />\n<pre>\n<strong>Input:</strong> image = [[&quot;0&quot;,&quot;0&quot;,&quot;1&quot;,&quot;0&quot;],[&quot;0&quot;,&quot;1&quot;,&quot;1&quot;,&quot;0&quot;],[&quot;0&quot;,&quot;1&quot;,&quot;0&quot;,&quot;0&quot;]], x = 0, y = 2\n<strong>Output:</strong> 6\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> image = [[&quot;1&quot;]], x = 0, y = 0\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == image.length</code></li>\n\t<li><code>n == image[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 100</code></li>\n\t<li><code>image[i][j]</code> is either <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code>.</li>\n\t<li><code>0 &lt;= x &lt; m</code></li>\n\t<li><code>0 &lt;= y &lt; n</code></li>\n\t<li><code>image[x][y] == &#39;1&#39;.</code></li>\n\t<li>The black pixels in the <code>image</code> only form <strong>one component</strong>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Hard",
+        "likes": 454,
+        "dislikes": 89,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "[[\"0\",\"0\",\"1\",\"0\"],[\"0\",\"1\",\"1\",\"0\"],[\"0\",\"1\",\"0\",\"0\"]]\n0\n2\n[[\"1\"]]\n0\n0",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"2\": [], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int minArea(vector<vector<char>>& image, int x, int y) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int minArea(char[][] image, int x, int y) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def minArea(self, image, x, y):\n        \"\"\"\n        :type image: List[List[str]]\n        :type x: int\n        :type y: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def minArea(self, image: List[List[str]], x: int, y: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint minArea(char** image, int imageSize, int* imageColSize, int x, int y){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int MinArea(char[][] image, int x, int y) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {character[][]} image\n * @param {number} x\n * @param {number} y\n * @return {number}\n */\nvar minArea = function(image, x, y) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Character[][]} image\n# @param {Integer} x\n# @param {Integer} y\n# @return {Integer}\ndef min_area(image, x, y)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func minArea(_ image: [[Character]], _ x: Int, _ y: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func minArea(image [][]byte, x int, y int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def minArea(image: Array[Array[Char]], x: Int, y: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun minArea(image: Array<CharArray>, x: Int, y: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn min_area(image: Vec<Vec<char>>, x: i32, y: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String[][] $image\n     * @param Integer $x\n     * @param Integer $y\n     * @return Integer\n     */\n    function minArea($image, $x, $y) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function minArea(image: string[][], x: number, y: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (min-area image x y)\n  (-> (listof (listof char?)) exact-integer? exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec min_area(Image :: [[char()]], X :: integer(), Y :: integer()) -> integer().\nmin_area(Image, X, Y) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec min_area(image :: [[char]], x :: integer, y :: integer) :: integer\n  def min_area(image, x, y) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"44.1K\", \"totalSubmission\": \"76.4K\", \"totalAcceptedRaw\": 44092, \"totalSubmissionRaw\": 76448, \"acRate\": \"57.7%\"}",
+        "hints": [],
+        "solution": {
+            "id": "72",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[[\"0\",\"0\",\"1\",\"0\"],[\"0\",\"1\",\"1\",\"0\"],[\"0\",\"1\",\"0\",\"0\"]]\n0\n2",
+        "metaData": "{\r\n  \"name\": \"minArea\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"image\",\r\n      \"type\": \"character[][]\"\r\n    },\r\n    {\r\n      \"name\": \"x\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"y\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "72",
+        "content": "[TOC]\n\n## Summary\n\nThis article is for intermediate readers. It introduces the following ideas:\nDepth First Search (DFS), Breadth First Search (BFS) and Binary Search\n\n## Solution\n\n#### Approach 1: Naive Linear Search\n\n**Intuition**\n\nTraversal all the pixels. Keep the maximum and minimum values of black pixels coordinates.\n\n**Algorithm**\n\nWe keep four boundaries, `left`, `right`, `top` and `bottom` of the rectangle.\nNote that `left` and `top` are inclusive while `right` and `bottom` are exclusive.\nWe then traversal all the pixels and update the four boundaries accordingly.\n\nThe recipe is following:\n\n* Initialize left, right, top and bottom\n* Loop through all `(x, y)` coordinates\n  * if `image[x][y]` is black\n    * `left = min(left, x)`\n    * `right = max(right, x + 1)`\n    * `top = min(top, y)`\n    * `bottom = max(bottom, y + 1)`\n* Return `(right - left) * (bottom - top)`\n\n\n<iframe src=\"https://leetcode.com/playground/fn66ntdb/shared\" frameBorder=\"0\" name=\"fn66ntdb\" width=\"100%\" height=\"343\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(mn)$$. $$m$$ and $$n$$ are the height and width of the image.\n\n* Space complexity : $$O(1)$$. All we need to store are the four boundaries.\n\n**Comment**\n* One may optimize this algorithm to stop early. But it doesn't change the asymptotic performance.\n* This naive approach is certainly not the best answer to this problem. However, it gives you a good entry point to tackle the problem. Most of the time the good algorithms come from identifying the repeat calculation a naive approach. And it also sets up a baseline of the time and space complexity, so that one can see whether or not other approaches are better than it.\n\n---\n#### Approach 2: DFS or BFS\n\n**Intuition**\n\nExplore all the connected black pixel from the given pixel and update the boundaries.\n\n**Algorithm**\n\nThe naive approach did not use the condition that all the black pixels are connected and that one of the black pixels is given.\n\nA simple way to use these facts is to do an exhaustive search starting from the given pixel. Since all the black pixels are connected, DFS or BFS will visit all of them starting from the given black pixel. The idea is similar to what we did for [200. Number of Island](https://leetcode.com/problems/number-of-islands/). Instead of many islands, we have only one island here, and we know one pixel of it.\n\n<iframe src=\"https://leetcode.com/playground/2XYpt8rw/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"2XYpt8rw\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(E) = O(B) = O(mn)$$.\n\nHere $$E$$ is the number of edges in the traversed graph. $$B$$ is the total number of black pixels. Since each pixel have four edges at most, $$O(E) = O(B)$$. In the worst case, $$O(B) = O(mn)$$.\n\n* Space complexity : $$O(V) = O(B) = O(mn)$$.\n\nThe space complexity is $$O(V)$$ where $$V$$ is the number of vertices in the traversed graph. In this problem $$O(V) = O(B)$$. Again, in the worst case, $$O(B) = O(mn)$$.\n\n**Comment**\n\nAlthough this approach is better than naive approach when $$B$$ is much smaller than $$mn$$, it is asymptotically the same as approach #1 when $$B$$ is comparable to $$mn$$. And it costs a lot more auxiliary space.\n\n---\n#### Approach 3: Binary Search\n\n**Intuition**\n\nProject the 2D image into a 1D array and use binary search to find the boundaries.\n\n**Algorithm**\n\n![matrix projection](../Figures/302_matrix_projection.svg){:width=\"539px\"}\n{:align=\"center\"}\n\n*Figure 1. Illustration of image projection.\n{:align=\"center\"}\n\nSuppose we have a $$10 \\times 11$$ image as shown in figure 1, if we project each column of the image into an entry of row vector `v` with the following rule:\n\n* `v[i] = 1`   if exists `x` such that `image[x][i] = 1`\n* `v[i] = 0`   otherwise\n\nThat is\n\n> If a column has any black pixel it's projection is black otherwise white.\n\nSimilarly, we can do the same for the rows, and project the image into a 1D column vector. The two projected vectors are shown in figure 1.\n\nNow, we claim the following lemma:\n\n*Lemma*\n>If there are only one black pixel region, then in a projected 1D array all the black pixels are connected.\n\n*Proof by contradiction*\n>Assume to the contrary that there are disconnected black pixels at `i` and `j` where `i < j` in the 1D projection array. Thus, there exists one column `k`, `k` in `(i, j)` and the column `k` in the 2D array has no black pixel. Therefore, in the 2D array there exist at least two black pixel regions separated by column `k` which contradicting the condition of \"only one black pixel region\".\nTherefore, we conclude that all the black pixels in the 1D projection array are connected.\n\nWith this lemma, we have the following algorithm:\n\n* Project the 2D array into a column array and a row array\n* Binary search to find `left` in the row array within `[0, y)`\n* Binary search to find `right` in the row array within `[y + 1, n)`\n* Binary search to find `top` in the column array within `[0, x)`\n* Binary search to find `bottom` in the column array within `[x + 1, m)`\n* Return `(right - left) * (bottom - top)`\n\nHowever, the projection step cost $$O(mn)$$ time which dominates the entire algorithm.If so, we gain nothing comparing with previous approaches.\n\nThe trick is that we do not need to do the projection step as a preprocess. We can do it on the fly, i.e. \"don't project the column/row unless needed\".\n\nRecall the binary search algorithm in a 1D array, each time we only check one element, the pivot, to decide which half we go next.\n\nIn a 2D array, we can do something similar. The only difference here is that the element is not a number but a vector. For example, a `m` by `n` matrix can be seen as `n` column vectors.\n\nIn these `n` elements/vectors, we do a binary search to find `left` or `right`. Each time we only check one element/vector, the pivot, to decide which half we go next.\nIn total it checks $$O(\\log n)$$ vectors, and each check is $$O(m)$$ (we simply traverse all the `m` entries of the pivot vector).\n\nSo it costs $$O(m \\log n)$$ to find `left` and `right`.\nSimilarly it costs $$O(n \\log m)$$ to find `top` and `bottom`. The entire algorithm has a time complexity of $$O(m \\log n + n \\log m)$$\n\n<iframe src=\"https://leetcode.com/playground/RX66pbsc/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"RX66pbsc\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(m \\log n + n \\log m)$$.\n\nHere, $$m$$ and $$n$$ are the height and width of the image. We embedded a linear search for every iteration of binary search. See previous sections for details.\n\n* Space complexity : $$O(1)$$.\n\nBoth binary search and linear search used only constant extra space.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "70",
+            "count": 43,
+            "average": "4.535",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "smallest-rectangle-enclosing-black-pixels",
+    "playgroundData": {
+        "fn66ntdb": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "302_smallest_rectangle_enclosing_black_pixelsmd3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "2XYpt8rw": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "smallest-rectangle-enclosing-black-pixels-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "RX66pbsc": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "smallest-rectangle-enclosing-black-pixels-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

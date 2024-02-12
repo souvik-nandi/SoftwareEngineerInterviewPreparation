@@ -1,0 +1,260 @@
+{
+    "id": "461",
+    "question": {
+        "questionId": "461",
+        "questionFrontendId": "461",
+        "boundTopicId": null,
+        "title": "Hamming Distance",
+        "titleSlug": "hamming-distance",
+        "content": "<p>The <a href=\"https://en.wikipedia.org/wiki/Hamming_distance\" target=\"_blank\">Hamming distance</a> between two integers is the number of positions at which the corresponding bits are different.</p>\n\n<p>Given two integers <code>x</code> and <code>y</code>, return <em>the <strong>Hamming distance</strong> between them</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 1, y = 4\n<strong>Output:</strong> 2\n<strong>Explanation:</strong>\n1   (0 0 0 1)\n4   (0 1 0 0)\n       &uarr;   &uarr;\nThe above arrows point to positions where the corresponding bits are different.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 3, y = 1\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;=&nbsp;x, y &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 3156,
+        "dislikes": 198,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Number of 1 Bits\", \"titleSlug\": \"number-of-1-bits\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Total Hamming Distance\", \"titleSlug\": \"total-hamming-distance\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "1\n4\n3\n1",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}], \"1\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int hammingDistance(int x, int y) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int hammingDistance(int x, int y) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def hammingDistance(self, x, y):\n        \"\"\"\n        :type x: int\n        :type y: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def hammingDistance(self, x: int, y: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint hammingDistance(int x, int y){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int HammingDistance(int x, int y) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} x\n * @param {number} y\n * @return {number}\n */\nvar hammingDistance = function(x, y) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer} x\n# @param {Integer} y\n# @return {Integer}\ndef hamming_distance(x, y)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func hammingDistance(_ x: Int, _ y: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func hammingDistance(x int, y int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def hammingDistance(x: Int, y: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun hammingDistance(x: Int, y: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn hamming_distance(x: i32, y: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer $x\n     * @param Integer $y\n     * @return Integer\n     */\n    function hammingDistance($x, $y) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function hammingDistance(x: number, y: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (hamming-distance x y)\n  (-> exact-integer? exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec hamming_distance(X :: integer(), Y :: integer()) -> integer().\nhamming_distance(X, Y) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec hamming_distance(x :: integer, y :: integer) :: integer\n  def hamming_distance(x, y) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"482.8K\", \"totalSubmission\": \"646.8K\", \"totalAcceptedRaw\": 482841, \"totalSubmissionRaw\": 646824, \"acRate\": \"74.6%\"}",
+        "hints": [],
+        "solution": {
+            "id": "849",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "1\n4",
+        "metaData": "{\r\n  \"name\": \"hammingDistance\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"x\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"y\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "849",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Intuition\n\n[Hamming distance](https://en.wikipedia.org/wiki/Hamming_distance) is an interesting metric that is widely applied in several domains, _e.g._ in coding theory for error detection, in information theory for quantifying the difference between strings.\n\n>The Hamming distance between two **integer** numbers is the number of positions at which the corresponding bits are different.\n\nGiven the above definition, it might remind one of the bit operation called [XOR](https://en.wikipedia.org/wiki/Bitwise_operation#XOR) which outputs `1` _if and only if_ the input bits are different. \n\n![pic](../Figures/461/461_XOR.png)\n\n>As a result, in order to measure the hamming distance between `x` and `y`, we can first do `x XOR y` operation, then we simply count the number of bit `1` in the result of XOR operation.\n\nWe now convert the original problem into a bit-counting problem. There are several ways to count the bits though, as we will discuss in the following sections.\n\n#### Approach 1: Built-in BitCounting Functions\n\n**Intuition**\n\nFirst of all, let us talk of the elephant in the room. As one can imagine, we have various built-in functions that could count the bit `1` for us, in all (or at least most of) programming languages. So if this is the task that one is asked in a project, then one should probably just go for it, rather than reinventing the wheel. We given two examples in the following.\n\nNow, since this is a LeetCode problem, some of you would argue that using the built-in function is like _\"implementing a LinkedList with LinkedList\"_, which we fully second as well. So no worry, we will see later some fun hand-crafted algorithms for bit counting.\n\n**Algorithm**\n\n<iframe src=\"https://leetcode.com/playground/u7Lj54Xx/shared\" frameBorder=\"0\" width=\"100%\" height=\"140\" name=\"u7Lj54Xx\"></iframe>\n\n\n**Complexity Analysis**\n\n- Time Complexity: $$\\mathcal{O}(1)$$\n\n    - There are two operations in the algorithm. First, we do the XOR operation which takes a constant time.\n\n    - Then, we call the built-in bitCount function. In the worst scenario, the function would take $$\\mathcal{O}(k)$$ time where $$k$$ is the number of bits for an integer number. Since the Integer type is of fixed size in both Python and Java, the overall time complexity of the algorithm becomes constant, regardless the input numbers.\n\n- Space Complexity: $$\\mathcal{O}(1)$$, a temporary memory of constant size is consumed, to hold the result of XOR operation.\n    - We assume that the built-in function also takes a constant space.\n<br/>\n<br/>\n\n---\n#### Approach 2: Bit Shift\n\n**Intuition**\n\nIn order to count the number of bit `1`, we could _shift_ each of the bit to either the leftmost or the rightmost position and then check if the bit is one or not. \n\nMore precisely, we should do the [logical shift](https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift) where zeros are shifted in to replace the discarded bits.\n\n![pic](../Figures/461/461_shift.png)\n\nHere we adopt the right shift operation, where each bit would has its turn to be shifted to the rightmost position. Once shifted, we then check if the rightmost bit is one, which we can use either the `modulo` operation (_i.e._ `i % 2`) or the bit AND operation (_i.e._ `i & 1`). Both operations would _**mask out**_ the rest of the bits other than the rightmost bit.\n\n**Algorithm**\n\n<iframe src=\"https://leetcode.com/playground/JF3keVjN/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"JF3keVjN\"></iframe>\n\n\n\n**Complexity Analysis**\n\n- Time Complexity: $$\\mathcal{O}(1)$$, since the Integer is of fixed size in Python and Java, the algorithm takes a constant time. For an Integer of 32 bit, the algorithm would take _at most_ 32 iterations.\n\n- Space Complexity: $$\\mathcal{O}(1)$$, a constant size of memory is used, regardless the input.\n<br/>\n<br/>\n\n---\n#### Approach 3: Brian Kernighan's Algorithm\n\n**Intuition**\n\nIn the above approach, one might wonder that _\"rather than shifting the bits one by one, is there a faster way to count the bits of one ?\"_. And the answer is yes.\n\n>If we is asked to count the bits of one, as humans, rather than mechanically examining each bit, we could _**skip**_ the bits of zero in between the bits of one, _e.g._ `10001000`.\n\nIn the above example, after encountering the first bit of one at the rightmost position, it would be more efficient if we just jump at the next bit of one, skipping all the zeros in between.\n\nThis is the basic idea of the [Brian Kernighan's bit counting algorithm](http://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetKernighan), which applies some smart bit and arithmetic operations to _**clear**_ the rightmost bit of one. Here is the secret recipe.\n\n>When we do AND bit operation between `number` and `number-1`, the rightmost bit of one in the original `number` would be cleared.\n\n![pic](../Figures/461/461_brian.png)\n\nBased on the above idea, we then can count the bits of one for the input of `10001000` in 2 iterations, rather than 8.\n\n**Algorithm**\n\n<iframe src=\"https://leetcode.com/playground/VrJZkeVe/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"VrJZkeVe\"></iframe>\n\nNote, according to the online book of [Bit Twiddling Hacks](http://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetKernighan), the algorithm was published as an exercise in 1988, in the book of _the C Programming Language 2nd Ed_. (by **Brian W. Kernighan** and Dennis M. Ritchie), though on April 19, 2006 Donald Knuth pointed out that this method _\"was first published by Peter Wegner in CACM 3 (1960), 322. (Also discovered independently by Derrick Lehmer and published in 1964 in a book edited by Beckenbach.)\"_.\nBy the way, one can find many other tricks about bit operations in the aforementioned book.\n\n\n**Complexity Analysis**\n\n- Time Complexity: $$\\mathcal{O}(1)$$.\n\n    - Similar as the approach of bit shift, since the size (_i.e._ bit number) of integer number is fixed, we have a constant time complexity.\n\n    - However, this algorithm would require less iterations than the bit shift approach, as we have discussed in the intuition.\n\n- Space Complexity: $$\\mathcal{O}(1)$$, a constant size of memory is used, regardless the input.\n<br/>\n<br/>",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "807",
+            "count": 52,
+            "average": "4.769",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "hamming-distance",
+    "playgroundData": {
+        "u7Lj54Xx": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "hamming-distance-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "JF3keVjN": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "hamming-distance-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "VrJZkeVe": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "hamming-distance-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

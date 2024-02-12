@@ -1,0 +1,269 @@
+{
+    "id": "1306",
+    "question": {
+        "questionId": "1306",
+        "questionFrontendId": "1200",
+        "boundTopicId": null,
+        "title": "Minimum Absolute Difference",
+        "titleSlug": "minimum-absolute-difference",
+        "content": "<p>Given an array of <strong>distinct</strong> integers <code>arr</code>, find all pairs of elements with the minimum absolute difference of any two elements.</p>\n\n<p>Return a list of pairs in ascending order(with respect to pairs), each pair <code>[a, b]</code> follows</p>\n\n<ul>\n\t<li><code>a, b</code> are from <code>arr</code></li>\n\t<li><code>a &lt; b</code></li>\n\t<li><code>b - a</code> equals to the minimum absolute difference of any two elements in <code>arr</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [4,2,1,3]\n<strong>Output:</strong> [[1,2],[2,3],[3,4]]\n<strong>Explanation: </strong>The minimum absolute difference is 1. List all pairs with difference equal to 1 in ascending order.</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [1,3,6,10,15]\n<strong>Output:</strong> [[1,3]]\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [3,8,-10,23,19,-4,-14,27]\n<strong>Output:</strong> [[-14,-10],[19,23],[23,27]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= arr.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>6</sup> &lt;= arr[i] &lt;= 10<sup>6</sup></code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 1586,
+        "dislikes": 60,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Minimum Cost of Buying Candies With Discount\", \"titleSlug\": \"minimum-cost-of-buying-candies-with-discount\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[4,2,1,3]\n[1,3,6,10,15]\n[3,8,-10,23,19,-4,-14,27]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Audible\", \"slug\": \"audible\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Morgan Stanley\", \"slug\": \"morgan-stanley\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"JPMorgan\", \"slug\": \"jpmorgan\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<vector<int>> minimumAbsDifference(vector<int>& arr) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public List<List<Integer>> minimumAbsDifference(int[] arr) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def minimumAbsDifference(self, arr):\n        \"\"\"\n        :type arr: List[int]\n        :rtype: List[List[int]]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def minimumAbsDifference(self, arr: List[int]) -> List[List[int]]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** minimumAbsDifference(int* arr, int arrSize, int* returnSize, int** returnColumnSizes){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public IList<IList<int>> MinimumAbsDifference(int[] arr) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} arr\n * @return {number[][]}\n */\nvar minimumAbsDifference = function(arr) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} arr\n# @return {Integer[][]}\ndef minimum_abs_difference(arr)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func minimumAbsDifference(_ arr: [Int]) -> [[Int]] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func minimumAbsDifference(arr []int) [][]int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def minimumAbsDifference(arr: Array[Int]): List[List[Int]] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun minimumAbsDifference(arr: IntArray): List<List<Int>> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn minimum_abs_difference(arr: Vec<i32>) -> Vec<Vec<i32>> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @return Integer[][]\n     */\n    function minimumAbsDifference($arr) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function minimumAbsDifference(arr: number[]): number[][] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (minimum-abs-difference arr)\n  (-> (listof exact-integer?) (listof (listof exact-integer?)))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec minimum_abs_difference(Arr :: [integer()]) -> [[integer()]].\nminimum_abs_difference(Arr) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec minimum_abs_difference(arr :: [integer]) :: [[integer]]\n  def minimum_abs_difference(arr) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"127.1K\", \"totalSubmission\": \"182K\", \"totalAcceptedRaw\": 127149, \"totalSubmissionRaw\": 181979, \"acRate\": \"69.9%\"}",
+        "hints": [
+            "Find the minimum absolute difference between two elements in the array.",
+            "The minimum absolute difference must be a difference between two consecutive elements in the sorted array."
+        ],
+        "solution": {
+            "id": "1271",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[4,2,1,3]",
+        "metaData": "{\n  \"name\": \"minimumAbsDifference\",\n  \"params\": [\n    {\n      \"name\": \"arr\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<list<integer>>\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1271",
+        "content": "[TOC]\n\n## Solution\n\n--- \n#### Overview\n\nIn this problem, we are given an array `arr` of **distinct** integers. We can pick any two integers `a` and `b` from the array. These two integers have an absolute difference `|a - b|`. Among all the possible absolute difference pairs, we should find all pairs of elements with the minimum absolute difference.\n\n<br/>\n\n---\n\n#### Approach 1: Sort + 2 Traversals\n\n**Intuition**   \n\nThe most intuitive method is to get every possible pair `{a, b}` from the array. Then for each pair, we can calculate its absolute difference; let's call this `currPairDiff` standing for the current absolute difference, where `currPairDiff = |a - b|`. While calculating `currPairDiff` for each pair, we can keep a record of the minimum absolute difference, `minPairDiff`, seen so far. \nFinally, we traverse every pair again, and if a pair has the same absolute difference as `minPairDiff`, then we add this pair to the answer.  \n\n\nHowever, in this brute force approach, we iterate every possible pair from the array. Given $$n$$ as the size of the input array, this approach has a time complexity of $$O(n^2)$$ which would likely exceed the time limit. Therefore, we shall look for a more efficient way!\n\n\nBefore we get lost in collecting every possible pair, let's think of how to judge if a pair is a potential candidate or not.\n\n\nSuppose we have picked two integers `a` and `b` from the array (let's assume that `a` is less than `b` for convenience). Do we always have to calculate their difference `b - a`? It depends on if there exists a third value `X` from the array which size is in the middle of `a` and `b`. \n\nIf such `X` exists, we will have `a < X < b`. Hence, `b - a > X - a > 0` and `b - a > b - X > 0` also hold, where `X - a` and `b - X` are the absolute difference of the pair `{a, X}` and `{X, b}` respectively. This implies that there are at least two pairs `{a, X}` and `{X, b}` having absolute differences smaller than that of the pair `{a, b}`. Therefore, the pair `{a, b}` surely doesn't have the minimum absolute difference, so we don't need to bother calculating it.\u00a0 \n\n\n\n![limits](../Figures/1200/1200_1.png)\n\nHow can we carry out an algorithm to select the pairs without intermediate integers and filter out the rest effectively?\n\n> Sorting\n\nBy sorting the original array, every number will be adjacent to the one or two numbers in the array that are closest to it. Since there cannot be an intermediate integer between two adjacent numbers in the sorted array, the candidate pool for the answer list will consist of all pairs made by two adjacent integers. All that is left to do is to calculate the absolute differences of these pairs and select the pairs with an absolute difference that is equal to the minimum absolute difference.\n\n\n!?!../Documents/1200/walkthrough_1.json:601,301!?!\n\n<br>\n\n**Algorithm**\n\n1) Sort the original array `arr`. Initialize `minPairDiff` as a huge number so that we won't miss the absolute difference of the first pair. \n\n2) Traverse the sorted array, compute the absolute difference of every adjacent integer pair, `currPairDiff = arr[i + 1] - arr[i]` where `0 <= i < n - 1` and keep a record of the minimum difference, `minPairDiff = min(minPairDiff, currPairDiff)`, seen so far. Notice that we don't need to calculate the absolute value of `arr[i + 1] - arr[i]` since `arr` has already been sorted so `arr[i + 1]` will always be larger than `arr[i]`. \n\n3) Traverse the sorted array again for every pair of adjacent numbers. If their absolute difference equals `minPairDiff`, add this pair to the answer list in the correct form.\n\n4) Return the answer list. \n\u00a0 \n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/nw3mUEb9/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"nw3mUEb9\"></iframe>\n\n\n**Complexity Analysis**\n\nLet $$n$$ be the length of the array `arr`.\n\n* Time complexity: $$O(n \\cdot \\log n)$$\n\n    - We sort `arr` first, which takes $$O(n \\cdot \\log n)$$. \n    - We then traverse the array two times, which takes $$O(n)$$ for each traversal.\n    - To sum up, the time complexity is $$O(n \\cdot \\log n)$$.\n    \n\n* Space complexity: $$O(\\log n)$$ or $$O(n)$$\n\n    - Some extra space is used when we sort `arr` in place. The space complexity of the sorting algorithm depends on the programming language. \n        - In python, the `sort` method sorts a list using Timsort algorithm which has $$O(n)$$ additional space where $$n$$ is the number of the elements. \n        - In C++, the sort() function is implemented as a hybrid of Quick Sort, Heap Sort and Insertion Sort, with a worst case space complexity of $$O(\\log n)$$.\n        - In Java, Arrays.sort() is implemented using a variant of the Quick Sort algorithm which has a space complexity of $$O(\\log n)$$.\n        - In Javascript, the space complexity of sort() is $$O(\\log n)$$.\n    - To sum up, the overall space complexity is $$O(\\log n)$$ or $$O(n)$$, depending on the programming language and implementation.\n\n\n<br/>\n\n---\n\n#### Approach 2: Sort + 1 Traversal\n\n**Intuition**   \n\nIn the first approach, we traverse the sorted array two times to find the minimum absolute difference and find all the pairs with such difference, respectively. \n\n\nHowever, we could have finished these two tasks in a single traversal by simultaneously updating the `minPairDiff` and the answer list.\n\nWe can accomplish this by skipping the first traversal that we used to find the minimum difference, and instead, we compare each pair to the minimum difference that we have seen so far.\n- If we find a pair with `currPairDiff > minPairDiff`, move on to the next pair since we know for sure that this pair cannot be a candidate.\n- If we find a pair with `currPairDiff == minPairDiff`, we add this pair to the answer list. \n- If we find a pair with `currPairDiff < minPairDiff`, this means that we should discard all the pairs in the answer list since their absolute difference is greater than the minimum absolute difference. Then, only add this pair to the list.\n\n\n!?!../Documents/1200/walkthrough_2.json:601,301!?!\n\n<br>\n\n**Algorithm**\n\n1) Sort the original array. Initialize `minPairDiff` as a huge number so that we won't miss the absolute difference of the first pair. \n\n2) Traverse the sorted array, and for every pair of adjacent numbers, compare its absolute difference `currPairDiff` with `minPairDiff`.\n    - If `currPairDiff` is greater than `minPairDiff`, move on to the next pair.\n    - If `currPairDiff` equals `minPairDiff`, add this pair to the answer list.\n    - If `currPairDiff` is less than `minPairDiff`, discard all elements in answer list, add this pair to the list and update `minPairDiff = currPairDiff`.\n3) After traversing the sorted array, return the answer list.\n\n\n**Implementation**\n<iframe src=\"https://leetcode.com/playground/3KVN7Ut5/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"3KVN7Ut5\"></iframe>\n\n\n**Complexity Analysis**\n\nLet $$n$$ be the length of the array `arr`.\n\n* Time complexity: $$O(n\\cdot \\log(n))$$\n\n    - First, we sort `arr` using comparision sorting, which takes $$O(n \\cdot \\log(n))$$.\n    - We then traverse the array, which takes $$O(n)$$ time. \n    - To sum up, the overall time complexity is $$O(n \\cdot \\log(n))$$.\n    \n\n* Space complexity: $$O(n)$$.\n    \n    - Some extra space is used when we sort `arr` in place. The space complexity of the sorting algorithm depends on the programming language. \n        - In python, the `sort` method sorts a list using Timsort algorithm which has $$O(n)$$ additional space where $$n$$ is the number of the elements. \n        - In C++, the sort() function is implemented as a hybrid of Quick Sort, Heap Sort and Insertion Sort, with a worst case space complexity of $$O(\\log n)$$.\n        - In Java, Arrays.sort() is implemented using a variant of the Quick Sort algorithm which has a space complexity of $$O(\\log n)$$.\n        - In Javascript, the space complexity of sort() is $$O(\\log n)$$.\n    - We then traverse the array and update the output array `answer` as we go. While the output itself does not count towards the space complexity, the space used by the `answer` array that is not part of the output is counted. For example, if the array is $$[1, 3, 5, 7, 8]$$, at some point, the `answer` array will contain $$n - 2$$ pairs, each with a difference of $$2$$, but the output will only consist of $$1$$ pair with a difference of $$1$$. Thus, the answer array requires $$O(n)$$ space.\n    - To sum up, the overall space complexity is $$O(n)$$. \n<br/>\n\n---\n\n#### Approach 3: Counting Sort\n\n**Intuition**   \n\nIn the previous two approaches, the sorting of the original array takes $$O(n \\cdot \\log(n))$$ time and is the dominant term in the total time complexity, is there a way we can reduce the time spent sorting the array? \nThe constraints of the problem state that the maximum possible value in `arr` is $$10^6$$, and the minimum possible value in `arr` is $$-10^6$$. Therefore, the difference between the maximum value and the minimum value is $$10^{6} - (-10^{6}) = 2 \\cdot 10^{6}$$. The time and space required to use Counting Sort are directly related to this difference between the maximum and minimum possible values in `arr`. Thus, Counting Sort is a workable approach to this problem.\n\n>What is counting sort?\n\nFor a detailed introduction, you can refer to [this Wikipedia article](https://en.wikipedia.org/wiki/Counting_sort)!\n\n<br>\n\nIn short, counting sort is not a comparison sort; thus, the $$O(n \\cdot \\log(n))$$ time complexity for comparison sorting does not apply. To perform a counting sort, we create an empty array (`line`), and for each number in `arr`, we increment `line[index]` where the index is based on the number's value.\n\n>How do we determine the size of the auxiliary array? \n\nNotice that the constraints of integers in the array is $$-10^6 \\leq arr[i] \\leq 10^{6}$$. Therefore, we could use an auxiliary array of size $$2 \\cdot 10^{6} + 1$$; this array would cover all possible values within the given range. However, the index of the auxiliary array is from $$0$$ to $$2 \\cdot 10^{6}$$, while the range of the elements is from $$-10^{6}$$ to $$10^{6}$$. So we need to build a bijection, a one-to-one correspondence between the element value (`value`) and the index (`index`) of the auxiliary array. We can map the `value` to `index` where this element should be placed by adding a term $$shift = 10^6$$ to the value. Put simply, for each `value` in `arr` we will set `line[value + shift]` equal to 1.\n\n> **Note:** It is not necessary for us to use an array of size $$2 \\cdot 10^{6} + 1$$ for `line`. Consider an example where the range of values in `arr` is small, such as `arr = [1, -3, 2]`. The array `line` only needs to be of length $$6$$ to store all mapped values from $$-3$$ to $$2$$. Thus we can use the minimum and maximum value in `arr` to decide the size of our auxiliary array.  Since we will map the smallest value in `arr` to position $$0$$ in `line`, this means that `shift` should equal `-arr.min`. \n\n>How do we \"sort\" the array?\n\nWe can iterate over the array, and for each integer element (`value`), we can find the corresponding index of this integer using `index = value + shift` and increase the value at `index` in the auxiliary array `line` by 1. That is to say `line[index] += 1`.\n\n!?!../Documents/1200/walkthrough_3.json:601,301!?!\n\n<br>\n\nOnce we have iterated over every element in `arr`, every index in `line` that corresponds to a value in `arr` will have changed from 0 to 1. The last step is to traverse the `modified` line once, starting from the first index. Each index in `line`, where `line[index]` is not zero, signifies the value `index - shift` exists in `arr`. Thus by traversing `line` from left to right, we can collect the values in sorted order!\n\n>How to collect & compare pairs of adjacent numbers?\n\nThis step is pretty similar to that of the 2nd approach, where we simultaneously update the answer list and the minimum difference. \nWe iterate over the modified `line` array, and for every index `curr`, if `line[curr]` equals `0`, this means that there is no element of value `index - shift` in the input array, and so we will move on to the next index. If `line[curr]` equals `1`, this means that there is an element of value `curr - shift` in the input array and that this element composes a pair with the previous element.\n\nWhen we find a pair `{prev - shift, curr - shift}`, we will check if the absolute difference of this pair `currPairDiff` is less than, equal to, or larger than the minimum absolute difference `minPairDiff`.\n- If `currPairDiff > minPairDiff`, we move on to the next pair since we know for sure that this pair cannot be a candidate. That is, let `prev = curr` and move to the next index of `line`.\n- If `currPairDiff == minPairDiff`, we add this pair to the answer list. Let `prev = curr` and move to the next index.\n- If `currPairDiff < minPairDiff`, we discard all the pairs in the answer list since their absolute difference is greater than the minimum absolute difference. Then, only add this pair to the list. Let `prev = curr` and move to the next index. \n\n!?!../Documents/1200/walkthrough_4.json:601,301!?!\n\n<br>\n\n>**Interview Tip:** If the problem constraints are provided, it is a good idea to consider the constraints when deciding how to approach the problem. For example, the previous approach takes $$O(n \\cdot \\log n)$$ time, and in the worst case, $$n$$ equals $$10^5$$ where $$n$$ is the length of `arr`. The current approach will take $$O(m + n)$$ time, and in the worst case, $$m$$ equals $$2 \\cdot 10^6$$ where $$m$$ is the difference between the largest and smallest element in `arr`. \n>\n>Thus, for the given constraints, the previous and the current approaches have similar worst-case run times, so both approaches are acceptable. However, if the constraints were different and $$m$$ was much larger than $$n \\log n$$, then the previous approach would be the better option and vice versa.\n\n\n\n**Algorithm**\n\n1) Find the minimum value (`minElement`) and maximum value (`maxElement`) in `arr`.\n\n2) Initialize the auxiliary array `line` of size `maxElement - minElement + 1`, and set `shift` equal to `-minElement`.\n  This means the smallest element in arr will map to index 0 in `line`, and the largest element will map to the last index in `line`.\n3) Iterate over `arr`, and for each element `value`, increment the value at the index `value + shift` by 1.\n4) Traverse the `line` array and check the value at every index (`curr`):\n    - If `line[curr]` equals `0`, this means the corresponding value is not in `arr`, so continue on to the next index.\n    - If `line[curr]` equals `1`, this means the corresponding value `curr - shift` is in `arr`, so we go to step 5.\n\n5) Compare the absolute difference `currPairDiff` of the pair `{prev - shift, curr - shift}` with `minPairDiff`.\n    - If `currPairDiff` is greater than `minPairDiff`, continue.\n    - If `currPairDiff` equals `minPairDiff`, add this pair to the answer list.\n    - If `currPairDiff` is less than `minPairDiff`, discard all elements in answer list, add this pair to the list and update `minPairDiff = currPairDiff`.\n    Let `prev = curr` and repeat step 4 for the next element in `line`.\n6) After traversing all elements in `arr`, the answer list will contain all pairs with the minimum absolute difference. Return the answer list.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/RdriJsfL/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"RdriJsfL\"></iframe>\n\n**Complexity Analysis**\n\nLet $$n$$ be the size of the input array `arr`, and $$m$$ be the range of values in `arr`.\n\n* Time complexity: $$O(m + n)$$\n\n    - We initialize an auxiliary array of all zeros, which takes $$O(m)$$ time. \n    - We then iterate over `arr` to inspect each element and increment the corresponding element in `line`; this takes $$O(n)$$ time. \n    - To check every pair of elements, we must iterate over `line`; this takes $$O(m)$$ time.\n    - To sum up, the overall time complexity is $$O(m + n)$$.\n    \n* Space complexity: $$O(m + n)$$\n\n    - We used an auxiliary array `line` of size $$O(m)$$.\n    - While the output array does not count towards the space complexity, the answer array is modified in the same manner as in Approach 2; thus, the answer array is not guaranteed to only contain the output values. In the worst-case scenario, the answer array will temporarily contain $$n - 2$$ values that are not part of the output array. Thus, the answer array will use $$O(n)$$ space.\n    - Therefore, the overall space complexity is $$O(m + n)$$.\n\t\n<br/>",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1276",
+            "count": 34,
+            "average": "4.794",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "minimum-absolute-difference",
+    "playgroundData": {
+        "nw3mUEb9": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "minimum-absolute-difference-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "3KVN7Ut5": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "minimum-absolute-difference-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "RdriJsfL": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "minimum-absolute-difference-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

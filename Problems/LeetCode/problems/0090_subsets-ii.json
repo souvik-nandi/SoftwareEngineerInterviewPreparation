@@ -1,0 +1,272 @@
+{
+    "id": "90",
+    "question": {
+        "questionId": "90",
+        "questionFrontendId": "90",
+        "boundTopicId": null,
+        "title": "Subsets II",
+        "titleSlug": "subsets-ii",
+        "content": "<p>Given an integer array <code>nums</code> that may contain duplicates, return <em>all possible subsets (the power set)</em>.</p>\n\n<p>The solution set <strong>must not</strong> contain duplicate subsets. Return the solution in <strong>any order</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<pre><strong>Input:</strong> nums = [1,2,2]\n<strong>Output:</strong> [[],[1],[1,2],[1,2,2],[2],[2,2]]\n</pre><p><strong>Example 2:</strong></p>\n<pre><strong>Input:</strong> nums = [0]\n<strong>Output:</strong> [[],[0]]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10</code></li>\n\t<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 5782,
+        "dislikes": 164,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Subsets\", \"titleSlug\": \"subsets\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find Array Given Subset Sums\", \"titleSlug\": \"find-array-given-subset-sums\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[1,2,2]\n[0]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Backtracking",
+                "slug": "backtracking",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<vector<int>> subsetsWithDup(vector<int>& nums) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public List<List<Integer>> subsetsWithDup(int[] nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def subsetsWithDup(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[List[int]]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** subsetsWithDup(int* nums, int numsSize, int* returnSize, int** returnColumnSizes){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public IList<IList<int>> SubsetsWithDup(int[] nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} nums\n * @return {number[][]}\n */\nvar subsetsWithDup = function(nums) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} nums\n# @return {Integer[][]}\ndef subsets_with_dup(nums)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func subsetsWithDup(_ nums: [Int]) -> [[Int]] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func subsetsWithDup(nums []int) [][]int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def subsetsWithDup(nums: Array[Int]): List[List[Int]] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun subsetsWithDup(nums: IntArray): List<List<Int>> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn subsets_with_dup(nums: Vec<i32>) -> Vec<Vec<i32>> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer[][]\n     */\n    function subsetsWithDup($nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function subsetsWithDup(nums: number[]): number[][] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (subsets-with-dup nums)\n  (-> (listof exact-integer?) (listof (listof exact-integer?)))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec subsets_with_dup(Nums :: [integer()]) -> [[integer()]].\nsubsets_with_dup(Nums) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec subsets_with_dup(nums :: [integer]) :: [[integer]]\n  def subsets_with_dup(nums) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"546.2K\", \"totalSubmission\": \"1M\", \"totalAcceptedRaw\": 546212, \"totalSubmissionRaw\": 1008178, \"acRate\": \"54.2%\"}",
+        "hints": [],
+        "solution": {
+            "id": "1152",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[1,2,2]",
+        "metaData": "{\r\n  \"name\": \"subsetsWithDup\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<list<integer>>\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1152",
+        "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Overview\r\n\r\nThis problem is a successor to another LeetCode problem [78. Subsets](https://leetcode.com/problems/subsets/). We are given an array `nums` of size `n` where `1 <= n <= 10`. We need to find the power set (all possible subsets) excluding duplicate subsets. The maximum number of subsets exists when `nums` contains unique numbers only. In a subset, each number could be present or absent. Thus, for `n` numbers, the power set will consist of no more than $$2^n$$ subsets.\r\n\r\nSince we may need to generate $$2^n$$ subsets, no solution can achieve better than exponential time complexity.  However, when the value of `n` is small (between 1 and 10 in this case), exponential time complexity is acceptable.  As such, in each of the following solutions, we'll focus our attention on generating all unique subsets while efficiently omitting all duplicate subsets.\r\n\r\n</br>\r\n\r\n---\r\n\r\n#### Approach 1: Bitmasking \r\n\r\n**Intuition**\r\n\r\nAs discussed earlier, each element could be present in or absent from the subset, so there will be a total of $$2^n$$ distinct subsets for an array of length `n` with no duplicates. The maximum possible value of `n` is 10. Thus, no more than $$2 ^ {10} = 1024$$ subsets will be generated. Since this number is small, we can represent all the subsets using bitmasking. \r\n\r\n>The idea is that we map each subset to a bitmask of length n, where 1 in the $$i ^ {th}$$ position of the bitmask implies nums[i] is in the subset, and 0 implies nums[i] is not in the subset.\r\n\r\nBitmask `000...0` signifies an empty subset, while bitmask `111...1` signifies that all numbers from the given array `nums` are present in the set. Thus, bitmask values from $$0$$ to $$2^n - 1$$ represent all possible subsets. We need to iterate over the binary representation of each number and depending on the position of set bits (bit value = 1) we can determine which numbers are present in the current subset. An unsigned integer can represent at most 32 (64 if we use `long` datatype for `mask`) positions via bitmasking. Since the given array size (ranging from 1 to 10) is less than 32, we can use bitmasking to represent all subsets. This can be better understood in the following illustration: \r\n\r\n![fig](../Figures/90/90_approach1.png)\r\n{:align=\"center\"}\r\n\r\n<br/>\r\n\r\nHowever, in this approach, some of the generated subsets will be duplicates. So we need to use an additional set, `seen`, to detect duplicate subsets. In order to make use of `seen`, we must first sort the given array. Otherwise, `seen` won't be able to distinguish between duplicate subsets. For example, without sorting `nums = [2,1,2]` our algorithm will generate subsets `[], [2], [1], [2], [2, 1], [2,2], [1, 2], [2, 1, 2]`. Here subset `[1, 2]` should be considered as a duplicate of subset `[2, 1]`. To detect such duplicate subsets, prior sorting of the array is needed. This ensures all the included subsets are unique.\r\n\r\n**Algorithm**\r\n\r\n1. Sort `nums` array. Sorting is required to ensure all the generated subsets will also be sorted. This helps to identify duplicates.\r\n\r\n2. Initialize `maxNumberOfSubsets` to the maximum number of subsets that can be generated, i.e., $$2^n$$.\r\n\r\n3. Initialize a set, `seen`, of type `string` to store all the generated subsets. Adding all the sorted subsets to the set gives us the opportunity to catch any duplicate subsets.\r\n\r\n4. Iterate from `0` to `maxNumberOfSubsets - 1`. The set bits in the binary representation of the `subsetIndex` indicate the position of the elements in the `nums` array that are present in the current subset.\r\n\r\n5. Intialize a string `hashcode` which will store a comma separated list of numbers in the `currentSubset` as a string. `hashcode` is necessary to uniquely identify each subset via the use of a set.\r\n\r\n6. We run an inner `for` loop from `j = 0` to `n - 1` to check the position of set bits in `subsetIndex`. If at the $$j^{th}$$ position bit is set, add `nums[j]` to the current subset `currentSubset` and append `nums[j]` to `hashcode` string. \r\n\r\n7. Add the current subset `currentSubset` to `seen` and to the `subsets` list if the generated `hashcode` is not in `seen`.\r\n\r\n8. Return `subsets`.\r\n\r\n**Implementation**\r\n\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/eD5koyZo/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"eD5koyZo\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\nHere $$n$$ is the size of the `nums` array.\r\n\r\n* Time complexity: $$O(n \\cdot 2 ^ n)$$\r\n\r\n    Sorting the `nums` array requires $$n \\log n$$ time. The outer `for` loop runs $$2 ^ n$$ times. The inner loop runs $$n$$ times. We know that average case time complexity for set operations is $$O(1)$$. Although, to generate a hash value for each subset $$O(n)$$ time will be required. However, we are generating the `hashcode` while iterating the inner `for` loop. So the overall time complexity is $$O(n \\log n + 2^n \\cdot (n$$ (for inner loop) + $$n$$ (for stringbuilder to string conversion in Java) $$))$$ = $$O(2 ^ n \\cdot n)$$. \r\n\r\n* Space complexity: $$O(n \\cdot 2^n)$$\r\n\r\n    We need to store at most $$2 ^ n$$ number of subsets in the set, `seen`. The maximum length of any subset can be `n`. \r\n\r\n    The space complexity of the sorting algorithm depends on the implementation of each programming language. For instance, in Java, the Arrays.sort() for primitives is implemented as a variant of quicksort algorithm whose space complexity is $$O(\\log n)$$. In C++ sort() function provided by STL is a hybrid of Quick Sort, Heap Sort and Insertion Sort with the worst case space complexity of $$O(\\log n)$$. Thus the use of inbuilt sort() function adds $$O(\\log n)$$ to space complexity.\r\n\r\n    The space required for the output list is not considered while analyzing space complexity. Thus the overall space complexity in Big O Notation is $$O(n \\cdot 2^n)$$.\r\n\r\n    \r\n\r\n<br/>\r\n\r\n---\r\n\r\n#### Approach 2: Cascading (Iterative)\r\n\r\n**Intuition**\r\n\r\nAssume the given array has no duplicate elements. In this case, there will be a total of $$2 ^ n$$ distinct subsets. To find all the subsets we start with an empty subset. This will be the first subset. Next, we consider one element at a time and add it to each of the existing subsets. This can be better understood in the following animation:\r\n\r\n!?!../Documents/90_SubsetsII_Approach2a.json:960,540!?!\r\n\r\n<br/>\r\n\r\nHowever, in this problem, the given array can have duplicate elements which will produce duplicate subsets if we follow the previously mentioned approach. Thus, we need to omit the duplicate subsets. For this, we need to sort the given array first. To avoid adding duplicate subsets we follow this rule:\r\n\r\n > Whenever the element under consideration has duplicates, we add one of the duplicate elements to all the existing subsets to create new subsets. For the rest of the duplicates, we only add them to the subsets created in the previous step. By convention, whenever a value is encountered for the first time, we add it to all the existing subsets. Then onwards we add its duplicates only to the subsets created in the previous step.\r\n\r\nIn other words, we treat a group of duplicate elements as an array. Suppose we have an array `[3, 3, 3]`. The ways to add the elements from this array to the existing subsets are as follows:\r\n\r\n1. Not add any element having value `3` in any subset.\r\n\r\n2. Add one `3` in all the subsets.\r\n\r\n3. Add two `3` in all the subsets.\r\n\r\n4. Add three `3` in all the subsets.\r\n\r\nThis can be better understood with the following animation:\r\n\r\n!?!../Documents/90_SubsetsII_Approach2b.json:960,540!?!\r\n\r\n<br/>\r\n\r\n**Algorithm**\r\n\r\n1. First, sort the array in ascending order.\r\n\r\n2. Initialize a variable `subsetSize` to 0. `subsetSize` holds the index of the subset in the `subsets` list from where we should start adding the current element if the current element is a duplicate. In other words, it holds the index of the first subset generated in the previous step.\r\n\r\n3. Iterate over the `nums` array considering one element at a time.\r\n\r\n4. If we haven't seen the value of the current element before, we need to add this element to all the previously generated subsets. So set `startingIndex` to 0.\r\n\r\n5. If the current element is a duplicate element, add it only to subsets that were created in the previous iteration. This means we will skip every subset that was created earlier than the previous iteration.  So instead of setting `startingIndex` to 0, set it equal to `subsetSize`.\r\n\r\n6. Set `subsetSize` to the current `subsets` size. This will be the starting index of the subsets generated in this iteration.\r\n\r\n7. Add the current element to all the subsets in the `subsets` list created before the current iteration starting from `startingIndex`.\r\n\r\n8. Return `subsets` list.\r\n\r\n**Implementation**\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/Jwh3w7Pk/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"Jwh3w7Pk\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\nHere $$n$$ is the number of elements present in the given array.\r\n\r\n* Time complexity: $$O(n \\cdot 2 ^ n)$$\r\n\r\n    At first, we need to sort the given array which adds $$O(n \\log n)$$ to the time complexity. Next, we use two for loops to create all possible subsets. In the worst case, i.e., with an array of `n` distinct integers, we will have a total of $$2 ^ n$$ subsets. Thus the two for loops will add $$O(2 ^ n)$$ to time complexity. Also in the inner loop, we deep copy the previously generated subset before adding the current integer (to create a new subset). This in turn requires the time of order $$n$$ as the maximum number of elements in the `currentSubset` will be at most $$n$$. Thus, the time complexity in the subset generation step using two loops is $$O(n \\cdot 2 ^ n)$$. Thereby, the overall time complexity is $$O(n \\log n + n \\cdot 2 ^ n)$$ = $$O(n \\cdot (\\log n + 2 ^ n))$$ ~ $$O(n \\cdot 2 ^ n)$$.\r\n\r\n* Space complexity: $$O(\\log n)$$\r\n    \r\n    The space complexity of the sorting algorithm depends on the implementation of each programming language. For instance, in Java, the Arrays.sort() for primitives is implemented as a variant of quicksort algorithm whose space complexity is $$O(\\log n)$$. In C++ sort() function provided by STL is a hybrid of Quick Sort, Heap Sort and Insertion Sort with the worst case space complexity of $$O(\\log n)$$. Thus the use of inbuilt sort() function adds $$O(\\log n)$$ to space complexity.\r\n\r\n    The space required for the output list is not considered while analyzing space complexity. Thus the overall space complexity in Big O Notation is $$O(\\log n)$$.\r\n\r\n<br/>\r\n\r\n---\r\n\r\n#### Approach 3: Backtracking\r\n\r\n**Intuition**\r\n\r\nIf you're not familiar with backtracking, check out our [Explore Card](https://leetcode.com/explore/learn/card/recursion-ii/472/backtracking/).\r\n\r\nAs demonstrated in the previous approaches, the key to this problem is figuring out how to avoid duplicate subsets. In the previous approach, we discussed an iterative way to do so. Although the iterative approach is optimal in terms of time and space complexity, recursive approaches tend to be more intuitive, so let's see how we can solve this problem recursively.\r\n\r\nWhen designing our recursive function, there are two main points that we need to consider at each function call:\r\n\r\n- Whether the element under consideration has duplicates or not.\r\n- If the element has duplicates, which element among the duplicates should be considered while creating a subset.\r\n\r\nBefore discussing the approach in detail, let's first have a quick look at the recursion tree for better understanding:\r\n\r\n![fig](../Figures/90/90_approach3_1.png)\r\n{:align=\"center\"}\r\n\r\n*The recursion tree illustrating how distinct subsets are created at each function call.Here the numbers in blue indicate the starting position of the nums array where we should start scanning at that function call.*\r\n{:align=\"center\"}\r\n\r\n<br/>\r\n\r\nThe above illustration gives us a rough idea about how we get the solution in a backtracking manner. Note that the order of the subsets in the result is the preorder traversal of the recursion tree. All that is left to do is to code the solution.\r\n\r\nStart with an empty list and the starting index set to 0. At each function call, add a new subset to the output list of subsets. Scan through all the elements in the `nums` array from the starting index (written in blue in the above diagram) to the end. Consider one element at a time and decide whether to keep it or not. If we haven't seen the current element before, then add it to the current list and make a recursive function call with the starting index incremented by one. Otherwise, the subset is a duplicate and so we ignore it. Thus, if in a particular function call we scan through `k` distinct elements, there will be `k` different branches.\r\n\r\n\r\n**Algorithm**\r\n\r\n1. First, sort the array in ascending order.\r\n\r\n2. Use a recursive helper function `subsetsWithDupHelper` to generate all possible subsets. The `subsetsWithDupHelper` has the following parameters:\r\n\r\n    - Output list of subsets (`subsets`).\r\n    - Current subset (`currentSubset`).\r\n    - `nums` array.\r\n    - the index in the `nums` array from where we should start scanning elements at that function call (`index`).\r\n\r\n3. At each recursive function call:\r\n\r\n    - Add the `currentSubset` to the `subsets` list.\r\n    - Iterate over the `nums` array from `index` to the array end.\r\n\r\n        - If the element is considered for the first time in that function call, add it to the `currentSubset` list. Make a function call to `subsetsWithDupHelper` with `index = current element position + 1`.\r\n        - Otherwise, the element is a duplicate. So we skip it as it will generate duplicate subsets (refer to the figure above).\r\n        - While backtracking, remove the last added element from the `currentSubset` and continue the iteration.\r\n\r\n4. Return `subsets` list.\r\n\r\n**Implementation**\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/VnoSqgnm/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"VnoSqgnm\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\nHere $$n$$ is the number of elements present in the given array.\r\n\r\n* Time complexity: $$O(n \\cdot 2 ^ n)$$\r\n\r\n    As we can see in the diagram above, this approach does not generate any duplicate subsets. Thus, in the worst case (array consists of $$n$$ distinct elements), the total number of recursive function calls will be $$2 ^ n$$. Also, at each function call, a deep copy of the subset `currentSubset` generated so far is created and added to the `subsets` list. This will incur an additional $$O(n)$$ time (as the maximum number of elements in the `currentSubset` will be $$n$$). So overall, the time complexity of this approach will be $$O(n \\cdot 2 ^ n)$$.\r\n\r\n* Space complexity: $$O(n)$$\r\n    \r\n    The space complexity of the sorting algorithm depends on the implementation of each programming language. For instance, in Java, the Arrays.sort() for primitives is implemented as a variant of quicksort algorithm whose space complexity is $$O(\\log n)$$. In C++ sort() function provided by STL is a hybrid of Quick Sort, Heap Sort and Insertion Sort with the worst case space complexity of $$O(\\log n)$$. Thus the use of inbuilt sort() function adds $$O(\\log n)$$ to space complexity.\r\n\r\n    The recursion call stack occupies at most $$O(n)$$ space. The output list of subsets is not considered while analyzing space complexity. So, the space complexity of this approach is $$O(n)$$.\r\n<br/>\r\n\r\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1157",
+            "count": 45,
+            "average": "4.911",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "subsets-ii",
+    "playgroundData": {
+        "eD5koyZo": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "subsets-ii-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "Jwh3w7Pk": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "subsets-ii-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "VnoSqgnm": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "subsets-ii-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

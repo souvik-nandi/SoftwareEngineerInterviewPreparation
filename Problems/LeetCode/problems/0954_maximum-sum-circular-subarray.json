@@ -1,0 +1,313 @@
+{
+    "id": "954",
+    "question": {
+        "questionId": "954",
+        "questionFrontendId": "918",
+        "boundTopicId": null,
+        "title": "Maximum Sum Circular Subarray",
+        "titleSlug": "maximum-sum-circular-subarray",
+        "content": "<p>Given a <strong>circular integer array</strong> <code>nums</code> of length <code>n</code>, return <em>the maximum possible sum of a non-empty <strong>subarray</strong> of </em><code>nums</code>.</p>\n\n<p>A <strong>circular array</strong> means the end of the array connects to the beginning of the array. Formally, the next element of <code>nums[i]</code> is <code>nums[(i + 1) % n]</code> and the previous element of <code>nums[i]</code> is <code>nums[(i - 1 + n) % n]</code>.</p>\n\n<p>A <strong>subarray</strong> may only include each element of the fixed buffer <code>nums</code> at most once. Formally, for a subarray <code>nums[i], nums[i + 1], ..., nums[j]</code>, there does not exist <code>i &lt;= k1</code>, <code>k2 &lt;= j</code> with <code>k1 % n == k2 % n</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,-2,3,-2]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> Subarray [3] has maximum sum 3.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [5,-3,5]\n<strong>Output:</strong> 10\n<strong>Explanation:</strong> Subarray [5,5] has maximum sum 5 + 5 = 10.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [-3,-2,-3]\n<strong>Output:</strong> -2\n<strong>Explanation:</strong> Subarray [-2] has maximum sum -2.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == nums.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>-3 * 10<sup>4</sup> &lt;= nums[i] &lt;= 3 * 10<sup>4</sup></code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 3437,
+        "dislikes": 152,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "[1,-2,3,-2]\n[5,-3,5]\n[-3,-2,-3]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Divide and Conquer",
+                "slug": "divide-and-conquer",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Queue",
+                "slug": "queue",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Monotonic Queue",
+                "slug": "monotonic-queue",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Two Sigma\", \"slug\": \"two-sigma\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Infosys\", \"slug\": \"infosys\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int maxSubarraySumCircular(vector<int>& nums) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int maxSubarraySumCircular(int[] nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def maxSubarraySumCircular(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def maxSubarraySumCircular(self, nums: List[int]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint maxSubarraySumCircular(int* nums, int numsSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int MaxSubarraySumCircular(int[] nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxSubarraySumCircular = function(nums) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef max_subarray_sum_circular(nums)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func maxSubarraySumCircular(_ nums: [Int]) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func maxSubarraySumCircular(nums []int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def maxSubarraySumCircular(nums: Array[Int]): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun maxSubarraySumCircular(nums: IntArray): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn max_subarray_sum_circular(nums: Vec<i32>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function maxSubarraySumCircular($nums) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function maxSubarraySumCircular(nums: number[]): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (max-subarray-sum-circular nums)\n  (-> (listof exact-integer?) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec max_subarray_sum_circular(Nums :: [integer()]) -> integer().\nmax_subarray_sum_circular(Nums) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec max_subarray_sum_circular(nums :: [integer]) :: integer\n  def max_subarray_sum_circular(nums) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"126.5K\", \"totalSubmission\": \"336.5K\", \"totalAcceptedRaw\": 126527, \"totalSubmissionRaw\": 336530, \"acRate\": \"37.6%\"}",
+        "hints": [
+            "For those of you who are familiar with the <b>Kadane's algorithm</b>, think in terms of that. For the newbies, Kadane's algorithm is used to finding the maximum sum subarray from a given array. This problem is a twist on that idea and it is advisable to read up on that algorithm first before starting this problem. Unless you already have a great algorithm brewing up in your mind in which case, go right ahead!",
+            "What is an alternate way of representing a circular array so that it appears to be a straight array?\r\nEssentially, there are two cases of this problem that we need to take care of. Let's look at the figure below to understand those two cases:\r\n\r\n<br>\r\n<img src=\"https://assets.leetcode.com/uploads/2019/10/20/circular_subarray_hint_1.png\" width=\"700\"/>",
+            "The first case can be handled by the good old Kadane's algorithm. However, is there a smarter way of going about handling the second case as well?"
+        ],
+        "solution": {
+            "id": "582",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[1,-2,3,-2]",
+        "metaData": "{\n  \"name\": \"maxSubarraySumCircular\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "582",
+        "content": "[TOC]\n\n## Solution\n---\n#### Notes and A Primer on Kadane's Algorithm\n\n**About the Approaches**\n\nIn both Approach 1 and Approach 2, \"grindy\" solutions are presented that require less insight, but may be more intuitive to those with a solid grasp of the techniques in those approaches.  Without prior experience, these approaches would be very challenging to emulate.\n\nApproaches 3 and 4 are much easier to implement, but require some insight.\n\n**Explanation of Kadane's Algorithm**\n\nTo understand the solutions in this article, we need some familiarity with Kadane's algorithm.  In this section, we will explain the core idea behind it.\n\nFor a given array `A`, Kadane's algorithm can be used to find the maximum sum of the subarrays of `A`.  Here, we only consider non-empty subarrays.\n\nKadane's algorithm is based on dynamic programming.  Let `dp[j]` be the maximum sum of a subarray that ends in `A[j]`.  That is,\n\n$$\n\\text{dp}[j] = \\max\\limits_i (A[i] + A[i+1] + \\cdots + A[j])\n$$\n\nThen, a subarray ending in `j+1` (such as `A[i], A[i+1] + ... + A[j+1]`) maximizes the `A[i] + ... + A[j]` part of the sum by being equal to `dp[j]` if it is non-empty, and `0` if it is.  Thus, we have the recurrence:\n\n$$\n\\text{dp}[j+1] = A[j+1] + \\max(\\text{dp}[j], 0)\n$$\n\nSince a subarray must end somewhere, $$\\max\\limits_j dp[j]$$ must be the desired answer.\n\nTo compute `dp` efficiently, Kadane's algorithm is usually written in the form that reduces space complexity.  We maintain two variables: `ans` as $$\\max\\limits_j dp[j]$$, and `cur` as $$dp[j]$$; and update them as $$j$$ iterates from $$0$$ to $$A\\text{.length} - 1$$.\n\nThen, Kadane's algorithm is given by the following psuedocode:\n\n```python\n#Kadane's algorithm\nans = cur = None\nfor x in A:\n    cur = x + max(cur, 0)\n    ans = max(ans, cur)\nreturn ans\n```\n\n\n---\n#### Approach 1: Next Array\n\n**Intuition and Algorithm**\n\nSubarrays of circular arrays can be classified as either as *one-interval* subarrays, or *two-interval* subarrays, depending on how many intervals of the fixed-size buffer `A` are required to represent them.\n\nFor example, if `A = [0, 1, 2, 3, 4, 5, 6]` is the underlying buffer of our circular array, we could represent the subarray `[2, 3, 4]` as one interval $$[2, 4]$$, but we would represent the subarray `[5, 6, 0, 1]` as two intervals $$[5, 6], [0, 1]$$.\n\nUsing Kadane's algorithm, we know how to get the maximum of *one-interval* subarrays, so it only remains to consider *two-interval* subarrays.\n\nLet's say the intervals are $$[0, i], [j, A\\text{.length} - 1]$$.  Let's try to compute the *i-th candidate*: the largest possible sum of a two-interval subarray for a given $$i$$.  Computing the $$[0, i]$$ part of the sum is easy.  Let's write\n\n$$\nT_j = A[j] + A[j+1] + \\cdots + A[A\\text{.length} - 1]\n$$\n\nand\n\n$$\nR_j = \\max\\limits_{k \\geq j} T_k\n$$\n\nso that the desired i-th candidate is:\n\n$$\n(A[0] + A[1] + \\cdots + A[i]) + R_{i+2}\n$$\n\nSince we can compute $$T_j$$ and $$R_j$$ in linear time, the answer is straightforward after this setup.\n\n\n<iframe src=\"https://leetcode.com/playground/DV8tjzhK/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"DV8tjzhK\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n#### Approach 2: Prefix Sums + Monoqueue\n\n**Intuition**\n\nFirst, we can frame the problem as a problem on a fixed array.\n\nWe can consider any subarray of the circular array with buffer `A`, to be a subarray of the fixed array `A+A`.\n\nFor example, if `A = [0,1,2,3,4,5]` represents a circular array, then the subarray `[4,5,0,1]` is also a subarray of fixed array `[0,1,2,3,4,5,0,1,2,3,4,5]`.  Let `B = A+A` be this fixed array.\n\nNow say $$N = A\\text{.length}$$, and consider the prefix sums\n\n$$\nP_k = B[0] + B[1] + \\cdots + B[k-1]\n$$\n\nThen, we want the largest $$P_j - P_i$$ where $$j - i \\leq N$$.\n\nNow, consider the j-th candidate answer: the best possible $$P_j - P_i$$ for a fixed $$j$$.  We want the $$i$$ so that $$P_i$$ is smallest, with $$j - N \\leq i < j$$.  Let's call this the *optimal i for the j-th candidate answer*.  We can use a monoqueue to manage this.\n\n**Algorithm**\n\nIterate forwards through $$j$$, computing the $$j$$-th candidate answer at each step.  We'll maintain a `queue` of potentially optimal $$i$$'s.\n\nThe main idea is that if $$i_1 < i_2$$ and $$P_{i_1} \\geq P_{i_2}$$, then we don't need to remember $$i_1$$ anymore.\n\nPlease see the inline comments for more algorithmic details about managing the queue.\n\n<iframe src=\"https://leetcode.com/playground/ajLNUis6/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ajLNUis6\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n#### Approach 3: Kadane's (Sign Variant)\n\n**Intuition and Algorithm**\n\nAs in Approach 1, subarrays of circular arrays can be classified as either as *one-interval* subarrays, or *two-interval* subarrays.\n\nUsing Kadane's algorithm `kadane` for finding the maximum sum of non-empty subarrays, the answer for one-interval subarrays is `kadane(A)`.\n\nNow, let $$N = A\\text{.length}$$.  For a two-interval subarray like:\n\n$$\n(A_0 + A_1 + \\cdots + A_i) + (A_j + A_{j+1} + \\cdots + A_{N - 1})\n$$\n\nwe can write this as\n\n$$\n(\\sum_{k=0}^{N-1} A_k) - (A_{i+1} + A_{i+2} + \\cdots + A_{j-1})\n$$\n\nFor two-interval subarrays, let $$B$$ be the array $$A$$ with each element multiplied by $$-1$$.  Then the answer for two-interval subarrays is $$\\text{sum}(A) + \\text{kadane}(B)$$.\n\nExcept, this isn't quite true, as if the subarray of $$B$$ we choose is the entire array, the resulting two interval subarray $$[0, i] + [j, N-1]$$ would be empty.\n\nWe can remedy this problem by doing Kadane twice: once on $$B$$ with the first element removed, and once on $$B$$ with the last element removed.\n\n<iframe src=\"https://leetcode.com/playground/jSKgXbMS/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"jSKgXbMS\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(1)$$ in additional space complexity.\n<br />\n<br />\n\n\n---\n#### Approach 4: Kadane's (Min Variant)\n\n**Intuition and Algorithm**\n\nAs in Approach 3, subarrays of circular arrays can be classified as either as *one-interval* subarrays (which we can use Kadane's algorithm), or *two-interval* subarrays.\n\nWe can modify Kadane's algorithm to use `min` instead of `max`.  All the math in our explanation of Kadane's algorithm remains the same, but the algorithm lets us find the minimum sum of a subarray instead.\n\nFor a two interval subarray written as $$(\\sum_{k=0}^{N-1} A_k) - (\\sum_{k=i+1}^{j-1} A_k)$$, we can use our `kadane-min` algorithm to minimize the \"interior\" $$(\\sum_{k=i+1}^{j-1} A_k)$$ part of the sum.\n\nAgain, because the interior $$[i+1, j-1]$$ must be non-empty, we can break up our search into a search on `A[1:]` and on `A[:-1]`.\n\n<iframe src=\"https://leetcode.com/playground/kiMiz9U8/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"kiMiz9U8\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(1)$$ in additional space complexity.\n<br />\n<br />",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "570",
+            "count": 478,
+            "average": "2.477",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "maximum-sum-circular-subarray",
+    "playgroundData": {
+        "DV8tjzhK": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-sub-circular-subarray-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "ajLNUis6": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-sub-circular-subarray-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "jSKgXbMS": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-sub-circular-subarray-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "kiMiz9U8": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-sub-circular-subarray-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

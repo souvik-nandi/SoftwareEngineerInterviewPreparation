@@ -1,0 +1,86 @@
+{
+    "id": "2097",
+    "question": {
+        "questionId": "2097",
+        "questionFrontendId": "1949",
+        "boundTopicId": null,
+        "title": "Strong Friendship",
+        "titleSlug": "strong-friendship",
+        "content": "<p>Table: <code>Friendship</code></p>\n\n<pre>\n+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| user1_id    | int  |\n| user2_id    | int  |\n+-------------+------+\n(user1_id, user2_id) is the primary key for this table.\nEach row of this table indicates that the users user1_id and user2_id are friends.\nNote that user1_id &lt; user2_id.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>A friendship between a pair of friends <code>x</code> and <code>y</code> is <strong>strong</strong> if <code>x</code> and <code>y</code> have <strong>at least three</strong> common friends.</p>\n\n<p>Write an SQL query to find all the <strong>strong friendships</strong>.</p>\n\n<p>Note that the result table should not contain duplicates with <code>user1_id &lt; user2_id</code>.</p>\n\n<p>Return the result table in <strong>any order</strong>.</p>\n\n<p>The query result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nFriendship table:\n+----------+----------+\n| user1_id | user2_id |\n+----------+----------+\n| 1        | 2        |\n| 1        | 3        |\n| 2        | 3        |\n| 1        | 4        |\n| 2        | 4        |\n| 1        | 5        |\n| 2        | 5        |\n| 1        | 7        |\n| 3        | 7        |\n| 1        | 6        |\n| 3        | 6        |\n| 2        | 6        |\n+----------+----------+\n<strong>Output:</strong> \n+----------+----------+---------------+\n| user1_id | user2_id | common_friend |\n+----------+----------+---------------+\n| 1        | 2        | 4             |\n| 1        | 3        | 3             |\n+----------+----------+---------------+\n<strong>Explanation:</strong> \nUsers 1 and 2 have 4 common friends (3, 4, 5, and 6).\nUsers 1 and 3 have 3 common friends (2, 6, and 7).\nWe did not include the friendship of users 2 and 3 because they only have two common friends (1 and 6).\n</pre>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Medium",
+        "likes": 86,
+        "dislikes": 43,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Page Recommendations\", \"titleSlug\": \"page-recommendations\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Page Recommendations II\", \"titleSlug\": \"page-recommendations-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Leetcodify Friends Recommendations\", \"titleSlug\": \"leetcodify-friends-recommendations\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "exampleTestcases": "{\"headers\":{\"Friendship\":[\"user1_id\",\"user2_id\"]},\"rows\":{\"Friendship\":[[1,2],[1,3],[2,3],[1,4],[2,4],[1,5],[2,5],[1,7],[3,7],[1,6],[3,6],[2,6]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "# Write your MySQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "/* Write your T-SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "/* Write your PL/SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"5.9K\", \"totalSubmission\": \"10.1K\", \"totalAcceptedRaw\": 5925, \"totalSubmissionRaw\": 10061, \"acRate\": \"58.9%\"}",
+        "hints": [],
+        "solution": null,
+        "status": null,
+        "sampleTestCase": "{\"headers\":{\"Friendship\":[\"user1_id\",\"user2_id\"]},\"rows\":{\"Friendship\":[[1,2],[1,3],[2,3],[1,4],[2,4],[1,5],[2,5],[1,7],[3,7],[1,6],[3,6],[2,6]]}}",
+        "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Friendship (user1_id int, user2_id int)\"\n  ],\n  \"mssql\": [\n    \"Create table Friendship (user1_id int, user2_id int)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Friendship (user1_id int, user2_id int)\"\n  ],\n  \"database\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists Friendship (user1_id int, user2_id int)",
+            "Truncate table Friendship",
+            "insert into Friendship (user1_id, user2_id) values ('1', '2')",
+            "insert into Friendship (user1_id, user2_id) values ('1', '3')",
+            "insert into Friendship (user1_id, user2_id) values ('2', '3')",
+            "insert into Friendship (user1_id, user2_id) values ('1', '4')",
+            "insert into Friendship (user1_id, user2_id) values ('2', '4')",
+            "insert into Friendship (user1_id, user2_id) values ('1', '5')",
+            "insert into Friendship (user1_id, user2_id) values ('2', '5')",
+            "insert into Friendship (user1_id, user2_id) values ('1', '7')",
+            "insert into Friendship (user1_id, user2_id) values ('3', '7')",
+            "insert into Friendship (user1_id, user2_id) values ('1', '6')",
+            "insert into Friendship (user1_id, user2_id) values ('3', '6')",
+            "insert into Friendship (user1_id, user2_id) values ('2', '6')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": null,
+    "questionCode": "strong-friendship",
+    "playgroundData": null
+}

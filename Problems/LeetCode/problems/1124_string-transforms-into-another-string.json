@@ -1,0 +1,205 @@
+{
+    "id": "1124",
+    "question": {
+        "questionId": "1124",
+        "questionFrontendId": "1153",
+        "boundTopicId": null,
+        "title": "String Transforms Into Another String",
+        "titleSlug": "string-transforms-into-another-string",
+        "content": "<p>Given two strings <code>str1</code> and <code>str2</code> of the same length, determine whether you can transform <code>str1</code> into <code>str2</code> by doing <strong>zero or more</strong> <em>conversions</em>.</p>\n\n<p>In one conversion you can convert <strong>all</strong> occurrences of one character in <code>str1</code> to <strong>any</strong> other lowercase English character.</p>\n\n<p>Return <code>true</code> if and only if you can transform <code>str1</code> into <code>str2</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> str1 = &quot;aabcc&quot;, str2 = &quot;ccdee&quot;\n<strong>Output:</strong> true\n<strong>Explanation: </strong>Convert &#39;c&#39; to &#39;e&#39; then &#39;b&#39; to &#39;d&#39; then &#39;a&#39; to &#39;c&#39;. Note that the order of conversions matter.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> str1 = &quot;leetcode&quot;, str2 = &quot;codeleet&quot;\n<strong>Output:</strong> false\n<strong>Explanation: </strong>There is no way to transform str1 to str2.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= str1.length == str2.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>str1</code> and <code>str2</code> contain only lowercase English letters.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Hard",
+        "likes": 817,
+        "dislikes": 316,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "\"aabcc\"\n\"ccdee\"\n\"leetcode\"\n\"codeleet\"",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 5}], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    bool canConvert(string str1, string str2) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public boolean canConvert(String str1, String str2) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def canConvert(self, str1, str2):\n        \"\"\"\n        :type str1: str\n        :type str2: str\n        :rtype: bool\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def canConvert(self, str1: str, str2: str) -> bool:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nbool canConvert(char * str1, char * str2){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public bool CanConvert(string str1, string str2) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} str1\n * @param {string} str2\n * @return {boolean}\n */\nvar canConvert = function(str1, str2) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} str1\n# @param {String} str2\n# @return {Boolean}\ndef can_convert(str1, str2)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func canConvert(_ str1: String, _ str2: String) -> Bool {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func canConvert(str1 string, str2 string) bool {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def canConvert(str1: String, str2: String): Boolean = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun canConvert(str1: String, str2: String): Boolean {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn can_convert(str1: String, str2: String) -> bool {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $str1\n     * @param String $str2\n     * @return Boolean\n     */\n    function canConvert($str1, $str2) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function canConvert(str1: string, str2: string): boolean {\n\n};",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"48.6K\", \"totalSubmission\": \"137.5K\", \"totalAcceptedRaw\": 48650, \"totalSubmissionRaw\": 137494, \"acRate\": \"35.4%\"}",
+        "hints": [
+            "Model the problem as a graph problem. Add an edge from one character to another if you need to convert between them.",
+            "What if one character needs to be converted into more than one character?",
+            "There would be no solution. Thus, every node can have at most one outgoing edge.",
+            "How to process a linked list?",
+            "How to process a cycle?",
+            "What if there is a character with no outgoing edge? You can use it to break all cycles!"
+        ],
+        "solution": {
+            "id": "1288",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "\"aabcc\"\n\"ccdee\"",
+        "metaData": "{\n  \"name\": \"canConvert\",\n  \"params\": [\n    {\n      \"name\": \"str1\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"str2\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1288",
+        "content": "[TOC]\n\n## Solution\n\n--- \n#### Approach 1: Greedy + Hashing\n\n**Intuition**\n\nWe want to convert the string `str1` to `str2` with the help of some conversions. We can convert all occurrences of a character in `str1` to any other lowercase English character in a single conversion. Both strings `str1` and `str2` contain only lowercase English letters. \n\nLet's walk through some examples to better understand the problem statement and the solution.\n\nWe will cover all of the scenarios that may arise and discuss for which scenarios a valid transformation exists. We can then use the findings from these examples to create rules that will help us determine if `str1` can be transformed into `str2` for any possible combination of `str1` and `str2`.\n\n* *Example 1: One to One Mapping*\n\n  In the first example, let's take two simple strings both have different characters, and each character from `str1` is mapped to another character in `str2`.\n\n  ![fig](../Figures/1153/1153A.png)\n  \n  In the above example, with the help of four conversions (`a` to `p`, `b` to `q`, `c` to `r` and `d` to `s`) we are able to convert `str1` (\"abcd\") to `str2` (\"pqrs\"). Hence, the answer is true.\n    \n* *Example 2: One to Many Mapping*\n\n  What if the characters in `str1` are not different and one of the same characters in `str1` is mapped to another character in `str2`.\n  \n  ![fig](../Figures/1153/1153B.png)\n  \n  In the above example, we have two possible ways to convert character `c` - either into `r` or `s`. If we follow the first conversion option, i.e., `c` to `r`, meaning all `c`s will become `r`s; thus, we can no longer convert `c` to `s`. \n\n  Similarly, if we operate the second conversion (`c` to `s`), we no longer can convert `c` to `r`. Thus, these two conversions cannot take place simultaneously. Hence, the answer is false. \n\n  From this example, we understand that the conversion is impossible if a character in string `str1` is mapped to two or more characters in `str2`.\n\n* *Example 3: Linked List*\n  \n  The following example is slightly different as we get to deal with overlapping mappings.\n\n  ![fig](../Figures/1153/1153C.png)\n  \n  In the above example, we have five possible conversion mappings. The mappings form a linked list with every connection denoting a conversion. However, as shown above, we cannot convert `str1` to `str2` if we convert from left to right in the linked list. The reason is, every time we do a conversion, the resultant letter gets converted to another character as per the subsequent conversion mapping. Therefore, we must convert each character in `str1` to a character that a subsequent conversion won't eventually use.\n\n  From this example, we can conclude, if the conversion mappings form a linked list, we can convert the string `str1` to `str2` by making the conversions in the reverse order of the linked list.\n\n* *Example 4: Cyclic Linked List*\n\n  The LinkedList in the previous example could be circular as well. The following example demonstrates this scenario.\n\n  ![fig](../Figures/1153/1153D.png)\n  \n  In the above example, the three conversion mappings (`a` to `c`, `c` to `b` and `b` to `a`) form a cyclic linked list which prevents us from being able to convert `str1` to `str2` regardless of the order of doing the conversions (from right to left, or left to right). The reason is that there is no such character that is not on the left-hand side of any conversion mapping, which violates the conclusion we have from example 3. So, for example, when we convert `b` to `a` we convert all occurrences of `b` in `str1` to `a`, but when we convert `a` to `c`, we change all the `a`s in `str1` including the ones previously converted from `b` using the first conversion. So we end up mapping `b` to `c` instead of `b` to `a`.\n  \n  ![fig](../Figures/1153/1153E.png)\n  \n  To tackle this we introduced a new character `z` and instead of directly converting `b` to `a` we first convert `b` to `z` and then `z` to `a`. Now, this helps us to prevent `b` from converting to `c` as we will convert `b` to `z` and then follow the conversions from right to left. In the end, we will convert `z` to `a`.\n\n  We learned from the above example that whenever the conversion mappings make a cyclic linked list, we must have a temporary character to break the loop. The temporary character should not be present in the string `str1`; otherwise, the other instances of that character in the string `str1` will also change.\n\n* *Example 5: Multiple Cyclic Linked Lists*\n  \n  ![fig](../Figures/1153/1153F.png)\n  \n  In the above example, there are two linked list cycles; one includes the conversion mappings (`a` to `c`, `c` to `b` and `b` to `a`), and the other includes (`d` to `e`, `e` to `f` and `f` to `d`). Notice that we can use a **single** temporary character, `z`, to break the loop for both the cycles.\n\n  This example demonstrates that we only need **one** temporary character to break the loops for all the cycles regardless of the number of cycles. Because each loop does not contain any of the same characters as another loop, we can transform the loops one at a time, and hence we can use the same dummy character for all the cycles.\n\n* *Example 6: Cyclic Linked List with $$26$$ Letters*\n  \n  ![fig](../Figures/1153/1153G.png)\n  \n  In the diagram above, the conversion mappings form a cyclic linked list again. In the previous example, we discovered that we can break the loop by introducing a temporary character. But there's a problem. The string `str1` contains all $$26$$ lowercase English letters. So there are no temporary characters for us to choose from. Hence, it is impossible to convert `str1` to `str2`.\n\n  From the above example, it might be tempting to say that it's impossible to convert `str1` to `str2` if `str1` contains every lowercase English letter. But it's not true. So let's go through one last example to get a different perspective about such scenarios.\n\n* *Example 7: Linked List with $$26$$ Letters and One Loop*\n  \n  ![fig](../Figures/1153/1153H.png)\n  \n  In the above example, `str1` has $$26$$ lowercase English letters. But, we can convert it to `str2`. The reason is that the string `str2` has $$25$$ unique letters, implying that two characters from string `str1` map to the same character (`y` and `z` from `str1` map to `z` in `str2`). So, we can follow a greedy approach and convert `y` to `z` or `z` to `y`. The idea is to make these two characters (`y` and `z`) the same since, in the end, both will be converted to `z`.\n\n  From the above example, it is evident that even if the string `str1` has $$26$$ unique characters, it is still possible to convert `str1` to `str2` as long as `str2` has less than $$26$$ characters. Because in that case, there will be multiple characters in `str1` mapped to the same character in `str2`. Hence we can convert all these letters to a single letter, and then there will be less than $$26$$ unique characters in `str1`.\n  \n  Thus, if `str1` has $$26$$ unique characters and `str2` does not, there will always be a way to transform `str1` into `str2`.\n\n**Conclusion**\n\nWe can conclude from the above examples that to be able to convert `str1` to `str2`, the following conditions must be satisfied:\n\n1. No character in `str1` is mapped to multiple characters in `str2`.\n2. If the number of unique characters in `str1` is $$26$$, then either the number of unique letters in `str2` should be strictly less than $$26$$ or `str1` equals `str2`.\n\n> **Note:** If the first condition is satisfied, we don't need to check the number of unique characters in `str1` (as mentioned in the 2nd point). Suppose the number of unique characters in `str1` is `|str1|` and that in `str2` is `|str2|` then it can be proved that `|str1| >= |str2|` is satisfied if there is no one to more mapping from `str1` to `str2`. Because if `|str1| < |str2|` (`length(str1) = length(str2)`) then at least one of the `str1` characters is mapped to two or more characters in `str2`.\n\nTherefore, we can revise the required conditions as follows:\n\n1. No character in `str1` is mapped to multiple characters in `str2`.\n2. The number of unique letters in `str2` should be strictly less than $$26$$ unless `str1` equals `str2`.\n\n**Algorithm**\n\n1. Iterate over string `str1`. \n2. For each character:\n   - If the current character does not exist in the mapping, then store this mapping in `conversionMappings` and also store the corresponding character in `str2` in a HashSet `uniqueCharactersInStr2`.\n   - If the current character exists in the mapping and it is mapped to a different character than the current corresponding character in `str2`, then we can return false.\n3. After iterating over all of the characters, if the HashSet `uniqueCharactersInStr2` contains $$26$$ entries, then return false, otherwise return true.\n\n**Implementation**\n\n\n<iframe src=\"https://leetcode.com/playground/9bSbtYRJ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"9bSbtYRJ\"></iframe>\n\n\n**Complexity Analysis**\n\nHere $$N$$ is the length of string `str1` or `str2` and $$K$$ is the maximum number of distinct characters in `str1` or `str2`.\n\n* Time complexity: $$O(N)$$\n  \n  We iterate over string `str1`. Then, we search or insert a key in a map that is $$O(1)$$ for each character. Also, adding character to HashSet takes $$O(1)$$. Hence the time complexity is $$O(N)$$.\n\n* Space complexity: $$O(K)$$\n\n  The maximum possible number of mappings stored in the map is $$K$$. Additionally, HashSet will contain at most $$K$$ characters. Since the maximum value of $$K$$ is fixed at $$26$$, we could consider the space complexity to be constant for this problem.\n    \n\n<br/>\n\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1293",
+            "count": 22,
+            "average": "4.954",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "string-transforms-into-another-string",
+    "playgroundData": {
+        "9bSbtYRJ": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "string-transforms-into-another-string-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

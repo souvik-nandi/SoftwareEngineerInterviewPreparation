@@ -1,0 +1,272 @@
+{
+    "id": "599",
+    "question": {
+        "questionId": "599",
+        "questionFrontendId": "599",
+        "boundTopicId": null,
+        "title": "Minimum Index Sum of Two Lists",
+        "titleSlug": "minimum-index-sum-of-two-lists",
+        "content": "<p>Suppose Andy and Doris want to choose a restaurant for dinner, and they both have a list of favorite restaurants represented by strings.</p>\n\n<p>You need to help them find out their <b>common interest</b> with the <b>least list index sum</b>. If there is a choice tie between answers, output all of them with no order requirement. You could assume there always exists an answer.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> list1 = [&quot;Shogun&quot;,&quot;Tapioca Express&quot;,&quot;Burger King&quot;,&quot;KFC&quot;], list2 = [&quot;Piatti&quot;,&quot;The Grill at Torrey Pines&quot;,&quot;Hungry Hunter Steakhouse&quot;,&quot;Shogun&quot;]\n<strong>Output:</strong> [&quot;Shogun&quot;]\n<strong>Explanation:</strong> The only restaurant they both like is &quot;Shogun&quot;.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> list1 = [&quot;Shogun&quot;,&quot;Tapioca Express&quot;,&quot;Burger King&quot;,&quot;KFC&quot;], list2 = [&quot;KFC&quot;,&quot;Shogun&quot;,&quot;Burger King&quot;]\n<strong>Output:</strong> [&quot;Shogun&quot;]\n<strong>Explanation:</strong> The restaurant they both like and have the least index sum is &quot;Shogun&quot; with index sum 1 (0+1).\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= list1.length, list2.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= list1[i].length, list2[i].length &lt;= 30</code></li>\n\t<li><code>list1[i]</code> and <code>list2[i]</code> consist of spaces <code>&#39; &#39;</code> and English letters.</li>\n\t<li>All the stings of <code>list1</code> are <strong>unique</strong>.</li>\n\t<li>All the stings of <code>list2</code>&nbsp;are <strong>unique</strong>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 1336,
+        "dislikes": 337,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Intersection of Two Linked Lists\", \"titleSlug\": \"intersection-of-two-linked-lists\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]\n[\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"]\n[\"KFC\",\"Shogun\",\"Burger King\"]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<string> findRestaurant(vector<string>& list1, vector<string>& list2) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public String[] findRestaurant(String[] list1, String[] list2) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def findRestaurant(self, list1, list2):\n        \"\"\"\n        :type list1: List[str]\n        :type list2: List[str]\n        :rtype: List[str]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def findRestaurant(self, list1: List[str], list2: List[str]) -> List[str]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** findRestaurant(char ** list1, int list1Size, char ** list2, int list2Size, int* returnSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public string[] FindRestaurant(string[] list1, string[] list2) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string[]} list1\n * @param {string[]} list2\n * @return {string[]}\n */\nvar findRestaurant = function(list1, list2) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String[]} list1\n# @param {String[]} list2\n# @return {String[]}\ndef find_restaurant(list1, list2)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func findRestaurant(_ list1: [String], _ list2: [String]) -> [String] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func findRestaurant(list1 []string, list2 []string) []string {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def findRestaurant(list1: Array[String], list2: Array[String]): Array[String] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun findRestaurant(list1: Array<String>, list2: Array<String>): Array<String> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn find_restaurant(list1: Vec<String>, list2: Vec<String>) -> Vec<String> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String[] $list1\n     * @param String[] $list2\n     * @return String[]\n     */\n    function findRestaurant($list1, $list2) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function findRestaurant(list1: string[], list2: string[]): string[] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (find-restaurant list1 list2)\n  (-> (listof string?) (listof string?) (listof string?))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec find_restaurant(List1 :: [unicode:unicode_binary()], List2 :: [unicode:unicode_binary()]) -> [unicode:unicode_binary()].\nfind_restaurant(List1, List2) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec find_restaurant(list1 :: [String.t], list2 :: [String.t]) :: [String.t]\n  def find_restaurant(list1, list2) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"159.3K\", \"totalSubmission\": \"302.7K\", \"totalAcceptedRaw\": 159310, \"totalSubmissionRaw\": 302696, \"acRate\": \"52.6%\"}",
+        "hints": [],
+        "solution": {
+            "id": "147",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+        "metaData": "{\r\n  \"name\": \"findRestaurant\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"list1\",\r\n      \"type\": \"string[]\"\r\n    },\r\n    {\r\n      \"name\": \"list2\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string[]\"\r\n  }\r\n}\r\n",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "147",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Using HashMap [Accepted]\n\nIn this approach, we compare every string in $$list1$$ and $$list2$$ by traversing over the whole list $$list2$$ for every string chosen from $$list1$$. We make use of a hashmap $$map$$, which contains elements of the form $$(sum : list_{sum})$$. Here, $$sum$$ refers to the sum of indices of matching elements and $$list_{sum}$$ refers to the list of matching strings whose indices' sum equals $$sum$$. \n\nThus, while doing the comparisons, whenever a match between a string at $$i^{th}$$ index of $$list1$$ and $$j^{th}$$ index of $$list2$$ is found, we make an entry in the $$map$$ corresponding to the sum $$i + j$$, if this entry isn't already present. If an entry with this sum already exists, we need to keep a track of all the strings which lead to the same index sum. Thus, we append the current string to the list of strings corresponding to sum $$i + j$$.\n\nAt the end, we traverse over the keys of the $$map$$ and find out the list of strings corresponding to the key reprsenting the minimum sum.\n\n<iframe src=\"https://leetcode.com/playground/Rxg7wbHW/shared\" frameBorder=\"0\" name=\"Rxg7wbHW\" width=\"100%\" height=\"394\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(l_1*l_2*x)$$. Every item of $$list1$$ is compared with all the items of $$list2$$. $$l_1$$ and $$l_2$$ are the lengths of $$list1$$ and $$list2$$ respectively. And $$x$$ refers to average string length.\n\n* Space complexity : $$O(l_1*l_2*x)$$. In worst case all items of $$list1$$ and $$list2$$ are same. In that case, hashmap size grows upto $$l_1*l_2*x$$, where $$x$$ refers to average string length.\n\n---\n#### Approach #2 Without Using HashMap [Accepted]\n\n**Algorithm**\n\nAnother method could be to traverse over the various $$sum$$(index sum) values and determine if any such string exists in $$list1$$ and $$list2$$ such that the sum of its indices in the two lists equals $$sum$$. \n\nNow, we know that the value of index sum, $$sum$$ could range from 0 to $$m + n - 1$$. Here, $$m$$ and $$n$$ refer to the length of lists $$list1$$ and $$list2$$ respectively. Thus, we choose every value of $$sum$$ in ascending order. For every $$sum$$ chosen, we iterate over $$list1$$. Suppose, currently the string at $$i^{th}$$ index in $$list1$$ is being considered. Now, in order for the index sum $$sum$$ to be the one corresponding to matching strings in $$list1$$ and $$list2$$, the string at index $$j$$ in $$list2$$ should match the string at index $$i$$ in $$list1$$, such that $$sum = i + j$$.\n\nOr, stating in other terms, the string at index $$j$$ in $$list2$$ should be equal to the string at index $$i$$ in $$list1$$, such that $$j = sum - i$$. Thus, for a particular $$sum$$ and $$i$$(from $$list1$$), we can directly determine that we need to check the element at index $$ j= sum - i$$ in $$list2$$, instead of traversing over the whole $$list2$$. \n\nDoing such checks/comparisons, iterate over all the indices of $$list1$$ for every $$sum$$ value chosen. Whenver a match occurs between $$list1$$ and $$list2$$, we put the matching string in a list $$res$$. \n\nWe do the same process of checking the strings for all the  values of $$sum$$ in ascending order. After completing every iteration over $$list1$$ for a particular $$sum$$, we check if the $$res$$ list is empty or not. If it is empty, we need to continue the process with the next $$sum$$ value considered. If not, the current $$res$$ gives the required list with minimum index sum. This is because we are already considering the index sum values in ascending order. So, the first list to be found is the required resultant list.\n\nThe following example depicts the process:\n\n!?!../Documents/599_Min_Index_Sum.json:1000,563!?!\n\n<iframe src=\"https://leetcode.com/playground/HhLorCYq/shared\" frameBorder=\"0\" name=\"HhLorCYq\" width=\"100%\" height=\"309\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O((l_1+l_2)^2*x)$$. There are two nested loops upto $$l_1+l_2$$ and string comparison takes $$x$$ time. Here, $$x$$ refers to the average string length.\n\n* Space complexity : $$O(r*x)$$. $$res$$ list is used to store the result. Assuming $$r$$ is the length of $$res$$.\n\n---\n#### Approach #3 Using HashMap (linear) [Accepted]\n\nWe make use of a HashMap to solve the given problem in a different way in this approach. Firstly, we traverse over the whole $$list1$$ and create an entry for each element of $$list1$$ in a HashMap $$map$$, of the form $$(list[i], i)$$. Here, $$i$$ refers to the index of the $$i^{th}$$ element, and $$list[i]$$ is the $$i^{th}$$ element itself. Thus, we create a mapping from the elements of $$list1$$ to their indices.\n\nNow, we traverse over $$list2$$. For every element ,$$list2[j]$$, of $$list2$$ encountered, we check if the same element already exists as a key in the $$map$$. If so, it means that the element exists in both $$list1$$ and $$list2$$. Thus, we find out the sum of indices corresponding to this element in the two lists, given by $$sum = map.get(list[j]) + j$$. If this $$sum$$ is lesser than the minimum sum  obtained till now, we update the resultant list to be returned, $$res$$, with the element $$list2[j]$$ as the only entry in it. \n\nIf the $$sum$$ is equal to the minimum sum obtained till now, we put an extra entry corresponding to the element $$list2[j]$$ in the $$res$$ list.\n\nBelow code is inspired by [@cloud.runner](http://leetcode.com/cloud.runner)\n\n<iframe src=\"https://leetcode.com/playground/FatTyfy6/shared\" frameBorder=\"0\" name=\"FatTyfy6\" width=\"100%\" height=\"411\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(l_1+l_2)$$. Every item of $$list2$$ is checked in a map of $$list1$$. $$l_1$$ and $$l_2$$ are the lengths of $$list1$$ and $$list2$$ respectively.\n\n* Space complexity : $$O(l_1*x)$$. hashmap size grows upto $$l_1*x$$, where $$x$$ refers to average string length.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "142",
+            "count": 31,
+            "average": "4.226",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "minimum-index-sum-of-two-lists",
+    "playgroundData": {
+        "Rxg7wbHW": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "599_minimum_index_summd3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "HhLorCYq": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "599_minimum_index_summd2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "FatTyfy6": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "599_minimum_index_summd1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

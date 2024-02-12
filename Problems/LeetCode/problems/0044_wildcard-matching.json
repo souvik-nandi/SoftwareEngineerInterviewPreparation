@@ -1,0 +1,278 @@
+{
+    "id": "44",
+    "question": {
+        "questionId": "44",
+        "questionFrontendId": "44",
+        "boundTopicId": null,
+        "title": "Wildcard Matching",
+        "titleSlug": "wildcard-matching",
+        "content": "<p>Given an input string (<code>s</code>) and a pattern (<code>p</code>), implement wildcard pattern matching with support for <code>&#39;?&#39;</code> and <code>&#39;*&#39;</code> where:</p>\n\n<ul>\n\t<li><code>&#39;?&#39;</code> Matches any single character.</li>\n\t<li><code>&#39;*&#39;</code> Matches any sequence of characters (including the empty sequence).</li>\n</ul>\n\n<p>The matching should cover the <strong>entire</strong> input string (not partial).</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aa&quot;, p = &quot;a&quot;\n<strong>Output:</strong> false\n<strong>Explanation:</strong> &quot;a&quot; does not match the entire string &quot;aa&quot;.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aa&quot;, p = &quot;*&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong>&nbsp;&#39;*&#39; matches any sequence.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;cb&quot;, p = &quot;?a&quot;\n<strong>Output:</strong> false\n<strong>Explanation:</strong>&nbsp;&#39;?&#39; matches &#39;c&#39;, but the second letter is &#39;a&#39;, which does not match &#39;b&#39;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= s.length, p.length &lt;= 2000</code></li>\n\t<li><code>s</code> contains only lowercase English letters.</li>\n\t<li><code>p</code> contains only lowercase English letters, <code>&#39;?&#39;</code> or <code>&#39;*&#39;</code>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 5149,
+        "dislikes": 230,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Regular Expression Matching\", \"titleSlug\": \"regular-expression-matching\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "exampleTestcases": "\"aa\"\n\"a\"\n\"aa\"\n\"*\"\n\"cb\"\n\"?a\"",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Greedy",
+                "slug": "greedy",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Recursion",
+                "slug": "recursion",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 12}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Coursera\", \"slug\": \"coursera\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Intuit\", \"slug\": \"intuit\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Sprinklr\", \"slug\": \"sprinklr\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zoho\", \"slug\": \"zoho\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"instacart\", \"slug\": \"instacart\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Two Sigma\", \"slug\": \"two-sigma\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 0}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    bool isMatch(string s, string p) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public boolean isMatch(String s, String p) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def isMatch(self, s, p):\n        \"\"\"\n        :type s: str\n        :type p: str\n        :rtype: bool\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def isMatch(self, s: str, p: str) -> bool:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nbool isMatch(char * s, char * p){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public bool IsMatch(string s, string p) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @param {string} p\n * @return {boolean}\n */\nvar isMatch = function(s, p) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} s\n# @param {String} p\n# @return {Boolean}\ndef is_match(s, p)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func isMatch(_ s: String, _ p: String) -> Bool {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func isMatch(s string, p string) bool {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def isMatch(s: String, p: String): Boolean = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun isMatch(s: String, p: String): Boolean {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn is_match(s: String, p: String) -> bool {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String $p\n     * @return Boolean\n     */\n    function isMatch($s, $p) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function isMatch(s: string, p: string): boolean {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (is-match s p)\n  (-> string? string? boolean?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec is_match(S :: unicode:unicode_binary(), P :: unicode:unicode_binary()) -> boolean().\nis_match(S, P) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec is_match(s :: String.t, p :: String.t) :: boolean\n  def is_match(s, p) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"403K\", \"totalSubmission\": \"1.5M\", \"totalAcceptedRaw\": 402979, \"totalSubmissionRaw\": 1510708, \"acRate\": \"26.7%\"}",
+        "hints": [],
+        "solution": {
+            "id": "730",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "\"aa\"\n\"a\"",
+        "metaData": "{ \r\n  \"name\": \"isMatch\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    },\r\n    { \r\n      \"name\": \"p\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "730",
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Approach 1: Recursion with Memoization\n\n**Intuition**\n\nThe first idea here is a recursion. It is a relatively straightforward\napproach but quite time consuming because of huge recursion depth for long input strings.\n\n- If the strings are equal (`p == s`), then return `True`.\n\n- If the pattern matches any string (`p == '*'`), then return `True`.\n\n- If `p` is empty, or `s` is empty, return `False`.\n\n- If the current characters match (`p[0] == s[0]` or `p[0] == '?'`), \nthen compare the next ones and return `isMatch(s[1:], p[1:])`.\n\n- If the current pattern character is a star (`p[0] == '*'`), then\nthere are two possible situations:\n\n    - The star matches no characters, and hence the answer is\n    `isMatch(s, p[1:])`.\n    \n    - The star matches one or more characters, and so the answer is\n    `isMatch(s[1:], p)`.\n    \n- If `p[0] != s[0]`, return `False`.\n\n![pic](../Figures/44/stupid.png)\n\nThe problem of this algorithm is that it doesn't pass \nall test cases because of time limit issue, \nand hence has to be optimised.\nHere is what could be done:\n\n1. _Memoization_. That is a standard way to optimise the recursion. \nLet's have a memoization hashmap using pair `(s, p)` as a key and\nmatch/doesn't match as a boolean value. \nOne could keep all already checked pairs `(s, p)` in this hashmap, so that\nif there are any duplicate checks, the answer is right here, \nand there is no need to proceed to the computations again.\n\n2. _Clean up of the input data_. Whether the patterns with multiple stars \nin a row `a****bc**cc` are valid wildcards or not, they could be \nsimplified without any data loss to `a*bc*cc`. Such a cleanup helps to decrease\nthe recursion depth. \n\n**Algorithm**\n\nHere is the algorithm.\n\n- Clean up the input by replacing more than one star in a row by a single star: \n`p = remove_duplicate_stars(p)`.\n\n- Initiate the memoization hashmap `dp`.\n\n- Return the helper function with a cleaned input: `helper(s, p)`.\n\n- `helper(s, p)`:\n\n    - If `(s, p)` is already known and stored in `dp`, return the value.\n\n    - If the strings are equal (`p == s`), or the pattern matches any string (`p == '*'`),\n    add `dp[(s, p)] = True`.\n    \n    - Else if `p` is empty, or `s` is empty, add `dp[(s, p)] = False`.\n    \n    - Else if the current characters match (`p[0] == s[0]` or `p[0] == '?'`), \n    then compare the next ones and add `dp[(s, p)] = helper(s[1:], p[1:])`.\n    \n    - Else if the current pattern character is a star (`p[0] == '*'`), then\n    there are two possible situations: the star matches no characters,\n    and the star matches one or more characters: \n    `dp[(s, p)] = helper(s, p[1:]) or helper(s[1:], p)`.\n        \n    - Else `p[0] != s[0]`, then add `dp[(s, p)] = False`.\n    \n    - Now when the value is computed, return it: `dp[(s, p)]`.\n\n**Implementation**   \n\n<iframe src=\"https://leetcode.com/playground/YN36qKvr/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"YN36qKvr\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(S \\cdot P \\cdot (S + P))$$\n\t\n    * Removing duplicate stars requires us to traverse the string `p` once, this requires $$O(P)$$ time. \n\t\n    *  Regarding the helper function, every non-memoized recursive call we will: \n        1. Check if `helper(s, p)` has already been calculated.  This takes $$O(S + P)$$ time to create a hash of the tuple `(s, p)` the first time and $$O(1)$$ time to check if the result has already been cached.\n\n        2. Go through our if statements.  If `(s, p)` is one of the base cases, this will take $$O(min(S, P))$$ time for the string equality check or just $$O(1)$$ time for other checks, otherwise, it will take $$O(S + P)$$ time to create a substring `s[1:]` and a substring `p[1:]`.  Here, let's assume the worst-case scenario where most of the non-memoized recursive calls require $$O(S + P)$$ time.  \n\n        3. Then we will cache our result, which takes $$O(1)$$ time since the hash for tuple `(s, p)` was already created when we checked if the result for `(s, p)` is already cached.\n\t      \n        So in total, we spend $$O(2 \\cdot (S + P)) = O(S + P)$$ time on every non-memoized call ($$S + P$$ for creating a hash and $$S + P$$ for creating substrings).  We can only have as many non-memoized calls as there are combinations of `s` and `p`. Therefore, in the worst case, we can have $$S \\cdot P$$ non-memoized calls. This gives us a total time spent on non-memoized calls of $$O(S \\cdot P \\cdot (S + P))$$.\n\t      \n    * As for the memoized calls, for each non-memoized call, we can make at most 2 additional calls to `helper`.  This means that there will be at most $$S \\cdot P$$ memoized calls.  Each memoized call takes $$O(S + P)$$ time to create the hash for `(s, p)` and $$O(1)$$ time to get the cached result.  So the total time spent on memoized calls is $$O(S \\cdot P \\cdot (S + P))$$ which is a loose upper bound. \n\n    * Adding all 3 time complexities together we get: $$O(P + 2 \\cdot S \\cdot P \\cdot (S + P)) = O(S \\cdot P \\cdot (S + P))$$.\n\t\n        > Note: This approach can be optimized by using two pointers to track the current position on `s` and `p` instead of passing substrings of `s` and `p` as arguments.  To improve readability, this was not implemented here, however, doing so will reduce the time complexity to $$O(S \\cdot P)$$ since hashing two integers takes $$O(1)$$ time and each recursive call to `helper` would no longer require creating new substrings which takes linear time.  Thus the total time complexity is $$O(1)$$ per call for a maximum of $$S \\cdot P$$ non-memoized calls and $$S \\cdot P$$ memoized calls.\n\n* Space complexity: $$O(S \\cdot P)$$. Creating a new string `p` requires $$O(P)$$ space. The recursion call stack may exceed `max(S, P)` in cases such as `(s, p)` = `(aaab, *a*b)`, however, it is bounded by $$O(S + P)$$.  Lastly, the hashmap requires $$O(S \\cdot P)$$ space to memoize the result of each call to `helper`.\n<br />\n<br />\n\n\n---\n#### Approach 2: Dynamic Programming \n\n**Intuition**\n\nRecursion approach above shows how painful the large recursion depth could be,\nso let's try something more iterative. \n\nMemoization from the first approach gives an idea to try a dynamic programming.\nThe problem is very similar with [Edit Distance problem](https://leetcode.com/problems/edit-distance/solution/),\nso let's use exactly the same approach here.\n\nThe idea would be to reduce the problem to simple ones. \nFor example, there is a string `adcebdk` and pattern `*a*b?k`,\nand we want to compute if there is a match for them: `D = True/False`. \nOne could notice that it seems to be more simple for short strings and patterns \nand so it would be logical to relate a match `D[p_len][s_len]` with the lengths `p_len` \nand `s_len` of input pattern and string correspondingly.\n\nLet's go further and introduce a match `D[p_idx][s_idx]` \nwhich is a match between the first `p_idx` characters of the pattern \nand the first `s_idx` characters of the string.\n\n![pic](../Figures/44/dp_match2_fixed.png)\n\nIt turns out that one could compute `D[p_idx][s_idx]`, knowing \na match without the last characters `D[p_idx - 1][s_idx - 1]`.\n\nIf the last characters are the same or pattern character is '?', then \n\n> $$D[p_{idx}][s_{idx}] = D[p_{idx} - 1][s_{idx} - 1] \\qquad (1)$$\n\n![pic](../Figures/44/word_match3.png)\n\nIf the pattern character is '*' and there was a match on the previous step\n`D[p_idx - 1][s_idx - 1] = True`, then \n\n- The star at the end of pattern still results in a match. \n\n- The star could match as many characters as you wish.\n\n> $$D[p_{idx} - 1][i] = \\textrm{True}, i \\ge s_{idx} - 1 \\qquad(2)$$\n\n\nSo each step of the computation would be done based on the previous ones,\nas follows: \n\n![pic](../Figures/44/if_match.png)\n\n![pic](../Figures/44/dpstar.png)\n\n**Algorithm**\n\n- Start from the table `D` filled with `False` everywhere but `D[0][0] = True`.\n\n- Apply rules (1) and (2) in a loop and return `D[p_len][s_len]` as an answer.\n\n![pic](../Figures/44/fixed.png)\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/KwWWkXwr/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"KwWWkXwr\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(S \\cdot P)$$ where $$S$$ and $$P$$ are lengths of \nthe input string and the pattern respectively. \n* Space complexity: $$O(S \\cdot P)$$ to store the matrix.\n<br />\n<br />\n\n\n---\n#### Approach 3: Backtracking\n\n**Intuition**\n\nComplexity $$O(S \\cdot P)$$ is much better than $$O(S \\cdot P \\cdot (S + P))$$,\nbut still could be improved. There is no need to compute the entire matrix,\ni.e., to check all the possibilities for each star:\n\n- Star matches zero characters.\n- Star matches one character.\n- Star matches two characters. \n\n...\n\n- Star matches all remaining characters.  \n\nLet's just pick up the first opportunity \"matches zero characters\" and proceed further.\nIf this assumption would lead in \"no match\" situation, then _backtrack_: come back\nto the previous star, assume now that it matches one more character (one) and \nproceed again. Again \"no match\" situation? \n_Backtrack again_: come back to the previous star, \nand assume now that it matches one more character (two), etc. \n\n![pic](../Figures/44/backtrack.png)\n\n**Algorithm**\n\nHere is the algorithm.\n\n- Let's use two pointers here: `s_idx` to iterate over the string, and `p_idx` to \niterate over the pattern. While `s_idx < s_len`:\n\n    - If there are still characters in the pattern (`p_idx < p_len`) and\n    the characters under the pointers match \n    (`p[p_idx] == s[s_idx]` or `p[p_idx] == '?'`),\n    then move forward by increasing both pointers.\n    \n    - Otherwise, if there are still characters in the pattern (`p_idx < p_len`), and\n    `p[p_idx] == '*'`, then first check \"match zero characters\" situation, i.e.,\n    increase only pattern pointer `p_idx++`.\n    Write down for a possible backtrack the star position in `star_idx` variable,\n    and the current string pointer in `s_tmp_idx` variable.\n    \n    - Else if there is \"no match\" situation: \n    the pattern is used up `p_idx < p_len`\n    or the characters under the pointers doesn't match. \n    \n        - If there was no stars in the pattern, i.e., no `star_idx`, return `False`.\n        \n        - If there was a star, then backtrack: set pattern pointer\n        just after the last star `p_idx = star_idx + 1`, and string \n        pointer `s_idx = s_tmp_idx + 1`, i.e., assume that this time the star\n        matches _one more character_. Save the current string pointer \n        for the possible backtrack `s_tmp_idx = s_idx`.\n        \n- Return `True` if all remaining characters in the pattern are stars. \n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/K3Pd2N7F/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"K3Pd2N7F\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(\\min(S, P))$$ for the best case and\nbetter than $$O(S \\log P)$$ for the average case, where $$S$$ and $$P$$ are lengths of \nthe input string and the pattern correspondingly. \nPlease refer to [this article](https://arxiv.org/pdf/1407.0950.pdf) for detailed proof. However, in the worst-case scenario, this algorithm requires $$O(S \\cdot P)$$ time.\n* Space complexity: $$O(1)$$ since it's a constant space solution.\n<br />\n<br />\n\n\n---\n#### Further reading\n\nThere are a lot of search-related questions around this problem \nwhich could pop up during the interview.\nTo prepare, you could read about [string searching algorithm](https://en.wikipedia.org/wiki/String-searching_algorithm)\nand [KMP algorithm](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm).",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "715",
+            "count": 87,
+            "average": "3.770",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "wildcard-matching",
+    "playgroundData": {
+        "YN36qKvr": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "wildcard-matching-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "KwWWkXwr": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "wildcard-matching-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "K3Pd2N7F": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "wildcard-matching-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

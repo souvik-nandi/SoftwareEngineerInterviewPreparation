@@ -1,0 +1,84 @@
+{
+    "id": "2296",
+    "question": {
+        "questionId": "2296",
+        "questionFrontendId": "2153",
+        "boundTopicId": null,
+        "title": "The Number of Passengers in Each Bus II",
+        "titleSlug": "the-number-of-passengers-in-each-bus-ii",
+        "content": "<p>Table: <code>Buses</code></p>\n\n<pre>\n+--------------+------+\n| Column Name  | Type |\n+--------------+------+\n| bus_id       | int  |\n| arrival_time | int  |\n| capacity     | int  |\n+--------------+------+\nbus_id is the primary key column for this table.\nEach row of this table contains information about the arrival time of a bus at the LeetCode station and its capacity (the number of empty seats it has).\nNo two buses will arrive at the same time and all bus capacities will be positive integers.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Table: <code>Passengers</code></p>\n\n<pre>\n+--------------+------+\n| Column Name  | Type |\n+--------------+------+\n| passenger_id | int  |\n| arrival_time | int  |\n+--------------+------+\npassenger_id is the primary key column for this table.\nEach row of this table contains information about the arrival time of a passenger at the LeetCode station.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Buses and passengers arrive at the LeetCode station. If a bus arrives at the station at a time <code>t<sub>bus</sub></code> and a passenger arrived at a time <code>t<sub>passenger</sub></code> where <code>t<sub>passenger</sub> &lt;= t<sub>bus</sub></code> and the passenger did not catch any bus, the passenger will use that bus. In addition, each bus has a capacity. If at the moment the bus arrives at the station there are more passengers waiting than its capacity <code>capacity</code>, only <code>capacity</code> passengers will use the bus.</p>\n\n<p>Write an SQL query to report the number of users that used each bus.</p>\n\n<p>Return the result table ordered by <code>bus_id</code> in <strong>ascending order</strong>.</p>\n\n<p>The query result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nBuses table:\n+--------+--------------+----------+\n| bus_id | arrival_time | capacity |\n+--------+--------------+----------+\n| 1      | 2            | 1        |\n| 2      | 4            | 10       |\n| 3      | 7            | 2        |\n+--------+--------------+----------+\nPassengers table:\n+--------------+--------------+\n| passenger_id | arrival_time |\n+--------------+--------------+\n| 11           | 1            |\n| 12           | 1            |\n| 13           | 5            |\n| 14           | 6            |\n| 15           | 7            |\n+--------------+--------------+\n<strong>Output:</strong> \n+--------+----------------+\n| bus_id | passengers_cnt |\n+--------+----------------+\n| 1      | 1              |\n| 2      | 1              |\n| 3      | 2              |\n+--------+----------------+\n<strong>Explanation:</strong> \n- Passenger 11 arrives at time 1.\n- Passenger 12 arrives at time 1.\n- Bus 1 arrives at time 2 and collects passenger 11 as it has one empty seat.\n\n- Bus 2 arrives at time 4 and collects passenger 12 as it has ten empty seats.\n\n- Passenger 12 arrives at time 5.\n- Passenger 13 arrives at time 6.\n- Passenger 14 arrives at time 7.\n- Bus 3 arrives at time 7 and collects passengers 12 and 13 as it has two empty seats.\n</pre>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Hard",
+        "likes": 28,
+        "dislikes": 12,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "{\"headers\":{\"Buses\":[\"bus_id\",\"arrival_time\",\"capacity\"],\"Passengers\":[\"passenger_id\",\"arrival_time\"]},\"rows\":{\"Buses\":[[1,2,1],[2,4,10],[3,7,2]],\"Passengers\":[[11,1],[12,1],[13,5],[14,6],[15,7]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "# Write your MySQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "/* Write your T-SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "/* Write your PL/SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"810\", \"totalSubmission\": \"1.6K\", \"totalAcceptedRaw\": 810, \"totalSubmissionRaw\": 1573, \"acRate\": \"51.5%\"}",
+        "hints": [],
+        "solution": null,
+        "status": null,
+        "sampleTestCase": "{\"headers\":{\"Buses\":[\"bus_id\",\"arrival_time\",\"capacity\"],\"Passengers\":[\"passenger_id\",\"arrival_time\"]},\"rows\":{\"Buses\":[[1,2,1],[2,4,10],[3,7,2]],\"Passengers\":[[11,1],[12,1],[13,5],[14,6],[15,7]]}}",
+        "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Buses (bus_id int, arrival_time int, capacity int)\",\n    \"Create table If Not Exists Passengers (passenger_id int, arrival_time int)\"\n  ],\n  \"mssql\": [\n    \"Create table Buses (bus_id int, arrival_time int, capacity int)\",\n    \"Create table Passengers (passenger_id int, arrival_time int)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Buses (bus_id int, arrival_time int, capacity int)\",\n    \"Create table Passengers (passenger_id int, arrival_time int)\"\n  ],\n  \"database\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists Buses (bus_id int, arrival_time int, capacity int)",
+            "Create table If Not Exists Passengers (passenger_id int, arrival_time int)",
+            "Truncate table Buses",
+            "insert into Buses (bus_id, arrival_time, capacity) values ('1', '2', '1')",
+            "insert into Buses (bus_id, arrival_time, capacity) values ('2', '4', '10')",
+            "insert into Buses (bus_id, arrival_time, capacity) values ('3', '7', '2')",
+            "Truncate table Passengers",
+            "insert into Passengers (passenger_id, arrival_time) values ('11', '1')",
+            "insert into Passengers (passenger_id, arrival_time) values ('12', '1')",
+            "insert into Passengers (passenger_id, arrival_time) values ('13', '5')",
+            "insert into Passengers (passenger_id, arrival_time) values ('14', '6')",
+            "insert into Passengers (passenger_id, arrival_time) values ('15', '7')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": null,
+    "questionCode": "the-number-of-passengers-in-each-bus-ii",
+    "playgroundData": null
+}

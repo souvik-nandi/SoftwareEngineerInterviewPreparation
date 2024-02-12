@@ -1,0 +1,272 @@
+{
+    "id": "299",
+    "question": {
+        "questionId": "299",
+        "questionFrontendId": "299",
+        "boundTopicId": null,
+        "title": "Bulls and Cows",
+        "titleSlug": "bulls-and-cows",
+        "content": "<p>You are playing the <strong><a href=\"https://en.wikipedia.org/wiki/Bulls_and_Cows\" target=\"_blank\">Bulls and Cows</a></strong> game with your friend.</p>\n\n<p>You write down a secret number and ask your friend to guess what the number is. When your friend makes a guess, you provide a hint with the following info:</p>\n\n<ul>\n\t<li>The number of &quot;bulls&quot;, which are digits in the guess that are in the correct position.</li>\n\t<li>The number of &quot;cows&quot;, which are digits in the guess that are in your secret number but are located in the wrong position. Specifically, the non-bull digits in the guess that could be rearranged such that they become bulls.</li>\n</ul>\n\n<p>Given the secret number <code>secret</code> and your friend&#39;s guess <code>guess</code>, return <em>the hint for your friend&#39;s guess</em>.</p>\n\n<p>The hint should be formatted as <code>&quot;xAyB&quot;</code>, where <code>x</code> is the number of bulls and <code>y</code> is the number of cows. Note that both <code>secret</code> and <code>guess</code> may contain duplicate digits.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> secret = &quot;1807&quot;, guess = &quot;7810&quot;\n<strong>Output:</strong> &quot;1A3B&quot;\n<strong>Explanation:</strong> Bulls are connected with a &#39;|&#39; and cows are underlined:\n&quot;1807&quot;\n  |\n&quot;<u>7</u>8<u>10</u>&quot;</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> secret = &quot;1123&quot;, guess = &quot;0111&quot;\n<strong>Output:</strong> &quot;1A1B&quot;\n<strong>Explanation:</strong> Bulls are connected with a &#39;|&#39; and cows are underlined:\n&quot;1123&quot;        &quot;1123&quot;\n  |      or     |\n&quot;01<u>1</u>1&quot;        &quot;011<u>1</u>&quot;\nNote that only one of the two unmatched 1s is counted as a cow since the non-bull digits can only be rearranged to allow one 1 to be a bull.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= secret.length, guess.length &lt;= 1000</code></li>\n\t<li><code>secret.length == guess.length</code></li>\n\t<li><code>secret</code> and <code>guess</code> consist of digits only.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 1494,
+        "dislikes": 1395,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "\"1807\"\n\"7810\"\n\"1123\"\n\"0111\"",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Counting",
+                "slug": "counting",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 10}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Epic Systems\", \"slug\": \"epic-systems\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zillow\", \"slug\": \"zillow\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    string getHint(string secret, string guess) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public String getHint(String secret, String guess) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def getHint(self, secret, guess):\n        \"\"\"\n        :type secret: str\n        :type guess: str\n        :rtype: str\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def getHint(self, secret: str, guess: str) -> str:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nchar * getHint(char * secret, char * guess){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public string GetHint(string secret, string guess) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} secret\n * @param {string} guess\n * @return {string}\n */\nvar getHint = function(secret, guess) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} secret\n# @param {String} guess\n# @return {String}\ndef get_hint(secret, guess)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func getHint(_ secret: String, _ guess: String) -> String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func getHint(secret string, guess string) string {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def getHint(secret: String, guess: String): String = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun getHint(secret: String, guess: String): String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn get_hint(secret: String, guess: String) -> String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $secret\n     * @param String $guess\n     * @return String\n     */\n    function getHint($secret, $guess) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function getHint(secret: string, guess: string): string {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (get-hint secret guess)\n  (-> string? string? string?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec get_hint(Secret :: unicode:unicode_binary(), Guess :: unicode:unicode_binary()) -> unicode:unicode_binary().\nget_hint(Secret, Guess) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec get_hint(secret :: String.t, guess :: String.t) :: String.t\n  def get_hint(secret, guess) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"282.7K\", \"totalSubmission\": \"591.4K\", \"totalAcceptedRaw\": 282720, \"totalSubmissionRaw\": 591429, \"acRate\": \"47.8%\"}",
+        "hints": [],
+        "solution": {
+            "id": "987",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "ac",
+        "sampleTestCase": "\"1807\"\n\"7810\"",
+        "metaData": "{ \r\n  \"name\": \"getHint\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"secret\",\r\n      \"type\": \"string\"\r\n    },\r\n    { \r\n      \"name\": \"guess\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "987",
+        "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n\r\n#### Overview\r\n\r\nAt first glance, this popular Google question seems to be easy. \r\nThe only difficulty here is to define how to count.\r\n\r\n- To count bulls, one could parse both strings and count the matches,\r\nand that's a correct way to do things.\r\n\r\n![img](../Figures/299/bulls2.png)\r\n*Figure 1. Count bulls.*\r\n{:align=\"center\"}\r\n\r\n- To count cows, one could parse `guess` string and count the characters \r\nwhich are present in the string `secret` but located in the wrong positions.\r\nThough the cows are more complicated creatures than bulls. \r\nFor some test cases, it might work.\r\n\r\n![img](../Figures/299/bulls2.png)\r\n*Figure 2. Count cows.*\r\n{:align=\"center\"}\r\n\r\n- Although, in general, one has to count the characters as well. For example,\r\nif `secret` contains just one digit \"4\" then the maximum number of 4-cows is 1.\r\nEven if `guess` contains many \"4\"s. In the following example, only one of two \"4\"s should be counted as\r\na cow. \r\n\r\n![img](../Figures/299/cows.png)\r\n*Figure 3. Only one of two \"4\"s should be counted as \"4-cow\".*\r\n{:align=\"center\"}\r\n \r\nTo figure out these three points is enough to solve the problem. \r\n   \r\nIn this article, we start from a straightforward two-pass solution which \r\nalready has the best time ($$\\mathcal{O}(N)$$) and space complexity ($$\\mathcal{O}(1)$$).\r\n\r\nAs a follow-up, we implement a one-pass solution and discuss some\r\nJava-related optimizations in the approach 2. \r\n\r\n#### Approach 1: HashMap: Two Passes\r\n\r\n**Algorithm**\r\n\r\n- Initialize the number of bulls and cows to zero.\r\n\r\n- Initialize the hashmap `character -> its frequency` for the string `secret`.\r\nThis hashmap could be later used during the iteration over the string `guess`\r\nto keep the available characters. \r\n\r\n- It's time to iterate over the string `guess`.\r\n\r\n    - If the current character `ch` of the string `guess` is in the string `secret`: `if ch in h`, then there could be two situations.\r\n        \r\n        - The corresponding characters of two strings match: `ch == secret[idx]`.\r\n        \r\n            - Then it's time to update the bulls: `bulls += 1`. \r\n            \r\n            - The update of the cows is needed if the count for the current character in the hashmap is negative or equal to zero. That means that before it was already used for cows,\r\n            and the cows counter should be decreased: `cows -= int(h[ch] <= 0)`.\r\n        \r\n        - The corresponding characters of two strings don't match: `ch != secret[idx]`.\r\n        Then increase the cows counter: `cows += int(h[ch] > 0)`.\r\n        \r\n        - In both cases, one has to update hashmap, marking the \r\n        current character as used: `h[ch] -= 1`.\r\n\r\n- Return the number of bulls and cows.\r\n\r\n!?!../Documents/299_LIS.json:1000,371!?!\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/NQfNv546/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"NQfNv546\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity: $$\\mathcal{O}(N)$$, we pass over the strings two times.\r\n\r\n* Space complexity: $$\\mathcal{O}(1)$$ to keep hashmap `h` which \r\ncontains at most 10 elements.\r\n\r\n<br />\r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: One Pass\r\n\r\n**Intuition**\r\n\r\nLet's optimize approach 1 \r\nby building the hashmap during the strings' parsing. That would allow\r\nus to reduce the number of passes to one.\r\n\r\n**Algorithm**\r\n\r\n- Initialize the number of bulls and cows to zero.\r\n\r\n- Initialize the hashmap to count characters. \r\nDuring the iteration, `secret` string gives a \r\npositive contribution, and `guess` - negative contribution. \r\n\r\n- Iterate over the strings: `s` is the current character in the string \r\n`secret` and `g` - the current character in the string `guess`.\r\n\r\n    - If `s == g`, update bulls counter: `bulls += 1`.\r\n    \r\n    - Otherwise, if `s != g`:\r\n    \r\n        - Update `cows` by adding 1 if so far `guess` contains\r\n         more `s` characters than `secret`: `h[s] < 0`.\r\n        \r\n        - Update `cows` by adding 1 if so far `secret` contains\r\n         more `g` characters than `guess`: `h[g] > 0`.\r\n        \r\n        - Update the hashmap by marking the presence of `s` character in \r\n        the string `secret`: `h[s] += 1`.\r\n        \r\n        - Update the hashmap by marking the presence of `g` character in \r\n        the string `guess`: `h[g] -= 1`.\r\n\r\n- Return the number of bulls and cows.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/XoMyvsa8/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"XoMyvsa8\"></iframe>\r\n\r\nTo further optimize the Java solution, one could use an array instead\r\nof hashmap because there are known problems with \r\n[Java HashMap performance](https://github.com/vavr-io/vavr/issues/571).\r\nAnother small improvement is to replace string concatenation by a \r\nStringBuilder.\r\n\r\n<iframe src=\"https://leetcode.com/playground/9cxtVCJx/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"9cxtVCJx\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity: $$\\mathcal{O}(N)$$, we do one pass over the strings.\r\n\r\n* Space complexity: $$\\mathcal{O}(1)$$ to keep hashmap (or array) `h` which \r\ncontains at most 10 elements.\r\n\r\n<br />\r\n<br />\r\n\r\n\r\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "932",
+            "count": 44,
+            "average": "4.114",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "bulls-and-cows",
+    "playgroundData": {
+        "NQfNv546": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "bulls-and-cows-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "XoMyvsa8": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "bulls-and-cows-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "9cxtVCJx": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "bulls-and-cows-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

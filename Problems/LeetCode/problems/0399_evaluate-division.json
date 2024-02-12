@@ -1,0 +1,274 @@
+{
+    "id": "399",
+    "question": {
+        "questionId": "399",
+        "questionFrontendId": "399",
+        "boundTopicId": null,
+        "title": "Evaluate Division",
+        "titleSlug": "evaluate-division",
+        "content": "<p>You are given an array of variable pairs <code>equations</code> and an array of real numbers <code>values</code>, where <code>equations[i] = [A<sub>i</sub>, B<sub>i</sub>]</code> and <code>values[i]</code> represent the equation <code>A<sub>i</sub> / B<sub>i</sub> = values[i]</code>. Each <code>A<sub>i</sub></code> or <code>B<sub>i</sub></code> is a string that represents a single variable.</p>\n\n<p>You are also given some <code>queries</code>, where <code>queries[j] = [C<sub>j</sub>, D<sub>j</sub>]</code> represents the <code>j<sup>th</sup></code> query where you must find the answer for <code>C<sub>j</sub> / D<sub>j</sub> = ?</code>.</p>\n\n<p>Return <em>the answers to all queries</em>. If a single answer cannot be determined, return <code>-1.0</code>.</p>\n\n<p><strong>Note:</strong> The input is always valid. You may assume that evaluating the queries will not result in division by zero and that there is no contradiction.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> equations = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;c&quot;]], values = [2.0,3.0], queries = [[&quot;a&quot;,&quot;c&quot;],[&quot;b&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;e&quot;],[&quot;a&quot;,&quot;a&quot;],[&quot;x&quot;,&quot;x&quot;]]\n<strong>Output:</strong> [6.00000,0.50000,-1.00000,1.00000,-1.00000]\n<strong>Explanation:</strong> \nGiven: <em>a / b = 2.0</em>, <em>b / c = 3.0</em>\nqueries are: <em>a / c = ?</em>, <em>b / a = ?</em>, <em>a / e = ?</em>, <em>a / a = ?</em>, <em>x / x = ?</em>\nreturn: [6.0, 0.5, -1.0, 1.0, -1.0 ]\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> equations = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;c&quot;],[&quot;bc&quot;,&quot;cd&quot;]], values = [1.5,2.5,5.0], queries = [[&quot;a&quot;,&quot;c&quot;],[&quot;c&quot;,&quot;b&quot;],[&quot;bc&quot;,&quot;cd&quot;],[&quot;cd&quot;,&quot;bc&quot;]]\n<strong>Output:</strong> [3.75000,0.40000,5.00000,0.20000]\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> equations = [[&quot;a&quot;,&quot;b&quot;]], values = [0.5], queries = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;c&quot;],[&quot;x&quot;,&quot;y&quot;]]\n<strong>Output:</strong> [0.50000,2.00000,-1.00000,-1.00000]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= equations.length &lt;= 20</code></li>\n\t<li><code>equations[i].length == 2</code></li>\n\t<li><code>1 &lt;= A<sub>i</sub>.length, B<sub>i</sub>.length &lt;= 5</code></li>\n\t<li><code>values.length == equations.length</code></li>\n\t<li><code>0.0 &lt; values[i] &lt;= 20.0</code></li>\n\t<li><code>1 &lt;= queries.length &lt;= 20</code></li>\n\t<li><code>queries[i].length == 2</code></li>\n\t<li><code>1 &lt;= C<sub>j</sub>.length, D<sub>j</sub>.length &lt;= 5</code></li>\n\t<li><code>A<sub>i</sub>, B<sub>i</sub>, C<sub>j</sub>, D<sub>j</sub></code> consist of lower case English letters and digits.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 6065,
+        "dislikes": 510,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Check for Contradictions in Equations\", \"titleSlug\": \"check-for-contradictions-in-equations\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[[\"a\",\"b\"],[\"b\",\"c\"]]\n[2.0,3.0]\n[[\"a\",\"c\"],[\"b\",\"a\"],[\"a\",\"e\"],[\"a\",\"a\"],[\"x\",\"x\"]]\n[[\"a\",\"b\"],[\"b\",\"c\"],[\"bc\",\"cd\"]]\n[1.5,2.5,5.0]\n[[\"a\",\"c\"],[\"c\",\"b\"],[\"bc\",\"cd\"],[\"cd\",\"bc\"]]\n[[\"a\",\"b\"]]\n[0.5]\n[[\"a\",\"b\"],[\"b\",\"a\"],[\"a\",\"c\"],[\"x\",\"y\"]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Union Find",
+                "slug": "union-find",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Graph",
+                "slug": "graph",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Shortest Path",
+                "slug": "shortest-path",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 12}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 11}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Coinbase\", \"slug\": \"coinbase\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"BlackRock\", \"slug\": \"blackrock\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"JPMorgan\", \"slug\": \"jpmorgan\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def calcEquation(self, equations, values, queries):\n        \"\"\"\n        :type equations: List[List[str]]\n        :type values: List[float]\n        :type queries: List[List[str]]\n        :rtype: List[float]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def calcEquation(self, equations: List[List[str]], values: List[float], queries: List[List[str]]) -> List[float]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\ndouble* calcEquation(char *** equations, int equationsSize, int* equationsColSize, double* values, int valuesSize, char *** queries, int queriesSize, int* queriesColSize, int* returnSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public double[] CalcEquation(IList<IList<string>> equations, double[] values, IList<IList<string>> queries) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string[][]} equations\n * @param {number[]} values\n * @param {string[][]} queries\n * @return {number[]}\n */\nvar calcEquation = function(equations, values, queries) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String[][]} equations\n# @param {Float[]} values\n# @param {String[][]} queries\n# @return {Float[]}\ndef calc_equation(equations, values, queries)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func calcEquation(_ equations: [[String]], _ values: [Double], _ queries: [[String]]) -> [Double] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func calcEquation(equations [][]string, values []float64, queries [][]string) []float64 {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def calcEquation(equations: List[List[String]], values: Array[Double], queries: List[List[String]]): Array[Double] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun calcEquation(equations: List<List<String>>, values: DoubleArray, queries: List<List<String>>): DoubleArray {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn calc_equation(equations: Vec<Vec<String>>, values: Vec<f64>, queries: Vec<Vec<String>>) -> Vec<f64> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String[][] $equations\n     * @param Float[] $values\n     * @param String[][] $queries\n     * @return Float[]\n     */\n    function calcEquation($equations, $values, $queries) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function calcEquation(equations: string[][], values: number[], queries: string[][]): number[] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (calc-equation equations values queries)\n  (-> (listof (listof string?)) (listof flonum?) (listof (listof string?)) (listof flonum?))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec calc_equation(Equations :: [[unicode:unicode_binary()]], Values :: [float()], Queries :: [[unicode:unicode_binary()]]) -> [float()].\ncalc_equation(Equations, Values, Queries) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec calc_equation(equations :: [[String.t]], values :: [float], queries :: [[String.t]]) :: [float]\n  def calc_equation(equations, values, queries) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"291.1K\", \"totalSubmission\": \"493.7K\", \"totalAcceptedRaw\": 291138, \"totalSubmissionRaw\": 493654, \"acRate\": \"59.0%\"}",
+        "hints": [
+            "Do you recognize this as a graph problem?"
+        ],
+        "solution": {
+            "id": "1007",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "ac",
+        "sampleTestCase": "[[\"a\",\"b\"],[\"b\",\"c\"]]\n[2.0,3.0]\n[[\"a\",\"c\"],[\"b\",\"a\"],[\"a\",\"e\"],[\"a\",\"a\"],[\"x\",\"x\"]]",
+        "metaData": "{\r\n  \"name\": \"calcEquation\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"equations\",\r\n      \"type\": \"list<list<string>>\"\r\n    },\r\n    {\r\n      \"name\": \"values\",\r\n      \"type\": \"double[]\"\r\n    },\r\n    {\r\n        \"name\": \"queries\",\r\n        \"type\": \"list<list<string>>\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"double[]\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "894",
+            "date": "2022-04-30",
+            "incompleteChallengeCount": 30,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1007",
+        "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n\r\n#### Overview\r\n\r\nAs revealed by the hints, the problem can be solved with two important data structures, namely _Graph_ and _Union-Find_.\r\n\r\nIn the following sections, we will explain how to solve the problem respectively with regards to the data structures.\r\n\r\n---\r\n\r\n#### Approach 1: Path Search in Graph\r\n\r\n**Intuition**\r\n\r\nFirst, let us look at the example given in the problem description.\r\nGiven two equations, namely $$\\frac{a}{b} = 2, \\space \\frac{b}{c} = 3$$, we could derive the following equations:\r\n\r\n- 1). $$\\frac{b}{a} = \\frac{1}{2}, \\space \\frac{c}{b} = \\frac{1}{3}$$\r\n\r\n- 2). $$\\frac{a}{c} = \\frac{a}{b} \\cdot \\frac{b}{c} = 2 \\cdot 3 = 6 $$\r\n\r\nEach division implies the reverse of the division, which is how we derive the equations in **(1)**. While by __*chaining up*__ equations, we could obtain new equations in **(2)**. \r\n\r\n>We could reformulate the equations with the _graph_ data structure, where each variable can be represented as a **node** in the graph,\r\nand the division relationship between variables can be modeled as **edge** with direction and weight.\r\n\r\nThe direction of edge indicates the order of division, and the weight of edge indicates the result of division.\r\n\r\nWith the above formulation, we then can convert the initial equations into the following graph:\r\n\r\n![graph example](../Figures/399/399_graph_example.png)\r\n\r\n>To evaluate a query (_e.g._ $$\\frac{a}{c}=?$$) is equivalent to performing two tasks on the graph: 1). find if there exists a path between the two entities. 2). if so, calculate the cumulative products along the paths.\r\n\r\nIn the above example ($$\\frac{a}{c}=?$$), we could find a path between them, and the cumulative products are $$6$$. \r\nAs a result, we can conclude that the result of $$\\frac{a}{c}$$ is $$2 \\cdot 3 = 6$$.\r\n\r\n\r\n**Algorithm**\r\n\r\nAs one can see, we just transform the problem into a **path searching** problem in a graph.\r\n\r\n>More precisely, we can reinterpret the problem as \"given two nodes, we are asked to check if there exists a path between them. If so, we should return the cumulative products along the path as the result.\r\n\r\nGiven the above problem statement, it seems intuitive that one could apply the _backtracking_ algorithm, or sometimes people might call it _DFS_ (Depth-First Search).\r\n\r\nEssentially, we can break down the algorithm into two steps overall:\r\n\r\n- Step 1). we build the graph out of the list of input equations.\r\n\r\n    - Each equation corresponds to two edges in the graph.\r\n\r\n- Step 2). once the graph is built, we then can evaluate the query _one by one_.\r\n\r\n    - The evaluation of the query is done via searching the path between the given two variables.\r\n\r\n    - Other than the above searching operation, we need to handle two _exceptional_ cases as follows:\r\n\r\n    - Case 1): if either of the nodes does not exist in the graph, _i.e._ the variables did not appear in any of the input equations, then we can assert that no path exists.\r\n\r\n    - Case 2): if the origin and the destination are the same node, _i.e._ $$\\frac{a}{a}$$, we can assume that there exists an invisible self-loop path for each node and the result is one.\r\n\r\nHere we give one sample implementation on the backtracking algorithm.\r\n\r\n<iframe src=\"https://leetcode.com/playground/XBKGEFua/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"XBKGEFua\"></iframe>\r\n\r\nNote: with the built graph, one could also apply the **BFS** (_Breadth-First Search_) algorithm, as opposed to the DFS algorithm we employed.\r\n\r\nHowever, the essence of the solution remains the same, _i.e._ we are searching for a path in a graph.\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$N$$ be the number of input equations and $$M$$ be the number of queries.\r\n\r\n- Time Complexity: $$\\mathcal{O}(M \\cdot N)$$ \r\n\r\n    - First of all, we iterate through the equations to build a graph. Each equation takes $$\\mathcal{O}(1)$$ time to process.\r\n    Therefore, this step will take $$\\mathcal{O}(N)$$ time in total.\r\n\r\n    - For each query, we need to traverse the graph. In the worst case, we might need to traverse the entire graph, which could take $$\\mathcal{O}(N)$$.\r\n    Hence, in total, the evaluation of queries could take $$M \\cdot \\mathcal{O}(N) = \\mathcal{O}(M \\cdot N)$$.\r\n\r\n    - To sum up, the overall time complexity of the algorithm is $$\\mathcal{O}(N) + \\mathcal{O}(M \\cdot N) = \\mathcal{O}(M \\cdot N)$$\r\n\r\n- Space Complexity: $$\\mathcal{O}(N)$$\r\n\r\n    - We build a graph out the equations. In the worst case where there is no overlapping among the equations, we would have $$N$$ edges and $$2N$$ nodes in the graph.\r\n    Therefore, the sapce complexity of the graph is $$\\mathcal{O}(N + 2N) = \\mathcal{O}(3N) = \\mathcal{O}(N)$$.\r\n\r\n    - Since we employ the recursion in the backtracking, we would consume additional memory in the function call stack, which could amount to $$\\mathcal{O}(N)$$ space.\r\n\r\n    - In addition, we used a set `visited` to keep track of the nodes we visited during the backtracking.\r\n    The space complexity of the `visited` set would be $$\\mathcal{O}(N)$$.\r\n\r\n    - To sum up, the overall space complexity of the algorithm is $$\\mathcal{O}(N) + \\mathcal{O}(N) + \\mathcal{O}(N) = \\mathcal{O}(N)$$.\r\n\r\n    - Note that we did not take into account the space needed to hold the results. Otherwise, the total space complexity would be $$\\mathcal{O}(N + M)$$.\r\n\r\n---\r\n#### Approach 2: Union-Find with Weights\r\n\r\n**Intuition**\r\n\r\nAs we mentioned before, the problem can also be solved with the **Union-Find** data structure and algorithm. \r\n\r\n>As a reminder, the [Union-Find](https://en.wikipedia.org/wiki/Disjoint-set_data_structure) data structure, also known as *Disjoint Set*, is used to track a set of elements partitioned into a number of disjoint (non-overlapping) subsets.\r\nThe Union-Find data structure is often applied to solve the **graph partition** problem, where we partition a graph into a set of inter-connected subgraph.\r\n\r\nGiven the above description, it is not immediately evident that how we can apply the algorithm in this problem.\r\nTo get familiar with the Union-Find data structure, we would recommend one to check out another problem called [Largest Component Size by Common Factor](https://leetcode.com/problems/largest-component-size-by-common-factor/),\r\nwhere we can apply the Union-Find algorithm in a more **_canonical_** way.\r\n\r\n![graph example](../Figures/399/399_graph_example.png)\r\n\r\nOne thing is clear though. Thanks to the characteristic of the Union-Find data structure, we can easily determine whether the nodes of `a` and `c` belong to the same _group_ in the above graph, which accomplishes the first task that we need to perform, _i.e._ determining if there exists a path between two nodes.\r\n\r\nHowever, one important task is missing, which is how can we calculate the cumulative product along the path, with the Union-Find data structure.\r\n\r\n>As a spoiler alert, it suffices to adapt the Union-Find data structure and algorithm a little bit.\r\n\r\n\r\n**Customized Union-Find Data Structure**\r\n\r\nThe name of Union-Find data structure is originated from the fact that it mainly consists of two operations: `Union()` and `Find()` defined as follows:\r\n\r\n- `Find(x)`: get the identity of the group that the element x belongs to.\r\n\r\n- `Union(x, y)`: merge the two groups that the two elements belong to respectively.\r\n\r\nNow, here are the adaptions that we will do.\r\nOr more precisely, here are a few **behaviors** that our _customized_ Union-Find data structure would possess at the end.\r\n\r\nFirst of all, essentially we will build a _table_ which contains an entry for each node in the graph, with the help of Union-Find.\r\n\r\nThe entry is defined as `key -> (group_id, weight)`.\r\nFor example, initially, given a node `a`, its entry in the table would look like `'a' -> ('a', 1)`, where the first `'a'`indicates the id of the node, the second `'a'` indicates the id of the group that the node belongs to, and finally the value `1` indicates the weight of the node.\r\n\r\nWith the above definitions, the tasks become simple.\r\nGiven two nodes (variables `a` and `b`) with entries as `(a_group_id, a_weight)` and `(b_group_id, b_weight)` respectively, to evaluate the query of $$\\frac{a}{b} = ?$$, we only need to perform the following two calculations:\r\n\r\n- `a_group_id == b_group_id`: If so, they belong to the same group, _i.e._ there exists a path between them.\r\n\r\n- `a_weight / b_weight`: If the above condition holds, by dividing over the **_relative_** weights that are assigned to the variables, we then can obtain the result of $$\\frac{a}{b}$$ at the end.\r\n\r\n>Now it all boils down to how we can build the above table with the help of Union-Find algorithm.\r\n\r\nAgain, let us look at the same example we presented before.\r\n\r\nWe have two equations as input, namely $$\\frac{a}{b} = 2, \\space \\frac{b}{c} = 3$$.\r\n\r\n- Initially, the entries for each variable would look like the following, where the `group_id` of each variable is the variable itself and the `weight` of each variable is `1`.\r\nEach variable forms a group on its own, since there is no relationship among them at the moment.\r\n\r\n![init state](../Figures/399/399_union_find_init.png)\r\n\r\n- Now if we process the equation $$\\frac{a}{b}=2$$, by joining (**Union** operation) the two groups that the variables `a` and `b` belong to, we would obtain the results as shown in the following graph.\r\nMore precisely, we attach the group of dividend `a` to the one of the divisor `b`.\r\nMeanwhile, we would also update the _relative_ weight of the group `a` to reflect the ratio between the two variables.\r\n\r\n![second state](../Figures/399/399_union_find_ab.png)\r\n\r\n- Similarly, we continue to process the equation of $$\\frac{b}{c}=3$$, by joining (**Union** operation) the groups of `b` and `c` together.\r\nSimilarly, we attach the group of dividend `b` to the one of divisor `c`.\r\nAnd also we update the weight of the group `b` to reflect the ratio between the two variables.\r\n\r\n![third state](../Figures/399/399_union_find_bc.png)\r\n\r\n- As one might notice, there is some inconsistency in the above graph, _i.e._ the `group_id` of the variable of `a` should then be `c` and the weight of the variable `a` should be `6` rather than `2`.\r\nIndeed, these inconsistencies are expected.\r\nThe **magic** happens when we invoke the **Find** operation on the variable `a`, where a _chain_ reaction would be triggered to update the `group_id` and `weight` along the chain, as follows:\r\n\r\n![final state](../Figures/399/399_union_find_ac.png)\r\n\r\n>Once the **lazy** evaluation of `find()` is triggered, the states of the nodes along the chain would then be updated, and eventually they become consistent.\r\n\r\nThe mechanism of update is fairly similar with the DFS traversal, as one will see more in detail in the implementation later. \r\n\r\n**Algorithm**\r\n\r\nNow that we have defined the behaviors for the desired Union-Find data structure, let us put them down into implementation.\r\n\r\nThe overall interfaces of our Union-Find data structure remain the same. We will implement two functions: `find(variable)` and `union(dividend, divisor, quotient)`.\r\n\r\n- `find(variable)`: the function will return the `group_id` that the variable belongs to. Moreover, the function will update the states of variables along the chain, if there is any discrepancy.\r\n\r\n- `union(dividend, divisor, quotient)`: this function will attach the group of dividend to that of the divisor, if they are not already the same group. In addition, it needs to update the weight of the dividend variable accordingly, so that the ratio between the dividend and divisor is respected.\r\n\r\nWe present a sample implementation of the above two functions in the later section, which is inspired from the post of [WangQiuc](https://leetcode.com/problems/evaluate-division/discuss/270993/Python-BFS-and-UF(detailed-explanation)) in the discussion forum.\r\nConcise the implementation might be, it might be tricky to wrap one's head around it.\r\nOne might want to refer to the step-wise example we showed before.\r\n\r\nOnce we implement the above two functions, we then solve the problem in two steps:\r\n\r\n- Step 1): we iterate through each input equation, and invoke the `union(dividend, divisor, quotient)` on each of them, in order to build the Union-Find data structure.\r\n\r\n- Step 2): we evaluate the query one by one. The evaluation is just as intuitive as our first approach, which can be broken down into the following cases:\r\n\r\n    - case 1): Either of the variables did not appear in the input equations. The query is not valid. We then return `-1.0` as the result.\r\n\r\n    - case 2): If both variables are valid, we then apply the `find(variable)` to obtain the tuple of `(group_id, weight)` for each variable. If they are not of the same group, _i.e._ there is no chain of division between them, we then return `-1.0` as the result.\r\n\r\n    - case 3): Finally if both variables are of the same group, then we simply perform the division between their `weights` as the result.\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/i3yYxU2v/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"i3yYxU2v\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\n\r\nSince we applied the Union-Find data structure in our algorithm, we would like to start with a statement on the time complexity of the data structure, as follows:\r\n\r\n>**Statement**: If $$M$$ operations, either Union or Find, are applied to $$N$$ elements, the total run time is $$\\mathcal{O}(M \\cdot \\log^{*}{N})$$, where $$\\log^{*}$$ is the [iterated logarithm](https://en.wikipedia.org/wiki/Iterated_logarithm).\r\n\r\nOne can refer to the [proof of Union-Find complexity](https://en.wikipedia.org/wiki/Proof_of_O(log*n)_time_complexity_of_union%E2%80%93find) for more details.\r\n\r\nIn our case, the maximum number of elements in the Union-Find data structure is equal to twice of the number of equations, _i.e._ each equation introduces two new variables.\r\n\r\nLet $$N$$ be the number of input equations and $$M$$ be the number of queries.\r\n\r\n- Time Complexity: $$\\mathcal{O}\\big( (M+N) \\cdot \\log^{*}N\\big)$$.\r\n\r\n    - First of all, we iterate through each input equation and invoke `union()` upon it. As a result, the overall time complexity of this step is $$\\mathcal{O}\\big(N \\cdot \\log^{*}N\\big)$$.\r\n\r\n    - As the second step, we then evaluate the query one by one. For each evaluation, we invoke the `find()` function at most twice. Therefore, the overall time complexity of this step is $$\\mathcal{O}\\big(M \\cdot \\log^{*}N\\big)$$.\r\n\r\n    - To sum up, the total time complexity of the algorithm is $$\\mathcal{O}\\big( (M+N) \\cdot \\log^{*}N\\big)$$.\r\n\r\n    - Note, as compared to the DFS/BFS search approach, Union-Find data structure is more **efficient** for the repetitive/redundant query scenario.\r\n    \r\n    - Once we evaluate a query with Union-Find, all the subsequent repetitive queries or any query that has the overlapping with the previous query in terms of variable group could be evaluated in **constant time**.\r\n    For instance, in the above example, once the query of $$\\frac{a}{c}$$ is evaluated, if later we want to evaluate $$\\frac{a}{b}$$, we could instantly obtain the states of variables `a` and `b` without triggering the chain update again.\r\n    While for DFS/BFS approaches, the cost of evaluating each query is independent for each other.\r\n\r\n- Space Complexity: $$\\mathcal{O}(N)$$\r\n\r\n    - The space complexity of our Union-Find data structure is $$\\mathcal{O}(N)$$ where we maintain a state for each variable.\r\n\r\n    - Since the `find()` function is implemented with recursion, there would be some additional memory consumption in function call stack, which could amount to $$\\mathcal{O}(N)$$.\r\n\r\n    - To sum up, the total space complexity of the algorithm is $$\\mathcal{O}(N) + \\mathcal{O}(N) = \\mathcal{O}(N)$$.\r\n\r\n    - Again, we did not take into account the space needed to hold the results. Otherwise, the total space complexity would be $$\\mathcal{O}(N + M)$$.\r\n\r\n\r\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "952",
+            "count": 118,
+            "average": "4.848",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "evaluate-division",
+    "playgroundData": {
+        "XBKGEFua": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "evaluate-division-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "i3yYxU2v": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "evaluate-division-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

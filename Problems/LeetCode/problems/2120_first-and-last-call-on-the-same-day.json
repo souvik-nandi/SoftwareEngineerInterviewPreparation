@@ -1,0 +1,80 @@
+{
+    "id": "2120",
+    "question": {
+        "questionId": "2120",
+        "questionFrontendId": "1972",
+        "boundTopicId": null,
+        "title": "First and Last Call On the Same Day",
+        "titleSlug": "first-and-last-call-on-the-same-day",
+        "content": "<p>Table: <code>Calls</code></p>\n\n<pre>\n+--------------+----------+\n| Column Name  | Type     |\n+--------------+----------+\n| caller_id    | int      |\n| recipient_id | int      |\n| call_time    | datetime |\n+--------------+----------+\n(caller_id, recipient_id, call_time) is the primary key for this table.\nEach row contains information about the time of a phone call between caller_id and recipient_id.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to report the IDs of the users whose first and last calls on <strong>any day</strong> were with <strong>the same person</strong>. Calls are counted regardless of being the caller or the recipient.</p>\n\n<p>Return the result table in <strong>any order</strong>.</p>\n\n<p>The query result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nCalls table:\n+-----------+--------------+---------------------+\n| caller_id | recipient_id | call_time           |\n+-----------+--------------+---------------------+\n| 8         | 4            | 2021-08-24 17:46:07 |\n| 4         | 8            | 2021-08-24 19:57:13 |\n| 5         | 1            | 2021-08-11 05:28:44 |\n| 8         | 3            | 2021-08-17 04:04:15 |\n| 11        | 3            | 2021-08-17 13:07:00 |\n| 8         | 11           | 2021-08-17 22:22:22 |\n+-----------+--------------+---------------------+\n<strong>Output:</strong> \n+---------+\n| user_id |\n+---------+\n| 1       |\n| 4       |\n| 5       |\n| 8       |\n+---------+\n<strong>Explanation:</strong> \nOn 2021-08-24, the first and last call of this day for user 8 was with user 4. User 8 should be included in the answer.\nSimilarly, user 4 on 2021-08-24 had their first and last call with user 8. User 4 should be included in the answer.\nOn 2021-08-11, user 1 and 5 had a call. This call was the only call for both of them on this day. Since this call is the first and last call of the day for both of them, they should both be included in the answer.\n</pre>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Hard",
+        "likes": 71,
+        "dislikes": 22,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "{\"headers\": {\"Calls\": [\"caller_id\", \"recipient_id\", \"call_time\"]}, \"rows\": {\"Calls\": [[8, 4, \"2021-08-24 17:46:07\"], [4, 8, \"2021-08-24 19:57:13\"], [5, 1, \"2021-08-11 05:28:44\"], [8, 3, \"2021-08-17 04:04:15\"], [11, 3, \"2021-08-17 13:07:00\"], [8, 11, \"2021-08-17 22:22:22\"]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}], \"2\": [], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "# Write your MySQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "/* Write your T-SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "/* Write your PL/SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"4.5K\", \"totalSubmission\": \"8.4K\", \"totalAcceptedRaw\": 4548, \"totalSubmissionRaw\": 8386, \"acRate\": \"54.2%\"}",
+        "hints": [],
+        "solution": null,
+        "status": null,
+        "sampleTestCase": "{\"headers\": {\"Calls\": [\"caller_id\", \"recipient_id\", \"call_time\"]}, \"rows\": {\"Calls\": [[8, 4, \"2021-08-24 17:46:07\"], [4, 8, \"2021-08-24 19:57:13\"], [5, 1, \"2021-08-11 05:28:44\"], [8, 3, \"2021-08-17 04:04:15\"], [11, 3, \"2021-08-17 13:07:00\"], [8, 11, \"2021-08-17 22:22:22\"]]}}",
+        "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Calls (caller_id int, recipient_id int, call_time datetime)\"\n  ],\n  \"mssql\": [\n    \"Create table Calls (caller_id int, recipient_id int, call_time datetime)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Calls (caller_id int, recipient_id int, call_time date)\",\n    \"ALTER SESSION SET nls_date_format='YYYY-MM-DD HH24:MI:SS'\"\n  ],\n  \"database\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists Calls (caller_id int, recipient_id int, call_time datetime)",
+            "Truncate table Calls",
+            "insert into Calls (caller_id, recipient_id, call_time) values ('8', '4', '2021-08-24 17:46:07')",
+            "insert into Calls (caller_id, recipient_id, call_time) values ('4', '8', '2021-08-24 19:57:13')",
+            "insert into Calls (caller_id, recipient_id, call_time) values ('5', '1', '2021-08-11 05:28:44')",
+            "insert into Calls (caller_id, recipient_id, call_time) values ('8', '3', '2021-08-17 04:04:15')",
+            "insert into Calls (caller_id, recipient_id, call_time) values ('11', '3', '2021-08-17 13:07:00')",
+            "insert into Calls (caller_id, recipient_id, call_time) values ('8', '11', '2021-08-17 22:22:22')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": null,
+    "questionCode": "first-and-last-call-on-the-same-day",
+    "playgroundData": null
+}

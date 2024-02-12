@@ -1,0 +1,301 @@
+{
+    "id": "272",
+    "question": {
+        "questionId": "272",
+        "questionFrontendId": "272",
+        "boundTopicId": null,
+        "title": "Closest Binary Search Tree Value II",
+        "titleSlug": "closest-binary-search-tree-value-ii",
+        "content": "<p>Given the <code>root</code> of a binary search tree, a <code>target</code> value, and an integer <code>k</code>, return <em>the </em><code>k</code><em> values in the BST that are closest to the</em> <code>target</code>. You may return the answer in <strong>any order</strong>.</p>\n\n<p>You are <strong>guaranteed</strong> to have only one unique set of <code>k</code> values in the BST that are closest to the <code>target</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/12/closest1-1-tree.jpg\" style=\"width: 292px; height: 302px;\" />\n<pre>\n<strong>Input:</strong> root = [4,2,5,1,3], target = 3.714286, k = 2\n<strong>Output:</strong> [4,3]\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [1], target = 0.000000, k = 1\n<strong>Output:</strong> [1]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is <code>n</code>.</li>\n\t<li><code>1 &lt;= k &lt;= n &lt;= 10<sup>4</sup></code>.</li>\n\t<li><code>0 &lt;= Node.val &lt;= 10<sup>9</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> Assume that the BST is balanced. Could you solve it in less than <code>O(n)</code> runtime (where <code>n = total nodes</code>)?</p>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Hard",
+        "likes": 1117,
+        "dislikes": 38,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Binary Tree Inorder Traversal\", \"titleSlug\": \"binary-tree-inorder-traversal\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Closest Binary Search Tree Value\", \"titleSlug\": \"closest-binary-search-tree-value\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[4,2,5,1,3]\n3.714286\n2\n[1]\n0.000000\n1",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Stack",
+                "slug": "stack",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Tree",
+                "slug": "tree",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Binary Search Tree",
+                "slug": "binary-search-tree",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Heap (Priority Queue)",
+                "slug": "heap-priority-queue",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Binary Tree",
+                "slug": "binary-tree",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 24}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode() : val(0), left(nullptr), right(nullptr) {}\n *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}\n *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}\n * };\n */\nclass Solution {\npublic:\n    vector<int> closestKValues(TreeNode* root, double target, int k) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode() {}\n *     TreeNode(int val) { this.val = val; }\n *     TreeNode(int val, TreeNode left, TreeNode right) {\n *         this.val = val;\n *         this.left = left;\n *         this.right = right;\n *     }\n * }\n */\nclass Solution {\n    public List<Integer> closestKValues(TreeNode root, double target, int k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution(object):\n    def closestKValues(self, root, target, k):\n        \"\"\"\n        :type root: TreeNode\n        :type target: float\n        :type k: int\n        :rtype: List[int]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def closestKValues(self, root: Optional[TreeNode], target: float, k: int) -> List[int]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* closestKValues(struct TreeNode* root, double target, int k, int* returnSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {\n *         this.val = val;\n *         this.left = left;\n *         this.right = right;\n *     }\n * }\n */\npublic class Solution {\n    public IList<int> ClosestKValues(TreeNode root, double target, int k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val, left, right) {\n *     this.val = (val===undefined ? 0 : val)\n *     this.left = (left===undefined ? null : left)\n *     this.right = (right===undefined ? null : right)\n * }\n */\n/**\n * @param {TreeNode} root\n * @param {number} target\n * @param {number} k\n * @return {number[]}\n */\nvar closestKValues = function(root, target, k) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val = 0, left = nil, right = nil)\n#         @val = val\n#         @left = left\n#         @right = right\n#     end\n# end\n# @param {TreeNode} root\n# @param {Float} target\n# @param {Integer} k\n# @return {Integer[]}\ndef closest_k_values(root, target, k)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init() { self.val = 0; self.left = nil; self.right = nil; }\n *     public init(_ val: Int) { self.val = val; self.left = nil; self.right = nil; }\n *     public init(_ val: Int, _ left: TreeNode?, _ right: TreeNode?) {\n *         self.val = val\n *         self.left = left\n *         self.right = right\n *     }\n * }\n */\nclass Solution {\n    func closestKValues(_ root: TreeNode?, _ target: Double, _ k: Int) -> [Int] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc closestKValues(root *TreeNode, target float64, k int) []int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(_value: Int = 0, _left: TreeNode = null, _right: TreeNode = null) {\n *   var value: Int = _value\n *   var left: TreeNode = _left\n *   var right: TreeNode = _right\n * }\n */\nobject Solution {\n    def closestKValues(root: TreeNode, target: Double, k: Int): List[Int] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun closestKValues(root: TreeNode?, target: Double, k: Int): List<Int> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn closest_k_values(root: Option<Rc<RefCell<TreeNode>>>, target: f64, k: i32) -> Vec<i32> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($val = 0, $left = null, $right = null) {\n *         $this->val = $val;\n *         $this->left = $left;\n *         $this->right = $right;\n *     }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @param Float $target\n     * @param Integer $k\n     * @return Integer[]\n     */\n    function closestKValues($root, $target, $k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     val: number\n *     left: TreeNode | null\n *     right: TreeNode | null\n *     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {\n *         this.val = (val===undefined ? 0 : val)\n *         this.left = (left===undefined ? null : left)\n *         this.right = (right===undefined ? null : right)\n *     }\n * }\n */\n\nfunction closestKValues(root: TreeNode | null, target: number, k: number): number[] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "; Definition for a binary tree node.\n#|\n\n; val : integer?\n; left : (or/c tree-node? #f)\n; right : (or/c tree-node? #f)\n(struct tree-node\n  (val left right) #:mutable #:transparent)\n\n; constructor\n(define (make-tree-node [val 0])\n  (tree-node val #f #f))\n\n|#\n\n(define/contract (closest-k-values root target k)\n  (-> (or/c tree-node? #f) flonum? exact-integer? (listof exact-integer?))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "%% Definition for a binary tree node.\n%%\n%% -record(tree_node, {val = 0 :: integer(),\n%%                     left = null  :: 'null' | #tree_node{},\n%%                     right = null :: 'null' | #tree_node{}}).\n\n-spec closest_k_values(Root :: #tree_node{} | null, Target :: float(), K :: integer()) -> [integer()].\nclosest_k_values(Root, Target, K) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "# Definition for a binary tree node.\n#\n# defmodule TreeNode do\n#   @type t :: %__MODULE__{\n#           val: integer,\n#           left: TreeNode.t() | nil,\n#           right: TreeNode.t() | nil\n#         }\n#   defstruct val: 0, left: nil, right: nil\n# end\n\ndefmodule Solution do\n  @spec closest_k_values(root :: TreeNode.t | nil, target :: float, k :: integer) :: [integer]\n  def closest_k_values(root, target, k) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"102.8K\", \"totalSubmission\": \"178.3K\", \"totalAcceptedRaw\": 102850, \"totalSubmissionRaw\": 178269, \"acRate\": \"57.7%\"}",
+        "hints": [
+            "Consider implement these two helper functions:\r\n<ol type=\"i\"><li><code>getPredecessor(N)</code>, which returns the next smaller node to N.</li>\r\n<li><code>getSuccessor(N)</code>, which returns the next larger node to N.</li>\r\n</ol>",
+            "Try to assume that each node has a parent pointer, it makes the problem much easier.",
+            "Without parent pointer we just need to keep track of the path from the root to the current node using a stack.",
+            "You would need two stacks to track the path in finding predecessor and successor node separately."
+        ],
+        "solution": {
+            "id": "1016",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[4,2,5,1,3]\n3.714286\n2",
+        "metaData": "{\r\n  \"name\": \"closestKValues\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    },\r\n    {\r\n      \"name\": \"target\",\r\n      \"type\": \"double\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1016",
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Overview\n\nThe problem is a BST variation of the \"kth-smallest\" classical problem. It is \npopular both in Google and Facebook, but these two companies are waiting for you\nto show different approaches to this problem. \nWe're proposing 3 solutions here, and it's more an overview.\n\n**Prerequisites**\n\nBecause of that, you might want first to check out the list of prerequisites:\n\n- [Inorder traversal of BST is an array sorted in the ascending order.](https://leetcode.com/problems/delete-node-in-a-bst/solution/)\nTo compute inorder traversal follow the direction `Left -> Node -> Right`.\n\n- [Closest BST value: find _one_ closest element](https://leetcode.com/problems/closest-binary-search-tree-value/solution/).\n\n- [kth-smallest problem for the array could be solved by using heap in \n$$\\mathcal{O}(N \\log k)$$ time, or by using quickselect in $$\\mathcal{O}(N)$$ time.](https://leetcode.com/problems/top-k-frequent-elements/solution/)\n\n**Google vs. Facebook**\n\nThere are three ways to solve the problem:\n\n- Approach 1. Sort, $$\\mathcal{O}(N \\log N)$$ time. The idea is to convert BST into an array, \nsort it by the distance to the target, and return the k closest elements.\n\n- Approach 2. Facebook-friendly, heap, $$\\mathcal{O}(N \\log k)$$ time. \nWe could use the heap of capacity k, sorted by the\ndistance to the target. It's not an optimal but very straightforward solution - \ntraverse the tree, push the elements into the heap, and then return this heap. \nFacebook interviewer would insist on implementing this solution because the interviews are a bit shorter than Google ones, and it's important to get \nproblem solved end-to-end.\n\n- Approach 3. Google-friendly, quickselect, $$\\mathcal{O}(N)$$ time.\n[Here you could find a very detailed explanation of quickselect algorithm.](https://leetcode.com/problems/top-k-frequent-elements/solution/)\nIn this article, we're going to provide a relatively brief implementation. \nGoogle guys usually prefer the best-time solutions, well-structured clean skeleton,\neven if you have no time to implement everything in time end-to-end.\n<br /> \n<br />\n\n\n--- \n#### Approach 1: Recursive Inorder + Sort, O(N log N) time\n\n**Intuition**\n\n![img](../Figures/272/inorder.png)\n*Figure 1. Sort.*\n{:align=\"center\"}\n\nThe most straightforward approach is to build inorder traversal\nand then find the k closest elements using build-in sort.  \n\n**Algorithm**\n\n- Build an inorder traversal array.\n\n- Find the k closest to the target elements using build-in sort.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/d6fu73dD/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"d6fu73dD\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N \\log N)$$. $$\\mathcal{O}(N)$$ to build inorder traversal\nand then $$\\mathcal{O}(N \\log N)$$ to sort it.\n\n* Space complexity: $$\\mathcal{O}(N)$$ to store list `nums` of $$N$$ elements.\n<br /> \n<br />\n\n\n---\n#### Approach 2: Recursive Inorder + Heap, O(N log k) time\n\n![img](../Figures/272/heap.png)\n*Figure 2. Heap.*\n{:align=\"center\"}\n\n**Algorithm**\n\n- Instantiate the heap with \"less close element first\" \nstrategy so that the heap contains the elements \nthat are closest to the target. \n\n- Use inorder traversal to traverse the tree \nfollowing the direction `Left -> Node -> Right`.\n\n    - Push all elements into heap during the traversal, keeping the heap size less than or equal to $$k$$.\n\n- As a result, the heap contains $$k$$ elements that are closest to target.\nConvert it into a list and return.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/avn4tDSj/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"avn4tDSj\"></iframe>\n\n**Optimisations**\n\nOne could optimize the solution by adding the stop condition.\nInorder traversal pops the elements in the sorted order. Hence once\nthe distance of the current element to the target becomes greater than\nthe distance of the first element in a heap, \none could stop the computations. The overall worst-case time\ncomplexity would be still $$\\mathcal{O}(N \\log k)$$, but the average time\ncould be improved to $$\\mathcal{O}(H \\log k)$$, where $$H$$ is a tree height.\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N \\log k)$$ to push N elements into \nthe heap of the size $$k$$.  \n\n* Space complexity: $$\\mathcal{O}(k + H)$$ to keep the heap of k elements \nand the recursion stack of the tree height.\n<br /> \n<br />\n\n\n--- \n#### Approach 3: QuickSelect, O(N) time.\n\n**Hoare's selection algorithm**\n\nQuickselect is a [textbook algorithm](https://en.wikipedia.org/wiki/Quickselect) \ntypically used to solve the problems \"find `k`*th* something\":\n`k`*th* smallest, `k`*th* largest, etc. Like quicksort, quickselect was developed \nby [Tony Hoare](https://en.wikipedia.org/wiki/Tony_Hoare), \nand also known as _Hoare's selection algorithm_.\n\nIt has $$\\mathcal{O}(N)$$ _average_ time complexity and widely used in practice. \nIt is worth to note that its worst-case time complexity \nis $$\\mathcal{O}(N^2)$$, although the probability of this worst-case \nis negligible.\n\nThe approach is the same as for quicksort.\n\n> One chooses a pivot and defines its position in a sorted array in a \nlinear time using the so-called _partition algorithm_. \n\nAs an output, we have an array where the pivot is on its perfect position\nin the ascending sorted array, sorted by the frequency. \nAll elements on the left of the pivot are more close to the target \nthan the pivot, and all elements on the right are less close \nor on the same distance from\nthe target.\n\nThe array is now split into two parts.\nIf by chance, our pivot element took `k`*th* final position, \nthen $$k$$ elements on the left are these $$k$$ \nclosest elements we're looking for. \nIf not, we can choose one more pivot and \nplace it in its perfect position.\n\n![img](../Figures/272/quickselect.png)\n*Figure 3. Quickselect.*\n{:align=\"center\"}\n\nIf that were a quicksort algorithm, one would have to process\nboth parts of the array. That would result in $$\\mathcal{O}(N \\log N)$$ time complexity.\nIn this case, there is no need to deal with both parts since one knows \nin which part to search for `k`*th* closest element, and that\nreduces the average time complexity to $$\\mathcal{O}(N)$$.\n\n**Algorithm**\n\nThe algorithm is relatively straightforward:\n\n* Traverse the tree and convert it into array `nums`. \n\n* Implement the simple function to compute the distance to the target. Note that the distance is not unique. \nThat means we need a partition algorithm \nthat works fine with _duplicates_. \n\n* Work with `nums` array. \nUse a partition scheme (please check the next section) to place the pivot \ninto its perfect position `pivot_index` in the sorted array,\nmove more close elements to the left of the pivot, \nand less close or of the same distance - to the right.\n\n* Compare `pivot_index` and `k`.\n \n    - If `pivot_index == k`, the pivot is the\n    `k`*th* less close element, and all elements on the left\n    are the $$k$$ closest elements to the target. \n    Return these elements.\n    \n    - Otherwise, choose the side of the array to proceed recursively.\n\n**Hoare's Partition vs. Lomuto's Partition**\n\nThere is a zoo of partition algorithms. The most simple \none is [Lomuto's Partition Scheme](https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme).\n\n> The drawback of Lomuto's partition is that it fails with duplicates. \n\nHere we work with an array of unique elements, but they are compared by the distances to the target, which are _not unique_. That's why we choose \n_Hoare's Partition_ here. \n\n> Hoare's partition is more efficient than Lomuto's partition \nbecause it does three times fewer swaps on average, \nand creates efficient partitions even when all values are equal.\n\nHere is how it works:\n\n- Move pivot at the end of the array using swap. \n\n- Set the pointer at the beginning of the array `store_index = left`.\n    \n- Iterate over the array and move all more close elements \nto the left\n`swap(store_index, i)`. Move `store_index` one step to the right after each swap.\n\n- Move the pivot to its final place, and return this index.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/V6BJggQ8/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"V6BJggQ8\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N)$$,\n    $$\\mathcal{O}(N^2)$$ in the worst case. \n    [Please refer to this card for the good detailed explanation of Master Theorem](https://leetcode.com/explore/learn/card/recursion-ii/470/divide-and-conquer/2871/).\n    Master Theorem helps to get an average complexity by writing the algorithm cost\n    as $$T(N) = a T(N / b) + f(N)$$. \n    Here we have an example of Master Theorem case III: \n    $$T(N) = T \\left(\\frac{N}{2}\\right) + N$$, \n    that results in $$\\mathcal{O}(N)$$ time complexity.\n    That's the case of random pivots.\n    \n    In the worst-case of constantly bad chosen pivots, the problem is \n    not divided by half at each step, it becomes just one element less,\n    that leads to $$\\mathcal{O}(N^2)$$ time complexity. \n    It happens, for example, if at each step you choose the pivot not \n    randomly, but take the rightmost element. \n    For the random pivot choice, the probability of having such a \n    worst-case is negligibly small.  \n\n* Space complexity: $$\\mathcal{O}(N)$$ to store `nums`.\n<br /> \n<br />\n\n\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "961",
+            "count": 53,
+            "average": "3.717",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "closest-binary-search-tree-value-ii",
+    "playgroundData": {
+        "d6fu73dD": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "closest-bst-value-ii-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "avn4tDSj": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "closest-bst-value-ii-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "V6BJggQ8": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "closest-bst-value-ii-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

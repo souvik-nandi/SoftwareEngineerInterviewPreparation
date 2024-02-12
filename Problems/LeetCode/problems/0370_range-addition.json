@@ -1,0 +1,246 @@
+{
+    "id": "370",
+    "question": {
+        "questionId": "370",
+        "questionFrontendId": "370",
+        "boundTopicId": null,
+        "title": "Range Addition",
+        "titleSlug": "range-addition",
+        "content": "<p>You are given an integer <code>length</code> and an array <code>updates</code> where <code>updates[i] = [startIdx<sub>i</sub>, endIdx<sub>i</sub>, inc<sub>i</sub>]</code>.</p>\n\n<p>You have an array <code>arr</code> of length <code>length</code> with all zeros, and you have some operation to apply on <code>arr</code>. In the <code>i<sup>th</sup></code> operation, you should increment all the elements <code>arr[startIdx<sub>i</sub>], arr[startIdx<sub>i</sub> + 1], ..., arr[endIdx<sub>i</sub>]</code> by <code>inc<sub>i</sub></code>.</p>\n\n<p>Return <code>arr</code> <em>after applying all the</em> <code>updates</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/27/rangeadd-grid.jpg\" style=\"width: 413px; height: 573px;\" />\n<pre>\n<strong>Input:</strong> length = 5, updates = [[1,3,2],[2,4,3],[0,2,-2]]\n<strong>Output:</strong> [-2,0,3,5,3]\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> length = 10, updates = [[2,4,6],[5,6,8],[1,9,-4]]\n<strong>Output:</strong> [0,-4,2,2,2,4,4,-4,-4,-4]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= updates.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= startIdx<sub>i</sub> &lt;= endIdx<sub>i</sub> &lt; length</code></li>\n\t<li><code>-1000 &lt;= inc<sub>i</sub> &lt;= 1000</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Medium",
+        "likes": 1360,
+        "dislikes": 66,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Range Addition II\", \"titleSlug\": \"range-addition-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Count Positions on Street With Required Brightness\", \"titleSlug\": \"count-positions-on-street-with-required-brightness\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "5\n[[1,3,2],[2,4,3],[0,2,-2]]\n10\n[[2,4,6],[5,6,8],[1,9,-4]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Prefix Sum",
+                "slug": "prefix-sum",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 2}], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<int> getModifiedArray(int length, vector<vector<int>>& updates) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int[] getModifiedArray(int length, int[][] updates) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def getModifiedArray(self, length, updates):\n        \"\"\"\n        :type length: int\n        :type updates: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def getModifiedArray(self, length: int, updates: List[List[int]]) -> List[int]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* getModifiedArray(int length, int** updates, int updatesSize, int* updatesColSize, int* returnSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int[] GetModifiedArray(int length, int[][] updates) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} length\n * @param {number[][]} updates\n * @return {number[]}\n */\nvar getModifiedArray = function(length, updates) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer} length\n# @param {Integer[][]} updates\n# @return {Integer[]}\ndef get_modified_array(length, updates)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func getModifiedArray(_ length: Int, _ updates: [[Int]]) -> [Int] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func getModifiedArray(length int, updates [][]int) []int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def getModifiedArray(length: Int, updates: Array[Array[Int]]): Array[Int] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun getModifiedArray(length: Int, updates: Array<IntArray>): IntArray {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn get_modified_array(length: i32, updates: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer $length\n     * @param Integer[][] $updates\n     * @return Integer[]\n     */\n    function getModifiedArray($length, $updates) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function getModifiedArray(length: number, updates: number[][]): number[] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (get-modified-array length updates)\n  (-> exact-integer? (listof (listof exact-integer?)) (listof exact-integer?))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec get_modified_array(Length :: integer(), Updates :: [[integer()]]) -> [integer()].\nget_modified_array(Length, Updates) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec get_modified_array(length :: integer, updates :: [[integer]]) :: [integer]\n  def get_modified_array(length, updates) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"74.1K\", \"totalSubmission\": \"105.6K\", \"totalAcceptedRaw\": 74079, \"totalSubmissionRaw\": 105594, \"acRate\": \"70.2%\"}",
+        "hints": [
+            "Thinking of using advanced data structures? You are thinking it too complicated.",
+            "For each update operation, do you really need to update all elements between i and j?",
+            "Update only the first and end element is sufficient.",
+            "The optimal time complexity is O(<b><i>k</i></b> + <b><i>n</i></b>) and uses O(1) extra space."
+        ],
+        "solution": {
+            "id": "56",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "5\n[[1,3,2],[2,4,3],[0,2,-2]]",
+        "metaData": "{\r\n  \"name\": \"getModifiedArray\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"length\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"updates\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "56",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Approach 1: Na\u00efve Approach\n\n**Algorithm**\n\nThe algorithm is trivial. For each update query, we iterate over the required update range and update each element individually.\n\n\nEach query of `updates` is a tuple of 3 integers: $$start, end$$ (the start and end indexes for the update range) and $$val$$ (the amount by which each array element in this range must be incremented).\n\n<iframe src=\"https://leetcode.com/playground/5yopnQJa/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"5yopnQJa\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n \\cdot k)$$ (worst case) where $$k$$ is the number of update queries and $$n$$ is the length of the array. Each of the $$k$$ update operations take up $$O(n)$$ time (worst case, when all updates are over the entire range).\n\n* Space complexity : $$O(1)$$. No extra space required.\n<br>\n<br>\n\n---\n#### Approach 2: Range Caching\n\n**Intuition**\n\n* There is only one read query on the entire range, and it occurs at the end of all update queries. Additionally, the order of processing update queries is irrelevant.\n\n* Cumulative sums or `partial_sum` operations apply the effects of past elements to the future elements in the sequence.\n\n**Algorithm**\n\nThe algorithm makes use of the above intuition to simply store changes at the *borders* of the update ranges (instead of processing the entire range). Finally a single post processing operation is carried out over the entire output array.\n\nThe two steps that are required are as follows:\n\n1. For each update query $$(start, end, val)$$ on the array $$arr$$, we need to do *only* two operations:\n\n    * Update $$start$$ boundary of the range:\n\n    $$\n    arr_{start} = arr_{start} + val\n    $$\n\n    * Update just beyond the $$end$$ boundary of the range:\n\n    $$\n    arr_{end+1} = arr_{end+1} - val\n    $$\n\n2. Final Transformation. The cumulative sum of the entire array is taken (`0` - based indexing)\n\n    $$\n    arr_i = arr_i + arr_{i-1} \\quad \\forall \\quad i \\in [1, n)\n    $$\n\n\n<iframe src=\"https://leetcode.com/playground/qZVkkbBN/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"qZVkkbBN\"></iframe>\n\n**Formal Explanation**\n\nFor each update query $$(start, end, val)$$ on the array $$arr$$, the goal is to achieve the result:\n\n$$\narr_i = arr_i + val \\quad \\forall \\quad i \\in [start, end]\n$$\n\nApplying the final transformation, ensures two things:\n\n1. It carries over the $$+val$$ increment over to every element $$ arr_i \\; \\forall \\; i \\ge start $$.\n2. It carries over the $$-val$$ increment (equivalently, a $$+val$$ decrement) over to every element $$ arr_j \\; \\forall \\; j \\gt end $$.\n\nThe net result is that:\n\n$$\n\\begin{aligned}\narr_i &= arr_i + val  \\quad && \\forall \\quad i \\in [start, end] \\\\\narr_j &= arr_j + val - val = arr_j  \\quad && \\forall \\quad i \\in (end, length)\n\\end{aligned}\n$$\n\nwhich meets our end goal. It is easy to see that the updates over a range did not carry over beyond it due to the compensating effect of the $$-val$$ increment over the $$+val$$ increment.\n\nIt is good to note that this works for multiple update queries because the particular binary operations here (namely addition and subtraction):\n\n* are *closed* over the entire domain of `Integer`s. (A counter example is division which is not closed over all `Integer`s).\n\n* are *complementary* operations. (As a counter example multiplication and division are not always complimentary due to possible loss of precision when dividing `Integer`s).\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n + k)$$. Each of the $$k$$ update operations is done in constant $$O(1)$$ time. The final cumulative sum transformation takes $$O(n)$$ time always.\n\n* Space complexity : $$O(1)$$. No extra space required.\n<br>\n<br>\n\n---\n## Further Thoughts\n\nAn extension of this problem is to apply such updates on an array where all elements are **not** the same.\n\nIn this case, the second approach requires that the original configuration must be stored separately before applying the final transformation. This incurs an additional space complexity of $$O(n)$$.\n\n[@StefanPochmann](https://leetcode.com/StefanPochmann/) suggested another method (see comment section) which does not require extra space, but requires an extra linear pass over the entire array. The idea is to apply *reverse* `partial_sum` operation on the array (for example, array $$[2, 3, 10, 5]$$ transforms to $$[2, 1, 7, -5]$$) as an initialization step and then proceed with the second method as usual.\n\n---\n\nAnother general, more complex version of this problem comprises of multiple read and update queries over *ranges*. Such problems can be solved quite efficiently with [Segment Trees by applying a popular trick called **Lazy Propogation**.](https://leetcode.com/articles/a-recursive-approach-to-segment-trees-range-sum-queries-lazy-propagation/)\n\nAnalysis written by [@babhishek21](https://leetcode.com/babhishek21).",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "54",
+            "count": 67,
+            "average": "3.627",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "range-addition",
+    "playgroundData": {
+        "5yopnQJa": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "range-addition-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "qZVkkbBN": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "range-addition-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,270 @@
+{
+    "id": "1308",
+    "question": {
+        "questionId": "1308",
+        "questionFrontendId": "1202",
+        "boundTopicId": null,
+        "title": "Smallest String With Swaps",
+        "titleSlug": "smallest-string-with-swaps",
+        "content": "<p>You are given a string <code>s</code>, and an array of pairs of indices in the string&nbsp;<code>pairs</code>&nbsp;where&nbsp;<code>pairs[i] =&nbsp;[a, b]</code>&nbsp;indicates 2 indices(0-indexed) of the string.</p>\n\n<p>You can&nbsp;swap the characters at any pair of indices in the given&nbsp;<code>pairs</code>&nbsp;<strong>any number of times</strong>.</p>\n\n<p>Return the&nbsp;lexicographically smallest string that <code>s</code>&nbsp;can be changed to after using the swaps.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;dcab&quot;, pairs = [[0,3],[1,2]]\n<strong>Output:</strong> &quot;bacd&quot;\n<strong>Explaination:</strong> \nSwap s[0] and s[3], s = &quot;bcad&quot;\nSwap s[1] and s[2], s = &quot;bacd&quot;\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;dcab&quot;, pairs = [[0,3],[1,2],[0,2]]\n<strong>Output:</strong> &quot;abcd&quot;\n<strong>Explaination: </strong>\nSwap s[0] and s[3], s = &quot;bcad&quot;\nSwap s[0] and s[2], s = &quot;acbd&quot;\nSwap s[1] and s[2], s = &quot;abcd&quot;</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;cba&quot;, pairs = [[0,1],[1,2]]\n<strong>Output:</strong> &quot;abc&quot;\n<strong>Explaination: </strong>\nSwap s[0] and s[1], s = &quot;bca&quot;\nSwap s[1] and s[2], s = &quot;bac&quot;\nSwap s[0] and s[1], s = &quot;abc&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10^5</code></li>\n\t<li><code>0 &lt;= pairs.length &lt;= 10^5</code></li>\n\t<li><code>0 &lt;= pairs[i][0], pairs[i][1] &lt;&nbsp;s.length</code></li>\n\t<li><code>s</code>&nbsp;only contains lower case English letters.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 2909,
+        "dislikes": 95,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Minimize Hamming Distance After Swap Operations\", \"titleSlug\": \"minimize-hamming-distance-after-swap-operations\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Process Restricted Friend Requests\", \"titleSlug\": \"process-restricted-friend-requests\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Largest Number After Digit Swaps by Parity\", \"titleSlug\": \"largest-number-after-digit-swaps-by-parity\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+        "exampleTestcases": "\"dcab\"\n[[0,3],[1,2]]\n\"dcab\"\n[[0,3],[1,2],[0,2]]\n\"cba\"\n[[0,1],[1,2]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Union Find",
+                "slug": "union-find",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Citrix\", \"slug\": \"citrix\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"PhonePe\", \"slug\": \"phonepe\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    string smallestStringWithSwaps(string s, vector<vector<int>>& pairs) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public String smallestStringWithSwaps(String s, List<List<Integer>> pairs) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def smallestStringWithSwaps(self, s, pairs):\n        \"\"\"\n        :type s: str\n        :type pairs: List[List[int]]\n        :rtype: str\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def smallestStringWithSwaps(self, s: str, pairs: List[List[int]]) -> str:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nchar * smallestStringWithSwaps(char * s, int** pairs, int pairsSize, int* pairsColSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public string SmallestStringWithSwaps(string s, IList<IList<int>> pairs) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @param {number[][]} pairs\n * @return {string}\n */\nvar smallestStringWithSwaps = function(s, pairs) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} s\n# @param {Integer[][]} pairs\n# @return {String}\ndef smallest_string_with_swaps(s, pairs)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func smallestStringWithSwaps(_ s: String, _ pairs: [[Int]]) -> String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func smallestStringWithSwaps(s string, pairs [][]int) string {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def smallestStringWithSwaps(s: String, pairs: List[List[Int]]): String = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun smallestStringWithSwaps(s: String, pairs: List<List<Int>>): String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn smallest_string_with_swaps(s: String, pairs: Vec<Vec<i32>>) -> String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer[][] $pairs\n     * @return String\n     */\n    function smallestStringWithSwaps($s, $pairs) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function smallestStringWithSwaps(s: string, pairs: number[][]): string {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (smallest-string-with-swaps s pairs)\n  (-> string? (listof (listof exact-integer?)) string?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec smallest_string_with_swaps(S :: unicode:unicode_binary(), Pairs :: [[integer()]]) -> unicode:unicode_binary().\nsmallest_string_with_swaps(S, Pairs) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec smallest_string_with_swaps(s :: String.t, pairs :: [[integer]]) :: String.t\n  def smallest_string_with_swaps(s, pairs) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"84.9K\", \"totalSubmission\": \"148.4K\", \"totalAcceptedRaw\": 84908, \"totalSubmissionRaw\": 148355, \"acRate\": \"57.2%\"}",
+        "hints": [
+            "Think of it as a graph problem.",
+            "Consider the pairs as connected nodes in the graph, what can you do with a connected component of indices ?",
+            "We can sort each connected component alone to get the lexicographically minimum string."
+        ],
+        "solution": {
+            "id": "1318",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "\"dcab\"\n[[0,3],[1,2]]",
+        "metaData": "{\n  \"name\": \"smallestStringWithSwaps\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"list<list<integer>>\",\n      \"name\": \"pairs\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "891",
+            "date": "2022-04-27",
+            "incompleteChallengeCount": 30,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1318",
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Overview\n\nWe have a string of lowercase English letters and some pairs of the form `(a, b)` where `a` and `b`  are indices in the string. Our goal is to find the lexicographically smallest string by swapping the characters at indices `a` and `b`. There is no restriction on the maximum number of swaps.\n\n> Note: The important point to note here is that if we have pairs like `(a, b)` and `(b, c)`, then we can swap characters at indices `a` and `c`. Although we don't have the pair `(a, c)`, we can still swap them by first swapping them with the character at index `b`. Thus, because we can swap the characters at these indices any number of times, we can rearrange the characters `a`, `b`, and `c` into any order.\n\nThis can be depicted as a graph problem. Each index is a vertex and each given pair is an edge between the vertices. An edge implies that we can travel from one vertex to another, or in other words, we can swap them. As shown in the figure below, we have some pairs, and we draw an edge between the two vertices for each pair. If a pair of vertices exists on the same path, then they can be swapped by repeatedly swapping with other vertices in the path between them.\n\n![fig](../Figures/1202/Slide1.png)\n\nThis demonstrates how we can swap any pair of vertices present in the same connected component. Thus, we can rearrange the characters such that any character is at any index within the connected component. To find the lexicographically smallest string, we need to sort the characters that correspond to these indices in ascending order and then place the $$i_{th}$$ character at the $$i_{th}$$ index.\n\nTherefore, we can break the solution down into four steps: build a graph using the given pairs, find the connected components in the graph, sort the characters in each connected component in ascending order, and build the smallest string.\n\nThe biggest challenge in solving this problem was figuring out that, with infinite swaps, we can arrange all characters that belong to the same connected component in sorted order. With that hurdle behind us, our next challenge is, how do we find out which indices belong to the same connected component?\n\nDFS, BFS, and Union-Find are each commonly used to find connected components. Since the DFS and BFS solutions are quite similar in implementation, we will only cover DFS and Union-Find in this article. If you would like to learn more about DFS, BFS, or Union-Find, we encourage you to check out the [Graph Explore Card](https://leetcode.com/explore/featured/card/graph/).\n</br>\n\n---\n\n#### Approach 1: Depth-First Search (DFS)\n\n**Intuition**\n\n> If you're not familiar with DFS, check out our [Explore Card](https://leetcode.com/explore/featured/card/graph/619/depth-first-search-in-graph/3882/).\n\nWe will build the adjacency list using the pairs given i.e., for each pair `(x, y)` we will add an edge from `x` to `y` and from `y` to `x`. Then we will iterate over the indices from `0` to `n-1` where `n` is the length of the given string `s`. For each index, if it has not been visited yet, we will perform a DFS and store the vertices (index) and the characters at these indices in a list. Each list will represent a different component in the graph. Then we will sort each list of indices and each list of characters and place the $$i_{th}$$ character at the $$i_{th}$$ index in the string `smallestString`.\n\n**Algorithm**\n\n1. Iterate over the `pairs` and create an adjacency list such that `adj[source]` contains all the adjacent vertices of vertex `source`.\n2. Iterate over the indices from `0` to `s.size() - 1`. For each index `vertex` we will:\n     - Perform DFS if `vertex` is not visited yet (`visited[vertex]` is `false`)\n        -  While performing DFS, store `vertex` in the list `indices` and the character `s[vertex]` in the list `characters`.\n     - Sort the lists `indices` and `characters`.\n     - Iterate over `indices` and `characters`, and place the $$i_{th}$$ character at the $$i_{th}$$ index in the string `smallestString`.\n3. Return `smallestString`.\n    \n**Implementation**\n\n\n<iframe src=\"https://leetcode.com/playground/Uy7oGJjK/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Uy7oGJjK\"></iframe>\n\n\n**Complexity Analysis**\n\nHere, $$V$$ represents the number of vertices (the length of the given string) and $$E$$ represents the number of edges (the number of pairs).\n\n* Time complexity: $$O(E + V \\log V)$$\n\n  Building the adjacency list will take $$O(E)$$ operations, as we iterate over the list of pairs once, and inserting an element into the adjacency list takes $$O(1)$$ time.\n\n  During the DFS traversal, each vertex will only be visited once. This is because we mark each vertex as visited as soon as we see it, and then we only visit vertices that are not marked as visited. When we iterate over the edge list of each vertex, we look at each edge once. This has a total cost of $$O(V + E)$$.\n\n  Additionally, we also sort the list `indices` and `characters` for each component. In the worst case, all of the vertices in the graph belong to the same component. In that case, sorting two lists of $$V$$ elements will take $$O(V \\log V)$$ time. Hence the total time complexity is equal to $$O(E + V \\log V)$$.\n\n* Space complexity: $$O(E + V)$$\n\n  Building the adjacency list will take $$O(E)$$ space. To track the visited vertices, an array `visited` of size $$O(V)$$ is required. In the worst case, `indices` and `characters` can take $$O(V)$$ space. Also, the run-time stack for DFS will use $$O(V)$$ space i.e., one active function call for each vertex.\n\n  Additional space is used for sorting the lists  `indices`  and `characters`. The space complexity of the sorting algorithm is language-specific. For instance, in Java, the Arrays.sort() for primitives is implemented as a variant of quicksort algorithm whose space complexity is $$O(\\log V)$$. In C++ sort() function provided by STL is a hybrid of Quick Sort, Heap Sort, and Insertion Sort and has a worst-case space complexity of $$O(\\log V)$$. Thus, using the inbuilt sort() function might add up to $$O(\\log V)$$ to space complexity.\n\n  The total space required is $$(E + V + \\log V)$$ and hence, the space complexity is equal to $$O(E + V)$$.\n<br/>\n\n---\n\n#### Approach 2: Disjoint Set Union (DSU)\n\n**Intuition**\n\nRemember, our first task is to determine which indices belong to the same connected component. In this approach, we will use the Union-Find data structure to accomplish this.\n\n> If you're not familiar with DSU, check out our [Explore Card](https://leetcode.com/explore/learn/card/graph/618/disjoint-set/3881/).\n\nFirst, we will union all vertices that share an edge (vertices `a` and `b` share an edge if `(a, b)` or `(b, a)` exists in `pairs`). After which, all vertices with the same root will belong to the same component. This way, by looking at the root node for each vertex, we can put the vertices and the characters at these vertices (indices) in separate lists corresponding to the component they belong to. Then, similar to the previous approach, we will sort the list of characters that belong to the same component and place the $$i_{th}$$ character at the $$i_{th}$$ index in a string `smallestString`.\n\nNote that we don't need to sort the list of indices in this approach because, as we iterate over vertices in ascending order, we will store the vertices that belong to the same component in ascending order.\n\n**Algorithm**\n\n1. Iterate over the `pairs`, for each pair `(a, b)` perform the union operation for vertices `a` and `b`.\n2. Iterate over the indices from `0` to `s.size() - 1`. For each index (`vertex`) we will:\n   - Perform the find operation on `vertex` to find the `root`.\n   - Store the `vertex` in the list corresponding to `root` in the HashMap `rootToComponent`.\n3. Iterate over each list in the HashMap `rootToComponent`:\n    - For each list `indices`, iterate over the list and for each element store the corresponding character in `s` in the list of characters (`characters`). Here, each element in `indices` represents an index in `s` and each character in `characters` represents the characters at this index in `s`.\n   - Sort the list and `characters`.\n   - Iterate over the lists `indices` and `characters`, place the $$i_{th}$$ character at the $$i_{th}$$ index in the string `smallestString`.\n4. Return `smallestString`.\n\n**Implementation**\n\n\n<iframe src=\"https://leetcode.com/playground/fWBm2Q24/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"fWBm2Q24\"></iframe>\n\n\n**Complexity Analysis**\n\nHere, $$V$$ represents the number of vertices (the length of the given string) and $$E$$ represents the number of edges (the number of pairs).\n\n* Time complexity: $$O((E + V) \\cdot \\alpha(V) + V \\log V)$$\n\n  The amortized time complexity for each union-find operation is $$O(\\alpha(V))$$, where $$\\alpha$$ is [The Inverse Ackermann Function](https://en.wikipedia.org/wiki/Ackermann_function#Inverse), this is because we have used union by rank as well as path compression in the DSU implementation.\n   \n  We iterate over each pair and perform the union, which takes $$O(E \\cdot \\alpha(V))$$ time. Then iterating over each vertex and performing the find operation will take $$O(V \\cdot \\alpha(V))$$ time.\n   \n  Additionally, we are sorting the list `indices` and `characters` for each component. In the worst case, we can have a connected graph with a single component, and sorting two lists of size $$V$$ will take $$O(V \\log V)$$ time.\n   \n  Hence, the total time complexity is $$O((E + V) \\cdot \\alpha(V) + V \\log V)$$.\n\n* Space complexity: $$O(V)$$\n    \n  The size of lists `root`, `rank` in DSU is $$V$$. The HashMap `rootToComponent` will contain all the vertices and hence will take $$O(V)$$ space. In the worst case, the lists `indices` and `characters` can take $$O(V)$$ space.\n   \n  Some space will be used for sorting the list `indices` and string `characters`. The space complexity of the sorting algorithm depends on the implementation of each programming language. For instance, in Java, the Arrays.sort() for primitives is implemented as a variant of quicksort algorithm whose space complexity is $$O(\\log V)$$. In C++ sort() function provided by STL is a hybrid of Quick Sort, Heap Sort, and Insertion Sort and has a worst-case space complexity of $$O(\\log V)$$. Thus, the use of the inbuilt sort() function might add up to $$O(\\log V)$$ to space complexity.\n   \n  The total space required is $$(V + \\log V)$$ and hence, the space complexity is $$O(V)$$.\n<br/>\n\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1323",
+            "count": 42,
+            "average": "4.619",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "smallest-string-with-swaps",
+    "playgroundData": {
+        "Uy7oGJjK": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "smallest-string-with-swaps-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "fWBm2Q24": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "smallest-string-with-swaps-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,247 @@
+{
+    "id": "974",
+    "question": {
+        "questionId": "974",
+        "questionFrontendId": "937",
+        "boundTopicId": null,
+        "title": "Reorder Data in Log Files",
+        "titleSlug": "reorder-data-in-log-files",
+        "content": "<p>You are given an array of <code>logs</code>. Each log is a space-delimited string of words, where the first word is the <strong>identifier</strong>.</p>\n\n<p>There are two types of logs:</p>\n\n<ul>\n\t<li><b>Letter-logs</b>: All words (except the identifier) consist of lowercase English letters.</li>\n\t<li><strong>Digit-logs</strong>: All words (except the identifier) consist of digits.</li>\n</ul>\n\n<p>Reorder these logs so that:</p>\n\n<ol>\n\t<li>The <strong>letter-logs</strong> come before all <strong>digit-logs</strong>.</li>\n\t<li>The <strong>letter-logs</strong> are sorted lexicographically by their contents. If their contents are the same, then sort them lexicographically by their identifiers.</li>\n\t<li>The <strong>digit-logs</strong> maintain their relative ordering.</li>\n</ol>\n\n<p>Return <em>the final order of the logs</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> logs = [&quot;dig1 8 1 5 1&quot;,&quot;let1 art can&quot;,&quot;dig2 3 6&quot;,&quot;let2 own kit dig&quot;,&quot;let3 art zero&quot;]\n<strong>Output:</strong> [&quot;let1 art can&quot;,&quot;let3 art zero&quot;,&quot;let2 own kit dig&quot;,&quot;dig1 8 1 5 1&quot;,&quot;dig2 3 6&quot;]\n<strong>Explanation:</strong>\nThe letter-log contents are all different, so their ordering is &quot;art can&quot;, &quot;art zero&quot;, &quot;own kit dig&quot;.\nThe digit-logs have a relative order of &quot;dig1 8 1 5 1&quot;, &quot;dig2 3 6&quot;.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> logs = [&quot;a1 9 2 3 1&quot;,&quot;g1 act car&quot;,&quot;zo4 4 7&quot;,&quot;ab1 off key dog&quot;,&quot;a8 act zoo&quot;]\n<strong>Output:</strong> [&quot;g1 act car&quot;,&quot;a8 act zoo&quot;,&quot;ab1 off key dog&quot;,&quot;a1 9 2 3 1&quot;,&quot;zo4 4 7&quot;]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= logs.length &lt;= 100</code></li>\n\t<li><code>3 &lt;= logs[i].length &lt;= 100</code></li>\n\t<li>All the tokens of <code>logs[i]</code> are separated by a <strong>single</strong> space.</li>\n\t<li><code>logs[i]</code> is guaranteed to have an identifier and at least one word after the identifier.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 1744,
+        "dislikes": 4045,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "[\"dig1 8 1 5 1\",\"let1 art can\",\"dig2 3 6\",\"let2 own kit dig\",\"let3 art zero\"]\n[\"a1 9 2 3 1\",\"g1 act car\",\"zo4 4 7\",\"ab1 off key dog\",\"a8 act zoo\"]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 72}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Audible\", \"slug\": \"audible\", \"timesEncountered\": 5}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<string> reorderLogFiles(vector<string>& logs) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public String[] reorderLogFiles(String[] logs) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def reorderLogFiles(self, logs):\n        \"\"\"\n        :type logs: List[str]\n        :rtype: List[str]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def reorderLogFiles(self, logs: List[str]) -> List[str]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** reorderLogFiles(char ** logs, int logsSize, int* returnSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public string[] ReorderLogFiles(string[] logs) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string[]} logs\n * @return {string[]}\n */\nvar reorderLogFiles = function(logs) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String[]} logs\n# @return {String[]}\ndef reorder_log_files(logs)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func reorderLogFiles(_ logs: [String]) -> [String] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func reorderLogFiles(logs []string) []string {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def reorderLogFiles(logs: Array[String]): Array[String] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun reorderLogFiles(logs: Array<String>): Array<String> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn reorder_log_files(logs: Vec<String>) -> Vec<String> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String[] $logs\n     * @return String[]\n     */\n    function reorderLogFiles($logs) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function reorderLogFiles(logs: string[]): string[] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (reorder-log-files logs)\n  (-> (listof string?) (listof string?))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec reorder_log_files(Logs :: [unicode:unicode_binary()]) -> [unicode:unicode_binary()].\nreorder_log_files(Logs) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec reorder_log_files(logs :: [String.t]) :: [String.t]\n  def reorder_log_files(logs) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"311.2K\", \"totalSubmission\": \"553.9K\", \"totalAcceptedRaw\": 311194, \"totalSubmissionRaw\": 553873, \"acRate\": \"56.2%\"}",
+        "hints": [],
+        "solution": {
+            "id": "998",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[\"dig1 8 1 5 1\",\"let1 art can\",\"dig2 3 6\",\"let2 own kit dig\",\"let3 art zero\"]",
+        "metaData": "{\r\n  \"name\": \"reorderLogFiles\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"logs\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string[]\"\r\n  }\r\n}\r\n",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "998",
+        "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n#### Overview\r\n\r\nFirst of all, let us put aside the debate whether this problem is an easy or medium one.\r\nThe problem is a good exercise to practice the technique of **custom sort** in different languages.\r\n\r\n>The idea of custom sort is that we don't have to rewrite a sorting algorithm every time we have a different _**sorting criteria**_ among the elements.\r\n\r\nEach language provides certain interface that allows us to **customize** the sorting criteria of the sorting functions, so that we can reuse the implementation of sorting in different scenarios.\r\n\r\nIn this article, we will present two ways to specify the sorting order, namely by **comparator** and by **sorting key**.\r\n\r\n---\r\n#### Approach 1: Comparator\r\n\r\n**Intuition**\r\n\r\nGiven a list of elements $$[e_1, e_2, e_3]$$, regardless of the content of the elements, the first way to specify the _order_ among the elements is to define the **pairwise** $$<$$ (_\"less than\"_) **relationship** globally.\r\n\r\nFor instance, for the above example, we could define the **relationships** as $$e_3 < e_2, \\space e_2 < e_1$$. \r\nThen if we are asked to sort the list in the _ascending_ order, the result would be $$[e_3, e_2, e_1]$$. \r\n\r\n**Note:** normally we should define all pairwise relationships among all elements, but due to the transitive property, we omit certain relationships that can be deduced from others, _e.g._ $$(e_3 < e_2, e_2 < e_1) \\to (e_1 < e_3)$$\r\n\r\nIf we ever change the _order_, _e.g._ $$e_1 < e_3, \\space e_3 < e_2$$, the final _sorted_ result would be changed accordingly, _i.e._ $$[e_1, e_3, e_2]$$.\r\n\r\n\r\n**Algorithm**\r\n\r\nThe above pairwise _\"less than\"_ relationship is also known as **comparator** in Java, which is a function object that helps the sorting functions to determine the orders among a collection of elements.\r\n\r\nWe show the [definition of the comparator](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html) interface as follows:\r\n\r\n```java\r\nint compare(T o1, T o2) {\r\n    if (o1 < o2)\r\n        return -1;\r\n    else if (o1 == o2)\r\n        return 0;\r\n    else // o1 > o2\r\n        return 1;\r\n}\r\n``` \r\n\r\n>As we discussed before, once we define the pairwise relationship among the elements in a collection, the **total order** of the collection is then fixed.\r\n\r\nNow, what we need to do is to define our own proper **comparator** according to the description of the problem.\r\nWe can translate the problem into the following rules:\r\n\r\n* 1). The _letter-logs_ should be prioritized above all _digit-logs_.\r\n\r\n* 2). Among the _letter-logs_, we should further sort them firstly based on their **contents**, and then on their **identifiers** if the contents are identical.\r\n\r\n* 3). Among the _digit-logs_, they should remain in the same order as they are in the collection.\r\n\r\nOne can then go ahead and implement the comparator based on the above rules. Here is an example.\r\n\r\n<iframe src=\"https://leetcode.com/playground/G4W4xyfG/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"G4W4xyfG\"></iframe>\r\n\r\n\r\n**Stable Sort**\r\n\r\nOne might notice that in the above implementation one can find the logic that corresponds each of the rules, except the **Rule (3)**.\r\n\r\nIndeed, we did not do anything explicitly to ensure the order imposed by the Rule (3).\r\n\r\nThe short answer is that the Rule (3) is ensured _implicitly_ by an important property of sorting algorithms, called **[stability](https://en.wikipedia.org/wiki/Sorting_algorithm#Stability)**.\r\n\r\n>It is stated as \"stable sorting algorithms sort equal elements in the same order that they appear in the input.\"\r\n\r\nNot all sort algorithms are _stable_, _e.g._ **_merge sort_** is stable.\r\n\r\nThe `Arrays.sort()` interface that we used is stable, as one can find in the [specification](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html).\r\n\r\nTherefore, the Rule (3) is implicitly respected thanks to the stability of the sorting algorithm that we used.\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$N$$ be the number of logs in the list and\r\n$$M$$ be the maximum length of a single log. \r\n\r\n- Time Complexity: $$\\mathcal{O}(M \\cdot N \\cdot \\log N)$$\r\n\r\n    - First of all, the time complexity of the `Arrays.sort()` is $$\\mathcal{O}(N \\cdot \\log N)$$, as stated in the [API specification](https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#sort-byte:A-), which is to say that the `compare()` function would be invoked $$\\mathcal{O}(N \\cdot \\log N)$$ times.\r\n\r\n    - For each invocation of the `compare()` function, it could take up to $$\\mathcal{O}(M)$$ time, since we compare the contents of the logs.\r\n\r\n    - Therefore, the overall time complexity of the algorithm is $$\\mathcal{O}(M \\cdot N \\cdot \\log N)$$.\r\n\r\n\r\n- Space Complexity: $$\\mathcal{O}(M \\cdot \\log N)$$\r\n\r\n    - For each invocation of the `compare()` function, we would need up to $$\\mathcal{O}(M)$$ space to hold the parsed logs.\r\n\r\n    - In addition, since the implementation of `Arrays.sort()` is based on quicksort algorithm whose space complexity is $$\\mathcal{O}(\\log n)$$, assuming that the space for each element is $$\\mathcal{O}(1)$$).\r\n    Since each log could be of $$\\mathcal{O}(M)$$ space, we would need $$\\mathcal{O}(M \\cdot \\log N)$$ space to hold the intermediate values for sorting.\r\n\r\n    - In total, the overall space complexity of the algorithm is $$\\mathcal{O}(M + M \\cdot \\log N) = \\mathcal{O}(M \\cdot \\log N)$$.\r\n\r\n\r\n---\r\n#### Approach 2: Sorting by Keys\r\n\r\n**Intuition**\r\n\r\nRather than defining pairwise relationships among all elements in a collection, the order of the elements can also be defined with **sorting keys**.\r\n\r\nTo illustrate the idea, let us first define a `Student` object as follows, which has three properties: _name_, _grade_, _age_.\r\n\r\n```python\r\nclass Student:\r\n    def __init__(self, name, grade, age):\r\n        self.name = name\r\n        self.grade = grade\r\n        self.age = age\r\n\r\nstudent_objects = [\r\n    Student('john', 'A', 15),\r\n    Student('jane', 'B', 12),\r\n    Student('dave', 'B', 10),\r\n]\r\n```\r\n\r\nNow, if we are asked to sort the list of students by _age_ in ascending order, we could simply use the `age` property of each student as the sorting key, as follows:\r\n\r\n```python\r\n>>> sorted(student_objects, key=lambda student: student.age)\r\n[('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]\r\n```\r\n\r\n>Furthermore, the key could be a tuple of multiple keys, _i.e._ `tuple(key_1, key_2, ... key_n)`.\r\n\r\nIf two elements have the same value on `key_1`, the comparison will carry on for the following keys, _i.e._ `key_2 ... key_n`.\r\n\r\nAs a result, if we are asked to sort the students first by the _grade_, then by the _age_, we can simply return the compound key `(stduent.grade, student.age)`, as follows:\r\n\r\n```python\r\n>>> sorted(student_objects, key=lambda student: (student.grade, student.age))\r\n[('john', 'A', 15), ('dave', 'B', 10), ('jane', 'B', 12)]\r\n```\r\n\r\n**Algorithm**\r\n\r\nGiven the above intuition, it should be clear that all we need is to _translate_ the rules we defined before into a tuple of keys.\r\n\r\nAs a reminder, here are a list of the rules that we defined before, concerning the order of logs:\r\n\r\n* 1). The _letter-logs_ should be prioritized above all _digit-logs_.\r\n\r\n* 2). Among the _letter-logs_, we should further sort them based on firstly on their **contents**, and then on their **identifiers** if the contents are identical.\r\n\r\n* 3). Among the _digit-logs_, they should remain in the same order as they are in the collection.\r\n\r\nTo ensure the above order, we could define a tuple of 3 keys, `(key_1, key_2, key_3)`, as follows:\r\n\r\n- `key_1`: this key serves as a indicator for the type of logs. For the _letter-logs_, we could assign its `key_1` with `0`, and for the _digit-logs_, we assign its `key_1` with `1`.\r\nAs we can see, thanks to the assigned values, the _letter-logs_ would take the priority above the _digit-logs_.\r\n\r\n- `key_2`: for this key, we use the **_content_** of the _letter-logs_ as its value, so that among the _letter-logs_, they would be further ordered based on their content, as required in the Rule (2).\r\n\r\n- `key_3`: similarly with the `key_2`, this key serves to further order the _letter-logs_. We will use the **_identifier_** of the _letter-logs_ as its value, so that for the _letter-logs_ with the same content, we could further sort the logs based on its identifier, as required in the Rule (2).\r\n\r\n**Note:** for the _digit-logs_, we don't need the `key_2` and `key_3`.\r\nWe can simply assign the `None` value to these two keys. As a result, the key value for all the _digit-logs_ would be `(1, None, None)`.\r\n\r\nFinally, thanks to the **stability** of sorting algorithms, the elements with the same key value would remain the same order as in the original input.\r\nTherefore, the Rule (3) is ensured.\r\n\r\n<iframe src=\"https://leetcode.com/playground/8KJkpbNv/shared\" frameBorder=\"0\" width=\"100%\" height=\"191\" name=\"8KJkpbNv\"></iframe>\r\n\r\n\r\n\r\n**Complexity Analysis**\r\n\r\n\r\nLet $$N$$ be the number of logs in the list and\r\n$$M$$ be the maximum length of a single log. \r\n\r\n- Time Complexity: $$\\mathcal{O}(M \\cdot N \\cdot \\log N)$$\r\n\r\n    - The `sorted()` in Python is implemented with the [Timsort](https://en.wikipedia.org/wiki/Timsort) algorithm whose time complexity is $$\\mathcal{O}(N \\cdot \\log N)$$.\r\n\r\n    - Since the keys of the elements are basically the logs itself, the comparison between two keys can take up to $$\\mathcal{O}(M)$$ time.\r\n\r\n    - Therefore, the overall time complexity of the algorithm is $$\\mathcal{O}(M \\cdot N \\cdot \\log N)$$.\r\n\r\n\r\n- Space Complexity: $$\\mathcal{O}(M \\cdot N)$$\r\n\r\n    - First, we need $$\\mathcal{O}(M \\cdot N)$$ space to keep the keys for the log.\r\n\r\n    - In addition, the worst space complexity of the [Timsort](https://en.wikipedia.org/wiki/Timsort) algorithm is $$\\mathcal{O}(N)$$, assuming that the space for each element is $$\\mathcal{O}(1)$$.\r\n    Hence we would need $$\\mathcal{O}(M \\cdot N)$$ space to hold the intermediate values for sorting.\r\n\r\n    - In total, the overall space complexity of the algorithm is $$\\mathcal{O}(M \\cdot N + M \\cdot N) = \\mathcal{O}(M \\cdot N)$$.\r\n\r\n\r\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "943",
+            "count": 124,
+            "average": "3.548",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "reorder-data-in-log-files",
+    "playgroundData": {
+        "G4W4xyfG": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "reorder-data-in-log-files-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "8KJkpbNv": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "reorder-data-in-log-files-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

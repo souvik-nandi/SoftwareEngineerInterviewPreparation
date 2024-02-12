@@ -1,0 +1,220 @@
+{
+    "id": "1665",
+    "question": {
+        "questionId": "1665",
+        "questionFrontendId": "1522",
+        "boundTopicId": null,
+        "title": "Diameter of N-Ary Tree",
+        "titleSlug": "diameter-of-n-ary-tree",
+        "content": "<p>Given a <code>root</code> of an <a href=\"https://leetcode.com/articles/introduction-to-n-ary-trees/\" target=\"_blank\">N-ary tree</a>, you need to compute the length of the diameter of the tree.</p>\n\n<p>The diameter of an N-ary tree is the length of the <strong>longest</strong> path between any two nodes in the tree. This path may or may not pass through the root.</p>\n\n<p>(<em>Nary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value.)</em></p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/07/19/sample_2_1897.png\" style=\"width: 324px; height: 173px;\" /></p>\n\n<pre>\n<strong>Input:</strong> root = [1,null,3,2,4,null,5,6]\n<strong>Output:</strong> 3\n<strong>Explanation: </strong>Diameter is shown in red color.</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/07/19/sample_1_1897.png\" style=\"width: 253px; height: 246px;\" /></strong></p>\n\n<pre>\n<strong>Input:</strong> root = [1,null,2,null,3,4,null,5,null,6]\n<strong>Output:</strong> 4\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/07/19/sample_3_1897.png\" style=\"width: 369px; height: 326px;\" /></p>\n\n<pre>\n<strong>Input:</strong> root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]\n<strong>Output:</strong> 7\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The depth of the n-ary tree is less than or equal to <code>1000</code>.</li>\n\t<li>The total number of nodes is between <code>[1, 10<sup>4</sup>]</code>.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Medium",
+        "likes": 460,
+        "dislikes": 6,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Diameter of Binary Tree\", \"titleSlug\": \"diameter-of-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[1,null,3,2,4,null,5,6]\n[1,null,2,null,3,4,null,5,null,6]\n[1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Tree",
+                "slug": "tree",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "/*\n// Definition for a Node.\nclass Node {\npublic:\n    int val;\n    vector<Node*> children;\n\n    Node() {}\n\n    Node(int _val) {\n        val = _val;\n    }\n\n    Node(int _val, vector<Node*> _children) {\n        val = _val;\n        children = _children;\n    }\n};\n*/\n\nclass Solution {\npublic:\n    int diameter(Node* root) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "/*\n// Definition for a Node.\nclass Node {\n    public int val;\n    public List<Node> children;\n\n    \n    public Node() {\n        children = new ArrayList<Node>();\n    }\n    \n    public Node(int _val) {\n        val = _val;\n        children = new ArrayList<Node>();\n    }\n    \n    public Node(int _val,ArrayList<Node> _children) {\n        val = _val;\n        children = _children;\n    }\n};\n*/\n\nclass Solution {\n    public int diameter(Node root) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "\"\"\"\n# Definition for a Node.\nclass Node(object):\n    def __init__(self, val=None, children=None):\n        self.val = val\n        self.children = children if children is not None else []\n\"\"\"\n\nclass Solution(object):\n    def diameter(self, root):\n        \"\"\"\n        :type root: 'Node'\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "\"\"\"\n# Definition for a Node.\nclass Node:\n    def __init__(self, val=None, children=None):\n        self.val = val\n        self.children = children if children is not None else []\n\"\"\"\n\nclass Solution:\n    def diameter(self, root: 'Node') -> int:\n        \"\"\"\n        :type root: 'Node'\n        :rtype: int\n        \"\"\"",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "/**\n * Definition for a Node.\n * struct Node {\n *     int val;\n *     int numChildren;\n *     struct Node** children;\n * };\n */\n\nint* diameter(struct Node* root) {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "/*\n// Definition for a Node.\npublic class Node {\n    public int val;\n    public IList<Node> children;\n    \n    public Node() {\n        val = 0;\n        children = new List<Node>();\n    }\n\n    public Node(int _val) {\n        val = _val;\n        children = new List<Node>();\n    }\n    \n    public Node(int _val, List<Node> _children) {\n        val = _val;\n        children = _children;\n    }\n}\n*/\n\npublic class Solution {\n    public int Diameter(Node root) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * // Definition for a Node.\n * function Node(val, children) {\n *    this.val = val === undefined ? 0 : val;\n *    this.children = children === undefined ? [] : children;\n * };\n */\n\n/**\n * @param {Node} root\n * @return {number}\n */\nvar diameter = function(root) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# Definition for a Node.\n# class Node\n#     attr_accessor :val, :children\n#     def initialize(val=0, children=[])\n#         @val = val\n#         @children = children\n#     end\n# end\n\n# @param {Node} root\n# @return {Integer}\ndef diameter(root)\n\t\nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "/**\n * Definition for a Node.\n * public class Node {\n *     public var val: Int\n *     public var children: [Node]\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.children = []\n *     }\n * }\n */\n\nclass Solution {\n    func diameter(_ root: Node?) -> Int {\n    \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "/**\n * Definition for a Node.\n * type Node struct {\n *     Val int\n *     Children []*Node\n * }\n */\n\nfunc diameter(root *Node) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "/**\n * Definition for a Node.\n * class Node(var _value: Int) {\n *   var value: Int = _value\n *   var children: List[Node] = List()\n * }\n */\n\nobject Solution {\n    def diameter(root: Node): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "/**\n * Definition for a Node.\n * class Node(var `val`: Int) {\n *     var children: List<Node?> = listOf()\n * }\n */\n\nclass Solution {\n    fun diameter(root: Node?): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "/**\n * Definition for a Node.\n * class Node {\n *     public $val = null;\n *     public $children = null;\n *     function __construct($val = 0) {\n *         $this->val = $val;\n *         $this->children = array();\n *     }\n * }\n */\n\nclass Solution {\n    /**\n     * @param Node $root\n     * @return Integer\n     */\n    function diameter($root) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "/**\n * Definition for Node.\n * class Node {\n *     val: number\n *     children: Node[]\n *     constructor(val?: number, children?: Node[]) {\n *         this.val = (val===undefined ? 0 : val)\n *         this.children = (children===undefined ? [] : children)\n *     }\n * }\n */\n\nfunction diameter(root: Node): number {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"33.7K\", \"totalSubmission\": \"46K\", \"totalAcceptedRaw\": 33718, \"totalSubmissionRaw\": 46034, \"acRate\": \"73.2%\"}",
+        "hints": [
+            "For the node i, calculate the height of each of its children and keep the first and second maximum heights (max1_i , max2_i).",
+            "Check all nodes and return max( 2 + max1_i  +  max2_i )."
+        ],
+        "solution": {
+            "id": "1030",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[1,null,3,2,4,null,5,6]",
+        "metaData": "{\n  \"name\": \"diameter\",\n  \"params\": [\n    {\n      \"name\": \"root\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  },\n  \"manual\": true,\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"csharp\",\n    \"javascript\",\n    \"python3\",\n    \"typescript\",\n    \"php\",\n    \"golang\",\n    \"scala\",\n    \"kotlin\",\n    \"ruby\",\n    \"swift\",\n    \"c\"\n  ]\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1030",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Overview\n\nWe are asked to calculate the diameter of a N-ary tree, which is defined as the **longest path** between any two nodes in the tree.\n\nAt first glance, it seems that we might have to enumerate all pairs of nodes, in order to find out the longest path.\n\nYet, there are certain insights that would allow us to dramatically reduce the scope of enumeration.\n\n>The first insight is that the longest path in a tree can only happen between two **leaves** nodes or between a leaf node and the **root** node.\n\n![example of paths](../Figures/1522/1522_path_examples.png)\n\n>The second insight is that each non-leaf node acts as a **bridge** for the paths between its **_descendant leaves_** nodes.\nIf we pick two longest sub-paths from a non-leaf node to its descendant leaves nodes, and combine them together, then the resulting path would be the longest path among all possible ones that are _bridged_ by this non-leaf node.\n\n![example of subpaths](../Figures/1522/1522_subpath_example.png)\n\nAs one could see from the above graph, the longest path of the tree would be one of the combined paths from the top two longest sub-paths _bridged_ by a non-leaf node (node `2` in the above graph).\n\n>With the above insights, to find the diameter of the tree, it suffices to enumerate all non-leaf nodes and select the top two longest sub-paths bridged by each non-leaf node.\n\nThe above idea could be implemented with the help of two important concepts in the tree data structure, namely the **[height](https://en.wikipedia.org/wiki/Tree_(data_structure)#Terminology)** and **[depth](https://en.wikipedia.org/wiki/Tree_(data_structure)#Terminology)** of a node.\n\nIn this article, we will present two algorithms with regards to the concept of height and depth respectively.\n\n\n---\n#### Approach 1: Distance with Height\n\n**Intuition**\n\n>The **_height_** of a node is defined as the length of the longest downward path to a leaf node from that node.\n\nBased on the above definition, a leaf node will have a height of zero.\n\nAs we explained in the overview section, the longest path that is bridged by a non-leaf node will come from the combination of two longest **sub-paths** downward to the leaves nodes from this non-leaf node.\n\nAs one might see now, the _sub-paths_ that we mentioned above consist of the top two largest heights of the children nodes.\n\nIf we define the top two largest heights of the children nodes as `height(node.child_m)` and `height(node.child_n)`, then the longest path bridged by this node would be `height(node.child_m) + height(node.child_n) + 2`.\n\n![formula height](../Figures/1522/1522_formula_height.png)\n\n\n**Algorithm**\n\nLet us first define a function called `height(node)` which returns the height of the node.\nThe function can be implemented via recursion, based on the following formula:\n\n$$\n    \\text{height(node)} = \\max\\big(\\text{height(child)}\\big) + 1, \\space \\forall \\text{child} \\in \\text{node.children}\n$$\n\nMore importantly, within the function of `height(node)`, we need to select the top two largest _heights_ of its children nodes. \nWith these top two largest heights, we calculate the length of the combined path, which would be the candidate as the _diameter_ of the entire tree.\n\nThere are two ways to select the top two largest heights:\n\n- A straight-forward way would be that we keep the heights of all children nodes in an array, and then we **sort** the array and select the top two largest elements.\n\n- A constant-space solution would be that we use only two variables which keep track of the current top two largest elements respectively. While we iterate through all the heights, we **_update_** the two variables accordingly.\n\nIn the following implementation, we opt for the second approach.\n\n<iframe src=\"https://leetcode.com/playground/7aXrzgvV/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"7aXrzgvV\"></iframe>\n\n\n\n**Complexity Analysis**\n\nLet $$N$$ be the number of nodes in the tree.\n\n- Time Complexity: $$\\mathcal{O}(N)$$\n\n    - We enumerate each node in the tree once and only once via recursion.\n\n- Space Complexity: $$\\mathcal{O}(N)$$\n\n    - We employed only constant-sized variables in the algorithm.\n\n    - On the other hand, we used recursion which will incur additional memory consumption in the function call stack.\n    In the worst case where all the nodes are chained up in a single path, the recursion will pile up $$N$$ times.\n\n    - As a result, the overall space complexity of the algorithm is $$\\mathcal{O}(N)$$.\n\n\n---\n#### Approach 2: Distance with Depth\n\n**Intuition**\n\n>The **depth** of a node is the length of the path to the **root** node.\n\nStill, we would like to know the longest path between two leaves nodes _bridged_ by a non-leaf node.\nBut this time we could calculate it with the concept of depth, rather than height.\n\nIf we know the top two largest depths among two leaves nodes starting from the node, namely `depth(node.leaf_m)` and `depth(node.leaf_n)`, then this longest path could be calculated as the sum of top two largest depths minus the depth of the parent node, namely  \n`depth(node.leaf_m) + depth(node.leaf_n) - 2 * depth(node)`.\n\n![formula depth](../Figures/1522/1522_formula_depth.png)\n\n\n**Algorithm**\n\nLet us define a function called `maxDepth(node)` which returns the maximum depth of the leaves nodes starting from the node.\n\nAgain, we could implement it with recursion, with the following formula:\n\n$$\n\\text{maxDepth(node)} = \\max\\big(\\text{maxDepth(node.child)}\\big), \\space \\forall \\text{child} \\in \\text{node.children}\n$$\n\nSimilarly, within the function, we will also select the top two largest depths.\nWith these top two largest depths, we will update the diameter accordingly.\n\n\n<iframe src=\"https://leetcode.com/playground/MZ95aYZt/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"MZ95aYZt\"></iframe>\n\n\n\n**Complexity Analysis**\n\nLet $$N$$ be the number of nodes in the tree.\n\n- Time Complexity: $$\\mathcal{O}(N)$$\n\n    - We enumerate each node in the tree once and only once via recursion.\n\n- Space Complexity: $$\\mathcal{O}(N)$$\n\n    - We employed only constant-sized variables in the algorithm.\n\n    - On the other hand, we used recursion which will incur additional memory consumption in the function call stack.\n    In the worst case where all the nodes are chained up in a single path, the recursion will pile up $$N$$ times.\n\n    - As a result, the overall space complexity of the algorithm is $$\\mathcal{O}(N)$$.\n\n\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "975",
+            "count": 22,
+            "average": "4.636",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "diameter-of-n-ary-tree",
+    "playgroundData": {
+        "7aXrzgvV": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "diameter-of-n-ary-tree-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "MZ95aYZt": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "diameter-of-n-ary-tree-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

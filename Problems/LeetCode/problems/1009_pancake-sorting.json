@@ -1,0 +1,228 @@
+{
+    "id": "1009",
+    "question": {
+        "questionId": "1009",
+        "questionFrontendId": "969",
+        "boundTopicId": null,
+        "title": "Pancake Sorting",
+        "titleSlug": "pancake-sorting",
+        "content": "<p>Given an array of integers <code>arr</code>, sort the array by performing a series of <strong>pancake flips</strong>.</p>\n\n<p>In one pancake flip we do the following steps:</p>\n\n<ul>\n\t<li>Choose an integer <code>k</code> where <code>1 &lt;= k &lt;= arr.length</code>.</li>\n\t<li>Reverse the sub-array <code>arr[0...k-1]</code> (<strong>0-indexed</strong>).</li>\n</ul>\n\n<p>For example, if <code>arr = [3,2,1,4]</code> and we performed a pancake flip choosing <code>k = 3</code>, we reverse the sub-array <code>[3,2,1]</code>, so <code>arr = [<u>1</u>,<u>2</u>,<u>3</u>,4]</code> after the pancake flip at <code>k = 3</code>.</p>\n\n<p>Return <em>an array of the </em><code>k</code><em>-values corresponding to a sequence of pancake flips that sort </em><code>arr</code>. Any valid answer that sorts the array within <code>10 * arr.length</code> flips will be judged as correct.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [3,2,4,1]\n<strong>Output:</strong> [4,2,4,3]\n<strong>Explanation: </strong>\nWe perform 4 pancake flips, with k values 4, 2, 4, and 3.\nStarting state: arr = [3, 2, 4, 1]\nAfter 1st flip (k = 4): arr = [<u>1</u>, <u>4</u>, <u>2</u>, <u>3</u>]\nAfter 2nd flip (k = 2): arr = [<u>4</u>, <u>1</u>, 2, 3]\nAfter 3rd flip (k = 4): arr = [<u>3</u>, <u>2</u>, <u>1</u>, <u>4</u>]\nAfter 4th flip (k = 3): arr = [<u>1</u>, <u>2</u>, <u>3</u>, 4], which is sorted.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [1,2,3]\n<strong>Output:</strong> []\n<strong>Explanation: </strong>The input is already sorted, so there is no need to flip anything.\nNote that other answers, such as [3, 3], would also be accepted.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= arr.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= arr[i] &lt;= arr.length</code></li>\n\t<li>All integers in <code>arr</code> are unique (i.e. <code>arr</code> is a permutation of the integers from <code>1</code> to <code>arr.length</code>).</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 1127,
+        "dislikes": 1278,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "[3,2,4,1]\n[1,2,3]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Greedy",
+                "slug": "greedy",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Square\", \"slug\": \"square\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<int> pancakeSort(vector<int>& arr) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public List<Integer> pancakeSort(int[] arr) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def pancakeSort(self, arr):\n        \"\"\"\n        :type arr: List[int]\n        :rtype: List[int]\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def pancakeSort(self, arr: List[int]) -> List[int]:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* pancakeSort(int* arr, int arrSize, int* returnSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public IList<int> PancakeSort(int[] arr) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} arr\n * @return {number[]}\n */\nvar pancakeSort = function(arr) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} arr\n# @return {Integer[]}\ndef pancake_sort(arr)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func pancakeSort(_ arr: [Int]) -> [Int] {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func pancakeSort(arr []int) []int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def pancakeSort(arr: Array[Int]): List[Int] = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun pancakeSort(arr: IntArray): List<Int> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn pancake_sort(arr: Vec<i32>) -> Vec<i32> {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @return Integer[]\n     */\n    function pancakeSort($arr) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function pancakeSort(arr: number[]): number[] {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (pancake-sort arr)\n  (-> (listof exact-integer?) (listof exact-integer?))\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec pancake_sort(Arr :: [integer()]) -> [integer()].\npancake_sort(Arr) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec pancake_sort(arr :: [integer]) :: [integer]\n  def pancake_sort(arr) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"76K\", \"totalSubmission\": \"108.8K\", \"totalAcceptedRaw\": 76008, \"totalSubmissionRaw\": 108823, \"acRate\": \"69.8%\"}",
+        "hints": [],
+        "solution": {
+            "id": "989",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[3,2,4,1]",
+        "metaData": "{\n  \"name\": \"pancakeSort\",\n  \"params\": [\n    {\n      \"name\": \"arr\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<integer>\"\n  },\n  \"manual\": false\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "989",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Approach 1: Sort like Bubble-Sort\n\n**Intuition**\n\nOne might argue that this is an awkward question to do things.\nIndeed, it is not the most practical operation that one can have with the _pancake flipping_, in order to sort a list.\n\nHowever awkward the problem might be, it is the game that we play with. And in order to win the game, we have to play by the rules.\nActually, from this perspective, this problem does share some similarity with the **_[Rubik's cube](https://en.wikipedia.org/wiki/Rubik%27s_Cube)_**, _i.e._ one cannot move one tile without moving other tiles along with.\nLet us get on with it, by playing a few rounds ourselves to get the hang of the problem.\n\nGiven the input of `[3, 2, 4, 1]`, the desired sorted output would be `[1, 2, 3, 4]`. \n\nAs a reminder, the only operation that we could perform in order to move the elements in the list, is the so-called _pancake flip_, which is to reverse a _prefix_ of the list.\n\nStarting from the largest value in the list, _i.e._ `4` in the example, its desired position would be the tail of the list.\nWhile in the input, it is located at the third of the list, if we look at the list from left to right.\n\nIn order to move the value of `4` to its desired position, we could perform the following two steps:\n\n- Firstly, we do the pancake flip on the prefix of `[3, 2, 4]`. With this operation, we then move the value `4` to the _**head**_ of the updated list as `[4, 2, 3, 1]`.\n\n![flip to head](../Figures/969/969_flip_head.png)\n\n- Now that, the value `4` is located at the head of the list, we could now perform another pancake flip on the entire list, which would get us the list of `[1, 3, 2, 4]`.\n\n![flip to tail](../Figures/969/969_flip_tail.png)\n\nVoila. With the obtained list of `[1, 3, 2, 4]`, we are now one step closer to our final goal, with the value `4` now at its proper place.\nFor the following steps, we only need to focus on the sublist of `[1, 3, 2]`.\n\n>If one looks over the above steps again, it might ring a bell to a well-known algorithm called _**[bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)**_.\n\n<p align=\"center\">\n<img src=\"https://upload.wikimedia.org/wikipedia/commons/3/37/Bubble_sort_animation.gif\">\n</p>\n\n\nIndeed, we share the same strategy as the bubble sort, by _sinking_ the numbers to the bottom one by one.\n\n>Here we can make a statement that for any given number, in order to move it to any desired position, it takes **_at most_** two pancake flips to do so.\n\nThe idea is simple. First we move the number to the head of the list, then we can switch it with any other element by performing another pancake flip.\n\n\n**Algorithm**\n\nOne can inspire from the bubble sort to implement the algorithm.\n\n- First of all, we implement a function called `flip(list, k)`, which performs the pancake flip on the prefix of `list[0:k]` (in Python).\n\n- The main algorithm runs a loop over the values of the list, starting from the largest one.\n\n    - At each round, we identify the value to sort (named as `value_to_sort`), which is the number we would put in place at this round.\n\n    - We then locate the index of the `value_to_sort`.\n\n    - If the `value_to_sort` is not at its place already, we can then perform _at most_ two pancake flips as we explained in the intuition.\n\n    - At the end of the round, the `value_to_sort` would be put in place.\n\n\n<iframe src=\"https://leetcode.com/playground/EFVjQPCm/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"EFVjQPCm\"></iframe>\n\n\n\n**Complexity Analysis**\n\nLet $$N$$ be the length of the input list.\n\n- Time Complexity: $$\\mathcal{O}(N^2)$$\n\n    - In the algorithm, we run a loop with $$N$$ iterations.\n\n    - Within each iteration, we are dealing with the corresponding prefix of the list.\n    Here we denote the length of the prefix as $$k$$, _e.g._ in the first iteration, the length of the prefix is $$N$$. While in the second iteration, the length of the prefix is $$N-1$$. \n\n    - Within each iteration, we have operations whose time complexity is linear to the length of the prefix, such as iterating through the prefix to find the index, or flipping the entire prefix _etc._ Hence, for each iteration, its time complexity would be $$\\mathcal{O}(k)$$\n\n    - To sum up all iterations, we have the overall time complexity of the algorithm as $$\\sum_{k=1}^{N} \\mathcal{O}(k) = \\mathcal{O}(N^2)$$.\n\n\n- Space Complexity: $$\\mathcal{O}(N)$$\n\n    - Within the algorithm, we use a list to maintain the final results, which is proportional to the number of pancake flips.\n\n    - For each round of iteration, at most we would add two pancake flips. Therefore, the maximal number of pancake flips needed would be $$2\\cdot N$$.\n\n    - As a result, the space complexity of the algorithm is $$\\mathcal{O}(N)$$. If one does not take into account the space required to hold the result of the function, then one could consider the above algorithm as a constant space solution.\n\n\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "934",
+            "count": 64,
+            "average": "3.922",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "pancake-sorting",
+    "playgroundData": {
+        "EFVjQPCm": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "pancake-sorting-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,250 @@
+{
+    "id": "1297",
+    "question": {
+        "questionId": "1297",
+        "questionFrontendId": "1189",
+        "boundTopicId": null,
+        "title": "Maximum Number of Balloons",
+        "titleSlug": "maximum-number-of-balloons",
+        "content": "<p>Given a string <code>text</code>, you want to use the characters of <code>text</code> to form as many instances of the word <strong>&quot;balloon&quot;</strong> as possible.</p>\n\n<p>You can use each character in <code>text</code> <strong>at most once</strong>. Return the maximum number of instances that can be formed.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/09/05/1536_ex1_upd.JPG\" style=\"width: 132px; height: 35px;\" /></strong></p>\n\n<pre>\n<strong>Input:</strong> text = &quot;nlaebolko&quot;\n<strong>Output:</strong> 1\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/09/05/1536_ex2_upd.JPG\" style=\"width: 267px; height: 35px;\" /></strong></p>\n\n<pre>\n<strong>Input:</strong> text = &quot;loonbalxballpoon&quot;\n<strong>Output:</strong> 2\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> text = &quot;leetcode&quot;\n<strong>Output:</strong> 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= text.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>text</code> consists of lower case English letters only.</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 1075,
+        "dislikes": 70,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "\"nlaebolko\"\n\"loonbalxballpoon\"\n\"leetcode\"",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Counting",
+                "slug": "counting",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Tesla\", \"slug\": \"tesla\", \"timesEncountered\": 11}, {\"taggedByAdmin\": true, \"name\": \"Wayfair\", \"slug\": \"wayfair\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"2\": []}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int maxNumberOfBalloons(string text) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int maxNumberOfBalloons(String text) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def maxNumberOfBalloons(self, text):\n        \"\"\"\n        :type text: str\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def maxNumberOfBalloons(self, text: str) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint maxNumberOfBalloons(char * text){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int MaxNumberOfBalloons(string text) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} text\n * @return {number}\n */\nvar maxNumberOfBalloons = function(text) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {String} text\n# @return {Integer}\ndef max_number_of_balloons(text)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func maxNumberOfBalloons(_ text: String) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func maxNumberOfBalloons(text string) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def maxNumberOfBalloons(text: String): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun maxNumberOfBalloons(text: String): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn max_number_of_balloons(text: String) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param String $text\n     * @return Integer\n     */\n    function maxNumberOfBalloons($text) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function maxNumberOfBalloons(text: string): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (max-number-of-balloons text)\n  (-> string? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec max_number_of_balloons(Text :: unicode:unicode_binary()) -> integer().\nmax_number_of_balloons(Text) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec max_number_of_balloons(text :: String.t) :: integer\n  def max_number_of_balloons(text) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"115.2K\", \"totalSubmission\": \"184.6K\", \"totalAcceptedRaw\": 115181, \"totalSubmissionRaw\": 184627, \"acRate\": \"62.4%\"}",
+        "hints": [
+            "Count the frequency of letters in the given string.",
+            "Find the letter than can make the minimum number of instances of the word \"balloon\"."
+        ],
+        "solution": {
+            "id": "1159",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "\"nlaebolko\"",
+        "metaData": "{\n  \"name\": \"maxNumberOfBalloons\",\n  \"params\": [\n    {\n      \"name\": \"text\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1159",
+        "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Overview\r\n\r\nThis problem can be interestingly related to production management. Assume there is an industry that produces a product `X`. The product `X` can be produced by assembling one instance of each of five different parts. We have some fixed quantity of each of these parts, then the maximum number of product `X` that can be produced will be equal to the quantity of that part which is available in the least quantity. This least available part is known as the bottleneck resource.\r\n\r\nIn this problem, the product `X` is the string $balloon$ and the five parts are the characters $b$, $a$, $l$, $o$, and $n$.\r\n<br/>\r\n\r\n---\r\n\r\n#### Approach 1: Counting Characters\r\n\r\n**Intuition**\r\n\r\nThe word $balloon$ consists of five different characters with counts of `{'b':1, 'a':1, 'l':2, 'o':2, 'n':1}`. The first thing to note is that in order to find the number of instances of $balloon$ that can be produced by any given string `text` we only need to count the above five characters and the remaining twenty-one lowercase English letters can be ignored.\r\n\r\nNow we will observe each of these five characters in isolation. We define the `potential` of a character as the number of times that $balloon$ can be produced, assuming there is an infinite supply of other characters. \r\n\r\nFor instance, to find the `potential` of character $b$, which has a limited quantity equal to $x$, then the answer is $x$. We cannot form more than $x$ instances as we need one $b$ to produce each instance of $balloon$. Similarly, for character $l$, with a limited quantity of $x$ the `potential` will be $x/2$ as we need two instances of $l$ to produce each instance of $balloon$.\r\n\r\nAfter we find the `potential` of all five characters, we can make use of each character's `potential` to find the maximum number of $balloon$ strings that we can produce. The point to note here is that the production of the word $balloon$ depends on the bottleneck character. As in the above case, despite having an infinite capacity of other characters, we can only form $x$ instances of $balloon$ because character $b$ is the bottleneck.\r\n\r\n**Algorithm**\r\n\r\nPer the discussion above, the algorithm is: Find the `potential` of each of the five characters in isolation and then find the bottleneck character among them. The table below shows the `potential` for each character given $x$ instances of the character and an infinite supply of other characters.\r\n\r\n![fig](../Figures/1189/1189A.png)\r\n\r\nNow that we have the `potential` of each character, we can find the bottleneck character (the one with the lowest `potential`).\r\n\r\n**Implementation**\r\n\r\n1. Store the frequency of all the five characters in the given string `text`.\r\n2. Find the `potential` of each of the five characters.\r\n3. Return the minimum `potential` of the five characters.\r\n\r\nThe code below prioritizes readability; it could be written more succinctly by using an array (which is discussed in the next approach).\r\n\r\n<iframe src=\"https://leetcode.com/playground/7qLjng53/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"7qLjng53\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\nHere $$N$$ is equal to the length of `text`.\r\n\r\n* Time complexity: $$O(N)$$\r\n   \r\n  We iterate over all the characters of string `text` which requires $$N$$ operations.\r\n\r\n* Space complexity: $$O(1)$$\r\n    \r\n  All we need is the $$5$$ variables to store the frequency of characters. Hence the space complexity is constant.\r\n\r\n<br/>\r\n\r\n---\r\n\r\n#### Approach 2: Generalized Solution using an Array\r\n\r\n**Intuition**\r\n\r\nAs a follow-up exercise, let's consider how we can approach this problem if the word is not guaranteed to be $$balloon$$. Suppose we are given an arbitrary string `pattern` instead of $balloon$ then we can use the same counting characters approach, except we must do so in a more generalized way. Close observation of the previous approach reveals that the `potential` of each character is equal to the number of instances in `text` divided by the number of instances in `pattern` ($balloon$ in the previous approach). So we just need to find the frequency of all the letters in the strings `text` and `pattern`. Then the minimum `potential` of a character will be the answer.\r\n\r\n**Algorithm**\r\n1. Store the frequency of all the characters in `text` in `freqInText` and the frequency of all the characters in `pattern` in `freqInPattern`.\r\n2. Find the potential of all the lowercase English letters. The potential will be equal to its frequency in `text` divided by its frequency in `pattern`.\r\n3. Return the minimum potential of a character.\r\n\r\n**Implementation**\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/HxXvvMMc/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"HxXvvMMc\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\nHere $$N$$ equals the length of `text`, $$M$$ equals the length of `pattern`, and $$K$$ equals the maximum possible number of distinct letters in `pattern`.\r\n\r\n* Time complexity: $$O(N + M)$$\r\n\r\n     We traverse over `text` having length $$N$$ and over the string `pattern` of length $$M$$ to find the frequency of each character in each string.  Lastly, we traverse over the frequency arrays of length $$K$$ to find the bottleneck character.  Since this problem only uses lowercase English letters, $$K$$ is fixed at $$26$$. Hence, we can consider the space complexity to be $$O(N + M)$$.\r\n\r\n* Space complexity: $$O(1)$$\r\n    \r\n     The integer arrays used to store the frequency of characters in `text` and `pattern` each require $$O(K)$$ space.  Since this problem only uses lowercase English letters, $$K$$ is fixed at $$26$$. Hence, we can consider the space complexity to be constant.\r\n\r\n<br/>\r\n\r\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1164",
+            "count": 18,
+            "average": "4.833",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "maximum-number-of-balloons",
+    "playgroundData": {
+        "7qLjng53": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-number-of-balloons-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "HxXvvMMc": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-number-of-balloons-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

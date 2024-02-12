@@ -1,0 +1,247 @@
+{
+    "id": "12",
+    "question": {
+        "questionId": "12",
+        "questionFrontendId": "12",
+        "boundTopicId": null,
+        "title": "Integer to Roman",
+        "titleSlug": "integer-to-roman",
+        "content": "<p>Roman numerals are represented by seven different symbols:&nbsp;<code>I</code>, <code>V</code>, <code>X</code>, <code>L</code>, <code>C</code>, <code>D</code> and <code>M</code>.</p>\n\n<pre>\n<strong>Symbol</strong>       <strong>Value</strong>\nI             1\nV             5\nX             10\nL             50\nC             100\nD             500\nM             1000</pre>\n\n<p>For example,&nbsp;<code>2</code> is written as <code>II</code>&nbsp;in Roman numeral, just two one&#39;s added together. <code>12</code> is written as&nbsp;<code>XII</code>, which is simply <code>X + II</code>. The number <code>27</code> is written as <code>XXVII</code>, which is <code>XX + V + II</code>.</p>\n\n<p>Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not <code>IIII</code>. Instead, the number four is written as <code>IV</code>. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as <code>IX</code>. There are six instances where subtraction is used:</p>\n\n<ul>\n\t<li><code>I</code> can be placed before <code>V</code> (5) and <code>X</code> (10) to make 4 and 9.&nbsp;</li>\n\t<li><code>X</code> can be placed before <code>L</code> (50) and <code>C</code> (100) to make 40 and 90.&nbsp;</li>\n\t<li><code>C</code> can be placed before <code>D</code> (500) and <code>M</code> (1000) to make 400 and 900.</li>\n</ul>\n\n<p>Given an integer, convert it to a roman numeral.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = 3\n<strong>Output:</strong> &quot;III&quot;\n<strong>Explanation:</strong> 3 is represented as 3 ones.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = 58\n<strong>Output:</strong> &quot;LVIII&quot;\n<strong>Explanation:</strong> L = 50, V = 5, III = 3.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = 1994\n<strong>Output:</strong> &quot;MCMXCIV&quot;\n<strong>Explanation:</strong> M = 1000, CM = 900, XC = 90 and IV = 4.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num &lt;= 3999</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 3504,
+        "dislikes": 4182,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Roman to Integer\", \"titleSlug\": \"roman-to-integer\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Integer to English Words\", \"titleSlug\": \"integer-to-english-words\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "exampleTestcases": "3\n58\n1994",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Math",
+                "slug": "math",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 33}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Capital One\", \"slug\": \"capital-one\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"BlackRock\", \"slug\": \"blackrock\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"tiktok\", \"slug\": \"tiktok\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 0}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    string intToRoman(int num) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public String intToRoman(int num) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def intToRoman(self, num):\n        \"\"\"\n        :type num: int\n        :rtype: str\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def intToRoman(self, num: int) -> str:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nchar * intToRoman(int num){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public string IntToRoman(int num) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} num\n * @return {string}\n */\nvar intToRoman = function(num) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer} num\n# @return {String}\ndef int_to_roman(num)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func intToRoman(_ num: Int) -> String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func intToRoman(num int) string {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def intToRoman(num: Int): String = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun intToRoman(num: Int): String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn int_to_roman(num: i32) -> String {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer $num\n     * @return String\n     */\n    function intToRoman($num) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function intToRoman(num: number): string {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (int-to-roman num)\n  (-> exact-integer? string?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec int_to_roman(Num :: integer()) -> unicode:unicode_binary().\nint_to_roman(Num) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec int_to_roman(num :: integer) :: String.t\n  def int_to_roman(num) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"741.6K\", \"totalSubmission\": \"1.2M\", \"totalAcceptedRaw\": 741608, \"totalSubmissionRaw\": 1237856, \"acRate\": \"59.9%\"}",
+        "hints": [],
+        "solution": {
+            "id": "919",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "ac",
+        "sampleTestCase": "3",
+        "metaData": "{\r\n  \"name\": \"intToRoman\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"num\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "919",
+        "content": "[TOC]\n\n## Solution\n\n---\n\n#### Overview\n\n\nIn a lot of countries, Roman Numerals are taught in elementary school-level math. This has made them a somewhat popular \"easy\" interview question. Unfortunately though, this ignores the fact that *not everybody learned them in school*, and therefore a big advantage has been given to those who did. I suspect it's also difficult for a lot of us who *have* learned them previously to fully appreciate how much easier prior experience makes this question. While this is very unfair, and possibly very frustrating, keep in mind that the best thing you can do is work through this question and the related question [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) so that you don't get caught out by it in a real interview. In short, if you're here reading this, you've saved yourself from getting caught out by it! Thankfully, questions that rely on this kind of prior knowledge are few and far between.\n\n**Have a go at Roman to Integer first**\n\nThe problem of converting a [Roman Numeral to an Integer](https://leetcode.com/problems/roman-to-integer/) is simpler. Therefore, we suggest that you have a go at it first if you're finding this question difficult. This will allow you to become more familiar with the concept of Roman Numerals without the \"ambiguity\" issue that comes up in converting an integer to a Roman Numeral. When converting a Roman Numeral to an integer, there's only one sensible conversion.\n\n**Roman Numeral Symbols**\n\nRoman Numerals are made with `7` single-letter symbols, each with its own value. Additionally, the subtractive rules (as explained in the problem description) give an additional `6` symbols. This gives us a total of `13` unique symbols (each symbol is made of either 1 letter or 2).\n\n![Symbol mapping](../Figures/13/hardcoding_2_fixed.png)\n\nAn integer is represented as a Roman Numeral by finding symbols that add to its value.\n\n**Handling Ambiguity**\n\nOne thing that can be a bit confusing if you're not familiar with Roman Numerals is knowing which representation is the \"correct\" one for a particular integer. For example, consider these possible ways of representing `140`. Which of these is correct?\n\n![Some of the possible ways of representing 140 with Roman Numerals.](../Figures/12/ways_of_representing_140.png)\n\n\n**The system we use to decide** is to select the representation with the largest possible symbols, working from left to right. For example, the representations above with the largest symbol at the start are the ones starting with `C`.\n\n![All ways of representing 140 that start with a C.](../Figures/12/ways_of_representing_140_starting_with_c.png)\n\nTo decide which of these to go with, we look at the next symbol. Two of them have an `X`, which is worth `10`, and one of them has an `XL`, which is worth `40`. Because the `XL` is worth more, we go with that representation. Therefore, the representation for `140` is `CXL`.\n\nThis definition of Roman Numerals is, these days, the \"most accepted\". Interestingly, it still isn't an absolute standard, and throughout history, there have been many variants. If you're interested in math and history, we recommend checking out the [Wikipedia article](https://en.wikipedia.org/wiki/Roman_numerals) for your own interest.\n\n<br/>\n\n---\n\n#### Approach 1: Greedy\n\n**Intuition**\n\nRepresenting a given integer as a Roman Numeral requires finding a sequence of the above 13 symbols, where their corresponding values add up to the integer. This sequence must be in order from largest to smallest, based on symbol value. To remind you, these are the symbol values.\n\n![Symbol mapping](../Figures/13/hardcoding_2_fixed.png)\n\nAs explained in the overview, the representation should use the largest possible symbols, working from the left. Therefore, it makes sense to use a **Greedy** algorithm. A Greedy algorithm is an algorithm that makes the best possible decision at the current time; in this case taking out the largest possible symbol it can. \n\nSo to represent a given integer, we look for the *largest* symbol that fits into it. We subtract that, and then look for the largest symbol that fits into the remainder, and so on until the remainder is 0. Each of the symbols we take out are appended onto the output Roman Numeral string.\n\nFor example, suppose we need to make the number `671`.\n\nThe largest symbol that fits into `671` is `D` (which is worth `500`). The next symbol up, `CM`, is worth `900` and so is too big to fit. Therefore, we now have the following.\n\n```text\nRoman Numeral so far: D\nInteger remainder: 671 - 500 = 171\n```\n\nWe now repeat the process with `171`. The largest symbol that fits into it is `C` (worth `100`).\n\n```text\nRoman Numeral so far: DC\nInteger remainder: 171 - 100 = 71\n```\n\nRepeating this with `71`, we find the largest symbol that fits in is `L` (worth `50`).\n\n```text\nRoman Numeral so far: DCL\nInteger remainder: 71 - 50 = 21\n```\n\nFor `21`, the largest symbol that fits in is `X` (worth `10`).\n\n```text\nRoman Numeral so far: DCLX\nInteger remainder: 21 - 10 = 11\n```\n\nFor `11`, the largest symbol that fits in is again `X`.\n\n```text\nRoman Numeral so far: DCLXX\nInteger remainder: 11 - 10 = 1\n```\n\nFinally, the `1` is represented with a `I` and we're done.\n\n```text\nRoman Numeral so far: DCLXXI\nInteger remainder: 1 - 1 = 0\n```\n\nIn pseudocode, this algorithm is as follows.\n\n```text\ndefine function to_roman(integer):\n    roman_numeral = \"\"\n    while integer is non-zero:\n        symbol = biggest valued symbol that fits into integer\n        roman_numeral = concat roman_numeral and symbol\n        integer = integer - value of symbol\n    return roman_numeral\n```\n\nThe cleanest way to implement this in code is to loop over each symbol, from largest to smallest, checking *how many* copies of the current symbol fit into the remaining integer.\n\n```text\ndefine function to_roman(integer):\n    roman_numeral = \"\"\n    for each symbol from largest to smallest:\n        if value of symbol is greater than integer:\n            continue\n        symbol_count = number of times symbol value fits into integer\n        repeat symbol_count times:\n            roman_numeral = concat roman_numeral and symbol\n        integer = integer - (value of symbol * symbol_count)\n\n    return roman_numeral\n```\n\nHere's an animation showing this algorithm run on the number `478`.\n\n!?!../Documents/12_greedy_algorithm.json:960,400!?!\n\n**Algorithm**\n\n<iframe src=\"https://leetcode.com/playground/K2puAiN7/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"K2puAiN7\"></iframe>\n\n\n**Complexity Analysis**\n\n- Time complexity : $$O(1)$$.\n\n    As there is a finite set of roman numerals, there is a hard upper limit on how many times the loop can iterate. This upper limit is `15` times, and it occurs for the number `3888`, which has a representation of `MMMDCCCLXXXVIII`. Therefore, we say the time complexity is constant, i.e. $$O(1)$$.\n\n- Space complexity : $$O(1)$$.\n\n    The amount of memory used does not change with the size of the input integer, and is therefore constant.\n\n<br/>\n\n---\n\n#### Approach 2: Hardcode Digits\n\n**Intuition**\n\n*Please don't panic and assume you need to memorize the values in this approach. The first approach should be fine, and in-fact has the added bonus of being more flexible if we were to extend the Roman Numeral symbol set to have symbols over 1000. This second approach is only included for completeness. Do try to understand how we derived this approach, though.*\n\nAn interesting observation that can be made is that each of the digits in the integer's decimal representation can be treated *independently* when converting the integer into a Roman Numeral. Notice that all of the symbols can be split into groups based on their highest factor out of `1000`, `100`, `10`, and `1`.\n\n![Dividing the symbols into 4 groups.](../Figures/12/roman_numeral_symbol_values.png)\n\nWhile the number is at least `1000`, an `M (1000)` will be appended to the output and `1000` will be subtracted from the integer. The other symbols won't even be considered until the number is below `1000`. Additionally, the `M (1000)`s cannot represent any lower part of the number. Therefore, we can represent the thousands digit of the integer entirely with `M (1000)`s.\n\nNow, assume we have a remainder of between `100` and `999`. The next symbols considered are those in the hundreds row. The highest symbol that could fit in right now is `CM (900)`, and the lowest is `C (100)`. None of the symbols in this range can possibly modify the tens or ones. As long as the remainder is still above `100`, we can still take at least `C (100)` out of it. This means that we'll only be subtracting symbols from the hundreds row for as long as the number is at least `100`.\n\nThe same argument applies for the tens, and then the ones. \n\nWe can, therefore, work out what the representation for each digit, in each place, is. There are only 34 of them; `0`, `1`, `2`, `3` and `4` for the thousands column, and `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8` and `9` for each of the hundreds, tens, and ones. So with a pencil, paper, and some patience, you can hopefully work out the representation for each of these possibilities and hardcode them. Then, converting an integer to a Roman Numeral will require breaking the integer into digits and appending the relevant representation for each digit.\n\n![Hardcoding all the positions and digits.](../Figures/12/digit_roman_numeral_values.png)\n\nGetting each digit of the number can be done using the modulus and division operators. The division operator removes the digits *below* the place we want, and the modulus operator removes the digits from *above*. This simply leaves the digit we want.\n\n```java\nthousands_digit = integer / 1000\nhundreds_digit = (integer % 1000) / 100\ntens_digit = (integer % 100) / 10\nones_digit = integer % 10\n```\n\nThen, we can simply look these up in the hardcoded table, and append the results together!\n\n**Algorithm**\n\nThe cleanest way to go about it in code is to have 4 separate arrays; one for each place value. Then, extract the digits, look up their symbols in the relevant array, and append them all together.\n\n<iframe src=\"https://leetcode.com/playground/G5FpjvCj/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"G5FpjvCj\"></iframe>\n\n**Complexity Analysis**\n\n- Time complexity : $$O(1)$$.\n\n    The same number of operations is done, regardless of the size of the input. Therefore, the time complexity is constant.\n\n- Space complexity : $$O(1)$$.\n\n    While we have Arrays, they are the same size, *regardless of the size of the input*. Therefore, they are constant for the purpose of space-complexity analysis.\n\nThe downside of this approach is that it is inflexible if Roman Numerals were to be extended (which is an interesting follow-up question). For example, what if we said the symbol `H` now represents `5000`, and `P` now represents `10000`, allowing us to represent numbers up to `39999`? Approach 1 will be a lot quicker to modify, as you simply need to add these 2 values to the code without doing any calculations. But for Approach 2, you'll need to calculate and hardcode ten new representations. What if we then added symbols to be able to go up to `399,999,999`? Approach 2 becomes more and more difficult to manage, the more symbols we add.\n\n<br/>",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "867",
+            "count": 59,
+            "average": "4.729",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "integer-to-roman",
+    "playgroundData": {
+        "K2puAiN7": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "integer-to-roman-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "G5FpjvCj": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "integer-to-roman-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

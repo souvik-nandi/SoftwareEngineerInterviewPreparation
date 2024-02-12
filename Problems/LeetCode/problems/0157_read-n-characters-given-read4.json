@@ -1,0 +1,229 @@
+{
+    "id": "157",
+    "question": {
+        "questionId": "157",
+        "questionFrontendId": "157",
+        "boundTopicId": null,
+        "title": "Read N Characters Given Read4",
+        "titleSlug": "read-n-characters-given-read4",
+        "content": "<p>Given a <code>file</code> and assume that you can only read the file using a given method <code>read4</code>, implement a method to read <code>n</code> characters.</p>\n\n<p><strong>Method read4: </strong></p>\n\n<p>The API <code>read4</code> reads <strong>four consecutive characters</strong> from <code>file</code>, then writes those characters into the buffer array <code>buf4</code>.</p>\n\n<p>The return value is the number of actual characters read.</p>\n\n<p>Note that <code>read4()</code> has its own file pointer, much like <code>FILE *fp</code> in C.</p>\n\n<p><strong>Definition of read4:</strong></p>\n\n<pre>\n    Parameter:  char[] buf4\n    Returns:    int\n\nbuf4[] is a destination, not a source. The results from read4 will be copied to buf4[].\n</pre>\n\n<p>Below is a high-level example of how <code>read4</code> works:</p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/07/01/157_example.png\" style=\"width: 600px; height: 403px;\" />\n<pre>\nFile file(&quot;abcde<code>&quot;); // File is &quot;</code>abcde<code>&quot;, initially file pointer (fp) points to &#39;a&#39;\nchar[] buf4 = new char[4]; // Create buffer with enough space to store characters\nread4(buf4); // read4 returns 4. Now buf4 = &quot;abcd&quot;, fp points to &#39;e&#39;\nread4(buf4); // read4 returns 1. Now buf4 = &quot;e&quot;, fp points to end of file\nread4(buf4); // read4 returns 0. Now buf4 = &quot;&quot;, fp points to end of file</code>\n</pre>\n\n<p>&nbsp;</p>\n\n<p><strong>Method read:</strong></p>\n\n<p>By using the <code>read4</code> method, implement the method read that reads <code>n</code> characters from <code>file</code> and store it in the buffer array <code>buf</code>. Consider that you cannot manipulate <code>file</code> directly.</p>\n\n<p>The return value is the number of actual characters read.</p>\n\n<p><strong>Definition of read: </strong></p>\n\n<pre>\n    Parameters:\tchar[] buf, int n\n    Returns:\tint\n\nbuf[] is a destination, not a source. You will need to write the results to buf[].\n</pre>\n\n<p><strong>Note:</strong></p>\n\n<ul>\n\t<li>Consider that you cannot manipulate the file directly. The file is only accessible for <code>read4</code> but not for <code>read</code>.</li>\n\t<li>The <code>read</code> function will only be called once for each test case.</li>\n\t<li>You may assume the destination buffer array, <code>buf</code>, is guaranteed to have enough space for storing <code>n</code> characters.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> file = &quot;abc&quot;, n = 4\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> After calling your read method, buf should contain &quot;abc&quot;. We read a total of 3 characters from the file, so return 3.\nNote that &quot;abc&quot; is the file&#39;s content, not buf. buf is the destination buffer that you will have to write the results to.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> file = &quot;abcde&quot;, n = 5\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> After calling your read method, buf should contain &quot;abcde&quot;. We read a total of 5 characters from the file, so return 5.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> file = &quot;abcdABCD1234&quot;, n = 12\n<strong>Output:</strong> 12\n<strong>Explanation:</strong> After calling your read method, buf should contain &quot;abcdABCD1234&quot;. We read a total of 12 characters from the file, so return 12.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= file.length &lt;= 500</code></li>\n\t<li><code>file</code> consist of English letters and digits.</li>\n\t<li><code>1 &lt;= n &lt;= 1000</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Easy",
+        "likes": 505,
+        "dislikes": 3077,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Read N Characters Given read4 II - Call Multiple Times\", \"titleSlug\": \"read-n-characters-given-read4-ii-call-multiple-times\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "exampleTestcases": "\"abc\"\n4\n\"abcde\"\n5\n\"abcdABCD1234\"\n12",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Simulation",
+                "slug": "simulation",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Interactive",
+                "slug": "interactive",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Rubrik\", \"slug\": \"rubrik\", \"timesEncountered\": 4}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "/**\n * The read4 API is defined in the parent class Reader4.\n *     int read4(char *buf4);\n */\n\nclass Solution {\npublic:\n    /**\n     * @param buf Destination buffer\n     * @param n   Number of characters to read\n     * @return    The number of actual characters read\n     */\n    int read(char *buf, int n) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "/**\n * The read4 API is defined in the parent class Reader4.\n *     int read4(char[] buf4);\n */\n\npublic class Solution extends Reader4 {\n    /**\n     * @param buf Destination buffer\n     * @param n   Number of characters to read\n     * @return    The number of actual characters read\n     */\n    public int read(char[] buf, int n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "\"\"\"\nThe read4 API is already defined for you.\n\n    @param buf4, a list of characters\n    @return an integer\n    def read4(buf4):\n\n# Below is an example of how the read4 API can be called.\nfile = File(\"abcdefghijk\") # File is \"abcdefghijk\", initially file pointer (fp) points to 'a'\nbuf4 = [' '] * 4 # Create buffer with enough space to store characters\nread4(buf4) # read4 returns 4. Now buf = ['a','b','c','d'], fp points to 'e'\nread4(buf4) # read4 returns 4. Now buf = ['e','f','g','h'], fp points to 'i'\nread4(buf4) # read4 returns 3. Now buf = ['i','j','k',...], fp points to end of file\n\"\"\"\n\nclass Solution(object):\n    def read(self, buf, n):\n        \"\"\"\n        :type buf: Destination buffer (List[str])\n        :type n: Number of characters to read (int)\n        :rtype: The number of actual characters read (int)\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "\"\"\"\nThe read4 API is already defined for you.\n\n    @param buf4, a list of characters\n    @return an integer\n    def read4(buf4):\n\n# Below is an example of how the read4 API can be called.\nfile = File(\"abcdefghijk\") # File is \"abcdefghijk\", initially file pointer (fp) points to 'a'\nbuf4 = [' '] * 4 # Create buffer with enough space to store characters\nread4(buf4) # read4 returns 4. Now buf = ['a','b','c','d'], fp points to 'e'\nread4(buf4) # read4 returns 4. Now buf = ['e','f','g','h'], fp points to 'i'\nread4(buf4) # read4 returns 3. Now buf = ['i','j','k',...], fp points to end of file\n\"\"\"\n\nclass Solution:\n    def read(self, buf, n):\n        \"\"\"\n        :type buf: Destination buffer (List[str])\n        :type n: Number of characters to read (int)\n        :rtype: The number of actual characters read (int)\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "/**\n * The read4 API is defined in the parent class Reader4.\n *     int read4(char *buf4);\n */\n\n/**\n * @param buf Destination buffer\n * @param n   Number of characters to read\n * @return    The number of actual characters read\n */\nint _read(char* buf, int n) {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "/**\n * The Read4 API is defined in the parent class Reader4.\n *     int Read4(char[] buf4);\n */\n\npublic class Solution : Reader4 {\n    /**\n     * @param buf Destination buffer\n     * @param n   Number of characters to read\n     * @return    The number of actual characters read\n     */\n    public int Read(char[] buf, int n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * Definition for read4()\n * \n * @param {character[]} buf4 Destination buffer\n * @return {number} The number of actual characters read\n * read4 = function(buf4) {\n *     ...\n * };\n */\n\n/**\n * @param {function} read4()\n * @return {function}\n */\nvar solution = function(read4) {\n    /**\n     * @param {character[]} buf Destination buffer\n     * @param {number} n Number of characters to read\n     * @return {number} The number of actual characters read\n     */\n    return function(buf, n) {\n        \n    };\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# The read4 API is already defined for you.\n# Below is an example of how the read4 API can be called.\n# file = File.new(\"abcdefghijk\") File is \"abcdefghijk\", initially file pointer (fp) points to 'a'\n# buf4 = [' '] * 4 Create buffer with enough space to store characters\n# read4(buf4) # read4 returns 4. Now buf = ['a','b','c','d'], fp points to 'e'\n# read4(buf4) # read4 returns 4. Now buf = ['e','f','g','h'], fp points to 'i'\n# read4(buf4) # read4 returns 3. Now buf = ['i','j','k',...], fp points to end of file\n\n# @param {List[str]} buf\n# @param {int} n\n# @return {int}\ndef read(buf, n)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "/**\n * The read4 API is defined in the parent class Reader4.\n *     func read4(_ buf4: inout [Character]) -> Int;\n */\n\nclass Solution : Reader4 {\n\t/**\n     * @param buf Destination buffer\n     * @param n   Number of characters to read\n     * @return    The number of actual characters read\n     */\n    func read(_ buf: inout [Character], _ n: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "/**\n * The read4 API is already defined for you.\n *\n *     read4 := func(buf4 []byte) int\n *\n * // Below is an example of how the read4 API can be called.\n * file := File(\"abcdefghijk\") // File is \"abcdefghijk\", initially file pointer (fp) points to 'a'\n * buf4 := make([]byte, 4) // Create buffer with enough space to store characters\n * read4(buf4) // read4 returns 4. Now buf = ['a','b','c','d'], fp points to 'e'\n * read4(buf4) // read4 returns 4. Now buf = ['e','f','g','h'], fp points to 'i'\n * read4(buf4) // read4 returns 3. Now buf = ['i','j','k',...], fp points to end of file\n */\n\nvar solution = func(read4 func([]byte) int) func([]byte, int) int {\n    // implement read below.\n    return func(buf []byte, n int) int {\n        \n    }\n}\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "/**\n  * The read4 API is defined in the parent class Reader4.\n  *     def read4(buf4: Array[Char]): Int = {}\n  */\n\nclass Solution extends Reader4 {\n    /**\n      * @param buf Destination buffer\n \t  * @param n   Number of characters to read\n      * @return    The number of actual characters read\n      */\n    def read(buf: Array[Char], n: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "/**\n* The read4 API is defined in the parent class Reader4.\n* fun read4(buf4:CharArray): Int {}\n*/\n\nclass Solution:Reader4() {\n    /**\n      * @param buf Destination buffer\n      * @param n Number of characters to read\n      * @return The number of actual characters read\n      */\n    override fun read(buf:CharArray, n:Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "/**\n * The read4 API is defined as.\n *     fn read4(&self,buf4: &mut [char]) -> i32;\n * You can call it using self.read4(buf4)\n */\n\nimpl Solution {\n    pub fn read(&self, buf: &mut [char], n: i32) -> i32 {\n         \n    }\n}\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "/* The read4 API is defined in the parent class Reader4.\n      public function read4(&$buf4){} */\n\nclass Solution extends Reader4 {\n    /**\n     * @param  Char[]   &$buf\tDestination buffer\n     * @param  Integer  $n\t\tNumber of characters to read\n     * @return Integer \t\t\tThe number of actual characters read\n     */\n    function read(&$buf, $n) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "/**\n * Definition for read4()\n * read4 = function(buf4: string[]): number {\n *     ...\n * };\n */\n\nvar solution = function(read4: any) {\n\n    return function(buf: string[], n: number): number {\n        \n    };\n};",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"172.3K\", \"totalSubmission\": \"425K\", \"totalAcceptedRaw\": 172280, \"totalSubmissionRaw\": 425028, \"acRate\": \"40.5%\"}",
+        "hints": [],
+        "solution": {
+            "id": "991",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": "ac",
+        "sampleTestCase": "\"abc\"\n4",
+        "metaData": "{\n  \"name\": \"read\",\n  \"params\": [\n    {\n      \"name\": \"file\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  },\n  \"manual\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "991",
+        "content": "[TOC]\n\n## Solution\n\n---\n\n#### Overview\n\n**Interview Tendencies: Google and Facebook**\n\nA long time ago, long ago, so long ago that no one can remember,\nalgorithm interview questions were less popular. \nTen years ago big companies mainly filtered the candidates by the university ranks, \nand the interview questions were like \n[please describe how DDR memory works](https://hexus.net/tech/tech-explained/ram/702-ddr-ii-how-it-works/).\n\nNowadays there are some tendencies to merge this \"old-style interview\" with the\nmodern algorithm questions interview. The idea is to ask a question which \nsounds like algorithmic but checks your knowledge of how do computers \nwork: [Round-robin CPU scheduling](https://en.wikipedia.org/wiki/Round-robin_scheduling),\n[C10k problem first solved by nginx](https://en.wikipedia.org/wiki/C10k_problem), etc. \n\n> Is it good or bad? That's a reality to deal with, \nespecially if we speak about Google or Facebook interviews.\n\n**Read N Characters Given Read4**\n\nBack to the problem, the question is \"how does the memory work\":\n\n- Because of the physical implementation, \nloading 4 bytes in DDR is faster than to load 1 byte 4 times.\n\n- On the majority of computers today, collection of 4 bytes, \nor 32 bits, is called a _word_.\nMost modern CPUs are optimized for the operations with _words_. \n\nTo sum up, the problem is a practical low-level question. \nThe standard approach (Approach 1) to solve it using \nthe _internal_ buffer of 4 characters:\n\nFile -> Internal Buffer of 4 Characters -> Buffer of N Characters.\n\n![img](../Figures/157/internal.png)\n*Figure 1. Approach 1: solution with internal buffer.*\n{:align=\"center\"}\n\nOnce it's done, and you show your understanding of memory operations,\nthe follow-up question is how to speed up.\nThe answer (Approach 2) is quite straightforward. \nIf it's possible, do not use the internal buffer of 4 characters \nto avoid the double copy:\n\nFile -> Buffer of N Characters.\n\n![img](../Figures/157/no_internal2.png)\n*Figure 2. Approach 2: solution without internal buffer.*\n{:align=\"center\"}\n\n<br />\n<br />\n\n\n---\n#### Approach 1: Use Internal Buffer of 4 Characters\n\n![img](../Figures/157/internal.png)\n*Figure 3. Solution with internal buffer.*\n{:align=\"center\"}\n\n**Algorithm**\n\nLet's use an internal buffer of 4 characters to solve this problem:\n\nFile -> Internal Buffer of 4 Characters -> Buffer of N Characters.\n\n- Initialize the number of copied characters `copiedChars = 0`,\nand the number of read characters: `readChars = 4`. It's convenient \ninitialize `readChars` to `4` and then use `readChars != 4` as EOF marker. \n\n- Initialize an internal buffer of 4 characters: `buf4`.\n\n- While number of copied characters is less than N: `copiedChars < n` \nand there are still characters in the file: `readChars == 4`:\n\n    - Read from file into internal buffer: `readChars = read4(buf4)`.\n    \n    - Copy the characters from internal buffer `buf4` into main buffer\n    `buf` one by one. Increase `copiedChars` after each character. \n    In the number of copied characters is equal to N: `copiedChars == n`, \n    interrupt the copy process and return `copiedChars`.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/ZwvMddc9/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"ZwvMddc9\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(N)$$ to copy N characters.\n\n* Space complexity: $$O(1)$$ to keep `buf4` of 4 elements.\n\n<br />\n<br />\n\n\n---\n#### Approach 2: Speed Up: No Internal Buffer\n\n![img](../Figures/157/one_buf.png)\n*Figure 4. Solution without internal buffer.*\n{:align=\"center\"}\n\nThis solution is mainly suitable for the languages (C, C++, Golang) \nwhere pointers allow to append directly to the primary buffer `buf`. \n\n**Algorithm**\n\n1. Initialize: \n   - The number of copied characters `copiedChars` as `0`.\n   - The number of read characters `readChars` as `4`.\n   - The number of remaining characters that we want to read `remainingChars` as `n`. \n2. While number of remaining characters that we want to read is greater than or equal to 4 and the number of read characters equals 4:\n   - Read from the file directly into buffer (`read4(buf + copiedChars)`). \n   - Increase the count of `copiedChars` by the number of characters read.\n3. We break from the while loop either when we run out of characters to read (`readChars != 4`) or when there are less than `4` characters left that we want to read. Why break when `remainingChars` is less than `4`? Because if we only want to read say `2` more characters, and there are `3` or more characters remaining in the given file, then we will end up writing more than `n` characters to `buf`.\n4. So when there are less than 4 characters that we want to read, we will use an internal buffer **only once** and read exactly `remainingChars` from that buffer into `buf`. \n5. Finally, `buf` will either contain **exactly** `n` characters, or there were less than `n` characters in the file and we read all of the characters. So we will return the minimum value of `n` and `copiedChars` since this represents exactly how many characters were stored in `buf`. \n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/bLgPo73U/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"bLgPo73U\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(N)$$ to copy N characters.\n\n* Space complexity: $$O(1)$$.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "936",
+            "count": 68,
+            "average": "3.382",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "read-n-characters-given-read4",
+    "playgroundData": {
+        "ZwvMddc9": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "read-n-characters-given-read4-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "bLgPo73U": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "read-n-characters-given-read4-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

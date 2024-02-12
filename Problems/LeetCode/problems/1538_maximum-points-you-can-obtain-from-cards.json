@@ -1,0 +1,270 @@
+{
+    "id": "1538",
+    "question": {
+        "questionId": "1538",
+        "questionFrontendId": "1423",
+        "boundTopicId": null,
+        "title": "Maximum Points You Can Obtain from Cards",
+        "titleSlug": "maximum-points-you-can-obtain-from-cards",
+        "content": "<p>There are several cards <strong>arranged in a row</strong>, and each card has an associated number of points. The points are given in the integer array <code>cardPoints</code>.</p>\n\n<p>In one step, you can take one card from the beginning or from the end of the row. You have to take exactly <code>k</code> cards.</p>\n\n<p>Your score is the sum of the points of the cards you have taken.</p>\n\n<p>Given the integer array <code>cardPoints</code> and the integer <code>k</code>, return the <em>maximum score</em> you can obtain.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> cardPoints = [1,2,3,4,5,6,1], k = 3\n<strong>Output:</strong> 12\n<strong>Explanation:</strong> After the first step, your score will always be 1. However, choosing the rightmost card first will maximize your total score. The optimal strategy is to take the three cards on the right, giving a final score of 1 + 6 + 5 = 12.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> cardPoints = [2,2,2], k = 2\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> Regardless of which two cards you take, your score will always be 4.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> cardPoints = [9,7,7,9,7,7,9], k = 7\n<strong>Output:</strong> 55\n<strong>Explanation:</strong> You have to take all the cards. Your score is the sum of points of all cards.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= cardPoints.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= cardPoints[i] &lt;= 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= k &lt;= cardPoints.length</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 4404,
+        "dislikes": 163,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Maximum Score from Performing Multiplication Operations\", \"titleSlug\": \"maximum-score-from-performing-multiplication-operations\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Removing Minimum and Maximum From Array\", \"titleSlug\": \"removing-minimum-and-maximum-from-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[1,2,3,4,5,6,1]\n3\n[2,2,2]\n2\n[9,7,7,9,7,7,9]\n7",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Sliding Window",
+                "slug": "sliding-window",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Prefix Sum",
+                "slug": "prefix-sum",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Flipkart\", \"slug\": \"flipkart\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 20}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Grab\", \"slug\": \"grab\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int maxScore(vector<int>& cardPoints, int k) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int maxScore(int[] cardPoints, int k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def maxScore(self, cardPoints, k):\n        \"\"\"\n        :type cardPoints: List[int]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def maxScore(self, cardPoints: List[int], k: int) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint maxScore(int* cardPoints, int cardPointsSize, int k){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int MaxScore(int[] cardPoints, int k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} cardPoints\n * @param {number} k\n * @return {number}\n */\nvar maxScore = function(cardPoints, k) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} card_points\n# @param {Integer} k\n# @return {Integer}\ndef max_score(card_points, k)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func maxScore(_ cardPoints: [Int], _ k: Int) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func maxScore(cardPoints []int, k int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def maxScore(cardPoints: Array[Int], k: Int): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun maxScore(cardPoints: IntArray, k: Int): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn max_score(card_points: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $cardPoints\n     * @param Integer $k\n     * @return Integer\n     */\n    function maxScore($cardPoints, $k) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function maxScore(cardPoints: number[], k: number): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (max-score cardPoints k)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"191.4K\", \"totalSubmission\": \"365.4K\", \"totalAcceptedRaw\": 191400, \"totalSubmissionRaw\": 365448, \"acRate\": \"52.4%\"}",
+        "hints": [
+            "Let the sum of all points be total_pts. You need to remove a sub-array from cardPoints with length n - k.",
+            "Keep a window of size n - k over the array. The answer is max(answer, total_pts - sumOfCurrentWindow)"
+        ],
+        "solution": {
+            "id": "1135",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[1,2,3,4,5,6,1]\n3",
+        "metaData": "{\n  \"name\": \"maxScore\",\n  \"params\": [\n    {\n      \"name\": \"cardPoints\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"k\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": {
+            "id": "961",
+            "date": "2022-06-26",
+            "incompleteChallengeCount": 30,
+            "streakCount": 0,
+            "type": "DAILY",
+            "__typename": "ChallengeQuestionNode"
+        },
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "1135",
+        "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n\r\n#### Overview\r\n\r\nThe brute force solution is to find all valid combinations of cards and then select the combination that gives us the maximum sum. To accomplish this, we can use a recursive approach. At each point, we choose a card either from the beginning or from the end of the array. Our base condition is when `k` cards are selected or when no cards are left to be selected.\r\nThis solution results in TLE because it checks an exponential number of combinations (many of the same combinations would be checked more than once). \r\nWe can optimize this solution by using a **dynamic programming** approach.\r\n\r\nA key observation in this problem is that *we need to select k cards from the beginning or end of the array*. Thus no matter how many cards we choose from the beginning, in the end, we need to select two subarrays: one from the beginning, and one from the end, and their total lengths must be `k` (the only exception is when `k = cardPoints.length`, in that case, we'll select all cards). Thus after selecting the two arrays we will be left with a single subarray of length `cardPoints.length - k`. There are three ways we can select the cards:\r\n\r\n1. Select all cards from the beginning.\r\n2. Select all cards from the end.\r\n3. Select some cards from the beginning and the rest from the end.\r\n\r\nIn all the above three cases we will be left with a subarray (in the end, in the beginning, or somewhere in the middle) after our selection. This can be better understood in the following illustration where we are selecting 3 cards from an array of 8 cards.\r\n\r\n![fig](../Figures/1423/1423_Maximum_Points_You_Can_Obtain_from_Cards_Overview_Image.png)\r\n{:align=\"center\"}\r\n\r\n*Figure 1. An example demonstrating some of the positions of the subarrays possible from selecting `k = 3` cards from the array.*\r\n{:align=\"center\"}\r\n\r\nIn addition to the dynamic programming approach, we can also take a **sliding window** approach. A sliding window is a standard programming pattern used in many problems, including those related to finding the sum or the product of a subarray. In case you are not familiar with sliding windows, you can go through this article written by one of our LeetCode users: [Sliding Window Problems for Beginners](https://leetcode.com/discuss/study-guide/657507/Sliding-Window-for-Beginners-Problems-or-Template-or-Sample-Solutions).\r\nIn this article, we'll start by looking at the dynamic programming approach and discuss how to optimize its space complexity. After that, we will finish with the sliding window approach.\r\n\r\n</br>\r\n\r\n---\r\n\r\n#### Approach 1: Dynamic Programming\r\n\r\n**Intuition**\r\n\r\nAs we determined above, the `k` cards that we choose will form two contiguous subarrays: one at the start, and one at the end of the input array. If we choose `i` cards from the start (where `i <= k`) then we must choose `k - i` cards from the end. There are `k` _different_ lengths the first array could be. \r\n\r\nSince these `k` arrays are _overlapping_, we can calculate the **prefix sum** for each of the first `k` values, and then for each of the last `k` values (working from the end of the array, and going inwards). We will store these values in two arrays of size `k`.\r\n\r\nWe can then use these to efficiently check each possible way of selecting `i` cards from the start and `k - i` cards from the end.\r\n\r\n!?!../Documents/1423_Maximum_Points_You_Can_Obtain_from_Cards.json:960,540!?!\r\n\r\n<br/>\r\n\r\n**Algorithm**\r\n\r\n1. Initialize two arrays of size `k + 1`, namely `frontSetOfCards` and `rearSetOfCards` to store the score (prefix sums) obtained by selecting the first `i` cards and the last `i` cards in the array.\r\n\r\n2. We calculate the prefix sum (sum of `0 <= i <= k` cards) for the first `k` cards `frontSetOfCards[i + 1] = frontSetOfCards[i] + cardPoints[i]` and the last `k` cards `rearSetOfCards[i + 1] = cardPoints[n - i - 1] + rearSetOfCards[i]`.\r\n\r\n3. Initialize `maxScore` to 0.\r\n\r\n4. Iterate from `i = 0 -> k`. At each iteration, we determine the possible score by selecting `i` cards from the beginning of the array and `k - i` cards from the end (`currentScore`). If this score is greater than the `maxScore` then we update it.\r\n\r\n**Implementation**\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/AZ37sVqF/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"AZ37sVqF\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$k$$ be the number of cards we need to select.\r\n\r\n* Time complexity: $$O(k)$$. Here we are using two `for` loops of length `k` to calculate the maximum possible score. This gives us $$O(2 \\cdot k)$$, which in Big O notation is equal to $$O(k)$$.\r\n\r\n* Space complexity: $$O(k)$$. Here we are using two arrays to store the total score obtained by selecting $$i(0 <= i < k)$$ cards from the beginning and $$i$$ cards from the end. This gives us $$O(2 \\cdot k)$$, which is equal to $$O(k)$$.\r\n    \r\n\r\n<br/>\r\n\r\n---\r\n\r\n#### Approach 2: Dynamic Programming - Space Optimized\r\n\r\n**Intuition**\r\n\r\nIn approach 1 we used two extra storage spaces (two arrays of size `k`) to store the total score that can be obtained by taking `i` cards from the respective end of the array. \r\n\r\nInstead of pre-computing the arrays, we can calculate the total score while iterating over the array and store the total score in two variables (in place of the two arrays).\r\n\r\n**Algorithm**\r\n\r\n1. Initialize two variables, namely `frontScore` and `rearScore` to store the score obtained by selecting the first `i` cards and the last `k - i` cards in the array.\r\n\r\n2. `frontScore` is initialized to the sum of the first `k` cards in the array, and `rearScore` is initialized to `0`.\r\n\r\n3. Initialize `maxScore` to  `frontScore`.\r\n\r\n4. Iterate backwards from `i = k - 1 -> 0`. At each iteration, we calculate the score by selecting `i` cards from the beginning of the array and `k - i` cards from the end (`currentScore`). If this score is greater than `maxScore`, we update it.\r\n\r\n**Implementation**\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/ifWWPQjZ/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"ifWWPQjZ\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$k$$ be the number of cards we need to select.\r\n\r\n* Time complexity: $$O(k)$$. We are using two `for` loops of length `k` for calculation purposes. This gives us $$O(2 \\cdot k)$$, which in Big O notation is equal to $$O(k)$$.\r\n\r\n* Space complexity: $$O(1)$$. No extra space is used since all the calculations are done impromptu.\r\n    \r\n\r\n<br/>\r\n\r\n---\r\n\r\n#### Approach 3: Sliding Window\r\n\r\n**Intuition**\r\n\r\n In this problem, we must draw exactly `k` cards from the array in such a way that the score (sum of the cards) is maximized. After drawing `k` cards from the array `cardPoints.length - k` cards will remain in the array.\r\n\r\nAnother way that we could view the problem is that our objective is to choose cards from the beginning or end of the array in such a way that the sum of the *remaining* cards is *minimized*. \r\n\r\n We can use a sliding window to find the subarray of size `cardPoints.length - k` that has the minimal sum. Subtracting this value from the total sum of all the cards will give us our answer. This is because no matter where the minimum subarray is located (in the beginning, the middle, or the end) the remaining cards must be selected under the given rule: *in one step, you can take one card from the beginning or the end of the array*.  \r\n\r\n\r\n**Algorithm**\r\n\r\n1. Find the sum of all cards in the array and store it in a variable `totalScore`.\r\n\r\n2. If `k` is equal to `cardPoints.length`, then `return totalScore`.\r\n\r\n3. Initialize `requiredSubarrayLength` to `cardPoints.length - k`.\r\n\r\n4. Initialize two variables: `presentSubarrayScore` and `startingIndex` to `0`. This `startingIndex` marks the starting point of the subarray presently under consideration. Thus it keeps track of the length of the present subarray. \r\n\r\n5. Initialize a variable `minSubarrayScore` to `totalScore`. When the algorithm completes, this variable will hold the smallest possible subarray score in the input array.\r\n\r\n6. Iterate over the array.\r\n    * At each iteration add the current card to `presentSubarrayScore`.\r\n\r\n7. If the size of the subarray under consideration `presentSubarrayLength` is equal to the `requiredSubarrayLength`:\r\n    * Compare the score of the subarray `presentSubarrayScore` with the `minSubarrayScore` and modify the `minSubarrayScore` so that it stores the minimum possible subarray sum. \r\n    * Subtract the current card from the `presentSubarrayScore`.\r\n    * Increment the `startingIndex`.\r\n\r\n8. Subtract the `minSubarrayScore` from the `totalScore` to get the maximum total score that can be obtained by picking `k` cards from the beginning or the end of the array. Return this value.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/VyiiNqzW/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"VyiiNqzW\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\nLet $$n$$ be the number of cards we need to select.\r\n\r\n* Time complexity: $$O(n)$$. In the problem, we are iterating over the array of cards twice. So the time complexity will be $$O(2 \\cdot n)$$ = $$O(n)$$.\r\n\r\n* Space complexity: $$O(1)$$ since no extra space is required.\r\n\r\n<br/>\r\n\r\n---",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "1140",
+            "count": 64,
+            "average": "4.938",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "maximum-points-you-can-obtain-from-cards",
+    "playgroundData": {
+        "AZ37sVqF": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-points-you-can-obtain-from-cards-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "ifWWPQjZ": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-points-you-can-obtain-from-cards-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "VyiiNqzW": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "maximum-points-you-can-obtain-from-cards-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

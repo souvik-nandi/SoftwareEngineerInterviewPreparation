@@ -1,0 +1,247 @@
+{
+    "id": "174",
+    "question": {
+        "questionId": "174",
+        "questionFrontendId": "174",
+        "boundTopicId": null,
+        "title": "Dungeon Game",
+        "titleSlug": "dungeon-game",
+        "content": "<p>The demons had captured the princess and imprisoned her in <strong>the bottom-right corner</strong> of a <code>dungeon</code>. The <code>dungeon</code> consists of <code>m x n</code> rooms laid out in a 2D grid. Our valiant knight was initially positioned in <strong>the top-left room</strong> and must fight his way through <code>dungeon</code> to rescue the princess.</p>\n\n<p>The knight has an initial health point represented by a positive integer. If at any point his health point drops to <code>0</code> or below, he dies immediately.</p>\n\n<p>Some of the rooms are guarded by demons (represented by negative integers), so the knight loses health upon entering these rooms; other rooms are either empty (represented as 0) or contain magic orbs that increase the knight&#39;s health (represented by positive integers).</p>\n\n<p>To reach the princess as quickly as possible, the knight decides to move only <strong>rightward</strong> or <strong>downward</strong> in each step.</p>\n\n<p>Return <em>the knight&#39;s minimum initial health so that he can rescue the princess</em>.</p>\n\n<p><strong>Note</strong> that any room can contain threats or power-ups, even the first room the knight enters and the bottom-right room where the princess is imprisoned.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/13/dungeon-grid-1.jpg\" style=\"width: 253px; height: 253px;\" />\n<pre>\n<strong>Input:</strong> dungeon = [[-2,-3,3],[-5,-10,1],[10,30,-5]]\n<strong>Output:</strong> 7\n<strong>Explanation:</strong> The initial health of the knight must be at least 7 if he follows the optimal path: RIGHT-&gt; RIGHT -&gt; DOWN -&gt; DOWN.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> dungeon = [[0]]\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == dungeon.length</code></li>\n\t<li><code>n == dungeon[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 200</code></li>\n\t<li><code>-1000 &lt;= dungeon[i][j] &lt;= 1000</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 4298,
+        "dislikes": 83,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Unique Paths\", \"titleSlug\": \"unique-paths\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Path Sum\", \"titleSlug\": \"minimum-path-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Cherry Pickup\", \"titleSlug\": \"cherry-pickup\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Path Cost in a Grid\", \"titleSlug\": \"minimum-path-cost-in-a-grid\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Health to Beat Game\", \"titleSlug\": \"minimum-health-to-beat-game\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[[-2,-3,3],[-5,-10,1],[10,30,-5]]\n[[0]]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"PayTM\", \"slug\": \"paytm\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Accolite\", \"slug\": \"accolite\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"JPMorgan\", \"slug\": \"jpmorgan\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 11}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int calculateMinimumHP(vector<vector<int>>& dungeon) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int calculateMinimumHP(int[][] dungeon) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def calculateMinimumHP(self, dungeon):\n        \"\"\"\n        :type dungeon: List[List[int]]\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def calculateMinimumHP(self, dungeon: List[List[int]]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint calculateMinimumHP(int** dungeon, int dungeonSize, int* dungeonColSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int CalculateMinimumHP(int[][] dungeon) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[][]} dungeon\n * @return {number}\n */\nvar calculateMinimumHP = function(dungeon) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[][]} dungeon\n# @return {Integer}\ndef calculate_minimum_hp(dungeon)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func calculateMinimumHP(_ dungeon: [[Int]]) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func calculateMinimumHP(dungeon [][]int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def calculateMinimumHP(dungeon: Array[Array[Int]]): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun calculateMinimumHP(dungeon: Array<IntArray>): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn calculate_minimum_hp(dungeon: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[][] $dungeon\n     * @return Integer\n     */\n    function calculateMinimumHP($dungeon) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function calculateMinimumHP(dungeon: number[][]): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (calculate-minimum-hp dungeon)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec calculate_minimum_hp(Dungeon :: [[integer()]]) -> integer().\ncalculate_minimum_hp(Dungeon) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec calculate_minimum_hp(dungeon :: [[integer]]) :: integer\n  def calculate_minimum_hp(dungeon) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"178K\", \"totalSubmission\": \"483.2K\", \"totalAcceptedRaw\": 177993, \"totalSubmissionRaw\": 483228, \"acRate\": \"36.8%\"}",
+        "hints": [],
+        "solution": {
+            "id": "897",
+            "canSeeDetail": true,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[[-2,-3,3],[-5,-10,1],[10,30,-5]]",
+        "metaData": "{\r\n  \"name\": \"calculateMinimumHP\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"dungeon\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "897",
+        "content": "[TOC]\n\n## Solution\n\n---\n#### Approach 1: Dynamic Programming\n\n**Overview**\n \n Like many problems with 2D grid, often the case one can apply either the technique of [backtracking](https://leetcode.com/explore/learn/card/recursion-ii/472/backtracking/) or dynamic programming.\n\n Specifically, as it turns out, _**dynamic programming**_ would work perfectly for this problem.\n\n>As a general pattern of dynamic programming, usually we construct a array of one or two dimensions (_i.e._ `dp[i]`) where each element holds the optimal solution for the corresponding subproblem.\n\nTo calculate one particular element in the `dp[i]` array, we would refer to the previously calculated elements. And the **last** element that we figure out in the array would be the desired solution for the original problem.\n\n**Intuition**\n\nFollowing the above guideline, here is how we break down the problem into subproblems and apply the dynamic programming algorithm.\n\nWe are asked to calculate the minimal health point that the knight needs, in order to recuse the princess. The knight would move from the up-left corner of the grid to reach the down-right corner where the princess is located (_e.g._ as shown in the following graph). \n\n![pic](../Figures/174/174_problem_new.png)\n\n>Though the **down-right** corner is the final destination of the knight, we could start from the destination and deduce _**backwards**_ the minimal health point that the knight would need at each step along the way.\n\nSo starting from the destination where the princess is locked down, as one can see from the following graph, the knight would need _at least_ 6 health points to survive the damage (5 points) caused by the daemon.\n\n![pic](../Figures/174/174_start_new.png)\n\nLet us now take one step back. Before reaching the destination, there are two possible positions that the knight might situate, _i.e._ the one right above the destination so that the knight would take a _<u>down</u>_ step, and the one to the left of the destination so that the knight would take a _<u>right</u>_ step.\n\nLet us look at the cell (denoted as _<u>cell U</u>_) right above the destination, as shown in the following graph. As we know now, the knight should possess at least 6 health points upon reaching the destination. Since at the _<u>cell U</u>_ we have a magic org which would increase the health of knight by 1 point, the knight would just need to possess 5 health points at the arrival of _<u>cell U</u>_.\n\n![pic](../Figures/174/174_up_new.png)\n\nAs another alternative to reach the destination, the knight might situate at the cell (denoted as _<u>cell L</u>_) to the left side of the destination, as shown in the following graph. In this case, similarly the knight would encounter a magic orb which would give him a 30-points boost on health. With this boost of health, it would be more than enough for the knight to survive the final daemon in the destination. As a result, the knight just needs to possess the minimal 1 health point upon entering the _<u>cell L</u>_.\n\n![pic](../Figures/174/174_left_new.png)\n\nNow that we have calculated the minimal health points that the knight would need before reaching the destination from two of the possible directions, we can carry on to one more step further from the destination. Let us look at the cell (denoted as _<u>cell UL</u>_) located at the up-left corner from the destination.\n\nFollowing the same logic as we have seen in the above steps, we could obtain two values for this cell, which represent the minimal health points that the knight would need for each of the directions that he takes. As one can see from the following graph, at the _<u>cell UL</u>_, if the knight takes a <u>right</u> step next, he would need at least $$5 + 10 = 15$$ health points, in order to rescue the princess at the end. If he takes a <u>down</u> step next, he would need at least $$1 + 10 = 11$$ health points.\n\n![pic](../Figures/174/174_up_left_new.png)\n\nWith all the 3 examples above, we conclude with the following graph where each cell is marked with two minimal health points respectively for each direction that the knight might take, except the destination cell. As one can see, starting from the up-left corner of the grid, the knight would only need 7 health points to rescue the princess.\n\n![pic](../Figures/174/174_final.png)\n\n**Algorithm**\n\nGiven the above intuition, let us see how we can model it with the general code pattern of dynamic programming algorithm.\n\nFirst, we define a matrix `dp[row][col]`, where the element `dp[row][col]` indicates the minimal health points that the knight would need, starting from the corresponding dungeon cell `dungeon[row][col]`, in order to reach the destination.\n\nIn the following graph, we show what the `dp` matrix looks like, for the examples that we listed in the intuition section.\n\n![pic](../Figures/174/174_dp_breakdown_new.png)\n\n>The main idea of the algorithm is clear: we need to calculate the values in the `dp` matrix. And the last value we calculate for the matrix would be the desired solution for the problem.\n\nIn order to calculate the values of `dp` matrix, we start from the down-right corner of the dungeon, and walk following the orders of **from-right-to-left** and **from-down-to-up**. Along with each cell in the dungeon, we calculate the corresponding value of `dp[row][col]` in the matrix.\n\nThe value of `dp[row][col]` is determined by the following conditions:\n\n- If possible, by taking the right step from the current dungeon cell, the knight might need `right_health` health points.\n<br/>\n\n- If possible, by taking the down step from the current dungeon cell, the knight would might `down_health` health points.\n<br/>\n\n- If either of the above two alternatives exists, we then take the minimal value of them as the value for `dp[row][col]`.\n<br/>\n\n- If none of the above alternatives exists, _i.e._ we are at the destination cell, there are two sub-cases:\n\n    - If the current cell is of magic orb, then 1 health point would suffice.\n\n    - If the current cell is of daemon, then the knight should possess one health point plus the damage points that would be caused by the daemon.\n\n<iframe src=\"https://leetcode.com/playground/YfNrPyu6/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"YfNrPyu6\"></iframe>\n\n\n**Complexity**\n\n- Time Complexity: $$\\mathcal{O}(M \\cdot N)$$ where $$M \\cdot N$$ is the size of the dungeon. We iterate through the entire dungeon once and only once.\n\n- Space Complexity: $$\\mathcal{O}(M \\cdot N)$$ where $$M \\cdot N$$ is the size of the dungeon. In the algorithm, we keep a dp matrix that is of the same size as the dungeon.\n<br/>\n<br/>\n\n---\n#### Approach 2: Dynamic Programming with Circular Queue\n\n**Intuition**\n\nIn the above dynamic programming algorithm, there is not much we can do to optimize the time complexity, other than reducing the costy condition checks with some tricks on the initial values of the dp matrix.\n\nOn the other hand, we could reduce the space complexity of the algorithm from $$\\mathcal{O}(M \\cdot N)$$ to $$\\mathcal{O}(N)$$ where $$N$$ is the number of columns.\n\nFirst of all, let us flatten the dp matrix into 1D array, _i.e._ `dp[row][col] = dp[row * N + col]`.\n\n>As one might notice in the above process, in order to calculate each `dp[i]`, we would refer to at most two previously calculated `dp` values, _i.e._ `dp[i-1]` and `dp[i-N]`. Therefore, once we calculate the value for `dp[i]`, we could discard all the previous values that are beyond the range of `N`.\n\nThe above characteristics of the dp array might remind you the container named **_CircularQueue_** which could serve as a sliding window to scan a long list.\n\n![pic](../Figures/174/174_dp_circular_queue_new.png)\n\nIndeed, we could use the CircularQueue to calculate the dp array, as we show in the above graph. At any moment, the size of the CircularQueue would not exceed the predefined capacity, which would be `N` in our case. As a result, we reduce the overall space complexity of the algorithm to $$\\mathcal{O}(N)$$.\n\n\n**Algorithm**\n\n<iframe src=\"https://leetcode.com/playground/dCfHanvL/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"dCfHanvL\"></iframe>\n\n\n\n**Complexity**\n\n- Time Complexity: $$\\mathcal{O}(M \\cdot N)$$ where $$M \\cdot N$$ is the size of the dungeon. We iterate through the entire dungeon once and only once.\n\n- Space Complexity: $$\\mathcal{O}(N)$$ where $$N$$ is the number of columns in the dungeon.\n<br/>\n<br/>",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": true,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "855",
+            "count": 55,
+            "average": "4.746",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "dungeon-game",
+    "playgroundData": {
+        "YfNrPyu6": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "dungeon-game-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "dCfHanvL": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "dungeon-game-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}

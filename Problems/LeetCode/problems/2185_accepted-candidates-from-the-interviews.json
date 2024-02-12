@@ -1,0 +1,92 @@
+{
+    "id": "2185",
+    "question": {
+        "questionId": "2185",
+        "questionFrontendId": "2041",
+        "boundTopicId": null,
+        "title": "Accepted Candidates From the Interviews",
+        "titleSlug": "accepted-candidates-from-the-interviews",
+        "content": "<p>Table: <code>Candidates</code></p>\n\n<pre>\n+--------------+----------+\n| Column Name  | Type     |\n+--------------+----------+\n| candidate_id | int      |\n| name         | varchar  |\n| years_of_exp | int      |\n| interview_id | int      |\n+--------------+----------+\ncandidate_id is the primary key column for this table.\nEach row of this table indicates the name of a candidate, their number of years of experience, and their interview ID.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Table: <code>Rounds</code></p>\n\n<pre>\n+--------------+------+\n| Column Name  | Type |\n+--------------+------+\n| interview_id | int  |\n| round_id     | int  |\n| score        | int  |\n+--------------+------+\n(interview_id, round_id) is the primary key column for this table.\nEach row of this table indicates the score of one round of an interview.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to report the IDs of the candidates who have <strong>at least two</strong> years of experience and the sum of the score of their interview rounds is <strong>strictly greater than <code>15</code></strong>.</p>\n\n<p>Return the result table in <strong>any order</strong>.</p>\n\n<p>The query result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nCandidates table:\n+--------------+---------+--------------+--------------+\n| candidate_id | name    | years_of_exp | interview_id |\n+--------------+---------+--------------+--------------+\n| 11           | Atticus | 1            | 101          |\n| 9            | Ruben   | 6            | 104          |\n| 6            | Aliza   | 10           | 109          |\n| 8            | Alfredo | 0            | 107          |\n+--------------+---------+--------------+--------------+\nRounds table:\n+--------------+----------+-------+\n| interview_id | round_id | score |\n+--------------+----------+-------+\n| 109          | 3        | 4     |\n| 101          | 2        | 8     |\n| 109          | 4        | 1     |\n| 107          | 1        | 3     |\n| 104          | 3        | 6     |\n| 109          | 1        | 4     |\n| 104          | 4        | 7     |\n| 104          | 1        | 2     |\n| 109          | 2        | 1     |\n| 104          | 2        | 7     |\n| 107          | 2        | 3     |\n| 101          | 1        | 8     |\n+--------------+----------+-------+\n<strong>Output:</strong> \n+--------------+\n| candidate_id |\n+--------------+\n| 9            |\n+--------------+\n<strong>Explanation:</strong> \n- Candidate 11: The total score is 16, and they have one year of experience. We do not include them in the result table because of their years of experience.\n- Candidate 9: The total score is 22, and they have six years of experience. We include them in the result table.\n- Candidate 6: The total score is 10, and they have ten years of experience. We do not include them in the result table because the score is not good enough.\n- Candidate 8: The total score is 6, and they have zero years of experience. We do not include them in the result table because of their years of experience and the score.\n</pre>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Medium",
+        "likes": 21,
+        "dislikes": 23,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "{\"headers\":{\"Candidates\":[\"candidate_id\",\"name\",\"years_of_exp\",\"interview_id\"],\"Rounds\":[\"interview_id\",\"round_id\",\"score\"]},\"rows\":{\"Candidates\":[[11,\"Atticus\",1,101],[9,\"Ruben\",6,104],[6,\"Aliza\",10,109],[8,\"Alfredo\",0,107]],\"Rounds\":[[109,3,4],[101,2,8],[109,4,1],[107,1,3],[104,3,6],[109,1,4],[104,4,7],[104,1,2],[109,2,1],[104,2,7],[107,2,3],[101,1,8]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "# Write your MySQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "/* Write your T-SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "/* Write your PL/SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"3.9K\", \"totalSubmission\": \"5K\", \"totalAcceptedRaw\": 3908, \"totalSubmissionRaw\": 4992, \"acRate\": \"78.3%\"}",
+        "hints": [],
+        "solution": null,
+        "status": null,
+        "sampleTestCase": "{\"headers\":{\"Candidates\":[\"candidate_id\",\"name\",\"years_of_exp\",\"interview_id\"],\"Rounds\":[\"interview_id\",\"round_id\",\"score\"]},\"rows\":{\"Candidates\":[[11,\"Atticus\",1,101],[9,\"Ruben\",6,104],[6,\"Aliza\",10,109],[8,\"Alfredo\",0,107]],\"Rounds\":[[109,3,4],[101,2,8],[109,4,1],[107,1,3],[104,3,6],[109,1,4],[104,4,7],[104,1,2],[109,2,1],[104,2,7],[107,2,3],[101,1,8]]}}",
+        "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Candidates (candidate_id int, name varchar(30), years_of_exp int, interview_id int)\",\n    \"Create table If Not Exists Rounds (interview_id int, round_id int, score int)\"\n  ],\n  \"mssql\": [\n    \"Create table Candidates (candidate_id int, name varchar(30), years_of_exp int, interview_id int)\",\n    \"Create table Rounds (interview_id int, round_id int, score int)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Candidates (candidate_id int, name varchar(30), years_of_exp int, interview_id int)\",\n    \"Create table Rounds (interview_id int, round_id int, score int)\"\n  ],\n  \"database\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists Candidates (candidate_id int, name varchar(30), years_of_exp int, interview_id int)",
+            "Create table If Not Exists Rounds (interview_id int, round_id int, score int)",
+            "Truncate table Candidates",
+            "insert into Candidates (candidate_id, name, years_of_exp, interview_id) values ('11', 'Atticus', '1', '101')",
+            "insert into Candidates (candidate_id, name, years_of_exp, interview_id) values ('9', 'Ruben', '6', '104')",
+            "insert into Candidates (candidate_id, name, years_of_exp, interview_id) values ('6', 'Aliza', '10', '109')",
+            "insert into Candidates (candidate_id, name, years_of_exp, interview_id) values ('8', 'Alfredo', '0', '107')",
+            "Truncate table Rounds",
+            "insert into Rounds (interview_id, round_id, score) values ('109', '3', '4')",
+            "insert into Rounds (interview_id, round_id, score) values ('101', '2', '8')",
+            "insert into Rounds (interview_id, round_id, score) values ('109', '4', '1')",
+            "insert into Rounds (interview_id, round_id, score) values ('107', '1', '3')",
+            "insert into Rounds (interview_id, round_id, score) values ('104', '3', '6')",
+            "insert into Rounds (interview_id, round_id, score) values ('109', '1', '4')",
+            "insert into Rounds (interview_id, round_id, score) values ('104', '4', '7')",
+            "insert into Rounds (interview_id, round_id, score) values ('104', '1', '2')",
+            "insert into Rounds (interview_id, round_id, score) values ('109', '2', '1')",
+            "insert into Rounds (interview_id, round_id, score) values ('104', '2', '7')",
+            "insert into Rounds (interview_id, round_id, score) values ('107', '2', '3')",
+            "insert into Rounds (interview_id, round_id, score) values ('101', '1', '8')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": null,
+    "questionCode": "accepted-candidates-from-the-interviews",
+    "playgroundData": null
+}

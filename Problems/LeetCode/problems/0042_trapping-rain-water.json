@@ -1,0 +1,309 @@
+{
+    "id": "42",
+    "question": {
+        "questionId": "42",
+        "questionFrontendId": "42",
+        "boundTopicId": null,
+        "title": "Trapping Rain Water",
+        "titleSlug": "trapping-rain-water",
+        "content": "<p>Given <code>n</code> non-negative integers representing an elevation map where the width of each bar is <code>1</code>, compute how much water it can trap after raining.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img src=\"https://assets.leetcode.com/uploads/2018/10/22/rainwatertrap.png\" style=\"width: 412px; height: 161px;\" />\n<pre>\n<strong>Input:</strong> height = [0,1,0,2,1,0,1,3,2,1,2,1]\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> The above elevation map (black section) is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> height = [4,2,0,3,2,5]\n<strong>Output:</strong> 9\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == height.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 2 * 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= height[i] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Hard",
+        "likes": 20086,
+        "dislikes": 283,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Container With Most Water\", \"titleSlug\": \"container-with-most-water\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Product of Array Except Self\", \"titleSlug\": \"product-of-array-except-self\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Trapping Rain Water II\", \"titleSlug\": \"trapping-rain-water-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Pour Water\", \"titleSlug\": \"pour-water\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[0,1,0,2,1,0,1,3,2,1,2,1]\n[4,2,0,3,2,5]",
+        "categoryTitle": "Algorithms",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Stack",
+                "slug": "stack",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            },
+            {
+                "name": "Monotonic Stack",
+                "slug": "monotonic-stack",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Rubrik\", \"slug\": \"rubrik\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"C3 IoT\", \"slug\": \"c3-iot\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Swiggy\", \"slug\": \"swiggy\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"National Instruments\", \"slug\": \"national-instruments\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zoho\", \"slug\": \"zoho\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Coupang\", \"slug\": \"coupang\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ServiceNow\", \"slug\": \"servicenow\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Morgan Stanley\", \"slug\": \"morgan-stanley\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"MakeMyTrip\", \"slug\": \"makemytrip\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Sapient\", \"slug\": \"sapient\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 49}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 44}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 20}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 19}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 10}, {\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 8}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Qualtrics\", \"slug\": \"qualtrics\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Tesla\", \"slug\": \"tesla\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Intuit\", \"slug\": \"intuit\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Intel\", \"slug\": \"intel\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Epam Systems\", \"slug\": \"epam-systems\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Databricks\", \"slug\": \"databricks\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Flipkart\", \"slug\": \"flipkart\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Walmart Global Tech\", \"slug\": \"walmart-labs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Accolite\", \"slug\": \"accolite\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Samsung\", \"slug\": \"samsung\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Grab\", \"slug\": \"grab\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Twitch\", \"slug\": \"twitch\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"DE Shaw\", \"slug\": \"de-shaw\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"PayTM\", \"slug\": \"paytm\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Zenefits\", \"slug\": \"zenefits\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Wix\", \"slug\": \"wix\", \"timesEncountered\": 0}]}",
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int trap(vector<int>& height) {\n        \n    }\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int trap(int[] height) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python",
+                "langSlug": "python",
+                "code": "class Solution(object):\n    def trap(self, height):\n        \"\"\"\n        :type height: List[int]\n        :rtype: int\n        \"\"\"\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def trap(self, height: List[int]) -> int:\n        ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C",
+                "langSlug": "c",
+                "code": "\n\nint trap(int* height, int heightSize){\n\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "C#",
+                "langSlug": "csharp",
+                "code": "public class Solution {\n    public int Trap(int[] height) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} height\n * @return {number}\n */\nvar trap = function(height) {\n    \n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Ruby",
+                "langSlug": "ruby",
+                "code": "# @param {Integer[]} height\n# @return {Integer}\ndef trap(height)\n    \nend",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Swift",
+                "langSlug": "swift",
+                "code": "class Solution {\n    func trap(_ height: [Int]) -> Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Go",
+                "langSlug": "golang",
+                "code": "func trap(height []int) int {\n    \n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Scala",
+                "langSlug": "scala",
+                "code": "object Solution {\n    def trap(height: Array[Int]): Int = {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Kotlin",
+                "langSlug": "kotlin",
+                "code": "class Solution {\n    fun trap(height: IntArray): Int {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Rust",
+                "langSlug": "rust",
+                "code": "impl Solution {\n    pub fn trap(height: Vec<i32>) -> i32 {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PHP",
+                "langSlug": "php",
+                "code": "class Solution {\n\n    /**\n     * @param Integer[] $height\n     * @return Integer\n     */\n    function trap($height) {\n        \n    }\n}",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function trap(height: number[]): number {\n\n};",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Racket",
+                "langSlug": "racket",
+                "code": "(define/contract (trap height)\n  (-> (listof exact-integer?) exact-integer?)\n\n  )",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Erlang",
+                "langSlug": "erlang",
+                "code": "-spec trap(Height :: [integer()]) -> integer().\ntrap(Height) ->\n  .",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Elixir",
+                "langSlug": "elixir",
+                "code": "defmodule Solution do\n  @spec trap(height :: [integer]) :: integer\n  def trap(height) do\n\n  end\nend",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"1.2M\", \"totalSubmission\": \"2.1M\", \"totalAcceptedRaw\": 1198156, \"totalSubmissionRaw\": 2091177, \"acRate\": \"57.3%\"}",
+        "hints": [],
+        "solution": {
+            "id": "150",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[0,1,0,2,1,0,1,3,2,1,2,1]",
+        "metaData": "{\r\n  \"name\": \"trap\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"height\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": true,
+        "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code> OpenJDK 17 </code>. Java 8 features such as lambda expressions and stream API can be used. </p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu11 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9\\\" target=\\\"_blank\\\">C# 10 with .NET 6 runtime</a></p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 3.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.5.2</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.17.6</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.10</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13.7</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.58.1</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand </a> v0.6\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 8.1</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 4.5.4, Node.js 16.13.2</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 8.3</code>.</p>\"], \"erlang\": [\"Erlang\", \"Erlang/OTP 24.2\"], \"elixir\": [\"Elixir\", \"Elixir 1.13.0 with Erlang/OTP 24.2\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "150",
+        "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Brute force\n\n**Intuition**\n\nDo as directed in question. For each element in the array, we find the maximum level of water it can trap after the rain, which is equal to the minimum of maximum height of bars on both the sides minus its own height.\n\n**Algorithm**\n\n* Initialize $$ans=0$$\n* Iterate the array from left to right:\n  + Initialize $$\\text{left\\_max}=0$$ and $$\\text{right\\_max}=0$$\n  + Iterate from the current element to the beginning of array updating:\n    * $$\\text{left\\_max}=\\max(\\text{left\\_max},\\text{height}[j])$$\n  + Iterate from the current element to the end of array updating:\n    * $$\\text{right\\_max}=\\max(\\text{right\\_max},\\text{height}[j])$$\n  + Add $$\\min(\\text{left\\_max},\\text{right\\_max}) - \\text{height}[i]$$ to $$\\text{ans}$$\n\n<iframe src=\"https://leetcode.com/playground/LnVLgsz6/shared\" frameBorder=\"0\" width=\"100%\" height=\"0\" name=\"LnVLgsz6\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n^2)$$. For each element of array, we iterate the left and right parts.\n\n* Space complexity: $$O(1)$$ extra space.\n<br />\n<br />\n---\n#### Approach 2: Dynamic Programming\n\n**Intuition**\n\nIn brute force, we iterate over the left and right parts again and again just to find the highest bar size upto that index. But, this could be stored. Voila, dynamic programming.\n\nThe concept is illustrated as shown:\n\n![Dynamic programming](../Figures/42/trapping_rain_water.png){:width=\"500px\"}\n{:align=\"center\"}\n\n**Algorithm**\n\n* Find maximum height of bar from the left end upto an index i in the array $$\\text{left\\_max}$$.\n* Find maximum height of bar from the right end upto an index i in the array $$\\text{right\\_max}$$.\n* Iterate over the $$\\text{height}$$ array and update ans:\n    + Add $$\\min(\\text{left\\_max}[i],\\text{right\\_max}[i]) - \\text{height}[i]$$ to $$\\text{ans}$$\n\n<iframe src=\"https://leetcode.com/playground/kyjATewE/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"kyjATewE\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity: $$O(n)$$.\n    + We store the maximum heights upto a point using 2 iterations of $$O(n)$$ each.\n    + We finally update $$\\text{ans}$$ using the stored values in $$O(n)$$.\n\n* Space complexity: $$O(n)$$ extra space.\n    + Additional $$O(n)$$ space for $$\\text{left\\_max}$$ and $$\\text{right\\_max}$$ arrays than in [Approach 1](#approach-1-brute-force).\n<br />\n<br />\n---\n#### Approach 3: Using stacks\n\n**Intuition**\n\nInstead of storing the largest bar upto an index as in [Approach 2](#approach-2-dynamic-programming), we can use stack to keep track of the bars that are bounded by longer bars and hence, may store water. Using the stack, we can do the calculations in only one iteration.\n\nWe keep a stack and iterate over the array. We add the index of the bar to the stack if bar is smaller than or equal to the bar at top of stack, which means that the current bar is bounded by the previous bar in the stack. If we found a bar longer than that at the top, we are sure that the bar at the top of the stack is bounded by the current bar and a previous bar in the stack, hence, we can pop it and add resulting trapped water to $$\\text{ans}$$.\n\n**Algorithm**\n\n* Use stack to store the indices of the bars.\n* Iterate the array:\n    + While stack is not empty and $$\\text{height[current]}>\\text{height[st.top()]}$$\n        * It means that the stack element can be popped. Pop the top element as $$\\text{top}$$.\n        * Find the distance between the current element and the element at top of stack, which is to be filled.\n        $$\\text{distance} = \\text{current} - \\text{st.top}() - 1$$\n        * Find the bounded height\n        $$\\text{bounded\\_height} = \\min(\\text{height[current]}, \\text{height[st.top()]}) - \\text{height[top]}$$\n        * Add resulting trapped water to answer $$\\text{ans} \\mathrel{+}= \\text{distance} \\times \\text{bounded\\_height}$$\n    + Push current index to top of the stack\n    + Move $$\\text{current}$$ to the next position\n\n\n<iframe src=\"https://leetcode.com/playground/HcnNncFu/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"HcnNncFu\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity: $$O(n)$$.\n    + Single iteration of $$O(n)$$ in which each bar can be touched at most twice(due to  insertion and deletion from stack) and insertion and deletion from stack takes $$O(1)$$ time.\n* Space complexity: $$O(n)$$. Stack can take upto $$O(n)$$ space in case of stairs-like or flat structure.\n<br />\n<br />\n\n---\n#### Approach 4: Using 2 pointers\n\n**Intuition**\n\nAs in [Approach 2](#approach-2-dynamic-programming), instead of computing the left and right parts seperately, we may think of some way to do it in one iteration.\nFrom the figure in dynamic programming approach, notice that as long as $$\\text{right\\_max}[i]>\\text{left\\_max}[i]$$ (from element 0 to 6), the water trapped depends upon the left_max, and similar is the case when $$\\text{left\\_max}[i]>\\text{right\\_max}[i]$$ (from element 8 to 11).\nSo, we can say that if there is a larger bar at one end (say right), we are assured that the water trapped would be dependant on height of bar in current direction (from left to right). As soon as we find the bar at other end (right) is smaller, we start iterating in opposite direction (from right to left).\nWe must maintain $$\\text{left\\_max}$$ and $$\\text{right\\_max}$$ during the iteration, but now we can do it in one iteration using 2 pointers, switching between the two.\n\n**Algorithm**\n\n* Initialize $$\\text{left}$$ pointer to 0 and $$\\text{right}$$ pointer to size-1\n* While $$\\text{left}< \\text{right}$$, do:\n    + If $$\\text{height[left]}$$ is smaller than $$\\text{height[right]}$$\n        * If $$\\text{height[left]} \\geq \\text{left\\_max}$$, update $$\\text{left\\_max}$$\n        * Else add $$\\text{left\\_max}-\\text{height[left]}$$ to $$\\text{ans}$$\n        * Add 1 to $$\\text{left}$$.\n    + Else\n        * If $$\\text{height[right]} \\geq \\text{right\\_max}$$, update $$\\text{right\\_max}$$\n        * Else add $$\\text{right\\_max}-\\text{height[right]}$$ to $$\\text{ans}$$\n        * Subtract 1 from $$\\text{right}$$.\n\nRefer the example for better understanding:\n!?!../Documents/42/42_trapping_rain_water.json:1000,662!?!\n\n<iframe src=\"https://leetcode.com/playground/ak9pRdLp/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"ak9pRdLp\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity: $$O(n)$$. Single iteration of $$O(n)$$.\n* Space complexity: $$O(1)$$ extra space. Only constant space required for $$\\text{left}$$, $$\\text{right}$$, $$\\text{left\\_max}$$ and $$\\text{right\\_max}$$.",
+        "contentTypeId": "107",
+        "canSeeDetail": true,
+        "paidOnly": false,
+        "hasVideoSolution": false,
+        "paidOnlyVideo": true,
+        "rating": {
+            "id": "145",
+            "count": 746,
+            "average": "4.600",
+            "userRating": null,
+            "__typename": "RatingNode"
+        },
+        "__typename": "ArticleNode"
+    },
+    "questionCode": "trapping-rain-water",
+    "playgroundData": {
+        "LnVLgsz6": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "trapping-rain-water-3",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "kyjATewE": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "trapping-rain-water-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "HcnNncFu": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "trapping-rain-water-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        },
+        "ak9pRdLp": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "trapping-rain-water-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": [
+                {
+                    "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = i + 1; j < nums.length; j++) {\n                if (nums[j] == target - nums[i]) {\n                    return new int[] { i, j };\n                }\n            }\n        }\n        // In case there is no solution, we'll just return null\n        return null;\n    }\n}",
+                    "langSlug": "java",
+                    "__typename": "PlaygroundCodeNode"
+                },
+                {
+                    "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]",
+                    "langSlug": "python3",
+                    "__typename": "PlaygroundCodeNode"
+                }
+            ]
+        }
+    }
+}
