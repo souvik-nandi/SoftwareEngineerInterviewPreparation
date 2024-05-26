@@ -1,0 +1,146 @@
+{
+    "question": {
+        "questionId": "1898",
+        "questionFrontendId": "1747",
+        "boundTopicId": null,
+        "title": "Leetflex Banned Accounts",
+        "titleSlug": "leetflex-banned-accounts",
+        "content": null,
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Medium",
+        "likes": 182,
+        "dislikes": 13,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "{\"headers\":{\"LogInfo\":[\"account_id\",\"ip_address\",\"login\",\"logout\"]},\"rows\":{\"LogInfo\":[[1,1,\"2021-02-01 09:00:00\",\"2021-02-01 09:30:00\"],[1,2,\"2021-02-01 08:00:00\",\"2021-02-01 11:30:00\"],[2,6,\"2021-02-01 20:30:00\",\"2021-02-01 22:00:00\"],[2,7,\"2021-02-02 20:30:00\",\"2021-02-02 22:00:00\"],[3,9,\"2021-02-01 16:00:00\",\"2021-02-01 16:59:59\"],[3,13,\"2021-02-01 17:00:00\",\"2021-02-01 17:59:59\"],[4,10,\"2021-02-01 16:00:00\",\"2021-02-01 17:00:00\"],[4,11,\"2021-02-01 17:00:00\",\"2021-02-01 17:59:59\"]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": null,
+        "codeSnippets": null,
+        "stats": "{\"totalAccepted\": \"20.9K\", \"totalSubmission\": \"32.6K\", \"totalAcceptedRaw\": 20869, \"totalSubmissionRaw\": 32647, \"acRate\": \"63.9%\"}",
+        "hints": [],
+        "solution": {
+            "id": "2082",
+            "canSeeDetail": false,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "{\"headers\":{\"LogInfo\":[\"account_id\",\"ip_address\",\"login\",\"logout\"]},\"rows\":{\"LogInfo\":[[1,1,\"2021-02-01 09:00:00\",\"2021-02-01 09:30:00\"],[1,2,\"2021-02-01 08:00:00\",\"2021-02-01 11:30:00\"],[2,6,\"2021-02-01 20:30:00\",\"2021-02-01 22:00:00\"],[2,7,\"2021-02-02 20:30:00\",\"2021-02-02 22:00:00\"],[3,9,\"2021-02-01 16:00:00\",\"2021-02-01 16:59:59\"],[3,13,\"2021-02-01 17:00:00\",\"2021-02-01 17:59:59\"],[4,10,\"2021-02-01 16:00:00\",\"2021-02-01 17:00:00\"],[4,11,\"2021-02-01 17:00:00\",\"2021-02-01 17:59:59\"]]}}",
+        "metaData": "{\"mysql\": [\"Create table If Not Exists LogInfo (account_id int, ip_address int, login datetime, logout datetime)\"], \"mssql\": [\"Create table LogInfo (account_id int, ip_address int, login datetime, logout datetime)\"], \"oraclesql\": [\"Create table LogInfo (account_id int, ip_address int, login date, logout date)\", \"ALTER SESSION SET nls_date_format='YYYY-MM-DD HH24:MI:SS'\"], \"database\": true, \"manual\": true, \"name\": \"leetflex_banned_accnts\", \"pythondata\": [\"LogInfo = pd.DataFrame([], columns=['account_id', 'ip_address', 'login', 'logout']).astype({'account_id':'Int64', 'ip_address':'Int64', 'login':'datetime64[ns]', 'logout':'datetime64[ns]'})\"], \"postgresql\": [\"Create table If Not Exists LogInfo (account_id int, ip_address int, login timestamp, logout timestamp)\\n\"], \"database_schema\": {\"LogInfo\": {\"account_id\": \"INT\", \"ip_address\": \"INT\", \"login\": \"DATETIME\", \"logout\": \"DATETIME\"}}}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists LogInfo (account_id int, ip_address int, login datetime, logout datetime)",
+            "Truncate table LogInfo",
+            "insert into LogInfo (account_id, ip_address, login, logout) values ('1', '1', '2021-02-01 09:00:00', '2021-02-01 09:30:00')",
+            "insert into LogInfo (account_id, ip_address, login, logout) values ('1', '2', '2021-02-01 08:00:00', '2021-02-01 11:30:00')",
+            "insert into LogInfo (account_id, ip_address, login, logout) values ('2', '6', '2021-02-01 20:30:00', '2021-02-01 22:00:00')",
+            "insert into LogInfo (account_id, ip_address, login, logout) values ('2', '7', '2021-02-02 20:30:00', '2021-02-02 22:00:00')",
+            "insert into LogInfo (account_id, ip_address, login, logout) values ('3', '9', '2021-02-01 16:00:00', '2021-02-01 16:59:59')",
+            "insert into LogInfo (account_id, ip_address, login, logout) values ('3', '13', '2021-02-01 17:00:00', '2021-02-01 17:59:59')",
+            "insert into LogInfo (account_id, ip_address, login, logout) values ('4', '10', '2021-02-01 16:00:00', '2021-02-01 17:00:00')",
+            "insert into LogInfo (account_id, ip_address, login, logout) values ('4', '11', '2021-02-01 17:00:00', '2021-02-01 17:59:59')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"], \"pythondata\": [\"Pandas\", \"<p>Python 3.10 with Pandas 2.0.2 and NumPy 1.25.0</p>\"], \"postgresql\": [\"PostgreSQL\", \"<p>PostgreSQL 16</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "7",
+        "title": "Two Sum",
+        "content": "[TOC]\n\n## Video Solution\n\n---\n\n<div>\n    <div class=\"video-container\">\n        <iframe src=\"https://player.vimeo.com/video/567281997\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>\n    </div>\n</div>\n\n<div>&nbsp;\n</div>\n\n## Solution Article\n\n---\n\n### Approach 1: Brute Force\n\n**Algorithm**\n\nThe brute force approach is simple. Loop through each element $$x$$ and find if there is another value that equals to $$target - x$$.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/F5kg7EYc/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"F5kg7EYc\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n^2)$$.\nFor each element, we try to find its complement by looping through the rest of the array which takes $$O(n)$$ time. Therefore, the time complexity is $$O(n^2)$$.\n\n* Space complexity: $$O(1)$$.\nThe space required does not depend on the size of the input array, so only constant space is used.\n\n---\n### Approach 2: Two-pass Hash Table\n\n**Intuition**\n\nTo improve our runtime complexity, we need a more efficient way to check if the complement exists in the array. If the complement exists, we need to get its index. What is the best way to maintain a mapping of each element in the array to its index? A hash table.\n\nWe can reduce the lookup time from $$O(n)$$ to $$O(1)$$ by trading space for speed. A hash table is well suited for this purpose because it supports fast lookup in *near* constant time. I say \"near\" because if a collision occurred, a lookup could degenerate to $$O(n)$$ time. However, lookup in a hash table should be amortized $$O(1)$$ time as long as the hash function was chosen carefully.\n\n**Algorithm**\n\nA simple implementation uses two iterations. In the first iteration, we add each element's value as a key and its index as a value to the hash table. Then, in the second iteration, we check if each element's complement ($$target - nums[i]$$) exists in the hash table. If it does exist, we return current element's index and its complement's index. Beware that the complement must not be $$nums[i]$$ itself!\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/GzXvM56P/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"GzXvM56P\"></iframe>  \n\n**Complexity Analysis**\n\n* Time complexity: $$O(n)$$.\nWe traverse the list containing $$n$$ elements exactly twice. Since the hash table reduces the lookup time to $$O(1)$$, the overall time complexity is $$O(n)$$.\n\n* Space complexity: $$O(n)$$.\nThe extra space required depends on the number of items stored in the hash table, which stores exactly $$n$$ elements.\n\n---\n### Approach 3: One-pass Hash Table\n\n**Algorithm**\n    \nIt turns out we can do it in one-pass. While we are iterating and inserting elements into the hash table, we also look back to check if current element's complement already exists in the hash table. If it exists, we have found a solution and return the indices immediately.\n\n**Implementation**    \n    \n<iframe src=\"https://leetcode.com/playground/ERd2anAr/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ERd2anAr\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n)$$.\nWe traverse the list containing $$n$$ elements only once. Each lookup in the table costs only $$O(1)$$ time.\n\n* Space complexity: $$O(n)$$.\nThe extra space required depends on the number of items stored in the hash table, which stores at most $$n$$ elements.",
+        "contentTypeId": "107",
+        "paidOnly": false,
+        "hasVideoSolution": true,
+        "paidOnlyVideo": false,
+        "canSeeDetail": true,
+        "rating": {
+            "count": 3718,
+            "average": "4.589",
+            "userRating": null
+        },
+        "topic": {
+            "id": 127810,
+            "commentCount": 3353,
+            "topLevelCommentCount": 2324,
+            "viewCount": 8078145,
+            "subscribed": false,
+            "solutionTags": [],
+            "post": {
+                "id": 260381,
+                "status": null,
+                "creationDate": 1457528847,
+                "author": {
+                    "username": "LeetCode",
+                    "isActive": true,
+                    "profile": {
+                        "userAvatar": "https://assets.leetcode.com/users/leetcode/avatar_1568224780.png",
+                        "reputation": 34123
+                    }
+                }
+            }
+        }
+    },
+    "playgroundData": {
+        "F5kg7EYc": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": null
+        },
+        "GzXvM56P": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": null
+        },
+        "ERd2anAr": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": null
+        }
+    }
+}

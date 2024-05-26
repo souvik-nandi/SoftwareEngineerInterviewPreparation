@@ -1,0 +1,175 @@
+{
+    "question": {
+        "questionId": "586",
+        "questionFrontendId": "586",
+        "boundTopicId": null,
+        "title": "Customer Placing the Largest Number of Orders",
+        "titleSlug": "customer-placing-the-largest-number-of-orders",
+        "content": "<p>Table: <code>Orders</code></p>\n\n<pre>\n+-----------------+----------+\n| Column Name     | Type     |\n+-----------------+----------+\n| order_number    | int      |\n| customer_number | int      |\n+-----------------+----------+\norder_number is the primary key (column with unique values) for this table.\nThis table contains information about the order ID and the customer ID.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write a solution to find the <code>customer_number</code> for the customer who has placed <strong>the largest number of orders</strong>.</p>\n\n<p>The test cases are generated so that <strong>exactly one customer</strong> will have placed more orders than any other customer.</p>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nOrders table:\n+--------------+-----------------+\n| order_number | customer_number |\n+--------------+-----------------+\n| 1            | 1               |\n| 2            | 2               |\n| 3            | 3               |\n| 4            | 3               |\n+--------------+-----------------+\n<strong>Output:</strong> \n+-----------------+\n| customer_number |\n+-----------------+\n| 3               |\n+-----------------+\n<strong>Explanation:</strong> \nThe customer with number 3 has two orders, which is greater than either customer 1 or 2 because each of them only has one order. \nSo the result is customer_number 3.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> What if more than one customer has the largest number of orders, can you find all the <code>customer_number</code> in this case?</p>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 973,
+        "dislikes": 72,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "{\"headers\":{\"orders\":[\"order_number\",\"customer_number\"]},\"rows\":{\"orders\":[[1,1],[2,2],[3,3],[4,3]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": null,
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "# Write your MySQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "/* Write your T-SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "/* Write your PL/SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Pandas",
+                "langSlug": "pythondata",
+                "code": "import pandas as pd\n\ndef largest_orders(orders: pd.DataFrame) -> pd.DataFrame:\n    ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PostgreSQL",
+                "langSlug": "postgresql",
+                "code": "-- Write your PostgreSQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"257.5K\", \"totalSubmission\": \"397.6K\", \"totalAcceptedRaw\": 257510, \"totalSubmissionRaw\": 397626, \"acRate\": \"64.8%\"}",
+        "hints": [
+            "MySQL uses a different expression to get the first records other than MSSQL's TOP expression."
+        ],
+        "solution": {
+            "id": "160",
+            "canSeeDetail": false,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "{\"headers\":{\"orders\":[\"order_number\",\"customer_number\"]},\"rows\":{\"orders\":[[1,1],[2,2],[3,3],[4,3]]}}",
+        "metaData": "{\"mysql\": [\"Create table If Not Exists orders (order_number int, customer_number int)\"], \"mssql\": [\"Create table orders (order_number int, customer_number int)\"], \"oraclesql\": [\"Create table orders (order_number int, customer_number int)\"], \"database\": true, \"name\": \"largest_orders\", \"pythondata\": [\"orders = pd.DataFrame([], columns=['order_number', 'customer_number']).astype({'order_number':'Int64', 'customer_number':'Int64'})\"], \"postgresql\": [\"Create table If Not Exists orders (order_number int, customer_number int)\"], \"database_schema\": {\"orders\": {\"order_number\": \"INT\", \"customer_number\": \"INT\"}}}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists orders (order_number int, customer_number int)",
+            "Truncate table orders",
+            "insert into orders (order_number, customer_number) values ('1', '1')",
+            "insert into orders (order_number, customer_number) values ('2', '2')",
+            "insert into orders (order_number, customer_number) values ('3', '3')",
+            "insert into orders (order_number, customer_number) values ('4', '3')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"], \"pythondata\": [\"Pandas\", \"<p>Python 3.10 with Pandas 2.0.2 and NumPy 1.25.0</p>\"], \"postgresql\": [\"PostgreSQL\", \"<p>PostgreSQL 16</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "7",
+        "title": "Two Sum",
+        "content": "[TOC]\n\n## Video Solution\n\n---\n\n<div>\n    <div class=\"video-container\">\n        <iframe src=\"https://player.vimeo.com/video/567281997\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>\n    </div>\n</div>\n\n<div>&nbsp;\n</div>\n\n## Solution Article\n\n---\n\n### Approach 1: Brute Force\n\n**Algorithm**\n\nThe brute force approach is simple. Loop through each element $$x$$ and find if there is another value that equals to $$target - x$$.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/F5kg7EYc/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"F5kg7EYc\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n^2)$$.\nFor each element, we try to find its complement by looping through the rest of the array which takes $$O(n)$$ time. Therefore, the time complexity is $$O(n^2)$$.\n\n* Space complexity: $$O(1)$$.\nThe space required does not depend on the size of the input array, so only constant space is used.\n\n---\n### Approach 2: Two-pass Hash Table\n\n**Intuition**\n\nTo improve our runtime complexity, we need a more efficient way to check if the complement exists in the array. If the complement exists, we need to get its index. What is the best way to maintain a mapping of each element in the array to its index? A hash table.\n\nWe can reduce the lookup time from $$O(n)$$ to $$O(1)$$ by trading space for speed. A hash table is well suited for this purpose because it supports fast lookup in *near* constant time. I say \"near\" because if a collision occurred, a lookup could degenerate to $$O(n)$$ time. However, lookup in a hash table should be amortized $$O(1)$$ time as long as the hash function was chosen carefully.\n\n**Algorithm**\n\nA simple implementation uses two iterations. In the first iteration, we add each element's value as a key and its index as a value to the hash table. Then, in the second iteration, we check if each element's complement ($$target - nums[i]$$) exists in the hash table. If it does exist, we return current element's index and its complement's index. Beware that the complement must not be $$nums[i]$$ itself!\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/GzXvM56P/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"GzXvM56P\"></iframe>  \n\n**Complexity Analysis**\n\n* Time complexity: $$O(n)$$.\nWe traverse the list containing $$n$$ elements exactly twice. Since the hash table reduces the lookup time to $$O(1)$$, the overall time complexity is $$O(n)$$.\n\n* Space complexity: $$O(n)$$.\nThe extra space required depends on the number of items stored in the hash table, which stores exactly $$n$$ elements.\n\n---\n### Approach 3: One-pass Hash Table\n\n**Algorithm**\n    \nIt turns out we can do it in one-pass. While we are iterating and inserting elements into the hash table, we also look back to check if current element's complement already exists in the hash table. If it exists, we have found a solution and return the indices immediately.\n\n**Implementation**    \n    \n<iframe src=\"https://leetcode.com/playground/ERd2anAr/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ERd2anAr\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n)$$.\nWe traverse the list containing $$n$$ elements only once. Each lookup in the table costs only $$O(1)$$ time.\n\n* Space complexity: $$O(n)$$.\nThe extra space required depends on the number of items stored in the hash table, which stores at most $$n$$ elements.",
+        "contentTypeId": "107",
+        "paidOnly": false,
+        "hasVideoSolution": true,
+        "paidOnlyVideo": false,
+        "canSeeDetail": true,
+        "rating": {
+            "count": 3718,
+            "average": "4.589",
+            "userRating": null
+        },
+        "topic": {
+            "id": 127810,
+            "commentCount": 3353,
+            "topLevelCommentCount": 2324,
+            "viewCount": 8077897,
+            "subscribed": false,
+            "solutionTags": [],
+            "post": {
+                "id": 260381,
+                "status": null,
+                "creationDate": 1457528847,
+                "author": {
+                    "username": "LeetCode",
+                    "isActive": true,
+                    "profile": {
+                        "userAvatar": "https://assets.leetcode.com/users/leetcode/avatar_1568224780.png",
+                        "reputation": 34122
+                    }
+                }
+            }
+        }
+    },
+    "playgroundData": {
+        "F5kg7EYc": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": null
+        },
+        "GzXvM56P": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": null
+        },
+        "ERd2anAr": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": null
+        }
+    }
+}

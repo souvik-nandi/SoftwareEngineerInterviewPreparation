@@ -1,0 +1,59 @@
+{
+    "question": {
+        "questionId": "2523",
+        "questionFrontendId": "2388",
+        "boundTopicId": null,
+        "title": "Change Null Values in a Table to the Previous Value",
+        "titleSlug": "change-null-values-in-a-table-to-the-previous-value",
+        "content": null,
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Medium",
+        "likes": 79,
+        "dislikes": 28,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "{\"headers\": {\"CoffeeShop\": [\"id\", \"drink\"]}, \"rows\": {\"CoffeeShop\": [[9, \"Rum and Coke\"], [6, null], [7, null], [3, \"St Germain Spritz\"], [1, \"Orange Margarita\"], [2, null]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": null,
+        "codeSnippets": null,
+        "stats": "{\"totalAccepted\": \"4.1K\", \"totalSubmission\": \"8.2K\", \"totalAcceptedRaw\": 4103, \"totalSubmissionRaw\": 8151, \"acRate\": \"50.3%\"}",
+        "hints": [],
+        "solution": null,
+        "status": null,
+        "sampleTestCase": "{\"headers\": {\"CoffeeShop\": [\"id\", \"drink\"]}, \"rows\": {\"CoffeeShop\": [[9, \"Rum and Coke\"], [6, null], [7, null], [3, \"St Germain Spritz\"], [1, \"Orange Margarita\"], [2, null]]}}",
+        "metaData": "{\"mysql\": [\"Create table If Not Exists CoffeeShop (id int, drink varchar(20))\"], \"mssql\": [\"Create table CoffeeShop (id int, drink varchar(20))\"], \"oraclesql\": [\"Create table CoffeeShop (id int, drink varchar(20))\"], \"database\": true, \"name\": \"change_null_values\", \"pythondata\": [\"CoffeeShop = pd.DataFrame([], columns=['id', 'drink']).astype({'id':'Int64', 'drink':'object'})\"], \"postgresql\": [\"Create table If Not Exists CoffeeShop (id int, drink varchar(20))\"], \"database_schema\": {\"CoffeeShop\": {\"id\": \"INT\", \"drink\": \"VARCHAR(20)\"}}}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists CoffeeShop (id int, drink varchar(20))",
+            "Truncate table CoffeeShop",
+            "insert into CoffeeShop (id, drink) values ('9', 'Rum and Coke')",
+            "insert into CoffeeShop (id, drink) values ('6', 'None')",
+            "insert into CoffeeShop (id, drink) values ('7', 'None')",
+            "insert into CoffeeShop (id, drink) values ('3', 'St Germain Spritz')",
+            "insert into CoffeeShop (id, drink) values ('1', 'Orange Margarita')",
+            "insert into CoffeeShop (id, drink) values ('2', 'None')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"], \"pythondata\": [\"Pandas\", \"<p>Python 3.10 with Pandas 2.0.2 and NumPy 1.25.0</p>\"], \"postgresql\": [\"PostgreSQL\", \"<p>PostgreSQL 16</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": null,
+    "playgroundData": null
+}

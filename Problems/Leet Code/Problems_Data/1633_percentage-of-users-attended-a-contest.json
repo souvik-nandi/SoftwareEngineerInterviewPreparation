@@ -1,0 +1,186 @@
+{
+    "question": {
+        "questionId": "1773",
+        "questionFrontendId": "1633",
+        "boundTopicId": null,
+        "title": "Percentage of Users Attended a Contest",
+        "titleSlug": "percentage-of-users-attended-a-contest",
+        "content": "<p>Table: <code>Users</code></p>\n\n<pre>\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| user_id     | int     |\n| user_name   | varchar |\n+-------------+---------+\nuser_id is the primary key (column with unique values) for this table.\nEach row of this table contains the name and the id of a user.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Table: <code>Register</code></p>\n\n<pre>\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| contest_id  | int     |\n| user_id     | int     |\n+-------------+---------+\n(contest_id, user_id) is the primary key (combination of columns with unique values) for this table.\nEach row of this table contains the id of a user and the contest they registered into.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write a solution to find the percentage of the users registered in each contest rounded to <strong>two decimals</strong>.</p>\n\n<p>Return the result table ordered by <code>percentage</code> in <strong>descending order</strong>. In case of a tie, order it by <code>contest_id</code> in <strong>ascending order</strong>.</p>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nUsers table:\n+---------+-----------+\n| user_id | user_name |\n+---------+-----------+\n| 6       | Alice     |\n| 2       | Bob       |\n| 7       | Alex      |\n+---------+-----------+\nRegister table:\n+------------+---------+\n| contest_id | user_id |\n+------------+---------+\n| 215        | 6       |\n| 209        | 2       |\n| 208        | 2       |\n| 210        | 6       |\n| 208        | 6       |\n| 209        | 7       |\n| 209        | 6       |\n| 215        | 7       |\n| 208        | 7       |\n| 210        | 2       |\n| 207        | 2       |\n| 210        | 7       |\n+------------+---------+\n<strong>Output:</strong> \n+------------+------------+\n| contest_id | percentage |\n+------------+------------+\n| 208        | 100.0      |\n| 209        | 100.0      |\n| 210        | 100.0      |\n| 215        | 66.67      |\n| 207        | 33.33      |\n+------------+------------+\n<strong>Explanation:</strong> \nAll the users registered in contests 208, 209, and 210. The percentage is 100% and we sort them in the answer table by contest_id in ascending order.\nAlice and Alex registered in contest 215 and the percentage is ((2/3) * 100) = 66.67%\nBob registered in contest 207 and the percentage is ((1/3) * 100) = 33.33%\n</pre>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 609,
+        "dislikes": 68,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Queries Quality and Percentage\", \"titleSlug\": \"queries-quality-and-percentage\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+        "exampleTestcases": "{\"headers\":{\"Users\":[\"user_id\",\"user_name\"],\"Register\":[\"contest_id\",\"user_id\"]},\"rows\":{\"Users\":[[6,\"Alice\"],[2,\"Bob\"],[7,\"Alex\"]],\"Register\":[[215,6],[209,2],[208,2],[210,6],[208,6],[209,7],[209,6],[215,7],[208,7],[210,2],[207,2],[210,7]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": null,
+        "codeSnippets": [
+            {
+                "lang": "MySQL",
+                "langSlug": "mysql",
+                "code": "# Write your MySQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "MS SQL Server",
+                "langSlug": "mssql",
+                "code": "/* Write your T-SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Oracle",
+                "langSlug": "oraclesql",
+                "code": "/* Write your PL/SQL query statement below */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "Pandas",
+                "langSlug": "pythondata",
+                "code": "import pandas as pd\n\ndef users_percentage(users: pd.DataFrame, register: pd.DataFrame) -> pd.DataFrame:\n    ",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "PostgreSQL",
+                "langSlug": "postgresql",
+                "code": "-- Write your PostgreSQL query statement below\n",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"162K\", \"totalSubmission\": \"294.2K\", \"totalAcceptedRaw\": 162017, \"totalSubmissionRaw\": 294181, \"acRate\": \"55.1%\"}",
+        "hints": [],
+        "solution": {
+            "id": "2261",
+            "canSeeDetail": true,
+            "paidOnly": false,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "{\"headers\":{\"Users\":[\"user_id\",\"user_name\"],\"Register\":[\"contest_id\",\"user_id\"]},\"rows\":{\"Users\":[[6,\"Alice\"],[2,\"Bob\"],[7,\"Alex\"]],\"Register\":[[215,6],[209,2],[208,2],[210,6],[208,6],[209,7],[209,6],[215,7],[208,7],[210,2],[207,2],[210,7]]}}",
+        "metaData": "{\"mysql\": [\"Create table If Not Exists Users (user_id int, user_name varchar(20))\", \"Create table If Not Exists Register (contest_id int, user_id int)\"], \"mssql\": [\"Create table Users (user_id int, user_name varchar(20))\", \"Create table Register (contest_id int, user_id int)\"], \"oraclesql\": [\"Create table Users (user_id int, user_name varchar(20))\", \"Create table Register (contest_id int, user_id int)\"], \"database\": true, \"name\": \"users_percentage\", \"pythondata\": [\"Users = pd.DataFrame([], columns=['user_id', 'user_name']).astype({'user_id':'Int64', 'user_name':'object'})\", \"Register = pd.DataFrame([], columns=['contest_id', 'user_id']).astype({'contest_id':'Int64', 'user_id':'Int64'})\"], \"postgresql\": [\"\\nCreate table If Not Exists Users (user_id int, user_name varchar(20))\\n\", \"Create table If Not Exists Register (contest_id int, user_id int)\"], \"database_schema\": {\"Users\": {\"user_id\": \"INT\", \"user_name\": \"VARCHAR(20)\"}, \"Register\": {\"contest_id\": \"INT\", \"user_id\": \"INT\"}}}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists Users (user_id int, user_name varchar(20))",
+            "Create table If Not Exists Register (contest_id int, user_id int)",
+            "Truncate table Users",
+            "insert into Users (user_id, user_name) values ('6', 'Alice')",
+            "insert into Users (user_id, user_name) values ('2', 'Bob')",
+            "insert into Users (user_id, user_name) values ('7', 'Alex')",
+            "Truncate table Register",
+            "insert into Register (contest_id, user_id) values ('215', '6')",
+            "insert into Register (contest_id, user_id) values ('209', '2')",
+            "insert into Register (contest_id, user_id) values ('208', '2')",
+            "insert into Register (contest_id, user_id) values ('210', '6')",
+            "insert into Register (contest_id, user_id) values ('208', '6')",
+            "insert into Register (contest_id, user_id) values ('209', '7')",
+            "insert into Register (contest_id, user_id) values ('209', '6')",
+            "insert into Register (contest_id, user_id) values ('215', '7')",
+            "insert into Register (contest_id, user_id) values ('208', '7')",
+            "insert into Register (contest_id, user_id) values ('210', '2')",
+            "insert into Register (contest_id, user_id) values ('207', '2')",
+            "insert into Register (contest_id, user_id) values ('210', '7')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"], \"pythondata\": [\"Pandas\", \"<p>Python 3.10 with Pandas 2.0.2 and NumPy 1.25.0</p>\"], \"postgresql\": [\"PostgreSQL\", \"<p>PostgreSQL 16</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "7",
+        "title": "Two Sum",
+        "content": "[TOC]\n\n## Video Solution\n\n---\n\n<div>\n    <div class=\"video-container\">\n        <iframe src=\"https://player.vimeo.com/video/567281997\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>\n    </div>\n</div>\n\n<div>&nbsp;\n</div>\n\n## Solution Article\n\n---\n\n### Approach 1: Brute Force\n\n**Algorithm**\n\nThe brute force approach is simple. Loop through each element $$x$$ and find if there is another value that equals to $$target - x$$.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/F5kg7EYc/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"F5kg7EYc\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n^2)$$.\nFor each element, we try to find its complement by looping through the rest of the array which takes $$O(n)$$ time. Therefore, the time complexity is $$O(n^2)$$.\n\n* Space complexity: $$O(1)$$.\nThe space required does not depend on the size of the input array, so only constant space is used.\n\n---\n### Approach 2: Two-pass Hash Table\n\n**Intuition**\n\nTo improve our runtime complexity, we need a more efficient way to check if the complement exists in the array. If the complement exists, we need to get its index. What is the best way to maintain a mapping of each element in the array to its index? A hash table.\n\nWe can reduce the lookup time from $$O(n)$$ to $$O(1)$$ by trading space for speed. A hash table is well suited for this purpose because it supports fast lookup in *near* constant time. I say \"near\" because if a collision occurred, a lookup could degenerate to $$O(n)$$ time. However, lookup in a hash table should be amortized $$O(1)$$ time as long as the hash function was chosen carefully.\n\n**Algorithm**\n\nA simple implementation uses two iterations. In the first iteration, we add each element's value as a key and its index as a value to the hash table. Then, in the second iteration, we check if each element's complement ($$target - nums[i]$$) exists in the hash table. If it does exist, we return current element's index and its complement's index. Beware that the complement must not be $$nums[i]$$ itself!\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/GzXvM56P/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"GzXvM56P\"></iframe>  \n\n**Complexity Analysis**\n\n* Time complexity: $$O(n)$$.\nWe traverse the list containing $$n$$ elements exactly twice. Since the hash table reduces the lookup time to $$O(1)$$, the overall time complexity is $$O(n)$$.\n\n* Space complexity: $$O(n)$$.\nThe extra space required depends on the number of items stored in the hash table, which stores exactly $$n$$ elements.\n\n---\n### Approach 3: One-pass Hash Table\n\n**Algorithm**\n    \nIt turns out we can do it in one-pass. While we are iterating and inserting elements into the hash table, we also look back to check if current element's complement already exists in the hash table. If it exists, we have found a solution and return the indices immediately.\n\n**Implementation**    \n    \n<iframe src=\"https://leetcode.com/playground/ERd2anAr/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ERd2anAr\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n)$$.\nWe traverse the list containing $$n$$ elements only once. Each lookup in the table costs only $$O(1)$$ time.\n\n* Space complexity: $$O(n)$$.\nThe extra space required depends on the number of items stored in the hash table, which stores at most $$n$$ elements.",
+        "contentTypeId": "107",
+        "paidOnly": false,
+        "hasVideoSolution": true,
+        "paidOnlyVideo": false,
+        "canSeeDetail": true,
+        "rating": {
+            "count": 3718,
+            "average": "4.589",
+            "userRating": null
+        },
+        "topic": {
+            "id": 127810,
+            "commentCount": 3353,
+            "topLevelCommentCount": 2324,
+            "viewCount": 8078145,
+            "subscribed": false,
+            "solutionTags": [],
+            "post": {
+                "id": 260381,
+                "status": null,
+                "creationDate": 1457528847,
+                "author": {
+                    "username": "LeetCode",
+                    "isActive": true,
+                    "profile": {
+                        "userAvatar": "https://assets.leetcode.com/users/leetcode/avatar_1568224780.png",
+                        "reputation": 34123
+                    }
+                }
+            }
+        }
+    },
+    "playgroundData": {
+        "F5kg7EYc": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": null
+        },
+        "GzXvM56P": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": null
+        },
+        "ERd2anAr": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": null
+        }
+    }
+}

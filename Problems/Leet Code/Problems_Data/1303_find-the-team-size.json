@@ -1,0 +1,59 @@
+{
+    "question": {
+        "questionId": "1438",
+        "questionFrontendId": "1303",
+        "boundTopicId": null,
+        "title": "Find the Team Size",
+        "titleSlug": "find-the-team-size",
+        "content": null,
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": true,
+        "difficulty": "Easy",
+        "likes": 330,
+        "dislikes": 16,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "{\"headers\":{\"Employee\":[\"employee_id\",\"team_id\"]},\"rows\":{\"Employee\":[[1,8],[2,8],[3,8],[4,7],[5,9],[6,9]]}}",
+        "categoryTitle": "Database",
+        "contributors": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database",
+                "translatedName": null,
+                "__typename": "TopicTagNode"
+            }
+        ],
+        "companyTagStats": null,
+        "codeSnippets": null,
+        "stats": "{\"totalAccepted\": \"69.6K\", \"totalSubmission\": \"77.8K\", \"totalAcceptedRaw\": 69635, \"totalSubmissionRaw\": 77807, \"acRate\": \"89.5%\"}",
+        "hints": [],
+        "solution": null,
+        "status": null,
+        "sampleTestCase": "{\"headers\":{\"Employee\":[\"employee_id\",\"team_id\"]},\"rows\":{\"Employee\":[[1,8],[2,8],[3,8],[4,7],[5,9],[6,9]]}}",
+        "metaData": "{\"mysql\": [\"Create table If Not Exists Employee (employee_id int, team_id int)\"], \"mssql\": [\"Create table Employee (employee_id int, team_id int)\"], \"oraclesql\": [\"Create table Employee (employee_id int, team_id int)\"], \"database\": true, \"name\": \"team_size\", \"pythondata\": [\"Employee = pd.DataFrame([], columns=['employee_id', 'team_id']).astype({'employee_id':'Int64', 'team_id':'Int64'})\"], \"postgresql\": [\"\\nCreate table If Not Exists Employee (employee_id int, team_id int)\"], \"database_schema\": {\"Employee\": {\"employee_id\": \"INT\", \"team_id\": \"INT\"}}}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [
+            "Create table If Not Exists Employee (employee_id int, team_id int)",
+            "Truncate table Employee",
+            "insert into Employee (employee_id, team_id) values ('1', '8')",
+            "insert into Employee (employee_id, team_id) values ('2', '8')",
+            "insert into Employee (employee_id, team_id) values ('3', '8')",
+            "insert into Employee (employee_id, team_id) values ('4', '7')",
+            "insert into Employee (employee_id, team_id) values ('5', '9')",
+            "insert into Employee (employee_id, team_id) values ('6', '9')"
+        ],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"], \"pythondata\": [\"Pandas\", \"<p>Python 3.10 with Pandas 2.0.2 and NumPy 1.25.0</p>\"], \"postgresql\": [\"PostgreSQL\", \"<p>PostgreSQL 16</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": null,
+    "playgroundData": null
+}

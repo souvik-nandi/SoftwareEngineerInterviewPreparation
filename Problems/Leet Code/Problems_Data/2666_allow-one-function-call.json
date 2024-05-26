@@ -1,0 +1,141 @@
+{
+    "question": {
+        "questionId": "2796",
+        "questionFrontendId": "2666",
+        "boundTopicId": null,
+        "title": "Allow One Function Call",
+        "titleSlug": "allow-one-function-call",
+        "content": "<p>Given a function <code>fn</code>, return a new function that is identical to the original function except that it ensures&nbsp;<code>fn</code>&nbsp;is&nbsp;called at most once.</p>\n\n<ul>\n\t<li>The first time the returned function is called, it should return the same result as&nbsp;<code>fn</code>.</li>\n\t<li>Every subsequent time it is called, it should return&nbsp;<code>undefined</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> fn = (a,b,c) =&gt; (a + b + c), calls = [[1,2,3],[2,3,6]]\n<strong>Output:</strong> [{&quot;calls&quot;:1,&quot;value&quot;:6}]\n<strong>Explanation:</strong>\nconst onceFn = once(fn);\nonceFn(1, 2, 3); // 6\nonceFn(2, 3, 6); // undefined, fn was not called\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> fn = (a,b,c) =&gt; (a * b * c), calls = [[5,7,4],[2,3,6],[4,6,8]]\n<strong>Output:</strong> [{&quot;calls&quot;:1,&quot;value&quot;:140}]\n<strong>Explanation:</strong>\nconst onceFn = once(fn);\nonceFn(5, 7, 4); // 140\nonceFn(2, 3, 6); // undefined, fn was not called\nonceFn(4, 6, 8); // undefined, fn was not called\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>calls</code> is a valid JSON array</li>\n\t<li><code>1 &lt;= calls.length &lt;= 10</code></li>\n\t<li><code>1 &lt;= calls[i].length &lt;= 100</code></li>\n\t<li><code>2 &lt;= JSON.stringify(calls).length &lt;= 1000</code></li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Easy",
+        "likes": 442,
+        "dislikes": 46,
+        "isLiked": null,
+        "similarQuestions": "[]",
+        "exampleTestcases": "(a,b,c) => (a + b + c)\n[[1,2,3],[2,3,6]]\n(a,b,c) => (a * b * c)\n[[5,7,4],[2,3,6],[4,6,8]]",
+        "categoryTitle": "JavaScript",
+        "contributors": [],
+        "topicTags": [],
+        "companyTagStats": null,
+        "codeSnippets": [
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {Function} fn\n * @return {Function}\n */\nvar once = function(fn) {\n    \n    return function(...args){\n        \n    }\n};\n\n/**\n * let fn = (a,b,c) => (a + b + c)\n * let onceFn = once(fn)\n *\n * onceFn(1,2,3); // 6\n * onceFn(2,3,6); // returns undefined without calling fn\n */\n",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "type JSONValue = null | boolean | number | string | JSONValue[] | { [key: string]: JSONValue };\ntype OnceFn = (...args: JSONValue[]) => JSONValue | undefined\n\nfunction once(fn: Function): OnceFn {\n    \n    return function (...args) {\n        \n    };\n}\n\n/**\n * let fn = (a,b,c) => (a + b + c)\n * let onceFn = once(fn)\n *\n * onceFn(1,2,3); // 6\n * onceFn(2,3,6); // returns undefined without calling fn\n */",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"90.3K\", \"totalSubmission\": \"105.2K\", \"totalAcceptedRaw\": 90315, \"totalSubmissionRaw\": 105176, \"acRate\": \"85.9%\"}",
+        "hints": [],
+        "solution": {
+            "id": "1893",
+            "canSeeDetail": false,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "(a,b,c) => (a + b + c)\n[[1,2,3],[2,3,6]]",
+        "metaData": "{\n  \"name\": \"once\",\n  \"params\": [\n    {\n      \"name\": \"fn\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"string\",\n      \"name\": \"calls\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  },\n  \"languages\": [\n    \"javascript\",\n    \"typescript\"\n  ],\n  \"manual\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"javascript\": [\"JavaScript\", \"<p><code>Node.js 20.10.0</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use 5.4.0 version of <a href=\\\"https://github.com/datastructures-js/priority-queue/blob/v5/README.md\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and 4.2.3 version of <a href=\\\"https://github.com/datastructures-js/queue/tree/v4.2.3\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 5.1.6, Node.js 20.10.0</code>.</p>\\r\\n\\r\\n<p>Compile Options: <code>--alwaysStrict --strictBindCallApply --strictFunctionTypes --target ES2022</code></p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2022 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "7",
+        "title": "Two Sum",
+        "content": "[TOC]\n\n## Video Solution\n\n---\n\n<div>\n    <div class=\"video-container\">\n        <iframe src=\"https://player.vimeo.com/video/567281997\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>\n    </div>\n</div>\n\n<div>&nbsp;\n</div>\n\n## Solution Article\n\n---\n\n### Approach 1: Brute Force\n\n**Algorithm**\n\nThe brute force approach is simple. Loop through each element $$x$$ and find if there is another value that equals to $$target - x$$.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/F5kg7EYc/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"F5kg7EYc\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n^2)$$.\nFor each element, we try to find its complement by looping through the rest of the array which takes $$O(n)$$ time. Therefore, the time complexity is $$O(n^2)$$.\n\n* Space complexity: $$O(1)$$.\nThe space required does not depend on the size of the input array, so only constant space is used.\n\n---\n### Approach 2: Two-pass Hash Table\n\n**Intuition**\n\nTo improve our runtime complexity, we need a more efficient way to check if the complement exists in the array. If the complement exists, we need to get its index. What is the best way to maintain a mapping of each element in the array to its index? A hash table.\n\nWe can reduce the lookup time from $$O(n)$$ to $$O(1)$$ by trading space for speed. A hash table is well suited for this purpose because it supports fast lookup in *near* constant time. I say \"near\" because if a collision occurred, a lookup could degenerate to $$O(n)$$ time. However, lookup in a hash table should be amortized $$O(1)$$ time as long as the hash function was chosen carefully.\n\n**Algorithm**\n\nA simple implementation uses two iterations. In the first iteration, we add each element's value as a key and its index as a value to the hash table. Then, in the second iteration, we check if each element's complement ($$target - nums[i]$$) exists in the hash table. If it does exist, we return current element's index and its complement's index. Beware that the complement must not be $$nums[i]$$ itself!\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/GzXvM56P/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"GzXvM56P\"></iframe>  \n\n**Complexity Analysis**\n\n* Time complexity: $$O(n)$$.\nWe traverse the list containing $$n$$ elements exactly twice. Since the hash table reduces the lookup time to $$O(1)$$, the overall time complexity is $$O(n)$$.\n\n* Space complexity: $$O(n)$$.\nThe extra space required depends on the number of items stored in the hash table, which stores exactly $$n$$ elements.\n\n---\n### Approach 3: One-pass Hash Table\n\n**Algorithm**\n    \nIt turns out we can do it in one-pass. While we are iterating and inserting elements into the hash table, we also look back to check if current element's complement already exists in the hash table. If it exists, we have found a solution and return the indices immediately.\n\n**Implementation**    \n    \n<iframe src=\"https://leetcode.com/playground/ERd2anAr/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ERd2anAr\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n)$$.\nWe traverse the list containing $$n$$ elements only once. Each lookup in the table costs only $$O(1)$$ time.\n\n* Space complexity: $$O(n)$$.\nThe extra space required depends on the number of items stored in the hash table, which stores at most $$n$$ elements.",
+        "contentTypeId": "107",
+        "paidOnly": false,
+        "hasVideoSolution": true,
+        "paidOnlyVideo": false,
+        "canSeeDetail": true,
+        "rating": {
+            "count": 3718,
+            "average": "4.589",
+            "userRating": null
+        },
+        "topic": {
+            "id": 127810,
+            "commentCount": 3353,
+            "topLevelCommentCount": 2324,
+            "viewCount": 8079075,
+            "subscribed": false,
+            "solutionTags": [],
+            "post": {
+                "id": 260381,
+                "status": null,
+                "creationDate": 1457528847,
+                "author": {
+                    "username": "LeetCode",
+                    "isActive": true,
+                    "profile": {
+                        "userAvatar": "https://assets.leetcode.com/users/leetcode/avatar_1568224780.png",
+                        "reputation": 34126
+                    }
+                }
+            }
+        }
+    },
+    "playgroundData": {
+        "F5kg7EYc": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": null
+        },
+        "GzXvM56P": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": null
+        },
+        "ERd2anAr": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": null
+        }
+    }
+}

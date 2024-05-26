@@ -1,0 +1,145 @@
+{
+    "question": {
+        "questionId": "2742",
+        "questionFrontendId": "2631",
+        "boundTopicId": null,
+        "title": "Group By",
+        "titleSlug": "group-by",
+        "content": "<p>Write code that enhances all arrays such that you can call the&nbsp;<code>array.groupBy(fn)</code>&nbsp;method on any array and it will return a <strong>grouped</strong>&nbsp;version of the array.</p>\n\n<p>A&nbsp;<strong>grouped</strong>&nbsp;array is an object where each&nbsp;key&nbsp;is&nbsp;the output of&nbsp;<code>fn(arr[i])</code>&nbsp;and each&nbsp;value is an array containing all items in the original array with that key.</p>\n\n<p>The provided callback&nbsp;<code>fn</code>&nbsp;will accept an item in the array and return a string key.</p>\n\n<p>The order of each value list should be the order the items&nbsp;appear in the array. Any order of keys is acceptable.</p>\n\n<p>Please solve it without lodash&#39;s&nbsp;<code>_.groupBy</code> function.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \narray = [\n&nbsp; {&quot;id&quot;:&quot;1&quot;},\n&nbsp; {&quot;id&quot;:&quot;1&quot;},\n&nbsp; {&quot;id&quot;:&quot;2&quot;}\n], \nfn = function (item) { \n&nbsp; return item.id; \n}\n<strong>Output:</strong> \n{ \n&nbsp; &quot;1&quot;: [{&quot;id&quot;: &quot;1&quot;}, {&quot;id&quot;: &quot;1&quot;}], &nbsp; \n&nbsp; &quot;2&quot;: [{&quot;id&quot;: &quot;2&quot;}] \n}\n<strong>Explanation:</strong>\nOutput is from array.groupBy(fn).\nThe selector function gets the &quot;id&quot; out of each item in the array.\nThere are two objects with an &quot;id&quot; of 1. Both of those objects are put in the first array.\nThere is one object with an &quot;id&quot; of 2. That object is put in the second array.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> \narray = [\n&nbsp; [1, 2, 3],\n&nbsp; [1, 3, 5],\n&nbsp; [1, 5, 9]\n]\nfn = function (list) { \n&nbsp; return String(list[0]); \n}\n<strong>Output:</strong> \n{ \n&nbsp; &quot;1&quot;: [[1, 2, 3], [1, 3, 5], [1, 5, 9]] \n}\n<strong>Explanation:</strong>\nThe array can be of any type. In this case, the selector function defines the key as being the first element in the array. \nAll the arrays have 1 as their first element so they are grouped together.\n{\n  &quot;1&quot;: [[1, 2, 3], [1, 3, 5], [1, 5, 9]]\n}\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> \narray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nfn = function (n) { \n&nbsp; return String(n &gt; 5);\n}\n<strong>Output:</strong>\n{\n&nbsp; &quot;true&quot;: [6, 7, 8, 9, 10],\n&nbsp; &quot;false&quot;: [1, 2, 3, 4, 5]\n}\n<strong>Explanation:</strong>\nThe selector function splits the array by whether each number is greater than 5.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= array.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>fn</code> returns a string</li>\n</ul>\n",
+        "translatedTitle": null,
+        "translatedContent": null,
+        "isPaidOnly": false,
+        "difficulty": "Medium",
+        "likes": 286,
+        "dislikes": 15,
+        "isLiked": null,
+        "similarQuestions": "[{\"title\": \"Filter Elements from Array\", \"titleSlug\": \"filter-elements-from-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Apply Transform Over Each Element in Array\", \"titleSlug\": \"apply-transform-over-each-element-in-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Snail Traversal\", \"titleSlug\": \"snail-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Array Reduce Transformation\", \"titleSlug\": \"array-reduce-transformation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Array Upper Bound\", \"titleSlug\": \"array-upper-bound\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+        "exampleTestcases": "[{\"id\":\"1\"},{\"id\":\"1\"},{\"id\":\"2\"}]\nfunction (item) { return item.id; }\n[[1,2,3],[1,3,5],[1,5,9]]\nfunction (list) { return String(list[0]); }\n[1,2,3,4,5,6,7,8,9,10]\nfunction (n) { return String(n > 5); }",
+        "categoryTitle": "JavaScript",
+        "contributors": [],
+        "topicTags": [],
+        "companyTagStats": null,
+        "codeSnippets": [
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {Function} fn\n * @return {Object}\n */\nArray.prototype.groupBy = function(fn) {\n    \n};\n\n/**\n * [1,2,3].groupBy(String) // {\"1\":[1],\"2\":[2],\"3\":[3]}\n */",
+                "__typename": "CodeSnippetNode"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "declare global {\n    interface Array<T> {\n        groupBy(fn: (item: T) => string): Record<string, T[]>\n    }\n}\n\nArray.prototype.groupBy = function(fn) {\n    \n}\n\n/**\n * [1,2,3].groupBy(String) // {\"1\":[1],\"2\":[2],\"3\":[3]}\n */",
+                "__typename": "CodeSnippetNode"
+            }
+        ],
+        "stats": "{\"totalAccepted\": \"36.7K\", \"totalSubmission\": \"45.5K\", \"totalAcceptedRaw\": 36734, \"totalSubmissionRaw\": 45537, \"acRate\": \"80.7%\"}",
+        "hints": [
+            "First declare an object that will eventually be returned.",
+            "Iterate of each element in the array. You can access the array with the \"this\" keyword.",
+            "The key is fn(arr[i]). If the key already exists on the object, set the value to be an empty array. Then push the value onto the array at the key."
+        ],
+        "solution": {
+            "id": "1918",
+            "canSeeDetail": false,
+            "paidOnly": true,
+            "hasVideoSolution": false,
+            "paidOnlyVideo": true,
+            "__typename": "ArticleNode"
+        },
+        "status": null,
+        "sampleTestCase": "[{\"id\":\"1\"},{\"id\":\"1\"},{\"id\":\"2\"}]\nfunction (item) { return item.id; }",
+        "metaData": "{\n  \"name\": \"groupBy\",\n  \"params\": [\n    {\n      \"name\": \"list\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"string\",\n      \"name\": \"fn\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  },\n  \"languages\": [\n    \"javascript\",\n    \"typescript\"\n  ],\n  \"manual\": true\n}",
+        "judgerAvailable": true,
+        "judgeType": "large",
+        "mysqlSchemas": [],
+        "enableRunCode": true,
+        "enableTestMode": false,
+        "enableDebugger": false,
+        "envInfo": "{\"javascript\": [\"JavaScript\", \"<p><code>Node.js 20.10.0</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use 5.4.0 version of <a href=\\\"https://github.com/datastructures-js/priority-queue/blob/v5/README.md\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and 4.2.3 version of <a href=\\\"https://github.com/datastructures-js/queue/tree/v4.2.3\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"typescript\": [\"Typescript\", \"<p><code>TypeScript 5.1.6, Node.js 20.10.0</code>.</p>\\r\\n\\r\\n<p>Compile Options: <code>--alwaysStrict --strictBindCallApply --strictFunctionTypes --target ES2022</code></p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2022 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"]}",
+        "libraryUrl": null,
+        "adminUrl": null,
+        "challengeQuestion": null,
+        "__typename": "QuestionNode"
+    },
+    "solution": {
+        "id": "7",
+        "title": "Two Sum",
+        "content": "[TOC]\n\n## Video Solution\n\n---\n\n<div>\n    <div class=\"video-container\">\n        <iframe src=\"https://player.vimeo.com/video/567281997\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>\n    </div>\n</div>\n\n<div>&nbsp;\n</div>\n\n## Solution Article\n\n---\n\n### Approach 1: Brute Force\n\n**Algorithm**\n\nThe brute force approach is simple. Loop through each element $$x$$ and find if there is another value that equals to $$target - x$$.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/F5kg7EYc/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"F5kg7EYc\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n^2)$$.\nFor each element, we try to find its complement by looping through the rest of the array which takes $$O(n)$$ time. Therefore, the time complexity is $$O(n^2)$$.\n\n* Space complexity: $$O(1)$$.\nThe space required does not depend on the size of the input array, so only constant space is used.\n\n---\n### Approach 2: Two-pass Hash Table\n\n**Intuition**\n\nTo improve our runtime complexity, we need a more efficient way to check if the complement exists in the array. If the complement exists, we need to get its index. What is the best way to maintain a mapping of each element in the array to its index? A hash table.\n\nWe can reduce the lookup time from $$O(n)$$ to $$O(1)$$ by trading space for speed. A hash table is well suited for this purpose because it supports fast lookup in *near* constant time. I say \"near\" because if a collision occurred, a lookup could degenerate to $$O(n)$$ time. However, lookup in a hash table should be amortized $$O(1)$$ time as long as the hash function was chosen carefully.\n\n**Algorithm**\n\nA simple implementation uses two iterations. In the first iteration, we add each element's value as a key and its index as a value to the hash table. Then, in the second iteration, we check if each element's complement ($$target - nums[i]$$) exists in the hash table. If it does exist, we return current element's index and its complement's index. Beware that the complement must not be $$nums[i]$$ itself!\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/GzXvM56P/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"GzXvM56P\"></iframe>  \n\n**Complexity Analysis**\n\n* Time complexity: $$O(n)$$.\nWe traverse the list containing $$n$$ elements exactly twice. Since the hash table reduces the lookup time to $$O(1)$$, the overall time complexity is $$O(n)$$.\n\n* Space complexity: $$O(n)$$.\nThe extra space required depends on the number of items stored in the hash table, which stores exactly $$n$$ elements.\n\n---\n### Approach 3: One-pass Hash Table\n\n**Algorithm**\n    \nIt turns out we can do it in one-pass. While we are iterating and inserting elements into the hash table, we also look back to check if current element's complement already exists in the hash table. If it exists, we have found a solution and return the indices immediately.\n\n**Implementation**    \n    \n<iframe src=\"https://leetcode.com/playground/ERd2anAr/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ERd2anAr\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n)$$.\nWe traverse the list containing $$n$$ elements only once. Each lookup in the table costs only $$O(1)$$ time.\n\n* Space complexity: $$O(n)$$.\nThe extra space required depends on the number of items stored in the hash table, which stores at most $$n$$ elements.",
+        "contentTypeId": "107",
+        "paidOnly": false,
+        "hasVideoSolution": true,
+        "paidOnlyVideo": false,
+        "canSeeDetail": true,
+        "rating": {
+            "count": 3718,
+            "average": "4.589",
+            "userRating": null
+        },
+        "topic": {
+            "id": 127810,
+            "commentCount": 3353,
+            "topLevelCommentCount": 2324,
+            "viewCount": 8079075,
+            "subscribed": false,
+            "solutionTags": [],
+            "post": {
+                "id": 260381,
+                "status": null,
+                "creationDate": 1457528847,
+                "author": {
+                    "username": "LeetCode",
+                    "isActive": true,
+                    "profile": {
+                        "userAvatar": "https://assets.leetcode.com/users/leetcode/avatar_1568224780.png",
+                        "reputation": 34126
+                    }
+                }
+            }
+        }
+    },
+    "playgroundData": {
+        "F5kg7EYc": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-2",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": null
+        },
+        "GzXvM56P": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-1",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": null
+        },
+        "ERd2anAr": {
+            "playground": {
+                "testcaseInput": "",
+                "name": "two-sum-0",
+                "isUserOwner": false,
+                "isLive": false,
+                "showRunCode": false,
+                "showOpenInPlayground": false,
+                "selectedLangSlug": "cpp",
+                "isShared": true,
+                "__typename": "PlaygroundNode"
+            },
+            "allPlaygroundCodes": null
+        }
+    }
+}
