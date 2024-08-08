@@ -18,7 +18,7 @@ System design is a crucial aspect of software engineering interviews, especially
 
 ## Problems
 
-### [LeetCode Problems](Problems/LeetCode/README.md)
+### [Software Engineering Pioneer - LeetCode Problems Set](Problems/SoftwareEngineeringPioneer/README.md)
 
 Practice makes perfect! Challenge yourself with a curated selection of LeetCode problems categorized by difficulty level and topic. Solve algorithmic and data structure problems to sharpen your problem-solving skills and prepare for coding interviews. Each problem comes with detailed explanations, sample solutions, and tips to improve your approach.
 
